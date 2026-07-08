@@ -258,7 +258,8 @@ top-6
           px-4
           py-3
           shadow-xl
-
+          hidden 
+          sm:block
           sm:-left-12
           sm:right-auto
           sm:top-20
