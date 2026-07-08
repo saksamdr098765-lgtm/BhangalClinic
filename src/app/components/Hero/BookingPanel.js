@@ -13,7 +13,17 @@ const tests = ["CBC", "HbA1c", "Thyroid", "Vitamin D"];
 
 export default function BookingPanel() {
   return (
-    <div className="relative flex justify-center px-4 sm:px-0">
+  <div
+  className="
+    relative
+    flex
+    w-full
+    justify-center
+    px-0
+
+    sm:px-0
+  "
+>
 
       {/* Glow */}
       <div
@@ -237,9 +247,10 @@ export default function BookingPanel() {
           repeat: Infinity,
         }}
         className="
-          absolute
-          right-3
-          top-8
+        absolute
+right-0
+top-6
+
           rounded-xl
           border
           border-slate-200

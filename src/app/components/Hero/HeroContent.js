@@ -10,29 +10,45 @@ import {
 
 import SearchBar from "./SearchBar";
 
+
 const fadeUp = {
-  initial: { opacity: 0, y: 30 },
-  animate: { opacity: 1, y: 0 },
+  initial: {
+    opacity: 0,
+    y: 30,
+  },
+
+  animate: {
+    opacity: 1,
+    y: 0,
+  },
 };
+
 
 export default function HeroContent() {
   return (
-    <div className="w-full max-w-2xl">
+    <div
+      className="
+        w-full
+        max-w-2xl
+      "
+    >
+
 
       {/* Badge */}
 
       <motion.div
         {...fadeUp}
-        transition={{ duration: 0.5 }}
+        transition={{
+          duration:.5,
+        }}
         className="
           inline-flex
-          max-w-full
           items-center
           gap-2
           rounded-full
           border
           border-slate-200
-          bg-white/70
+          bg-white/80
           px-3
           py-2
           shadow-sm
@@ -42,34 +58,59 @@ export default function HeroContent() {
         "
       >
 
-        <span className="h-2 w-2 shrink-0 rounded-full bg-emerald-500" />
+        <span
+          className="
+            h-2
+            w-2
+            shrink-0
+            rounded-full
+            bg-emerald-500
+          "
+        />
 
-        <span className="text-xs font-medium text-slate-700 sm:text-sm">
+
+        <span
+          className="
+            text-xs
+            font-medium
+            text-slate-700
+
+            sm:text-sm
+          "
+        >
           Home Sample Collection Available
         </span>
+
 
       </motion.div>
 
 
+
+
+
       {/* Heading */}
+
 
       <motion.h1
         {...fadeUp}
-        transition={{ delay: 0.15 }}
+        transition={{
+          delay:.15,
+        }}
         className="
-          mt-5
-          text-4xl
+          mt-6
+          text-[42px]
           font-black
           leading-[0.95]
           tracking-tight
           text-slate-900
 
-          sm:mt-8
           sm:text-5xl
 
           md:text-6xl
 
-          xl:text-8xl
+          lg:text-7xl
+
+          xl:text-[82px]
         "
       >
 
@@ -89,14 +130,21 @@ export default function HeroContent() {
           Health.
         </span>
 
+
       </motion.h1>
 
 
-      {/* Subtitle */}
+
+
+
+      {/* Description */}
+
 
       <motion.p
         {...fadeUp}
-        transition={{ delay: 0.3 }}
+        transition={{
+          delay:.3,
+        }}
         className="
           mt-5
           max-w-xl
@@ -104,33 +152,55 @@ export default function HeroContent() {
           leading-7
           text-slate-600
 
-          sm:mt-8
+          sm:mt-7
           sm:text-lg
           sm:leading-8
         "
       >
+
         Book pathology tests online, schedule home sample
         collection, and receive accurate digital reports—
         all from one beautifully simple experience.
+
       </motion.p>
+
+
+
+
 
 
       {/* Search */}
 
+
       <motion.div
         {...fadeUp}
-        transition={{ delay: 0.45 }}
-        className="mt-6 sm:mt-10"
+        transition={{
+          delay:.45,
+        }}
+        className="
+          mt-6
+
+          sm:mt-10
+        "
       >
+
         <SearchBar />
+
       </motion.div>
 
 
-      {/* CTA */}
+
+
+
+
+      {/* Buttons */}
+
 
       <motion.div
         {...fadeUp}
-        transition={{ delay: 0.6 }}
+        transition={{
+          delay:.6,
+        }}
         className="
           mt-6
           flex
@@ -139,10 +209,9 @@ export default function HeroContent() {
 
           sm:mt-8
           sm:flex-row
-          sm:flex-wrap
-          sm:gap-4
         "
       >
+
 
         <button
           className="
@@ -153,19 +222,21 @@ export default function HeroContent() {
             justify-center
             gap-3
             rounded-full
-            bg-slate-900
+            bg-blue-600
             px-7
             py-3.5
             font-semibold
             text-white
+            shadow-lg
+            shadow-blue-600/20
             transition
             hover:-translate-y-1
-            hover:shadow-xl
 
             sm:w-auto
             sm:py-4
           "
         >
+
           Book Test
 
           <FiArrowRight
@@ -178,38 +249,47 @@ export default function HeroContent() {
         </button>
 
 
+
         <button
           className="
             w-full
             rounded-full
             border
             border-slate-200
-            bg-white/70
+            bg-white
             px-7
             py-3.5
             font-semibold
             text-slate-700
-            backdrop-blur-xl
             transition
             hover:border-blue-300
-            hover:bg-white
+            hover:bg-blue-50
 
             sm:w-auto
             sm:py-4
           "
         >
+
           Explore Packages
+
         </button>
+
 
       </motion.div>
 
 
 
-      {/* Trust */}
+
+
+
+      {/* Trust Cards */}
+
 
       <motion.div
         {...fadeUp}
-        transition={{ delay: 0.75 }}
+        transition={{
+          delay:.75,
+        }}
         className="
           mt-8
           grid
@@ -217,52 +297,86 @@ export default function HeroContent() {
           gap-3
 
           sm:mt-12
-          sm:flex
-          sm:flex-wrap
-          sm:gap-6
+          sm:grid-cols-3
+          sm:gap-4
         "
       >
 
+
         {[
           {
-            icon: FiHome,
-            text: "Home Collection",
+            icon:FiHome,
+            text:"Home Collection",
           },
-          {
-            icon: FiClock,
-            text: "Fast Reports",
-          },
-          {
-            icon: FiShield,
-            text: "Accurate Testing",
-          },
-        ].map((item) => {
 
-          const Icon = item.icon;
+          {
+            icon:FiClock,
+            text:"Fast Reports",
+          },
+
+          {
+            icon:FiShield,
+            text:"Accurate Testing",
+          },
+
+        ].map((item)=>{
+
+
+          const Icon=item.icon;
+
 
           return (
+
             <div
               key={item.text}
               className="
                 flex
                 items-center
                 gap-3
-                rounded-full
-                bg-white/60
+                rounded-2xl
+                border
+                border-slate-100
+                bg-white/70
                 px-4
                 py-3
                 backdrop-blur-lg
               "
             >
 
-              <Icon className="text-blue-600" />
+              <div
+                className="
+                  flex
+                  h-9
+                  w-9
+                  items-center
+                  justify-center
+                  rounded-full
+                  bg-blue-50
+                "
+              >
 
-              <span className="text-sm font-medium">
+                <Icon
+                  className="text-blue-600"
+                />
+
+              </div>
+
+
+              <span
+                className="
+                  text-sm
+                  font-medium
+                  text-slate-700
+                "
+              >
                 {item.text}
               </span>
 
+
             </div>
+
           );
+
 
         })}
 
