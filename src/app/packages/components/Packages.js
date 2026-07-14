@@ -5,35 +5,7 @@ import { FiSearch, FiArrowRight, FiCheck,FiHome,FiClock } from "react-icons/fi";
 import Link from "next/link";
 import { packages } from "@/app/data/packages";
 import { useSearchParams } from "next/navigation";
-// const packages = [
-//   {
-//     id: 1,
-//     name: "Complete Body Checkup",
-//     price: 999,
-//     originalPrice: 1999,
-//     tests: 65,
-//     description:
-//       "Comprehensive health screening including blood, liver, kidney and thyroid profile.",
-//   },
-//   {
-//     id: 2,
-//     name: "Diabetes Care Package",
-//     price: 699,
-//     originalPrice: 1299,
-//     tests: 32,
-//     description:
-//       "Monitor sugar levels, HbA1c, kidney health and lipid profile.",
-//   },
-//   {
-//     id: 3,
-//     name: "Women's Wellness",
-//     price: 1499,
-//     originalPrice: 2499,
-//     tests: 78,
-//     description:
-//       "Essential health package specially designed for women.",
-//   },
-// ];
+
 
 export default function PackagesPage() {
     const searchParams = useSearchParams();

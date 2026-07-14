@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://dkbhangallab.com
+
+# Sitemaps
+Sitemap: https://dkbhangallab.com/sitemap.xml

@@ -1,10 +1,9 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import PackagesHero from './components/Hero'
-
 import PackagesPage from './components/Packages'
 import FAQ from './components/FAQ'
 import CTA from './components/CTA'
-import SectionBackground from '../components/SectionBackground'
+// import SectionBackground from '../components/SectionBackground'
 import TestGrid from './components/TestGrid'
 import { packagesSchema } from '@/schema/packagesSchema'
 import SITE_CONFIG from '../SITE_CONFIG'
@@ -76,7 +75,7 @@ export const metadata = {
 export default function page() {
   
   return (
-    <div>
+    <Suspense fallback={null}>
        {packagesSchema.map((schema, index) => (
         <script
           key={index}
@@ -86,13 +85,14 @@ export default function page() {
           }}
         />
       ))}
-        <SectionBackground>
+        {/* <SectionBackground> */}
+
 <PackagesHero></PackagesHero>
 <PackagesPage></PackagesPage>
 <TestGrid></TestGrid>
 <FAQ></FAQ>
 <CTA></CTA>
-</SectionBackground>
-    </div>
+{/* </SectionBackground> */}
+    </Suspense>
   )
 }

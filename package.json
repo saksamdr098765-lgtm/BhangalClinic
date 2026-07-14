@@ -7,10 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-       "postbuild": "next-sitemap",
+    "postbuild": "next-sitemap",
     "email": "email dev --dir src/emails"
   },
   "dependencies": {
+    "@next/third-parties": "^16.2.10",
     "@react-email/components": "^1.0.12",
     "@react-email/render": "^2.1.0",
     "framer-motion": "^12.42.2",

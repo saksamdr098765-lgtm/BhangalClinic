@@ -4,7 +4,7 @@ import "./globals.css";
 import { Toaster } from "sonner";
 import SITE_CONFIG from "./SITE_CONFIG";
 import { layoutSchema } from "@/schema/layoutSchema";
-
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -137,6 +137,7 @@ export default function RootLayout({ children }) {
     }}
   />
 ))}
+<GoogleAnalytics gaId="G-0FM959VHJX" />
   </body>
     </html>
   );

@@ -1,8 +1,6 @@
-// next-sitemap.config.js
+import SITE_CONFIG from "./src/app/SITE_CONFIG.js";
 
-const {  SITE_CONFIG } = require("@/app/SITE_CONFIG");
-
-module.exports = {
+export default {
   siteUrl: SITE_CONFIG.url,
 
   generateRobotsTxt: true,

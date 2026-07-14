@@ -136,7 +136,7 @@ export const SITE_CONFIG = {
   /* -------------------------------------------------------------------------- */
 
   verification: {
-    google: "",
+    google: "XY78A3-6Nt32QpjxWCEDrJ7tGAGC9j1WWQyPSuQBVDU",
     bing: "",
   },
 
