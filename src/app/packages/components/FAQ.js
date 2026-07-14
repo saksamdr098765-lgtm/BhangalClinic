@@ -40,37 +40,53 @@ const faqs = [
 function FAQItem({ faq, index, active, onToggle }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 25 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.08 }}
-      className="overflow-hidden rounded-3xl border border-slate-200 bg-white/80 backdrop-blur-xl"
+      className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm sm:rounded-3xl"
     >
       <button
         onClick={onToggle}
-        className="flex w-full items-center justify-between px-6 py-5 text-left"
+        className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left transition-colors hover:bg-slate-50 sm:px-7 sm:py-6"
       >
-        <h3 className="pr-6 text-base font-semibold text-slate-900 sm:text-lg">
+        <h3 className="text-base font-semibold leading-7 text-slate-900 sm:text-lg">
           {faq.question}
         </h3>
 
-        <FiChevronDown
-          className={`h-5 w-5 shrink-0 text-slate-500 transition-transform duration-300 ${
-            active ? "rotate-180" : ""
+        <div
+          className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-100 transition-all duration-300 ${
+            active
+              ? "rotate-180 bg-blue-600 text-white"
+              : "text-slate-500"
           }`}
-        />
+        >
+          <FiChevronDown size={18} />
+        </div>
       </button>
 
-      <AnimatePresence>
+      <AnimatePresence initial={false}>
         {active && (
           <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.25 }}
+            initial={{
+              height: 0,
+              opacity: 0,
+            }}
+            animate={{
+              height: "auto",
+              opacity: 1,
+            }}
+            exit={{
+              height: 0,
+              opacity: 0,
+            }}
+            transition={{
+              duration: 0.25,
+            }}
+            className="overflow-hidden"
           >
-            <div className="border-t border-slate-100 px-6 py-5">
-              <p className="leading-7 text-slate-600">
+            <div className="border-t border-slate-100 px-5 py-5 sm:px-7 sm:py-6">
+              <p className="text-sm leading-7 text-slate-600 sm:text-base">
                 {faq.answer}
               </p>
             </div>
@@ -85,30 +101,38 @@ export default function FAQ() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section className="bg-gradient-to-b from-slate-50 via-white to-blue-50 py-20">
-      <div className="mx-auto max-w-4xl px-6">
-
+    <section className="bg-gradient-to-b from-slate-50 via-white to-blue-50 py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={{
+            opacity: 0,
+            y: 30,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
           className="text-center"
         >
-          <span className="inline-flex rounded-full border border-blue-100 bg-white px-4 py-2 text-sm font-medium text-blue-700 shadow-sm">
+          <span className="inline-flex rounded-full border border-blue-100 bg-white px-3 py-1.5 text-xs font-semibold text-blue-700 shadow-sm sm:px-4 sm:py-2 sm:text-sm">
             Frequently Asked Questions
           </span>
 
-          <h2 className="mt-6 text-4xl font-black tracking-tight text-slate-900 sm:text-5xl">
+          <h2 className="mt-5 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
             Everything You Need to Know
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-600">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
             Find answers to the most common questions about our health
-            packages, home sample collection, reports, and booking process.
+            packages, home sample collection, reports, and the booking
+            process.
           </p>
         </motion.div>
 
-        <div className="mt-14 space-y-4">
+        <div className="mt-10 space-y-4 sm:mt-14">
           {faqs.map((faq, index) => (
             <FAQItem
               key={faq.question}

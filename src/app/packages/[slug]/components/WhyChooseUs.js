@@ -10,36 +10,47 @@ import {
   FiCheckCircle,
 } from "react-icons/fi";
 
+
 const reasons = [
   {
     icon: FiAward,
-    title: "NABL Quality Standards",
+    title: "NABL Certified Quality",
     description:
-      "Reliable testing processes with strict quality control.",
+      "Advanced diagnostic processes with strict quality checks to ensure accurate and dependable reports.",
   },
   {
     icon: FiUsers,
-    title: "Experienced Team",
+    title: "Experienced Healthcare Team",
     description:
-      "Qualified professionals committed to accurate diagnostics.",
+      "Skilled laboratory professionals focused on precision, safety, and patient satisfaction.",
   },
   {
     icon: FiHome,
-    title: "Home Sample Collection",
+    title: "Convenient Home Collection",
     description:
-      "Convenient collection from your home with trained staff.",
+      "Safe and hygienic sample collection at your doorstep by trained professionals.",
   },
   {
     icon: FiClock,
-    title: "Fast Digital Reports",
+    title: "Fast & Secure Reports",
     description:
-      "Reports delivered securely within the promised turnaround time.",
+      "Receive digitally accessible reports within the committed turnaround time.",
   },
 ];
+
+
+const highlights = [
+  "Advanced laboratory testing standards",
+  "Secure digital health reports",
+  "Comfortable doorstep sample collection",
+  "Affordable preventive healthcare solutions",
+];
+
 
 export default function WhyChooseUs() {
   return (
     <section className="bg-slate-50 py-24">
+
       <div className="mx-auto max-w-7xl px-6">
 
         <div
@@ -51,21 +62,27 @@ export default function WhyChooseUs() {
             lg:grid-cols-2
           "
         >
-          {/* Left */}
+
+
+          {/* Left Content */}
 
           <motion.div
             initial={{
-              opacity: 0,
-              x: -40,
+              opacity:0,
+              x:-40,
             }}
             whileInView={{
-              opacity: 1,
-              x: 0,
+              opacity:1,
+              x:0,
+            }}
+            transition={{
+              duration:.6,
             }}
             viewport={{
-              once: true,
+              once:true,
             }}
           >
+
             <span
               className="
                 inline-flex
@@ -78,10 +95,12 @@ export default function WhyChooseUs() {
                 text-sm
                 font-medium
                 text-blue-700
+                shadow-sm
               "
             >
-              Why Patients Trust Us
+              Why Choose Our Laboratory
             </span>
+
 
             <h2
               className="
@@ -95,10 +114,11 @@ export default function WhyChooseUs() {
                 lg:text-5xl
               "
             >
-              Trusted Diagnostics
+              Reliable Diagnostics
               <br />
-              Backed by Experience
+              You Can Trust
             </h2>
+
 
             <p
               className="
@@ -108,26 +128,28 @@ export default function WhyChooseUs() {
                 text-slate-600
               "
             >
-              At Bhangal Clinical Laboratory, every diagnostic test is
-              performed with a focus on accuracy, consistency, and
-              patient care. Our experienced team follows standardized
-              laboratory procedures using modern equipment to ensure
-              dependable results that patients and doctors can trust.
+              Bhangal Clinical Laboratory provides accurate diagnostic
+              testing with a strong focus on quality, technology, and
+              patient care. Our standardized processes help deliver
+              reliable health insights for individuals, families, and
+              healthcare providers.
             </p>
+
 
             <p
               className="
-                mt-6
+                mt-5
                 text-lg
                 leading-8
                 text-slate-600
               "
             >
-              From preventive health checkups to specialized diagnostic
-              investigations, we are committed to providing a seamless
-              experience with home sample collection, timely reporting,
-              transparent pricing, and compassionate service.
+              From preventive health packages to routine investigations,
+              we make healthcare simpler with transparent pricing,
+              convenient home collection, and secure digital reports.
             </p>
+
+
 
             <div
               className="
@@ -135,12 +157,8 @@ export default function WhyChooseUs() {
                 space-y-4
               "
             >
-              {[
-                "High-quality laboratory standards",
-                "Secure digital reports",
-                "Comfortable home collection",
-                "Affordable preventive healthcare",
-              ].map((item) => (
+
+              {highlights.map((item)=>(
                 <div
                   key={item}
                   className="
@@ -149,6 +167,7 @@ export default function WhyChooseUs() {
                     gap-3
                   "
                 >
+
                   <div
                     className="
                       flex
@@ -160,8 +179,9 @@ export default function WhyChooseUs() {
                       bg-blue-100
                     "
                   >
-                    <FiCheckCircle className="text-blue-600" />
+                    <FiCheckCircle className="text-blue-600"/>
                   </div>
+
 
                   <span
                     className="
@@ -174,34 +194,56 @@ export default function WhyChooseUs() {
 
                 </div>
               ))}
+
             </div>
+
 
           </motion.div>
 
-          {/* Right */}
+
+
+
+          {/* Right Cards */}
 
           <motion.div
             initial={{
-              opacity: 0,
-              x: 40,
+              opacity:0,
+              x:40,
             }}
             whileInView={{
-              opacity: 1,
-              x: 0,
+              opacity:1,
+              x:0,
+            }}
+            transition={{
+              duration:.6,
             }}
             viewport={{
-              once: true,
+              once:true,
             }}
-            className="
-              space-y-5
-            "
+            className="space-y-5"
           >
-            {reasons.map((item) => {
-              const Icon = item.icon;
 
-              return (
-                <div
+            {reasons.map((item,index)=>{
+
+              const Icon=item.icon;
+
+              return(
+                <motion.div
                   key={item.title}
+                  initial={{
+                    opacity:0,
+                    y:20,
+                  }}
+                  whileInView={{
+                    opacity:1,
+                    y:0,
+                  }}
+                  transition={{
+                    delay:index*.08,
+                  }}
+                  viewport={{
+                    once:true,
+                  }}
                   className="
                     rounded-[28px]
                     border
@@ -209,13 +251,17 @@ export default function WhyChooseUs() {
                     bg-white
                     p-6
                     shadow-sm
-                    transition
+                    transition-all
+                    duration-300
+
                     hover:-translate-y-1
                     hover:border-blue-200
                     hover:shadow-lg
                   "
                 >
+
                   <div className="flex gap-5">
+
 
                     <div
                       className="
@@ -229,13 +275,10 @@ export default function WhyChooseUs() {
                         bg-blue-50
                       "
                     >
-                      <Icon
-                        className="
-                          text-2xl
-                          text-blue-600
-                        "
-                      />
+                      <Icon className="text-2xl text-blue-600"/>
                     </div>
+
+
 
                     <div>
 
@@ -249,6 +292,7 @@ export default function WhyChooseUs() {
                         {item.title}
                       </h3>
 
+
                       <p
                         className="
                           mt-2
@@ -259,25 +303,33 @@ export default function WhyChooseUs() {
                         {item.description}
                       </p>
 
+
                     </div>
+
 
                   </div>
 
-                </div>
+
+                </motion.div>
               );
+
             })}
 
-            {/* Trust Card */}
+
+
+            {/* Trust Banner */}
 
             <div
               className="
-                rounded-[28px]
+                rounded-[30px]
                 bg-blue-600
                 p-8
                 text-white
               "
             >
-              <FiShield className="text-3xl" />
+
+              <FiShield className="text-3xl"/>
+
 
               <h3
                 className="
@@ -286,8 +338,9 @@ export default function WhyChooseUs() {
                   font-bold
                 "
               >
-                Your Health Comes First
+                Healthcare Built on Trust
               </h3>
+
 
               <p
                 className="
@@ -296,18 +349,22 @@ export default function WhyChooseUs() {
                   text-blue-100
                 "
               >
-                Every sample is handled with care, processed using
-                established laboratory protocols, and reviewed to
-                deliver dependable diagnostic results.
+                Every sample is collected safely, processed with
+                advanced laboratory procedures, and handled with
+                complete care to provide dependable diagnostic results.
               </p>
+
 
             </div>
 
+
           </motion.div>
+
 
         </div>
 
       </div>
+
     </section>
   );
 }

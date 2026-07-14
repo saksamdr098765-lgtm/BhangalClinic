@@ -37,17 +37,30 @@ const points = [
 
 export default function Overview({ pkg }) {
   return (
-    <section className="bg-slate-50 py-24">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="grid gap-16 lg:grid-cols-2 lg:items-start">
-          {/* Left */}
+    <section className="bg-slate-50 py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+
+        <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
+
+          {/* Left Content */}
 
           <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: .6 }}
-            viewport={{ once: true }}
+            initial={{
+              opacity: 0,
+              y: 30,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.5,
+            }}
+            viewport={{
+              once: true,
+            }}
           >
+
             <span
               className="
                 inline-flex
@@ -57,99 +70,145 @@ export default function Overview({ pkg }) {
                 bg-white
                 px-4
                 py-2
-                text-sm
-                font-medium
+                text-xs
+                font-semibold
                 text-blue-700
+                sm:text-sm
               "
             >
               Package Overview
             </span>
 
+
             <h2
               className="
-                mt-6
-                text-4xl
+                mt-5
+                text-3xl
                 font-black
+                leading-tight
                 tracking-tight
                 text-slate-900
+
+                sm:text-4xl
 
                 lg:text-5xl
               "
             >
               Why Choose the
-              <br />
-
+              <br className="hidden sm:block" />
               {pkg.name}?
             </h2>
 
-            <div className="mt-8 space-y-6 text-lg leading-8 text-slate-600">
-              <p>
-                {pkg.name} is designed to provide a complete overview
-                of your current health condition through a carefully
-                selected combination of diagnostic tests. Regular
-                preventive screening helps identify hidden health
-                concerns before they develop into serious medical
-                conditions, allowing timely treatment and better
-                long-term outcomes.
-              </p>
+
+            <div
+              className="
+                mt-6
+                space-y-5
+                text-base
+                leading-7
+                text-slate-600
+
+                sm:text-lg
+                sm:leading-8
+              "
+            >
 
               <p>
-                This package evaluates essential health markers related
-                to blood health, diabetes, liver function, kidney
-                function, cholesterol, thyroid health, vitamins, and
-                other important body systems depending on the tests
-                included. It is suitable for individuals who want a
-                convenient and reliable way to monitor their overall
-                health.
+                {pkg.name} is designed to provide a complete overview of
+                your current health condition through a carefully selected
+                combination of diagnostic tests. Regular preventive
+                screening helps identify hidden health concerns before
+                they develop into serious medical conditions.
               </p>
+
+
+              <p>
+                This package evaluates essential health markers related to
+                blood health, diabetes, liver function, kidney function,
+                cholesterol, thyroid health, vitamins, and other important
+                body systems depending on the included tests.
+              </p>
+
 
               <p>
                 Whether you are planning an annual health checkup,
-                managing an existing medical condition, or simply
-                adopting a preventive healthcare routine, this package
-                provides clinically valuable insights backed by accurate
-                laboratory testing and experienced healthcare
-                professionals.
+                managing an existing condition, or following preventive
+                healthcare, this package provides valuable insights backed
+                by accurate laboratory testing.
               </p>
+
             </div>
+
           </motion.div>
 
-          {/* Right */}
+
+
+          {/* Benefits Cards */}
 
           <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: .6 }}
-            viewport={{ once: true }}
+            initial={{
+              opacity: 0,
+              y: 30,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.5,
+            }}
+            viewport={{
+              once: true,
+            }}
             className="
               grid
-              gap-5
+              gap-4
+
               sm:grid-cols-2
             "
           >
-            {points.map((item) => {
+
+            {points.map((item, index) => {
               const Icon = item.icon;
 
               return (
-                <div
+                <motion.div
                   key={item.title}
+                  initial={{
+                    opacity: 0,
+                    y: 20,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  transition={{
+                    delay: index * 0.08,
+                  }}
+                  viewport={{
+                    once: true,
+                  }}
                   className="
-                    rounded-[28px]
+                    rounded-3xl
                     border
                     border-slate-200
                     bg-white
-                    p-7
+                    p-5
                     shadow-sm
-                    transition
+                    transition-all
+
+                    sm:p-6
+
                     hover:-translate-y-1
                     hover:shadow-lg
                   "
                 >
+
                   <div
                     className="
                       flex
-                      h-12
-                      w-12
+                      h-11
+                      w-11
                       items-center
                       justify-center
                       rounded-2xl
@@ -159,31 +218,44 @@ export default function Overview({ pkg }) {
                     <Icon className="text-xl text-blue-600" />
                   </div>
 
+
                   <h3
                     className="
-                      mt-6
-                      text-xl
+                      mt-5
+                      text-lg
                       font-bold
                       text-slate-900
+
+                      sm:text-xl
                     "
                   >
                     {item.title}
                   </h3>
 
+
                   <p
                     className="
                       mt-3
-                      leading-7
+                      text-sm
+                      leading-6
                       text-slate-600
+
+                      sm:text-base
+                      sm:leading-7
                     "
                   >
                     {item.description}
                   </p>
-                </div>
+
+
+                </motion.div>
               );
             })}
+
           </motion.div>
+
         </div>
+
       </div>
     </section>
   );

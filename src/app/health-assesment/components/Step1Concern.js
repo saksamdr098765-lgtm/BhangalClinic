@@ -14,26 +14,30 @@ const options = [
   {
     value: "myself",
     title: "Myself",
-    description: "I'm looking for tests for my own health.",
+    description: "I'm checking symptoms for myself.",
     icon: FiUser,
+    badge: "Most Common",
   },
   {
     value: "child",
     title: "My Child",
-    description: "Assessment for a child.",
+    description: "Assessment for an infant or child.",
     icon: FiSmile,
+    badge: "Pediatric",
   },
   {
     value: "parent",
     title: "My Parent",
     description: "Health assessment for a parent.",
     icon: FiHeart,
+    badge: "Senior Care",
   },
   {
     value: "other",
     title: "Someone Else",
     description: "For another family member.",
     icon: FiUsers,
+    badge: "Family",
   },
 ];
 
@@ -44,97 +48,300 @@ export default function Step1Concern({
 }) {
   return (
     <motion.section
-      initial={{ opacity: 0, y: 25 }}
-      animate={{ opacity: 1, y: 0 }}
-      className="rounded-[36px] border border-slate-200/70 bg-white/80 p-8 shadow-xl backdrop-blur-2xl"
+      initial={{
+        opacity: 0,
+        y: 24,
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+      }}
+      transition={{
+        duration: 0.4,
+      }}
+      className="
+        rounded-3xl
+        border
+        border-slate-200
+        bg-white
+        p-6
+        shadow-sm
+
+        sm:p-8
+
+        lg:p-10
+      "
     >
       {/* Heading */}
 
       <div className="max-w-2xl">
-        <span className="rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
-          Step 1
+        <span
+          className="
+            inline-flex
+            rounded-full
+            border
+            border-blue-100
+            bg-blue-50
+            px-4
+            py-2
+            text-xs
+            font-semibold
+            uppercase
+            tracking-[0.22em]
+            text-blue-700
+          "
+        >
+          Step 1 of 5
         </span>
 
-        <h2 className="mt-5 text-4xl font-black tracking-tight text-slate-900">
-          Who is this assessment for?
+        <h2
+          className="
+            mt-5
+            text-3xl
+            font-black
+            leading-tight
+            text-slate-900
+
+            sm:text-4xl
+
+            lg:text-5xl
+          "
+        >
+          Who is this health
+          <span className="block text-blue-600">
+            assessment for?
+          </span>
         </h2>
 
-        <p className="mt-4 text-lg leading-8 text-slate-600">
-          Choose who you're booking the health assessment for.
+        <p
+          className="
+            mt-5
+            max-w-xl
+            text-base
+            leading-8
+            text-slate-600
+
+            sm:text-lg
+          "
+        >
+          Select who you're completing this assessment for.
+          We'll personalize the recommendations based on
+          your answers.
         </p>
       </div>
 
-      {/* Cards */}
+      {/* Options */}
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2">
-        {options.map((item) => {
+      <div
+        className="
+          mt-10
+          grid
+          gap-5
+
+          md:grid-cols-2
+        "
+      >
+                {options.map((item) => {
           const Icon = item.icon;
-
           const active = value === item.value;
 
           return (
             <motion.button
               key={item.value}
-              whileHover={{ y: -6 }}
-              whileTap={{ scale: 0.98 }}
+              type="button"
+              whileHover={{
+                y: -4,
+              }}
+              whileTap={{
+                scale: 0.98,
+              }}
               onClick={() => onChange(item.value)}
-              className={`group relative overflow-hidden rounded-[28px] border p-7 text-left transition-all
+              className={`
+                group
+                relative
+                overflow-hidden
+                rounded-2xl
+                border
+                p-6
+                text-left
+                transition-all
+                duration-300
 
-              ${
-                active
-                  ? "border-blue-600 bg-blue-50 shadow-xl"
-                  : "border-slate-200 bg-white hover:border-blue-200 hover:shadow-lg"
-              }`}
+                ${
+                  active
+                    ? "border-blue-600 bg-blue-50 shadow-lg"
+                    : "border-slate-200 bg-white hover:border-blue-300 hover:shadow-md"
+                }
+              `}
             >
+              {/* Badge */}
+
+              <span
+                className="
+                  absolute
+                  left-6
+                  top-6
+                  rounded-full
+                  bg-slate-100
+                  px-3
+                  py-1
+                  text-[10px]
+                  font-semibold
+                  uppercase
+                  tracking-[0.18em]
+                  text-slate-600
+                "
+              >
+                {item.badge}
+              </span>
+
               {/* Selected */}
 
               {active && (
-                <div className="absolute right-5 top-5 flex h-9 w-9 items-center justify-center rounded-full bg-blue-600 text-white">
+                <motion.div
+                  initial={{
+                    scale: 0,
+                  }}
+                  animate={{
+                    scale: 1,
+                  }}
+                  className="
+                    absolute
+                    right-6
+                    top-6
+                    flex
+                    h-10
+                    w-10
+                    items-center
+                    justify-center
+                    rounded-full
+                    bg-blue-600
+                    text-white
+                  "
+                >
                   <FiCheck />
-                </div>
+                </motion.div>
               )}
 
               {/* Icon */}
 
               <div
-                className={`flex h-16 w-16 items-center justify-center rounded-2xl transition
+                className={`
+                  mt-10
+                  flex
+                  h-16
+                  w-16
+                  items-center
+                  justify-center
+                  rounded-2xl
+                  transition-all
 
-                ${
-                  active
-                    ? "bg-blue-600 text-white"
-                    : "bg-blue-50 text-blue-600 group-hover:bg-blue-100"
-                }`}
+                  ${
+                    active
+                      ? "bg-blue-600 text-white"
+                      : "bg-blue-50 text-blue-600 group-hover:bg-blue-100"
+                  }
+                `}
               >
                 <Icon className="text-3xl" />
               </div>
 
-              <h3 className="mt-6 text-2xl font-bold text-slate-900">
+              <h3
+                className="
+                  mt-6
+                  text-xl
+                  font-bold
+                  text-slate-900
+                "
+              >
                 {item.title}
               </h3>
 
-              <p className="mt-3 leading-7 text-slate-600">
+              <p
+                className="
+                  mt-3
+                  text-sm
+                  leading-7
+                  text-slate-600
+                "
+              >
                 {item.description}
               </p>
             </motion.button>
           );
         })}
       </div>
+            {/* Footer */}
 
-      {/* Footer */}
+      <div
+        className="
+          mt-12
+          flex
+          flex-col
+          gap-5
+          border-t
+          border-slate-200
+          pt-8
 
-      <div className="mt-12 flex flex-col gap-4 border-t border-slate-100 pt-8 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-sm text-slate-500">
-          Your answers help us recommend suitable laboratory tests.
-        </p>
+          sm:flex-row
+          sm:items-center
+          sm:justify-between
+        "
+      >
+        <div>
+          <p className="font-medium text-slate-800">
+            Personalized recommendations
+          </p>
+
+          <p
+            className="
+              mt-1
+              text-sm
+              leading-6
+              text-slate-500
+            "
+          >
+            This assessment helps identify suitable laboratory tests
+            based on your responses. It is not a medical diagnosis.
+          </p>
+        </div>
 
         <button
+          type="button"
           disabled={!value}
           onClick={nextStep}
-          className="group flex items-center justify-center gap-3 rounded-2xl bg-blue-600 px-8 py-4 font-semibold text-white transition hover:-translate-y-1 hover:shadow-xl disabled:cursor-not-allowed disabled:opacity-40"
+          className="
+            group
+            inline-flex
+            items-center
+            justify-center
+            gap-3
+            rounded-xl
+            bg-blue-600
+            px-7
+            py-3.5
+            font-semibold
+            text-white
+            transition-all
+            duration-300
+            hover:-translate-y-0.5
+            hover:bg-blue-700
+            hover:shadow-lg
+            disabled:cursor-not-allowed
+            disabled:opacity-40
+            disabled:hover:translate-y-0
+            disabled:hover:shadow-none
+          "
         >
           Continue
 
-          <FiArrowRight className="transition group-hover:translate-x-1" />
+          <FiArrowRight
+            className="
+              transition-transform
+              duration-300
+              group-hover:translate-x-1
+            "
+          />
         </button>
       </div>
     </motion.section>

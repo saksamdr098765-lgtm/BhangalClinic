@@ -2,10 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  FiPlus,
-  FiMinus,
-} from "react-icons/fi";
+import { FiPlus, FiMinus } from "react-icons/fi";
 import SITE_CONFIG from "@/app/SITE_CONFIG";
 
 const faqs = [
@@ -40,76 +37,48 @@ export default function FAQ() {
   const [active, setActive] = useState(0);
 
   return (
-    <section
-      className="
-        relative
-        overflow-hidden
-        bg-gradient-to-b
-        from-white
-        via-slate-50
-        to-white
-        py-20
-
-        lg:py-28
-      "
-    >
+    <section className="relative overflow-hidden bg-slate-50 py-14 sm:py-16 lg:py-24">
       {/* Background */}
 
-      <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-blue-100/40 blur-[120px]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#dbeafe_0%,transparent_45%)] opacity-60" />
 
-      <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-cyan-100/40 blur-[140px]" />
+      <div className="absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-cyan-100 blur-3xl opacity-70" />
 
-      <div
-        className="
-          relative
-          z-10
-          mx-auto
-          max-w-7xl
-          px-4
-
-          sm:px-6
-        "
-      >
-        <div
-          className="
-            grid
-            gap-16
-
-            lg:grid-cols-12
-          "
-        >
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
           {/* Left */}
 
           <motion.div
             initial={{
-              opacity:0,
-              x:-40,
+              opacity: 0,
+              y: 30,
             }}
             whileInView={{
-              opacity:1,
-              x:0,
+              opacity: 1,
+              y: 0,
             }}
             viewport={{
-              once:true,
+              once: true,
             }}
-            className="
-              lg:col-span-4
-            "
+            className="text-center lg:col-span-4 lg:text-left"
           >
             <span
               className="
                 inline-flex
                 rounded-full
-                bg-blue-50
-                px-5
+                border
+                border-blue-100
+                bg-white
+                px-4
                 py-2
-                text-xs
+                text-[11px]
                 font-semibold
                 uppercase
-                tracking-[0.25em]
+                tracking-[0.22em]
                 text-blue-700
+                shadow-sm
 
-                sm:text-sm
+                sm:text-xs
               "
             >
               Frequently Asked Questions
@@ -117,35 +86,40 @@ export default function FAQ() {
 
             <h2
               className="
-                mt-6
-                text-4xl
+                mt-5
+                text-3xl
                 font-black
                 leading-tight
                 text-slate-900
+
+                sm:text-4xl
 
                 lg:text-5xl
               "
             >
               Everything
-              <br />
-
-              You Need
-              <br />
-
-              To Know.
+              <span className="block text-blue-600">
+                You Need To Know
+              </span>
             </h2>
 
             <p
               className="
-                mt-6
-                text-lg
-                leading-8
+                mx-auto
+                mt-5
+                max-w-md
+                text-sm
+                leading-7
                 text-slate-600
+
+                sm:text-base
+
+                lg:mx-0
               "
             >
-              Find answers to the most common questions about
-              booking tests, home sample collection, reports,
-              and laboratory services.
+              Find answers to the most common questions about booking
+              tests, home sample collection, reports, and laboratory
+              services.
             </p>
           </motion.div>
 
@@ -153,21 +127,19 @@ export default function FAQ() {
 
           <motion.div
             initial={{
-              opacity:0,
-              x:40,
+              opacity: 0,
+              y: 30,
             }}
             whileInView={{
-              opacity:1,
-              x:0,
+              opacity: 1,
+              y: 0,
             }}
             viewport={{
-              once:true,
+              once: true,
             }}
-            className="
-              lg:col-span-8
-            "
+            className="lg:col-span-8"
           >
-                        <div className="space-y-5">
+            <div className="space-y-4">
               {faqs.map((faq, index) => {
                 const isOpen = active === index;
 
@@ -190,40 +162,38 @@ export default function FAQ() {
                     }}
                     className="
                       overflow-hidden
-                      rounded-[28px]
+                      rounded-2xl
                       border
                       border-slate-200
                       bg-white
-                      shadow-[0_10px_40px_rgba(15,23,42,.05)]
+                      shadow-sm
                     "
                   >
                     <button
-                      onClick={() =>
-                        setActive(isOpen ? -1 : index)
-                      }
+                      onClick={() => setActive(isOpen ? -1 : index)}
                       className="
                         flex
                         w-full
                         items-center
                         justify-between
-                        gap-6
-                        px-6
-                        py-6
+                        gap-4
+                        px-5
+                        py-5
                         text-left
-                        transition-colors
+                        transition
                         hover:bg-slate-50
 
-                        sm:px-8
+                        sm:px-6
                       "
                     >
                       <h3
                         className="
-                          text-lg
-                          font-bold
+                          text-base
+                          font-semibold
                           leading-7
                           text-slate-900
 
-                          sm:text-xl
+                          sm:text-lg
                         "
                       >
                         {faq.question}
@@ -232,26 +202,21 @@ export default function FAQ() {
                       <div
                         className={`
                           flex
-                          h-12
-                          w-12
+                          h-10
+                          w-10
                           shrink-0
                           items-center
                           justify-center
-                          rounded-2xl
+                          rounded-xl
                           transition-all
-                          duration-300
                           ${
                             isOpen
-                              ? "bg-blue-600 text-white rotate-180"
+                              ? "bg-blue-600 text-white"
                               : "bg-blue-50 text-blue-600"
                           }
                         `}
                       >
-                        {isOpen ? (
-                          <FiMinus size={20} />
-                        ) : (
-                          <FiPlus size={20} />
-                        )}
+                        {isOpen ? <FiMinus /> : <FiPlus />}
                       </div>
                     </button>
 
@@ -271,29 +236,12 @@ export default function FAQ() {
                             opacity: 0,
                           }}
                           transition={{
-                            duration: 0.3,
+                            duration: 0.25,
                           }}
                           className="overflow-hidden"
                         >
-                          <div
-                            className="
-                              border-t
-                              border-slate-100
-                              px-6
-                              py-6
-
-                              sm:px-8
-                            "
-                          >
-                            <p
-                              className="
-                                text-base
-                                leading-8
-                                text-slate-600
-
-                                sm:text-lg
-                              "
-                            >
+                          <div className="border-t border-slate-100 px-5 py-5 sm:px-6">
+                            <p className="text-sm leading-7 text-slate-600 sm:text-base">
                               {faq.answer}
                             </p>
                           </div>
@@ -304,51 +252,61 @@ export default function FAQ() {
                 );
               })}
             </div>
-
-            {/* Bottom CTA */}
+                        {/* Bottom CTA */}
 
             <motion.div
               initial={{
                 opacity: 0,
-                y: 20,
+                y: 25,
               }}
               whileInView={{
                 opacity: 1,
                 y: 0,
               }}
               transition={{
-                delay: 0.3,
+                delay: 0.2,
               }}
               viewport={{
                 once: true,
               }}
               className="
-                mt-10
-                rounded-[32px]
+                mt-8
+                rounded-3xl
                 border
                 border-blue-100
-                bg-blue-50
-                p-8
+                bg-gradient-to-br
+                from-blue-50
+                to-white
+                p-6
+
+                sm:p-8
               "
             >
-              <p
+              <span
                 className="
-                  text-sm
+                  inline-flex
+                  rounded-full
+                  bg-blue-100
+                  px-3
+                  py-1
+                  text-xs
                   font-semibold
                   uppercase
-                  tracking-[0.2em]
-                  text-blue-600
+                  tracking-[0.18em]
+                  text-blue-700
                 "
               >
                 Still Have Questions?
-              </p>
+              </span>
 
               <h3
                 className="
-                  mt-3
-                  text-3xl
+                  mt-4
+                  text-2xl
                   font-black
                   text-slate-900
+
+                  sm:text-3xl
                 "
               >
                 We're happy to help.
@@ -358,36 +316,44 @@ export default function FAQ() {
                 className="
                   mt-4
                   max-w-2xl
-                  text-lg
-                  leading-8
+                  text-sm
+                  leading-7
                   text-slate-600
+
+                  sm:text-base
                 "
               >
                 If you couldn't find the answer you're looking for,
-                contact our team. We'll help you choose the right
-                test, explain the booking process, or answer any
-                questions about home sample collection and reports.
+                contact our team. We'll help you choose the right test,
+                explain the booking process, and answer any questions
+                about home sample collection or reports.
               </p>
 
               <div
                 className="
-                  mt-8
+                  mt-6
                   flex
-                  flex-wrap
-                  gap-4
+                  flex-col
+                  gap-3
+
+                  sm:flex-row
                 "
               >
                 <a
                   href={`tel:${SITE_CONFIG.phone}`}
                   className="
-                    rounded-full
+                    inline-flex
+                    items-center
+                    justify-center
+                    rounded-xl
                     bg-blue-600
-                    px-7
-                    py-3.5
+                    px-6
+                    py-3
+                    text-sm
                     font-semibold
                     text-white
                     transition
-                    hover:bg-blue-500
+                    hover:bg-blue-700
                   "
                 >
                   Call Now
@@ -398,12 +364,16 @@ export default function FAQ() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="
-                    rounded-full
+                    inline-flex
+                    items-center
+                    justify-center
+                    rounded-xl
                     border
                     border-slate-200
                     bg-white
-                    px-7
-                    py-3.5
+                    px-6
+                    py-3
+                    text-sm
                     font-semibold
                     text-slate-700
                     transition
@@ -415,7 +385,6 @@ export default function FAQ() {
                 </a>
               </div>
             </motion.div>
-
           </motion.div>
         </div>
       </div>

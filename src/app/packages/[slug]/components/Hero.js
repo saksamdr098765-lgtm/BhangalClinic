@@ -13,7 +13,7 @@ import {
 const fadeUp = {
   initial: {
     opacity: 0,
-    y: 30,
+    y: 20,
   },
   animate: {
     opacity: 1,
@@ -28,12 +28,17 @@ export default function Hero({ pkg }) {
         relative
         overflow-hidden
         bg-slate-50
-        pt-32
-        pb-20
+        pt-24
+        pb-14
 
-        lg:pt-40
+        sm:pt-28
+        sm:pb-20
+
+        lg:pt-36
+        lg:pb-24
       "
     >
+
       {/* Background */}
 
       <div className="absolute inset-0 bg-slate-50" />
@@ -42,37 +47,45 @@ export default function Hero({ pkg }) {
         className="
           absolute
           inset-0
-          opacity-40
+          opacity-30
           [background-image:radial-gradient(#cbd5e1_1px,transparent_1px)]
-          [background-size:28px_28px]
+          [background-size:24px_24px]
         "
       />
+
 
       <div
         className="
           absolute
-          -left-40
-          top-0
-          h-[420px]
-          w-[420px]
+          -left-32
+          top-10
+          h-64
+          w-64
           rounded-full
-          bg-blue-100/50
+          bg-blue-100/60
           blur-3xl
+
+          sm:h-[420px]
+          sm:w-[420px]
         "
       />
 
       <div
         className="
           absolute
-          -right-40
+          -right-32
           bottom-0
-          h-[420px]
-          w-[420px]
+          h-64
+          w-64
           rounded-full
           bg-cyan-100/50
           blur-3xl
+
+          sm:h-[420px]
+          sm:w-[420px]
         "
       />
+
 
       <div
         className="
@@ -80,26 +93,33 @@ export default function Hero({ pkg }) {
           z-10
           mx-auto
           max-w-7xl
-          px-6
+          px-4
+
+          sm:px-6
         "
       >
+
         <div
           className="
             grid
             items-center
-            gap-16
+            gap-10
 
             lg:grid-cols-2
+            lg:gap-16
           "
         >
-          {/* Left */}
+
+
+          {/* LEFT */}
 
           <motion.div
             {...fadeUp}
             transition={{
-              duration: .5,
+              duration:.45
             }}
           >
+
             <span
               className="
                 inline-flex
@@ -107,25 +127,32 @@ export default function Hero({ pkg }) {
                 border
                 border-blue-100
                 bg-white
-                px-4
-                py-2
-                text-sm
-                font-medium
+                px-3
+                py-1.5
+                text-xs
+                font-semibold
                 text-blue-700
                 shadow-sm
+
+                sm:px-4
+                sm:py-2
+                sm:text-sm
               "
             >
               {pkg.tests} Diagnostic Tests
             </span>
 
+
             <h1
               className="
-                mt-6
-                text-5xl
+                mt-5
+                text-3xl
                 font-black
-                leading-[1]
+                leading-tight
                 tracking-tight
                 text-slate-900
+
+                sm:text-5xl
 
                 lg:text-7xl
               "
@@ -133,45 +160,58 @@ export default function Hero({ pkg }) {
               {pkg.name}
             </h1>
 
+
             <p
               className="
-                mt-6
+                mt-5
                 max-w-xl
-                text-lg
-                leading-8
+                text-base
+                leading-7
                 text-slate-600
+
+                sm:mt-6
+                sm:text-lg
+                sm:leading-8
               "
             >
               {pkg.description}
             </p>
 
+
+
             {/* Highlights */}
 
             <div
               className="
-                mt-8
+                mt-6
                 flex
                 flex-wrap
-                gap-3
+                gap-2
+
+                sm:mt-8
+                sm:gap-3
               "
             >
+
               {[
                 {
-                  icon: FiHome,
-                  text: "Home Collection",
+                  icon:FiHome,
+                  text:"Home Collection"
                 },
                 {
-                  icon: FiClock,
-                  text: "24h Reports",
+                  icon:FiClock,
+                  text:"24h Reports"
                 },
                 {
-                  icon: FiShield,
-                  text: "NABL Certified",
+                  icon:FiShield,
+                  text:"NABL Certified"
                 },
-              ].map((item) => {
-                const Icon = item.icon;
+              ].map((item)=>{
+
+                const Icon=item.icon;
 
                 return (
+
                   <div
                     key={item.text}
                     className="
@@ -182,50 +222,69 @@ export default function Hero({ pkg }) {
                       border
                       border-slate-200
                       bg-white/80
-                      px-4
+                      px-3
                       py-2
-                      backdrop-blur
                     "
                   >
-                    <Icon className="text-blue-600" />
+
+                    <Icon className="text-sm text-blue-600"/>
 
                     <span
                       className="
-                        text-sm
+                        text-xs
                         font-medium
                         text-slate-700
+
+                        sm:text-sm
                       "
                     >
                       {item.text}
                     </span>
+
                   </div>
+
                 );
+
               })}
+
             </div>
+
+
 
             {/* Price */}
 
-            <div className="mt-10">
+            <div className="mt-8 sm:mt-10">
 
-              <div className="flex items-end gap-4">
+              <div
+                className="
+                  flex
+                  flex-wrap
+                  items-end
+                  gap-3
+                "
+              >
 
                 <span
                   className="
-                    text-5xl
+                    text-4xl
                     font-black
-                    tracking-tight
                     text-slate-900
+
+                    sm:text-5xl
                   "
                 >
                   ₹{pkg.price}
                 </span>
 
+
                 <span
                   className="
-                    pb-2
-                    text-2xl
+                    pb-1
+                    text-xl
                     text-slate-400
                     line-through
+
+                    sm:text-2xl
                   "
                 >
                   ₹{pkg.originalPrice}
@@ -233,10 +292,12 @@ export default function Hero({ pkg }) {
 
               </div>
 
+
               <p
                 className="
                   mt-2
-                  font-medium
+                  text-sm
+                  font-semibold
                   text-emerald-600
                 "
               >
@@ -245,18 +306,23 @@ export default function Hero({ pkg }) {
 
             </div>
 
+
+
+
             {/* CTA */}
 
             <div
               className="
-                mt-10
+                mt-8
                 flex
                 flex-col
-                gap-4
+                gap-3
 
                 sm:flex-row
+                sm:mt-10
               "
             >
+
               <Link
                 href="/book-test"
                 className="
@@ -267,16 +333,21 @@ export default function Hero({ pkg }) {
                   gap-3
                   rounded-full
                   bg-blue-600
-                  px-8
-                  py-4
+                  px-7
+                  py-3.5
+                  text-sm
                   font-semibold
                   text-white
                   shadow-lg
-                  shadow-blue-600/20
                   transition
                   hover:-translate-y-1
+
+                  sm:px-8
+                  sm:py-4
+                  sm:text-base
                 "
               >
+
                 Book This Package
 
                 <FiArrowRight
@@ -285,7 +356,9 @@ export default function Hero({ pkg }) {
                     group-hover:translate-x-1
                   "
                 />
+
               </Link>
+
 
               <Link
                 href="/contact"
@@ -294,54 +367,70 @@ export default function Hero({ pkg }) {
                   border
                   border-slate-200
                   bg-white
-                  px-8
-                  py-4
+                  px-7
+                  py-3.5
+                  text-center
+                  text-sm
                   font-semibold
                   text-slate-700
                   transition
                   hover:border-blue-300
                   hover:bg-blue-50
+
+                  sm:px-8
+                  sm:py-4
+                  sm:text-base
                 "
               >
                 Talk to an Expert
               </Link>
+
             </div>
+
 
           </motion.div>
 
-          {/* Right */}
+
+
+
+
+          {/* RIGHT CARD */}
 
           <motion.div
             {...fadeUp}
             transition={{
-              delay: .15,
+              delay:.15
             }}
-            className="
-              relative
-            "
           >
+
             <div
               className="
-                rounded-[32px]
+                rounded-3xl
                 border
                 border-slate-200
                 bg-white/80
-                p-8
+                p-5
                 shadow-xl
                 backdrop-blur-xl
+
+                sm:p-8
               "
             >
+
               <h3
                 className="
-                  text-xl
+                  text-lg
                   font-bold
                   text-slate-900
+
+                  sm:text-xl
                 "
               >
                 Package Highlights
               </h3>
 
-              <div className="mt-8 space-y-5">
+
+              <div className="mt-6 space-y-4 sm:mt-8 sm:space-y-5">
 
                 {[
                   `${pkg.tests} Health Tests`,
@@ -349,7 +438,8 @@ export default function Hero({ pkg }) {
                   "Digital Reports",
                   "NABL Certified Laboratory",
                   "Doctor Reviewed Reports",
-                ].map((item) => (
+                ].map((item)=>(
+
                   <div
                     key={item}
                     className="
@@ -358,58 +448,68 @@ export default function Hero({ pkg }) {
                       gap-3
                     "
                   >
+
                     <div
                       className="
                         flex
-                        h-10
-                        w-10
+                        h-9
+                        w-9
+                        shrink-0
                         items-center
                         justify-center
                         rounded-full
                         bg-blue-50
                       "
                     >
-                      <FiCheckCircle
-                        className="text-blue-600"
-                      />
+                      <FiCheckCircle className="text-blue-600"/>
                     </div>
+
 
                     <span
                       className="
+                        text-sm
                         font-medium
                         text-slate-700
+
+                        sm:text-base
                       "
                     >
                       {item}
                     </span>
 
                   </div>
+
                 ))}
 
               </div>
 
+
+
               <div
                 className="
-                  mt-8
+                  mt-6
                   rounded-2xl
                   bg-blue-50
-                  p-5
+                  p-4
+
+                  sm:mt-8
+                  sm:p-5
                 "
               >
-                <p
-                  className="
-                    text-sm
-                    text-slate-600
-                  "
-                >
+
+                <p className="text-sm text-slate-600">
                   Recommended For
                 </p>
 
                 <p
                   className="
                     mt-2
+                    text-sm
                     font-semibold
+                    leading-6
                     text-slate-900
+
+                    sm:text-base
                   "
                 >
                   Annual health checkups, working professionals,
@@ -418,11 +518,16 @@ export default function Hero({ pkg }) {
 
               </div>
 
+
             </div>
+
           </motion.div>
 
+
         </div>
+
       </div>
+
     </section>
   );
 }

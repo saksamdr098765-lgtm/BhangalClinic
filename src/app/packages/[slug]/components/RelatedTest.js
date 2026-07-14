@@ -5,25 +5,41 @@ import { motion } from "framer-motion";
 import {
   FiArrowRight,
   FiActivity,
+  FiCheckCircle,
 } from "react-icons/fi";
 
 export default function RelatedPackages({
   packages = [],
   currentSlug,
 }) {
+
   const related = packages
     .filter((item) => item.slug !== currentSlug)
     .slice(0, 3);
 
+
   if (!related.length) return null;
+
 
   return (
     <section className="bg-white py-24">
+
       <div className="mx-auto max-w-7xl px-6">
 
-        {/* Heading */}
 
-        <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
+        {/* Header */}
+
+        <div
+          className="
+            flex
+            flex-col
+            justify-between
+            gap-6
+
+            lg:flex-row
+            lg:items-end
+          "
+        >
 
           <div>
 
@@ -41,8 +57,9 @@ export default function RelatedPackages({
                 text-blue-700
               "
             >
-              Explore More
+              More Healthcare Options
             </span>
+
 
             <h2
               className="
@@ -58,6 +75,7 @@ export default function RelatedPackages({
               Related Health Packages
             </h2>
 
+
             <p
               className="
                 mt-5
@@ -67,33 +85,43 @@ export default function RelatedPackages({
                 text-slate-600
               "
             >
-              Looking for something different? Explore more
-              diagnostic packages designed for preventive
-              healthcare and routine wellness.
+              Explore similar diagnostic packages designed for
+              preventive healthcare, routine screening, and
+              complete wellness monitoring.
             </p>
 
           </div>
 
+
           <Link
             href="/packages"
             className="
+              group
               inline-flex
               items-center
               gap-2
               font-semibold
               text-blue-600
               transition
-              hover:gap-3
             "
           >
+
             View All Packages
 
-            <FiArrowRight />
+            <FiArrowRight
+              className="
+                transition
+                group-hover:translate-x-1
+              "
+            />
+
           </Link>
 
         </div>
 
-        {/* Cards */}
+
+
+        {/* Packages */}
 
         <div
           className="
@@ -101,45 +129,55 @@ export default function RelatedPackages({
             grid
             gap-6
 
+            md:grid-cols-2
+
             lg:grid-cols-3
           "
         >
+
           {related.map((pkg, index) => (
+
             <motion.div
               key={pkg.slug}
               initial={{
-                opacity: 0,
-                y: 30,
+                opacity:0,
+                y:30,
               }}
               whileInView={{
-                opacity: 1,
-                y: 0,
+                opacity:1,
+                y:0,
               }}
               transition={{
-                delay: index * .08,
+                delay:index * 0.08,
               }}
               viewport={{
-                once: true,
+                once:true,
               }}
             >
+
               <Link
                 href={`/packages/${pkg.slug}`}
                 className="
                   group
                   block
-                  rounded-[30px]
+                  h-full
+                  rounded-[32px]
                   border
                   border-slate-200
-                  bg-slate-50
+                  bg-white
                   p-8
                   transition-all
                   duration-300
+
                   hover:-translate-y-1
                   hover:border-blue-200
-                  hover:bg-white
-                  hover:shadow-lg
+                  hover:shadow-xl
                 "
               >
+
+
+                {/* Icon */}
+
                 <div
                   className="
                     flex
@@ -151,13 +189,17 @@ export default function RelatedPackages({
                     bg-blue-50
                   "
                 >
+
                   <FiActivity
                     className="
                       text-2xl
                       text-blue-600
                     "
                   />
+
                 </div>
+
+
 
                 <h3
                   className="
@@ -170,6 +212,8 @@ export default function RelatedPackages({
                   {pkg.name}
                 </h3>
 
+
+
                 <p
                   className="
                     mt-4
@@ -181,6 +225,57 @@ export default function RelatedPackages({
                   {pkg.description}
                 </p>
 
+
+
+                {/* Features */}
+
+                <div
+                  className="
+                    mt-6
+                    space-y-2
+                  "
+                >
+
+                  <div
+                    className="
+                      flex
+                      items-center
+                      gap-2
+                      text-sm
+                      text-slate-600
+                    "
+                  >
+
+                    <FiCheckCircle className="text-blue-600"/>
+
+                    Comprehensive Health Tests
+
+                  </div>
+
+
+                  <div
+                    className="
+                      flex
+                      items-center
+                      gap-2
+                      text-sm
+                      text-slate-600
+                    "
+                  >
+
+                    <FiCheckCircle className="text-blue-600"/>
+
+                    Home Sample Collection
+
+                  </div>
+
+                </div>
+
+
+
+
+                {/* Bottom */}
+
                 <div
                   className="
                     mt-8
@@ -189,6 +284,7 @@ export default function RelatedPackages({
                     justify-between
                   "
                 >
+
                   <div>
 
                     <p
@@ -200,8 +296,10 @@ export default function RelatedPackages({
                       Starting From
                     </p>
 
+
                     <p
                       className="
+                        mt-1
                         text-3xl
                         font-black
                         text-slate-900
@@ -211,6 +309,8 @@ export default function RelatedPackages({
                     </p>
 
                   </div>
+
+
 
                   <div
                     className="
@@ -223,22 +323,30 @@ export default function RelatedPackages({
                       bg-blue-600
                       text-white
                       transition
+
                       group-hover:translate-x-1
                     "
                   >
+
                     <FiArrowRight />
+
                   </div>
 
+
                 </div>
+
 
               </Link>
 
             </motion.div>
+
           ))}
 
         </div>
 
+
       </div>
+
     </section>
   );
 }

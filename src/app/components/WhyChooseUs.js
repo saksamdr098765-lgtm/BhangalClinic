@@ -1,15 +1,15 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   FiHome,
   FiClock,
   FiShield,
   FiFileText,
-  FiCheck,
+  FiArrowRight,
 } from "react-icons/fi";
-
 
 const features = [
   {
@@ -18,7 +18,7 @@ const features = [
     description:
       "Book online and our trained phlebotomist visits your home at your preferred time.",
     color: "bg-blue-50",
-    icon: "text-blue-600",
+    iconColor: "text-blue-600",
   },
   {
     icon: FiClock,
@@ -26,7 +26,7 @@ const features = [
     description:
       "Most routine pathology reports are delivered digitally within the same day.",
     color: "bg-emerald-50",
-    icon: "text-emerald-600",
+    iconColor: "text-emerald-600",
   },
   {
     icon: FiShield,
@@ -34,400 +34,187 @@ const features = [
     description:
       "Modern laboratory equipment with strict quality control for dependable results.",
     color: "bg-violet-50",
-    icon: "text-violet-600",
+    iconColor: "text-violet-600",
   },
   {
     icon: FiFileText,
-    title: "Online Booking",
+    title: "Easy Online Booking",
     description:
-      "Book tests, pay online and download reports anytime from any device.",
+      "Book tests, make payments and download reports anytime from any device.",
     color: "bg-orange-50",
-    icon: "text-orange-600",
+    iconColor: "text-orange-600",
   },
 ];
 
-
 export default function WhyChooseUs() {
   return (
-    <section
-      className="
-        relative
-        overflow-hidden
-        bg-gradient-to-b
-        from-white
-        via-slate-50
-        to-white
-        py-16
-
-        sm:py-20
-        lg:py-28
-      "
-    >
-
+    <section className="relative overflow-hidden py-16 sm:py-20 lg:py-28">
       {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-slate-50 to-white -z-20" />
 
-      <div
-        className="
-          absolute
-          left-0
-          top-0
-          h-60
-          w-60
-          rounded-full
-          bg-blue-200/20
-          blur-[90px]
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,#dbeafe,transparent_35%),radial-gradient(circle_at_bottom_right,#cffafe,transparent_35%)] opacity-80" />
 
-          sm:h-80
-          sm:w-80
-          sm:blur-[120px]
-        "
-      />
-
-
-      <div
-        className="
-          absolute
-          bottom-0
-          right-0
-          h-72
-          w-72
-          rounded-full
-          bg-cyan-200/20
-          blur-[100px]
-
-          sm:h-96
-          sm:w-96
-          sm:blur-[120px]
-        "
-      />
-
-
-
-      <div
-        className="
-          relative
-          z-10
-          mx-auto
-          max-w-7xl
-          px-4
-
-          sm:px-6
-        "
-      >
-
-
-        <div
-          className="
-            grid
-            items-center
-            gap-12
-
-            lg:grid-cols-2
-            lg:gap-16
-          "
-        >
-
-
-          {/* Content */}
-
-          <motion.div
-            initial={{
-              opacity:0,
-              x:-40,
-            }}
-            whileInView={{
-              opacity:1,
-              x:0,
-            }}
-            viewport={{
-              once:true,
-            }}
-          >
-
-            <span
-              className="
-                rounded-full
-                bg-blue-100
-                px-3
-                py-2
-                text-xs
-                font-semibold
-                text-blue-700
-
-                sm:px-4
-                sm:text-sm
-              "
-            >
-              Why Patients Trust Us
-            </span>
-
-
-            <h2
-              className="
-                mt-5
-                text-3xl
-                font-black
-                leading-tight
-                text-slate-900
-
-                sm:mt-6
-                sm:text-4xl
-
-                lg:text-5xl
-              "
-            >
-              Modern diagnostics,
-              <br />
-              delivered with care.
-            </h2>
-
-
-            <p
-              className="
-                mt-5
-                text-base
-                leading-7
-                text-slate-600
-
-                sm:mt-6
-                sm:text-lg
-                sm:leading-8
-              "
-            >
-              From online booking to digital reports, we've designed every
-              step to make diagnostic testing faster, easier and more reliable.
-            </p>
-
-
-
-            {/* Points */}
-
-            <div className="mt-8 space-y-4 sm:mt-10 sm:space-y-5">
-
-              {[
-                "Experienced Pathologists",
-                "Advanced Laboratory Equipment",
-                "Accurate & Reliable Reports",
-                "Fast Home Sample Collection",
-              ].map((item)=>(
-
-                <div
-                  key={item}
-                  className="flex items-center gap-3 sm:gap-4"
-                >
-
-                  <div
-                    className="
-                      flex
-                      h-9
-                      w-9
-                      shrink-0
-                      items-center
-                      justify-center
-                      rounded-full
-                      bg-blue-600
-                      text-white
-
-                      sm:h-10
-                      sm:w-10
-                    "
-                  >
-                    <FiCheck />
-                  </div>
-
-
-                  <span
-                    className="
-                      text-sm
-                      font-medium
-                      text-slate-700
-
-                      sm:text-lg
-                    "
-                  >
-                    {item}
-                  </span>
-
-
-                </div>
-
-              ))}
-
-            </div>
-
-
-          </motion.div>
-
-
-
-
-
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
           {/* Image */}
-
           <motion.div
-            initial={{
-              opacity:0,
-              x:40,
-            }}
-            whileInView={{
-              opacity:1,
-              x:0,
-            }}
-            viewport={{
-              once:true,
-            }}
-            className="relative"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="relative order-1 lg:order-2"
           >
-
-
-            <div
-              className="
-                relative
-                h-[360px]
-                overflow-hidden
-                rounded-[28px]
-                shadow-2xl
-
-                sm:h-[460px]
-
-                lg:h-[560px]
-                lg:rounded-[36px]
-              "
-            >
-
+            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-2xl">
               <Image
                 src="/doctor.jpg"
+                alt="Clinical Laboratory"
                 fill
-                alt="Bhangal Clinical Laboratory"
                 className="object-cover"
               />
 
-
-              <div
-                className="
-                  absolute
-                  inset-0
-                  bg-gradient-to-t
-                  from-black/50
-                  via-black/5
-                  to-transparent
-                "
-              />
-
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
             </div>
 
-
-
-
-            {/* Floating Card 1 */}
-
-            <div
-              className="
-                absolute
-                left-3
-                top-5
-                rounded-2xl
-                bg-white
-                p-3
-                shadow-xl
-
-                sm:left-6
-                sm:top-8
-                sm:rounded-3xl
-                sm:p-5
-
-                lg:-left-10
-                lg:top-10
-              "
-            >
-
-              <div className="flex items-center gap-3">
-
-                <div className="rounded-xl bg-blue-50 p-2.5 sm:rounded-2xl sm:p-3">
-
-                  <FiHome className="text-lg text-blue-600 sm:text-xl" />
-
+            {/* Floating Card */}
+            <div className="hidden lg:block absolute -left-8 top-10 rounded-3xl border border-white/40 bg-white/90 backdrop-blur-xl p-5 shadow-2xl">
+              <div className="flex items-center gap-4">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100">
+                  <FiHome className="text-2xl text-blue-600" />
                 </div>
 
-
                 <div>
-
-                  <p className="text-xs text-slate-500 sm:text-sm">
-                    Service
+                  <p className="text-sm text-slate-500">
+                    Trusted Service
                   </p>
 
-                  <h4 className="text-sm font-bold sm:text-base">
+                  <h4 className="font-bold text-slate-900">
                     Home Collection
                   </h4>
-
                 </div>
-
               </div>
-
             </div>
 
-
-
-
-
-            {/* Floating Card 2 */}
-
-            <div
-              className="
-                absolute
-                bottom-5
-                right-3
-                rounded-2xl
-                bg-white
-                p-3
-                shadow-xl
-
-                sm:right-6
-                sm:bottom-8
-                sm:rounded-3xl
-                sm:p-5
-
-                lg:-right-10
-                lg:bottom-12
-              "
-            >
-
-              <div className="flex items-center gap-3">
-
-                <div className="rounded-xl bg-emerald-50 p-2.5 sm:rounded-2xl sm:p-3">
-
-                  <FiClock className="text-lg text-emerald-600 sm:text-xl" />
-
+            {/* Floating Card */}
+            <div className="hidden lg:block absolute -right-8 bottom-12 rounded-3xl border border-white/40 bg-white/90 backdrop-blur-xl p-5 shadow-2xl">
+              <div className="flex items-center gap-4">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100">
+                  <FiClock className="text-2xl text-emerald-600" />
                 </div>
-
 
                 <div>
-
-                  <p className="text-xs text-slate-500 sm:text-sm">
-                    Reports
+                  <p className="text-sm text-slate-500">
+                    Fast Reports
                   </p>
 
-                  <h4 className="text-sm font-bold sm:text-base">
-                    Same Day
+                  <h4 className="font-bold text-slate-900">
+                    Same Day Delivery
                   </h4>
-
                 </div>
-
-
               </div>
-
             </div>
-
-
           </motion.div>
 
+          {/* Content */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="order-2 lg:order-1"
+          >
+            <span className="inline-flex rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
+              Why Choose Us
+            </span>
 
+            <h2 className="mt-6 text-3xl font-black leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
+              Healthcare that
+              <span className="block bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+                Comes to You
+              </span>
+            </h2>
+
+            <p className="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
+              Experience reliable diagnostic services designed around your
+              convenience. From home sample collection to secure online reports,
+              every step is simple, fast and trusted by thousands of patients.
+            </p>
+
+            <div className="mt-10 grid gap-4 sm:grid-cols-2">
+                            {features.map((feature) => {
+                const Icon = feature.icon;
+
+                return (
+                  <motion.div
+                    key={feature.title}
+                    whileHover={{ y: -6 }}
+                    transition={{ duration: 0.25 }}
+                    className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all hover:border-blue-100 hover:shadow-xl"
+                  >
+                    <div
+                      className={`mb-4 flex h-12 w-12 items-center justify-center rounded-xl ${feature.color}`}
+                    >
+                      <Icon
+                        className={`text-xl ${feature.iconColor}`}
+                      />
+                    </div>
+
+                    <h3 className="text-lg font-semibold text-slate-900">
+                      {feature.title}
+                    </h3>
+
+                    <p className="mt-2 text-sm leading-6 text-slate-600">
+                      {feature.description}
+                    </p>
+                  </motion.div>
+                );
+              })}
+            </div>
+
+            {/* Stats */}
+            <div className="mt-10 grid grid-cols-3 gap-4 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+              <div className="text-center">
+                <h3 className="text-2xl font-black text-blue-600 sm:text-3xl">
+                  15K+
+                </h3>
+                <p className="mt-1 text-xs text-slate-500 sm:text-sm">
+                  Patients
+                </p>
+              </div>
+
+              <div className="text-center">
+                <h3 className="text-2xl font-black text-emerald-600 sm:text-3xl">
+                  250+
+                </h3>
+                <p className="mt-1 text-xs text-slate-500 sm:text-sm">
+                  Tests
+                </p>
+              </div>
+
+              <div className="text-center">
+                <h3 className="text-2xl font-black text-violet-600 sm:text-3xl">
+                  99%
+                </h3>
+                <p className="mt-1 text-xs text-slate-500 sm:text-sm">
+                  Accuracy
+                </p>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+              <Link
+                href="/book-test"
+                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-blue-600 px-7 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-blue-700 hover:shadow-xl"
+              >
+                Book Your Test
+                <FiArrowRight />
+              </Link>
+
+              <p className="text-sm text-slate-500">
+                Online booking • Home collection • Digital reports
+              </p>
+            </div>
+          </motion.div>
         </div>
-
-
       </div>
-
-
     </section>
   );
 }

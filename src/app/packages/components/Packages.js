@@ -36,7 +36,7 @@ const displayedPackages =  filteredPackages.length > 0
     from-slate-50
     via-white
     to-slate-50
-    pt-36
+
     pb-24
   "
 >

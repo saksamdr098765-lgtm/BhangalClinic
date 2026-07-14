@@ -11,7 +11,7 @@ import {
   FiDroplet,
   FiSun,
   FiUser,
-  FiUserCheck
+  FiUserCheck,
 } from "react-icons/fi";
 
 import {
@@ -27,7 +27,7 @@ const bodyAreas = [
   {
     value: "general",
     title: "General Health",
-    description: "Fatigue, fever, weakness & overall wellness",
+    description: "Fatigue, fever, weakness & wellness",
     icon: FiActivity,
     color: "bg-blue-50 text-blue-600",
   },
@@ -76,21 +76,21 @@ const bodyAreas = [
   {
     value: "kidney",
     title: "Kidneys",
-    description: "Urine, swelling, kidney health",
+    description: "Urine & kidney health",
     icon: GiKidneys,
     color: "bg-indigo-50 text-indigo-600",
   },
   {
     value: "liver",
     title: "Liver",
-    description: "Jaundice, liver function",
+    description: "Jaundice & liver function",
     icon: GiLiver,
     color: "bg-emerald-50 text-emerald-600",
   },
   {
     value: "bones",
     title: "Bones & Joints",
-    description: "Joint pain, vitamin deficiency",
+    description: "Joint pain & vitamin deficiency",
     icon: GiBoneKnife,
     color: "bg-slate-100 text-slate-700",
   },
@@ -102,19 +102,19 @@ const bodyAreas = [
     color: "bg-purple-50 text-purple-600",
   },
   {
-  value: "women",
-  title: "Women's Health",
-  description: "PCOS, pregnancy, menstrual & hormonal health",
-  icon: FiUser,
-  color: "bg-pink-50 text-pink-600",
-},
-{
-  value: "men",
-  title: "Men's Health",
-  description: "Prostate, testosterone & overall men's wellness",
-  icon: FiUserCheck,
-  color: "bg-sky-50 text-sky-600",
-},
+    value: "women",
+    title: "Women's Health",
+    description: "PCOS, pregnancy & hormones",
+    icon: FiUser,
+    color: "bg-pink-50 text-pink-600",
+  },
+  {
+    value: "men",
+    title: "Men's Health",
+    description: "Prostate & testosterone",
+    icon: FiUserCheck,
+    color: "bg-sky-50 text-sky-600",
+  },
 ];
 
 export default function Step2BodyArea({
@@ -125,64 +125,197 @@ export default function Step2BodyArea({
 }) {
   return (
     <motion.section
-      initial={{ opacity: 0, y: 25 }}
-      animate={{ opacity: 1, y: 0 }}
-      className="rounded-[36px] border border-slate-200/70 bg-white/80 p-8 shadow-xl backdrop-blur-2xl"
+      initial={{
+        opacity: 0,
+        y: 24,
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+      }}
+      transition={{
+        duration: 0.4,
+      }}
+      className="
+        rounded-3xl
+        border
+        border-slate-200
+        bg-white
+        p-6
+        shadow-sm
+
+        sm:p-8
+
+        lg:p-10
+      "
     >
       {/* Heading */}
 
-      <span className="rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
-        Step 2
-      </span>
+      <div className="max-w-3xl">
+        <span
+          className="
+            inline-flex
+            rounded-full
+            border
+            border-blue-100
+            bg-blue-50
+            px-4
+            py-2
+            text-xs
+            font-semibold
+            uppercase
+            tracking-[0.22em]
+            text-blue-700
+          "
+        >
+          Step 2 of 5
+        </span>
 
-      <h2 className="mt-5 text-4xl font-black tracking-tight text-slate-900">
-        Which area is bothering you?
-      </h2>
+        <h2
+          className="
+            mt-5
+            text-3xl
+            font-black
+            leading-tight
+            text-slate-900
 
-      <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
-        Select the body area that best matches your symptoms. You'll be
-        able to choose specific symptoms in the next step.
-      </p>
+            sm:text-4xl
 
-      {/* Grid */}
+            lg:text-5xl
+          "
+        >
+          Which body area
+          <span className="block text-blue-600">
+            needs attention?
+          </span>
+        </h2>
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-        {bodyAreas.map((item) => {
+        <p
+          className="
+            mt-5
+            max-w-2xl
+            text-base
+            leading-8
+            text-slate-600
+
+            sm:text-lg
+          "
+        >
+          Choose the body area that best matches your symptoms.
+          We'll ask more specific questions in the next step.
+        </p>
+      </div>
+
+      <div
+        className="
+          mt-10
+          grid
+          gap-5
+
+          md:grid-cols-2
+
+          xl:grid-cols-3
+        "
+      >
+                {bodyAreas.map((item) => {
           const Icon = item.icon;
-
           const active = value === item.value;
 
           return (
             <motion.button
               key={item.value}
-              whileHover={{ y: -6 }}
-              whileTap={{ scale: 0.98 }}
+              type="button"
+              whileHover={{
+                y: -4,
+              }}
+              whileTap={{
+                scale: 0.98,
+              }}
               onClick={() => onChange(item.value)}
-              className={`group relative overflow-hidden rounded-[28px] border p-6 text-left transition-all duration-300
+              className={`
+                group
+                relative
+                overflow-hidden
+                rounded-2xl
+                border
+                p-6
+                text-left
+                transition-all
+                duration-300
 
-              ${
-                active
-                  ? "border-blue-600 bg-blue-50 shadow-xl"
-                  : "border-slate-200 bg-white hover:border-blue-200 hover:shadow-lg"
-              }`}
+                ${
+                  active
+                    ? "border-blue-600 bg-blue-50 shadow-lg"
+                    : "border-slate-200 bg-white hover:border-blue-300 hover:shadow-md"
+                }
+              `}
             >
               {active && (
-                <div className="absolute right-5 top-5 flex h-9 w-9 items-center justify-center rounded-full bg-blue-600 text-white">
+                <motion.div
+                  initial={{
+                    scale: 0,
+                  }}
+                  animate={{
+                    scale: 1,
+                  }}
+                  className="
+                    absolute
+                    right-5
+                    top-5
+                    flex
+                    h-9
+                    w-9
+                    items-center
+                    justify-center
+                    rounded-full
+                    bg-blue-600
+                    text-white
+                  "
+                >
                   <FiCheck />
-                </div>
+                </motion.div>
               )}
 
               <div
-                className={`flex h-16 w-16 items-center justify-center rounded-2xl ${item.color}`}
+                className={`
+                  flex
+                  h-16
+                  w-16
+                  items-center
+                  justify-center
+                  rounded-2xl
+                  transition-all
+
+                  ${item.color}
+
+                  ${
+                    !active &&
+                    "group-hover:scale-105"
+                  }
+                `}
               >
                 <Icon className="text-3xl" />
               </div>
 
-              <h3 className="mt-6 text-xl font-bold text-slate-900">
+              <h3
+                className="
+                  mt-6
+                  text-xl
+                  font-bold
+                  text-slate-900
+                "
+              >
                 {item.title}
               </h3>
 
-              <p className="mt-3 text-sm leading-7 text-slate-600">
+              <p
+                className="
+                  mt-3
+                  text-sm
+                  leading-7
+                  text-slate-600
+                "
+              >
                 {item.description}
               </p>
             </motion.button>
@@ -192,23 +325,83 @@ export default function Step2BodyArea({
 
       {/* Footer */}
 
-      <div className="mt-12 flex flex-col gap-4 border-t border-slate-100 pt-8 sm:flex-row sm:items-center sm:justify-between">
-        <button
+      <div
+        className="
+          mt-12
+          flex
+          flex-col
+          gap-4
+          border-t
+          border-slate-200
+          pt-8
+
+          sm:flex-row
+          sm:items-center
+          sm:justify-between
+        "
+      >        <button
+          type="button"
           onClick={previousStep}
-          className="flex items-center justify-center gap-3 rounded-2xl border border-slate-200 bg-white px-7 py-4 font-semibold text-slate-700 transition hover:bg-slate-50"
+          className="
+            inline-flex
+            items-center
+            justify-center
+            gap-3
+            rounded-xl
+            border
+            border-slate-200
+            bg-white
+            px-7
+            py-3.5
+            font-semibold
+            text-slate-700
+            transition-all
+            duration-300
+            hover:border-slate-300
+            hover:bg-slate-50
+          "
         >
           <FiArrowLeft />
+
           Back
         </button>
 
         <button
+          type="button"
           disabled={!value}
           onClick={nextStep}
-          className="group flex items-center justify-center gap-3 rounded-2xl bg-blue-600 px-8 py-4 font-semibold text-white transition hover:-translate-y-1 hover:shadow-xl disabled:cursor-not-allowed disabled:opacity-40"
+          className="
+            group
+            inline-flex
+            items-center
+            justify-center
+            gap-3
+            rounded-xl
+            bg-blue-600
+            px-7
+            py-3.5
+            font-semibold
+            text-white
+            transition-all
+            duration-300
+            hover:-translate-y-0.5
+            hover:bg-blue-700
+            hover:shadow-lg
+            disabled:cursor-not-allowed
+            disabled:opacity-40
+            disabled:hover:translate-y-0
+            disabled:hover:shadow-none
+          "
         >
           Continue
 
-          <FiArrowRight className="transition group-hover:translate-x-1" />
+          <FiArrowRight
+            className="
+              transition-transform
+              duration-300
+              group-hover:translate-x-1
+            "
+          />
         </button>
       </div>
     </motion.section>

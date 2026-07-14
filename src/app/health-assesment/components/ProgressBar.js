@@ -5,7 +5,7 @@ import { FiCheck } from "react-icons/fi";
 
 const steps = [
   "Who",
-  "Body Area",
+  "Body",
   "Symptoms",
   "Details",
   "Results",
@@ -15,62 +15,78 @@ export default function ProgressBar({
   currentStep,
   totalSteps,
 }) {
-  const progress = ((currentStep - 1) / (totalSteps - 1)) * 100;
+  const progress =
+    ((currentStep - 1) / (totalSteps - 1)) * 100;
 
   return (
-    <section className="-mt-10 relative z-20">
+    <section className="relative z-20 -mt-6 sm:-mt-8 lg:-mt-10">
+      <div
+        className="
+          rounded-2xl
+          border
+          border-slate-200
+          bg-white/90
+          p-4
+          shadow-lg
+          backdrop-blur-xl
 
-      <div className="rounded-[32px] border border-slate-200/70 bg-white/80 p-6 shadow-xl backdrop-blur-2xl">
-
+          sm:rounded-3xl
+          sm:p-6
+        "
+      >
         {/* Header */}
 
-        <div className="flex items-center justify-between">
-
+        <div className="flex items-center justify-between gap-4">
           <div>
-            <p className="text-sm font-medium text-slate-500">
+            <p className="text-xs font-medium uppercase tracking-wide text-slate-500 sm:text-sm">
               Health Assessment
             </p>
 
-            <h2 className="mt-1 text-2xl font-bold text-slate-900">
+            <h2 className="mt-1 text-lg font-bold text-slate-900 sm:text-2xl">
               Step {currentStep} of {totalSteps}
             </h2>
           </div>
 
-          <div className="rounded-full bg-blue-50 px-4 py-2">
-            <span className="font-semibold text-blue-700">
-              {Math.round(progress)}%
-            </span>
-          </div>
+          <div
+            className="
+              rounded-full
+              bg-blue-50
+              px-3
+              py-1.5
+              text-sm
+              font-semibold
+              text-blue-700
 
+              sm:px-4
+              sm:py-2
+            "
+          >
+            {Math.round(progress)}%
+          </div>
         </div>
 
-        {/* Progress Line */}
+        {/* Progress */}
 
-        <div className="relative mt-8 h-2 overflow-hidden rounded-full bg-slate-100">
-
+        <div className="relative mt-6 h-2 overflow-hidden rounded-full bg-slate-100">
           <motion.div
-            className="absolute left-0 top-0 h-full rounded-full bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600"
             initial={{ width: 0 }}
             animate={{
               width: `${progress}%`,
             }}
             transition={{
-              duration: 0.5,
+              duration: 0.45,
             }}
+            className="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600"
           />
-
         </div>
 
         {/* Steps */}
 
-        <div className="mt-8 grid grid-cols-5 gap-2">
-
+        <div className="mt-6 grid grid-cols-5 gap-2 sm:mt-8 sm:gap-3">
           {steps.map((label, index) => {
-            const stepNumber = index + 1;
-
-            const completed = stepNumber < currentStep;
-
-            const active = stepNumber === currentStep;
+            const step = index + 1;
+            const completed = step < currentStep;
+            const active = step === currentStep;
 
             return (
               <div
@@ -84,44 +100,64 @@ export default function ProgressBar({
                   transition={{
                     duration: 0.25,
                   }}
-                  className={`flex h-12 w-12 items-center justify-center rounded-full border text-sm font-bold transition-all
+                  className={`
+                    flex
+                    h-9
+                    w-9
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    text-xs
+                    font-bold
+                    transition-all
 
-                  ${
-                    completed
-                      ? "border-blue-600 bg-blue-600 text-white"
-                      : active
-                      ? "border-blue-600 bg-white text-blue-600 shadow-lg"
-                      : "border-slate-200 bg-slate-50 text-slate-400"
-                  }`}
+                    sm:h-11
+                    sm:w-11
+                    sm:text-sm
+
+                    ${
+                      completed
+                        ? "border-blue-600 bg-blue-600 text-white"
+                        : active
+                        ? "border-blue-600 bg-white text-blue-600 shadow-md"
+                        : "border-slate-200 bg-slate-50 text-slate-400"
+                    }
+                  `}
                 >
                   {completed ? (
-                    <FiCheck className="text-lg" />
+                    <FiCheck className="text-base" />
                   ) : (
-                    stepNumber
+                    step
                   )}
                 </motion.div>
 
                 <span
-                  className={`mt-3 text-center text-xs font-medium sm:text-sm
+                  className={`
+                    mt-2
+                    text-center
+                    text-[10px]
+                    font-medium
 
-                  ${
-                    active
-                      ? "text-slate-900"
-                      : completed
-                      ? "text-slate-700"
-                      : "text-slate-400"
-                  }`}
+                    sm:mt-3
+                    sm:text-xs
+
+                    ${
+                      active
+                        ? "text-slate-900"
+                        : completed
+                        ? "text-slate-700"
+                        : "text-slate-400"
+                    }
+                  `}
                 >
                   {label}
                 </span>
               </div>
             );
           })}
-
         </div>
-
       </div>
-
     </section>
   );
 }

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowRight, FiCheck } from "react-icons/fi";
 
 const stats = [
   {
@@ -26,290 +26,124 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section
-      className="
-        relative
-        overflow-hidden
-        bg-slate-50
-        pt-32
-        pb-20
+    <section className="relative overflow-hidden bg-white pt-24 pb-16 sm:pt-28 sm:pb-20 lg:pt-36 lg:pb-28">
 
-        sm:pt-36
-
-        lg:pt-44
-        lg:pb-28
-      "
-    >
       {/* Background */}
 
-      <div className="absolute inset-0 bg-slate-50" />
+      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-white via-slate-50 to-white" />
 
-      <div
-        className="
-          absolute
-          inset-0
-          opacity-40
-          [background-image:radial-gradient(#cbd5e1_1px,transparent_1px)]
-          [background-size:28px_28px]
-        "
-      />
+      <div className="absolute -left-32 top-0 -z-10 h-72 w-72 rounded-full bg-blue-100/60 blur-3xl sm:h-[420px] sm:w-[420px]" />
 
-      <div
-        className="
-          absolute
-          -left-32
-          top-0
-          h-[450px]
-          w-[450px]
-          rounded-full
-          bg-blue-100/60
-          blur-3xl
-        "
-      />
+      <div className="absolute -right-32 bottom-0 -z-10 h-72 w-72 rounded-full bg-cyan-100/60 blur-3xl sm:h-[420px] sm:w-[420px]" />
 
-      <div
-        className="
-          absolute
-          -right-32
-          bottom-0
-          h-[450px]
-          w-[450px]
-          rounded-full
-          bg-sky-100/60
-          blur-3xl
-        "
-      />
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
 
-      <div
-        className="
-          relative
-          z-10
-          mx-auto
-          max-w-7xl
-          px-4
+        <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
 
-          sm:px-6
-        "
-      >
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 40,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.8,
-          }}
-          className="
-            grid
-            items-center
-            gap-16
+          {/* Content */}
 
-            lg:grid-cols-2
-          "
-        >
-          {/* Left */}
+          <motion.div
+            initial={{ opacity: 0, y: 35 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="order-2 lg:order-1"
+          >
 
-          <div>
-            <span
-              className="
-                inline-flex
-                rounded-full
-                border
-                border-blue-100
-                bg-white
-                px-5
-                py-2
-                text-sm
-                font-semibold
-                text-blue-700
-                shadow-sm
-              "
-            >
+            <span className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
               About Our Laboratory
             </span>
 
-            <h1
-              className="
-                mt-8
-                text-5xl
-                font-black
-                leading-[0.95]
-                tracking-tight
-                text-slate-900
-
-                sm:text-6xl
-
-                lg:text-7xl
-              "
-            >
+            <h1 className="mt-6 text-4xl font-black leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-7xl lg:leading-[0.95]">
               Trusted
               <br />
-
               Diagnostics
               <br />
-
-              For Every
-
-              <span className="block text-blue-600">
-                Family.
+              <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+                For Every Family.
               </span>
             </h1>
 
-            <p
-              className="
-                mt-8
-                max-w-xl
-                text-lg
-                leading-8
-                text-slate-600
-              "
-            >
-              Bhangal Clinical Laboratory combines experienced
-              healthcare professionals with advanced diagnostic
-              technology to deliver accurate pathology testing,
-              timely reports, and compassionate care for every
-              family.
+            <p className="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
+              Bhangal Clinical Laboratory combines experienced healthcare
+              professionals with advanced diagnostic technology to deliver
+              accurate pathology testing, timely reports and compassionate care
+              for every family.
             </p>
 
-            {/* Buttons */}
+            {/* CTA */}
 
-            <div
-              className="
-                mt-10
-                flex
-                flex-col
-                gap-4
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
 
-                sm:flex-row
-              "
-            >
               <Link
                 href="/book-test"
-                className="
-                  flex
-                  items-center
-                  justify-center
-                  gap-3
-                  rounded-full
-                  bg-blue-600
-                  px-8
-                  py-4
-                  font-semibold
-                  text-white
-                  transition-all
-                  duration-300
-                  hover:-translate-y-1
-                  hover:shadow-lg
-                "
+                className="group inline-flex w-full items-center justify-center gap-3 rounded-2xl bg-blue-600 px-7 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-blue-700 hover:shadow-xl sm:w-auto"
               >
                 Book a Test
 
-                <FiArrowRight />
+                <FiArrowRight className="transition group-hover:translate-x-1" />
+
               </Link>
 
               <Link
                 href="/contact"
-                className="
-                  rounded-full
-                  border
-                  border-slate-200
-                  bg-white
-                  px-8
-                  py-4
-                  font-semibold
-                  text-slate-700
-                  transition
-                  hover:border-blue-300
-                  hover:bg-blue-50
-                "
+                className="inline-flex w-full items-center justify-center rounded-2xl border border-slate-200 bg-white px-7 py-4 font-semibold text-slate-700 transition hover:border-blue-300 hover:bg-blue-50 sm:w-auto"
               >
                 Contact Us
               </Link>
+
             </div>
 
-            {/* Features */}
+            {/* Highlights */}
 
-            <div
-              className="
-                mt-10
-                flex
-                flex-wrap
-                gap-3
-              "
-            >
+            <div className="mt-8 flex flex-wrap gap-3">
+
               {[
                 "NABL Certified",
                 "Home Collection",
                 "Fast Reports",
               ].map((item) => (
-                <span
+                <div
                   key={item}
-                  className="
-                    rounded-full
-                    border
-                    border-slate-200
-                    bg-white/80
-                    px-4
-                    py-2
-                    text-sm
-                    font-medium
-                    text-slate-700
-                    backdrop-blur
-                  "
+                  className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm"
                 >
-                  ✓ {item}
-                </span>
+                  <FiCheck className="text-blue-600" />
+
+                  {item}
+
+                </div>
               ))}
+
             </div>
-          </div>
 
-          {/* Right */}
+          </motion.div>
 
-          <div className="relative">
-            <div
-              className="
-                overflow-hidden
-                rounded-[32px]
-                border
-                border-slate-200
-                bg-white
-                shadow-xl
-              "
-            >
+          {/* Image */}
+
+          <motion.div
+            initial={{ opacity: 0, y: 35 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="relative order-1 lg:order-2"
+          >
+
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-2xl sm:rounded-[36px]">
+
               <Image
                 src="/images/about/lab.jpg"
+                fill
                 alt="Bhangal Clinical Laboratory"
-                width={700}
-                height={850}
-                className="
-                  h-[650px]
-                  w-full
-                  object-cover
-                "
+                className="object-cover"
+                priority
               />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+
             </div>
 
-            {/* Floating Card */}
+            {/* Floating Badge */}
 
-            <div
-              className="
-                absolute
-                -bottom-6
-                -left-6
-                rounded-3xl
-                border
-                border-slate-200
-                bg-white/90
-                px-6
-                py-5
-                shadow-xl
-                backdrop-blur-xl
-              "
-            >
+            <div className="absolute bottom-4 left-4 rounded-2xl border border-white/30 bg-white/90 px-5 py-4 shadow-xl backdrop-blur-xl sm:bottom-6 sm:left-6 lg:-left-8 lg:bottom-8">
+
               <p className="text-3xl font-black text-blue-600">
                 1000+
               </p>
@@ -317,115 +151,98 @@ export default function Hero() {
               <p className="mt-1 text-sm text-slate-600">
                 Happy Patients
               </p>
+
             </div>
-          </div>
-        </motion.div>
-                {/* Stats */}
 
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 40,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.8,
-          }}
-          viewport={{
-            once: true,
-          }}
-          className="
-            mt-20
-            rounded-[32px]
-            border
-            border-slate-200
-            bg-white/80
-            p-8
-            shadow-sm
-            backdrop-blur-xl
+          </motion.div>
 
-            md:p-10
-          "
+        </div>
+
+        {/* Stats */}
+                <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="mt-16 sm:mt-20"
         >
-          <div
-            className="
-              grid
-              grid-cols-2
-              gap-8
+          <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
 
-              lg:grid-cols-4
-            "
-          >
             {stats.map((item, index) => (
               <motion.div
                 key={item.label}
-                initial={{
-                  opacity: 0,
-                  y: 25,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{
                   delay: index * 0.1,
+                  duration: 0.5,
                 }}
-                viewport={{
-                  once: true,
+                viewport={{ once: true }}
+                whileHover={{
+                  y: -6,
                 }}
-                className="relative text-center"
+                className="
+                  group
+                  rounded-3xl
+                  border
+                  border-slate-200
+                  bg-white
+                  p-6
+                  shadow-sm
+                  transition-all
+                  duration-300
+                  hover:border-blue-100
+                  hover:shadow-xl
+
+                  sm:p-8
+                "
               >
-                {/* Divider */}
 
-                {index !== stats.length - 1 && (
-                  <div
-                    className="
-                      absolute
-                      right-0
-                      top-1/2
-                      hidden
-                      h-12
-                      w-px
-                      -translate-y-1/2
-                      bg-slate-200
-
-                      lg:block
-                    "
-                  />
-                )}
-
-                <h2
+                <h3
                   className="
-                    text-4xl
+                    text-3xl
                     font-black
                     tracking-tight
                     text-slate-900
+                    transition-colors
+                    duration-300
+
+                    group-hover:text-blue-600
 
                     sm:text-5xl
                   "
                 >
                   {item.number}
-                </h2>
+                </h3>
+
+                <div
+                  className="
+                    my-4
+                    h-1
+                    w-12
+                    rounded-full
+                    bg-blue-600
+                  "
+                />
 
                 <p
                   className="
-                    mt-3
                     text-sm
-                    font-medium
+                    font-semibold
                     uppercase
-                    tracking-[0.15em]
+                    tracking-[0.18em]
                     text-slate-500
                   "
                 >
                   {item.label}
                 </p>
+
               </motion.div>
             ))}
+
           </div>
         </motion.div>
+
       </div>
     </section>
   );

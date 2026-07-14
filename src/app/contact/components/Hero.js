@@ -12,420 +12,224 @@ import {
 
 export default function Hero() {
   return (
-    <section
-      className="
-        relative
-        overflow-hidden
-        bg-white
-        pt-32
-        pb-20
+    <section className="relative overflow-hidden bg-white pt-24 pb-14 sm:pt-28 sm:pb-20 lg:pt-36 lg:pb-24">
 
-        lg:pt-40
-        lg:pb-28
-      "
-    >
       {/* Background */}
 
-      <div
-        className="
-          absolute
-          left-0
-          top-0
-          h-80
-          w-80
-          rounded-full
-          bg-blue-100/60
-          blur-[140px]
-        "
-      />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-white" />
 
-      <div
-        className="
-          absolute
-          right-0
-          bottom-0
-          h-96
-          w-96
-          rounded-full
-          bg-cyan-100/60
-          blur-[160px]
-        "
-      />
+      <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-blue-100/60 blur-3xl" />
 
-      <div
-        className="
-          relative
-          z-10
-          mx-auto
-          max-w-7xl
-          px-4
+      <div className="absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-cyan-100/60 blur-3xl" />
 
-          sm:px-6
-        "
-      >
-        <div
-          className="
-            grid
-            items-center
-            gap-16
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
 
-            lg:grid-cols-5
-          "
-        >
+        <div className="grid items-center gap-12 lg:grid-cols-[1.2fr_.8fr] lg:gap-20">
+
           {/* Left */}
 
           <motion.div
-            initial={{
-              opacity: 0,
-              x: -40,
-            }}
-            animate={{
-              opacity: 1,
-              x: 0,
-            }}
-            transition={{
-              duration: .7,
-            }}
-            className="
-              lg:col-span-3
-            "
+            initial={{ opacity: 0, y: 35 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
           >
-            <span
-              className="
-                inline-flex
-                rounded-full
-                bg-blue-50
-                px-5
-                py-2
-                text-xs
-                font-semibold
-                uppercase
-                tracking-[0.25em]
-                text-blue-700
 
-                sm:text-sm
-              "
-            >
+            <span className="inline-flex rounded-full bg-blue-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-blue-700">
               Book Your Test
             </span>
 
-            <h1
-              className="
-                mt-8
-                text-5xl
-                font-black
-                leading-[0.95]
-                tracking-tight
-                text-slate-900
+            <h1 className="mt-6 text-4xl font-black leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
 
-                sm:text-6xl
-
-                lg:text-7xl
-              "
-            >
               Healthcare
               <br />
 
               Starts With
-              <br />
 
-              <span className="text-blue-600">
+              <span className="mt-2 block bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
                 One Booking.
               </span>
+
             </h1>
 
-            <p
-              className="
-                mt-8
-                max-w-2xl
-                text-lg
-                leading-9
-                text-slate-600
-              "
-            >
+            <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
               Schedule your diagnostic test, request home sample
-              collection, or speak with our laboratory team.
-              Fast booking, trusted reports, and compassionate
+              collection or speak with our laboratory team.
+              Fast booking, trusted reports and compassionate
               care—all in one place.
             </p>
 
-            <div
-              className="
-                mt-10
-                flex
-                flex-col
-                gap-4
+            {/* Buttons */}
 
-                sm:flex-row
-              "
-            >
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+
               <Link
                 href="#booking"
-                className="
-                  inline-flex
-                  items-center
-                  justify-center
-                  gap-3
-                  rounded-full
-                  bg-blue-600
-                  px-8
-                  py-4
-                  font-semibold
-                  text-white
-                  transition-all
-                  duration-300
-                  hover:-translate-y-1
-                  hover:shadow-xl
-                "
+                className="inline-flex items-center justify-center gap-3 rounded-2xl bg-blue-600 px-7 py-4 font-semibold text-white transition hover:-translate-y-1 hover:bg-blue-500 hover:shadow-xl"
               >
                 Book Appointment
-
                 <FiArrowRight />
               </Link>
 
               <a
                 href={`tel:${SITE_CONFIG.phone}`}
-                className="
-                  inline-flex
-                  items-center
-                  justify-center
-                  rounded-full
-                  border
-                  border-slate-200
-                  px-8
-                  py-4
-                  font-semibold
-                  text-slate-700
-                  transition
-                  hover:border-blue-300
-                  hover:bg-blue-50
-                "
+                className="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-7 py-4 font-semibold text-slate-700 transition hover:border-blue-300 hover:bg-blue-50"
               >
                 Call Laboratory
               </a>
+
             </div>
 
-            <div
-              className="
-                mt-12
-                flex
-                flex-wrap
-                gap-6
-              "
-            >
+            {/* Features */}
+
+            <div className="mt-10 flex flex-col gap-4 text-sm font-medium text-slate-700 sm:flex-row sm:flex-wrap sm:gap-6">
+
               <div className="flex items-center gap-3">
-                <FiHome className="text-blue-600 text-xl" />
-                <span className="font-medium text-slate-700">
-                  Home Collection
-                </span>
+                <FiHome className="text-lg text-blue-600" />
+                Home Collection
               </div>
 
               <div className="flex items-center gap-3">
-                <FiClock className="text-blue-600 text-xl" />
-                <span className="font-medium text-slate-700">
-                  Same Day Reports
-                </span>
+                <FiClock className="text-lg text-blue-600" />
+                Same Day Reports
               </div>
 
               <div className="flex items-center gap-3">
-                <FiCalendar className="text-blue-600 text-xl" />
-                <span className="font-medium text-slate-700">
-                  Easy Online Booking
-                </span>
+                <FiCalendar className="text-lg text-blue-600" />
+                Easy Online Booking
               </div>
+
             </div>
+
           </motion.div>
+
+          {/* Right Booking Panel */}
                     {/* Right Booking Panel */}
 
           <motion.div
-            initial={{
-              opacity: 0,
-              x: 40,
-            }}
-            animate={{
-              opacity: 1,
-              x: 0,
-            }}
-            transition={{
-              duration: 0.7,
-              delay: 0.2,
-            }}
-            className="
-              relative
-              lg:col-span-2
-            "
+            initial={{ opacity: 0, y: 35 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.15 }}
+            className="relative"
           >
-            {/* Glow */}
+            <div className="absolute -right-10 -top-10 h-36 w-36 rounded-full bg-blue-200/40 blur-3xl" />
 
-            <div
-              className="
-                absolute
-                -top-10
-                -right-10
-                h-40
-                w-40
-                rounded-full
-                bg-blue-300/30
-                blur-[80px]
-              "
-            />
+            <div className="relative rounded-[28px] border border-slate-200 bg-white p-6 shadow-[0_20px_60px_rgba(15,23,42,.08)] sm:p-8">
 
-            <div
-              className="
-                relative
-                overflow-hidden
-                rounded-[36px]
-                border
-                border-slate-200
-                bg-white
-                p-8
-                shadow-[0_30px_80px_rgba(15,23,42,.12)]
-              "
-            >
-              {/* Header */}
+              {/* Status */}
 
               <div className="flex items-center justify-between">
+
                 <div>
+
                   <p className="text-sm text-slate-500">
-                    Today's Availability
+                    Laboratory Status
                   </p>
 
-                  <h3 className="mt-2 text-3xl font-black text-slate-900">
-                    Open
+                  <h3 className="mt-1 text-2xl font-black text-slate-900">
+                    Open Today
                   </h3>
+
                 </div>
 
-                <div
-                  className="
-                    h-4
-                    w-4
-                    rounded-full
-                    bg-emerald-500
-                    shadow-[0_0_20px_rgba(34,197,94,.6)]
-                  "
-                />
-              </div>
+                <div className="flex items-center gap-2">
 
-              {/* Divider */}
+                  <span className="h-3 w-3 rounded-full bg-emerald-500 animate-pulse" />
 
-              <div className="my-8 h-px bg-slate-200" />
-
-              {/* Schedule */}
-
-              <div className="space-y-5">
-
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-500">
-                    Working Hours
+                  <span className="text-sm font-semibold text-emerald-600">
+                    Live
                   </span>
 
-                  <span className="font-semibold text-slate-900">
-                    8:00 AM – 8:00 PM
-                  </span>
-                </div>
-
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-500">
-                    Home Collection
-                  </span>
-
-                  <span className="font-semibold text-emerald-600">
-                    Available
-                  </span>
-                </div>
-
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-500">
-                    Reports
-                  </span>
-
-                  <span className="font-semibold text-slate-900">
-                    Same Day*
-                  </span>
-                </div>
-
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-500">
-                    Booking Time
-                  </span>
-
-                  <span className="font-semibold text-slate-900">
-                    Under 1 Minute
-                  </span>
                 </div>
 
               </div>
 
-              {/* Divider */}
+              {/* Information */}
 
-              <div className="my-8 h-px bg-slate-200" />
-
-              {/* Features */}
-
-              <div className="space-y-4">
+              <div className="mt-8 space-y-4 rounded-2xl bg-slate-50 p-5">
 
                 {[
-                  "Certified Laboratory",
-                  "Secure Digital Reports",
-                  "Experienced Professionals",
-                  "Affordable Health Packages",
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-center gap-3"
-                  >
-                    <div
-                      className="
-                        flex
-                        h-8
-                        w-8
-                        items-center
-                        justify-center
-                        rounded-full
-                        bg-blue-50
-                      "
-                    >
-                      <FiArrowRight className="text-blue-600" />
-                    </div>
+                  ["Working Hours", "8:00 AM – 8:00 PM"],
+                  ["Home Collection", "Available"],
+                  ["Digital Reports", "Same Day*"],
+                  ["Booking Time", "< 1 Minute"],
+                ].map(([label, value]) => (
 
-                    <span className="font-medium text-slate-700">
-                      {item}
+                  <div
+                    key={label}
+                    className="flex items-center justify-between border-b border-slate-200 pb-3 last:border-0 last:pb-0"
+                  >
+                    <span className="text-sm text-slate-500">
+                      {label}
                     </span>
+
+                    <span className="text-sm font-semibold text-slate-900">
+                      {value}
+                    </span>
+
                   </div>
+
                 ))}
 
               </div>
 
-              {/* Bottom CTA */}
+              {/* Benefits */}
 
-              <div
-                className="
-                  mt-10
-                  rounded-[24px]
-                  bg-blue-600
-                  p-6
-                  text-white
-                "
-              >
-                <p className="text-blue-100 text-sm">
+              <div className="mt-8 space-y-3">
+
+                {[
+                  "Certified Laboratory",
+                  "Experienced Professionals",
+                  "Secure Digital Reports",
+                  "Affordable Health Packages",
+                ].map((item) => (
+
+                  <div
+                    key={item}
+                    className="flex items-center gap-3"
+                  >
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-50">
+
+                      <FiArrowRight className="text-blue-600" />
+
+                    </div>
+
+                    <span className="text-sm font-medium text-slate-700">
+                      {item}
+                    </span>
+
+                  </div>
+
+                ))}
+
+              </div>
+
+              {/* CTA */}
+
+              <div className="mt-8 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 p-6 text-white">
+
+                <p className="text-sm text-blue-100">
                   Need Assistance?
                 </p>
 
-                <h4 className="mt-2 text-2xl font-black">
-                  Our team is ready to help.
+                <h4 className="mt-2 text-xl font-bold">
+                  We're here to help.
                 </h4>
 
                 <p className="mt-3 text-sm leading-7 text-blue-100">
-                  Call us or complete the booking form below.
-                  We'll confirm your appointment quickly.
+                  Call our team or complete the booking form below.
+                  We'll confirm your appointment as quickly as possible.
                 </p>
+
               </div>
 
             </div>
+
           </motion.div>
 
         </div>
+
       </div>
+
     </section>
   );
 }

@@ -18,331 +18,123 @@ const trust = [
 
 export default function CTA() {
   return (
-    <section
-      className="
-        relative
-        overflow-hidden
-        bg-slate-950
-        py-20
+    <section className="relative overflow-hidden bg-slate-950 py-16 sm:py-20 lg:py-28">
 
-        lg:py-28
-      "
-    >
       {/* Background */}
 
-      <div
-        className="
-          absolute
-          left-0
-          top-0
-          h-96
-          w-96
-          rounded-full
-          bg-blue-600/20
-          blur-[140px]
-        "
-      />
+      <div className="absolute inset-0 bg-slate-950" />
 
-      <div
-        className="
-          absolute
-          bottom-0
-          right-0
-          h-[420px]
-          w-[420px]
-          rounded-full
-          bg-cyan-500/10
-          blur-[160px]
-        "
-      />
+      <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-blue-600/20 blur-[120px]" />
 
-      <div
-        className="
-          relative
-          z-10
-          mx-auto
-          max-w-7xl
-          px-4
+      <div className="absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-cyan-500/10 blur-[140px]" />
 
-          sm:px-6
-        "
-      >
+      <div className="relative z-10 mx-auto max-w-5xl px-5 sm:px-6">
+
         <motion.div
-          initial={{
-            opacity:0,
-            y:40,
-          }}
-          whileInView={{
-            opacity:1,
-            y:0,
-          }}
-          viewport={{
-            once:true,
-          }}
-          transition={{
-            duration:.7,
-          }}
-          className="
-            mx-auto
-            max-w-5xl
-            text-center
-          "
+          initial={{ opacity: 0, y: 35 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="text-center"
         >
-          <span
-            className="
-              inline-flex
-              rounded-full
-              border
-              border-blue-500/20
-              bg-blue-500/10
-              px-5
-              py-2
-              text-xs
-              font-semibold
-              uppercase
-              tracking-[0.25em]
-              text-blue-300
 
-              sm:text-sm
-            "
-          >
+          <span className="inline-flex rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-blue-300 sm:text-sm">
             Your Health Matters
           </span>
 
-          <h2
-            className="
-              mt-8
-              text-4xl
-              font-black
-              leading-[0.95]
-              text-white
-
-              sm:text-5xl
-
-              lg:text-7xl
-            "
-          >
+          <h2 className="mt-6 text-3xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
             Accurate Diagnosis.
-            <br />
 
-            Better Healthcare.
+            <span className="mt-2 block bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+              Better Healthcare.
+            </span>
           </h2>
 
-          <p
-            className="
-              mx-auto
-              mt-8
-              max-w-3xl
-              text-lg
-              leading-9
-              text-slate-300
-            "
-          >
-            Experience trusted pathology services backed by modern
-            laboratory technology, experienced professionals,
-            and a commitment to delivering reliable results
-            with complete transparency.
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
+            Trusted pathology services with experienced professionals,
+            advanced diagnostic technology, home sample collection and
+            fast digital reports designed to make healthcare simpler,
+            faster and more reliable.
           </p>
 
-          <div
-            className="
-              mt-12
-              flex
-              flex-col
-              justify-center
-              gap-4
+          {/* CTA Buttons */}
 
-              sm:flex-row
-            "
-          >
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
+
             <Link
               href="/contact"
-              className="
-                inline-flex
-                items-center
-                justify-center
-                gap-3
-                rounded-full
-                bg-blue-600
-                px-8
-                py-4
-                font-semibold
-                text-white
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:bg-blue-500
-                hover:shadow-2xl
-              "
+              className="inline-flex items-center justify-center gap-3 rounded-2xl bg-blue-600 px-7 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-blue-500 hover:shadow-xl"
             >
               Book a Test
-
               <FiArrowRight />
             </Link>
 
             <a
-               href={`tel:${SITE_CONFIG.phone}`}
-              className="
-                inline-flex
-                items-center
-                justify-center
-                gap-3
-                rounded-full
-                border
-                border-slate-700
-                px-8
-                py-4
-                font-semibold
-                text-white
-                transition-all
-                duration-300
-                hover:border-blue-500
-              "
+              href={`tel:${SITE_CONFIG.phone}`}
+              className="inline-flex items-center justify-center gap-3 rounded-2xl border border-slate-700 bg-white/5 px-7 py-4 font-semibold text-white transition-all duration-300 hover:border-blue-500 hover:bg-white/10"
             >
               <FiPhone />
-
               Call Now
             </a>
+
           </div>
-                    {/* Trust Strip */}
+
+          {/* Trust Chips */}
+                    {/* Trust Chips */}
 
           <motion.div
-            initial={{
-              opacity: 0,
-              y: 30,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              delay: 0.2,
-              duration: 0.7,
-            }}
-            viewport={{
-              once: true,
-            }}
-            className="
-              mt-20
-            "
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            viewport={{ once: true }}
+            className="mt-12 flex flex-wrap justify-center gap-3"
           >
-            <div
-              className="
-                rounded-[32px]
-                border
-                border-white/10
-                bg-white/5
-                backdrop-blur-xl
-                px-8
-                py-8
-              "
-            >
+            {trust.map((item) => (
               <div
+                key={item}
                 className="
-                  grid
-                  gap-6
-
-                  sm:grid-cols-2
-
-                  lg:grid-cols-4
+                  flex
+                  items-center
+                  gap-2
+                  rounded-full
+                  border
+                  border-white/10
+                  bg-white/5
+                  px-4
+                  py-2
+                  backdrop-blur
+                  transition
+                  hover:border-blue-500/40
+                  hover:bg-white/10
                 "
               >
-                {trust.map((item, index) => (
-                  <motion.div
-                    key={item}
-                    initial={{
-                      opacity: 0,
-                      y: 20,
-                    }}
-                    whileInView={{
-                      opacity: 1,
-                      y: 0,
-                    }}
-                    transition={{
-                      delay: index * 0.1,
-                    }}
-                    viewport={{
-                      once: true,
-                    }}
-                    className="
-                      flex
-                      items-center
-                      justify-center
-                      gap-3
-                    "
-                  >
-                    <div
-                      className="
-                        flex
-                        h-10
-                        w-10
-                        shrink-0
-                        items-center
-                        justify-center
-                        rounded-full
-                        bg-blue-500/20
-                      "
-                    >
-                      <FiCheckCircle
-                        className="
-                          text-xl
-                          text-blue-300
-                        "
-                      />
-                    </div>
+                <FiCheckCircle className="text-blue-400" />
 
-                    <span
-                      className="
-                        text-sm
-                        font-medium
-                        text-slate-200
-
-                        sm:text-base
-                      "
-                    >
-                      {item}
-                    </span>
-                  </motion.div>
-                ))}
+                <span className="text-sm font-medium text-slate-200">
+                  {item}
+                </span>
               </div>
-            </div>
+            ))}
           </motion.div>
 
           {/* Bottom Text */}
 
-          <motion.div
-            initial={{
-              opacity: 0,
-            }}
-            whileInView={{
-              opacity: 1,
-            }}
-            transition={{
-              delay: 0.4,
-            }}
-            viewport={{
-              once: true,
-            }}
-            className="
-              mt-10
-            "
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.35 }}
+            viewport={{ once: true }}
+            className="mx-auto mt-10 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base"
           >
-            <p
-              className="
-                text-sm
-                leading-7
-                text-slate-400
-
-                sm:text-base
-              "
-            >
-              Trusted by thousands of patients for reliable diagnostics,
-              timely reports, and compassionate healthcare services.
-            </p>
-          </motion.div>
+            Trusted by thousands of patients for accurate diagnostics,
+            timely reports, home sample collection, and compassionate
+            healthcare services.
+          </motion.p>
 
         </motion.div>
+
       </div>
+
     </section>
   );
 }

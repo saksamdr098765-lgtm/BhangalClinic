@@ -20,41 +20,51 @@ const steps = [
     icon: FiCoffee,
     title: "Avoid Alcohol & Heavy Meals",
     description:
-      "Avoid alcohol, smoking, and heavy meals for at least 24 hours before the test for more reliable results.",
+      "Avoid alcohol, smoking, and heavy meals before testing for more reliable results.",
   },
   {
     icon: FiDroplet,
     title: "Stay Hydrated",
     description:
-      "Drink sufficient water before your appointment. Proper hydration helps make blood collection easier.",
+      "Drink sufficient water before your appointment to make sample collection easier.",
   },
   {
     icon: FiFileText,
     title: "Keep Previous Reports",
     description:
-      "If available, keep your previous laboratory reports and prescription ready for comparison and better medical interpretation.",
+      "Keep previous laboratory reports and prescriptions ready for better comparison.",
   },
   {
     icon: FiCheckCircle,
     title: "Relax During Collection",
     description:
-      "Our trained phlebotomists follow safe and hygienic procedures to ensure a comfortable sample collection experience.",
+      "Our trained phlebotomists follow safe and hygienic procedures for comfortable collection.",
   },
 ];
 
 export default function Preparation() {
   return (
-    <section className="bg-slate-50 py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="bg-slate-50 py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+
 
         {/* Heading */}
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={{
+            opacity: 0,
+            y: 25,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
           className="mx-auto max-w-3xl text-center"
         >
+
           <span
             className="
               inline-flex
@@ -64,21 +74,26 @@ export default function Preparation() {
               bg-white
               px-4
               py-2
-              text-sm
-              font-medium
+              text-xs
+              font-semibold
               text-blue-700
+
+              sm:text-sm
             "
           >
             Before Your Test
           </span>
 
+
           <h2
             className="
-              mt-6
-              text-4xl
+              mt-5
+              text-3xl
               font-black
               tracking-tight
               text-slate-900
+
+              sm:text-4xl
 
               lg:text-5xl
             "
@@ -86,23 +101,31 @@ export default function Preparation() {
             How to Prepare
           </h2>
 
+
           <p
             className="
-              mt-6
-              text-lg
-              leading-8
+              mt-5
+              text-base
+              leading-7
               text-slate-600
+
+              sm:text-lg
+              sm:leading-8
             "
           >
-            Following these simple guidelines helps ensure accurate
+            Follow these simple guidelines to ensure accurate
             diagnostic results and a smooth sample collection
             experience.
           </p>
+
         </motion.div>
+
+
 
         {/* Timeline */}
 
-        <div className="relative mx-auto mt-20 max-w-4xl">
+        <div className="relative mx-auto mt-12 max-w-4xl sm:mt-16">
+
 
           {/* Vertical Line */}
 
@@ -115,11 +138,13 @@ export default function Preparation() {
               w-px
               bg-slate-200
 
-              md:left-8
+              sm:left-8
             "
           />
 
-          <div className="space-y-12">
+
+
+          <div className="space-y-8 sm:space-y-10">
 
             {steps.map((step, index) => {
               const Icon = step.icon;
@@ -129,11 +154,11 @@ export default function Preparation() {
                   key={step.title}
                   initial={{
                     opacity: 0,
-                    x: -30,
+                    y: 25,
                   }}
                   whileInView={{
                     opacity: 1,
-                    x: 0,
+                    y: 0,
                   }}
                   transition={{
                     delay: index * 0.08,
@@ -141,8 +166,16 @@ export default function Preparation() {
                   viewport={{
                     once: true,
                   }}
-                  className="relative flex gap-6"
+                  className="
+                    relative
+                    flex
+                    gap-4
+
+                    sm:gap-6
+                  "
                 >
+
+
                   {/* Icon */}
 
                   <div
@@ -160,48 +193,71 @@ export default function Preparation() {
                       border-blue-100
                       bg-white
                       shadow-sm
+
+                      sm:h-14
+                      sm:w-14
                     "
                   >
-                    <Icon className="text-blue-600" />
+                    <Icon
+                      className="
+                        text-blue-600
+
+                        sm:text-lg
+                      "
+                    />
                   </div>
+
+
 
                   {/* Content */}
 
                   <div
                     className="
                       flex-1
-                      rounded-[28px]
+                      rounded-3xl
                       border
                       border-slate-200
                       bg-white
-                      p-7
+                      p-5
                       shadow-sm
+
+                      sm:p-7
                     "
                   >
-                    <div className="flex items-center gap-3">
+
+                    <div className="flex items-start gap-3">
 
                       <span
                         className="
                           flex
-                          h-8
-                          w-8
+                          h-7
+                          w-7
+                          shrink-0
                           items-center
                           justify-center
                           rounded-full
                           bg-blue-600
-                          text-sm
+                          text-xs
                           font-bold
                           text-white
+
+                          sm:h-8
+                          sm:w-8
+                          sm:text-sm
                         "
                       >
                         {index + 1}
                       </span>
 
+
                       <h3
                         className="
-                          text-xl
+                          text-base
                           font-bold
+                          leading-6
                           text-slate-900
+
+                          sm:text-xl
                         "
                       >
                         {step.title}
@@ -209,24 +265,35 @@ export default function Preparation() {
 
                     </div>
 
+
+
                     <p
                       className="
                         mt-4
-                        leading-7
+                        text-sm
+                        leading-6
                         text-slate-600
+
+                        sm:text-base
+                        sm:leading-7
                       "
                     >
                       {step.description}
                     </p>
 
+
                   </div>
+
+
                 </motion.div>
               );
             })}
 
           </div>
 
+
         </div>
+
 
       </div>
     </section>

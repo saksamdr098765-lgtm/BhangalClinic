@@ -25,27 +25,35 @@ const steps = [
     icon: FiDroplet,
     title: "Sample Collection",
     description:
-      "A trained phlebotomist visits your location and safely collects the required samples using sterile equipment.",
+      "A trained phlebotomist visits your location and safely collects samples using sterile equipment.",
   },
   {
     icon: FiFileText,
     title: "Digital Reports",
     description:
-      "Your samples are processed in our laboratory and reports are securely delivered online within the promised time.",
+      "Your samples are processed in our laboratory and reports are securely delivered online.",
   },
 ];
 
 export default function Process() {
   return (
-    <section className="bg-white py-24">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="bg-white py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
 
         {/* Heading */}
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={{
+            opacity: 0,
+            y: 25,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
           className="mx-auto max-w-3xl text-center"
         >
           <span
@@ -57,21 +65,26 @@ export default function Process() {
               bg-blue-50
               px-4
               py-2
-              text-sm
-              font-medium
+              text-xs
+              font-semibold
               text-blue-700
+
+              sm:text-sm
             "
           >
             Home Sample Collection
           </span>
 
+
           <h2
             className="
-              mt-6
-              text-4xl
+              mt-5
+              text-3xl
               font-black
               tracking-tight
               text-slate-900
+
+              sm:text-4xl
 
               lg:text-5xl
             "
@@ -79,32 +92,42 @@ export default function Process() {
             How It Works
           </h2>
 
+
           <p
             className="
-              mt-6
-              text-lg
-              leading-8
+              mt-5
+              text-base
+              leading-7
               text-slate-600
+
+              sm:text-lg
+              sm:leading-8
             "
           >
             From booking your package to receiving your report,
-            we've made every step simple, safe, and convenient.
+            every step is designed to be simple, safe, and convenient.
           </p>
 
         </motion.div>
+
+
 
         {/* Steps */}
 
         <div
           className="
             relative
-            mt-20
+            mt-12
             grid
-            gap-10
+            gap-5
+
+            sm:mt-16
 
             lg:grid-cols-4
+            lg:gap-6
           "
         >
+
           {steps.map((step, index) => {
             const Icon = step.icon;
 
@@ -113,31 +136,32 @@ export default function Process() {
                 key={step.title}
                 initial={{
                   opacity: 0,
-                  y: 30,
+                  y: 25,
                 }}
                 whileInView={{
                   opacity: 1,
                   y: 0,
                 }}
                 transition={{
-                  delay: index * .08,
+                  delay: index * 0.08,
                 }}
                 viewport={{
                   once: true,
                 }}
                 className="relative"
               >
-                {/* Connector */}
+
+                {/* Desktop Connector */}
 
                 {index !== steps.length - 1 && (
                   <div
                     className="
                       absolute
-                      left-[52px]
-                      top-7
+                      left-[58px]
+                      top-8
                       hidden
                       h-px
-                      w-full
+                      w-[calc(100%+24px)]
                       bg-slate-200
 
                       lg:block
@@ -145,47 +169,64 @@ export default function Process() {
                   />
                 )}
 
+
+
                 <div
                   className="
                     relative
                     z-10
-                    rounded-[30px]
+                    rounded-3xl
                     border
                     border-slate-200
                     bg-white
-                    p-8
+                    p-5
                     shadow-sm
                     transition-all
-                    duration-300
+
+                    sm:p-7
+
                     hover:-translate-y-1
                     hover:border-blue-200
                     hover:shadow-lg
                   "
                 >
+
                   <div
                     className="
                       flex
-                      h-14
-                      w-14
+                      h-12
+                      w-12
                       items-center
                       justify-center
                       rounded-2xl
                       bg-blue-50
+
+                      sm:h-14
+                      sm:w-14
                     "
                   >
-                    <Icon className="text-2xl text-blue-600" />
+                    <Icon
+                      className="
+                        text-xl
+                        text-blue-600
+
+                        sm:text-2xl
+                      "
+                    />
                   </div>
+
+
 
                   <span
                     className="
-                      mt-6
+                      mt-5
                       inline-flex
                       rounded-full
                       bg-slate-100
                       px-3
                       py-1
-                      text-xs
-                      font-semibold
+                      text-[11px]
+                      font-bold
                       tracking-wide
                       text-slate-500
                     "
@@ -193,26 +234,37 @@ export default function Process() {
                     STEP {index + 1}
                   </span>
 
+
+
                   <h3
                     className="
                       mt-4
-                      text-xl
+                      text-lg
                       font-bold
                       text-slate-900
+
+                      sm:text-xl
                     "
                   >
                     {step.title}
                   </h3>
 
+
+
                   <p
                     className="
-                      mt-4
-                      leading-7
+                      mt-3
+                      text-sm
+                      leading-6
                       text-slate-600
+
+                      sm:text-base
+                      sm:leading-7
                     "
                   >
                     {step.description}
                   </p>
+
 
                 </div>
 

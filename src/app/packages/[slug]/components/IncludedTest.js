@@ -75,10 +75,14 @@ const categories = [
   },
 ];
 
+
 export default function IncludedTests({ pkg }) {
+
   return (
-    <section className="bg-white py-24">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="bg-white py-16 sm:py-20 lg:py-24">
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+
 
         {/* Heading */}
 
@@ -91,128 +95,174 @@ export default function IncludedTests({ pkg }) {
               border
               border-blue-100
               bg-blue-50
-              px-4
-              py-2
-              text-sm
-              font-medium
+              px-3
+              py-1.5
+              text-xs
+              font-semibold
               text-blue-700
+
+              sm:px-4
+              sm:py-2
+              sm:text-sm
             "
           >
             Tests Included
           </span>
 
+
           <h2
             className="
-              mt-6
-              text-4xl
+              mt-5
+              text-3xl
               font-black
+              leading-tight
               tracking-tight
               text-slate-900
 
+              sm:text-4xl
               lg:text-5xl
             "
           >
             What's Included in
             <br />
-            {pkg.name}
+
+            <span className="text-blue-700">
+              {pkg.name}
+            </span>
           </h2>
+
 
           <p
             className="
-              mt-6
-              text-lg
-              leading-8
+              mt-4
+              text-base
+              leading-7
               text-slate-600
+
+              sm:mt-6
+              sm:text-lg
+              sm:leading-8
             "
           >
-            This package includes a comprehensive set of diagnostic
-            investigations covering major organs and body systems to
-            help evaluate your overall health and identify potential
-            medical conditions at an early stage.
+            This package includes comprehensive diagnostic
+            investigations covering major organs and body systems
+            to evaluate your overall health.
           </p>
 
         </div>
+
+
 
         {/* Categories */}
 
         <div
           className="
-            mt-16
+            mt-10
             grid
-            gap-8
+            gap-5
+
+            sm:mt-14
+            sm:gap-6
 
             lg:grid-cols-2
 
             xl:grid-cols-3
           "
         >
-          {categories.map((category, index) => {
+
+          {categories.map((category,index)=>{
+
             const Icon = category.icon;
 
+
             return (
+
               <motion.div
                 key={category.title}
                 initial={{
-                  opacity: 0,
-                  y: 30,
+                  opacity:0,
+                  y:20
                 }}
                 whileInView={{
-                  opacity: 1,
-                  y: 0,
+                  opacity:1,
+                  y:0
                 }}
                 transition={{
-                  delay: index * 0.08,
+                  delay:index * .06
                 }}
                 viewport={{
-                  once: true,
+                  once:true
                 }}
                 className="
-                  rounded-[28px]
+                  rounded-3xl
                   border
                   border-slate-200
                   bg-white
-                  p-7
-                  shadow-sm
-                  transition
+                  p-5
+
+                  transition-all
                   hover:-translate-y-1
                   hover:border-blue-200
-                  hover:shadow-xl
+                  hover:shadow-lg
+
+                  sm:p-7
                 "
               >
+
+
                 {/* Header */}
 
-                <div className="flex items-center gap-4">
+                <div
+                  className="
+                    flex
+                    items-center
+                    gap-3
+                  "
+                >
 
                   <div
                     className="
                       flex
-                      h-12
-                      w-12
+                      h-11
+                      w-11
+                      shrink-0
                       items-center
                       justify-center
-                      rounded-2xl
+                      rounded-xl
                       bg-blue-50
+
+                      sm:h-12
+                      sm:w-12
+                      sm:rounded-2xl
                     "
                   >
+
                     <Icon
                       className="
-                        text-xl
+                        text-lg
                         text-blue-600
+
+                        sm:text-xl
                       "
                     />
+
                   </div>
+
 
                   <div>
 
                     <h3
                       className="
-                        text-xl
+                        text-lg
                         font-bold
                         text-slate-900
+
+                        sm:text-xl
                       "
                     >
                       {category.title}
                     </h3>
+
 
                     <p className="text-sm text-slate-500">
                       {category.tests.length} Tests
@@ -222,11 +272,15 @@ export default function IncludedTests({ pkg }) {
 
                 </div>
 
+
+
+
                 {/* Tests */}
 
-                <div className="mt-7 space-y-4">
+                <div className="mt-6 space-y-3">
 
-                  {category.tests.map((test) => (
+                  {category.tests.map((test)=>(
+
                     <div
                       key={test}
                       className="
@@ -235,86 +289,118 @@ export default function IncludedTests({ pkg }) {
                         gap-3
                       "
                     >
+
                       <div
                         className="
-                          mt-0.5
+                          mt-1
                           flex
-                          h-6
-                          w-6
+                          h-5
+                          w-5
+                          shrink-0
                           items-center
                           justify-center
                           rounded-full
                           bg-blue-50
                         "
                       >
+
                         <FiCheck
                           className="
-                            text-xs
+                            text-[10px]
                             text-blue-600
                           "
                         />
+
                       </div>
+
 
                       <span
                         className="
+                          text-sm
                           leading-6
                           text-slate-700
+
+                          sm:text-base
                         "
                       >
                         {test}
                       </span>
 
+
                     </div>
+
                   ))}
 
                 </div>
 
+
               </motion.div>
+
             );
+
           })}
+
         </div>
+
+
+
 
         {/* Bottom Note */}
 
         <div
           className="
             mx-auto
-            mt-16
+            mt-10
             max-w-4xl
-            rounded-[28px]
+            rounded-3xl
             border
             border-blue-100
             bg-blue-50/60
-            p-8
+            p-5
             text-center
+
+            sm:mt-16
+            sm:p-8
           "
         >
+
           <h3
             className="
-              text-2xl
+              text-xl
               font-bold
               text-slate-900
+
+              sm:text-2xl
             "
           >
             Looking for a specific test?
           </h3>
 
+
           <p
             className="
-              mt-4
-              leading-8
+              mt-3
+              text-sm
+              leading-7
               text-slate-600
+
+              sm:mt-4
+              sm:text-base
+              sm:leading-8
             "
           >
             The investigations shown above represent the primary tests
-            included in this package. Depending on the package type,
-            additional biomarkers and specialized parameters may also
-            be included to provide a more detailed assessment of your
-            health.
+            included in this package. Additional biomarkers and
+            specialized parameters may also be included depending on
+            the package type.
           </p>
+
+
         </div>
 
+
       </div>
+
     </section>
   );
 }

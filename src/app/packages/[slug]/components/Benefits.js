@@ -15,48 +15,61 @@ const benefits = [
     icon: FiActivity,
     title: "Early Health Screening",
     description:
-      "Detect potential health concerns before symptoms appear, helping you take action at the right time.",
+      "Detect potential health concerns early and take preventive steps before symptoms become serious.",
   },
   {
     icon: FiHeart,
     title: "Monitor Vital Organs",
     description:
-      "Evaluate the health of your liver, kidneys, heart, thyroid, and blood through comprehensive diagnostics.",
+      "Get insights into your heart, liver, kidneys, thyroid, and blood health through reliable diagnostics.",
   },
   {
     icon: FiTrendingUp,
-    title: "Track Your Progress",
+    title: "Track Health Progress",
     description:
-      "Compare results over time to understand how your lifestyle, diet, or treatment is affecting your health.",
+      "Compare your reports over time and understand how lifestyle changes or treatments impact your health.",
   },
   {
     icon: FiShield,
     title: "Reliable & Accurate",
     description:
-      "Every sample is processed using modern laboratory equipment following strict quality standards.",
+      "Samples are processed with advanced technology and strict quality standards for dependable results.",
   },
   {
     icon: FiClock,
     title: "Fast Digital Reports",
     description:
-      "Receive secure digital reports quickly so you can consult your doctor without unnecessary delays.",
+      "Receive secure online reports quickly and access your health information anytime.",
   },
   {
     icon: FiSmile,
     title: "Peace of Mind",
     description:
-      "Regular preventive checkups help you stay informed, confident, and proactive about your health.",
+      "Stay informed about your health and make confident decisions with preventive checkups.",
   },
 ];
 
 export default function Benefits() {
   return (
-    <section className="bg-slate-50 py-24">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="bg-slate-50 py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
 
         {/* Heading */}
 
-        <div className="mx-auto max-w-3xl text-center">
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 25,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+          className="mx-auto max-w-3xl text-center"
+        >
 
           <span
             className="
@@ -67,22 +80,29 @@ export default function Benefits() {
               bg-white
               px-4
               py-2
-              text-sm
-              font-medium
+              text-xs
+              font-semibold
+              uppercase
+              tracking-wide
               text-blue-700
+
+              sm:text-sm
             "
           >
             Why This Package Matters
           </span>
 
+
           <h2
             className="
-              mt-6
-              text-4xl
+              mt-5
+              text-3xl
               font-black
+              leading-tight
               tracking-tight
               text-slate-900
 
+              sm:text-4xl
               lg:text-5xl
             "
           >
@@ -91,109 +111,156 @@ export default function Benefits() {
             Just Blood Tests
           </h2>
 
+
           <p
             className="
-              mt-6
-              text-lg
-              leading-8
+              mx-auto
+              mt-5
+              max-w-2xl
+              text-base
+              leading-7
               text-slate-600
+
+              sm:text-lg
+              sm:leading-8
             "
           >
-            Preventive healthcare is about understanding your body
-            before problems become serious. This package helps you make
-            informed health decisions through reliable diagnostic
-            insights and comprehensive screening.
+            Preventive healthcare helps you understand your body before
+            problems become serious. Get reliable diagnostic insights
+            that support better health decisions.
           </p>
 
-        </div>
+        </motion.div>
+
 
         {/* Benefits Grid */}
 
         <div
           className="
-            mt-16
+            mt-10
             grid
-            gap-6
+            gap-5
+
+            sm:mt-14
+            sm:gap-6
 
             md:grid-cols-2
 
             xl:grid-cols-3
           "
         >
+
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
 
             return (
               <motion.div
                 key={benefit.title}
+
                 initial={{
                   opacity: 0,
-                  y: 30,
+                  y: 25,
                 }}
+
                 whileInView={{
                   opacity: 1,
                   y: 0,
                 }}
+
                 transition={{
                   delay: index * 0.08,
+                  duration: 0.4,
                 }}
+
                 viewport={{
                   once: true,
                 }}
+
                 className="
                   group
-                  rounded-[28px]
+                  rounded-3xl
                   border
                   border-slate-200
                   bg-white
-                  p-8
+                  p-5
                   shadow-sm
                   transition-all
                   duration-300
+
+                  sm:p-7
+
                   hover:-translate-y-1
                   hover:border-blue-200
                   hover:shadow-lg
                 "
               >
+
+                {/* Icon */}
+
                 <div
                   className="
                     flex
-                    h-14
-                    w-14
+                    h-12
+                    w-12
                     items-center
                     justify-center
                     rounded-2xl
                     bg-blue-50
                     transition
+
+                    sm:h-14
+                    sm:w-14
+
                     group-hover:bg-blue-100
                   "
                 >
-                  <Icon className="text-2xl text-blue-600" />
+                  <Icon
+                    className="
+                      text-xl
+                      text-blue-600
+
+                      sm:text-2xl
+                    "
+                  />
                 </div>
+
+
+                {/* Content */}
 
                 <h3
                   className="
-                    mt-6
-                    text-xl
+                    mt-5
+                    text-lg
                     font-bold
                     text-slate-900
+
+                    sm:mt-6
+                    sm:text-xl
                   "
                 >
                   {benefit.title}
                 </h3>
 
+
                 <p
                   className="
-                    mt-4
-                    leading-7
+                    mt-3
+                    text-sm
+                    leading-6
                     text-slate-600
+
+                    sm:mt-4
+                    sm:text-base
+                    sm:leading-7
                   "
                 >
                   {benefit.description}
                 </p>
+
               </motion.div>
             );
           })}
+
         </div>
 
       </div>

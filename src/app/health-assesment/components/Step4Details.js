@@ -55,25 +55,28 @@ export default function Step4Details({
     <motion.section
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
-      className="rounded-[36px] border border-slate-200/70 bg-white/80 p-8 shadow-xl backdrop-blur-2xl"
+      className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-7 lg:p-8"
     >
-      <span className="rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
+      {/* Heading */}
+
+      <span className="inline-flex rounded-full bg-blue-50 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-blue-700 sm:px-4 sm:py-2 sm:text-sm">
         Step 4
       </span>
 
-      <h2 className="mt-5 text-4xl font-black tracking-tight text-slate-900">
+      <h2 className="mt-4 text-2xl font-black leading-tight text-slate-900 sm:text-3xl lg:text-4xl">
         Tell us a little more
       </h2>
 
-      <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
-        These details help us improve your laboratory test recommendations.
+      <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
+        These details help us improve your laboratory test
+        recommendations.
       </p>
 
-      <div className="mt-10 grid gap-8 lg:grid-cols-2">
-        {/* Age */}
+      {/* Age & Gender */}
 
+      <div className="mt-8 grid gap-6 lg:grid-cols-2">
         <div>
-          <label className="mb-3 block font-semibold text-slate-800">
+          <label className="mb-2 block text-sm font-semibold text-slate-700">
             Age
           </label>
 
@@ -89,30 +92,27 @@ export default function Step4Details({
               })
             }
             placeholder="Enter your age"
-            className="w-full rounded-2xl border border-slate-200 bg-white px-5 py-4 outline-none transition focus:border-blue-500"
+            className="h-12 w-full rounded-xl border border-slate-200 bg-white px-4 text-sm outline-none transition focus:border-blue-500"
           />
         </div>
 
-        {/* Gender */}
-
         <div>
-          <label className="mb-3 block font-semibold text-slate-800">
+          <label className="mb-2 block text-sm font-semibold text-slate-700">
             Gender
           </label>
 
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-3 gap-2">
             {genders.map((gender) => (
               <button
                 key={gender}
+                type="button"
                 onClick={() =>
                   setAssessment({
                     ...assessment,
                     gender,
                   })
                 }
-                className={`rounded-2xl border px-4 py-4 font-medium transition
-
-                ${
+                className={`h-12 rounded-xl border text-sm font-medium transition ${
                   assessment.gender === gender
                     ? "border-blue-600 bg-blue-600 text-white"
                     : "border-slate-200 bg-white hover:border-blue-300"
@@ -127,27 +127,26 @@ export default function Step4Details({
 
       {/* Duration */}
 
-      <div className="mt-10">
-        <label className="mb-4 block font-semibold text-slate-800">
+      <div className="mt-8">
+        <label className="mb-3 block text-sm font-semibold text-slate-700">
           How long have you had these symptoms?
         </label>
 
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-2">
           {durations.map((duration) => (
             <button
               key={duration}
+              type="button"
               onClick={() =>
                 setAssessment({
                   ...assessment,
                   duration,
                 })
               }
-              className={`rounded-full border px-5 py-3 transition
-
-              ${
+              className={`rounded-full border px-4 py-2.5 text-sm font-medium transition ${
                 assessment.duration === duration
                   ? "border-blue-600 bg-blue-600 text-white"
-                  : "border-slate-200 bg-white hover:border-blue-300"
+                  : "border-slate-200 bg-white hover:border-blue-300 hover:bg-blue-50"
               }`}
             >
               {duration}
@@ -156,24 +155,23 @@ export default function Step4Details({
         </div>
       </div>
 
-      {/* Medical History */}
+      {/* Medical Conditions */}
 
-      <div className="mt-10">
-        <label className="mb-4 block font-semibold text-slate-800">
+      <div className="mt-8">
+        <label className="mb-3 block text-sm font-semibold text-slate-700">
           Existing Medical Conditions
         </label>
 
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-2">
           {conditions.map((condition) => (
             <button
               key={condition}
+              type="button"
               onClick={() => toggleCondition(condition)}
-              className={`rounded-full border px-5 py-3 transition
-
-              ${
+              className={`rounded-full border px-4 py-2.5 text-sm font-medium transition ${
                 assessment.conditions.includes(condition)
                   ? "border-blue-600 bg-blue-600 text-white"
-                  : "border-slate-200 bg-white hover:border-blue-300"
+                  : "border-slate-200 bg-white hover:border-blue-300 hover:bg-blue-50"
               }`}
             >
               {condition}
@@ -184,23 +182,25 @@ export default function Step4Details({
 
       {/* Footer */}
 
-      <div className="mt-14 flex flex-col gap-4 border-t border-slate-100 pt-8 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mt-10 flex flex-col gap-3 border-t border-slate-100 pt-6 sm:mt-12 sm:flex-row sm:items-center sm:justify-between">
         <button
+          type="button"
           onClick={previousStep}
-          className="flex items-center justify-center gap-3 rounded-2xl border border-slate-200 bg-white px-7 py-4 font-semibold text-slate-700 transition hover:bg-slate-50"
+          className="flex h-12 items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-6 font-semibold text-slate-700 transition hover:bg-slate-50"
         >
           <FiArrowLeft />
           Back
         </button>
 
         <button
+          type="button"
           onClick={nextStep}
           disabled={
             !assessment.age ||
             !assessment.gender ||
             !assessment.duration
           }
-          className="group flex items-center justify-center gap-3 rounded-2xl bg-blue-600 px-8 py-4 font-semibold text-white transition hover:-translate-y-1 hover:shadow-xl disabled:cursor-not-allowed disabled:opacity-40"
+          className="group flex h-12 items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 font-semibold text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-40"
         >
           View Recommendations
 

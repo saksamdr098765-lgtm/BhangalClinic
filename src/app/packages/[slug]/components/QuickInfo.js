@@ -10,55 +10,45 @@ import {
   FiCalendar,
 } from "react-icons/fi";
 
-const items = (pkg) => [
+const getItems = (pkg) => [
   {
     icon: FiActivity,
     title: "Tests Included",
-    value: `${pkg.tests}+ Tests`,
+    value: `${pkg?.tests || 0}+ Tests`,
   },
   {
     icon: FiHome,
-    title: "Collection",
+    title: "Sample Collection",
     value: "Home Available",
   },
   {
     icon: FiClock,
     title: "Reports",
-    value: "Within 24 Hours",
+    value: "24-48 Hours",
   },
   {
     icon: FiDroplet,
-    title: "Sample",
+    title: "Sample Type",
     value: "Blood & Urine",
   },
   {
     icon: FiCalendar,
-    title: "Fasting",
-    value: pkg.fasting ? "8-12 Hours" : "Not Required",
+    title: "Preparation",
+    value: pkg?.fasting ? "Fasting Required" : "No Fasting",
   },
   {
     icon: FiShield,
-    title: "Quality",
+    title: "Laboratory",
     value: "NABL Certified",
   },
 ];
 
 export default function QuickInfo({ pkg }) {
   return (
-    <section
-      className="
-        relative
-        bg-white
-        py-20
-      "
-    >
-      <div
-        className="
-          mx-auto
-          max-w-7xl
-          px-6
-        "
-      >
+    <section className="relative bg-white py-20">
+
+      <div className="mx-auto max-w-7xl px-6">
+
         <motion.div
           initial={{
             opacity: 0,
@@ -69,7 +59,7 @@ export default function QuickInfo({ pkg }) {
             y: 0,
           }}
           transition={{
-            duration: .5,
+            duration: 0.5,
           }}
           viewport={{
             once: true,
@@ -85,26 +75,44 @@ export default function QuickInfo({ pkg }) {
             xl:grid-cols-6
           "
         >
-          {items(pkg).map((item) => {
+
+          {getItems(pkg).map((item, index) => {
             const Icon = item.icon;
 
             return (
-              <div
+              <motion.div
                 key={item.title}
+                initial={{
+                  opacity: 0,
+                  scale: 0.95,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                }}
+                transition={{
+                  delay: index * 0.05,
+                }}
+                viewport={{
+                  once: true,
+                }}
                 className="
                   group
-                  rounded-[24px]
+                  rounded-[26px]
                   border
                   border-slate-200
                   bg-white
                   p-6
+                  shadow-sm
                   transition-all
                   duration-300
+
                   hover:-translate-y-1
                   hover:border-blue-200
                   hover:shadow-lg
                 "
               >
+
                 <div
                   className="
                     flex
@@ -115,6 +123,7 @@ export default function QuickInfo({ pkg }) {
                     rounded-2xl
                     bg-blue-50
                     transition
+
                     group-hover:bg-blue-100
                   "
                 >
@@ -126,31 +135,38 @@ export default function QuickInfo({ pkg }) {
                   />
                 </div>
 
+
                 <p
                   className="
                     mt-5
                     text-sm
+                    font-medium
                     text-slate-500
                   "
                 >
                   {item.title}
                 </p>
 
+
                 <h3
                   className="
                     mt-1
                     text-lg
-                    font-semibold
+                    font-bold
                     text-slate-900
                   "
                 >
                   {item.value}
                 </h3>
-              </div>
+
+              </motion.div>
             );
           })}
+
         </motion.div>
+
       </div>
+
     </section>
   );
 }
