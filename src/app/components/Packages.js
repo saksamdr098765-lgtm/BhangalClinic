@@ -9,50 +9,8 @@ import {
   FiCheck,
 } from "react-icons/fi";
 
-const packages = [
-  {
-    title: "Basic Health",
-    price: "₹799",
-    icon: FiShield,
-    color: "bg-blue-50",
-    iconColor: "text-blue-600",
-    tests: [
-      "CBC Test",
-      "Blood Sugar",
-      "Urine Routine",
-      "ESR",
-    ],
-  },
-  {
-    title: "Complete Body Checkup",
-    price: "₹2,499",
-    icon: FiHeart,
-    color: "bg-rose-50",
-    iconColor: "text-rose-600",
-    featured: true,
-    tests: [
-      "CBC",
-      "LFT",
-      "KFT",
-      "Lipid Profile",
-      "Thyroid",
-      "Vitamin D",
-    ],
-  },
-  {
-    title: "Diabetes Care",
-    price: "₹1,299",
-    icon: FiActivity,
-    color: "bg-emerald-50",
-    iconColor: "text-emerald-600",
-    tests: [
-      "HbA1c",
-      "Fasting Sugar",
-      "PP Sugar",
-      "Kidney Profile",
-    ],
-  },
-];
+import Link from "next/link";
+import { packages } from "../data/packages";
 
 
 export default function Packages() {
@@ -196,242 +154,134 @@ export default function Packages() {
 
         {/* Cards */}
 
-        <div
-          className="
-            mt-8
-            grid
-            gap-5
+   <div
+  className="
+    mt-14
+    flex
+    gap-6
+    overflow-x-auto
+    pb-4
+    snap-x
+    snap-mandatory
+    scrollbar-thin
+    scrollbar-thumb-slate-300
+    scrollbar-track-transparent
+    [-ms-overflow-style:none]
+    [scrollbar-width:none]
+    [&::-webkit-scrollbar]:hidden
+  "
+>
 
-            sm:mt-12
-            sm:gap-8
+          {packages.slice(0,6).map((pkg, index) => (
+        <motion.div
+  key={pkg.id}
+  initial={{ opacity: 0, y: 24 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: index * 0.08 }}
+  whileHover={{ y: -6 }}
+className="
+  group
+  flex
+  flex-col
+  shrink-0
+  snap-start
+  w-[320px]
+  sm:w-[360px]
+  lg:w-[390px]
+  rounded-[28px]
+  border
+  border-slate-200
+  bg-white/80
+  p-7
+  backdrop-blur-xl
+  transition-all
+  duration-300
+  hover:-translate-y-2
+  hover:border-blue-200
+  hover:shadow-xl
+"
+>
+  {/* Header */}
 
-            md:grid-cols-2
+  <div className="flex items-start justify-between">
+    <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
+      {pkg.tests} Tests
+    </span>
 
-            lg:grid-cols-3
-          "
-        >
+    {pkg.popular && (
+      <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">
+        Popular
+      </span>
+    )}
+  </div>
 
-          {packages.map((pkg,index)=>{
+  <h2 className="mt-6 text-2xl font-bold tracking-tight text-slate-900">
+    {pkg.name}
+  </h2>
 
-            const Icon = pkg.icon;
+  <p className="mt-3 line-clamp-2 text-slate-600 leading-7">
+    {pkg.description}
+  </p>
 
-            return (
+  {/* Meta */}
 
-              <motion.div
-                key={pkg.title}
-                initial={{
-                  opacity:0,
-                  y:40,
-                }}
-                whileInView={{
-                  opacity:1,
-                  y:0,
-                }}
-                viewport={{
-                  once:true,
-                }}
-                transition={{
-                  delay:index*0.15,
-                }}
+  <div className="mt-6 flex flex-wrap gap-2">
+    <span className="rounded-full border border-slate-200 px-3 py-2 text-sm text-slate-600">
+      🏠 Home Collection
+    </span>
 
-                className={`
-                  group
-                  relative
-                  overflow-hidden
-                  rounded-[26px]
-                  border
-                  p-5
-                  transition-all
-                  duration-300
+    <span className="rounded-full border border-slate-200 px-3 py-2 text-sm text-slate-600">
+      24h Reports
+    </span>
+  </div>
 
-                  hover:-translate-y-2
-                  hover:shadow-2xl
+  {/* Price */}
 
-                  sm:rounded-[32px]
-                  sm:p-8
+ <div className="mt-auto pt-8">
 
-                  ${
-                    pkg.featured
-                    ? "border-blue-600 bg-slate-900 text-white"
-                    : "border-slate-200 bg-white"
-                  }
-                `}
-              >
+  {/* Price */}
 
+  <div>
+    <div className="flex items-end gap-3">
+      <span className="text-5xl font-black text-slate-900">
+        ₹{pkg.price}
+      </span>
 
-                {pkg.featured && (
+      <span className="pb-2 text-lg line-through text-slate-400">
+        ₹{pkg.originalPrice}
+      </span>
+    </div>
 
-                  <span
-                    className="
-                      absolute
-                      right-4
-                      top-4
-                      rounded-full
-                      bg-blue-500
-                      px-3
-                      py-1
-                      text-[10px]
-                      font-semibold
-                      text-white
+    <p className="mt-2 text-sm font-medium text-emerald-600">
+      Save ₹{pkg.originalPrice - pkg.price}
+    </p>
+  </div>
 
-                      sm:right-6
-                      sm:top-6
-                      sm:text-xs
-                    "
-                  >
-                    Most Popular
-                  </span>
+  <Link
+    href={`/packages/${pkg.slug}`}
+    className="
+      mt-8
+      flex
+      items-center
+      justify-center
+      gap-2
+      rounded-full
+      bg-blue-600
+      px-6
+      py-4
+      font-semibold
+      text-white
+      transition
+      hover:bg-blue-700
+    "
+  >
+    View Package
+    <FiArrowRight className="transition group-hover:translate-x-1" />
+  </Link>
 
-                )}
-
-
-
-                {/* Icon */}
-
-                <div
-                  className={`
-                    flex
-                    h-14
-                    w-14
-                    items-center
-                    justify-center
-                    rounded-2xl
-
-                    sm:h-16
-                    sm:w-16
-
-                    ${
-                      pkg.featured
-                      ? "bg-white/10"
-                      : pkg.color
-                    }
-                  `}
-                >
-
-                  <Icon
-                    className={`
-                      text-2xl
-
-                      sm:text-3xl
-
-                      ${
-                        pkg.featured
-                        ? "text-white"
-                        : pkg.iconColor
-                      }
-                    `}
-                  />
-
-                </div>
-
-
-
-                <h3
-                  className="
-                    mt-6
-                    text-xl
-                    font-bold
-
-                    sm:mt-8
-                    sm:text-2xl
-                  "
-                >
-                  {pkg.title}
-                </h3>
-
-
-
-                <p
-                  className={`
-                    mt-3
-                    text-4xl
-                    font-black
-
-                    sm:text-5xl
-
-                    ${
-                      pkg.featured
-                      ? "text-white"
-                      : "text-slate-900"
-                    }
-                  `}
-                >
-                  {pkg.price}
-                </p>
-
-
-
-                <div className="mt-6 space-y-3 sm:mt-8 sm:space-y-4">
-
-                  {pkg.tests.map((test)=>(
-
-                    <div
-                      key={test}
-                      className="flex items-center gap-3"
-                    >
-
-                      <FiCheck
-                        className={
-                          pkg.featured
-                          ? "text-blue-300"
-                          : "text-blue-600"
-                        }
-                      />
-
-                      <span
-                        className={
-                          pkg.featured
-                          ? "text-sm text-slate-300"
-                          : "text-sm text-slate-600"
-                        }
-                      >
-                        {test}
-                      </span>
-
-                    </div>
-
-                  ))}
-
-                </div>
-
-
-
-                <button
-                  className={`
-                    mt-8
-                    flex
-                    w-full
-                    items-center
-                    justify-center
-                    gap-2
-                    rounded-2xl
-                    py-3.5
-                    text-sm
-                    font-semibold
-                    transition
-
-                    sm:mt-10
-                    sm:py-4
-                    sm:text-base
-
-                    ${
-                      pkg.featured
-                      ? "bg-white text-slate-900 hover:bg-slate-100"
-                      : "bg-slate-900 text-white hover:bg-blue-600"
-                    }
-                  `}
-                >
-                  Book Package
-                  <FiArrowRight />
-
-                </button>
-
-
-              </motion.div>
-
-            );
-
-          })}
+</div>
+</motion.div>
+          ))}
 
         </div>
 

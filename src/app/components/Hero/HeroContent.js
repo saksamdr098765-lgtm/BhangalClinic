@@ -9,6 +9,7 @@ import {
 } from "react-icons/fi";
 
 import SearchBar from "./SearchBar";
+import { useRouter } from "next/navigation";
 
 
 const fadeUp = {
@@ -25,6 +26,7 @@ const fadeUp = {
 
 
 export default function HeroContent() {
+  const router=useRouter()
   return (
     <div
       className="
@@ -214,6 +216,7 @@ export default function HeroContent() {
 
 
         <button
+        onClick={()=>{router.push('/contact')}}
           className="
             group
             flex
@@ -251,6 +254,7 @@ export default function HeroContent() {
 
 
         <button
+        onClick={()=>{router.push('packages')}}
           className="
             w-full
             rounded-full

@@ -1,51 +1,78 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  FiStar,
-  FiMapPin,
-  FiCheckCircle,
-} from "react-icons/fi";
+import { FiStar, FiCheckCircle } from "react-icons/fi";
 
-const reviews = [
+const testimonials = [
+  {
+    name: "Rahul Sharma",
+    location: "Mohali",
+    text: "Excellent service. The home sample collection was on time and the reports were delivered the same day. Highly recommended.",
+  },
+  {
+    name: "Priya Verma",
+    location: "Chandigarh",
+    text: "Very professional staff and quick report delivery. Booking online was simple and the entire experience was smooth.",
+  },
   {
     name: "Aman Singh",
-    location: "Mohali",
-    rating: 5,
-    review:
-      "Very professional staff and quick report delivery. The online booking process was simple and the home sample collection arrived exactly on time.",
-  },
-  {
-    name: "Neha Sharma",
-    location: "Kharar",
-    rating: 5,
-    review:
-      "Clean laboratory, friendly staff, and transparent pricing. I received my reports digitally the same evening.",
-  },
-  {
-    name: "Rajesh Kumar",
-    location: "Chandigarh",
-    rating: 5,
-    review:
-      "Booked my parents' health package online. Everything was smooth, from booking to report delivery. Highly recommended.",
+    location: "Zirakpur",
+    text: "Clean laboratory, courteous staff and accurate reports. I always choose Bhangal Clinical Laboratory for my family's tests.",
   },
 ];
 
 export default function Testimonials() {
   return (
-    <section className="relative overflow-hidden bg-slate-50 py-24">
+    <section
+      className="
+        relative
+        overflow-hidden
+        bg-white
+        py-16
+
+        sm:py-20
+        lg:py-28
+      "
+    >
       {/* Background */}
 
-      <div className="absolute inset-0">
+      <div
+        className="
+          absolute
+          left-0
+          top-0
+          h-72
+          w-72
+          rounded-full
+          bg-blue-100/40
+          blur-[120px]
+        "
+      />
 
-        <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-blue-200/20 blur-[100px]" />
+      <div
+        className="
+          absolute
+          bottom-0
+          right-0
+          h-80
+          w-80
+          rounded-full
+          bg-cyan-100/40
+          blur-[120px]
+        "
+      />
 
-        <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-cyan-200/20 blur-[120px]" />
+      <div
+        className="
+          relative
+          z-10
+          mx-auto
+          max-w-7xl
+          px-4
 
-      </div>
-
-      <div className="relative z-10 mx-auto max-w-7xl px-6">
-
+          sm:px-6
+        "
+      >
         {/* Heading */}
 
         <motion.div
@@ -54,80 +81,216 @@ export default function Testimonials() {
           viewport={{ once: true }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
+          <span
+            className="
+              inline-flex
+              rounded-full
+              bg-blue-100
+              px-4
+              py-2
+              text-sm
+              font-semibold
+              text-blue-700
+            "
+          >
             Patient Reviews
           </span>
 
-          <h2 className="mt-4 text-4xl font-bold tracking-tight text-slate-900 lg:text-5xl">
-            Trusted by families every day.
+          <h2
+            className="
+              mt-6
+              text-3xl
+              font-black
+              text-slate-900
+
+              sm:text-5xl
+            "
+          >
+            Trusted by hundreds of
+            <br />
+            happy patients.
           </h2>
 
-          <p className="mt-6 text-lg leading-8 text-slate-600">
-            Real experiences from patients who chose us for accurate diagnostics,
-            home sample collection, and fast digital reports.
+          <p
+            className="
+              mx-auto
+              mt-6
+              max-w-2xl
+              text-lg
+              leading-8
+              text-slate-600
+            "
+          >
+            We focus on accurate diagnostics, professional care and a
+            hassle-free experience from booking to report delivery.
           </p>
         </motion.div>
 
-        {/* Reviews */}
+        {/* Cards */}
 
-        <div className="mt-16 grid gap-6 lg:grid-cols-3">
+        <div
+          className="
+            mt-14
+            grid
+            gap-6
 
-          {reviews.map((review, index) => (
+            md:grid-cols-2
+            xl:grid-cols-3
+          "
+        >
+          {testimonials.map((item, index) => (
             <motion.div
-              key={review.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.12 }}
-              className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl"
+              key={item.name}
+              initial={{
+                opacity: 0,
+                y: 30,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                delay: index * 0.15,
+              }}
+              viewport={{
+                once: true,
+              }}
+              whileHover={{
+                y: -8,
+              }}
+             className="
+  flex
+  h-full
+  flex-col
+  rounded-[30px]
+  border
+  border-slate-200
+  bg-white
+  p-8
+  shadow-[0_20px_60px_rgba(15,23,42,.08)]
+  transition
+"
             >
-              {/* Rating */}
+              {/* Stars */}
 
-              <div className="flex items-center gap-1">
-
-                {[...Array(review.rating)].map((_, i) => (
+              <div className="flex gap-1">
+                {[...Array(5)].map((_, i) => (
                   <FiStar
                     key={i}
                     className="fill-yellow-400 text-yellow-400"
                   />
                 ))}
-
               </div>
 
               {/* Review */}
 
-              <p className="mt-6 leading-8 text-slate-600">
-                "{review.review}"
+              <p
+                className="
+                  mt-6
+                  text-base
+                  leading-8
+                  text-slate-600
+                "
+              >
+                "{item.text}"
               </p>
+
+              {/* Divider */}
+
+             <div className="mt-auto pt-8">
+  <div className="mb-8 h-px bg-slate-100" />
 
               {/* User */}
 
-              <div className="mt-8 flex items-center justify-between">
-
-                <div>
-
-                  <h3 className="font-bold text-slate-900">
-                    {review.name}
-                  </h3>
-
-                  <div className="mt-1 flex items-center gap-1 text-sm text-slate-500">
-                    <FiMapPin />
-                    {review.location}
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <div
+                    className="
+                      flex
+                      h-14
+                      w-14
+                      items-center
+                      justify-center
+                      rounded-full
+                      bg-blue-600
+                      text-lg
+                      font-bold
+                      text-white
+                    "
+                  >
+                    {item.name.charAt(0)}
                   </div>
 
+                  <div>
+                    <h4 className="font-bold text-slate-900">
+                      {item.name}
+                    </h4>
+
+                    <p className="text-sm text-slate-500">
+                      {item.location}
+                    </p>
+                  </div>
                 </div>
 
-                <div className="flex items-center gap-1 rounded-full bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-600">
-                  <FiCheckCircle />
-                  Verified
+                <div
+                  className="
+                    flex
+                    h-10
+                    w-10
+                    items-center
+                    justify-center
+                    rounded-full
+                    bg-emerald-50
+                  "
+                >
+                  <FiCheckCircle className="text-emerald-600" />
                 </div>
-
               </div>
-
+              </div>
             </motion.div>
           ))}
-
         </div>
+
+        {/* Bottom Trust Strip */}
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="
+            mt-16
+            flex
+            flex-wrap
+            justify-center
+            gap-4
+          "
+        >
+          {[
+            "1000+ Happy Patients",
+            "Accurate Reports",
+            "Home Collection",
+            "Trusted Laboratory",
+          ].map((item) => (
+            <div
+              key={item}
+              className="
+                flex
+                items-center
+                gap-2
+                rounded-full
+                bg-slate-50
+                px-5
+                py-3
+                text-sm
+                font-medium
+                text-slate-700
+              "
+            >
+              <FiCheckCircle className="text-blue-600" />
+              {item}
+            </div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );

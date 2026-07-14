@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import {
   FiArrowRight,
   FiPhone,
@@ -10,9 +11,11 @@ import {
   FiClock,
   FiHome,
 } from "react-icons/fi";
+import SITE_CONFIG from "../SITE_CONFIG";
 
 
 export default function FooterCTA() {
+  const router=useRouter()
   return (
     <section
       className="
@@ -174,7 +177,7 @@ export default function FooterCTA() {
             >
 
               <Link
-                href="/book-test"
+                href="/contact"
                 className="
                   flex
                   items-center
@@ -203,7 +206,7 @@ export default function FooterCTA() {
 
 
               <a
-                href="tel:+919999999999"
+                href={`tel:${SITE_CONFIG.phone}`}
                 className="
                   flex
                   items-center
@@ -441,7 +444,7 @@ export default function FooterCTA() {
                     ₹399
                   </h4>
 
-                  <FiArrowRight size={24}/>
+                  <FiArrowRight size={24} onClick={()=>{router.push('/contact')}}/>
 
                 </div>
 

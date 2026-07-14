@@ -1,50 +1,41 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 import {
   FiArrowRight,
-  FiDroplet,
-  FiHeart,
-  FiActivity,
-  FiSun,
-} from "react-icons/fi";
+FiClock,
+FiHome,
+FiCheckCircle,
 
-const tests = [
-  {
-    icon: FiDroplet,
-    name: "CBC Test",
-    desc: "Complete Blood Count",
-    price: "₹399",
-    bg: "bg-red-50",
-    color: "text-red-500",
-  },
-  {
-    icon: FiActivity,
-    name: "HbA1c Test",
-    desc: "Average Blood Sugar",
-    price: "₹599",
-    bg: "bg-emerald-50",
-    color: "text-emerald-600",
-  },
-  {
-    icon: FiHeart,
-    name: "Thyroid Profile",
-    desc: "T3, T4 & TSH",
-    price: "₹699",
-    bg: "bg-violet-50",
-    color: "text-violet-600",
-  },
-  {
-    icon: FiSun,
-    name: "Vitamin D",
-    desc: "Vitamin D Screening",
-    price: "₹999",
-    bg: "bg-amber-50",
-    color: "text-amber-500",
-  },
-];
+
+} from "react-icons/fi";
+import SITE_CONFIG from "../SITE_CONFIG";
+import { tests } from "../data/tests";
+
+
 
 export default function PopularTests() {
+  const router=useRouter()
+  const handleWhatsApp = (test) => {
+  const message = `Hello,
+
+I would like to book the following test.
+
+*Test:* ${test.name}
+*Description:* ${test.desc}
+*Price:* ${test.price}
+
+Please share the available slots and booking process.
+
+Thank you.`;
+
+  const url = `https://wa.me/${SITE_CONFIG.whatsapp}?text=${encodeURIComponent(
+    message
+  )}`;
+
+  window.open(url, "_blank");
+};
   return (
     <section
       className="
@@ -207,135 +198,116 @@ export default function PopularTests() {
           "
         >
 
-          {tests.map((test,index)=>{
+          {tests.slice(0,4).map((test, index) => (
+             <motion.div
+  key={test.slug}
+  initial={{ opacity: 0, y: 25 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: index * 0.05 }}
+  whileHover={{ y: -6 }}
+  className="
+    group
+    flex
+    h-full
+    flex-col
+    rounded-3xl
+    border
+    border-slate-200
+    bg-white
+    p-6
+    shadow-sm
+    transition-all
+    duration-300
+    hover:border-blue-200
+    hover:shadow-xl
+  "
+>
+  {/* Category */}
 
-            const Icon = test.icon;
+  <div className="flex items-center justify-between">
+    <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
+      {test.category}
+    </span>
 
-            return (
+    <span className="text-xs text-slate-500">
+      {test.reportTime}
+    </span>
+  </div>
 
-              <motion.div
-                key={test.name}
-                initial={{
-                  opacity:0,
-                  y:30,
-                }}
-                whileInView={{
-                  opacity:1,
-                  y:0,
-                }}
-                viewport={{
-                  once:true,
-                }}
-                transition={{
-                  delay:index*0.08,
-                }}
+  {/* Title */}
 
-                className="
-                  group
-                  rounded-[24px]
-                  border
-                  border-slate-200/70
-                  bg-white/90
-                  p-5
-                  shadow-sm
-                  backdrop-blur
-                  transition-all
-                  duration-300
+  <h3 className="mt-5 min-h-[64px] text-2xl font-bold leading-tight text-slate-900">
+    {test.name}
+  </h3>
 
-                  hover:-translate-y-2
-                  hover:border-blue-200
-                  hover:shadow-2xl
+  {/* Description */}
 
-                  sm:rounded-[28px]
-                  sm:p-7
-                "
-              >
+  <p className="mt-3 line-clamp-3 min-h-[72px] text-slate-600 leading-7">
+    {test.description}
+  </p>
 
+  {/* Features */}
 
-                <div
-                  className={`
-                    flex
-                    h-14
-                    w-14
-                    items-center
-                    justify-center
-                    rounded-2xl
-                    ${test.bg}
+  <div className="mt-6 space-y-3">
+    <div className="flex items-center gap-3">
+      <FiClock className="text-blue-600" />
+      <span className="text-sm text-slate-600">
+        Report in {test.reportTime}
+      </span>
+    </div>
 
-                    sm:h-16
-                    sm:w-16
-                  `}
-                >
+    <div className="flex items-center gap-3">
+      <FiHome className="text-blue-600" />
+      <span className="text-sm text-slate-600">
+        Home Sample Collection
+      </span>
+    </div>
 
-                  <Icon
-                    className={`
-                      text-2xl
-                      ${test.color}
+    <div className="flex items-center gap-3">
+      <FiCheckCircle className="text-blue-600" />
+      <span className="text-sm text-slate-600">
+        NABL Certified Testing
+      </span>
+    </div>
+  </div>
 
-                      sm:text-3xl
-                    `}
-                  />
+  {/* Bottom Section */}
 
-                </div>
+  <div className="mt-auto pt-8 border-t border-slate-100">
+    <div className="flex items-center justify-between">
+      <div>
+        <p className="text-xs uppercase tracking-wide text-slate-500">
+          Starting From
+        </p>
 
+        <p className="mt-1 text-4xl font-black text-slate-900">
+          ₹{test.price}
+        </p>
+      </div>
 
-                <h3
-                  className="
-                    mt-6
-                    text-xl
-                    font-bold
-                    text-slate-900
-
-                    sm:mt-8
-                    sm:text-2xl
-                  "
-                >
-                  {test.name}
-                </h3>
-
-
-                <p className="mt-2 text-sm text-slate-500 sm:text-base">
-                  {test.desc}
-                </p>
-
-
-                <div className="mt-6 flex items-center justify-between sm:mt-8">
-
-                  <span className="text-xl font-bold text-slate-900 sm:text-2xl">
-                    {test.price}
-                  </span>
-
-
-                  <button
-                    className="
-                      flex
-                      h-11
-                      w-11
-                      items-center
-                      justify-center
-                      rounded-full
-                      bg-blue-600
-                      text-white
-                      transition
-
-                      group-hover:scale-110
-                      group-hover:rotate-45
-
-                      sm:h-12
-                      sm:w-12
-                    "
-                  >
-                    <FiArrowRight />
-                  </button>
-
-                </div>
-
-
-              </motion.div>
-
-            );
-
-          })}
+      <button
+        onClick={() => handleWhatsApp(test)}
+        className="
+          flex
+          h-14
+          w-14
+          items-center
+          justify-center
+          rounded-2xl
+          bg-blue-600
+          text-white
+          transition-all
+          duration-300
+          hover:bg-blue-700
+          hover:scale-105
+        "
+      >
+        <FiArrowRight size={20} />
+      </button>
+    </div>
+  </div>
+</motion.div>
+                ))}
 
         </div>
 
@@ -363,6 +335,7 @@ export default function PopularTests() {
         >
 
           <button
+          onClick={()=>{router.push('/packages#test-grid')}}
             className="
               w-full
               rounded-full

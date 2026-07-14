@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import {
   FiCalendar,
   FiClock,
@@ -12,6 +14,16 @@ import {
 const tests = ["CBC", "HbA1c", "Thyroid", "Vitamin D"];
 
 export default function BookingPanel() {
+  const [query,setQuery]=useState("")
+  const router=useRouter()
+   const handleSearch = (query) => {
+     if (!query.trim()) return;
+ 
+     router.push(
+       `/packages?search=${encodeURIComponent(query)}`
+     );
+   };
+  
   return (
   <div
   className="
@@ -107,6 +119,8 @@ export default function BookingPanel() {
           <FiSearch className="text-slate-400" />
 
           <input
+        
+  
             placeholder="Search CBC, HbA1c..."
             className="
               flex-1
@@ -124,6 +138,7 @@ export default function BookingPanel() {
           {tests.map((test) => (
             <button
               key={test}
+               onClick={()=>{handleSearch(test)}}
               className="
                 rounded-full
                 bg-slate-100
@@ -215,6 +230,7 @@ export default function BookingPanel() {
 
 
           <button
+          onClick={()=>{router.push("/packages")}}
             className="
               rounded-xl
               bg-white

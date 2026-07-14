@@ -7,10 +7,51 @@ import {
   FiPhone,
   FiMail,
   FiMapPin,
+  FiInfo,
+  FiHeart,
 } from "react-icons/fi";
 
 
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaWhatsapp,
+  FaGoogle,
+  FaHome,
+} from "react-icons/fa";
+import { useRouter } from "next/navigation";
+import SITE_CONFIG from "../SITE_CONFIG";
+const navLinks = [
+    {
+    name: "Home",
+    href: "/",
+    icon: FaHome,
+    color: "text-rose-600",
+  },
+ 
+  {
+    name: "Health Packages",
+    href: "/packages",
+    icon: FiHeart,
+    color: "text-rose-500",
+  },
+ 
+  {
+    name: "Contact",
+    href: "/contact",
+    icon: FiMail,
+    color: "text-orange-500",
+  },
+  {
+    name: "About",
+    href: "/about-us",
+    icon: FiInfo,
+    color: "text-violet-600",
+  },
+];
+
 export default function Footer() {
+  const router=useRouter()
   return (
     <footer className="relative overflow-hidden bg-white text-slate-900">
 
@@ -210,7 +251,7 @@ export default function Footer() {
               grid
               gap-8
 
-              sm:grid-cols-3
+              sm:grid-cols-2
             "
           >
 
@@ -224,22 +265,40 @@ export default function Footer() {
 
 
               <div className="mt-5 space-y-3 text-sm text-slate-500">
+{navLinks.map((item)=>{
+  const Icon= item.icon
+  return    <Link
+                  key={item.name}
+                  href={item.href}
+                  className="
+                    group
+                    flex
+                    items-center
+                    gap-2
+                    text-sm
+                    font-medium
+                    text-slate-600
+                    transition
+                    hover:text-slate-900
+                  "
+                >
 
-                <Link className="block hover:text-blue-600" href="/">
-                  Home
-                </Link>
+                  <Icon
+                    className={`
+                      transition
+                      group-hover:scale-110
+                      ${item.color}
+                    `}
+                  />
 
-                <Link className="block hover:text-blue-600" href="/tests">
-                  Tests
-                </Link>
+                  {item.name}
 
-                <Link className="block hover:text-blue-600" href="/packages">
-                  Packages
-                </Link>
 
-                <Link className="block hover:text-blue-600" href="/about">
-                  About
                 </Link>
+})}
+              
+
+              
 
               </div>
 
@@ -249,23 +308,7 @@ export default function Footer() {
 
 
 
-            <div>
-
-              <h4 className="font-bold">
-                Services
-              </h4>
-
-
-              <div className="mt-5 space-y-3 text-sm text-slate-500">
-
-                <p>Blood Tests</p>
-                <p>Home Collection</p>
-                <p>Health Packages</p>
-                <p>Digital Reports</p>
-
-              </div>
-
-            </div>
+         
 
 
 
@@ -284,25 +327,28 @@ export default function Footer() {
                 <div className="flex gap-3">
                   <FiPhone className="text-blue-600" />
                   <span>
-                    +91 XXXXX XXXXX
+                  {SITE_CONFIG.phone}
                   </span>
                 </div>
 
 
 
                 <div className="flex gap-3">
-                  <FiMail className="text-blue-600" />
+                  <FiMail className="text-blue-600 shrink-0" />
                   <span>
-                    hello@example.com
+                  {SITE_CONFIG.email}
                   </span>
                 </div>
 
 
 
                 <div className="flex gap-3">
-                  <FiMapPin className="text-blue-600" />
+                  <FiMapPin className="text-blue-600 shrink-0" />
                   <span>
-                    Mohali, Punjab
+                  {SITE_CONFIG.address.line1}, 
+                  {SITE_CONFIG.address.street}, 
+                  {SITE_CONFIG.address.state}
+
                   </span>
                 </div>
 
@@ -322,7 +368,125 @@ export default function Footer() {
 
 
 
+{/* Google Map */}
 
+<div className="mt-14">
+
+  <div className="mb-6 flex items-center justify-between">
+
+    <div>
+
+      <h3 className="text-2xl font-bold text-slate-900">
+        Visit Our Laboratory
+      </h3>
+
+      <p className="mt-2 text-slate-600">
+        Easily find us using Google Maps.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div
+    className="
+      overflow-hidden
+      rounded-[32px]
+      border
+      border-slate-200
+      shadow-[0_20px_60px_rgba(15,23,42,.08)]
+    "
+  >
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3412.2673743929913!2d76.1484061!3d31.213321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391abf3a872c804b%3A0x3c7889898304438b!2sBhangal%20Clinical%20Laboratories%20%26%20ECG%20Garhshankar!5e0!3m2!1sen!2sin!4v1783939998979!5m2!1sen!2sin"
+      width="100%"
+      height="380"
+      style={{ border: 0 }}
+      loading="lazy"
+      allowFullScreen
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+  </div>
+
+</div>
+{/* Social Media */}
+
+<div
+  className="
+    mt-12
+    flex
+    flex-col
+    items-center
+    justify-between
+    gap-6
+
+    md:flex-row
+  "
+>
+
+  <div>
+
+    <h3 className="text-xl font-bold text-slate-900">
+      Follow Us
+    </h3>
+
+    <p className="mt-2 text-slate-500">
+      Stay connected for health updates and announcements.
+    </p>
+
+  </div>
+
+  <div className="flex items-center gap-4">
+
+    {[
+      {
+        icon: <FaInstagram />,
+        href: SITE_CONFIG.social.instagram,
+      },
+      {
+        icon: <FaFacebookF />,
+        href:  SITE_CONFIG.social.facebook,
+      },
+      {
+        icon: <FaWhatsapp />,
+        href: `https://wa.me/${SITE_CONFIG.whatsapp}`,
+      },
+     
+    ].map((item, index) => (
+      <a
+        key={index}
+        href={item.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="
+          flex
+          h-14
+          w-14
+          items-center
+          justify-center
+          rounded-2xl
+          border
+          border-slate-200
+          bg-white
+          text-xl
+          text-slate-700
+          shadow-sm
+          transition-all
+          duration-300
+          hover:-translate-y-1
+          hover:border-blue-200
+          hover:bg-blue-600
+          hover:text-white
+          hover:shadow-xl
+        "
+      >
+        {item.icon}
+      </a>
+    ))}
+
+  </div>
+
+</div>
 
         {/* Bottom */}
 
@@ -346,25 +510,7 @@ export default function Footer() {
           </p>
 
 
-          <div className="flex gap-5">
-
-            <Link href="/privacy">
-              Privacy Policy
-            </Link>
-
-            <Link href="/terms">
-              Terms
-            </Link>
-
-            <Link
-              href="/"
-              className="flex items-center gap-1"
-            >
-              Top
-              <FiArrowUpRight />
-            </Link>
-
-          </div>
+        
 
 
         </div>

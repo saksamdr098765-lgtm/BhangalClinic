@@ -19,38 +19,36 @@ import {
   FiMail,
   FiCalendar,
 } from "react-icons/fi";
+import { FaHome } from "react-icons/fa";
+import SITE_CONFIG from "../SITE_CONFIG";
 
 
 const navLinks = [
-  {
-    name: "Tests",
-    href: "/tests",
-    icon: FiActivity,
-    color: "text-blue-600",
+    {
+    name: "Home",
+    href: "/",
+    icon: FaHome,
+    color: "text-rose-600",
   },
+ 
   {
     name: "Health Packages",
     href: "/packages",
     icon: FiHeart,
     color: "text-rose-500",
   },
-  {
-    name: "Home Collection",
-    href: "/home-collection",
-    icon: FiHome,
-    color: "text-emerald-600",
-  },
-  {
-    name: "About",
-    href: "/about",
-    icon: FiInfo,
-    color: "text-violet-600",
-  },
+ 
   {
     name: "Contact",
     href: "/contact",
     icon: FiMail,
     color: "text-orange-500",
+  },
+  {
+    name: "About",
+    href: "/about-us",
+    icon: FiInfo,
+    color: "text-violet-600",
   },
 ];
 
@@ -268,7 +266,7 @@ export default function Navbar() {
 
 
             <a
-              href="tel:+919999999999"
+              href={`tel:${SITE_CONFIG.phone}`}
               className="
                 flex
                 items-center
@@ -297,7 +295,7 @@ export default function Navbar() {
 
 
             <Link
-              href="/book-test"
+              href="/contact"
               className="
                 flex
                 items-center

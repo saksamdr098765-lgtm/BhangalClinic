@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { FiSearch, FiArrowRight } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const popularTests = [
   "CBC",
@@ -14,7 +15,14 @@ const popularTests = [
 
 export default function SearchBar() {
   const [query, setQuery] = useState("");
+  const router=useRouter()
+  const handleSearch = () => {
+    if (!query.trim()) return;
 
+    router.push(
+      `/packages?search=${encodeURIComponent(query)}`
+    );
+  };
   return (
     <div className="w-full">
 
@@ -45,6 +53,9 @@ export default function SearchBar() {
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
+           onKeyDown={(e) => {
+          if (e.key === "Enter") handleSearch();
+        }}
           placeholder="Search pathology tests..."
           className="
             h-16
@@ -58,6 +69,7 @@ export default function SearchBar() {
         />
 
         <button
+        onClick={handleSearch}
           className="
             mr-2
             flex
@@ -88,6 +100,7 @@ export default function SearchBar() {
         {popularTests.map((test) => (
           <button
             key={test}
+            onClick={()=>{setQuery(test)}}
             className="
               rounded-full
               border
