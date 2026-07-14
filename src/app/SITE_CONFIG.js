@@ -35,8 +35,8 @@ export const SITE_CONFIG = {
   /*                                  Website                                   */
   /* -------------------------------------------------------------------------- */
 
-  url: "https://bhangalclinicallaboratory.com", // Change after domain purchase
-  domain: "bhangalclinicallaboratory.com",
+  url: "https://dkbhangallab.com", // Change after domain purchase
+  domain: "dkbhangallab.com.com",
 
   language: "en-IN",
   locale: "en_IN",
