@@ -76,19 +76,19 @@ export default function MedicalLeadership() {
             <div className="mt-8">
 
               <h3 className="text-2xl font-bold text-slate-900 sm:text-3xl">
-                Dr. Manpreet Singh
+              Dharminder Kumar
               </h3>
 
-              <p className="mt-2 text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">
+              {/* <p className="mt-2 text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">
                 MBBS • MD Pathology
-              </p>
+              </p> */}
 
             </div>
 
             <div className="mt-8 space-y-5 text-base leading-8 text-slate-600 sm:text-lg">
 
               <p>
-                Dr. Manpreet Singh has dedicated his career to delivering
+               Dharminder Kumar has dedicated his career to delivering
                 reliable pathology services that help physicians and patients
                 make informed healthcare decisions with confidence.
               </p>
@@ -145,7 +145,7 @@ export default function MedicalLeadership() {
               </p>
 
               <footer className="mt-5 text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-                — Dr. Manpreet Singh
+                — Dharminder Kumar
               </footer>
             </motion.blockquote>
 
@@ -166,11 +166,11 @@ export default function MedicalLeadership() {
 
             {[
               {
-                number: "15+",
+                number: "10+",
                 title: "Years Experience",
               },
               {
-                number: "20K+",
+                number: "15K+",
                 title: "Patients Served",
               },
               {

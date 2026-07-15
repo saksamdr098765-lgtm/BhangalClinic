@@ -36,7 +36,7 @@ const displayedPackages =  filteredPackages.length > 0
     from-slate-50
     via-white
     to-slate-50
-
+    py-5
     pb-24
   "
 >

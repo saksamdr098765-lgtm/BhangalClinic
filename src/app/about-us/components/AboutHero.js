@@ -7,7 +7,7 @@ import { FiArrowRight, FiCheck } from "react-icons/fi";
 
 const stats = [
   {
-    number: "1000+",
+    number: "15K+",
     label: "Patients Served",
   },
   {
@@ -75,7 +75,7 @@ export default function Hero() {
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
 
               <Link
-                href="/book-test"
+                href="/contact"
                 className="group inline-flex w-full items-center justify-center gap-3 rounded-2xl bg-blue-600 px-7 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-blue-700 hover:shadow-xl sm:w-auto"
               >
                 Book a Test
@@ -129,7 +129,7 @@ export default function Hero() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-2xl sm:rounded-[36px]">
 
               <Image
-                src="/images/about/lab.jpg"
+                src="/clinic.jpg"
                 fill
                 alt="Bhangal Clinical Laboratory"
                 className="object-cover"
@@ -145,7 +145,7 @@ export default function Hero() {
             <div className="absolute bottom-4 left-4 rounded-2xl border border-white/30 bg-white/90 px-5 py-4 shadow-xl backdrop-blur-xl sm:bottom-6 sm:left-6 lg:-left-8 lg:bottom-8">
 
               <p className="text-3xl font-black text-blue-600">
-                1000+
+                15K+
               </p>
 
               <p className="mt-1 text-sm text-slate-600">
