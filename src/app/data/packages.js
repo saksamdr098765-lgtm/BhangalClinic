@@ -4973,4 +4973,250 @@ export const packages =[
 },
 
 ]
+import {
+  FaHeartPulse,
+  FaStethoscope,
+  FaDna,
+  FaCapsules,
+  FaBone,
+  FaPersonCane,
+  FaPerson,
+  FaPersonDress,
+  FaHouseMedical,
+  FaSun,
+  FaDroplet,
+} from "react-icons/fa6";
 
+export const packageTheme = {
+  preventive: {
+    icon: FaStethoscope,
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+
+    badgeBg: "bg-blue-50",
+    badgeColor: "text-blue-700",
+
+    cardBg:
+      "bg-gradient-to-br from-white to-blue-50",
+
+    button:
+      "bg-blue-600 hover:bg-blue-700",
+
+    glow:
+      "bg-blue-100",
+  },
+
+
+  heart: {
+    icon: FaHeartPulse,
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+
+    badgeBg: "bg-blue-50",
+    badgeColor: "text-blue-700",
+
+    cardBg:
+      "bg-gradient-to-br from-white to-blue-50",
+
+    button:
+      "bg-blue-600 hover:bg-blue-700",
+
+    glow:
+      "bg-blue-100",
+  },
+
+
+  thyroid: {
+    icon: FaDna,
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+
+    badgeBg: "bg-blue-50",
+    badgeColor: "text-blue-700",
+
+    cardBg:
+      "bg-gradient-to-br from-white to-blue-50",
+
+    button:
+      "bg-blue-600 hover:bg-blue-700",
+
+    glow:
+      "bg-blue-100",
+  },
+
+
+  vitamin: {
+    icon: FaCapsules,
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+
+    badgeBg: "bg-blue-50",
+    badgeColor: "text-blue-700",
+
+    cardBg:
+      "bg-gradient-to-br from-white to-blue-50",
+
+    button:
+      "bg-blue-600 hover:bg-blue-700",
+
+    glow:
+      "bg-blue-100",
+  },
+
+
+  arthritis: {
+    icon: FaBone,
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+
+    badgeBg: "bg-blue-50",
+    badgeColor: "text-blue-700",
+
+    cardBg:
+      "bg-gradient-to-br from-white to-blue-50",
+
+    button:
+      "bg-blue-600 hover:bg-blue-700",
+
+    glow:
+      "bg-blue-100",
+  },
+
+
+  seniorMale: {
+    icon: FaPerson,
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+
+    badgeBg: "bg-blue-50",
+    badgeColor: "text-blue-700",
+
+    cardBg:
+      "bg-gradient-to-br from-white to-blue-50",
+
+    button:
+      "bg-blue-600 hover:bg-blue-700",
+
+    glow:
+      "bg-blue-100",
+  },
+
+
+  seniorFemale: {
+    icon: FaPersonDress,
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+
+    badgeBg: "bg-blue-50",
+    badgeColor: "text-blue-700",
+
+    cardBg:
+      "bg-gradient-to-br from-white to-blue-50",
+
+    button:
+      "bg-blue-600 hover:bg-blue-700",
+
+    glow:
+      "bg-blue-100",
+  },
+
+
+  home: {
+    icon: FaHouseMedical,
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+
+    badgeBg: "bg-blue-50",
+    badgeColor: "text-blue-700",
+
+    cardBg:
+      "bg-gradient-to-br from-white to-blue-50",
+
+    button:
+      "bg-blue-600 hover:bg-blue-700",
+
+    glow:
+      "bg-blue-100",
+  },
+
+
+  summer: {
+    icon: FaSun,
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+
+    badgeBg: "bg-blue-50",
+    badgeColor: "text-blue-700",
+
+    cardBg:
+      "bg-gradient-to-br from-white to-blue-50",
+
+    button:
+      "bg-blue-600 hover:bg-blue-700",
+
+    glow:
+      "bg-blue-100",
+  },
+
+
+  blood: {
+    icon: FaDroplet,
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+
+    badgeBg: "bg-blue-50",
+    badgeColor: "text-blue-700",
+
+    cardBg:
+      "bg-gradient-to-br from-white to-blue-50",
+
+    button:
+      "bg-blue-600 hover:bg-blue-700",
+
+    glow:
+      "bg-blue-100",
+  },
+};
+export const packageThemeMap = {
+  // Full Body
+  "full-body-checkup": "preventive",
+
+  "swasthya-mitra-basic": "preventive",
+  "swasthya-mitra-advance": "preventive",
+  "swasthya-mitra-super": "preventive",
+
+  "aarogyam-a-pro": "preventive",
+  "aarogyam-xl-pro": "preventive",
+  "aarogyam-tax-saver-basic-utsh": "preventive",
+
+  // Heart
+  "jaanch-heart-screening": "heart",
+  "jaanch-heart-advanced": "heart",
+  "jaanch-heart-comprehensive": "heart",
+
+  "lipid-profile-test": "heart",
+
+  // Thyroid
+  "jaanch-thyroid-profile-advanced": "thyroid",
+
+  // Vitamins
+  "vitamin-d-b12-combo": "vitamin",
+  "paleo-profile-basic-new": "vitamin",
+
+  // Arthritis
+  "arthritis-checkup": "arthritis",
+
+  // Senior
+  "senior-citizen-male-package": "seniorMale",
+  "senior-citizen-female-package": "seniorFemale",
+
+  // Home
+  "home-sample-collection": "home",
+
+  // Summer
+  "jaanch-heat-shield-basic": "summer",
+  "jaanch-heat-shield-advanced": "summer",
+
+  // Blood / Individual
+  "essential-health-tests": "blood",
+};

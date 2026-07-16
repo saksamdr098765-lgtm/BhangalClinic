@@ -12,501 +12,538 @@ import {
 
 import {
   FiPhone,
-  FiActivity,
   FiHeart,
-  FiHome,
+  FiCalendar,
+  FiActivity,
   FiInfo,
   FiMail,
-  FiCalendar,
 } from "react-icons/fi";
+
 import { FaHome } from "react-icons/fa";
 import SITE_CONFIG from "../SITE_CONFIG";
 
 
 const navLinks = [
-    {
-    name: "Home",
-    href: "/",
-    icon: FaHome,
-    color: "text-rose-600",
-  },
- 
   {
-    name: "Health Packages",
-    href: "/packages",
-    icon: FiHeart,
-    color: "text-rose-500",
-  },
- 
-  {
-    name: "Contact",
-    href: "/contact",
-    icon: FiMail,
-    color: "text-orange-500",
+    name:"Home",
+    href:"/",
+    icon:FaHome,
   },
   {
-    name: "About",
-    href: "/about-us",
-    icon: FiInfo,
-    color: "text-violet-600",
+    name:"Health Packages",
+    href:"/packages",
+    icon:FiHeart,
+  },
+  {
+    name:"About Us",
+    href:"/about-us",
+    icon:FiInfo,
+  },
+  {
+    name:"Contact",
+    href:"/contact",
+    icon:FiMail,
   },
 ];
 
 
-export default function Navbar() {
-
-  const [scrolled,setScrolled] = useState(false);
-  const [mobileOpen,setMobileOpen] = useState(false);
-
-
-  useEffect(()=>{
-
-    const handleScroll = () =>
-      setScrolled(window.scrollY > 20);
+export default function Navbar(){
 
+const [scrolled,setScrolled]=useState(false);
+const [mobileOpen,setMobileOpen]=useState(false);
 
-    window.addEventListener(
-      "scroll",
-      handleScroll
-    );
 
+useEffect(()=>{
 
-    return () =>
-      window.removeEventListener(
-        "scroll",
-        handleScroll
-      );
+ const handleScroll=()=>{
+  setScrolled(window.scrollY>30)
+ }
 
-  },[]);
+ window.addEventListener("scroll",handleScroll);
+
+ return ()=>window.removeEventListener("scroll",handleScroll)
 
+},[])
+
+
+
+return (
+
+<>
+
+<motion.header
+
+initial={{y:-100}}
+animate={{y:0}}
+
+className={`
+fixed
+top-0
+left-0
+z-50
+w-full
+transition-all
+duration-300
 
+${
+scrolled
+?
+"bg-white/95 border-b border-blue-100 shadow-sm backdrop-blur-xl"
+:
+"bg-white/70 backdrop-blur-md"
+}
 
-  return (
-    <>
+`}
 
+>
 
-      <motion.header
-        initial={{
-          y:-80,
-        }}
-        animate={{
-          y:0,
-        }}
-        transition={{
-          duration:.6,
-        }}
-        className={`
-          fixed
-          left-0
-          top-0
-          z-50
-          w-full
-          transition-all
-          duration-300
 
-          ${
-            scrolled
-            ?
-            "border-b border-slate-200 bg-white/90 backdrop-blur-xl"
-            :
-            "bg-white/60 backdrop-blur-md"
-          }
-        `}
-      >
+<div
+className="
+mx-auto
+flex
+h-20
+max-w-7xl
+items-center
+justify-between
+px-5
+sm:px-6
+"
+>
 
 
-        <div
-          className="
-            mx-auto
-            flex
-            h-20
-            max-w-7xl
-            items-center
-            justify-between
-            px-4
+{/* LOGO */}
 
-            sm:px-6
-          "
-        >
+<Link
+href="/"
+className="
+flex
+items-center
+gap-3
+"
+>
 
+<div
+className="
+relative
+h-12
+w-12
+overflow-hidden
+rounded-2xl
+border
+border-blue-100
+bg-white
+shadow-sm
+"
+>
 
+<Image
+src="/logo.jpg"
+fill
+alt="Bhangal Clinical Laboratory"
+className="object-contain"
+/>
 
-          {/* Logo */}
+</div>
 
 
-          <Link
-            href="/"
-            className="flex items-center gap-3"
-          >
+<div>
 
-            <div
-              className="
-                relative
-                h-11
-                w-11
-                overflow-hidden
-                rounded-full
-                border
-                border-slate-200
-                bg-white
-              "
-            >
+<h2
+className="
+text-base
+font-extrabold
+tracking-tight
+text-slate-900
+sm:text-lg
+"
+>
+Bhangal Clinical
+</h2>
 
-              <Image
-                src="/logo.jpg"
-                fill
-                alt="Bhangal Clinical Laboratory"
-                className="object-contain"
-              />
+<p
+className="
+flex
+items-center
+gap-1
+text-xs
+font-medium
+text-blue-600
+"
+>
 
-            </div>
+<FiActivity size={12}/>
 
+Diagnostic Laboratory
 
-            <div>
+</p>
 
-              <h2
-                className="
-                  text-base
-                  font-bold
-                  text-slate-900
 
-                  sm:text-lg
-                "
-              >
-                Bhangal Clinical
-              </h2>
+</div>
 
 
-              <p className="-mt-1 text-xs text-slate-500 sm:text-sm">
-                Laboratory
-              </p>
+</Link>
 
 
-            </div>
 
 
-          </Link>
 
+{/* DESKTOP NAV */}
 
+<nav
+className="
+hidden
+items-center
+gap-8
+lg:flex
+"
+>
 
 
+{
+navLinks.map((item)=>{
 
-          {/* Desktop Menu */}
+const Icon=item.icon;
 
 
-          <nav
-            className="
-              hidden
-              items-center
-              gap-7
+return (
 
-              lg:flex
-            "
-          >
+<Link
+key={item.name}
+href={item.href}
 
-            {navLinks.map((item)=>{
+className="
+group
+flex
+items-center
+gap-2
+text-sm
+font-semibold
+text-slate-600
+transition
+hover:text-blue-700
+"
 
-              const Icon = item.icon;
+>
 
 
-              return (
+<Icon
+className="
+text-blue-600
+transition
+group-hover:scale-110
+"
+/>
 
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="
-                    group
-                    flex
-                    items-center
-                    gap-2
-                    text-sm
-                    font-medium
-                    text-slate-600
-                    transition
-                    hover:text-slate-900
-                  "
-                >
 
-                  <Icon
-                    className={`
-                      transition
-                      group-hover:scale-110
-                      ${item.color}
-                    `}
-                  />
+{item.name}
 
-                  {item.name}
 
+</Link>
 
-                </Link>
+)
 
-              );
+})
+}
 
-            })}
 
+</nav>
 
-          </nav>
 
 
 
 
+{/* ACTIONS */}
 
-          {/* Desktop Actions */}
+<div
+className="
+hidden
+items-center
+gap-3
+lg:flex
+"
+>
 
 
-          <div
-            className="
-              hidden
-              items-center
-              gap-3
+<a
 
-              lg:flex
-            "
-          >
+href={`tel:${SITE_CONFIG.phone}`}
 
+className="
+flex
+items-center
+gap-2
+rounded-full
+border
+border-blue-100
+bg-white
+px-5
+py-3
+text-sm
+font-semibold
+text-slate-700
+transition
+hover:border-blue-300
+"
 
-            <a
-              href={`tel:${SITE_CONFIG.phone}`}
-              className="
-                flex
-                items-center
-                gap-2
-                rounded-full
-                border
-                border-slate-200
-                bg-white
-                px-5
-                py-2.5
-                text-sm
-                font-semibold
-                text-slate-700
-                transition
-                hover:border-blue-300
-              "
-            >
+>
 
-              <FiPhone className="text-blue-600"/>
+<FiPhone className="text-blue-600"/>
 
-              Call Now
+Call Now
 
-            </a>
+</a>
 
 
 
+<Link
 
-            <Link
-              href="/contact"
-              className="
-                flex
-                items-center
-                gap-2
-                rounded-full
-                bg-blue-600
-                px-6
-                py-3
-                font-semibold
-                text-white
-                shadow-lg
-                shadow-blue-600/20
-                transition
-                hover:-translate-y-1
-              "
-            >
+href="/contact"
 
-              <FiCalendar />
+className="
+flex
+items-center
+gap-2
+rounded-full
+bg-blue-600
+px-6
+py-3
+font-semibold
+text-white
+shadow-lg
+shadow-blue-600/20
+transition
+hover:-translate-y-1
+hover:bg-blue-700
+"
 
-              Book Test
+>
 
-            </Link>
+<FiCalendar/>
 
+Book Test
 
-          </div>
+</Link>
 
 
+</div>
 
 
 
-          {/* Mobile Button */}
 
 
-          <button
-            onClick={()=>setMobileOpen(!mobileOpen)}
-            className="
-              rounded-xl
-              border
-              border-slate-200
-              bg-white
-              p-2
+{/* MOBILE */}
 
-              lg:hidden
-            "
-          >
+<button
 
-            {
-              mobileOpen
-              ?
-              <HiOutlineX size={24}/>
-              :
-              <HiOutlineMenuAlt3 size={24}/>
-            }
+onClick={()=>setMobileOpen(!mobileOpen)}
 
-          </button>
+className="
+rounded-xl
+border
+border-blue-100
+bg-white
+p-2
+lg:hidden
+"
 
+>
 
-        </div>
+{
+mobileOpen
+?
+<HiOutlineX size={25}/>
+:
+<HiOutlineMenuAlt3 size={25}/>
+}
 
+</button>
 
-      </motion.header>
 
+</div>
 
 
+</motion.header>
 
 
 
 
-      {/* Mobile Menu */}
 
 
-      <AnimatePresence>
 
-        {
-          mobileOpen && (
+{/* MOBILE MENU */}
 
-            <motion.div
+<AnimatePresence>
 
-              initial={{
-                opacity:0,
-                y:-20,
-              }}
+{
+mobileOpen &&
 
-              animate={{
-                opacity:1,
-                y:0,
-              }}
+<motion.div
 
-              exit={{
-                opacity:0,
-                y:-20,
-              }}
+initial={{
+opacity:0,
+y:-20
+}}
 
-              className="
-                fixed
-                left-4
-                right-4
-                top-20
-                z-40
-                rounded-3xl
-                border
-                border-slate-200
-                bg-white
-                p-6
-                shadow-2xl
+animate={{
+opacity:1,
+y:0
+}}
 
-                lg:hidden
-              "
-            >
+exit={{
+opacity:0,
+y:-20
+}}
 
+className="
+fixed
+left-4
+right-4
+top-20
+z-40
+rounded-3xl
+border
+border-blue-100
+bg-white
+p-5
+shadow-xl
+lg:hidden
+"
 
-              <div className="space-y-4">
+>
 
 
-                {
-                  navLinks.map((item)=>{
+<div
+className="
+space-y-3
+"
+>
 
-                    const Icon=item.icon;
 
+{
+navLinks.map((item)=>{
 
-                    return (
+const Icon=item.icon;
 
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        onClick={()=>setMobileOpen(false)}
-                        className="
-                          flex
-                          items-center
-                          gap-4
-                          rounded-2xl
-                          bg-slate-50
-                          px-4
-                          py-3
-                          font-medium
-                          text-slate-700
-                        "
-                      >
 
-                        <Icon
-                          className={item.color}
-                        />
+return (
 
-                        {item.name}
+<Link
 
-                      </Link>
+key={item.name}
 
-                    )
+href={item.href}
 
-                  })
-                }
+onClick={()=>setMobileOpen(false)}
 
+className="
+flex
+items-center
+gap-4
+rounded-2xl
+bg-blue-50/50
+px-4
+py-4
+font-semibold
+text-slate-700
+"
 
+>
 
-                <a
-                  href="tel:+919999999999"
-                  className="
-                    flex
-                    items-center
-                    justify-center
-                    gap-2
-                    rounded-2xl
-                    border
-                    border-slate-200
-                    py-3
-                    font-semibold
-                  "
-                >
+<div
+className="
+flex
+h-10
+w-10
+items-center
+justify-center
+rounded-xl
+bg-blue-100
+"
+>
 
-                  <FiPhone className="text-blue-600"/>
+<Icon className="text-blue-600"/>
 
-                  Call Now
+</div>
 
-                </a>
 
+{item.name}
 
 
-                <Link
-                  href="/book-test"
-                  className="
-                    flex
-                    items-center
-                    justify-center
-                    gap-2
-                    rounded-2xl
-                    bg-blue-600
-                    py-3
-                    font-semibold
-                    text-white
-                  "
-                >
+</Link>
 
-                  <FiCalendar/>
+)
 
-                  Book Test
+})
+}
 
-                </Link>
 
 
-              </div>
+<a
 
+href={`tel:${SITE_CONFIG.phone}`}
 
-            </motion.div>
+className="
+flex
+items-center
+justify-center
+gap-2
+rounded-2xl
+border
+border-blue-100
+py-4
+font-semibold
+text-blue-700
+"
 
-          )
-        }
+>
 
+<FiPhone/>
 
-      </AnimatePresence>
+Call Now
 
+</a>
 
-    </>
-  );
+
+
+<Link
+
+href="/contact"
+
+className="
+flex
+items-center
+justify-center
+gap-2
+rounded-2xl
+bg-blue-600
+py-4
+font-semibold
+text-white
+"
+
+>
+
+<FiCalendar/>
+
+Book Test
+
+</Link>
+
+
+</div>
+
+
+</motion.div>
+
+}
+
+</AnimatePresence>
+
+
+
+</>
+
+)
+
 }

@@ -10,6 +10,8 @@ import SymptomAssessmentCTA from "./components/SymptomsAssesmentCta";
 import Testimonials from "./components/Testimonials";
 import WhyChooseUs from "./components/WhyChooseUs";
 import SITE_CONFIG from "./SITE_CONFIG";
+import HealthBodySection from "./components/HealthBodySection";
+import PackageImageCarousel from "./components/PackageImages";
 
 
 export const metadata = {
@@ -51,9 +53,11 @@ export default function Home() {
   return (
   <>
 <Hero></Hero>
+<HealthBodySection></HealthBodySection>
 <PopularTests></PopularTests>
 <Packages></Packages>
 <SymptomAssessmentCTA></SymptomAssessmentCTA>
+<PackageImageCarousel></PackageImageCarousel>
 <WhyChooseUs></WhyChooseUs>
 <Testimonials></Testimonials>
 <FooterCTA></FooterCTA>

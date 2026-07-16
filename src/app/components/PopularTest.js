@@ -7,11 +7,14 @@ import {
 FiClock,
 FiHome,
 FiCheckCircle,
+FiShield,
+FiActivity,
 
 
 } from "react-icons/fi";
 import SITE_CONFIG from "../SITE_CONFIG";
 import { tests } from "../data/tests";
+import TestCard from "./TestCard";
 
 
 
@@ -194,119 +197,12 @@ Thank you.`;
             sm:gap-6
 
             md:grid-cols-2
-            xl:grid-cols-4
+            xl:grid-cols-3
           "
         >
 
-          {tests.slice(0,4).map((test, index) => (
-             <motion.div
-  key={test.slug}
-  initial={{ opacity: 0, y: 25 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: index * 0.05 }}
-  whileHover={{ y: -6 }}
-  className="
-    group
-    flex
-    h-full
-    flex-col
-    rounded-3xl
-    border
-    border-slate-200
-    bg-white
-    p-6
-    shadow-sm
-    transition-all
-    duration-300
-    hover:border-blue-200
-    hover:shadow-xl
-  "
->
-  {/* Category */}
-
-  <div className="flex items-center justify-between">
-    <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
-      {test.category}
-    </span>
-
-    <span className="text-xs text-slate-500">
-      {test.reportTime}
-    </span>
-  </div>
-
-  {/* Title */}
-
-  <h3 className="mt-5 min-h-[64px] text-2xl font-bold leading-tight text-slate-900">
-    {test.name}
-  </h3>
-
-  {/* Description */}
-
-  <p className="mt-3 line-clamp-3 min-h-[72px] text-slate-600 leading-7">
-    {test.description}
-  </p>
-
-  {/* Features */}
-
-  <div className="mt-6 space-y-3">
-    <div className="flex items-center gap-3">
-      <FiClock className="text-blue-600" />
-      <span className="text-sm text-slate-600">
-        Report in {test.reportTime}
-      </span>
-    </div>
-
-    <div className="flex items-center gap-3">
-      <FiHome className="text-blue-600" />
-      <span className="text-sm text-slate-600">
-        Home Sample Collection
-      </span>
-    </div>
-
-    <div className="flex items-center gap-3">
-      <FiCheckCircle className="text-blue-600" />
-      <span className="text-sm text-slate-600">
-        NABL Certified Testing
-      </span>
-    </div>
-  </div>
-
-  {/* Bottom Section */}
-
-  <div className="mt-auto pt-8 border-t border-slate-100">
-    <div className="flex items-center justify-between">
-      <div>
-        <p className="text-xs uppercase tracking-wide text-slate-500">
-          Starting From
-        </p>
-
-        <p className="mt-1 text-4xl font-black text-slate-900">
-          ₹{test.price}
-        </p>
-      </div>
-
-      <button
-        onClick={() => handleWhatsApp(test)}
-        className="
-          flex
-          h-14
-          w-14
-          items-center
-          justify-center
-          rounded-2xl
-          bg-blue-600
-          text-white
-          transition-all
-          duration-300
-          hover:bg-blue-700
-          hover:scale-105
-        "
-      >
-        <FiArrowRight size={20} />
-      </button>
-    </div>
-  </div>
-</motion.div>
+          {tests.slice(0,3).map((test, index) => (
+      <TestCard key={test.slug} test={test}></TestCard>
                 ))}
 
         </div>

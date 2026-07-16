@@ -1,77 +1,245 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { FaHeartbeat } from "react-icons/fa";
 
-export default function Background() {
-  return (
-    <div className="absolute inset-0 overflow-hidden">
+import {
+  FaDna,
+  FaMicroscope,
+  FaNotesMedical,
+} from "react-icons/fa6";
 
-      {/* Base */}
 
-      <div className="absolute inset-0 bg-white" />
 
-      {/* Top Blue Glow */}
+export default function Background(){
 
-      <motion.div
-        animate={{
-          x: [0, 40, 0],
-          y: [0, -30, 0],
-          scale: [1, 1.08, 1],
-        }}
-        transition={{
-          duration: 12,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="absolute -left-40 -top-40 h-[550px] w-[550px] rounded-full bg-blue-200/40 blur-[120px]"
-      />
+return (
 
-      {/* Bottom Cyan Glow */}
+<div className="absolute inset-0 overflow-hidden">
 
-      <motion.div
-        animate={{
-          x: [0, -50, 0],
-          y: [0, 30, 0],
-          scale: [1.05, 1, 1.05],
-        }}
-        transition={{
-          duration: 14,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="absolute -right-48 bottom-0 h-[600px] w-[600px] rounded-full bg-cyan-200/35 blur-[130px]"
-      />
 
-      {/* Center Light */}
+{/* Base */}
 
-      <div className="absolute left-1/2 top-1/2 h-[320px] w-[320px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-slate-100 blur-[100px]" />
+<div
+className="
+absolute
+inset-0
+bg-gradient-to-b
+from-white
+via-blue-50/40
+to-white
+"
+/>
 
-      {/* Fine Grid */}
 
-      <div
-        className="absolute inset-0 opacity-[0.04]"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right,#64748b 1px,transparent 1px),linear-gradient(to bottom,#64748b 1px,transparent 1px)",
-          backgroundSize: "70px 70px",
-        }}
-      />
 
-      {/* Noise Overlay */}
 
-      <div
-        className="absolute inset-0 opacity-[0.015]"
-        style={{
-          backgroundImage:
-            "radial-gradient(#000 0.6px, transparent 0.6px)",
-          backgroundSize: "18px 18px",
-        }}
-      />
 
-      {/* Bottom Fade */}
+{/* Healthcare Glow */}
 
-      <div className="absolute inset-x-0 bottom-0 h-52 bg-gradient-to-b from-transparent to-white" />
 
-    </div>
-  );
+<motion.div
+
+animate={{
+x:[0,30,0],
+y:[0,-20,0],
+}}
+
+transition={{
+duration:18,
+repeat:Infinity,
+ease:"easeInOut"
+}}
+
+className="
+absolute
+-left-40
+-top-40
+h-[600px]
+w-[600px]
+rounded-full
+bg-blue-100/50
+blur-[150px]
+"
+
+/>
+
+
+
+
+
+<motion.div
+
+animate={{
+x:[0,-30,0],
+y:[0,20,0],
+}}
+
+transition={{
+duration:20,
+repeat:Infinity,
+ease:"easeInOut"
+}}
+
+className="
+absolute
+-right-40
+-bottom-20
+h-[550px]
+w-[550px]
+rounded-full
+bg-teal-100/40
+blur-[150px]
+"
+
+/>
+
+
+
+
+
+
+
+
+{/* Floating Medical Icons */}
+
+
+
+<FaDna
+
+className="
+absolute
+left-[8%]
+top-[22%]
+text-[180px]
+text-blue-100/40
+rotate-12
+"
+
+ />
+
+
+
+
+
+<FaHeartbeat
+
+className="
+absolute
+right-[12%]
+top-[18%]
+text-[160px]
+text-rose-100/40
+"
+
+ />
+
+
+
+
+
+<FaMicroscope
+
+className="
+absolute
+left-[15%]
+bottom-[18%]
+text-[130px]
+text-cyan-100/40
+-rotate-12
+"
+
+ />
+
+
+
+
+
+<FaNotesMedical
+
+className="
+absolute
+right-[10%]
+bottom-[20%]
+text-[150px]
+text-emerald-100/40
+"
+
+ />
+
+
+
+
+
+
+
+{/* Soft Medical Circles */}
+
+
+<div
+className="
+absolute
+left-1/2
+top-1/2
+h-[450px]
+w-[450px]
+-translate-x-1/2
+-translate-y-1/2
+rounded-full
+bg-blue-50/40
+blur-[120px]
+"
+/>
+
+
+
+
+
+
+{/* Very subtle grid */}
+
+<div
+
+className="
+absolute
+inset-0
+opacity-[0.015]
+"
+
+style={{
+backgroundImage:
+`
+linear-gradient(to right,#2563eb 1px,transparent 1px),
+linear-gradient(to bottom,#2563eb 1px,transparent 1px)
+`,
+backgroundSize:"90px 90px"
+}}
+
+/>
+
+
+
+
+
+
+{/* Bottom fade */}
+
+<div
+className="
+absolute
+bottom-0
+inset-x-0
+h-64
+bg-gradient-to-t
+from-white
+to-transparent
+"
+/>
+
+
+
+</div>
+
+)
+
 }

@@ -1,230 +1,571 @@
 "use client";
 
 import { motion } from "framer-motion";
+
 import {
   FiStar,
   FiCheckCircle,
-  // FiQuote,
   FiShield,
   FiClock,
+  FiHome,
 } from "react-icons/fi";
+
+import {
+  FaMicroscope,
+  FaUserDoctor,
+} from "react-icons/fa6";
+
 
 const testimonials = [
   {
     name: "Rahul Sharma",
     location: "Mohali",
-    text: "Excellent service. The home sample collection was on time and the reports were delivered the same day. Highly recommended.",
+    service: "Full Body Checkup",
+    text:
+      "Home sample collection was smooth and reports were delivered quickly. The entire experience was professional.",
   },
   {
     name: "Priya Verma",
     location: "Chandigarh",
-    text: "Very professional staff and quick report delivery. Booking online was simple and the entire experience was smooth.",
+    service: "Thyroid Profile",
+    text:
+      "Easy booking process with reliable reports. The staff was very helpful and supportive.",
   },
   {
     name: "Aman Singh",
     location: "Zirakpur",
-    text: "Clean laboratory, courteous staff and accurate reports. I always choose Bhangal Clinical Laboratory for my family's tests.",
+    service: "Health Screening",
+    text:
+      "Accurate reports and excellent service quality. I recommend it for family health testing.",
   },
 ];
 
+
 export default function Testimonials() {
-  return (
-    <section className="relative overflow-hidden py-16 sm:py-20 lg:py-28">
-      {/* Background */}
-      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-white via-slate-50 to-white" />
 
-      <div className="absolute left-0 top-0 -z-10 h-64 w-64 rounded-full bg-blue-200/30 blur-[110px]" />
+return (
 
-      <div className="absolute right-0 bottom-0 -z-10 h-80 w-80 rounded-full bg-cyan-200/30 blur-[120px]" />
+<section
+className="
+relative
+overflow-hidden
+bg-gradient-to-b
+from-slate-50
+via-white
+to-teal-50/20
+py-20
+sm:py-28
+"
+>
 
-      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-        {/* Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mx-auto max-w-3xl text-center"
-        >
-          <span className="inline-flex items-center rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
-            Patient Stories
-          </span>
 
-          <h2 className="mt-6 text-3xl font-black leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
-            Trusted by
-            <span className="block bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-              Thousands of Families
-            </span>
-          </h2>
+{/* Medical Background */}
 
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-            Every patient deserves fast, reliable and accurate diagnostics.
-            Here's what our patients say about their experience with our
-            laboratory.
-          </p>
-        </motion.div>
+<div
+className="
+absolute
+-left-40
+top-20
+h-[420px]
+w-[420px]
+rounded-full
+bg-sky-100/50
+blur-[130px]
+"
+/>
 
-        {/* Trust Cards */}
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4"
-        >
-          <div className="rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm">
-            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100">
-              <FiCheckCircle className="text-xl text-blue-600" />
-            </div>
 
-            <h3 className="mt-4 text-2xl font-black text-slate-900">
-              15K+
-            </h3>
+<div
+className="
+absolute
+-right-40
+bottom-0
+h-[400px]
+w-[400px]
+rounded-full
+bg-teal-100/40
+blur-[140px]
+"
+/>
 
-            <p className="mt-1 text-sm text-slate-500">
-              Happy Patients
-            </p>
-          </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm">
-            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100">
-              <FiShield className="text-xl text-emerald-600" />
-            </div>
 
-            <h3 className="mt-4 text-2xl font-black text-slate-900">
-              99%
-            </h3>
 
-            <p className="mt-1 text-sm text-slate-500">
-              Accuracy
-            </p>
-          </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm">
-            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100">
-              <FiClock className="text-xl text-violet-600" />
-            </div>
+<div
+className="
+relative
+mx-auto
+max-w-7xl
+px-6
+"
+>
 
-            <h3 className="mt-4 text-2xl font-black text-slate-900">
-              Same Day
-            </h3>
 
-            <p className="mt-1 text-sm text-slate-500">
-              Reports
-            </p>
-          </div>
+{/* Heading */}
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm">
-            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-100">
-              <FiStar className="text-xl text-cyan-600 fill-cyan-600" />
-            </div>
 
-            <h3 className="mt-4 text-2xl font-black text-slate-900">
-              4.9★
-            </h3>
+<div className="text-center">
 
-            <p className="mt-1 text-sm text-slate-500">
-              Patient Rating
-            </p>
-          </div>
-        </motion.div>
 
-        {/* Reviews */}
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
-                    {testimonials.map((item, index) => (
-            <motion.div
-              key={item.name}
-              initial={{ opacity: 0, y: 35 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.15 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -8 }}
-              className={`group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:border-blue-100 hover:shadow-2xl ${
-                index === 0 ? "lg:col-span-2" : ""
-              }`}
-            >
-              {/* Quote */}
-              <div className="absolute right-6 top-6 opacity-5 transition-opacity group-hover:opacity-10">
-                {/* <FiQuote className="text-[90px] text-blue-600" /> */}
-              </div>
+<span
+className="
+inline-flex
+items-center
+gap-2
+rounded-full
+border
+border-teal-100
+bg-teal-50
+px-4
+py-2
+text-sm
+font-semibold
+text-teal-700
+"
+>
 
-              {/* Rating */}
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <FiStar
-                    key={i}
-                    className="fill-yellow-400 text-yellow-400"
-                  />
-                ))}
-              </div>
+<FaUserDoctor/>
 
-              {/* Review */}
-              <p className="relative mt-6 text-base leading-8 text-slate-600">
-                "{item.text}"
-              </p>
+Patient Trust
 
-              {/* User */}
-              <div className="mt-8 flex items-center justify-between border-t border-slate-100 pt-6">
-                <div className="flex items-center gap-4">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 font-bold text-white shadow-lg">
-                    {item.name.charAt(0)}
-                  </div>
+</span>
 
-                  <div>
-                    <h4 className="font-bold text-slate-900">
-                      {item.name}
-                    </h4>
 
-                    <p className="text-sm text-slate-500">
-                      {item.location}
-                    </p>
-                  </div>
-                </div>
 
-                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-emerald-50">
-                  <FiCheckCircle className="text-xl text-emerald-600" />
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
 
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-16 overflow-hidden rounded-[32px] border border-slate-200 bg-gradient-to-r from-blue-600 via-blue-700 to-cyan-600 p-8 text-white shadow-2xl sm:p-10"
-        >
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
-            <div>
-              <h3 className="text-2xl font-black sm:text-3xl">
-                Your Health Deserves the Best Care
-              </h3>
+<h2
+className="
+mt-6
+text-4xl
+font-black
+tracking-tight
+text-slate-900
 
-              <p className="mt-3 max-w-2xl text-blue-100">
-                Join thousands of satisfied patients who trust us for fast,
-                accurate and reliable diagnostic services with convenient home
-                sample collection.
-              </p>
-            </div>
+sm:text-5xl
+lg:text-6xl
+"
+>
 
-            <div className="grid grid-cols-2 gap-4 text-center">
-              <div className="rounded-2xl bg-white/10 p-4 backdrop-blur">
-                <div className="text-3xl font-black">15K+</div>
-                <div className="mt-1 text-sm text-blue-100">
-                  Happy Patients
-                </div>
-              </div>
+Trusted Healthcare
 
-              <div className="rounded-2xl bg-white/10 p-4 backdrop-blur">
-                <div className="text-3xl font-black">4.9★</div>
-                <div className="mt-1 text-sm text-blue-100">
-                  Average Rating
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      </div>
-    </section>
-  );
+<span
+className="
+block
+text-[#0F6CBD]
+"
+>
+
+Experience
+
+</span>
+
+
+</h2>
+
+
+
+<p
+className="
+mx-auto
+mt-5
+max-w-2xl
+text-slate-600
+"
+>
+
+Thousands of patients trust us for
+accurate diagnostics, home collection
+and reliable healthcare services.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+{/* Medical Trust Stats */}
+
+
+<div
+className="
+mx-auto
+mt-12
+grid
+max-w-5xl
+grid-cols-2
+gap-4
+
+md:grid-cols-4
+"
+>
+
+
+{[
+
+{
+icon:FaMicroscope,
+value:"15K+",
+label:"Tests Completed"
+},
+
+{
+icon:FiShield,
+value:"99%",
+label:"Report Accuracy"
+},
+
+{
+icon:FiHome,
+value:"Home",
+label:"Sample Collection"
+},
+
+{
+icon:FiClock,
+value:"24-48h",
+label:"Report Delivery"
+}
+
+].map((item)=>{
+
+
+const Icon=item.icon;
+
+
+return (
+
+<div
+key={item.label}
+className="
+rounded-3xl
+border
+border-slate-200
+bg-white
+p-5
+text-center
+shadow-sm
+"
+>
+
+
+<div
+className="
+mx-auto
+flex
+h-12
+w-12
+items-center
+justify-center
+rounded-2xl
+bg-sky-50
+"
+>
+
+
+<Icon
+className="
+text-[#0F6CBD]
+"
+size={22}
+/>
+
+
+</div>
+
+
+
+<h3
+className="
+mt-3
+text-xl
+font-black
+text-slate-900
+"
+>
+
+{item.value}
+
+</h3>
+
+
+
+<p
+className="
+text-sm
+text-slate-500
+"
+>
+
+{item.label}
+
+</p>
+
+
+</div>
+
+
+)
+
+
+})}
+
+
+</div>
+
+
+
+
+
+
+
+
+{/* Patient Reviews */}
+
+
+<div
+className="
+mt-14
+grid
+gap-6
+
+lg:grid-cols-3
+"
+>
+
+
+{
+testimonials.map((item,index)=>(
+
+
+<motion.article
+
+key={item.name}
+
+initial={{
+opacity:0,
+y:25
+}}
+
+whileInView={{
+opacity:1,
+y:0
+}}
+
+transition={{
+delay:index*0.1
+}}
+
+viewport={{
+once:true
+}}
+
+whileHover={{
+y:-5
+}}
+
+className="
+rounded-3xl
+border
+border-slate-200
+bg-white
+p-7
+shadow-sm
+transition
+hover:shadow-xl
+"
+>
+
+
+<div
+className="
+flex
+items-center
+justify-between
+"
+>
+
+
+<div
+className="
+flex
+gap-1
+"
+>
+
+{
+[1,2,3,4,5].map((i)=>(
+
+<FiStar
+key={i}
+className="
+fill-amber-400
+text-amber-400
+"
+/>
+
+))
+}
+
+
+</div>
+
+
+<div
+className="
+flex
+h-8
+w-8
+items-center
+justify-center
+rounded-full
+bg-emerald-50
+"
+>
+
+<FiCheckCircle
+className="
+text-emerald-600
+"
+/>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<p
+className="
+mt-5
+leading-7
+text-slate-600
+"
+>
+
+"{item.text}"
+
+</p>
+
+
+
+
+
+<div
+className="
+mt-5
+inline-flex
+rounded-full
+bg-teal-50
+px-3
+py-1
+text-xs
+font-semibold
+text-teal-700
+"
+>
+
+{item.service}
+
+</div>
+
+
+
+
+
+
+<div
+className="
+mt-6
+flex
+items-center
+gap-3
+border-t
+border-slate-100
+pt-5
+"
+>
+
+
+<div
+className="
+flex
+h-11
+w-11
+items-center
+justify-center
+rounded-full
+bg-sky-100
+font-bold
+text-[#0F6CBD]
+"
+>
+
+{item.name[0]}
+
+</div>
+
+
+
+<div>
+
+<h4
+className="
+font-bold
+text-slate-900
+"
+>
+
+{item.name}
+
+</h4>
+
+
+<p
+className="
+text-sm
+text-slate-500
+"
+>
+
+{item.location}
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+</motion.article>
+
+
+))
+
+}
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+)
+
 }

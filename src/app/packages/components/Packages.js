@@ -5,6 +5,7 @@ import { FiSearch, FiArrowRight, FiCheck,FiHome,FiClock } from "react-icons/fi";
 import Link from "next/link";
 import { packages } from "@/app/data/packages";
 import { useSearchParams } from "next/navigation";
+import PackageCard from "@/app/components/PackageCard";
 
 
 export default function PackagesPage() {
@@ -164,113 +165,14 @@ const displayedPackages =  filteredPackages.length > 0
 
  
 
-        <div className="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-
-          {displayedPackages.map((pkg, index) => (
-        <motion.div
-  key={pkg.id}
-  initial={{ opacity: 0, y: 24 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: index * 0.08 }}
-  whileHover={{ y: -6 }}
-className="
-  group
-  flex
-  h-full
-  flex-col
-  rounded-[28px]
-  border
-  border-slate-200
-  bg-white/80
-  p-7
-  backdrop-blur-xl
-  transition-all
-  duration-300
-  hover:border-blue-200
-  hover:shadow-xl
-"
->
-  {/* Header */}
-
-  <div className="flex items-start justify-between">
-    <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
-      {pkg.tests} Tests
-    </span>
-
-    {pkg.popular && (
-      <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">
-        Popular
-      </span>
-    )}
-  </div>
-
-  <h2 className="mt-6 text-2xl font-bold tracking-tight text-slate-900">
-    {pkg.name}
-  </h2>
-
-  <p className="mt-3 line-clamp-2 text-slate-600 leading-7">
-    {pkg.description}
-  </p>
-
-  {/* Meta */}
-
-  <div className="mt-6 flex flex-wrap gap-2">
-    <span className="rounded-full border border-slate-200 px-3 py-2 text-sm text-slate-600">
-      🏠 Home Collection
-    </span>
-
-    <span className="rounded-full border border-slate-200 px-3 py-2 text-sm text-slate-600">
-      24h Reports
-    </span>
-  </div>
-
- <div className="mt-auto pt-8">
-
-  {/* Price */}
-
-  <div>
-    <div className="flex items-end gap-3">
-      <span className="text-5xl font-black text-slate-900">
-        ₹{pkg.price}
-      </span>
-
-      <span className="pb-2 text-lg line-through text-slate-400">
-        ₹{pkg.originalPrice}
-      </span>
-    </div>
-
-    <p className="mt-2 text-sm font-medium text-emerald-600">
-      Save ₹{pkg.originalPrice - pkg.price}
-    </p>
-  </div>
-
-  <Link
-    href={`/packages/${pkg.slug}`}
-    className="
-      mt-8
-      flex
-      items-center
-      justify-center
-      gap-2
-      rounded-full
-      bg-blue-600
-      px-6
-      py-4
-      font-semibold
-      text-white
-      transition
-      hover:bg-blue-700
-    "
-  >
-    View Package
-    <FiArrowRight className="transition group-hover:translate-x-1" />
-  </Link>
-
+  <div className="mt-10 grid gap-10 sm:gap-14 md:grid-cols-2 xl:grid-cols-3">
+  {displayedPackages.map((pkg) => (
+    <PackageCard
+      pkg={pkg}
+      key={pkg.id}
+    />
+  ))}
 </div>
-</motion.div>
-          ))}
-
-        </div>
 
       </div>
     </section>

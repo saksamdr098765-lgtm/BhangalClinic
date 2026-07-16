@@ -2,468 +2,703 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import {
   FiArrowRight,
   FiPhone,
-  FiCalendar,
   FiCheckCircle,
   FiClock,
   FiHome,
 } from "react-icons/fi";
+
+import {
+  FaHeartPulse,
+  FaMicroscope,
+  FaVialCircleCheck,
+  FaFileMedical,
+} from "react-icons/fa6";
+
 import SITE_CONFIG from "../SITE_CONFIG";
 
 
 export default function FooterCTA() {
-  const router=useRouter()
-  return (
-    <section
-      className="
-        relative
-        overflow-hidden
-        bg-white
-        py-16
-
-        sm:py-20
-        lg:py-28
-      "
-    >
-
-      {/* Background */}
-
-      <div
-        className="
-          absolute
-          left-0
-          top-0
-          h-72
-          w-72
-          rounded-full
-          bg-blue-100/50
-          blur-[100px]
-        "
-      />
-
-
-      <div
-        className="
-          absolute
-          bottom-0
-          right-0
-          h-80
-          w-80
-          rounded-full
-          bg-cyan-100/50
-          blur-[120px]
-        "
-      />
-
-
-
-      <div
-        className="
-          relative
-          z-10
-          mx-auto
-          max-w-7xl
-          px-4
-
-          sm:px-6
-        "
-      >
-
-
-        <div
-          className="
-            grid
-            items-center
-            gap-10
-
-            lg:grid-cols-2
-            lg:gap-16
-          "
-        >
-
-
-          {/* Left Content */}
-
-          <motion.div
-            initial={{
-              opacity:0,
-              x:-40,
-            }}
-            whileInView={{
-              opacity:1,
-              x:0,
-            }}
-            viewport={{
-              once:true,
-            }}
-          >
-
-            <span
-              className="
-                inline-flex
-                rounded-full
-                bg-blue-50
-                px-4
-                py-2
-                text-xs
-                font-semibold
-                text-blue-600
-
-                sm:text-sm
-              "
-            >
-              Easy Online Booking
-            </span>
-
-
-
-            <h2
-              className="
-                mt-5
-                text-3xl
-                font-black
-                leading-tight
-                text-slate-900
-
-                sm:text-5xl
-
-                lg:text-6xl
-              "
-            >
-              Take care of your
-              <br />
 
-              <span className="text-blue-600">
-                health today.
-              </span>
+return (
+
+<section
+className="
+relative
+overflow-hidden
+bg-white
+py-16
+sm:py-20
+lg:py-28
+"
+>
+
+
+{/* Medical Background */}
+
+<div
+className="
+absolute
+-left-40
+-top-40
+h-[500px]
+w-[500px]
+rounded-full
+bg-blue-100/50
+blur-[140px]
+"
+/>
+
+
+<div
+className="
+absolute
+-right-40
+bottom-0
+h-[450px]
+w-[450px]
+rounded-full
+bg-cyan-100/40
+blur-[140px]
+"
+/>
 
-            </h2>
 
+<div
+className="
+absolute
+left-1/2
+top-1/2
+h-[300px]
+w-[300px]
+-translate-x-1/2
+-translate-y-1/2
+rounded-full
+bg-red-100/20
+blur-[120px]
+"
+/>
 
 
-            <p
-              className="
-                mt-5
-                max-w-xl
-                text-base
-                leading-7
-                text-slate-600
 
-                sm:text-lg
-                sm:leading-8
-              "
-            >
-              Book diagnostic tests online, get doorstep sample
-              collection and receive accurate reports from trusted
-              laboratory professionals.
-            </p>
-
-
-
-            {/* Buttons */}
-
-            <div
-              className="
-                mt-8
-                flex
-                flex-col
-                gap-3
-
-                sm:flex-row
-              "
-            >
-
-              <Link
-                href="/contact"
-                className="
-                  flex
-                  items-center
-                  justify-center
-                  gap-3
-                  rounded-full
-                  bg-blue-600
-                  px-8
-                  py-4
-                  font-semibold
-                  text-white
-                  transition
-                  hover:-translate-y-1
-                  hover:shadow-xl
-                "
-              >
 
-                <FiCalendar />
 
-                Book Test
+<div
+className="
+relative
+mx-auto
+max-w-7xl
+px-5
+sm:px-6
+"
+>
 
-                <FiArrowRight />
 
-              </Link>
+<div
+className="
+grid
+items-center
+gap-12
+lg:grid-cols-2
+"
+>
 
 
+{/* LEFT */}
 
-              <a
-                href={`tel:${SITE_CONFIG.phone}`}
-                className="
-                  flex
-                  items-center
-                  justify-center
-                  gap-3
-                  rounded-full
-                  border
-                  border-slate-200
-                  bg-white
-                  px-8
-                  py-4
-                  font-semibold
-                  text-slate-700
-                  transition
-                  hover:border-blue-300
-                "
-              >
+<motion.div
 
-                <FiPhone />
+initial={{opacity:0,y:25}}
 
-                Call Now
+whileInView={{opacity:1,y:0}}
 
-              </a>
+viewport={{once:true}}
 
+>
 
-            </div>
 
+<div
+className="
+inline-flex
+items-center
+gap-2
+rounded-full
+border
+border-blue-100
+bg-blue-50
+px-4
+py-2
+text-sm
+font-semibold
+text-blue-700
+"
+>
 
+<FaVialCircleCheck/>
 
-            {/* Trust */}
+Trusted Diagnostic Care
 
-            <div
-              className="
-                mt-8
-                flex
-                flex-wrap
-                gap-3
-              "
-            >
+</div>
 
-              {[
-                "Verified Lab",
-                "Digital Reports",
-                "Home Collection",
-              ].map((item)=>(
 
-                <div
-                  key={item}
-                  className="
-                    flex
-                    items-center
-                    gap-2
-                    rounded-full
-                    bg-slate-50
-                    px-4
-                    py-2
-                    text-sm
-                    text-slate-600
-                  "
-                >
 
-                  <FiCheckCircle className="text-blue-600" />
 
-                  {item}
+<h2
+className="
+mt-6
+text-3xl
+font-black
+leading-tight
+tracking-tight
+text-slate-900
 
-                </div>
+sm:text-5xl
 
-              ))}
+lg:text-6xl
+"
+>
 
-            </div>
+Your Health,
+<br/>
 
+<span
+className="
+text-blue-600
+"
+>
+Our Priority.
+</span>
 
-          </motion.div>
+</h2>
 
 
 
 
+<p
+className="
+mt-6
+max-w-xl
+text-base
+leading-8
+text-slate-600
 
+sm:text-lg
+"
+>
 
-          {/* Right Appointment Card */}
+Book reliable pathology tests with certified
+professionals, doorstep sample collection and
+accurate digital reports.
 
-          <motion.div
-            initial={{
-              opacity:0,
-              x:40,
-            }}
-            whileInView={{
-              opacity:1,
-              x:0,
-            }}
-            viewport={{
-              once:true,
-            }}
-            className="relative"
-          >
+</p>
 
 
-            <div
-              className="
-                rounded-[32px]
-                border
-                border-slate-200
-                bg-white
-                p-6
-                shadow-[0_30px_80px_rgba(15,23,42,.12)]
 
-                sm:p-8
-              "
-            >
 
 
-              <div
-                className="
-                  flex
-                  items-center
-                  justify-between
-                "
-              >
 
-                <div>
+<div
+className="
+mt-8
+flex
+flex-col
+gap-3
 
-                  <p className="text-sm text-slate-500">
-                    Appointment
-                  </p>
+sm:flex-row
+"
+>
 
-                  <h3 className="mt-1 text-2xl font-bold text-slate-900">
-                    Book Sample
-                  </h3>
 
-                </div>
+<Link
 
+href="/contact"
 
-                <div
-                  className="
-                    rounded-2xl
-                    bg-blue-50
-                    p-4
-                  "
-                >
+className="
+flex
+items-center
+justify-center
+gap-3
+rounded-2xl
+bg-blue-600
+px-7
+py-4
+font-semibold
+text-white
 
-                  <FiCalendar
-                    className="text-2xl text-blue-600"
-                  />
+shadow-lg
+shadow-blue-600/20
 
-                </div>
+transition
+hover:-translate-y-1
+hover:bg-blue-700
+"
 
-              </div>
+>
 
+<FaVialCircleCheck/>
 
+Book Test
 
+<FiArrowRight/>
 
-              <div className="mt-8 space-y-4">
+</Link>
 
 
-                <div
-                  className="
-                    flex
-                    items-center
-                    gap-4
-                    rounded-2xl
-                    bg-slate-50
-                    p-4
-                  "
-                >
 
-                  <FiHome className="text-blue-600" />
 
-                  <div>
+<a
 
-                    <p className="text-sm text-slate-500">
-                      Service
-                    </p>
+href={`tel:${SITE_CONFIG.phone}`}
 
-                    <p className="font-semibold">
-                      Home Collection
-                    </p>
+className="
+flex
+items-center
+justify-center
+gap-3
+rounded-2xl
+border
+border-slate-200
+bg-white
+px-7
+py-4
+font-semibold
+text-slate-700
 
-                  </div>
+transition
+hover:border-blue-300
+"
 
-                </div>
+>
 
+<FiPhone/>
 
+Call Laboratory
 
-                <div
-                  className="
-                    flex
-                    items-center
-                    gap-4
-                    rounded-2xl
-                    bg-slate-50
-                    p-4
-                  "
-                >
+</a>
 
-                  <FiClock className="text-blue-600" />
 
-                  <div>
 
-                    <p className="text-sm text-slate-500">
-                      Reports
-                    </p>
+</div>
 
-                    <p className="font-semibold">
-                      Same Day Delivery
-                    </p>
 
-                  </div>
 
-                </div>
 
 
 
-              </div>
+{/* Medical Highlights */}
 
+<div
+className="
+mt-10
+grid
+grid-cols-3
+gap-3
+"
+>
 
 
+<div
+className="
+rounded-2xl
+border
+border-red-100
+bg-red-50
+p-4
+text-center
+"
+>
 
-              <div
-                className="
-                  mt-8
-                  rounded-2xl
-                  bg-blue-600
-                  p-5
-                  text-white
-                "
-              >
+<FaHeartPulse
+className="
+mx-auto
+text-xl
+text-red-500
+"
+/>
 
-                <p className="text-sm text-blue-100">
-                  Starting From
-                </p>
+<p
+className="
+mt-2
+text-xs
+font-semibold
+text-slate-700
+"
+>
+Health Care
+</p>
 
-                <div className="flex items-end justify-between">
+</div>
 
-                  <h4 className="text-3xl font-black">
-                    ₹399
-                  </h4>
 
-                  <FiArrowRight size={24} onClick={()=>{router.push('/contact')}}/>
 
-                </div>
 
-              </div>
+<div
+className="
+rounded-2xl
+border
+border-blue-100
+bg-blue-50
+p-4
+text-center
+"
+>
 
+<FaMicroscope
+className="
+mx-auto
+text-xl
+text-blue-600
+"
+/>
 
-            </div>
+<p
+className="
+mt-2
+text-xs
+font-semibold
+text-slate-700
+"
+>
+Advanced Lab
+</p>
 
+</div>
 
 
-          </motion.div>
 
 
-        </div>
+<div
+className="
+rounded-2xl
+border
+border-yellow-100
+bg-yellow-50
+p-4
+text-center
+"
+>
 
+<FaFileMedical
+className="
+mx-auto
+text-xl
+text-yellow-600
+"
+/>
 
-      </div>
+<p
+className="
+mt-2
+text-xs
+font-semibold
+text-slate-700
+"
+>
+Reports
+</p>
 
+</div>
 
-    </section>
-  );
+
+</div>
+
+
+</motion.div>
+
+
+
+
+
+
+
+
+
+{/* RIGHT BOOKING CARD */}
+
+<motion.div
+
+initial={{opacity:0,x:30}}
+
+whileInView={{opacity:1,x:0}}
+
+viewport={{once:true}}
+
+>
+
+
+<div
+className="
+rounded-[32px]
+border
+border-slate-200
+bg-white
+p-6
+
+shadow-[0_30px_80px_rgba(15,23,42,.10)]
+
+sm:p-8
+"
+>
+
+
+<div
+className="
+flex
+items-center
+justify-between
+"
+>
+
+
+<div>
+
+<p
+className="
+text-sm
+text-slate-500
+"
+>
+Diagnostic Booking
+</p>
+
+
+<h3
+className="
+mt-1
+text-2xl
+font-black
+text-slate-900
+"
+>
+Home Sample Visit
+</h3>
+
+
+</div>
+
+
+
+<div
+className="
+flex
+h-14
+w-14
+items-center
+justify-center
+rounded-2xl
+bg-blue-50
+"
+>
+
+<FaVialCircleCheck
+className="
+text-2xl
+text-blue-600
+"
+/>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div
+className="
+mt-8
+space-y-4
+"
+>
+
+
+<div
+className="
+flex
+items-center
+gap-4
+rounded-2xl
+bg-blue-50
+p-4
+"
+>
+
+<FiHome
+className="text-blue-600"
+size={22}
+/>
+
+
+<div>
+
+<p className="text-xs text-slate-500">
+Service
+</p>
+
+<p className="font-bold text-slate-900">
+Doorstep Collection
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div
+className="
+flex
+items-center
+gap-4
+rounded-2xl
+bg-cyan-50
+p-4
+"
+>
+
+<FiClock
+className="text-cyan-600"
+size={22}
+/>
+
+
+<div>
+
+<p className="text-xs text-slate-500">
+Reports
+</p>
+
+<p className="font-bold text-slate-900">
+Fast Digital Reports
+</p>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div
+className="
+mt-8
+rounded-3xl
+bg-blue-600
+p-6
+text-white
+"
+>
+
+
+<p
+className="
+text-sm
+text-blue-100
+"
+>
+Health Packages Starting From
+</p>
+
+
+<div
+className="
+mt-2
+flex
+items-center
+justify-between
+"
+>
+
+<h4
+className="
+text-4xl
+font-black
+"
+>
+₹399
+</h4>
+
+
+<div
+className="
+flex
+h-12
+w-12
+items-center
+justify-center
+rounded-full
+bg-white/20
+"
+>
+
+<FiArrowRight/>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div
+className="
+mt-5
+flex
+items-center
+gap-2
+rounded-full
+bg-emerald-50
+px-4
+py-2
+text-sm
+font-semibold
+text-emerald-700
+"
+>
+
+<FiCheckCircle/>
+
+Trusted Laboratory Service
+
+</div>
+
+
+
+</div>
+
+
+</motion.div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+);
+
 }

@@ -3,209 +3,725 @@
 import { motion } from "framer-motion";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
+
 import {
   FiSearch,
   FiArrowRight,
-  FiCheckCircle,
-  FiHome,
-  FiShield,
+  FiCheck,
 } from "react-icons/fi";
 
+import {
+  FaVial,
+  FaHeartPulse,
+  FaDna,
+  FaHouseMedical,
+  FaFileMedical,
+} from "react-icons/fa6";
+
+
 const fadeUp = {
-  initial: {
-    opacity: 0,
-    y: 30,
+  initial:{
+    opacity:0,
+    y:30,
   },
-  animate: {
-    opacity: 1,
-    y: 0,
+  animate:{
+    opacity:1,
+    y:0,
   },
 };
 
-export default function PackagesHero() {
-  const searchParams = useSearchParams();
 
-  const search = searchParams.get("search")?.toLowerCase();
+export default function PackagesHero(){
 
-  const [query, setQuery] = useState("");
+const searchParams = useSearchParams();
 
-  const router = useRouter();
+const search = searchParams.get("search");
 
-  const handleSearch = () => {
-    if (!query.trim()) return;
+const [query,setQuery]=useState("");
 
-    router.push(
-      `/packages?search=${encodeURIComponent(query)}`
-    );
-  };
+const router=useRouter();
 
-  if (search) return null;
 
-  return (
-    <section className="relative overflow-hidden">
-      {/* Background */}
+const handleSearch=()=>{
 
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-blue-50 via-white to-slate-50" />
+if(!query.trim()) return;
 
-      <div className="absolute left-0 top-0 h-64 w-64 rounded-full bg-blue-200/30 blur-[100px] sm:h-80 sm:w-80 sm:blur-[120px]" />
+router.push(
+ `/packages?search=${encodeURIComponent(query)}`
+);
 
-      <div className="absolute right-0 top-10 h-72 w-72 rounded-full bg-violet-200/30 blur-[120px] sm:h-96 sm:w-96 sm:blur-[150px]" />
+};
 
-      <div className="mx-auto max-w-7xl px-4 pt-20 pb-14 sm:px-6 sm:pt-24 sm:pb-20 lg:py-28">
-        <div className="mx-auto max-w-5xl text-center lg:text-left">
-          {/* Badge */}
 
-          <motion.div
-            {...fadeUp}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 rounded-full border border-blue-100 bg-white/90 px-3 py-1.5 text-xs font-semibold shadow-sm backdrop-blur sm:px-4 sm:py-2 sm:text-sm"
-          >
-            <span className="h-2 w-2 rounded-full bg-emerald-500" />
+if(search) return null;
 
-            <span className="text-slate-700">
-              100+ Health Packages Available
-            </span>
-          </motion.div>
 
-          {/* Heading */}
+return (
 
-          <motion.h1
-            {...fadeUp}
-            transition={{ delay: 0.15 }}
-            className="mt-5 text-4xl font-black leading-[1.05] tracking-tight text-slate-900 sm:text-5xl lg:text-7xl"
-          >
-            Find the Perfect
-            <br />
+<section
+className="
+relative
+overflow-hidden
+bg-white
+"
+>
 
-            <span className="bg-gradient-to-r from-blue-700 via-indigo-700 to-violet-600 bg-clip-text text-transparent">
-              Health Package
-            </span>
-          </motion.h1>
 
-          {/* Description */}
+{/* Healthcare Background */}
 
-          <motion.p
-            {...fadeUp}
-            transition={{ delay: 0.3 }}
-            className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8 lg:mx-0"
-          >
-            Explore affordable health checkup packages for diabetes,
-            heart care, thyroid, women, senior citizens and complete
-            body wellness with home sample collection and fast digital
-            reports.
-          </motion.p>
+<div
+className="
+absolute
+-left-40
+-top-40
+h-[550px]
+w-[550px]
+rounded-full
+bg-blue-100/50
+blur-[150px]
+"
+/>
 
-          {/* Search */}
 
-          <motion.div
-            {...fadeUp}
-            transition={{ delay: 0.45 }}
-            className="mt-10"
-          >
-            <div className="flex flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-2 shadow-lg sm:flex-row sm:rounded-3xl sm:p-3">
-              <div className="flex h-12 flex-1 items-center gap-3 px-3 sm:px-4">
-                <FiSearch className="text-lg text-slate-400 sm:text-xl" />
+<div
+className="
+absolute
+-right-40
+top-20
+h-[450px]
+w-[450px]
+rounded-full
+bg-cyan-100/40
+blur-[140px]
+"
+/>
 
-                <input
-                  type="text"
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  onKeyDown={(e) =>
-                    e.key === "Enter" && handleSearch()
-                  }
-                  placeholder="Search health packages..."
-                  className="w-full bg-transparent text-sm text-slate-700 outline-none placeholder:text-slate-400 sm:text-base"
-                />
-              </div>
 
-              <button
-                onClick={handleSearch}
-                className="group flex h-12 items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 text-sm font-semibold text-white transition hover:bg-blue-700 sm:h-14 sm:rounded-2xl sm:px-8 sm:text-base"
-              >
-                Search
 
-                <FiArrowRight className="transition group-hover:translate-x-1" />
-              </button>
-            </div>
-          </motion.div>
+<div
+className="
+mx-auto
+max-w-7xl
+px-5
+pt-24
+pb-16
 
-          {/* Quick Stats */}
+sm:px-6
 
-          <motion.div
-            {...fadeUp}
-            transition={{ delay: 0.6 }}
-            className="mt-10 grid gap-3 sm:grid-cols-3"
-          >
-                        {[
-              {
-                icon: FiCheckCircle,
-                text: "100+ Packages",
-              },
-              {
-                icon: FiHome,
-                text: "Home Collection",
-              },
-              {
-                icon: FiShield,
-                text: "NABL Certified Labs",
-              },
-            ].map((item) => {
-              const Icon = item.icon;
+lg:pt-32
+lg:pb-24
+"
+>
 
-              return (
-                <motion.div
-                  key={item.text}
-                  whileHover={{
-                    y: -4,
-                  }}
-                  transition={{
-                    duration: 0.2,
-                  }}
-                  className="
-                    flex
-                    items-center
-                    gap-3
-                    rounded-2xl
-                    border
-                    border-slate-100
-                    bg-white
-                    px-4
-                    py-4
-                    shadow-sm
-                  "
-                >
-                  <div
-                    className="
-                      flex
-                      h-10
-                      w-10
-                      shrink-0
-                      items-center
-                      justify-center
-                      rounded-full
-                      bg-blue-50
-                    "
-                  >
-                    <Icon className="text-blue-600" />
-                  </div>
 
-                  <span
-                    className="
-                      text-sm
-                      font-medium
-                      text-slate-700
+<div
+className="
+grid
+items-center
+gap-14
 
-                      sm:text-base
-                    "
-                  >
-                    {item.text}
-                  </span>
-                </motion.div>
-              );
-            })}
-          </motion.div>
-        </div>
-      </div>
-    </section>
-  );
+lg:grid-cols-2
+"
+>
+
+
+
+
+{/* LEFT */}
+
+
+<div>
+
+
+<motion.div
+{...fadeUp}
+className="
+inline-flex
+items-center
+gap-2
+rounded-full
+border
+border-blue-100
+bg-blue-50
+px-4
+py-2
+text-sm
+font-semibold
+text-blue-700
+"
+>
+
+<FaVial/>
+
+Diagnostic Health Packages
+
+</motion.div>
+
+
+
+
+
+
+<motion.h1
+
+{...fadeUp}
+
+transition={{
+delay:.15
+}}
+
+className="
+mt-6
+text-4xl
+font-black
+leading-[1.05]
+tracking-tight
+text-slate-950
+
+sm:text-6xl
+
+lg:text-7xl
+"
+
+>
+
+Complete Health
+
+<br/>
+
+<span className="text-blue-600">
+Checkups
+</span>
+
+<br/>
+
+Made Simple
+
+
+</motion.h1>
+
+
+
+
+
+<motion.p
+
+{...fadeUp}
+
+transition={{
+delay:.3
+}}
+
+className="
+mt-6
+max-w-xl
+text-base
+leading-8
+text-slate-600
+
+sm:text-lg
+"
+
+>
+
+Choose preventive health packages for
+heart, diabetes, thyroid, vitamins and
+complete body wellness with trusted
+laboratory testing.
+
+</motion.p>
+
+
+
+
+
+
+{/* Search */}
+
+<motion.div
+
+{...fadeUp}
+
+transition={{
+delay:.45
+}}
+
+className="
+mt-8
+"
+
+>
+
+
+<div
+className="
+flex
+items-center
+rounded-3xl
+border
+border-slate-200
+bg-white
+p-2
+shadow-[0_25px_70px_rgba(15,23,42,.10)]
+"
+
+>
+
+
+<div
+className="
+flex
+flex-1
+items-center
+gap-3
+px-4
+"
+>
+
+<FiSearch
+className="
+text-xl
+text-blue-600
+"
+/>
+
+
+<input
+
+value={query}
+
+onChange={(e)=>setQuery(e.target.value)}
+
+onKeyDown={(e)=>e.key==="Enter"&&handleSearch()}
+
+placeholder="Search health packages..."
+
+className="
+w-full
+bg-transparent
+outline-none
+"
+
+/>
+
+
+</div>
+
+
+
+<button
+
+onClick={handleSearch}
+
+className="
+flex
+h-12
+items-center
+gap-2
+rounded-2xl
+bg-blue-600
+px-6
+font-semibold
+text-white
+"
+
+>
+
+Search
+
+<FiArrowRight/>
+
+</button>
+
+
+</div>
+
+
+</motion.div>
+
+
+
+
+
+
+
+{/* Trust */}
+
+<motion.div
+
+{...fadeUp}
+
+transition={{
+delay:.6
+}}
+
+className="
+mt-10
+grid
+grid-cols-2
+gap-4
+
+sm:grid-cols-4
+"
+
+>
+
+
+{[
+
+["15K+","Patients"],
+["100+","Packages"],
+["24-48h","Reports"],
+["Home","Collection"],
+
+].map((item)=>(
+
+<div
+key={item[1]}
+>
+
+<p
+className="
+text-xl
+font-black
+text-slate-900
+"
+>
+{item[0]}
+</p>
+
+<p
+className="
+text-sm
+text-slate-500
+"
+>
+{item[1]}
+</p>
+
+</div>
+
+))}
+
+
+</motion.div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+{/* RIGHT MEDICAL CARD */}
+
+
+<motion.div
+
+initial={{
+opacity:0,
+x:40
+}}
+
+animate={{
+opacity:1,
+x:0
+}}
+
+transition={{
+duration:.7
+}}
+
+className="
+relative
+"
+
+>
+
+
+<div
+className="
+absolute
+inset-0
+rounded-[40px]
+bg-blue-100/40
+blur-3xl
+"
+/>
+
+
+
+<div
+className="
+relative
+rounded-[36px]
+border
+border-slate-200
+bg-white
+p-6
+shadow-[0_35px_90px_rgba(15,23,42,.12)]
+
+sm:p-8
+"
+>
+
+
+<div
+className="
+flex
+items-center
+justify-between
+"
+>
+
+
+<div>
+
+<p className="text-sm text-slate-500">
+Popular Package
+</p>
+
+<h3 className="
+mt-1
+text-2xl
+font-black
+text-slate-900
+">
+Full Body Checkup
+</h3>
+
+</div>
+
+
+
+<div
+className="
+flex
+h-14
+w-14
+items-center
+justify-center
+rounded-2xl
+bg-blue-50
+"
+>
+
+<FaHeartPulse
+className="
+text-2xl
+text-blue-600
+"
+/>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div
+className="
+mt-7
+rounded-2xl
+bg-blue-50
+p-5
+"
+>
+
+
+<div
+className="
+flex
+items-center
+gap-3
+"
+>
+
+<FaDna
+className="
+text-blue-600
+"
+/>
+
+
+<p className="
+font-semibold
+text-slate-800
+">
+Complete Wellness Screening
+</p>
+
+
+</div>
+
+
+<div
+className="
+mt-4
+space-y-3
+"
+>
+
+{[
+"CBC & Blood Profile",
+"Diabetes Screening",
+"Vitamin & Thyroid Tests",
+
+].map((test)=>(
+
+<div
+key={test}
+className="
+flex
+items-center
+gap-2
+text-sm
+text-slate-600
+"
+>
+
+<FiCheck
+className="text-blue-600"
+/>
+
+{test}
+
+</div>
+
+))}
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div
+className="
+mt-6
+flex
+items-center
+justify-between
+"
+>
+
+<div>
+
+<p className="text-sm text-slate-500">
+Starting From
+</p>
+
+<h4
+className="
+text-4xl
+font-black
+text-slate-900
+"
+>
+₹999
+</h4>
+
+</div>
+
+
+<div
+className="
+flex
+h-14
+w-14
+items-center
+justify-center
+rounded-full
+bg-blue-600
+text-white
+"
+>
+
+<FiArrowRight/>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div
+className="
+mt-6
+flex
+items-center
+gap-3
+rounded-2xl
+bg-slate-50
+p-4
+"
+>
+
+<FaHouseMedical
+className="
+text-blue-600
+text-xl
+"
+/>
+
+
+<div>
+
+<p className="
+text-sm
+font-semibold
+text-slate-800
+">
+Home Sample Collection Available
+</p>
+
+<p className="
+text-xs
+text-slate-500
+">
+Safe & Convenient Testing
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</motion.div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+);
+
 }

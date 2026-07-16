@@ -3,391 +3,467 @@
 import { motion } from "framer-motion";
 import {
   FiArrowRight,
-  FiShield,
-  FiClock,
-  FiHome,
 } from "react-icons/fi";
+
+import {
+  FaHouseMedical,
+  FaMicroscope,
+  FaFileMedical,
+  FaShieldHeart,
+} from "react-icons/fa6";
 
 import SearchBar from "./SearchBar";
 import { useRouter } from "next/navigation";
 
 
 const fadeUp = {
-  initial: {
-    opacity: 0,
-    y: 30,
+  initial:{
+    opacity:0,
+    y:25,
   },
 
-  animate: {
-    opacity: 1,
-    y: 0,
+  animate:{
+    opacity:1,
+    y:0,
   },
 };
 
 
-export default function HeroContent() {
-  const router=useRouter()
-  return (
-    <div
-      className="
-        w-full
-        max-w-2xl
-      "
-    >
-
-
-      {/* Badge */}
 
-      <motion.div
-        {...fadeUp}
-        transition={{
-          duration:.5,
-        }}
-        className="
-          inline-flex
-          items-center
-          gap-2
-          rounded-full
-          border
-          border-slate-200
-          bg-white/80
-          px-3
-          py-2
-          shadow-sm
-          backdrop-blur-xl
+export default function HeroContent(){
 
-          sm:px-4
-        "
-      >
-
-        <span
-          className="
-            h-2
-            w-2
-            shrink-0
-            rounded-full
-            bg-emerald-500
-          "
-        />
+const router = useRouter();
 
 
-        <span
-          className="
-            text-xs
-            font-medium
-            text-slate-700
+const trustItems=[
 
-            sm:text-sm
-          "
-        >
-          Home Sample Collection Available
-        </span>
+{
+icon:FaHouseMedical,
+title:"Home Collection",
+desc:"Safe Pickup",
+theme:"bg-emerald-50 text-emerald-600"
+},
 
+{
+icon:FaMicroscope,
+title:"Advanced Labs",
+desc:"Quality Testing",
+theme:"bg-blue-50 text-blue-600"
+},
 
-      </motion.div>
+{
+icon:FaFileMedical,
+title:"Digital Reports",
+desc:"Fast Delivery",
+theme:"bg-cyan-50 text-cyan-600"
+},
 
 
+];
 
 
+return (
 
-      {/* Heading */}
+<div
+className="
+w-full
+max-w-2xl
+"
+>
 
 
-      <motion.h1
-        {...fadeUp}
-        transition={{
-          delay:.15,
-        }}
-        className="
-          mt-6
-          text-[42px]
-          font-black
-          leading-[0.95]
-          tracking-tight
-          text-slate-900
 
-          sm:text-5xl
+{/* Healthcare Badge */}
 
-          md:text-6xl
 
-          lg:text-7xl
+<motion.div
 
-          xl:text-[82px]
-        "
-      >
+{...fadeUp}
 
-        Know Your
-        <br />
+className="
+inline-flex
+items-center
+gap-2
+rounded-full
+border
+border-emerald-100
+bg-emerald-50
+px-4
+py-2
+"
 
-        <span
-          className="
-            bg-gradient-to-r
-            from-slate-900
-            via-blue-700
-            to-violet-600
-            bg-clip-text
-            text-transparent
-          "
-        >
-          Health.
-        </span>
+>
 
+<FaShieldHeart
+className="
+text-emerald-600
+"
+size={15}
+/>
 
-      </motion.h1>
 
+<span
+className="
+text-xs
+font-semibold
+text-emerald-700
+sm:text-sm
+"
+>
+Trusted Healthcare Partner
+</span>
 
 
+</motion.div>
 
 
-      {/* Description */}
 
 
-      <motion.p
-        {...fadeUp}
-        transition={{
-          delay:.3,
-        }}
-        className="
-          mt-5
-          max-w-xl
-          text-base
-          leading-7
-          text-slate-600
 
-          sm:mt-7
-          sm:text-lg
-          sm:leading-8
-        "
-      >
 
-        Book pathology tests online, schedule home sample
-        collection, and receive accurate digital reports—
-        all from one beautifully simple experience.
 
-      </motion.p>
+{/* Heading */}
 
 
+<motion.h1
 
+{...fadeUp}
 
+transition={{
+delay:.15
+}}
 
+className="
+mt-6
+text-[42px]
+font-black
+leading-[1]
+tracking-tight
+text-slate-900
 
-      {/* Search */}
+sm:text-5xl
+md:text-6xl
+lg:text-7xl
+"
 
+>
 
-      <motion.div
-        {...fadeUp}
-        transition={{
-          delay:.45,
-        }}
-        className="
-          mt-6
 
-          sm:mt-10
-        "
-      >
+Better Health
+<br/>
 
-        <SearchBar />
 
-      </motion.div>
+<span
+className="
+text-blue-700
+"
+>
+Starts With
+</span>
 
 
+<br/>
 
 
+<span
+className="
+text-teal-600
+"
+>
+Better Testing
+</span>
 
 
-      {/* Buttons */}
+</motion.h1>
 
 
-      <motion.div
-        {...fadeUp}
-        transition={{
-          delay:.6,
-        }}
-        className="
-          mt-6
-          flex
-          flex-col
-          gap-3
 
-          sm:mt-8
-          sm:flex-row
-        "
-      >
 
 
-        <button
-        onClick={()=>{router.push('/contact')}}
-          className="
-            group
-            flex
-            w-full
-            items-center
-            justify-center
-            gap-3
-            rounded-full
-            bg-blue-600
-            px-7
-            py-3.5
-            font-semibold
-            text-white
-            shadow-lg
-            shadow-blue-600/20
-            transition
-            hover:-translate-y-1
 
-            sm:w-auto
-            sm:py-4
-          "
-        >
 
-          Book Test
+{/* Description */}
 
-          <FiArrowRight
-            className="
-              transition
-              group-hover:translate-x-1
-            "
-          />
 
-        </button>
+<motion.p
 
+{...fadeUp}
 
+transition={{
+delay:.3
+}}
 
-        <button
-        onClick={()=>{router.push('packages')}}
-          className="
-            w-full
-            rounded-full
-            border
-            border-slate-200
-            bg-white
-            px-7
-            py-3.5
-            font-semibold
-            text-slate-700
-            transition
-            hover:border-blue-300
-            hover:bg-blue-50
+className="
+mt-6
+max-w-xl
+text-base
+leading-7
+text-slate-600
 
-            sm:w-auto
-            sm:py-4
-          "
-        >
+sm:text-lg
+sm:leading-8
+"
 
-          Explore Packages
+>
 
-        </button>
+Comprehensive health checkups, preventive screenings,
+and accurate diagnostics with convenient home sample
+collection and trusted digital reports.
 
+</motion.p>
 
-      </motion.div>
 
 
 
 
 
 
-      {/* Trust Cards */}
+{/* Search */}
 
 
-      <motion.div
-        {...fadeUp}
-        transition={{
-          delay:.75,
-        }}
-        className="
-          mt-8
-          grid
-          grid-cols-1
-          gap-3
+<motion.div
 
-          sm:mt-12
-          sm:grid-cols-3
-          sm:gap-4
-        "
-      >
+{...fadeUp}
 
+transition={{
+delay:.45
+}}
 
-        {[
-          {
-            icon:FiHome,
-            text:"Home Collection",
-          },
+className="
+mt-7
+"
 
-          {
-            icon:FiClock,
-            text:"Fast Reports",
-          },
+>
 
-          {
-            icon:FiShield,
-            text:"Accurate Testing",
-          },
+<SearchBar/>
 
-        ].map((item)=>{
+</motion.div>
 
 
-          const Icon=item.icon;
 
 
-          return (
 
-            <div
-              key={item.text}
-              className="
-                flex
-                items-center
-                gap-3
-                rounded-2xl
-                border
-                border-slate-100
-                bg-white/70
-                px-4
-                py-3
-                backdrop-blur-lg
-              "
-            >
 
-              <div
-                className="
-                  flex
-                  h-9
-                  w-9
-                  items-center
-                  justify-center
-                  rounded-full
-                  bg-blue-50
-                "
-              >
 
-                <Icon
-                  className="text-blue-600"
-                />
+{/* Buttons */}
 
-              </div>
 
+<motion.div
 
-              <span
-                className="
-                  text-sm
-                  font-medium
-                  text-slate-700
-                "
-              >
-                {item.text}
-              </span>
+{...fadeUp}
 
+transition={{
+delay:.6
+}}
 
-            </div>
+className="
+mt-7
+flex
+flex-col
+gap-3
 
-          );
+sm:flex-row
+"
 
+>
 
-        })}
 
+<button
 
-      </motion.div>
+onClick={()=>router.push("/contact")}
 
+className="
+group
+flex
+items-center
+justify-center
+gap-3
+rounded-full
+bg-blue-700
+px-8
+py-4
+font-semibold
+text-white
+shadow-lg
+shadow-blue-700/20
+transition
+hover:-translate-y-1
+"
 
-    </div>
-  );
+>
+
+Book Health Test
+
+
+<FiArrowRight
+className="
+group-hover:translate-x-1
+transition
+"
+/>
+
+
+</button>
+
+
+
+
+<button
+
+onClick={()=>router.push("/packages")}
+
+className="
+rounded-full
+border
+border-slate-200
+bg-white
+px-8
+py-4
+font-semibold
+text-slate-700
+transition
+hover:border-teal-300
+hover:bg-teal-50
+"
+
+>
+
+Explore Packages
+
+
+</button>
+
+
+</motion.div>
+
+
+
+
+
+
+
+
+{/* Trust Cards */}
+
+
+<motion.div
+
+{...fadeUp}
+
+transition={{
+delay:.75
+}}
+
+className="
+mt-10
+grid
+gap-3
+
+sm:grid-cols-3
+"
+
+>
+
+
+{
+trustItems.map((item)=>{
+
+
+const Icon=item.icon;
+
+
+return (
+
+<div
+
+key={item.title}
+
+className="
+flex
+items-center
+gap-3
+rounded-3xl
+border
+border-slate-100
+bg-white
+p-4
+shadow-sm
+transition
+hover:shadow-md
+"
+
+>
+
+
+<div
+
+className={`
+flex
+h-11
+w-11
+items-center
+justify-center
+rounded-2xl
+${item.theme}
+`}
+
+>
+
+<Icon size={20}/>
+
+
+</div>
+
+
+
+<div>
+
+<p
+className="
+text-sm
+font-bold
+text-slate-900
+"
+>
+
+{item.title}
+
+</p>
+
+
+<p
+className="
+text-xs
+text-slate-500
+"
+>
+
+{item.desc}
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+)
+
+})
+
+}
+
+
+
+</motion.div>
+
+
+
+
+</div>
+
+)
+
 }

@@ -7,6 +7,7 @@ import CTA from './components/CTA'
 import TestGrid from './components/TestGrid'
 import { packagesSchema } from '@/schema/packagesSchema'
 import SITE_CONFIG from '../SITE_CONFIG'
+import PackageImageCarousel from '../components/PackageImages'
 
 export const metadata = {
   title:
@@ -88,6 +89,7 @@ export default function page() {
         {/* <SectionBackground> */}
 
 <PackagesHero></PackagesHero>
+<PackageImageCarousel></PackageImageCarousel>
 <PackagesPage></PackagesPage>
 <TestGrid></TestGrid>
 <FAQ></FAQ>
