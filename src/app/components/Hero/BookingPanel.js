@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
   FaHeartPulse,
@@ -10,6 +11,7 @@ import {
   FaBone,
   FaHouseMedical,
 } from "react-icons/fa6";
+
 
 import {
   FiArrowRight,
@@ -199,8 +201,8 @@ gap-3
 healthAreas.map((item)=>(
 
 
-<div
-
+<Link
+href={`/packages?tag=${item.title.toLocaleLowerCase()}`}
 key={item.title}
 
 className="
@@ -255,7 +257,7 @@ text-slate-800
 </p>
 
 
-</div>
+</Link>
 
 
 ))

@@ -1,55 +1,21 @@
 "use client";
 
+
 import { motion } from "framer-motion";
-import {
-  FiBriefcase,
-  FiUsers,
-  FiHeart,
-  FiActivity,
-  FiTrendingUp,
-  FiUserCheck,
-} from "react-icons/fi";
+import { FiActivity, FiBriefcase, FiHeart, FiTrendingUp, FiUserCheck, FiUsers } from "react-icons/fi";
 
-const people = [
-  {
-    icon: FiBriefcase,
-    title: "Working Professionals",
-    description:
-      "Busy lifestyles, stress, and irregular habits make routine health screening important.",
-  },
-  {
-    icon: FiUsers,
-    title: "Adults Above 30",
-    description:
-      "Preventive checkups help identify lifestyle-related health risks early.",
-  },
-  {
-    icon: FiHeart,
-    title: "Family Health Risk",
-    description:
-      "Useful for people with family history of diabetes, hypertension, thyroid, or heart conditions.",
-  },
-  {
-    icon: FiActivity,
-    title: "Fitness Enthusiasts",
-    description:
-      "Track important health markers and understand your body's response to lifestyle changes.",
-  },
-  {
-    icon: FiTrendingUp,
-    title: "Annual Checkups",
-    description:
-      "Ideal for yearly health monitoring and preventive wellness screening.",
-  },
-  {
-    icon: FiUserCheck,
-    title: "Senior Citizens",
-    description:
-      "Helps monitor age-related changes and existing health conditions.",
-  },
-];
 
-export default function Eligibility() {
+
+
+export default function Eligibility({pkg}) {
+const iconMap = {
+  "briefcase": FiBriefcase,
+  "users": FiUsers,
+  "heart": FiHeart,
+  "activity": FiActivity,
+  "trending": FiTrendingUp,
+  "userCheck": FiUserCheck,
+};
   return (
     <section
       className="
@@ -164,9 +130,9 @@ export default function Eligibility() {
           "
         >
 
-          {people.map((item, index) => {
+          {pkg?.recommendedFor?.map((item, index) => {
 
-            const Icon = item.icon;
+         const Icon = iconMap[item.icon] || FiUsers;
 
             return (
               <motion.div

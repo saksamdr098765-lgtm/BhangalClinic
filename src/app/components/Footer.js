@@ -152,7 +152,7 @@ shadow-sm
 
 <Image
 
-src="/logo.jpg"
+src={SITE_CONFIG.logo}
 
 fill
 

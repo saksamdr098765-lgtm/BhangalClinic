@@ -2,37 +2,42 @@
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+
 
 import "swiper/css";
 
 import { FiMessageCircle } from "react-icons/fi";
+import SITE_CONFIG from "../SITE_CONFIG";
 
+import { Autoplay, Navigation } from "swiper/modules";
 
+import "swiper/css/navigation";  
+
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 const packages = [
   {
-    name:"Full Body Checkup",
-   image:"/carausol/1.jpg"
+    name:"bhangal ayush profile 2.1",
+   image:"/carausol/bhangal-ayush-profile-2-1.webp"
   },
   {
-    name:"Heart Health Package",
- image:"/carausol/2.jpg"
+    name:"bhangal ayush profile 3.1",
+ image:"/carausol/bhangal-ayush-profile-3-1.webp"
   },
   {
-    name:"Thyroid Profile",
-   image:"/carausol/1.jpg"
+    name:"bhangal ayush profile 3",
+   image:"/carausol/bhangal-ayush-profile-3.webp"
   },
   {
-    name:"Vitamin Test",
-   image:"/carausol/2.jpg"
+    name:"bhangal ayush profile 2",
+   image:"/carausol/bhangal-ayush-profile-2.webp"
   },
   {
-    name:"Senior Citizen Package",
- image:"/carausol/1.jpg"
+    name:"bhangal dengue profile",
+ image:"/carausol/bhangal-dengue-profile.webp"
   },
   {
-    name:"Diabetes Screening",
-  image:"/carausol/2.jpg"
+    name:"bhangal diabetic profile",
+  image:"/carausol/bhangal-diabetic-profile.webp"
   },
 ];
 
@@ -45,10 +50,10 @@ export default function PackageImageCarousel(){
 const whatsapp = (pkg)=>{
 
 const message =
-`Hello, I want details about ${pkg.name} package`;
+`Hello, I want details about ${pkg.name} test`;
 
 window.open(
-`https://wa.me/919999999999?text=${encodeURIComponent(message)}`,
+`https://wa.me/${SITE_CONFIG.whatsapp}?text=${encodeURIComponent(message)}`,
 "_blank"
 );
 
@@ -97,50 +102,50 @@ px-6
 
 
 
-<div
-className="
-mb-8
-flex
-items-end
-justify-between
-"
->
+<div className="mb-8 flex items-end justify-between">
+  <div>
+    <p className="text-sm font-semibold uppercase tracking-widest text-teal-600">
+      Health Packages
+    </p>
 
+    <h2 className="mt-2 text-3xl font-black text-slate-900 sm:text-4xl">
+      Explore Our Packages
+    </h2>
+  </div>
 
-<div>
+  <div className="hidden gap-3 md:flex">
+    <button
+      className="
+        package-prev
+        flex h-11 w-11 items-center justify-center
+        rounded-full
+        border border-slate-200
+        bg-white
+        shadow-sm
+        transition
+        hover:border-blue-500
+        hover:bg-blue-50
+      "
+    >
+      <FiChevronLeft size={22} />
+    </button>
 
-<p
-className="
-text-sm
-font-semibold
-uppercase
-tracking-widest
-text-teal-600
-"
->
-Health Packages
-</p>
-
-
-<h2
-className="
-mt-2
-text-3xl
-font-black
-text-slate-900
-sm:text-4xl
-"
->
-
-Explore Our Packages
-
-</h2>
-
-
-</div>
-
-
-
+    <button
+      className="
+        package-next
+        flex h-11 w-11 items-center justify-center
+        rounded-full
+        border border-slate-200
+        bg-white
+        shadow-sm
+        transition
+        hover:border-blue-500
+        hover:bg-blue-50
+      "
+    >
+      <FiChevronRight size={22} />
+    </button>
+  </div>
 </div>
 
 
@@ -150,34 +155,28 @@ Explore Our Packages
 
 
 <Swiper
-
-modules={[Autoplay]}
-
-spaceBetween={18}
-
-slidesPerView={1.8}
-
-autoplay={{
-delay:2500,
-disableOnInteraction:false,
-}}
-
-breakpoints={{
-
-640:{
-slidesPerView:3,
-spaceBetween:20
-},
-
-1024:{
-slidesPerView:5,
-spaceBetween:24
-}
-
-}}
-
-className="!overflow-visible"
-
+  modules={[Autoplay, Navigation]}
+  navigation={{
+    prevEl: ".package-prev",
+    nextEl: ".package-next",
+  }}
+  spaceBetween={18}
+  slidesPerView={1.8}
+  autoplay={{
+    delay: 2500,
+    disableOnInteraction: false,
+  }}
+  breakpoints={{
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 24,
+    },
+  }}
+  className="!overflow-visible"
 >
 
 
@@ -214,7 +213,7 @@ hover:shadow-xl
 <div
 className="
 relative
-aspect-[4/5]
+aspect-[3/4]
 overflow-hidden
 "
 >

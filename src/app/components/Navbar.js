@@ -138,7 +138,7 @@ shadow-sm
 >
 
 <Image
-src="/logo.jpg"
+src={SITE_CONFIG.logo}
 fill
 alt="Bhangal Clinical Laboratory"
 className="object-contain"

@@ -10,70 +10,7 @@ import {
   FiCheck,
 } from "react-icons/fi";
 
-const categories = [
-  {
-    title: "Blood Health",
-    icon: FiDroplet,
-    tests: [
-      "Complete Blood Count (CBC)",
-      "Hemoglobin",
-      "RBC Count",
-      "WBC Count",
-      "Platelet Count",
-      "ESR",
-    ],
-  },
-  {
-    title: "Diabetes",
-    icon: FiActivity,
-    tests: [
-      "Fasting Blood Sugar",
-      "HbA1c",
-      "Random Blood Sugar",
-    ],
-  },
-  {
-    title: "Liver Function",
-    icon: FiHeart,
-    tests: [
-      "SGOT (AST)",
-      "SGPT (ALT)",
-      "Bilirubin",
-      "Albumin",
-      "Total Protein",
-    ],
-  },
-  {
-    title: "Kidney Function",
-    icon: FiShield,
-    tests: [
-      "Creatinine",
-      "Blood Urea",
-      "Uric Acid",
-      "Electrolytes",
-    ],
-  },
-  {
-    title: "Thyroid",
-    icon: FiSun,
-    tests: [
-      "T3",
-      "T4",
-      "TSH",
-    ],
-  },
-  {
-    title: "Heart Health",
-    icon: FiHeart,
-    tests: [
-      "Total Cholesterol",
-      "HDL",
-      "LDL",
-      "Triglycerides",
-      "VLDL",
-    ],
-  },
-];
+
 
 
 export default function IncludedTests({ pkg }) {
@@ -170,9 +107,9 @@ export default function IncludedTests({ pkg }) {
           "
         >
 
-          {categories.map((category,index)=>{
+          {pkg.testCategories.map((category,index)=>{
 
-            const Icon = category.icon;
+         
 
 
             return (
@@ -220,33 +157,7 @@ export default function IncludedTests({ pkg }) {
                   "
                 >
 
-                  <div
-                    className="
-                      flex
-                      h-11
-                      w-11
-                      shrink-0
-                      items-center
-                      justify-center
-                      rounded-xl
-                      bg-blue-50
-
-                      sm:h-12
-                      sm:w-12
-                      sm:rounded-2xl
-                    "
-                  >
-
-                    <Icon
-                      className="
-                        text-lg
-                        text-blue-600
-
-                        sm:text-xl
-                      "
-                    />
-
-                  </div>
+            
 
 
                   <div>

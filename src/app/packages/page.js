@@ -89,7 +89,6 @@ export default function page() {
         {/* <SectionBackground> */}
 
 <PackagesHero></PackagesHero>
-<PackageImageCarousel></PackageImageCarousel>
 <PackagesPage></PackagesPage>
 <TestGrid></TestGrid>
 <FAQ></FAQ>

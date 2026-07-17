@@ -202,7 +202,7 @@ Thank you.`;
         >
 
           {tests.slice(0,3).map((test, index) => (
-      <TestCard key={test.slug} test={test}></TestCard>
+      <TestCard key={test.slug} test={test} handleWhatsApp={handleWhatsApp}></TestCard>
                 ))}
 
         </div>

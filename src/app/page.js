@@ -12,6 +12,9 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import SITE_CONFIG from "./SITE_CONFIG";
 import HealthBodySection from "./components/HealthBodySection";
 import PackageImageCarousel from "./components/PackageImages";
+import FeaturedOrgansSection from "./components/FeaturedOrganSystem";
+import LifestyleWellnessSection from "./components/LifestyleWellnessSection";
+import FeverInfectionSection from "./components/FeverInfectionSection";
 
 
 export const metadata = {
@@ -53,15 +56,16 @@ export default function Home() {
   return (
   <>
 <Hero></Hero>
-<HealthBodySection></HealthBodySection>
+<FeaturedOrgansSection></FeaturedOrgansSection>
 <PopularTests></PopularTests>
+<LifestyleWellnessSection></LifestyleWellnessSection>
 <Packages></Packages>
 <SymptomAssessmentCTA></SymptomAssessmentCTA>
 <PackageImageCarousel></PackageImageCarousel>
 <WhyChooseUs></WhyChooseUs>
 <Testimonials></Testimonials>
 <FooterCTA></FooterCTA>
-<Footer></Footer>
+
   {homeSchema.map((schema, index) => (
         <script
           key={index}

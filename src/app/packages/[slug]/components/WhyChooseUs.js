@@ -12,12 +12,7 @@ import {
 
 
 const reasons = [
-  {
-    icon: FiAward,
-    title: "NABL Certified Quality",
-    description:
-      "Advanced diagnostic processes with strict quality checks to ensure accurate and dependable reports.",
-  },
+
   {
     icon: FiUsers,
     title: "Experienced Healthcare Team",

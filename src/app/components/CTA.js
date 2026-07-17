@@ -633,7 +633,8 @@ font-black
 </h4>
 
 
-<div
+<Link
+href="/packages"
 className="
 flex
 h-12
@@ -647,7 +648,7 @@ bg-white/20
 
 <FiArrowRight/>
 
-</div>
+</Link>
 
 
 </div>

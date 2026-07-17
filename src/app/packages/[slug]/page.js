@@ -15,6 +15,7 @@ import { packages } from '@/app/data/packages'
 import { packageSchema } from "./schema";
 import SITE_CONFIG from '@/app/SITE_CONFIG'
 import { notFound } from 'next/navigation'
+import PackageImage from './components/PackageImage'
 
 export async function generateStaticParams() {
   return packages.map((pkg) => ({
@@ -65,6 +66,7 @@ const schemas = packageSchema(packageData);
   if(!packageData) {
     notFound()
   } 
+ 
 
   return (
     <div>
@@ -77,12 +79,15 @@ const schemas = packageSchema(packageData);
     }}
   />
 ))}
-      <Hero pkg={packageData}></Hero>
+
+      <Hero pkg={packageData} ></Hero>
+      <PackageImage pkg={packageData}></PackageImage>
       <QuickInfo pkg={packageData}></QuickInfo>
-      <Overview pkg={packageData}></Overview>
+
+      {/* <Overview pkg={packageData}></Overview> */}
       <IncludedTests pkg={packageData}></IncludedTests>
-      <Benefits ></Benefits>
-      <Eligibility></Eligibility>
+      <Benefits benefits={packageData.benefits}></Benefits>
+      <Eligibility pkg={packageData}></Eligibility>
       <Preparation></Preparation>
       <Process></Process>
       <WhyChooseUs></WhyChooseUs>

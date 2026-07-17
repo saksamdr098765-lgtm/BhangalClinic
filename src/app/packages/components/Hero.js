@@ -36,6 +36,7 @@ export default function PackagesHero(){
 const searchParams = useSearchParams();
 
 const search = searchParams.get("search");
+const tag = searchParams.get("tag");
 
 const [query,setQuery]=useState("");
 
@@ -53,7 +54,7 @@ router.push(
 };
 
 
-if(search) return null;
+if(search || tag) return null;
 
 
 return (

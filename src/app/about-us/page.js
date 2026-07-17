@@ -5,6 +5,7 @@ import MedicalLeadership from './components/MedicalLeadership'
 import CTA from './components/CTA'
 import { aboutSchema } from '@/schema/aboutSchema'
 import SITE_CONFIG from '../SITE_CONFIG'
+import Founder from './components/Founder'
 
 
 export const metadata = {
@@ -38,8 +39,9 @@ export default function page() {
         />
       ))}
       <Hero></Hero>
+      <Founder></Founder>
       <OurStory></OurStory>
-      <MedicalLeadership></MedicalLeadership>
+      {/* <MedicalLeadership></MedicalLeadership> */}
       <CTA></CTA>
     </div>
   )

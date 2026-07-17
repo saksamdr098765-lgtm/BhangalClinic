@@ -1,156 +1,179 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
-import { FiArrowRight, FiCheck } from "react-icons/fi";
+import Link from "next/link";
+import {
+  FiArrowRight,
+  FiAward,
+} from "react-icons/fi";
 
-const stats = [
+const features = [
   {
-    number: "15K+",
-    label: "Patients Served",
+    title: "Advanced Laboratory Equipment",
+    color: "bg-blue-100",
+    icon: "🔬",
   },
   {
-    number: "50+",
-    label: "Diagnostic Tests",
+    title: "Experienced Pathologists",
+    color: "bg-emerald-100",
+    icon: "👨‍⚕️",
   },
   {
-    number: "10+",
-    label: "Years Experience",
+    title: "Home Sample Collection",
+    color: "bg-cyan-100",
+    icon: "🏠",
   },
   {
-    number: "99%",
-    label: "Report Accuracy",
+    title: "Secure Digital Reports",
+    color: "bg-violet-100",
+    icon: "📄",
   },
 ];
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white pt-24 pb-16 sm:pt-28 sm:pb-20 lg:pt-36 lg:pb-28">
+    <section className="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-28">
 
       {/* Background */}
 
-      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-white via-slate-50 to-white" />
+      <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 via-white to-blue-50" />
 
-      <div className="absolute -left-32 top-0 -z-10 h-72 w-72 rounded-full bg-blue-100/60 blur-3xl sm:h-[420px] sm:w-[420px]" />
+      <div className="absolute -left-32 top-0 h-72 w-72 rounded-full bg-cyan-100/40 blur-[120px] sm:h-[420px] sm:w-[420px]" />
 
-      <div className="absolute -right-32 bottom-0 -z-10 h-72 w-72 rounded-full bg-cyan-100/60 blur-3xl sm:h-[420px] sm:w-[420px]" />
+      <div className="absolute right-0 top-0 h-72 w-72 rounded-full bg-blue-100/30 blur-[120px] sm:h-[520px] sm:w-[520px]" />
 
-      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
 
-        <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
+        <div className="grid gap-10 lg:grid-cols-[1fr_470px] lg:gap-16">
 
-          {/* Content */}
+          {/* LEFT */}
 
           <motion.div
-            initial={{ opacity: 0, y: 35 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="order-2 lg:order-1"
+            transition={{ duration: .6 }}
           >
 
-            <span className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
-              About Our Laboratory
+            <span className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-wide text-blue-700 shadow-sm sm:text-sm">
+
+              <FiAward />
+
+              Trusted Since 2014
+
             </span>
 
-            <h1 className="mt-6 text-4xl font-black leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-7xl lg:leading-[0.95]">
-              Trusted
+            <h1 className="mt-6 text-4xl font-black leading-[0.95] tracking-tight text-slate-900 sm:text-5xl lg:text-7xl">
+
+              Building Trust
+
               <br />
-              Diagnostics
-              <br />
-              <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-                For Every Family.
+
+              Through
+
+              <span className="block text-blue-600">
+
+                Accurate Diagnostics.
+
               </span>
+
             </h1>
 
             <p className="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-              Bhangal Clinical Laboratory combines experienced healthcare
-              professionals with advanced diagnostic technology to deliver
-              accurate pathology testing, timely reports and compassionate care
-              for every family.
+
+              At Bhangal Clinical Laboratory, we believe every diagnosis begins
+              with trust. We provide accurate pathology testing, modern
+              laboratory services and compassionate patient care for every
+              family.
+
             </p>
 
-            {/* CTA */}
-
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
 
               <Link
                 href="/contact"
-                className="group inline-flex w-full items-center justify-center gap-3 rounded-2xl bg-blue-600 px-7 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-blue-700 hover:shadow-xl sm:w-auto"
+                className="group inline-flex items-center justify-center gap-3 rounded-2xl bg-slate-900 px-6 py-4 font-semibold text-white transition hover:bg-blue-600"
               >
-                Book a Test
+                Book Your Test
 
                 <FiArrowRight className="transition group-hover:translate-x-1" />
 
               </Link>
 
               <Link
-                href="/contact"
-                className="inline-flex w-full items-center justify-center rounded-2xl border border-slate-200 bg-white px-7 py-4 font-semibold text-slate-700 transition hover:border-blue-300 hover:bg-blue-50 sm:w-auto"
+                href="/packages"
+                className="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-6 py-4 font-semibold text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
               >
-                Contact Us
+                Explore Packages
               </Link>
-
-            </div>
-
-            {/* Highlights */}
-
-            <div className="mt-8 flex flex-wrap gap-3">
-
-              {[
-                "NABL Certified",
-                "Home Collection",
-                "Fast Reports",
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm"
-                >
-                  <FiCheck className="text-blue-600" />
-
-                  {item}
-
-                </div>
-              ))}
 
             </div>
 
           </motion.div>
 
-          {/* Image */}
+          {/* RIGHT */}
 
           <motion.div
             initial={{ opacity: 0, y: 35 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="relative order-1 lg:order-2"
+            transition={{ delay: .15 }}
           >
 
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-2xl sm:rounded-[36px]">
+            <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
 
-              <Image
-                src="/clinic.jpg"
-                fill
-                alt="Bhangal Clinical Laboratory"
-                className="object-cover"
-                priority
-              />
+              <div className="border-b border-slate-100 p-6 sm:p-8">
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                <span className="text-xs font-bold uppercase tracking-[0.22em] text-blue-600">
+                  WHY BHANGAL LAB
+                </span>
 
-            </div>
+                <h3 className="mt-3 text-2xl font-black text-slate-900 sm:text-3xl">
 
-            {/* Floating Badge */}
+                  Trusted by Thousands of Families
 
-            <div className="absolute bottom-4 left-4 rounded-2xl border border-white/30 bg-white/90 px-5 py-4 shadow-xl backdrop-blur-xl sm:bottom-6 sm:left-6 lg:-left-8 lg:bottom-8">
+                </h3>
 
-              <p className="text-3xl font-black text-blue-600">
-                15K+
-              </p>
+                <p className="mt-4 text-sm leading-7 text-slate-600 sm:text-base">
 
-              <p className="mt-1 text-sm text-slate-600">
-                Happy Patients
-              </p>
+                  Combining experienced professionals, advanced laboratory
+                  technology and patient-first care to deliver reliable
+                  diagnostics every day.
+
+                </p>
+
+              </div>
+
+              <div className="divide-y divide-slate-100">
+
+                {features.map((item) => (
+
+                  <div
+                    key={item.title}
+                    className="flex items-center gap-4 p-5 sm:p-6"
+                  >
+
+                    <div
+                      className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl text-xl ${item.color} sm:h-14 sm:w-14 sm:text-2xl`}
+                    >
+                      {item.icon}
+                    </div>
+
+                    <div>
+
+                      <h4 className="font-semibold text-slate-900">
+                        {item.title}
+                      </h4>
+
+                      <p className="mt-1 text-sm text-slate-500">
+                        Quality healthcare you can trust.
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                ))}
+
+              </div>
 
             </div>
 
@@ -158,92 +181,8 @@ export default function Hero() {
 
         </div>
 
-        {/* Stats */}
-                <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-          className="mt-16 sm:mt-20"
-        >
-          <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
-
-            {stats.map((item, index) => (
-              <motion.div
-                key={item.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  delay: index * 0.1,
-                  duration: 0.5,
-                }}
-                viewport={{ once: true }}
-                whileHover={{
-                  y: -6,
-                }}
-                className="
-                  group
-                  rounded-3xl
-                  border
-                  border-slate-200
-                  bg-white
-                  p-6
-                  shadow-sm
-                  transition-all
-                  duration-300
-                  hover:border-blue-100
-                  hover:shadow-xl
-
-                  sm:p-8
-                "
-              >
-
-                <h3
-                  className="
-                    text-3xl
-                    font-black
-                    tracking-tight
-                    text-slate-900
-                    transition-colors
-                    duration-300
-
-                    group-hover:text-blue-600
-
-                    sm:text-5xl
-                  "
-                >
-                  {item.number}
-                </h3>
-
-                <div
-                  className="
-                    my-4
-                    h-1
-                    w-12
-                    rounded-full
-                    bg-blue-600
-                  "
-                />
-
-                <p
-                  className="
-                    text-sm
-                    font-semibold
-                    uppercase
-                    tracking-[0.18em]
-                    text-slate-500
-                  "
-                >
-                  {item.label}
-                </p>
-
-              </motion.div>
-            ))}
-
-          </div>
-        </motion.div>
-
       </div>
+
     </section>
   );
 }

@@ -6,20 +6,29 @@ import Link from "next/link";
 import { packages } from "@/app/data/packages";
 import { useSearchParams } from "next/navigation";
 import PackageCard from "@/app/components/PackageCard";
-
+import { useState } from "react";
 
 export default function PackagesPage() {
     const searchParams = useSearchParams();
 
   const search = searchParams.get("search")?.toLowerCase() || "";
-
+ const tag=searchParams.get("tag")?.toLowerCase() || "";
  
-  const filteredPackages = packages.filter((pkg) => {
-  return (
+const filteredPackages = packages.filter((pkg) => {
+  const matchesSearch =
+    !search ||
     pkg.name.toLowerCase().includes(search) ||
     pkg.shortDescription.toLowerCase().includes(search) ||
-    pkg.description.toLowerCase().includes(search)
-  );
+    pkg.description.toLowerCase().includes(search) ||
+    pkg.includedTests.includes(search)
+
+  const matchesTag =
+    !tag ||
+    pkg.tags?.some(
+      (t) => t.toLowerCase() === tag
+    );
+
+  return matchesSearch && matchesTag;
 });
 
 // Show 6 random packages if nothing matches
@@ -28,6 +37,19 @@ const displayedPackages =  filteredPackages.length > 0
     : [...packages]
         .sort(() => Math.random() - 0.5)
         .slice(0, 6);
+        const INITIAL_COUNT = 10;
+
+const [visibleCount, setVisibleCount] = useState(INITIAL_COUNT);
+
+const visiblePackages = displayedPackages.slice(0, visibleCount);
+
+const hasMore = visibleCount < displayedPackages.length;
+const pageTitle =
+  tag
+    ? `${tag.charAt(0).toUpperCase() + tag.slice(1)} Packages`
+    : search
+    ? `${search.charAt(0).toUpperCase() + search.slice(1)} Packages`
+    : "Health Packages";
   return (
   <section
   className="
@@ -98,15 +120,14 @@ const displayedPackages =  filteredPackages.length > 0
           text-5xl
           font-black
           tracking-tight
-          text-slate-900
+        
          text-nowrap
+         text-blue-500
           lg:text-7xl
         "
       >
-        {search?search:"Health"}
-        <span className="text-blue-600">
-          {" "}Packages
-        </span>
+    {pageTitle}
+       
       </h1>
 
       <p
@@ -152,7 +173,7 @@ const displayedPackages =  filteredPackages.length > 0
             text-slate-900
           "
         >
-          Choose Your Health Checkup
+          Choose Your {pageTitle}
         </h2>
 
       </div>
@@ -165,15 +186,53 @@ const displayedPackages =  filteredPackages.length > 0
 
  
 
-  <div className="mt-10 grid gap-10 sm:gap-14 md:grid-cols-2 xl:grid-cols-3">
-  {displayedPackages.map((pkg) => (
+<div className="mt-10 grid gap-10 sm:gap-14 md:grid-cols-2 xl:grid-cols-3">
+  {visiblePackages.map((pkg) => (
     <PackageCard
-      pkg={pkg}
       key={pkg.id}
+      pkg={pkg}
     />
   ))}
 </div>
+{hasMore && (
+  <div className="mt-14 flex justify-center">
+    <button
+      onClick={() => setVisibleCount((prev) => prev + 10)}
+      className="
+        group
+        inline-flex
+        items-center
+        gap-3
+        rounded-2xl
+        border
+        border-blue-200
+        bg-white
+        px-7
+        py-3
+        text-sm
+        font-semibold
+        text-blue-600
+        shadow-sm
+        transition-all
+        duration-300
+        hover:-translate-y-1
+        hover:border-blue-600
+        hover:bg-blue-600
+        hover:text-white
+      "
+    >
+      Load More
 
+      <FiArrowRight
+        className="
+          transition-transform
+          duration-300
+          group-hover:translate-x-1
+        "
+      />
+    </button>
+  </div>
+)}
       </div>
     </section>
   );

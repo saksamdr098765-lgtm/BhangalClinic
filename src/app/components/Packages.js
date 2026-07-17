@@ -10,6 +10,10 @@ import {
   FiHeart,
   FiActivity,
 } from "react-icons/fi";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
 
 import Link from "next/link";
 import { packages } from "../data/packages";
@@ -98,36 +102,43 @@ export default function Packages() {
 
         {/* Cards */}
 
-      <div
-  className="
-    mt-16
-    flex
-    gap-5
-    overflow-x-auto
-    pb-4
-    snap-x
-    snap-mandatory
-    [scrollbar-width:none]
-    [-ms-overflow-style:none]
-    [&::-webkit-scrollbar]:hidden
-  "
+<Swiper
+  modules={[Autoplay]}
+  spaceBetween={20}
+  slidesPerView={1.1}
+  autoplay={{
+    delay: 3000,
+    disableOnInteraction: false,
+  }}
+  breakpoints={{
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+    1280: {
+      slidesPerView: 3.5,
+      spaceBetween: 24,
+    },
+  }}
+  className="mt-16 !overflow-visible"
 >
   {packages.slice(0, 6).map((pkg, index) => (
-    <div
-      key={pkg.id}
-      className="
-        min-w-[280px]
-        snap-start
-        sm:min-w-[300px]
-      "
-    >
+    <SwiperSlide key={pkg.id}>
       <PackageCard
         pkg={pkg}
         featured={index === 0}
       />
-    </div>
+    </SwiperSlide>
   ))}
-</div>
+</Swiper>
 
       </div>
 

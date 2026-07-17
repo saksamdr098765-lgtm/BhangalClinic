@@ -5,6 +5,8 @@ import { Toaster } from "sonner";
 import SITE_CONFIG from "./SITE_CONFIG";
 import { layoutSchema } from "@/schema/layoutSchema";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import FloatingButtons from "./components/FixedButtons";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -114,7 +116,9 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <Navbar></Navbar>
+        <FloatingButtons></FloatingButtons>
         {children}
+        <Footer></Footer>
          <Toaster
     position="bottom-right"
     richColors

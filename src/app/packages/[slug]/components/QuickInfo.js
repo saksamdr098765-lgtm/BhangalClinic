@@ -10,163 +10,219 @@ import {
   FiCalendar,
 } from "react-icons/fi";
 
-const getItems = (pkg) => [
-  {
-    icon: FiActivity,
-    title: "Tests Included",
-    value: `${pkg?.tests || 0}+ Tests`,
-  },
-  {
-    icon: FiHome,
-    title: "Sample Collection",
-    value: "Home Available",
-  },
-  {
-    icon: FiClock,
-    title: "Reports",
-    value: "24-48 Hours",
-  },
-  {
-    icon: FiDroplet,
-    title: "Sample Type",
-    value: "Blood & Urine",
-  },
-  {
-    icon: FiCalendar,
-    title: "Preparation",
-    value: pkg?.fasting ? "Fasting Required" : "No Fasting",
-  },
-  {
-    icon: FiShield,
-    title: "Laboratory",
-    value: "NABL Certified",
-  },
-];
-
 export default function QuickInfo({ pkg }) {
-  return (
-    <section className="relative bg-white py-20">
+  const items = [
+    {
+      icon: FiActivity,
+      title: "Tests",
+      value: `${pkg?.includedTests?.length || 0}+ Parameters`,
+      color: "sky",
+    },
+    {
+      icon: FiHome,
+      title: "Collection",
+      value: "Home Available",
+      color: "emerald",
+    },
+    {
+      icon: FiClock,
+      title: "Reports",
+      value: "24–48 Hours",
+      color: "violet",
+    },
+    {
+      icon: FiDroplet,
+      title: "Sample",
+      value: "Blood & Urine",
+      color: "rose",
+    },
+    {
+      icon: FiCalendar,
+      title: "Preparation",
+      value: pkg?.fasting
+        ? "8–10 hrs Fast"
+        : "No Fasting",
+      color: "amber",
+    },
+    {
+      icon: FiShield,
+      title: "Quality",
+      value: "Standard Practice",
+      color: "cyan",
+    },
+  ];
 
-      <div className="mx-auto max-w-7xl px-6">
+  const colors = {
+    sky: {
+      bg: "bg-sky-50",
+      icon: "text-sky-600",
+      ring: "group-hover:ring-sky-100",
+    },
+
+    emerald: {
+      bg: "bg-emerald-50",
+      icon: "text-emerald-600",
+      ring: "group-hover:ring-emerald-100",
+    },
+
+    violet: {
+      bg: "bg-violet-50",
+      icon: "text-violet-600",
+      ring: "group-hover:ring-violet-100",
+    },
+
+    rose: {
+      bg: "bg-rose-50",
+      icon: "text-rose-600",
+      ring: "group-hover:ring-rose-100",
+    },
+
+    amber: {
+      bg: "bg-amber-50",
+      icon: "text-amber-600",
+      ring: "group-hover:ring-amber-100",
+    },
+
+    cyan: {
+      bg: "bg-cyan-50",
+      icon: "text-cyan-600",
+      ring: "group-hover:ring-cyan-100",
+    },
+  };
+
+  return (
+    <section className="bg-slate-50 py-14 sm:py-16 lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+
+        {/* Heading */}
 
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 30,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.5,
-          }}
-          viewport={{
-            once: true,
-          }}
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mx-auto mb-10 max-w-2xl text-center"
+        >
+          <span className="inline-flex rounded-full bg-blue-50 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-blue-700 sm:text-sm">
+            Package Information
+          </span>
+
+          <h2 className="mt-4 text-3xl font-black text-slate-900 sm:text-4xl">
+            Everything Before
+            <span className="block text-blue-600">
+              You Book
+            </span>
+          </h2>
+
+          <p className="mt-4 text-sm leading-7 text-slate-600 sm:text-base">
+            Essential information about your package,
+            preparation, reporting time and home collection.
+          </p>
+        </motion.div>
+
+        {/* Cards */}
+
+        <div
           className="
             grid
-            gap-5
+            grid-cols-2
+            gap-3
 
-            sm:grid-cols-2
-
-            lg:grid-cols-3
+            sm:grid-cols-3
+            sm:gap-5
 
             xl:grid-cols-6
           "
         >
-
-          {getItems(pkg).map((item, index) => {
+          {items.map((item, index) => {
             const Icon = item.icon;
+            const color = colors[item.color];
 
             return (
               <motion.div
                 key={item.title}
-                initial={{
-                  opacity: 0,
-                  scale: 0.95,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  scale: 1,
-                }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  delay: index * 0.05,
+                  delay: index * 0.06,
                 }}
-                viewport={{
-                  once: true,
-                }}
-                className="
+                viewport={{ once: true }}
+                className={`
                   group
-                  rounded-[26px]
+                  rounded-2xl
                   border
                   border-slate-200
                   bg-white
-                  p-6
-                  shadow-sm
+                  p-4
                   transition-all
                   duration-300
 
                   hover:-translate-y-1
-                  hover:border-blue-200
                   hover:shadow-lg
-                "
-              >
 
+                  sm:rounded-3xl
+                  sm:p-6
+                `}
+              >
                 <div
-                  className="
+                  className={`
                     flex
                     h-12
                     w-12
                     items-center
                     justify-center
-                    rounded-2xl
-                    bg-blue-50
-                    transition
+                    rounded-xl
 
-                    group-hover:bg-blue-100
-                  "
+                    ring-8
+                    ring-transparent
+
+                    transition-all
+
+                    ${color.bg}
+                    ${color.ring}
+
+                    sm:h-14
+                    sm:w-14
+                  `}
                 >
                   <Icon
-                    className="
-                      text-xl
-                      text-blue-600
-                    "
+                    className={color.icon}
+                    size={22}
                   />
                 </div>
 
-
                 <p
                   className="
-                    mt-5
-                    text-sm
-                    font-medium
+                    mt-4
+                    text-[11px]
+                    font-semibold
+                    uppercase
+                    tracking-[0.18em]
                     text-slate-500
+
+                    sm:text-xs
                   "
                 >
                   {item.title}
                 </p>
 
-
                 <h3
                   className="
-                    mt-1
-                    text-lg
+                    mt-2
+                    text-sm
                     font-bold
+                    leading-6
                     text-slate-900
+
+                    sm:text-lg
                   "
                 >
                   {item.value}
                 </h3>
-
               </motion.div>
             );
           })}
-
-        </motion.div>
-
+        </div>
       </div>
-
     </section>
   );
 }

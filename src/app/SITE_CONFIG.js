@@ -35,8 +35,8 @@ export const SITE_CONFIG = {
   /*                                  Website                                   */
   /* -------------------------------------------------------------------------- */
 
-  url: "https://dkbhangallab.com", // Change after domain purchase
-  domain: "dkbhangallab.com.com",
+  url: "https://dkbhangallab.com", 
+  domain: "dkbhangallab.com",
 
   language: "en-IN",
   locale: "en_IN",
@@ -56,7 +56,7 @@ export const SITE_CONFIG = {
   /* -------------------------------------------------------------------------- */
 
   phone: "+918968038602",
-  whatsapp: "91968038602",
+  whatsapp: "918968038602",
   email: "dkbhangallab@gmail.com",
 
   bookingPhone: "+918968038602",
