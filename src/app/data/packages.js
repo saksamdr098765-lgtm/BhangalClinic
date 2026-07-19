@@ -3729,6 +3729,33 @@ tags: [
     "Vitamin D (25-OH)",
     "Complete Urine Analysis (CUE)",
   ],
+  faqs: [
+  {
+    question: "Is fasting required before this package?",
+    answer:
+      "Yes. A fasting period of 10–12 hours is recommended for accurate lipid profile, blood glucose, and other blood investigations.",
+  },
+  {
+    question: "How long does it take to receive the reports?",
+    answer:
+      "Most reports are available digitally within 24–48 hours. Vitamin D testing may take slightly longer in some cases.",
+  },
+  {
+    question: "Is home sample collection available?",
+    answer:
+      "Yes. Home sample collection is available in selected service areas and is performed by trained phlebotomists.",
+  },
+  {
+    question: "Why are Vitamin B12 and Vitamin D included in this package?",
+    answer:
+      "Vitamin B12 and Vitamin D testing helps identify nutritional deficiencies that can contribute to fatigue, weakness, nerve problems, poor bone health, and reduced immunity.",
+  },
+  {
+    question: "Who should choose this package?",
+    answer:
+      "This package is recommended for adults above 25 years, individuals experiencing fatigue or weakness, people with thyroid or diabetes risk, and anyone seeking a comprehensive annual preventive health checkup.",
+  },
+],
 },
 {
   id: "bcl-med-max-panel-package",
@@ -3912,6 +3939,38 @@ tags: [
     "Complete Urine Analysis (CUE)",
     "HbA1c (Glycosylated Hemoglobin)",
   ],
+  faqs: [
+  {
+    question: "Is fasting required before this package?",
+    answer:
+      "Yes. A fasting period of 10–12 hours is recommended for accurate HbA1c, lipid profile, and other blood investigations.",
+  },
+  {
+    question: "What is the report delivery time?",
+    answer:
+      "Most reports are available digitally within 24–48 hours. Some specialized tests may require additional processing time.",
+  },
+  {
+    question: "Is home sample collection available?",
+    answer:
+      "Yes. Home sample collection is available in selected service areas by trained phlebotomists.",
+  },
+  {
+    question: "What does the HbA1c test measure?",
+    answer:
+      "HbA1c measures your average blood sugar levels over the past 2–3 months and helps in the diagnosis and monitoring of diabetes.",
+  },
+  {
+    question: "Why is the CRP test included?",
+    answer:
+      "C-Reactive Protein (CRP) is an inflammation marker that helps detect inflammation or infection in the body and assists in evaluating certain chronic health conditions.",
+  },
+  {
+    question: "Who should choose this package?",
+    answer:
+      "This package is recommended for adults above 30 years, individuals with diabetes or heart disease risk, people experiencing fatigue or chronic inflammation, and anyone seeking a comprehensive annual preventive health checkup.",
+  },
+],
 }
 
 
