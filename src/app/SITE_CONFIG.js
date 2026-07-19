@@ -57,6 +57,7 @@ export const SITE_CONFIG = {
 
   phone: "+918968038602",
   whatsapp: "918968038602",
+  landLine:"+911884-431040",
   email: "dkbhangallab@gmail.com",
 
   bookingPhone: "+918968038602",

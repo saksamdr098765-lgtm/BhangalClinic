@@ -1,5 +1,698 @@
 
 export const packages =[ 
+   {
+  id: "bhangal-basic-profile-plus",
+
+  slug: "bhangal-basic-profile-plus",
+
+  name: "Bhangal Basic Profile Plus",
+
+  shortDescription:
+    "Enhanced preventive health package with diabetes screening, thyroid evaluation, iron studies, inflammation markers, and complete organ health assessment.",
+
+  description:
+    "The Bhangal Basic Profile Plus is a comprehensive preventive health package designed for routine wellness monitoring. It evaluates blood sugar, cholesterol, liver and kidney function, thyroid health, electrolyte balance, urine health, complete blood picture, inflammation markers, and iron status to help detect lifestyle disorders and nutritional deficiencies at an early stage.",
+tags: [
+  "heart",
+  "kidney",
+  "liver",
+  "thyroid",
+  "diabetes",
+  "blood",
+  "iron",
+  "calcium",
+  "urine",
+  "wellness",
+  "full-body"
+],
+  price: 1499,
+
+  originalPrice: 1900,
+
+  discount: "21% OFF",
+
+  reportTime: "24-48 Hours",
+
+  fasting: "10-12 Hours",
+
+  homeCollection: true,
+
+  recommendedFor: [
+    {
+      title: "Adults above 18 years",
+      description:
+        "Suitable for routine preventive health screening and yearly wellness checkups.",
+      icon: "users",
+    },
+    {
+      title: "People with lifestyle disorders",
+      description:
+        "Recommended for individuals with diabetes, hypertension, obesity, or high cholesterol.",
+      icon: "activity",
+    },
+    {
+      title: "Annual preventive health screening",
+      description:
+        "Ideal for monitoring overall health and detecting diseases early.",
+      icon: "calendar",
+    },
+    {
+      title: "Individuals experiencing weakness or fatigue",
+      description:
+        "Helps identify anemia, thyroid disorders, inflammation, and iron deficiency.",
+      icon: "heart",
+    },
+    {
+      title: "Working professionals",
+      description:
+        "Provides a complete overview of health for people with busy lifestyles.",
+      icon: "briefcase",
+    },
+  ],
+
+  testsCount: 55,
+
+  category: "Preventive Health Checkup",
+
+  rating: 4.9,
+
+  reviews: 214,
+
+  image: "/packages/bhangal-basic-profile-plus.webp",
+
+  highlights: [
+    "55 Health Parameters",
+    "HbA1c Diabetes Screening",
+    "Iron Profile Included",
+    "ESR Inflammation Marker",
+    "Complete Blood Picture",
+    "Home Sample Collection",
+  ],
+
+  benefits: [
+    {
+      title: "Comprehensive Wellness Assessment",
+      description:
+        "Evaluates blood health, liver, kidneys, thyroid, heart health, and nutritional status.",
+    },
+    {
+      title: "Early Disease Detection",
+      description:
+        "Helps identify diabetes, thyroid disorders, anemia, iron deficiency, and chronic inflammation.",
+    },
+    {
+      title: "Heart & Organ Health",
+      description:
+        "Monitors cholesterol, liver function, kidney function, and electrolyte balance.",
+    },
+    {
+      title: "Preventive Healthcare",
+      description:
+        "Supports early diagnosis and routine monitoring for long-term wellness.",
+    },
+  ],
+
+  testCategories: [
+    {
+      title: "Diabetes Screening",
+      tests: [
+        "Glucose",
+        "HbA1c",
+      ],
+    },
+    {
+      title: "Heart Health",
+      tests: [
+        "Lipid Profile",
+      ],
+    },
+    {
+      title: "Liver Function",
+      tests: [
+        "Liver Profile",
+      ],
+    },
+    {
+      title: "Kidney Function",
+      tests: [
+        "Kidney Basic Profile",
+      ],
+    },
+    {
+      title: "Thyroid Health",
+      tests: [
+        "T3",
+        "T4",
+        "TSH",
+      ],
+    },
+    {
+      title: "Blood Health",
+      tests: [
+        "Complete Blood Picture",
+        "ESR",
+      ],
+    },
+    {
+      title: "Iron & Mineral Assessment",
+      tests: [
+        "Iron Profile",
+        "Calcium",
+      ],
+    },
+    {
+      title: "Electrolyte & Urine Analysis",
+      tests: [
+        "Electrolytes",
+        "Complete Urine Examination",
+      ],
+    },
+  ],
+
+  includedTests: [
+    "Glucose",
+    "Lipid Profile",
+    "Liver Profile",
+    "Kidney Basic Profile",
+    "Electrolytes",
+    "Calcium",
+    "T3",
+    "T4",
+    "TSH",
+    "Complete Urine Examination",
+    "Complete Blood Picture",
+    "HbA1c",
+    "ESR",
+    "Iron Profile",
+  ],
+
+  seo: {
+    introduction:
+      "The Bhangal Basic Profile Plus is a preventive health screening package that combines diabetes testing, thyroid evaluation, liver and kidney assessment, cholesterol testing, iron profile, inflammation markers, and complete blood analysis into one comprehensive package.",
+
+    whyImportant:
+      "Routine preventive health screening helps identify diabetes, anemia, thyroid disorders, iron deficiency, inflammation, and organ dysfunction before serious complications develop.",
+
+    benefits:
+      "This package provides comprehensive preventive healthcare by combining essential blood investigations with diabetes and iron deficiency screening for complete wellness monitoring.",
+
+    homeCollection:
+      "Enjoy convenient doorstep blood sample collection by trained professionals with secure online report delivery within 24–48 hours.",
+
+    conclusion:
+      "The Bhangal Basic Profile Plus is an ideal annual health package for adults seeking comprehensive preventive healthcare and early disease detection.",
+  },
+
+  faqs: [
+    {
+      question: "Who should take this package?",
+      answer:
+        "It is recommended for adults who want a comprehensive preventive health screening or annual wellness checkup.",
+    },
+    {
+      question: "Is fasting required before the test?",
+      answer:
+        "Yes. A fasting period of 10–12 hours is recommended for accurate glucose and lipid profile results.",
+    },
+    {
+      question: "How long does it take to receive reports?",
+      answer:
+        "Most reports are available digitally within 24–48 hours after sample collection.",
+    },
+    {
+      question: "Is home sample collection available?",
+      answer:
+        "Yes. Home sample collection is available in selected service locations.",
+    },
+  ],
+},
+{
+  id: "bhangal-advance-full-body-checkup",
+
+  slug: "bhangal-advance-full-body-checkup",
+
+  name: "Bhangal Advance Full Body Checkup",
+
+  shortDescription:
+    "Advanced preventive health package with diabetes screening, thyroid profile, vitamins, iron studies, rheumatoid arthritis screening, and complete organ function assessment.",
+
+  description:
+    "The Bhangal Advance Full Body Checkup is a comprehensive preventive health package designed to evaluate overall wellness. It combines diabetes screening, complete blood analysis, liver and kidney function tests, thyroid profile, lipid profile, vitamin assessment, iron studies, rheumatoid arthritis screening, electrolyte balance, and urine examination to detect lifestyle disorders and nutritional deficiencies at an early stage.",
+tags: [
+  "heart",
+  "kidney",
+  "liver",
+  "thyroid",
+  "diabetes",
+  "blood",
+  "iron",
+  "vitamins",
+  "calcium",
+  "bone",
+  "urine",
+  "wellness",
+  "full-body",
+  "arthritis"
+],
+  price: 2499,
+
+  originalPrice: 3200,
+
+  discount: "22% OFF",
+
+  reportTime: "24-48 Hours",
+
+  fasting: "10-12 Hours",
+
+  homeCollection: true,
+
+  recommendedFor: [
+    {
+      title: "Adults above 18 years",
+      description:
+        "Ideal for routine preventive healthcare and complete annual wellness screening.",
+      icon: "users",
+    },
+    {
+      title: "People with lifestyle disorders",
+      description:
+        "Suitable for individuals with diabetes, hypertension, obesity, thyroid disorders, or high cholesterol.",
+      icon: "activity",
+    },
+    {
+      title: "Annual preventive health checkup",
+      description:
+        "Recommended for yearly monitoring of overall health and early disease detection.",
+      icon: "calendar",
+    },
+    {
+      title: "Individuals experiencing fatigue or joint pain",
+      description:
+        "Helps identify vitamin deficiencies, anemia, thyroid disorders, rheumatoid arthritis, and iron deficiency.",
+      icon: "heart",
+    },
+    {
+      title: "Complete wellness monitoring",
+      description:
+        "Provides a detailed assessment of organ function, nutrition, and metabolic health.",
+      icon: "shield",
+    },
+  ],
+
+  testsCount: 70,
+
+  category: "Advanced Full Body Checkup",
+
+  rating: 4.9,
+
+  reviews: 312,
+
+  image: "/packages/bhangal-advance-full-body-checkup.webp",
+
+  highlights: [
+    "70 Advanced Health Parameters",
+    "Vitamin D & Vitamin B12 Assessment",
+    "HbA1c Diabetes Screening",
+    "Iron Profile & RA Factor",
+    "Complete Urine Examination",
+    "Home Sample Collection",
+  ],
+
+  benefits: [
+    {
+      title: "Complete Body Health Assessment",
+      description:
+        "Evaluates blood health, diabetes, thyroid, liver, kidneys, heart health, and nutritional status.",
+    },
+    {
+      title: "Early Detection of Chronic Diseases",
+      description:
+        "Helps identify diabetes, thyroid disorders, kidney disease, liver abnormalities, anemia, and cardiovascular risk.",
+    },
+    {
+      title: "Vitamin & Iron Assessment",
+      description:
+        "Includes Vitamin D, Vitamin B12, Iron Profile, and Calcium to detect nutritional deficiencies.",
+    },
+    {
+      title: "Joint & Bone Health Monitoring",
+      description:
+        "Includes Rheumatoid Factor (RA Test) for evaluation of inflammatory joint conditions.",
+    },
+  ],
+
+  testCategories: [
+    {
+      title: "Diabetes Screening",
+      tests: [
+        "Glucose",
+        "HbA1c",
+      ],
+    },
+    {
+      title: "Blood Health",
+      tests: [
+        "Complete Blood Picture",
+      ],
+    },
+    {
+      title: "Heart Health",
+      tests: [
+        "Lipid Profile",
+      ],
+    },
+    {
+      title: "Liver Function",
+      tests: [
+        "Liver Profile",
+      ],
+    },
+    {
+      title: "Kidney Function",
+      tests: [
+        "Kidney Basic Profile",
+      ],
+    },
+    {
+      title: "Thyroid Health",
+      tests: [
+        "T3",
+        "T4",
+        "TSH",
+      ],
+    },
+    {
+      title: "Vitamin & Mineral Assessment",
+      tests: [
+        "Vitamin D",
+        "Vitamin B12",
+        "Calcium",
+      ],
+    },
+    {
+      title: "Iron Studies",
+      tests: [
+        "Iron Profile",
+      ],
+    },
+    {
+      title: "Rheumatology",
+      tests: [
+        "RA Factor",
+      ],
+    },
+    {
+      title: "Electrolyte & Urine Examination",
+      tests: [
+        "Electrolytes",
+        "Complete Urine Examination",
+      ],
+    },
+  ],
+
+  includedTests: [
+    "Glucose",
+    "HbA1c",
+    "Complete Blood Picture",
+    "Lipid Profile",
+    "Liver Profile",
+    "Kidney Basic Profile",
+    "Electrolytes",
+    "Calcium",
+    "Vitamin D",
+    "Vitamin B12",
+    "Iron Profile",
+    "RA Factor",
+    "T3",
+    "T4",
+    "TSH",
+    "Complete Urine Examination",
+  ],
+
+  seo: {
+    introduction:
+      "The Bhangal Advance Full Body Checkup is a comprehensive preventive health package that combines diabetes screening, thyroid evaluation, vitamin assessment, iron studies, rheumatoid arthritis screening, and complete organ function tests into one advanced wellness package.",
+
+    whyImportant:
+      "Routine preventive screening helps detect diabetes, thyroid disorders, nutritional deficiencies, kidney disease, liver dysfunction, heart disease risk, and inflammatory conditions before serious complications develop.",
+
+    benefits:
+      "This package offers complete preventive healthcare by evaluating major organs, nutritional health, metabolic status, and inflammatory markers through advanced laboratory investigations.",
+
+    homeCollection:
+      "Enjoy convenient home sample collection by trained phlebotomists with secure online report delivery within 24–48 hours.",
+
+    conclusion:
+      "The Bhangal Advance Full Body Checkup is an ideal annual health package for individuals seeking complete preventive healthcare, early diagnosis, and long-term wellness monitoring.",
+  },
+
+  faqs: [
+    {
+      question: "Who should take this package?",
+      answer:
+        "It is recommended for adults who want a comprehensive preventive health checkup or complete annual wellness screening.",
+    },
+    {
+      question: "Is fasting required before the test?",
+      answer:
+        "Yes. A fasting period of 10–12 hours is recommended for accurate blood sugar and lipid profile results.",
+    },
+    {
+      question: "How long does it take to receive reports?",
+      answer:
+        "Most reports are available digitally within 24–48 hours after sample collection.",
+    },
+    {
+      question: "Is home sample collection available?",
+      answer:
+        "Yes. Home sample collection is available in selected service locations.",
+    },
+  ],
+},
+{
+  id: "bhangal-basic-profile",
+
+  slug: "bhangal-basic-profile",
+
+  name: "Bhangal Basic Profile",
+
+  shortDescription:
+    "Essential preventive health package covering blood sugar, liver, kidney, thyroid, cholesterol, electrolytes, urine examination, calcium, and complete blood health.",
+
+  description:
+    "The Bhangal Basic Profile is an affordable preventive health screening package designed for routine wellness monitoring. It evaluates blood sugar, liver function, kidney health, thyroid hormones, cholesterol, electrolyte balance, calcium levels, urine health, and complete blood picture to help detect common lifestyle diseases and nutritional imbalances at an early stage.",
+
+  price: 1299,
+tags: [
+  "heart",
+  "kidney",
+  "liver",
+  "thyroid",
+  "diabetes",
+  "blood",
+  "calcium",
+  "urine",
+  "wellness",
+  "full-body"
+],
+  originalPrice: 1600,
+
+  discount: "19% OFF",
+
+  reportTime: "24-48 Hours",
+
+  fasting: "10-12 Hours",
+
+  homeCollection: true,
+
+  recommendedFor: [
+    {
+      title: "Adults above 18 years",
+      description:
+        "Suitable for routine preventive health screening and annual wellness checkups.",
+      icon: "users",
+    },
+    {
+      title: "People with lifestyle disorders",
+      description:
+        "Recommended for individuals with diabetes, hypertension, obesity, or high cholesterol.",
+      icon: "activity",
+    },
+    {
+      title: "Annual preventive health checkup",
+      description:
+        "Ideal for yearly monitoring of overall health and organ function.",
+      icon: "calendar",
+    },
+    {
+      title: "Individuals with fatigue or weakness",
+      description:
+        "Helps identify anemia, thyroid disorders, electrolyte imbalance, and nutritional deficiencies.",
+      icon: "heart",
+    },
+    {
+      title: "General wellness monitoring",
+      description:
+        "Provides a comprehensive overview of major body systems for preventive healthcare.",
+      icon: "shield",
+    },
+  ],
+
+  testsCount: 45,
+
+  category: "Basic Health Checkup",
+
+  rating: 4.8,
+
+  reviews: 186,
+
+  image: "/packages/bhangal-basic-profile.webp",
+
+  highlights: [
+    "45 Health Parameters",
+    "Complete Blood Picture",
+    "Liver & Kidney Assessment",
+    "Thyroid Profile",
+    "Complete Urine Examination",
+    "Home Sample Collection",
+  ],
+
+  benefits: [
+    {
+      title: "Complete Body Health Assessment",
+      description:
+        "Evaluates blood health, liver, kidneys, thyroid, electrolytes, and calcium levels.",
+    },
+    {
+      title: "Early Disease Detection",
+      description:
+        "Helps identify diabetes, thyroid disorders, kidney disease, liver abnormalities, and cholesterol imbalance.",
+    },
+    {
+      title: "Heart Health Screening",
+      description:
+        "Includes Lipid Profile to evaluate cardiovascular risk factors.",
+    },
+    {
+      title: "Preventive Healthcare",
+      description:
+        "Supports early diagnosis and routine health monitoring for better long-term wellness.",
+    },
+  ],
+
+  testCategories: [
+    {
+      title: "Diabetes Screening",
+      tests: [
+        "Glucose",
+      ],
+    },
+    {
+      title: "Heart Health",
+      tests: [
+        "Lipid Profile",
+      ],
+    },
+    {
+      title: "Liver Function",
+      tests: [
+        "Liver Profile",
+      ],
+    },
+    {
+      title: "Kidney Function",
+      tests: [
+        "Kidney Basic Profile",
+      ],
+    },
+    {
+      title: "Electrolyte Balance",
+      tests: [
+        "Electrolytes",
+      ],
+    },
+    {
+      title: "Mineral Assessment",
+      tests: [
+        "Calcium",
+      ],
+    },
+    {
+      title: "Thyroid Health",
+      tests: [
+        "T3",
+        "T4",
+        "TSH",
+      ],
+    },
+    {
+      title: "Urine Examination",
+      tests: [
+        "Complete Urine Examination",
+      ],
+    },
+    {
+      title: "Blood Health",
+      tests: [
+        "Complete Blood Picture",
+      ],
+    },
+  ],
+
+  includedTests: [
+    "Glucose",
+    "Lipid Profile",
+    "Liver Profile",
+    "Kidney Basic Profile",
+    "Electrolytes",
+    "Calcium",
+    "T3",
+    "T4",
+    "TSH",
+    "Complete Urine Examination",
+    "Complete Blood Picture",
+  ],
+
+  seo: {
+    introduction:
+      "The Bhangal Basic Profile is a preventive health package designed to evaluate blood sugar, liver, kidney, thyroid, cholesterol, electrolytes, calcium, urine health, and complete blood picture for routine wellness monitoring.",
+
+    whyImportant:
+      "Regular health screening helps detect lifestyle diseases, thyroid disorders, kidney disease, liver dysfunction, and diabetes before serious complications develop.",
+
+    benefits:
+      "This package provides essential preventive healthcare by evaluating major organs and important blood investigations required for annual health monitoring.",
+
+    homeCollection:
+      "Enjoy convenient home sample collection by trained phlebotomists with secure online report delivery within 24–48 hours.",
+
+    conclusion:
+      "The Bhangal Basic Profile is an ideal entry-level preventive health package for adults looking to maintain good health through regular screening.",
+  },
+
+  faqs: [
+    {
+      question: "Who should take this package?",
+      answer:
+        "It is recommended for adults who want a routine preventive health checkup or annual wellness screening.",
+    },
+    {
+      question: "Is fasting required?",
+      answer:
+        "Yes. A fasting period of 10–12 hours is recommended for accurate glucose and lipid profile results.",
+    },
+    {
+      question: "How long does it take to receive reports?",
+      answer:
+        "Most reports are available digitally within 24–48 hours after sample collection.",
+    },
+    {
+      question: "Is home sample collection available?",
+      answer:
+        "Yes. Home sample collection is available in selected service locations.",
+    },
+  ],
+},
   {
   id: "bcl-female-4-package",
 
@@ -231,230 +924,7 @@ recommendedFor: [
     },
   ],
 },
-{
-  id: "bhangal-master-health-screen",
 
-  slug: "bhangal-master-health-screen",
-
-  name: "Bhangal Master Health Screen",
-
-  shortDescription:
-    "A comprehensive preventive health package covering blood, urine, liver, kidney, thyroid, diabetes, heart health, vitamins, and nutritional deficiency screening.",
-
-  description:
-    "The Bhangal Master Health Screen is one of our most comprehensive preventive health packages. It evaluates your overall health by assessing blood health, diabetes, cholesterol, thyroid function, liver and kidney health, vitamin deficiencies, iron status, and urinary health. It is ideal for individuals looking for a detailed annual health assessment and early detection of lifestyle-related diseases.",
-tags: [
-  "heart",
-  "kidney",
-  "liver",
-  "thyroid",
-  "diabetes",
-  "blood",
-  "vitamins",
-  "calcium",
-  "urine",
-  "wellness",
-  "full-body"
-],
-  price: 3500,
-
-  originalPrice: 5000,
-
-  discount: "30% OFF",
-
-  reportTime: "24-48 Hours",
-
-  fasting: "10-12 Hours",
-
-  homeCollection: true,
-
-  recommendedFor: [
-    {
-      title: "Adults above 30 years",
-      description:
-        "Comprehensive preventive screening to monitor overall health and detect diseases early.",
-      icon: "users",
-    },
-    {
-      title: "Annual preventive health checkups",
-      description:
-        "Ideal for yearly wellness monitoring and complete body assessment.",
-      icon: "trending",
-    },
-    {
-      title: "Working professionals",
-      description:
-        "Suitable for busy individuals who want to monitor their health regularly.",
-      icon: "briefcase",
-    },
-    {
-      title: "People with family history of diabetes or heart disease",
-      description:
-        "Helps identify risk factors before symptoms develop.",
-      icon: "heart",
-    },
-    {
-      title: "Individuals experiencing fatigue or weakness",
-      description:
-        "Evaluates vitamin deficiencies, thyroid disorders, anemia, and metabolic health.",
-      icon: "activity",
-    },
-  ],
-
-  testsCount: 79,
-
-  category: "Master Health Checkup",
-
-  rating: 4.9,
-
-  reviews: 226,
-
-  image: "/packages/bhangal-master-health-screen.webp",
-
-  highlights: [
-    "79 Diagnostic Tests",
-    "Complete Preventive Screening",
-    "Home Sample Collection",
-    "Digital Reports",
-    "Advanced Laboratory Testing",
-    "Fast Report Delivery",
-  ],
-
-  benefits: [
-    {
-      title: "Complete Body Health Assessment",
-      description:
-        "Evaluates all major organs including liver, kidneys, thyroid, blood, heart, and metabolic health.",
-    },
-    {
-      title: "Early Disease Detection",
-      description:
-        "Helps identify diabetes, thyroid disorders, cholesterol abnormalities, anemia, and kidney diseases at an early stage.",
-    },
-    {
-      title: "Vitamin & Nutritional Assessment",
-      description:
-        "Includes Vitamin D, Vitamin B12, Ferritin, Calcium, and Folic Acid for nutritional health evaluation.",
-    },
-    {
-      title: "Annual Wellness Monitoring",
-      description:
-        "An ideal preventive package for maintaining long-term health and monitoring lifestyle diseases.",
-    },
-  ],
-
-  testCategories: [
-    {
-      title: "Blood Health",
-      tests: [
-        "Complete Blood Picture",
-      ],
-    },
-    {
-      title: "Urine Analysis",
-      tests: [
-        "Complete Urine Examination",
-        "Urinary Albumin / Creatinine Ratio",
-      ],
-    },
-    {
-      title: "Diabetes Screening",
-      tests: [
-        "HbA1c",
-      ],
-    },
-    {
-      title: "Liver Function",
-      tests: [
-        "Liver Function Test",
-      ],
-    },
-    {
-      title: "Kidney Function",
-      tests: [
-        "Kidney Basic Screen",
-      ],
-    },
-    {
-      title: "Heart Health",
-      tests: [
-        "Lipid Profile",
-      ],
-    },
-    {
-      title: "Thyroid Profile",
-      tests: [
-        "Thyroid Profile II",
-      ],
-    },
-    {
-      title: "Vitamin & Nutrition",
-      tests: [
-        "Vitamin D",
-        "Vitamin B12",
-        "Ferritin",
-        "Folic Acid",
-        "Calcium",
-      ],
-    },
-  ],
-
-  includedTests: [
-    "Complete Blood Picture",
-    "Complete Urine Examination",
-    "Liver Function Test",
-    "Lipid Profile",
-    "Kidney Basic Screen",
-    "Thyroid Profile II",
-    "HbA1c",
-    "Calcium",
-    "Vitamin D",
-    "Ferritin",
-    "Folic Acid",
-    "Vitamin B12",
-    "Urinary Albumin / Creatinine Ratio",
-  ],
-
-  seo: {
-    introduction:
-      "The Bhangal Master Health Screen is a comprehensive preventive health package that evaluates major organs, nutritional status, diabetes, thyroid function, heart health, kidney function, liver function, and urinary health.",
-
-    whyImportant:
-      "Routine preventive health screening helps identify health problems before symptoms appear, allowing timely treatment and healthier lifestyle decisions.",
-
-    benefits:
-      "This package combines 79 diagnostic investigations into one comprehensive annual wellness screening suitable for adults and working professionals.",
-
-    homeCollection:
-      "Convenient doorstep sample collection by experienced phlebotomists with secure digital report delivery.",
-
-    conclusion:
-      "The Bhangal Master Health Screen provides one of the most complete preventive health evaluations for maintaining long-term wellness and detecting diseases early.",
-  },
-
-  faqs: [
-    {
-      question: "Is fasting required?",
-      answer:
-        "Yes. A fasting period of 10–12 hours is recommended before sample collection.",
-    },
-    {
-      question: "When will I receive my reports?",
-      answer:
-        "Most reports are available within 24–48 hours.",
-    },
-    {
-      question: "Is home sample collection available?",
-      answer:
-        "Yes. Home sample collection is available in selected service areas.",
-    },
-    {
-      question: "Who should book this package?",
-      answer:
-        "It is ideal for adults looking for a detailed annual preventive health checkup with comprehensive laboratory investigations.",
-    },
-  ],
-},
 {
   id: "bhangal-senior-citizen-profile",
 
@@ -698,6 +1168,230 @@ tags: [
       question: "Is home sample collection available?",
       answer:
         "Yes. Home sample collection is available in selected service locations.",
+    },
+  ],
+},
+{
+  id: "bhangal-master-health-screen",
+
+  slug: "bhangal-master-health-screen",
+
+  name: "Bhangal Master Health Screen",
+
+  shortDescription:
+    "A comprehensive preventive health package covering blood, urine, liver, kidney, thyroid, diabetes, heart health, vitamins, and nutritional deficiency screening.",
+
+  description:
+    "The Bhangal Master Health Screen is one of our most comprehensive preventive health packages. It evaluates your overall health by assessing blood health, diabetes, cholesterol, thyroid function, liver and kidney health, vitamin deficiencies, iron status, and urinary health. It is ideal for individuals looking for a detailed annual health assessment and early detection of lifestyle-related diseases.",
+tags: [
+  "heart",
+  "kidney",
+  "liver",
+  "thyroid",
+  "diabetes",
+  "blood",
+  "vitamins",
+  "calcium",
+  "urine",
+  "wellness",
+  "full-body"
+],
+  price: 3500,
+
+  originalPrice: 5000,
+
+  discount: "30% OFF",
+
+  reportTime: "24-48 Hours",
+
+  fasting: "10-12 Hours",
+
+  homeCollection: true,
+
+  recommendedFor: [
+    {
+      title: "Adults above 30 years",
+      description:
+        "Comprehensive preventive screening to monitor overall health and detect diseases early.",
+      icon: "users",
+    },
+    {
+      title: "Annual preventive health checkups",
+      description:
+        "Ideal for yearly wellness monitoring and complete body assessment.",
+      icon: "trending",
+    },
+    {
+      title: "Working professionals",
+      description:
+        "Suitable for busy individuals who want to monitor their health regularly.",
+      icon: "briefcase",
+    },
+    {
+      title: "People with family history of diabetes or heart disease",
+      description:
+        "Helps identify risk factors before symptoms develop.",
+      icon: "heart",
+    },
+    {
+      title: "Individuals experiencing fatigue or weakness",
+      description:
+        "Evaluates vitamin deficiencies, thyroid disorders, anemia, and metabolic health.",
+      icon: "activity",
+    },
+  ],
+
+  testsCount: 79,
+
+  category: "Master Health Checkup",
+
+  rating: 4.9,
+
+  reviews: 226,
+
+  image: "/packages/bhangal-master-health-screen.webp",
+
+  highlights: [
+    "79 Diagnostic Tests",
+    "Complete Preventive Screening",
+    "Home Sample Collection",
+    "Digital Reports",
+    "Advanced Laboratory Testing",
+    "Fast Report Delivery",
+  ],
+
+  benefits: [
+    {
+      title: "Complete Body Health Assessment",
+      description:
+        "Evaluates all major organs including liver, kidneys, thyroid, blood, heart, and metabolic health.",
+    },
+    {
+      title: "Early Disease Detection",
+      description:
+        "Helps identify diabetes, thyroid disorders, cholesterol abnormalities, anemia, and kidney diseases at an early stage.",
+    },
+    {
+      title: "Vitamin & Nutritional Assessment",
+      description:
+        "Includes Vitamin D, Vitamin B12, Ferritin, Calcium, and Folic Acid for nutritional health evaluation.",
+    },
+    {
+      title: "Annual Wellness Monitoring",
+      description:
+        "An ideal preventive package for maintaining long-term health and monitoring lifestyle diseases.",
+    },
+  ],
+
+  testCategories: [
+    {
+      title: "Blood Health",
+      tests: [
+        "Complete Blood Picture",
+      ],
+    },
+    {
+      title: "Urine Analysis",
+      tests: [
+        "Complete Urine Examination",
+        "Urinary Albumin / Creatinine Ratio",
+      ],
+    },
+    {
+      title: "Diabetes Screening",
+      tests: [
+        "HbA1c",
+      ],
+    },
+    {
+      title: "Liver Function",
+      tests: [
+        "Liver Function Test",
+      ],
+    },
+    {
+      title: "Kidney Function",
+      tests: [
+        "Kidney Basic Screen",
+      ],
+    },
+    {
+      title: "Heart Health",
+      tests: [
+        "Lipid Profile",
+      ],
+    },
+    {
+      title: "Thyroid Profile",
+      tests: [
+        "Thyroid Profile II",
+      ],
+    },
+    {
+      title: "Vitamin & Nutrition",
+      tests: [
+        "Vitamin D",
+        "Vitamin B12",
+        "Ferritin",
+        "Folic Acid",
+        "Calcium",
+      ],
+    },
+  ],
+
+  includedTests: [
+    "Complete Blood Picture",
+    "Complete Urine Examination",
+    "Liver Function Test",
+    "Lipid Profile",
+    "Kidney Basic Screen",
+    "Thyroid Profile II",
+    "HbA1c",
+    "Calcium",
+    "Vitamin D",
+    "Ferritin",
+    "Folic Acid",
+    "Vitamin B12",
+    "Urinary Albumin / Creatinine Ratio",
+  ],
+
+  seo: {
+    introduction:
+      "The Bhangal Master Health Screen is a comprehensive preventive health package that evaluates major organs, nutritional status, diabetes, thyroid function, heart health, kidney function, liver function, and urinary health.",
+
+    whyImportant:
+      "Routine preventive health screening helps identify health problems before symptoms appear, allowing timely treatment and healthier lifestyle decisions.",
+
+    benefits:
+      "This package combines 79 diagnostic investigations into one comprehensive annual wellness screening suitable for adults and working professionals.",
+
+    homeCollection:
+      "Convenient doorstep sample collection by experienced phlebotomists with secure digital report delivery.",
+
+    conclusion:
+      "The Bhangal Master Health Screen provides one of the most complete preventive health evaluations for maintaining long-term wellness and detecting diseases early.",
+  },
+
+  faqs: [
+    {
+      question: "Is fasting required?",
+      answer:
+        "Yes. A fasting period of 10–12 hours is recommended before sample collection.",
+    },
+    {
+      question: "When will I receive my reports?",
+      answer:
+        "Most reports are available within 24–48 hours.",
+    },
+    {
+      question: "Is home sample collection available?",
+      answer:
+        "Yes. Home sample collection is available in selected service areas.",
+    },
+    {
+      question: "Who should book this package?",
+      answer:
+        "It is ideal for adults looking for a detailed annual preventive health checkup with comprehensive laboratory investigations.",
     },
   ],
 },
@@ -2243,36 +2937,25 @@ tags: [
       },
     ],
   },
- {
-  id: "bhangal-basic-profile-plus",
 
-  slug: "bhangal-basic-profile-plus",
+{
+  id: "bcl-med-pro-64-package",
 
-  name: "Bhangal Basic Profile Plus",
+  slug: "bcl-med-pro-64-package",
+
+  name: "BCL MED Pro 64 Complete Health Package",
 
   shortDescription:
-    "Enhanced preventive health package with diabetes screening, thyroid evaluation, iron studies, inflammation markers, and complete organ health assessment.",
+    "Comprehensive preventive health package covering blood health, diabetes, thyroid, liver, kidney, cholesterol, iron deficiency, calcium, and urine analysis for complete wellness monitoring.",
 
   description:
-    "The Bhangal Basic Profile Plus is a comprehensive preventive health package designed for routine wellness monitoring. It evaluates blood sugar, cholesterol, liver and kidney function, thyroid health, electrolyte balance, urine health, complete blood picture, inflammation markers, and iron status to help detect lifestyle disorders and nutritional deficiencies at an early stage.",
-tags: [
-  "heart",
-  "kidney",
-  "liver",
-  "thyroid",
-  "diabetes",
-  "blood",
-  "iron",
-  "calcium",
-  "urine",
-  "wellness",
-  "full-body"
-],
-  price: 1499,
+    "The BCL MED Pro 64 Complete Health Package is an advanced preventive health screening designed for routine wellness assessment. It includes detailed blood analysis, diabetes screening, thyroid evaluation, liver and kidney function tests, lipid profile, iron deficiency profile, calcium levels, urine examination, and HbA1c for long-term blood sugar monitoring. This package helps detect common lifestyle diseases and nutritional deficiencies at an early stage.",
 
-  originalPrice: 1900,
+  price: 3000,
 
-  discount: "21% OFF",
+  originalPrice: 4499,
+
+  discount: "50% OFF",
 
   reportTime: "24-48 Hours",
 
@@ -2280,554 +2963,110 @@ tags: [
 
   homeCollection: true,
 
+  tags: [
+    "full body",
+    "diabetes",
+    "thyroid",
+    "kidney",
+    "liver",
+    "blood",
+    "cholesterol",
+    "iron",
+    "calcium",
+    "urine",
+    "wellness",
+    "health checkup"
+  ],
+
   recommendedFor: [
     {
-      title: "Adults above 18 years",
+      title: "Adults above 25 years",
       description:
-        "Suitable for routine preventive health screening and yearly wellness checkups.",
+        "Ideal for routine preventive health screening and early disease detection.",
       icon: "users",
     },
     {
-      title: "People with lifestyle disorders",
+      title: "Annual health checkup",
       description:
-        "Recommended for individuals with diabetes, hypertension, obesity, or high cholesterol.",
-      icon: "activity",
-    },
-    {
-      title: "Annual preventive health screening",
-      description:
-        "Ideal for monitoring overall health and detecting diseases early.",
-      icon: "calendar",
-    },
-    {
-      title: "Individuals experiencing weakness or fatigue",
-      description:
-        "Helps identify anemia, thyroid disorders, inflammation, and iron deficiency.",
-      icon: "heart",
+        "Recommended for yearly monitoring of overall health and organ function.",
+      icon: "trending",
     },
     {
       title: "Working professionals",
       description:
-        "Provides a complete overview of health for people with busy lifestyles.",
+        "Suitable for individuals with busy lifestyles who want comprehensive health monitoring.",
       icon: "briefcase",
     },
-  ],
-
-  testsCount: 55,
-
-  category: "Preventive Health Checkup",
-
-  rating: 4.9,
-
-  reviews: 214,
-
-  image: "/packages/bhangal-basic-profile-plus.webp",
-
-  highlights: [
-    "55 Health Parameters",
-    "HbA1c Diabetes Screening",
-    "Iron Profile Included",
-    "ESR Inflammation Marker",
-    "Complete Blood Picture",
-    "Home Sample Collection",
-  ],
-
-  benefits: [
     {
-      title: "Comprehensive Wellness Assessment",
+      title: "People with family history of diabetes or heart disease",
       description:
-        "Evaluates blood health, liver, kidneys, thyroid, heart health, and nutritional status.",
-    },
-    {
-      title: "Early Disease Detection",
-      description:
-        "Helps identify diabetes, thyroid disorders, anemia, iron deficiency, and chronic inflammation.",
-    },
-    {
-      title: "Heart & Organ Health",
-      description:
-        "Monitors cholesterol, liver function, kidney function, and electrolyte balance.",
-    },
-    {
-      title: "Preventive Healthcare",
-      description:
-        "Supports early diagnosis and routine monitoring for long-term wellness.",
-    },
-  ],
-
-  testCategories: [
-    {
-      title: "Diabetes Screening",
-      tests: [
-        "Glucose",
-        "HbA1c",
-      ],
-    },
-    {
-      title: "Heart Health",
-      tests: [
-        "Lipid Profile",
-      ],
-    },
-    {
-      title: "Liver Function",
-      tests: [
-        "Liver Profile",
-      ],
-    },
-    {
-      title: "Kidney Function",
-      tests: [
-        "Kidney Basic Profile",
-      ],
-    },
-    {
-      title: "Thyroid Health",
-      tests: [
-        "T3",
-        "T4",
-        "TSH",
-      ],
-    },
-    {
-      title: "Blood Health",
-      tests: [
-        "Complete Blood Picture",
-        "ESR",
-      ],
-    },
-    {
-      title: "Iron & Mineral Assessment",
-      tests: [
-        "Iron Profile",
-        "Calcium",
-      ],
-    },
-    {
-      title: "Electrolyte & Urine Analysis",
-      tests: [
-        "Electrolytes",
-        "Complete Urine Examination",
-      ],
-    },
-  ],
-
-  includedTests: [
-    "Glucose",
-    "Lipid Profile",
-    "Liver Profile",
-    "Kidney Basic Profile",
-    "Electrolytes",
-    "Calcium",
-    "T3",
-    "T4",
-    "TSH",
-    "Complete Urine Examination",
-    "Complete Blood Picture",
-    "HbA1c",
-    "ESR",
-    "Iron Profile",
-  ],
-
-  seo: {
-    introduction:
-      "The Bhangal Basic Profile Plus is a preventive health screening package that combines diabetes testing, thyroid evaluation, liver and kidney assessment, cholesterol testing, iron profile, inflammation markers, and complete blood analysis into one comprehensive package.",
-
-    whyImportant:
-      "Routine preventive health screening helps identify diabetes, anemia, thyroid disorders, iron deficiency, inflammation, and organ dysfunction before serious complications develop.",
-
-    benefits:
-      "This package provides comprehensive preventive healthcare by combining essential blood investigations with diabetes and iron deficiency screening for complete wellness monitoring.",
-
-    homeCollection:
-      "Enjoy convenient doorstep blood sample collection by trained professionals with secure online report delivery within 24–48 hours.",
-
-    conclusion:
-      "The Bhangal Basic Profile Plus is an ideal annual health package for adults seeking comprehensive preventive healthcare and early disease detection.",
-  },
-
-  faqs: [
-    {
-      question: "Who should take this package?",
-      answer:
-        "It is recommended for adults who want a comprehensive preventive health screening or annual wellness checkup.",
-    },
-    {
-      question: "Is fasting required before the test?",
-      answer:
-        "Yes. A fasting period of 10–12 hours is recommended for accurate glucose and lipid profile results.",
-    },
-    {
-      question: "How long does it take to receive reports?",
-      answer:
-        "Most reports are available digitally within 24–48 hours after sample collection.",
-    },
-    {
-      question: "Is home sample collection available?",
-      answer:
-        "Yes. Home sample collection is available in selected service locations.",
-    },
-  ],
-},
-{
-  id: "bhangal-advance-full-body-checkup",
-
-  slug: "bhangal-advance-full-body-checkup",
-
-  name: "Bhangal Advance Full Body Checkup",
-
-  shortDescription:
-    "Advanced preventive health package with diabetes screening, thyroid profile, vitamins, iron studies, rheumatoid arthritis screening, and complete organ function assessment.",
-
-  description:
-    "The Bhangal Advance Full Body Checkup is a comprehensive preventive health package designed to evaluate overall wellness. It combines diabetes screening, complete blood analysis, liver and kidney function tests, thyroid profile, lipid profile, vitamin assessment, iron studies, rheumatoid arthritis screening, electrolyte balance, and urine examination to detect lifestyle disorders and nutritional deficiencies at an early stage.",
-tags: [
-  "heart",
-  "kidney",
-  "liver",
-  "thyroid",
-  "diabetes",
-  "blood",
-  "iron",
-  "vitamins",
-  "calcium",
-  "bone",
-  "urine",
-  "wellness",
-  "full-body",
-  "arthritis"
-],
-  price: 2499,
-
-  originalPrice: 3200,
-
-  discount: "22% OFF",
-
-  reportTime: "24-48 Hours",
-
-  fasting: "10-12 Hours",
-
-  homeCollection: true,
-
-  recommendedFor: [
-    {
-      title: "Adults above 18 years",
-      description:
-        "Ideal for routine preventive healthcare and complete annual wellness screening.",
-      icon: "users",
-    },
-    {
-      title: "People with lifestyle disorders",
-      description:
-        "Suitable for individuals with diabetes, hypertension, obesity, thyroid disorders, or high cholesterol.",
-      icon: "activity",
-    },
-    {
-      title: "Annual preventive health checkup",
-      description:
-        "Recommended for yearly monitoring of overall health and early disease detection.",
-      icon: "calendar",
-    },
-    {
-      title: "Individuals experiencing fatigue or joint pain",
-      description:
-        "Helps identify vitamin deficiencies, anemia, thyroid disorders, rheumatoid arthritis, and iron deficiency.",
+        "Helps monitor blood sugar, cholesterol, and overall metabolic health.",
       icon: "heart",
     },
     {
-      title: "Complete wellness monitoring",
+      title: "Individuals experiencing weakness or fatigue",
       description:
-        "Provides a detailed assessment of organ function, nutrition, and metabolic health.",
-      icon: "shield",
-    },
-  ],
-
-  testsCount: 70,
-
-  category: "Advanced Full Body Checkup",
-
-  rating: 4.9,
-
-  reviews: 312,
-
-  image: "/packages/bhangal-advance-full-body-checkup.webp",
-
-  highlights: [
-    "70 Advanced Health Parameters",
-    "Vitamin D & Vitamin B12 Assessment",
-    "HbA1c Diabetes Screening",
-    "Iron Profile & RA Factor",
-    "Complete Urine Examination",
-    "Home Sample Collection",
-  ],
-
-  benefits: [
-    {
-      title: "Complete Body Health Assessment",
-      description:
-        "Evaluates blood health, diabetes, thyroid, liver, kidneys, heart health, and nutritional status.",
-    },
-    {
-      title: "Early Detection of Chronic Diseases",
-      description:
-        "Helps identify diabetes, thyroid disorders, kidney disease, liver abnormalities, anemia, and cardiovascular risk.",
-    },
-    {
-      title: "Vitamin & Iron Assessment",
-      description:
-        "Includes Vitamin D, Vitamin B12, Iron Profile, and Calcium to detect nutritional deficiencies.",
-    },
-    {
-      title: "Joint & Bone Health Monitoring",
-      description:
-        "Includes Rheumatoid Factor (RA Test) for evaluation of inflammatory joint conditions.",
-    },
-  ],
-
-  testCategories: [
-    {
-      title: "Diabetes Screening",
-      tests: [
-        "Glucose",
-        "HbA1c",
-      ],
-    },
-    {
-      title: "Blood Health",
-      tests: [
-        "Complete Blood Picture",
-      ],
-    },
-    {
-      title: "Heart Health",
-      tests: [
-        "Lipid Profile",
-      ],
-    },
-    {
-      title: "Liver Function",
-      tests: [
-        "Liver Profile",
-      ],
-    },
-    {
-      title: "Kidney Function",
-      tests: [
-        "Kidney Basic Profile",
-      ],
-    },
-    {
-      title: "Thyroid Health",
-      tests: [
-        "T3",
-        "T4",
-        "TSH",
-      ],
-    },
-    {
-      title: "Vitamin & Mineral Assessment",
-      tests: [
-        "Vitamin D",
-        "Vitamin B12",
-        "Calcium",
-      ],
-    },
-    {
-      title: "Iron Studies",
-      tests: [
-        "Iron Profile",
-      ],
-    },
-    {
-      title: "Rheumatology",
-      tests: [
-        "RA Factor",
-      ],
-    },
-    {
-      title: "Electrolyte & Urine Examination",
-      tests: [
-        "Electrolytes",
-        "Complete Urine Examination",
-      ],
-    },
-  ],
-
-  includedTests: [
-    "Glucose",
-    "HbA1c",
-    "Complete Blood Picture",
-    "Lipid Profile",
-    "Liver Profile",
-    "Kidney Basic Profile",
-    "Electrolytes",
-    "Calcium",
-    "Vitamin D",
-    "Vitamin B12",
-    "Iron Profile",
-    "RA Factor",
-    "T3",
-    "T4",
-    "TSH",
-    "Complete Urine Examination",
-  ],
-
-  seo: {
-    introduction:
-      "The Bhangal Advance Full Body Checkup is a comprehensive preventive health package that combines diabetes screening, thyroid evaluation, vitamin assessment, iron studies, rheumatoid arthritis screening, and complete organ function tests into one advanced wellness package.",
-
-    whyImportant:
-      "Routine preventive screening helps detect diabetes, thyroid disorders, nutritional deficiencies, kidney disease, liver dysfunction, heart disease risk, and inflammatory conditions before serious complications develop.",
-
-    benefits:
-      "This package offers complete preventive healthcare by evaluating major organs, nutritional health, metabolic status, and inflammatory markers through advanced laboratory investigations.",
-
-    homeCollection:
-      "Enjoy convenient home sample collection by trained phlebotomists with secure online report delivery within 24–48 hours.",
-
-    conclusion:
-      "The Bhangal Advance Full Body Checkup is an ideal annual health package for individuals seeking complete preventive healthcare, early diagnosis, and long-term wellness monitoring.",
-  },
-
-  faqs: [
-    {
-      question: "Who should take this package?",
-      answer:
-        "It is recommended for adults who want a comprehensive preventive health checkup or complete annual wellness screening.",
-    },
-    {
-      question: "Is fasting required before the test?",
-      answer:
-        "Yes. A fasting period of 10–12 hours is recommended for accurate blood sugar and lipid profile results.",
-    },
-    {
-      question: "How long does it take to receive reports?",
-      answer:
-        "Most reports are available digitally within 24–48 hours after sample collection.",
-    },
-    {
-      question: "Is home sample collection available?",
-      answer:
-        "Yes. Home sample collection is available in selected service locations.",
-    },
-  ],
-},
-{
-  id: "bhangal-basic-profile",
-
-  slug: "bhangal-basic-profile",
-
-  name: "Bhangal Basic Profile",
-
-  shortDescription:
-    "Essential preventive health package covering blood sugar, liver, kidney, thyroid, cholesterol, electrolytes, urine examination, calcium, and complete blood health.",
-
-  description:
-    "The Bhangal Basic Profile is an affordable preventive health screening package designed for routine wellness monitoring. It evaluates blood sugar, liver function, kidney health, thyroid hormones, cholesterol, electrolyte balance, calcium levels, urine health, and complete blood picture to help detect common lifestyle diseases and nutritional imbalances at an early stage.",
-
-  price: 1299,
-tags: [
-  "heart",
-  "kidney",
-  "liver",
-  "thyroid",
-  "diabetes",
-  "blood",
-  "calcium",
-  "urine",
-  "wellness",
-  "full-body"
-],
-  originalPrice: 1600,
-
-  discount: "19% OFF",
-
-  reportTime: "24-48 Hours",
-
-  fasting: "10-12 Hours",
-
-  homeCollection: true,
-
-  recommendedFor: [
-    {
-      title: "Adults above 18 years",
-      description:
-        "Suitable for routine preventive health screening and annual wellness checkups.",
-      icon: "users",
-    },
-    {
-      title: "People with lifestyle disorders",
-      description:
-        "Recommended for individuals with diabetes, hypertension, obesity, or high cholesterol.",
+        "Useful for identifying anemia, thyroid disorders, nutritional deficiencies, and other common health concerns.",
       icon: "activity",
     },
-    {
-      title: "Annual preventive health checkup",
-      description:
-        "Ideal for yearly monitoring of overall health and organ function.",
-      icon: "calendar",
-    },
-    {
-      title: "Individuals with fatigue or weakness",
-      description:
-        "Helps identify anemia, thyroid disorders, electrolyte imbalance, and nutritional deficiencies.",
-      icon: "heart",
-    },
-    {
-      title: "General wellness monitoring",
-      description:
-        "Provides a comprehensive overview of major body systems for preventive healthcare.",
-      icon: "shield",
-    },
   ],
 
-  testsCount: 45,
+  testsCount: 10,
 
-  category: "Basic Health Checkup",
+  category: "Complete Health Package",
 
   rating: 4.8,
 
-  reviews: 186,
+  reviews: 156,
 
-  image: "/packages/bhangal-basic-profile.webp",
+  image: "/packages/bcl-med-pro-64-package.webp",
 
   highlights: [
-    "45 Health Parameters",
-    "Complete Blood Picture",
-    "Liver & Kidney Assessment",
-    "Thyroid Profile",
-    "Complete Urine Examination",
+    "Complete Preventive Health Screening",
+    "Diabetes & HbA1c Assessment",
+    "Thyroid Function Evaluation",
+    "Liver & Kidney Health Check",
+    "Iron Deficiency Screening",
     "Home Sample Collection",
+    "Digital Reports",
+    "Fast Report Delivery",
   ],
 
   benefits: [
     {
-      title: "Complete Body Health Assessment",
+      title: "Complete Wellness Screening",
       description:
-        "Evaluates blood health, liver, kidneys, thyroid, electrolytes, and calcium levels.",
+        "Evaluates major body systems including blood health, liver, kidney, thyroid, cholesterol, and diabetes.",
     },
     {
       title: "Early Disease Detection",
       description:
-        "Helps identify diabetes, thyroid disorders, kidney disease, liver abnormalities, and cholesterol imbalance.",
+        "Helps identify diabetes, anemia, thyroid disorders, kidney disease, liver disorders, and cholesterol abnormalities before symptoms develop.",
     },
     {
-      title: "Heart Health Screening",
+      title: "Nutritional Assessment",
       description:
-        "Includes Lipid Profile to evaluate cardiovascular risk factors.",
+        "Measures calcium and iron status to detect common nutritional deficiencies.",
     },
     {
-      title: "Preventive Healthcare",
+      title: "Routine Health Monitoring",
       description:
-        "Supports early diagnosis and routine health monitoring for better long-term wellness.",
+        "Ideal for maintaining long-term wellness through regular preventive testing.",
     },
   ],
 
   testCategories: [
     {
+      title: "Blood Health",
+      tests: [
+        "Advanced Complete Blood Count with Peripheral Smear Examination",
+      ],
+    },
+    {
       title: "Diabetes Screening",
       tests: [
-        "Glucose",
+        "Glucose Random",
+        "HbA1c (Glycosylated Hemoglobin)",
       ],
     },
     {
@@ -2839,103 +3078,842 @@ tags: [
     {
       title: "Liver Function",
       tests: [
-        "Liver Profile",
+        "Liver Function Profile",
       ],
     },
     {
       title: "Kidney Function",
       tests: [
-        "Kidney Basic Profile",
-      ],
-    },
-    {
-      title: "Electrolyte Balance",
-      tests: [
-        "Electrolytes",
-      ],
-    },
-    {
-      title: "Mineral Assessment",
-      tests: [
-        "Calcium",
+        "Kidney Basic Screen",
       ],
     },
     {
       title: "Thyroid Health",
       tests: [
-        "T3",
-        "T4",
-        "TSH",
+        "Thyroid Profile-I",
+      ],
+    },
+    {
+      title: "Mineral & Iron Assessment",
+      tests: [
+        "Calcium Serum",
+        "Iron Deficiency Profile",
       ],
     },
     {
       title: "Urine Examination",
       tests: [
-        "Complete Urine Examination",
-      ],
-    },
-    {
-      title: "Blood Health",
-      tests: [
-        "Complete Blood Picture",
+        "Complete Urine Analysis (CUE)",
       ],
     },
   ],
 
   includedTests: [
-    "Glucose",
+    "Advanced Complete Blood Count with Peripheral Smear Examination",
     "Lipid Profile",
-    "Liver Profile",
-    "Kidney Basic Profile",
-    "Electrolytes",
-    "Calcium",
-    "T3",
-    "T4",
-    "TSH",
-    "Complete Urine Examination",
-    "Complete Blood Picture",
+    "Liver Function Profile",
+    "Calcium Serum",
+    "Kidney Basic Screen",
+    "Iron Deficiency Profile",
+    "Glucose Random",
+    "Thyroid Profile-I",
+    "Complete Urine Analysis (CUE)",
+    "HbA1c (Glycosylated Hemoglobin)",
   ],
 
   seo: {
     introduction:
-      "The Bhangal Basic Profile is a preventive health package designed to evaluate blood sugar, liver, kidney, thyroid, cholesterol, electrolytes, calcium, urine health, and complete blood picture for routine wellness monitoring.",
+      "The BCL MED Pro 64 Complete Health Package is a preventive health screening designed to evaluate overall wellness through comprehensive blood investigations, diabetes screening, thyroid testing, liver and kidney assessment, cholesterol profile, iron deficiency screening, calcium evaluation, and urine examination.",
 
     whyImportant:
-      "Regular health screening helps detect lifestyle diseases, thyroid disorders, kidney disease, liver dysfunction, and diabetes before serious complications develop.",
+      "Regular health screening helps detect diabetes, anemia, thyroid disorders, liver disease, kidney disease, cholesterol abnormalities, and nutritional deficiencies before they become serious.",
 
     benefits:
-      "This package provides essential preventive healthcare by evaluating major organs and important blood investigations required for annual health monitoring.",
+      "This package combines 10 essential diagnostic investigations to provide a complete overview of your health in a single affordable package.",
 
     homeCollection:
-      "Enjoy convenient home sample collection by trained phlebotomists with secure online report delivery within 24–48 hours.",
+      "Enjoy hassle-free doorstep sample collection by trained phlebotomists with secure online report delivery.",
 
     conclusion:
-      "The Bhangal Basic Profile is an ideal entry-level preventive health package for adults looking to maintain good health through regular screening.",
+      "The BCL MED Pro 64 Complete Health Package is an excellent choice for individuals seeking comprehensive preventive healthcare and early disease detection.",
   },
 
   faqs: [
     {
-      question: "Who should take this package?",
+      question: "Is fasting required before this package?",
       answer:
-        "It is recommended for adults who want a routine preventive health checkup or annual wellness screening.",
+        "Yes. A fasting period of 10–12 hours is recommended for accurate lipid profile and blood glucose assessment.",
     },
     {
-      question: "Is fasting required?",
+      question: "When will I receive my reports?",
       answer:
-        "Yes. A fasting period of 10–12 hours is recommended for accurate glucose and lipid profile results.",
-    },
-    {
-      question: "How long does it take to receive reports?",
-      answer:
-        "Most reports are available digitally within 24–48 hours after sample collection.",
+        "Reports are generally available within 24–48 hours through digital delivery.",
     },
     {
       question: "Is home sample collection available?",
       answer:
-        "Yes. Home sample collection is available in selected service locations.",
+        "Yes. Home sample collection is available in selected service areas.",
+    },
+    {
+      question: "Who should choose this package?",
+      answer:
+        "This package is recommended for adults who want a comprehensive annual preventive health checkup or wish to monitor diabetes, cholesterol, thyroid, liver, kidney, and overall wellness.",
     },
   ],
 },
+{
+  id: "bcl-lfs-diamed-scan-package",
+
+  slug: "bcl-lfs-diamed-scan-package",
+
+  name: "BCL LFS Diamed Scan Package",
+
+  shortDescription:
+    "Comprehensive preventive health package covering liver, kidney, thyroid, cholesterol, blood sugar, calcium, and urine analysis for routine wellness monitoring.",
+
+  description:
+    "The BCL LFS Diamed Scan Package is a preventive health screening designed to assess overall health by evaluating liver function, kidney health, thyroid function, cholesterol levels, blood sugar, calcium status, and urine health. It helps detect common lifestyle disorders and organ-related conditions at an early stage, making it ideal for routine annual health checkups.",
+
+  price: 1800,
+
+  originalPrice: 2799,
+
+  discount: "36% OFF",
+
+  reportTime: "24-48 Hours",
+
+  fasting: "10-12 Hours",
+
+  homeCollection: true,
+
+  tags: [
+    "full body",
+    "liver",
+    "kidney",
+    "thyroid",
+    "diabetes",
+    "cholesterol",
+    "calcium",
+    "urine",
+    "wellness",
+    "preventive",
+    "health checkup"
+  ],
+
+  recommendedFor: [
+    {
+      title: "Adults above 25 years",
+      description:
+        "Ideal for routine preventive health screening and annual wellness monitoring.",
+      icon: "users",
+    },
+    {
+      title: "Working professionals",
+      description:
+        "Suitable for individuals who want to monitor their health despite busy schedules.",
+      icon: "briefcase",
+    },
+    {
+      title: "People with lifestyle disease risk",
+      description:
+        "Helps monitor diabetes, cholesterol, thyroid, liver, and kidney health.",
+      icon: "heart",
+    },
+    {
+      title: "Annual preventive health checkup",
+      description:
+        "Recommended as part of yearly health screening to detect diseases early.",
+      icon: "trending",
+    },
+    {
+      title: "Individuals with fatigue or general weakness",
+      description:
+        "Useful for identifying thyroid disorders, calcium imbalance, and metabolic health issues.",
+      icon: "activity",
+    },
+  ],
+
+  testsCount: 7,
+
+  category: "Complete Health Package",
+
+  rating: 4.8,
+
+  reviews: 128,
+
+  image: "/packages/bcl-lfs-diamed-scan-package.webp",
+
+  highlights: [
+    "Complete Preventive Health Screening",
+    "Liver & Kidney Function Assessment",
+    "Thyroid Profile Included",
+    "Diabetes Screening",
+    "Heart Health Evaluation",
+    "Home Sample Collection",
+    "Digital Reports",
+    "Fast Report Delivery",
+  ],
+
+  benefits: [
+    {
+      title: "Comprehensive Organ Health Assessment",
+      description:
+        "Evaluates liver, kidney, thyroid, and metabolic health for complete wellness monitoring.",
+    },
+    {
+      title: "Early Disease Detection",
+      description:
+        "Helps detect diabetes, thyroid disorders, kidney disease, liver disorders, and cholesterol abnormalities before symptoms appear.",
+    },
+    {
+      title: "Heart & Metabolic Health",
+      description:
+        "Includes lipid profile and blood glucose testing to assess cardiovascular and diabetes risk.",
+    },
+    {
+      title: "Routine Wellness Monitoring",
+      description:
+        "Provides essential investigations for maintaining long-term health through preventive screening.",
+    },
+  ],
+
+  testCategories: [
+    {
+      title: "Heart Health",
+      tests: [
+        "Lipid Profile",
+      ],
+    },
+    {
+      title: "Liver Function",
+      tests: [
+        "Liver Function Profile",
+      ],
+    },
+    {
+      title: "Kidney Function",
+      tests: [
+        "Kidney Basic Screen",
+      ],
+    },
+    {
+      title: "Diabetes Screening",
+      tests: [
+        "Glucose Random",
+      ],
+    },
+    {
+      title: "Thyroid Health",
+      tests: [
+        "Thyroid Profile-I (T3, T4, TSH)",
+      ],
+    },
+    {
+      title: "Mineral Assessment",
+      tests: [
+        "Calcium Serum",
+      ],
+    },
+    {
+      title: "Urine Examination",
+      tests: [
+        "Complete Urine Analysis (CUE)",
+      ],
+    },
+  ],
+
+  includedTests: [
+    "Lipid Profile",
+    "Liver Function Profile",
+    "Calcium Serum",
+    "Kidney Basic Screen",
+    "Glucose Random",
+    "Thyroid Profile-I (T3, T4, TSH)",
+    "Complete Urine Analysis (CUE)",
+  ],
+
+  seo: {
+    introduction:
+      "The BCL LFS Diamed Scan Package is a preventive health screening that combines essential investigations for liver, kidney, thyroid, cholesterol, blood sugar, calcium, and urine health into one affordable package.",
+
+    whyImportant:
+      "Routine preventive health screening helps detect diabetes, thyroid disorders, kidney disease, liver disorders, cholesterol abnormalities, and metabolic conditions before symptoms become serious.",
+
+    benefits:
+      "This package includes 7 essential diagnostic investigations for monitoring overall health and reducing the risk of lifestyle diseases.",
+
+    homeCollection:
+      "Enjoy convenient doorstep sample collection by trained professionals with secure online report delivery.",
+
+    conclusion:
+      "The BCL LFS Diamed Scan Package is an excellent choice for individuals looking for an affordable annual preventive health checkup focused on major organ function and metabolic health.",
+  },
+
+  faqs: [
+    {
+      question: "Is fasting required before this package?",
+      answer:
+        "Yes. A fasting period of 10–12 hours is recommended for accurate lipid profile and blood glucose results.",
+    },
+    {
+      question: "How long does it take to receive reports?",
+      answer:
+        "Most reports are available digitally within 24–48 hours.",
+    },
+    {
+      question: "Is home sample collection available?",
+      answer:
+        "Yes. Home sample collection is available in selected service areas.",
+    },
+    {
+      question: "Who should choose this package?",
+      answer:
+        "This package is recommended for adults who want an affordable preventive health screening to monitor liver, kidney, thyroid, cholesterol, blood sugar, calcium, and overall wellness.",
+    },
+  ],
+},
+{
+  id: "bcl-med-health-pro-package",
+
+  slug: "bcl-med-health-pro-package",
+
+  name: "BCL MED Health Pro Package",
+
+  shortDescription:
+    "Essential preventive health package covering complete blood count, diabetes screening, liver function, kidney function, and cholesterol profile for overall wellness.",
+
+  description:
+    "The BCL MED Health Pro Package is a preventive health screening designed to evaluate your overall health through essential diagnostic tests. It includes a detailed blood count with peripheral smear examination, fasting blood sugar, liver and kidney function assessment, and lipid profile. This package helps detect lifestyle diseases, anemia, liver and kidney disorders, and cardiovascular risk at an early stage.",
+
+  price: 800,
+
+  originalPrice: 2499,
+
+  discount: "67% OFF",
+
+  reportTime: "24-48 Hours",
+
+  fasting: "10-12 Hours",
+
+  homeCollection: true,
+
+  tags: [
+    "full body",
+    "blood",
+    "diabetes",
+    "kidney",
+    "liver",
+    "cholesterol",
+    "wellness",
+    "preventive",
+    "health checkup"
+  ],
+
+  recommendedFor: [
+    {
+      title: "Adults above 18 years",
+      description:
+        "Ideal for routine preventive health screening and overall wellness monitoring.",
+      icon: "users",
+    },
+    {
+      title: "Working professionals",
+      description:
+        "Suitable for individuals who want to monitor their health despite a busy lifestyle.",
+      icon: "briefcase",
+    },
+    {
+      title: "People with diabetes or heart disease risk",
+      description:
+        "Helps monitor fasting blood sugar and cholesterol levels for early detection.",
+      icon: "heart",
+    },
+    {
+      title: "Annual preventive health checkup",
+      description:
+        "Recommended for yearly monitoring of blood health and major organ function.",
+      icon: "trending",
+    },
+    {
+      title: "Individuals experiencing weakness or fatigue",
+      description:
+        "Useful for identifying anemia, blood disorders, and metabolic health issues.",
+      icon: "activity",
+    },
+  ],
+
+  testsCount: 5,
+
+  category: "Basic Health Package",
+
+  rating: 4.8,
+
+  reviews: 104,
+
+  image: "/packages/bcl-med-health-pro-package.webp",
+
+  highlights: [
+    "Complete Blood Health Assessment",
+    "Diabetes Screening",
+    "Liver Function Evaluation",
+    "Kidney Function Assessment",
+    "Heart Health Screening",
+    "Home Sample Collection",
+    "Digital Reports",
+    "Fast Report Delivery",
+  ],
+
+  benefits: [
+    {
+      title: "Essential Wellness Screening",
+      description:
+        "Evaluates blood health, diabetes risk, liver function, kidney health, and cholesterol levels.",
+    },
+    {
+      title: "Early Disease Detection",
+      description:
+        "Helps identify anemia, diabetes, liver disorders, kidney disease, and abnormal cholesterol levels before symptoms develop.",
+    },
+    {
+      title: "Heart & Metabolic Health",
+      description:
+        "Assesses cardiovascular risk through lipid profile and fasting blood glucose testing.",
+    },
+    {
+      title: "Routine Health Monitoring",
+      description:
+        "Provides essential investigations for maintaining long-term health through preventive screening.",
+    },
+  ],
+
+  testCategories: [
+    {
+      title: "Blood Health",
+      tests: [
+        "Advanced Complete Blood Count with Peripheral Smear Examination",
+      ],
+    },
+    {
+      title: "Diabetes Screening",
+      tests: [
+        "Glucose Fasting",
+      ],
+    },
+    {
+      title: "Heart Health",
+      tests: [
+        "Lipid Profile",
+      ],
+    },
+    {
+      title: "Liver Function",
+      tests: [
+        "Liver Function Profile",
+      ],
+    },
+    {
+      title: "Kidney Function",
+      tests: [
+        "Kidney Basic Screen",
+      ],
+    },
+  ],
+
+  includedTests: [
+    "Kidney Basic Screen",
+    "Liver Function Profile",
+    "Advanced Complete Blood Count with Peripheral Smear Examination",
+    "Glucose Fasting",
+    "Lipid Profile",
+  ],
+
+  seo: {
+    introduction:
+      "The BCL MED Health Pro Package is a preventive health screening that combines essential investigations for blood health, diabetes, liver function, kidney function, and cholesterol assessment into one affordable package.",
+
+    whyImportant:
+      "Routine preventive screening helps detect anemia, diabetes, liver disorders, kidney disease, and cholesterol abnormalities before they become serious health concerns.",
+
+    benefits:
+      "This package includes 5 essential diagnostic investigations for monitoring overall health and reducing the risk of lifestyle diseases.",
+
+    homeCollection:
+      "Enjoy convenient doorstep sample collection by trained professionals with secure online report delivery.",
+
+    conclusion:
+      "The BCL MED Health Pro Package is an excellent choice for individuals seeking an affordable and essential preventive health checkup for routine wellness monitoring.",
+  },
+
+  faqs: [
+    {
+      question: "Is fasting required before this package?",
+      answer:
+        "Yes. A fasting period of 10–12 hours is recommended for accurate fasting blood glucose and lipid profile results.",
+    },
+    {
+      question: "How long does it take to receive reports?",
+      answer:
+        "Most reports are available digitally within 24–48 hours.",
+    },
+    {
+      question: "Is home sample collection available?",
+      answer:
+        "Yes. Home sample collection is available in selected service areas.",
+    },
+    {
+      question: "Who should choose this package?",
+      answer:
+        "This package is recommended for adults looking for an affordable annual health checkup to monitor blood health, diabetes, liver, kidney, and cholesterol levels.",
+    },
+  ],
+},
+{
+  id: "bcl-med-pro-65-package",
+
+  slug: "bcl-med-pro-65-package",
+
+  name: "BCL MED Pro 65 Package",
+
+  shortDescription:
+    "Comprehensive preventive health package covering blood health, thyroid, diabetes, cholesterol, iron deficiency, vitamin B12, vitamin D, calcium, and urine analysis.",
+
+  description:
+    "The BCL MED Pro 65 Package is a preventive health screening designed to assess your overall wellness. It includes complete blood health evaluation, diabetes screening, thyroid assessment, vitamin B12 and Vitamin D levels, lipid profile, iron deficiency profile, calcium assessment, and urine analysis for early detection of nutritional deficiencies and lifestyle diseases.",
+
+  price: 3000,
+
+  originalPrice: 4999,
+
+  discount: "50% OFF",
+
+  reportTime: "24-48 Hours",
+
+  fasting: "10-12 Hours",
+
+  homeCollection: true,
+
+  tags: [
+    "blood",
+    "thyroid",
+    "diabetes",
+    "cholesterol",
+    "vitamin b12",
+    "vitamin d",
+    "iron",
+    "calcium",
+    "urine",
+    "wellness",
+    "preventive"
+  ],
+
+  recommendedFor: [
+    {
+      title: "Adults above 25 years",
+      description:
+        "Recommended for routine preventive health screening.",
+      icon: "users",
+    },
+    {
+      title: "People experiencing fatigue",
+      description:
+        "Helps detect anemia, vitamin deficiencies and thyroid disorders.",
+      icon: "activity",
+    },
+    {
+      title: "Working professionals",
+      description:
+        "Ideal for monitoring overall health despite busy lifestyles.",
+      icon: "briefcase",
+    },
+    {
+      title: "Annual health checkup",
+      description:
+        "Suitable for yearly wellness monitoring.",
+      icon: "trending",
+    },
+    {
+      title: "People at risk of diabetes",
+      description:
+        "Includes blood sugar evaluation for metabolic health.",
+      icon: "heart",
+    },
+  ],
+
+  testsCount: 9,
+
+  category: "Complete Health Package",
+
+  rating: 4.9,
+
+  reviews: 168,
+
+  image: "/packages/bcl-med-pro-65-package.webp",
+
+  highlights: [
+    "Complete Blood Health Assessment",
+    "Vitamin B12 & Vitamin D Screening",
+    "Iron Deficiency Assessment",
+    "Diabetes & Thyroid Screening",
+    "Home Sample Collection",
+    "Digital Reports",
+    "Fast Report Delivery",
+  ],
+
+  benefits: [
+    {
+      title: "Complete Wellness Screening",
+      description:
+        "Evaluates blood health, nutritional status, diabetes, thyroid, and heart health.",
+    },
+    {
+      title: "Vitamin Deficiency Detection",
+      description:
+        "Measures Vitamin B12, Vitamin D, calcium, and iron levels.",
+    },
+    {
+      title: "Early Disease Detection",
+      description:
+        "Helps identify diabetes, thyroid disorders, anemia, and cholesterol abnormalities.",
+    },
+    {
+      title: "Routine Preventive Care",
+      description:
+        "Suitable for annual preventive health monitoring.",
+    },
+  ],
+
+  testCategories: [
+    {
+      title: "Blood Health",
+      tests: [
+        "Advanced Complete Blood Count with Peripheral Smear Examination",
+      ],
+    },
+    {
+      title: "Diabetes Screening",
+      tests: ["Glucose Random"],
+    },
+    {
+      title: "Heart Health",
+      tests: ["Lipid Profile"],
+    },
+    {
+      title: "Thyroid Health",
+      tests: ["Thyroid Profile-I (T3, T4, TSH)"],
+    },
+    {
+      title: "Vitamin & Mineral Profile",
+      tests: [
+        "Vitamin B12",
+        "Vitamin D (25-OH)",
+        "Calcium Serum",
+        "Iron Deficiency Profile",
+      ],
+    },
+    {
+      title: "Urine Analysis",
+      tests: [
+        "Complete Urine Analysis (CUE)",
+      ],
+    },
+  ],
+
+  includedTests: [
+    "Advanced Complete Blood Count with Peripheral Smear Examination",
+    "Vitamin B12",
+    "Lipid Profile",
+    "Calcium Serum",
+    "Iron Deficiency Profile",
+    "Glucose Random",
+    "Thyroid Profile-I",
+    "Vitamin D (25-OH)",
+    "Complete Urine Analysis (CUE)",
+  ],
+},
+{
+  id: "bcl-med-max-panel-package",
+
+  slug: "bcl-med-max-panel-package",
+
+  name: "BCL MED Max Panel Package",
+
+  shortDescription:
+    "Advanced preventive health package including diabetes, inflammation marker, liver, kidney, thyroid, cholesterol, vitamins, iron profile, and urine analysis.",
+
+  description:
+    "The BCL MED Max Panel Package is an advanced wellness screening designed to provide a comprehensive assessment of metabolic, nutritional, thyroid, liver, kidney, heart, and inflammatory health. It includes HbA1c, CRP, vitamin levels, iron profile, lipid profile, and complete urine examination for early disease detection.",
+
+  price: 3000,
+
+  originalPrice: 4499,
+
+  discount: "50% OFF",
+
+  reportTime: "24-48 Hours",
+
+  fasting: "10-12 Hours",
+
+  homeCollection: true,
+
+  tags: [
+    "diabetes",
+    "thyroid",
+    "cholesterol",
+    "kidney",
+    "liver",
+    "vitamin b12",
+    "vitamin d",
+    "iron",
+    "crp",
+    "hbA1c",
+    "urine",
+    "wellness"
+  ],
+
+  recommendedFor: [
+    {
+      title: "Adults above 30 years",
+      description:
+        "Ideal for comprehensive preventive health screening.",
+      icon: "users",
+    },
+    {
+      title: "People with diabetes risk",
+      description:
+        "Includes HbA1c for long-term blood sugar monitoring.",
+      icon: "heart",
+    },
+    {
+      title: "Individuals with chronic inflammation",
+      description:
+        "CRP helps evaluate inflammatory conditions.",
+      icon: "activity",
+    },
+    {
+      title: "Working professionals",
+      description:
+        "Recommended for complete annual health monitoring.",
+      icon: "briefcase",
+    },
+    {
+      title: "Annual wellness checkup",
+      description:
+        "Comprehensive preventive package for overall health assessment.",
+      icon: "trending",
+    },
+  ],
+
+  testsCount: 10,
+
+  category: "Advanced Health Package",
+
+  rating: 4.9,
+
+  reviews: 196,
+
+  image: "/packages/bcl-med-max-panel-package.webp",
+
+  highlights: [
+    "Complete Preventive Health Screening",
+    "HbA1c Diabetes Monitoring",
+    "Inflammation Marker (CRP)",
+    "Vitamin B12 & Vitamin D",
+    "Thyroid Assessment",
+    "Home Sample Collection",
+    "Digital Reports",
+    "Fast Report Delivery",
+  ],
+
+  benefits: [
+    {
+      title: "Advanced Wellness Assessment",
+      description:
+        "Evaluates heart, liver, kidney, thyroid, diabetes, nutritional status, and inflammation.",
+    },
+    {
+      title: "Diabetes Monitoring",
+      description:
+        "HbA1c provides long-term blood sugar assessment.",
+    },
+    {
+      title: "Inflammation Detection",
+      description:
+        "CRP helps identify inflammatory conditions in the body.",
+    },
+    {
+      title: "Complete Preventive Screening",
+      description:
+        "Combines 10 important investigations for comprehensive health monitoring.",
+    },
+  ],
+
+  testCategories: [
+    {
+      title: "Diabetes Screening",
+      tests: [
+        "HbA1c (Glycosylated Hemoglobin)",
+      ],
+    },
+    {
+      title: "Heart Health",
+      tests: [
+        "Lipid Profile",
+      ],
+    },
+    {
+      title: "Liver Function",
+      tests: [
+        "Liver Function Profile",
+      ],
+    },
+    {
+      title: "Kidney Function",
+      tests: [
+        "Kidney Basic Screen",
+      ],
+    },
+    {
+      title: "Inflammation",
+      tests: [
+        "C-Reactive Protein (CRP)",
+      ],
+    },
+    {
+      title: "Thyroid Health",
+      tests: [
+        "Thyroid Profile-I (T3, T4, TSH)",
+      ],
+    },
+    {
+      title: "Vitamin & Mineral Profile",
+      tests: [
+        "Vitamin B12",
+        "Vitamin D (25-OH)",
+        "Iron Deficiency Profile",
+      ],
+    },
+    {
+      title: "Urine Analysis",
+      tests: [
+        "Complete Urine Analysis (CUE)",
+      ],
+    },
+  ],
+
+  includedTests: [
+    "Vitamin B12",
+    "Lipid Profile",
+    "Liver Function Profile",
+    "Kidney Basic Screen",
+    "Iron Deficiency Profile",
+    "C-Reactive Protein (CRP)",
+    "Thyroid Profile-I",
+    "Vitamin D (25-OH)",
+    "Complete Urine Analysis (CUE)",
+    "HbA1c (Glycosylated Hemoglobin)",
+  ],
+}
+
 
 
 

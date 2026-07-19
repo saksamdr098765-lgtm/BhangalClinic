@@ -22,6 +22,7 @@ import {
 
 
 import SITE_CONFIG from "../SITE_CONFIG";
+import { TbDeviceLandlinePhone } from "react-icons/tb";
 
 
 const navLinks=[
@@ -464,6 +465,14 @@ space-y-5
 
 <p className="text-slate-600">
 {SITE_CONFIG.phone}
+</p>
+
+</div>
+<div className="flex gap-3">
+<TbDeviceLandlinePhone className="mt-1 text-blue-600"/>
+
+<p className="text-slate-600">
+{SITE_CONFIG.landLine}
 </p>
 
 </div>

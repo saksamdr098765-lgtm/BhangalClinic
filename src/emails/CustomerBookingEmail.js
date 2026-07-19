@@ -16,6 +16,7 @@ import {
   radius,
   spacing,
 } from "./styles";
+import SITE_CONFIG from "@/app/SITE_CONFIG";
 
 export default function CustomerBookingEmail({ booking }) {
   const phone = process.env.NEXT_PUBLIC_PHONE || "+91XXXXXXXXXX";
@@ -38,7 +39,7 @@ export default function CustomerBookingEmail({ booking }) {
           }}
         >
           Thank you for choosing
-          <strong> Shyam Budget Friendly Labs.</strong>
+          <strong> {SITE_CONFIG.name}</strong>
         </Text>
 
         <Text

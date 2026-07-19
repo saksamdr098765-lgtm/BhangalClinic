@@ -14,7 +14,9 @@ import HealthBodySection from "./components/HealthBodySection";
 import PackageImageCarousel from "./components/PackageImages";
 import FeaturedOrgansSection from "./components/FeaturedOrganSystem";
 import LifestyleWellnessSection from "./components/LifestyleWellnessSection";
-import FeverInfectionSection from "./components/FeverInfectionSection";
+
+import ECGMonitor from "./components/ECGSection";
+import VisaMedicalSection from "./components/VisaMedicalServices";
 
 
 export const metadata = {
@@ -62,6 +64,8 @@ export default function Home() {
 <Packages></Packages>
 <SymptomAssessmentCTA></SymptomAssessmentCTA>
 <PackageImageCarousel></PackageImageCarousel>
+<ECGMonitor></ECGMonitor>
+<VisaMedicalSection></VisaMedicalSection>
 <WhyChooseUs></WhyChooseUs>
 <Testimonials></Testimonials>
 <FooterCTA></FooterCTA>
