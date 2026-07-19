@@ -43,23 +43,25 @@ export default function InfoCard({
 
   return (
     <div
-      className={`my-10 rounded-3xl border ${style.border} ${style.bg} p-6 shadow-sm`}
+      className={`my-8 rounded-2xl border ${style.border} ${style.bg} p-5 shadow-sm transition-shadow duration-300 hover:shadow-md sm:my-10 sm:rounded-3xl sm:p-6`}
     >
       <div className="flex items-start gap-4">
         <div
-          className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl ${style.iconBg}`}
+          className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${style.iconBg} sm:h-12 sm:w-12 sm:rounded-2xl`}
         >
-          <Icon className={`h-6 w-6 ${style.iconColor}`} />
+          <Icon
+            className={`h-5 w-5 ${style.iconColor} sm:h-6 sm:w-6`}
+          />
         </div>
 
-        <div className="flex-1">
+        <div className="min-w-0 flex-1">
           <h4
-            className={`mb-2 text-lg font-bold ${style.title}`}
+            className={`mb-2 text-base font-bold leading-6 ${style.title} sm:text-lg`}
           >
             {title}
           </h4>
 
-          <p className="leading-7 text-slate-600">
+          <p className="text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             {text}
           </p>
         </div>

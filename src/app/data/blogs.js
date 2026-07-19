@@ -22,7 +22,7 @@ export const blogs = [
 
     readingTime: "8 min read",
 
-    coverImage: "/blogs/vitamin-d/cover.jpg",
+    coverImage: "/blogs/vitamin-d/cover.webp",
 
     featured: true,
 relatedPackages: [
@@ -33,27 +33,38 @@ relatedPackages: [
   "bhangal-senior-citizen-profile",
   "bcl-female-4-package",
 ],
-    seo: {
-      title:
-        "Vitamin D Deficiency | Symptoms, Causes & Treatment | DK Bhangal Lab",
+   seo: {
+  title:
+    "Vitamin D Deficiency: Symptoms, Causes, Diagnosis & Treatment | DK Bhangal Lab",
 
-      description:
-        "Understand Vitamin D deficiency with expert guidance from DK Bhangal Lab. Learn symptoms, causes, diagnosis, treatment, and prevention.",
+  description:
+    "Learn about Vitamin D deficiency, including symptoms, causes, diagnosis, Vitamin D blood tests, treatment options, and prevention. Expert health information from DK Bhangal Lab.",
 
-      keywords: [
-        "Vitamin D",
-        "Vitamin D deficiency",
-        "Vitamin D test",
-        "Health Tips",
-      ],
-    },
+  keywords: [
+    "Vitamin D deficiency",
+    "Vitamin D symptoms",
+    "Vitamin D test",
+    "Vitamin D blood test",
+    "Low Vitamin D",
+    "Vitamin D diagnosis",
+    "Vitamin D treatment",
+    "Vitamin D supplements",
+    "Bone health",
+    "Preventive healthcare",
+    "Health blog",
+    "Diagnostic laboratory",
+    "DK Bhangal Lab",
+  ],
+},
 
-    tags: [
-      "Vitamin D",
-      "Health",
-      "Blood Test",
-      "Nutrition",
-    ],
+tags: [
+  "Vitamin D Deficiency",
+  "Vitamin D",
+  "Blood Tests",
+  "Nutrition",
+  "Bone Health",
+  "Preventive Healthcare",
+],
 
   content: [
   {
@@ -63,7 +74,7 @@ relatedPackages: [
 
   {
     type: "image",
-    src: "/blogs/vitamin-d/image-1.jpg",
+    src: "/blogs/vitamin-d/image-1.webp",
     alt: "Vitamin D Rich Foods",
     caption: "Foods naturally rich in Vitamin D help maintain healthy bones and immunity.",
   },
@@ -114,7 +125,7 @@ relatedPackages: [
 
   {
     type: "image",
-    src: "/blogs/vitamin-d/image-2.jpg",
+    src: "/blogs/vitamin-d/image-2.webp",
     alt: "Morning Sunlight",
     caption: "Moderate sunlight exposure is one of the best natural sources of Vitamin D.",
   },
@@ -200,7 +211,7 @@ relatedPackages: [
 
   {
     type: "image",
-    src: "/blogs/vitamin-d/image-3.jpg",
+    src: "/blogs/vitamin-d/image-3.webp",
     alt: "Foods containing Vitamin D",
     caption: "A balanced diet supports healthy Vitamin D levels.",
   },
@@ -312,30 +323,34 @@ relatedPackages: [
     "bcl-female-4-package",
   ],
 
-  seo: {
-    title:
-      "Vitamin B12 Deficiency | Symptoms, Causes & Treatment | DK Bhangal Lab",
+seo: {
+  title:
+    "Vitamin B12 Deficiency: Symptoms, Causes, Diagnosis & Treatment | DK Bhangal Lab",
 
-    description:
-      "Understand Vitamin B12 deficiency with expert guidance from DK Bhangal Lab. Learn about symptoms, diagnosis, blood tests, treatment, and prevention.",
+  description:
+    "Learn about Vitamin B12 deficiency, including symptoms, causes, diagnosis, blood tests, treatment options, and prevention. Expert health information from DK Bhangal Lab.",
 
-    keywords: [
-      "Vitamin B12",
-      "Vitamin B12 Deficiency",
-      "Vitamin B12 Test",
-      "B12 Blood Test",
-      "Low Vitamin B12",
-      "Health Tips",
-    ],
-  },
-
-  tags: [
-    "Vitamin B12",
-    "Blood Test",
-    "Nutrition",
-    "Health",
-    "Vitamin Deficiency",
+  keywords: [
+    "Vitamin B12 deficiency",
+    "Vitamin B12 symptoms",
+    "Vitamin B12 test",
+    "Vitamin B12 blood test",
+    "Low Vitamin B12",
+    "Vitamin B12 treatment",
+    "Vitamin B12 diagnosis",
+    "Health blog",
+    "Diagnostic laboratory",
+    "DK Bhangal Lab",
   ],
+},
+
+tags: [
+  "Vitamin B12 Deficiency",
+  "Vitamin B12",
+  "Blood Tests",
+  "Nutrition",
+  "Preventive Healthcare",
+],
 
   content: [{
   type: "paragraph",
@@ -344,7 +359,7 @@ relatedPackages: [
 
 {
   type: "image",
-  src: "/blogs/vitamin-b12/image-1.jpg",
+  src: "/blogs/vitamin-b12/image-1.webp",
   alt: "Foods Rich in Vitamin B12",
   caption: "Animal-based foods such as eggs, fish, dairy products, and meat are excellent natural sources of Vitamin B12.",
 },
@@ -423,7 +438,7 @@ relatedPackages: [
 
 {
   type: "image",
-  src: "/blogs/vitamin-b12/image-2.jpg",
+  src: "/blogs/vitamin-b12/image-2.webp",
   alt: "Vitamin B12 Blood Test",
   caption: "A Vitamin B12 blood test is the most reliable way to detect deficiency before serious complications occur.",
 },
@@ -496,7 +511,7 @@ relatedPackages: [
 
 {
   type: "image",
-  src: "/blogs/vitamin-b12/image-3.jpg",
+  src: "/blogs/vitamin-b12/image-3.webp",
   alt: "Vitamin B12 Rich Foods",
   caption: "Including Vitamin B12-rich foods in your daily diet helps support healthy nerves, red blood cells, and energy production.",
 },

@@ -42,14 +42,16 @@ export default function TableOfContents({ content }) {
     return () => observer.disconnect();
   }, [headings]);
 
+  if (!headings.length) return null;
+
   return (
-    <div className="sticky top-28 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+    <aside className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:sticky lg:top-28 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:rounded-3xl lg:p-6">
       <h3 className="mb-5 text-lg font-bold text-slate-900">
         Table of Contents
       </h3>
 
-      <nav>
-        <ul className="space-y-2">
+      <nav aria-label="Table of contents">
+        <ul className="space-y-1">
           {headings.map((heading) => {
             const id = heading.text
               .toLowerCase()
@@ -62,10 +64,10 @@ export default function TableOfContents({ content }) {
               <li key={id}>
                 <a
                   href={`#${id}`}
-                  className={`block rounded-xl px-3 py-2 text-sm transition-all duration-200 ${
+                  className={`relative block rounded-xl border-l-2 py-2 pl-4 pr-3 text-sm leading-6 transition-all duration-200 ${
                     active
-                      ? "bg-sky-50 font-semibold text-sky-700"
-                      : "text-slate-600 hover:bg-slate-50 hover:text-sky-600"
+                      ? "border-sky-600 bg-sky-50 font-semibold text-sky-700"
+                      : "border-transparent text-slate-600 hover:border-sky-200 hover:bg-slate-50 hover:text-sky-700"
                   }`}
                 >
                   {heading.text}
@@ -75,6 +77,6 @@ export default function TableOfContents({ content }) {
           })}
         </ul>
       </nav>
-    </div>
+    </aside>
   );
 }

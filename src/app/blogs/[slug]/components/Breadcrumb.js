@@ -5,30 +5,43 @@ export default function Breadcrumb({ blog }) {
   return (
     <nav
       aria-label="Breadcrumb"
-      className="mb-8 flex flex-wrap items-center gap-2 text-sm"
+      className="mb-6 overflow-x-auto"
     >
-      <Link
-        href="/"
-        className="flex items-center gap-1 text-gray-500 transition-colors hover:text-sky-600"
-      >
-        <FiHome className="h-4 w-4" />
-        Home
-      </Link>
+      <ol className="flex min-w-max items-center gap-2 text-xs sm:text-sm">
+        <li>
+          <Link
+            href="/"
+            className="flex items-center gap-1 rounded-lg px-1 py-1 text-slate-500 transition-colors hover:text-sky-600"
+          >
+            <FiHome className="h-4 w-4 shrink-0" />
+            <span>Home</span>
+          </Link>
+        </li>
 
-      <FiChevronRight className="h-4 w-4 text-gray-400" />
+        <li>
+          <FiChevronRight className="h-4 w-4 text-slate-400" />
+        </li>
 
-      <Link
-        href="/blogs"
-        className="text-gray-500 transition-colors hover:text-sky-600"
-      >
-        Blogs
-      </Link>
+        <li>
+          <Link
+            href="/blogs"
+            className="rounded-lg px-1 py-1 text-slate-500 transition-colors hover:text-sky-600"
+          >
+            Blogs
+          </Link>
+        </li>
 
-      <FiChevronRight className="h-4 w-4 text-gray-400" />
+        <li>
+          <FiChevronRight className="h-4 w-4 text-slate-400" />
+        </li>
 
-      <span className="font-medium text-sky-600">
-        {blog.title}
-      </span>
+        <li
+          className="max-w-[180px] truncate font-medium text-sky-600 sm:max-w-xs lg:max-w-md"
+          title={blog.title}
+        >
+          {blog.title}
+        </li>
+      </ol>
     </nav>
   );
 }

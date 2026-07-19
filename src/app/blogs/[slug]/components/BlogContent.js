@@ -3,7 +3,7 @@ import InfoCard from "./InfoCard";
 
 export default function BlogContent({ content }) {
   return (
-    <div className="prose prose-lg max-w-none prose-slate">
+    <article className="prose prose-slate max-w-none">
       {content.map((block, index) => {
         switch (block.type) {
           case "heading":
@@ -15,7 +15,7 @@ export default function BlogContent({ content }) {
                     .toLowerCase()
                     .replace(/[^\w\s]/g, "")
                     .replace(/\s+/g, "-")}
-                  className="mt-16 mb-6 scroll-mt-28 text-3xl font-bold text-slate-900"
+                  className="scroll-mt-24 mt-10 mb-4 text-2xl font-bold leading-tight tracking-tight text-slate-900 sm:mt-12 sm:mb-5 sm:text-3xl lg:mt-16 lg:mb-6 lg:text-4xl"
                 >
                   {block.text}
                 </h2>
@@ -26,7 +26,7 @@ export default function BlogContent({ content }) {
               return (
                 <h3
                   key={index}
-                  className="mt-12 mb-4 text-2xl font-semibold text-slate-900"
+                  className="mt-8 mb-3 text-xl font-semibold leading-tight text-slate-900 sm:mt-10 sm:text-2xl"
                 >
                   {block.text}
                 </h3>
@@ -39,7 +39,7 @@ export default function BlogContent({ content }) {
             return (
               <p
                 key={index}
-                className="mb-6 text-lg leading-8 text-slate-600"
+                className="mb-5 text-base leading-7 text-slate-700 sm:mb-6 sm:text-lg sm:leading-8"
               >
                 {block.text}
               </p>
@@ -49,7 +49,7 @@ export default function BlogContent({ content }) {
             return (
               <ul
                 key={index}
-                className="mb-8 list-disc space-y-3 pl-6 text-lg text-slate-600 marker:text-sky-600"
+                className="mb-6 list-disc space-y-2 pl-5 text-base leading-7 text-slate-700 marker:text-sky-600 sm:mb-8 sm:space-y-3 sm:pl-6 sm:text-lg sm:leading-8"
               >
                 {block.items.map((item, i) => (
                   <li key={i}>{item}</li>
@@ -59,19 +59,19 @@ export default function BlogContent({ content }) {
 
           case "image":
             return (
-              <figure key={index} className="my-12">
-                <div className="overflow-hidden rounded-3xl shadow-lg ring-1 ring-slate-200">
+              <figure key={index} className="my-8 sm:my-10 lg:my-12">
+                <div className="overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200 sm:rounded-3xl">
                   <Image
                     src={block.src}
                     alt={block.alt}
                     width={1400}
                     height={800}
-                    className="w-full object-cover transition duration-500 hover:scale-105"
+                    className="h-auto w-full object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>
 
                 {block.caption && (
-                  <figcaption className="mt-3 text-center text-sm text-slate-500">
+                  <figcaption className="mt-3 text-center text-xs text-slate-500 sm:text-sm">
                     {block.caption}
                   </figcaption>
                 )}
@@ -112,6 +112,6 @@ export default function BlogContent({ content }) {
             return null;
         }
       })}
-    </div>
+    </article>
   );
 }
