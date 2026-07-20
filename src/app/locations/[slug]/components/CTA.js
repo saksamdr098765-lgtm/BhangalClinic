@@ -19,156 +19,156 @@ export default function CTA({ location }) {
   ];
 
   return (
-    <section className="bg-white py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-[36px] bg-gradient-to-br from-sky-600 via-sky-700 to-blue-800 px-6 py-14 text-white shadow-2xl sm:px-10 lg:px-16">
+    <section className="bg-white py-10 md:py-14 lg:py-20">
+      <div className="mx-auto max-w-7xl px-4">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-sky-600 via-sky-700 to-blue-800 p-6 text-white shadow-2xl md:p-10 lg:p-14">
+
           {/* Background */}
+          <div className="absolute -left-24 -bottom-24 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
+          <div className="absolute -right-24 -top-24 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
 
-          <div className="absolute -left-24 -bottom-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
+          <div className="relative grid gap-10 lg:grid-cols-[1fr_400px] lg:items-center">
 
-          <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
-
-          <div className="relative grid items-center gap-12 lg:grid-cols-[1fr_420px]">
             {/* Left */}
-
             <div>
-              <span className="inline-flex items-center rounded-full bg-white/15 px-4 py-2 text-sm font-semibold backdrop-blur">
+
+              <span className="inline-flex items-center rounded-full bg-white/15 px-4 py-2 text-xs font-semibold backdrop-blur md:text-sm">
                 Trusted Diagnostic Laboratory
               </span>
 
-              <h2 className="mt-6 text-4xl font-black leading-tight lg:text-5xl">
-                Book Your Diagnostic Test in {location.city}
+              <h2 className="mt-5 text-3xl font-black leading-tight md:text-4xl lg:text-5xl">
+                Book Your Diagnostic Test in{" "}
+                <span className="text-cyan-200">{location.city}</span>
               </h2>
 
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-sky-100">
+              <p className="mt-5 max-w-2xl text-sm leading-7 text-sky-100 md:text-base md:leading-8">
                 Whether you need routine blood tests, preventive health
                 checkups, ECG services, or home sample collection, DK Bhangal
-                Laboratory is committed to providing reliable diagnostics,
+                Laboratory is committed to delivering reliable diagnostics,
                 accurate reports, and compassionate patient care.
               </p>
 
               {/* Benefits */}
 
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              <div className="mt-8 grid gap-3 sm:grid-cols-2">
                 {benefits.map((item) => (
                   <div
                     key={item}
-                    className="flex items-center gap-3 rounded-2xl bg-white/10 px-4 py-4 backdrop-blur"
+                    className="flex items-center gap-3 rounded-2xl bg-white/10 p-4 backdrop-blur"
                   >
-                    <FiCheckCircle className="text-green-300" />
+                    <FiCheckCircle className="text-green-300 text-lg shrink-0" />
 
-                    <span>{item}</span>
+                    <span className="text-sm md:text-base">
+                      {item}
+                    </span>
                   </div>
                 ))}
               </div>
 
               {/* Buttons */}
 
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+
                 <Link
                   href="/packages"
-                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-7 py-4 font-semibold text-sky-700 transition hover:scale-105"
+                  className="flex items-center justify-center gap-2 rounded-2xl bg-white px-6 py-4 font-semibold text-sky-700 transition-all hover:scale-[1.03]"
                 >
                   View Health Packages
-
                   <FiArrowRight />
                 </Link>
 
                 <a
                   href={`tel:${location.phone}`}
-                  className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10"
+                  className="flex items-center justify-center gap-2 rounded-2xl border border-white/20 px-6 py-4 font-semibold backdrop-blur transition hover:bg-white/10"
                 >
                   <FiPhone />
-
                   Call Now
                 </a>
+
               </div>
+
             </div>
 
-            {/* Right */}
+            {/* Right Card */}
 
-            <div className="rounded-[30px] bg-white/10 p-8 backdrop-blur-xl">
-              <div className="mb-8 flex h-20 w-20 items-center justify-center rounded-3xl bg-white/15">
-                <FiActivity size={40} />
+            <div className="rounded-3xl bg-white/10 p-6 backdrop-blur-xl md:p-8">
+
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15">
+                <FiActivity className="text-3xl" />
               </div>
 
-              <h3 className="text-3xl font-bold">
+              <h3 className="mt-6 text-2xl font-bold">
                 Why Patients Choose Us
               </h3>
 
               <div className="mt-8 space-y-6">
-                <div className="flex gap-4">
-                  <div className="rounded-xl bg-white/10 p-3">
-                    <FiShield size={22} />
+
+                {[
+                  {
+                    icon: <FiShield />,
+                    title: "Reliable Diagnostics",
+                    text: "Modern laboratory equipment with strict quality control ensures highly accurate reports.",
+                  },
+                  {
+                    icon: <FiClock />,
+                    title: "Fast Report Delivery",
+                    text: "Quick turnaround time with secure digital reporting for faster medical decisions.",
+                  },
+                  {
+                    icon: <FiCheckCircle />,
+                    title: "Affordable Healthcare",
+                    text: "Quality pathology services and health packages at transparent pricing.",
+                  },
+                ].map((item) => (
+                  <div key={item.title} className="flex gap-4">
+
+                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 shrink-0">
+                      {item.icon}
+                    </div>
+
+                    <div>
+
+                      <h4 className="font-semibold">
+                        {item.title}
+                      </h4>
+
+                      <p className="mt-1 text-sm leading-6 text-sky-100">
+                        {item.text}
+                      </p>
+
+                    </div>
+
                   </div>
+                ))}
 
-                  <div>
-                    <h4 className="font-semibold">
-                      Reliable Diagnostics
-                    </h4>
-
-                    <p className="mt-1 text-sky-100">
-                      Modern laboratory equipment with strict quality control
-                      for dependable results.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="rounded-xl bg-white/10 p-3">
-                    <FiClock size={22} />
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold">
-                      Fast Report Delivery
-                    </h4>
-
-                    <p className="mt-1 text-sky-100">
-                      Timely processing and digital reports to support faster
-                      healthcare decisions.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="rounded-xl bg-white/10 p-3">
-                    <FiCheckCircle size={22} />
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold">
-                      Affordable Healthcare
-                    </h4>
-
-                    <p className="mt-1 text-sky-100">
-                      Comprehensive health packages and diagnostic tests at
-                      transparent pricing.
-                    </p>
-                  </div>
-                </div>
               </div>
 
               {/* Stats */}
 
-              <div className="mt-10 grid grid-cols-2 gap-4">
-                <div className="rounded-2xl bg-white/10 p-5 text-center">
-                  <p className="text-4xl font-black">500+</p>
+              <div className="mt-8 grid grid-cols-2 gap-4">
 
+                <div className="rounded-2xl bg-white/10 p-5 text-center">
+                  <h4 className="text-3xl font-black md:text-4xl">
+                    500+
+                  </h4>
                   <p className="mt-2 text-sm text-sky-100">
                     Lab Tests
                   </p>
                 </div>
 
                 <div className="rounded-2xl bg-white/10 p-5 text-center">
-                  <p className="text-4xl font-black">100%</p>
-
+                  <h4 className="text-3xl font-black md:text-4xl">
+                    100%
+                  </h4>
                   <p className="mt-2 text-sm text-sky-100">
                     Patient Care
                   </p>
                 </div>
+
               </div>
+
             </div>
+
           </div>
         </div>
       </div>

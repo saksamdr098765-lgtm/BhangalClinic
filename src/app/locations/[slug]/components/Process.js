@@ -37,20 +37,20 @@ const steps = [
 
 export default function Process({ location }) {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-12 sm:py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
 
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex rounded-full bg-sky-100 px-4 py-2 text-sm font-semibold text-sky-700">
+          <span className="inline-flex rounded-full bg-sky-100 px-3 py-1.5 text-xs font-semibold text-sky-700 sm:px-4 sm:py-2 sm:text-sm">
             Simple & Convenient
           </span>
 
-          <h2 className="mt-5 text-3xl font-black text-slate-900 sm:text-4xl">
+          <h2 className="mt-4 text-2xl font-black leading-tight text-slate-900 sm:mt-5 sm:text-3xl lg:text-4xl">
             How Our Diagnostic Process Works
           </h2>
 
-          <p className="mt-6 text-lg leading-8 text-slate-600">
+          <p className="mt-4 text-sm leading-7 text-slate-600 sm:mt-6 sm:text-base lg:text-lg lg:leading-8">
             At DK Bhangal Laboratory, we make diagnostic testing simple,
             efficient, and stress-free. From booking your appointment to
             receiving your reports, every step is designed to provide a smooth
@@ -60,46 +60,56 @@ export default function Process({ location }) {
 
         {/* Timeline */}
 
-        <div className="relative mt-20">
-          {/* Desktop Line */}
+        <div className="relative mt-10 sm:mt-14 lg:mt-16">
+          <div className="absolute left-0 right-0 top-8 hidden h-1 rounded-full bg-sky-100 lg:block" />
 
-          <div className="absolute left-0 right-0 top-10 hidden h-1 bg-sky-100 lg:block" />
-
-          <div className="grid gap-8 lg:grid-cols-4">
+          <div className="grid gap-5 sm:gap-6 md:grid-cols-2 xl:grid-cols-4">
             {steps.map((step, index) => {
               const Icon = step.icon;
 
               return (
-                <div
-                  key={step.title}
-                  className="relative"
-                >
-                  {/* Number */}
+             <div
+  className="
+    group
+    flex
+    h-full
+    min-h-[320px]
+    flex-col
+    rounded-2xl
+    border
+    border-slate-200
+    bg-white
+    p-5
+    shadow-sm
+    transition-all
+    duration-300
+    hover:-translate-y-1
+    hover:border-sky-200
+    hover:shadow-lg
+    sm:min-h-[340px]
+    sm:rounded-3xl
+    sm:p-6
+  "
+  key={index}
+>
+  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-100 text-sky-600">
+    <Icon className="h-7 w-7" />
+  </div>
 
-                  <div className="absolute -top-4 left-12 z-10 hidden h-8 w-8 items-center justify-center rounded-full bg-sky-600 text-sm font-bold text-white lg:flex">
-                    {index + 1}
-                  </div>
+  <h3 className="mt-5 text-xl font-bold text-slate-900 sm:text-2xl">
+    {step.title}
+  </h3>
 
-                  <div className="rounded-[30px] border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-sky-200 hover:shadow-xl">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-sky-100 text-sky-600">
-                      <Icon size={30} />
-                    </div>
+  <p className="mt-3 flex-1 text-sm leading-7 text-slate-600">
+    {step.description}
+  </p>
 
-                    <h3 className="mt-6 text-2xl font-bold text-slate-900">
-                      {step.title}
-                    </h3>
+  <div className="mt-6 inline-flex items-center gap-2 font-semibold text-sky-600">
+    Step {index + 1}
 
-                    <p className="mt-4 leading-7 text-slate-600">
-                      {step.description}
-                    </p>
-
-                    <div className="mt-6 flex items-center gap-2 font-semibold text-sky-600">
-                      Step {index + 1}
-
-                      <FiArrowRight />
-                    </div>
-                  </div>
-                </div>
+    <FiArrowRight className="transition group-hover:translate-x-1" />
+  </div>
+</div>
               );
             })}
           </div>
@@ -107,39 +117,23 @@ export default function Process({ location }) {
 
         {/* Bottom CTA */}
 
-        <div className="mt-20 rounded-[32px] bg-gradient-to-r from-sky-600 via-sky-700 to-blue-800 p-10 text-white">
-          <div className="grid items-center gap-10 lg:grid-cols-[1fr_260px]">
+        <div className="mt-12 rounded-2xl bg-gradient-to-r from-sky-600 via-sky-700 to-blue-800 p-6 text-white shadow-xl sm:mt-16 sm:rounded-3xl sm:p-8 lg:p-10">
+          <div className="grid items-center gap-8 lg:grid-cols-[1fr_220px]">
             <div>
-              <h3 className="text-3xl font-black">
+              <h3 className="text-2xl font-black sm:text-3xl">
                 Healthcare Made Simple
               </h3>
 
-              <p className="mt-5 text-lg leading-8 text-sky-100">
+              <p className="mt-4 text-sm leading-7 text-sky-100 sm:text-base sm:leading-8">
                 Whether you visit our laboratory or choose home sample
                 collection, our experienced team ensures a smooth process,
                 accurate diagnostics, and timely report delivery. We are
-                committed to providing reliable healthcare services for patients
-                across {location.city} and nearby areas.
+                committed to providing reliable healthcare services for
+                patients across {location.city} and nearby areas.
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-5">
-              <div className="rounded-2xl bg-white/10 p-5 text-center backdrop-blur">
-                <p className="text-4xl font-black">4</p>
-
-                <p className="mt-2 text-sm text-sky-100">
-                  Simple Steps
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white/10 p-5 text-center backdrop-blur">
-                <p className="text-4xl font-black">Fast</p>
-
-                <p className="mt-2 text-sm text-sky-100">
-                  Reports
-                </p>
-              </div>
-            </div>
+          
           </div>
         </div>
       </div>

@@ -76,9 +76,10 @@ export const SITE_CONFIG = {
     country: "India",
   },
 
-  googleMaps:
-    "https://maps.google.com/", // Replace with actual Google Maps link
-
+  googleMaps:{
+    direction:"https://www.google.com/maps/dir//Bhangal+Clinical+Laboratories+%26+ECG+Garhshankar,+Shri,+Anandpur+Rd,+opposite+Civil+Hospital,+Garhshankar,+Punjab+144527/@31.2133209,76.1461101,17z/data=!4m16!1m7!3m6!1s0x391abf3a872c804b:0x3c7889898304438b!2sBhangal+Clinical+Laboratories+%26+ECG+Garhshankar!8m2!3d31.213321!4d76.150981!16s%2Fg%2F11h1bz3q8l!4m7!1m0!1m5!1m1!1s0x391abf3a872c804b:0x3c7889898304438b!2m2!1d76.150981!2d31.213321?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+    iframe:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3412.2673743929913!2d76.1484061!3d31.213321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391abf3a872c804b%3A0x3c7889898304438b!2sBhangal%20Clinical%20Laboratories%20%26%20ECG%20Garhshankar!5e0!3m2!1sen!2sin!4v1783939998979!5m2!1sen!2sin", // Replace with actual Google Maps link
+  },
   coordinates: {
     latitude: "",
     longitude: "",

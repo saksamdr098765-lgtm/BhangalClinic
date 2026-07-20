@@ -581,7 +581,7 @@ shadow-sm
 
 <iframe
 
-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3412.2673743929913!2d76.1484061!3d31.213321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391abf3a872c804b%3A0x3c7889898304438b!2sBhangal%20Clinical%20Laboratories%20%26%20ECG%20Garhshankar!5e0!3m2!1sen!2sin!4v1783939998979!5m2!1sen!2sin"
+src={SITE_CONFIG.googleMaps.iframe}
 
 width="100%"
 
