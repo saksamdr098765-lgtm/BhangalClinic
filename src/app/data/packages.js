@@ -1,5 +1,5 @@
 
-export const packages =[ 
+export const packagesData =[ 
    {
   id: "bhangal-basic-profile-plus",
 
@@ -3977,6 +3977,7 @@ tags: [
 
 
 ]
+export const packages=packagesData.sort((a, b) => a.price - b.price);
 import {
   FaHeartPulse,
   FaStethoscope,
