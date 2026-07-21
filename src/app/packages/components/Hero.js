@@ -17,6 +17,7 @@ import {
   FaHouseMedical,
   FaFileMedical,
 } from "react-icons/fa6";
+import Link from "next/link";
 
 
 const fadeUp = {
@@ -631,13 +632,14 @@ font-black
 text-slate-900
 "
 >
-₹999
+₹800
 </h4>
 
 </div>
 
 
-<div
+<Link
+href="/packages/bcl-med-health-pro-package"
 className="
 flex
 h-14
@@ -652,7 +654,7 @@ text-white
 
 <FiArrowRight/>
 
-</div>
+</Link>
 
 
 </div>

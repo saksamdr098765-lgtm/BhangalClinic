@@ -30,7 +30,7 @@ export const tests = [
     popular: true,
     description:
       "Detects anemia, infections and blood disorders through a complete blood analysis.",
-    price: 200,
+    price: 250,
     reportTime: "24 Hours",
   },
 
