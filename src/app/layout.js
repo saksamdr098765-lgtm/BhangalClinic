@@ -119,6 +119,7 @@ export default function RootLayout({ children }) {
         <FloatingButtons></FloatingButtons>
         {children}
         <Footer></Footer>
+     
          <Toaster
     position="bottom-right"
     richColors
