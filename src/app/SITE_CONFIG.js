@@ -127,7 +127,7 @@ export const SITE_CONFIG = {
   /* -------------------------------------------------------------------------- */
 
   social: {
-    facebook: "",
+    facebook: "https://www.facebook.com/Bhangallaboratorygsr?mibextid=wwXIfr&mibextid=wwXIfr",
     instagram: "",
     linkedin: "",
     youtube: "",

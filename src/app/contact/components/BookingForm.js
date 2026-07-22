@@ -1,5 +1,7 @@
 "use client";
 
+import { packages } from "@/app/data/packages";
+import { tests } from "@/app/data/tests";
 import { bookingSchema } from "@/app/lib/BookingSchema";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -72,7 +74,7 @@ const handleSubmit = async (e) => {
 
     toast.success("Booking submitted successfully.");
 
-    console.log(data);
+  
 
     setForm({
       name: "",
@@ -220,11 +222,13 @@ const handleSubmit = async (e) => {
                 className="h-12 w-full rounded-xl border border-slate-200 bg-white px-4 text-sm outline-none transition focus:border-blue-500"
               >
                 <option value="">Select Test</option>
-                <option value="CBC Test">CBC Test</option>
-                <option value="HbA1c">HbA1c</option>
-                <option value="Thyroid Profile">Thyroid Profile</option>
-                <option value="Vitamin D">Vitamin D</option>
-                <option value="Full Body Checkup">Full Body Checkup</option>
+                {tests.map((test,index)=>{
+                  return  <option key={index} value={test.name}>{test.name}</option>
+                })}
+                {packages.map((pkg,index)=>{
+                  return  <option key={index} value={pkg.name}>{pkg.name}</option>
+                })}
+               
               </select>
             </div>
 

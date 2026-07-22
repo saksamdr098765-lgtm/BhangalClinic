@@ -13,7 +13,7 @@ export const  services=[{
 
   category: "Diagnostic Services",
 
-  coverImage: "/services/home-sample-collection/cover.jpg",
+  coverImage: "/services/home-sample-collection-cover.webp",
 
   featured: true,
 

@@ -2,13 +2,8 @@
 
 import BlogCard from "@/app/blogs/components/BlogCard";
 import { blogs } from "@/app/data/blogs";
-import Image from "next/image";
 import Link from "next/link";
-import {
-  FiArrowRight,
-  FiClock,
-} from "react-icons/fi";
-
+import { FiArrowRight } from "react-icons/fi";
 
 export default function RelatedBlogs({ service }) {
   const relatedBlogs = blogs.filter((blog) =>
@@ -18,58 +13,62 @@ export default function RelatedBlogs({ service }) {
   if (!relatedBlogs.length) return null;
 
   return (
-    <section className="bg-slate-50 py-20">
+    <section className="bg-slate-50 py-12 sm:py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
 
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex rounded-full bg-sky-100 px-4 py-2 text-sm font-semibold text-sky-700">
+          <span className="inline-flex items-center rounded-full border border-sky-200 bg-sky-100 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-sky-700 sm:px-4 sm:py-2 sm:text-sm">
             Health Education
           </span>
 
-          <h2 className="mt-5 text-3xl font-black text-slate-900 sm:text-4xl">
+          <h2 className="mt-5 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
             Learn More About Your Health
           </h2>
 
-          <p className="mt-6 text-lg leading-8 text-slate-600">
+          <p className="mt-5 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
             Understanding your health is the first step toward prevention.
-            Explore our expert-written health articles covering symptoms,
-            diagnostic tests, preventive care, nutrition, and common medical
-            conditions related to this service.
+            Explore our expert-written articles covering symptoms, diagnostic
+            tests, preventive care, nutrition, and common medical conditions
+            related to this service.
           </p>
         </div>
 
-        {/* Cards */}
+        {/* Blog Cards */}
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:mt-14 xl:grid-cols-3 xl:gap-8">
           {relatedBlogs.map((blog) => (
-        <BlogCard key={blog.slug} blog={blog}></BlogCard>
+            <BlogCard key={blog.slug} blog={blog} />
           ))}
         </div>
 
-        {/* Bottom CTA */}
+        {/* CTA */}
 
-        <div className="mt-16 rounded-[32px] bg-white p-8 shadow-sm ring-1 ring-slate-200 lg:flex lg:items-center lg:justify-between lg:p-10">
-          <div>
-            <h3 className="text-3xl font-bold text-slate-900">
-              Explore More Health Articles
-            </h3>
+        <div className="mt-12 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:mt-16">
+          <div className="flex flex-col gap-8 p-6 sm:p-8 lg:flex-row lg:items-center lg:justify-between lg:p-10">
+            <div className="max-w-2xl">
+              <h3 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                Explore More Health Articles
+              </h3>
 
-            <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
-              Browse our collection of expert-written blogs covering preventive
-              healthcare, laboratory testing, nutrition, common diseases, and
-              wellness tips to help you make informed healthcare decisions.
-            </p>
+              <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
+                Browse our collection of expert-written blogs covering
+                preventive healthcare, laboratory testing, nutrition, common
+                diseases, and wellness tips to help you make informed
+                healthcare decisions.
+              </p>
+            </div>
+
+            <div className="shrink-0">
+              <Link
+                href="/blogs"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-sky-600 px-6 py-3.5 font-semibold text-white transition-all duration-300 hover:bg-sky-700 hover:shadow-lg sm:w-auto"
+              >
+                View All Blogs
+                <FiArrowRight />
+              </Link>
+            </div>
           </div>
-
-          <Link
-            href="/blogs"
-            className="mt-8 inline-flex items-center gap-2 rounded-2xl bg-sky-600 px-7 py-4 font-semibold text-white transition hover:bg-sky-700 lg:mt-0"
-          >
-            View All Blogs
-
-            <FiArrowRight />
-          </Link>
         </div>
       </div>
     </section>
