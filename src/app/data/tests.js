@@ -1,4 +1,4 @@
-import { FaNotesMedical, FaSyringe, FaVenusMars } from "react-icons/fa";
+import { FaBolt, FaNotesMedical, FaSyringe, FaVenusMars } from "react-icons/fa";
 import {
   FaDroplet,
   FaHeartPulse,
@@ -22,56 +22,6 @@ export const tests = [
   // HAEMATOLOGY
   // =========================
 
-  {
-    slug: "hemoglobin-test",
-    name: "Hemoglobin Test",
-    shortName: "HB",
-    category: "Haematology",
-    organ: "Blood",
-    sampleType: "Blood",
-    parameterCount: 1,
-    fasting: false,
-    homeCollection: true,
-    popular: true,
-    description:
-      "Measures hemoglobin levels to detect anemia and evaluate oxygen-carrying capacity of blood.",
-    price: 50,
-    reportTime: "24 Hours",
-  },
-
-  {
-    slug: "total-leukocyte-count",
-    name: "Total Leukocyte Count",
-    shortName: "TLC",
-    category: "Haematology",
-    organ: "Blood",
-    sampleType: "Blood",
-    parameterCount: 1,
-    fasting: false,
-    homeCollection: true,
-    popular: false,
-    description:
-      "Measures the total white blood cell count to identify infections and immune disorders.",
-    price: 100,
-    reportTime: "24 Hours",
-  },
-
-  {
-    slug: "differential-leukocyte-count",
-    name: "Differential Leukocyte Count",
-    shortName: "DLC",
-    category: "Haematology",
-    organ: "Blood",
-    sampleType: "Blood",
-    parameterCount: 5,
-    fasting: false,
-    homeCollection: true,
-    popular: false,
-    description:
-      "Determines the percentage of different white blood cells to diagnose infections and blood disorders.",
-    price: 100,
-    reportTime: "24 Hours",
-  },
 
   {
     slug: "mp-antigen-test",
@@ -120,7 +70,7 @@ export const tests = [
     popular: false,
     description:
       "Measures eosinophil levels to help diagnose allergies, asthma and parasitic infections.",
-    price: 100,
+    price: 150,
     reportTime: "24 Hours",
   },
 
@@ -137,7 +87,7 @@ export const tests = [
     popular: true,
     description:
       "Measures inflammation in the body associated with infections and autoimmune diseases.",
-    price: 50,
+    price: 100,
     reportTime: "24 Hours",
   },
 
@@ -171,7 +121,7 @@ export const tests = [
     popular: false,
     description:
       "Microscopic examination of blood cells for diagnosing anemia, leukemia and blood disorders.",
-    price: 250,
+    price: 300,
     reportTime: "24 Hours",
   },
 
@@ -253,7 +203,7 @@ export const tests = [
 {
   slug: "kidney-function-test",
   name: "Kidney Function Test",
-  shortName: "KFT",
+  shortName: "RFT/KFT",
   category: "Kidney Function",
   organ: "Kidney",
   sampleType: "Blood",
@@ -635,22 +585,22 @@ export const tests = [
   reportTime: "24 Hours",
 },
 
-{
-  slug: "crp-test",
-  name: "C-Reactive Protein",
-  shortName: "CRP",
-  category: "Serology",
-  organ: "Immune System",
-  sampleType: "Blood",
-  parameterCount: 1,
-  fasting: false,
-  homeCollection: true,
-  popular: true,
-  description:
-    "Measures inflammation in the body caused by infections, autoimmune disorders or tissue injury.",
-  price: 200,
-  reportTime: "24 Hours",
-},
+// {
+//   slug: "crp-test",
+//   name: "C-Reactive Protein",
+//   shortName: "CRP",
+//   category: "Serology",
+//   organ: "Immune System",
+//   sampleType: "Blood",
+//   parameterCount: 1,
+//   fasting: false,
+//   homeCollection: true,
+//   popular: true,
+//   description:
+//     "Measures inflammation in the body caused by infections, autoimmune disorders or tissue injury.",
+//   price: 200,
+//   reportTime: "24 Hours",
+// },
 
 {
   slug: "crp-quantitative-test",
@@ -669,22 +619,22 @@ export const tests = [
   reportTime: "24 Hours",
 },
 
-{
-  slug: "aso-test",
-  name: "Anti Streptolysin O",
-  shortName: "ASO",
-  category: "Serology",
-  organ: "Immune System",
-  sampleType: "Blood",
-  parameterCount: 1,
-  fasting: false,
-  homeCollection: true,
-  popular: false,
-  description:
-    "Detects antibodies produced after Streptococcus infection to help diagnose rheumatic fever.",
-  price: 200,
-  reportTime: "24 Hours",
-},
+// {
+//   slug: "aso-test",
+//   name: "Anti Streptolysin O",
+//   shortName: "ASO",
+//   category: "Serology",
+//   organ: "Immune System",
+//   sampleType: "Blood",
+//   parameterCount: 1,
+//   fasting: false,
+//   homeCollection: true,
+//   popular: false,
+//   description:
+//     "Detects antibodies produced after Streptococcus infection to help diagnose rheumatic fever.",
+//   price: 200,
+//   reportTime: "24 Hours",
+// },
 
 {
   slug: "aso-quantitative-test",
@@ -805,22 +755,22 @@ export const tests = [
   reportTime: "48-72 Hours",
 },
 
-{
-  slug: "ra-factor-test",
-  name: "RA Factor Test",
-  shortName: "RA Factor",
-  category: "Serology",
-  organ: "Immune System",
-  sampleType: "Blood",
-  parameterCount: 1,
-  fasting: false,
-  homeCollection: true,
-  popular: true,
-  description:
-    "Detects rheumatoid factor antibodies used in the diagnosis of rheumatoid arthritis.",
-  price: 200,
-  reportTime: "24 Hours",
-},
+// {
+//   slug: "ra-factor-test",
+//   name: "RA Factor Test",
+//   shortName: "RA Factor",
+//   category: "Serology",
+//   organ: "Immune System",
+//   sampleType: "Blood",
+//   parameterCount: 1,
+//   fasting: false,
+//   homeCollection: true,
+//   popular: true,
+//   description:
+//     "Detects rheumatoid factor antibodies used in the diagnosis of rheumatoid arthritis.",
+//   price: 200,
+//   reportTime: "24 Hours",
+// },
 
 {
   slug: "ra-factor-quantitative-test",
@@ -848,7 +798,7 @@ export const tests = [
   name: "Electrolyte Profile",
   shortName: "Electrolytes",
   category: "Electrolytes",
-  organ: "Kidney",
+  organ: "Electrolytes",
   sampleType: "Blood",
   parameterCount: 4,
   fasting: false,
@@ -865,7 +815,7 @@ export const tests = [
   name: "Serum Sodium",
   shortName: "Sodium",
   category: "Electrolytes",
-  organ: "Kidney",
+  organ: "Electrolytes",
   sampleType: "Blood",
   parameterCount: 1,
   fasting: false,
@@ -882,7 +832,7 @@ export const tests = [
   name: "Serum Potassium",
   shortName: "Potassium",
   category: "Electrolytes",
-  organ: "Kidney",
+  organ: "Electrolytes",
   sampleType: "Blood",
   parameterCount: 1,
   fasting: false,
@@ -899,7 +849,7 @@ export const tests = [
   name: "Serum Chloride",
   shortName: "Chloride",
   category: "Electrolytes",
-  organ: "Kidney",
+  organ: "Electrolytes",
   sampleType: "Blood",
   parameterCount: 1,
   fasting: false,
@@ -1314,6 +1264,17 @@ export const testTheme = {
     border: "hover:border-blue-200",
     glow: "hover:shadow-blue-100",
   },
+  Electrolytes: {
+  icon: FaBolt,
+  color: "teal",
+  iconBg: "bg-teal-100",
+  iconText: "text-teal-600",
+  badgeBg: "bg-teal-50",
+  badgeText: "text-teal-700",
+  cardBg: "bg-gradient-to-br from-teal-50 via-white to-teal-100",
+  border: "hover:border-teal-200",
+  glow: "hover:shadow-teal-100",
+},
 };
 
 export const defaultTheme = {
