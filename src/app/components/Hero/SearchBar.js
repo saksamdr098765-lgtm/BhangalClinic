@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FiSearch, FiArrowRight } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
+import { trackSearch } from "@/app/lib/tracking";
 
 const popularTests = [
   "CBC",
@@ -18,7 +19,7 @@ export default function SearchBar() {
   const router=useRouter()
   const handleSearch = () => {
     if (!query.trim()) return;
-
+ trackSearch(query)
     router.push(
       `/packages?search=${encodeURIComponent(query)}`
     );

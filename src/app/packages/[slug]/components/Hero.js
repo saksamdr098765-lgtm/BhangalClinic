@@ -10,6 +10,7 @@ import {
   FiCheckCircle,
 } from "react-icons/fi";
 import SITE_CONFIG from "@/app/SITE_CONFIG";
+import { trackPackageClick, trackPhoneClick, trackWhatsAppClick } from "@/app/lib/tracking";
 
 const fadeUp = {
   initial: {
@@ -23,7 +24,9 @@ const fadeUp = {
 };
 
 export default function Hero({ pkg }) {
+
      const handleWhatsApp = (test) => {
+       trackWhatsAppClick(`packagePage-${test.name}`)
       const message = `Hello,
     
     I would like to book the following test.
@@ -246,6 +249,7 @@ export default function Hero({ pkg }) {
 
           <a
           href={`tel:${SITE_CONFIG.phone}`}
+          onClick={()=>{trackPhoneClick("packagePage")}}
             className="
               inline-flex
               items-center

@@ -134,6 +134,7 @@ export default function Packages() {
     <SwiperSlide key={pkg.id}>
       <PackageCard
         pkg={pkg}
+        location="home"
         featured={index === 0}
       />
     </SwiperSlide>

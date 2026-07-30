@@ -11,11 +11,13 @@ import {
 
 import { packageTheme, packageThemeMap } from "../data/packages";
 import Image from "next/image";
+import { trackPackageClick } from "../lib/tracking";
 
 
 export default function PackageCard({
   pkg,
   featured = false,
+  location="packages"
 }) {
 
   const savings = pkg.originalPrice - pkg.price;
@@ -295,7 +297,7 @@ text-emerald-700
 
 
         <Link
-
+onClick={()=>{trackPackageClick(`${location}-${pkg.slug}`)}}
           href={`/packages/${pkg.slug}`}
 
           className={`

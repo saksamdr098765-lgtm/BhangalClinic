@@ -23,6 +23,7 @@ import {
 
 import SITE_CONFIG from "../SITE_CONFIG";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
+import { trackServiceClick, trackSocialClick } from "../lib/tracking";
 
 
 const navLinks=[
@@ -582,6 +583,7 @@ shadow-sm
 <iframe
 
 src={SITE_CONFIG.googleMaps.iframe}
+onClick={()=>{trackServiceClick("map")}}
 
 width="100%"
 
@@ -644,6 +646,7 @@ SITE_CONFIG.social.facebook,
 key={index}
 
 href={link}
+onClick={()=>{trackSocialClick(`socail-media`)}}
 
 target="_blank"
 

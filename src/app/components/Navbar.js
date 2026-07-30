@@ -21,6 +21,7 @@ import {
 
 import { FaHome } from "react-icons/fa";
 import SITE_CONFIG from "../SITE_CONFIG";
+import { trackPageNavigation, trackPhoneClick } from "../lib/tracking";
 
 
 const navLinks = [
@@ -482,7 +483,7 @@ bg-blue-100
 <a
 
 href={`tel:${SITE_CONFIG.phone}`}
-
+onClick={()=>{trackPhoneClick("navbar")}}
 className="
 flex
 items-center
@@ -509,7 +510,7 @@ Call Now
 <Link
 
 href="/contact"
-
+onClick={()=>{trackPageNavigation("navbar-booktest-contact")}}
 className="
 flex
 items-center

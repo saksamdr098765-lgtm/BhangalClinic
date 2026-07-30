@@ -142,7 +142,10 @@ export default function RootLayout({ children }) {
     }}
   />
 ))}
-<GoogleAnalytics gaId="G-0FM959VHJX" />
+{/* My Analytics */}
+<GoogleAnalytics gaId={ process.env.NEXT_PUBLIC_GA_ID}/>
+{/* Client Analytics */}
+<GoogleAnalytics gaId="G-V9SYMOM57H" />
   </body>
     </html>
   );

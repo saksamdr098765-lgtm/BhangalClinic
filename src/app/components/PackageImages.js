@@ -14,6 +14,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css/navigation";  
 
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { trackPackageClick } from "../lib/tracking";
 const packages = [
   {
     name:"bhangal ayush profile 2.1",
@@ -48,6 +49,7 @@ export default function PackageImageCarousel(){
 
 
 const whatsapp = (pkg)=>{
+  trackPackageClick(`whatsapp-${pkg.name}`)
 
 const message =
 `Hello, I want details about ${pkg.name} test`;

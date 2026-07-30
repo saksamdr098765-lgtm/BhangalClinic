@@ -15,30 +15,13 @@ FiActivity,
 import SITE_CONFIG from "../SITE_CONFIG";
 import { tests } from "../data/tests";
 import TestCard from "./TestCard";
+import { trackPageNavigation, trackTestClick } from "../lib/tracking";
 
 
 
 export default function PopularTests() {
   const router=useRouter()
-  const handleWhatsApp = (test) => {
-  const message = `Hello,
 
-I would like to book the following test.
-
-*Test:* ${test.name}
-*Description:* ${test.desc}
-*Price:* ${test.price}
-
-Please share the available slots and booking process.
-
-Thank you.`;
-
-  const url = `https://wa.me/${SITE_CONFIG.whatsapp}?text=${encodeURIComponent(
-    message
-  )}`;
-
-  window.open(url, "_blank");
-};
   return (
     <section
       className="
@@ -202,7 +185,7 @@ Thank you.`;
         >
 
           {tests.slice(0,3).map((test, index) => (
-      <TestCard key={test.slug} test={test} handleWhatsApp={handleWhatsApp}></TestCard>
+      <TestCard key={test.slug} test={test} location="Home"></TestCard>
                 ))}
 
         </div>
@@ -231,7 +214,7 @@ Thank you.`;
         >
 
           <button
-          onClick={()=>{router.push('/packages#test-grid')}}
+          onClick={()=>{trackPageNavigation("Home-PopularTests-viewAll");router.push('/packages#test-grid')}}
             className="
               w-full
               rounded-full

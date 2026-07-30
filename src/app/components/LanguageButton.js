@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { FiGlobe } from "react-icons/fi";
+import { trackServiceClick } from "../lib/tracking";
 
 const languages = [
   { name: "English", code: "en", flag: "🇬🇧" },
@@ -17,6 +18,7 @@ export default function LanguageButton() {
   const ref = useRef(null);
 
   const changeLanguage = (lang) => {
+    trackServiceClick("changeLanguage")
     const interval = setInterval(() => {
       const select = document.querySelector(".goog-te-combo");
 

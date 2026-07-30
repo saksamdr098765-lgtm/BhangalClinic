@@ -10,6 +10,7 @@ import {
   FiFileText,
 } from "react-icons/fi";
 import { FaMicroscope, FaUserDoctor } from "react-icons/fa6";
+import { trackPageNavigation } from "@/app/lib/tracking";
 
 export default function CTA() {
   return (
@@ -355,6 +356,7 @@ export default function CTA() {
 
               <Link
                 href="/contact"
+                onClick={()=>{trackPageNavigation("packagesPage-CTA-contact")}}
                 className="
                 group
                 flex
@@ -391,6 +393,7 @@ export default function CTA() {
 
               <Link
                 href="/about-us"
+                  onClick={()=>{trackPageNavigation("packagesPage-CTA-knowLab")}}
                 className="
                 flex
                 items-center

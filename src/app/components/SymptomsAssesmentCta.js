@@ -15,6 +15,7 @@ import {
   FaVialCircleCheck,
   FaHouseMedical,
 } from "react-icons/fa6";
+import { trackPageNavigation } from "../lib/tracking";
 
 
 const steps = [
@@ -167,7 +168,7 @@ gap-4
 <Link
 
 href="/health-assesment"
-
+onClick={()=>{trackPageNavigation("home-healthAssessment")}}
 className="
 flex
 items-center

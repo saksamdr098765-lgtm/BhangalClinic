@@ -10,6 +10,7 @@ import {
   FiFileText,
   FiArrowRight,
 } from "react-icons/fi";
+import { trackPageNavigation } from "../lib/tracking";
 
 const features = [
   {
@@ -202,6 +203,7 @@ export default function WhyChooseUs() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
               <Link
                 href="/contact"
+                onClick={()=>{trackPageNavigation("home-whyChooseus-bookyourtest")}}
                 className="inline-flex items-center justify-center gap-2 rounded-2xl bg-blue-600 px-7 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-blue-700 hover:shadow-xl"
               >
                 Book Your Test

@@ -1,5 +1,6 @@
 "use client";
 
+import { trackBookDemo, trackBookingForm, trackPhoneClick } from "@/app/lib/tracking";
 import SITE_CONFIG from "@/app/SITE_CONFIG";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -64,6 +65,7 @@ export default function Hero() {
 
               <Link
                 href="#booking"
+                onClick={()=>trackBookingForm()}
                 className="inline-flex items-center justify-center gap-3 rounded-2xl bg-blue-600 px-7 py-4 font-semibold text-white transition hover:-translate-y-1 hover:bg-blue-500 hover:shadow-xl"
               >
                 Book Appointment
@@ -72,6 +74,7 @@ export default function Hero() {
 
               <a
                 href={`tel:${SITE_CONFIG.phone}`}
+                onClick={()=>trackPhoneClick("contactPage")}
                 className="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-7 py-4 font-semibold text-slate-700 transition hover:border-blue-300 hover:bg-blue-50"
               >
                 Call Laboratory

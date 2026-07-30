@@ -11,6 +11,7 @@ import {
   FiArrowRight,
 } from "react-icons/fi";
 import SITE_CONFIG from "../SITE_CONFIG";
+import { trackPackageClick, trackWhatsAppClick } from "../lib/tracking";
 
 const features = [
   "Employment Visa Medical",
@@ -155,6 +156,7 @@ export default function VisaMedicalSection() {
               <Link
                 href={`https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi,%20I%20want%20to%20book%20a%20Visa%20Medical%20Examination.`}
                 target="_blank"
+                onClick={()=>trackWhatsAppClick("visa")}
                 className="group flex w-full items-center justify-center gap-3 rounded-2xl bg-blue-600 px-6 py-4 font-semibold text-white transition-all duration-300 hover:bg-blue-700 sm:w-auto"
               >
                 Book Visa Medical
@@ -164,6 +166,7 @@ export default function VisaMedicalSection() {
 
               <Link
                 href="/contact"
+                onClick={()=>{trackPackageClick("visasection-contactUs")}}
                 className="flex w-full items-center justify-center rounded-2xl border border-slate-300 px-6 py-4 font-semibold text-slate-700 transition hover:bg-slate-100 sm:w-auto"
               >
                 Contact Us
@@ -289,6 +292,7 @@ export default function VisaMedicalSection() {
                       href={`https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi,%20I%20want%20to%20book%20a%20Visa%20Medical%20Examination.`}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={()=>trackWhatsAppClick("visarightsection-whatsapp")}
                       className="flex w-full items-center justify-center gap-3 rounded-2xl bg-white px-6 py-4 text-base font-semibold text-blue-700 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
                     >
                       Book on WhatsApp

@@ -190,6 +190,7 @@ const pageTitle =
   {visiblePackages.map((pkg) => (
     <PackageCard
       key={pkg.id}
+      location="packagesPage"
       pkg={pkg}
     />
   ))}

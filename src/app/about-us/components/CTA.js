@@ -8,6 +8,7 @@ import {
   FiHome,
 } from "react-icons/fi";
 import SITE_CONFIG from "@/app/SITE_CONFIG";
+import { trackPageNavigation, trackPhoneClick } from "@/app/lib/tracking";
 
 const stats = [
   {
@@ -170,6 +171,7 @@ export default function CTA() {
 
             <Link
               href="/contact"
+              onClick={()=>{trackPageNavigation("about-BookHealthCheckup")}}
               className="group inline-flex items-center justify-center gap-3 rounded-2xl bg-white px-8 py-4 font-semibold text-blue-700 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
             >
               Book Health Checkup
@@ -180,6 +182,7 @@ export default function CTA() {
 
             <a
               href={`tel:${SITE_CONFIG.phone}`}
+              onClick={()=>{trackPhoneClick("about-schedule-call")}}
               className="inline-flex items-center justify-center gap-3 rounded-2xl border border-white/20 bg-transparent px-8 py-4 font-semibold text-white transition hover:bg-white/10"
             >
               <FiCalendar />

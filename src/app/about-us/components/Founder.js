@@ -9,6 +9,7 @@ import {
   FiCheckCircle,
   FiHeart,
 } from "react-icons/fi";
+import { trackPageNavigation } from "@/app/lib/tracking";
 
 const highlights = [
   "Patient-First Healthcare",
@@ -67,7 +68,7 @@ export default function Founder() {
             <div className="relative overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-xl sm:rounded-[36px]">
               <div className="relative aspect-[4/5]">
                 <Image
-                  src="/doctor.jpg"
+                  src="/doctor.png"
                   fill
                   alt="Founder"
                   className="object-cover"
@@ -169,6 +170,7 @@ export default function Founder() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/contact"
+                 onClick={()=>{trackPageNavigation("about-BookYourTest-founderSection")}}
                 className="inline-flex items-center justify-center gap-3 rounded-2xl bg-slate-900 px-6 py-4 font-semibold text-white transition hover:bg-blue-600"
               >
                 Book Your Test
@@ -177,6 +179,7 @@ export default function Founder() {
 
               <Link
                 href="/packages"
+                 onClick={()=>{trackPageNavigation("about-founderSection-packages")}}
                 className="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-6 py-4 font-semibold text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
               >
                 Learn More

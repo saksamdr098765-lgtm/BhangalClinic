@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiPlus, FiMinus } from "react-icons/fi";
 import SITE_CONFIG from "@/app/SITE_CONFIG";
+import { trackPhoneClick, trackWhatsAppClick } from "@/app/lib/tracking";
 
 const faqs = [
   {
@@ -341,6 +342,7 @@ export default function FAQ() {
               >
                 <a
                   href={`tel:${SITE_CONFIG.phone}`}
+                  onClick={()=>{trackPhoneClick("contact-faq")}}
                   className="
                     inline-flex
                     items-center
@@ -361,6 +363,7 @@ export default function FAQ() {
 
                 <a
                   href={`https://wa.me/${SITE_CONFIG.whatsapp}`}
+                  onClick={()=>{trackWhatsAppClick("contact-faq")}}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="

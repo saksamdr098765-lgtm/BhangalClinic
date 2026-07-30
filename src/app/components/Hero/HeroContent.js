@@ -14,6 +14,7 @@ import {
 
 import SearchBar from "./SearchBar";
 import { useRouter } from "next/navigation";
+import { trackPageNavigation } from "@/app/lib/tracking";
 
 
 const fadeUp = {
@@ -270,7 +271,8 @@ sm:flex-row
 
 <button
 
-onClick={()=>router.push("/contact")}
+onClick={()=>{trackPageNavigation("HeroContent-BookHealthTest"); router.push("/contact")}}
+
 
 className="
 group
@@ -310,7 +312,7 @@ transition
 
 <button
 
-onClick={()=>router.push("/packages")}
+onClick={()=>{trackPageNavigation("HeroContent-ExplorePackages");router.push("/packages")}}
 
 className="
 rounded-full

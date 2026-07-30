@@ -9,6 +9,7 @@ import {
   FiShield,
 } from "react-icons/fi";
 import SITE_CONFIG from "@/app/SITE_CONFIG";
+import { trackPhoneClick, trackWhatsAppClick } from "@/app/lib/tracking";
 
 export default function CTA({ pkg }) {
   const features = [
@@ -26,6 +27,7 @@ export default function CTA({ pkg }) {
     },
   ];
    const handleWhatsApp = (test) => {
+       trackWhatsAppClick(`packagePage-${test.name}`)
     const message = `Hello,
   
   I would like to book the following test.
@@ -178,6 +180,7 @@ export default function CTA({ pkg }) {
 
                 <a
                 href={`tel:${SITE_CONFIG.phone}`}
+                onClick={()=>trackPhoneClick("packagePage-CTA")}
                   className="
                     inline-flex
                     items-center

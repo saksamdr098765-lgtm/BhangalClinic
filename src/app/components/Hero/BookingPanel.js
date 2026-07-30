@@ -1,5 +1,6 @@
 "use client";
 
+import { trackPageNavigation } from "@/app/lib/tracking";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -203,6 +204,7 @@ healthAreas.map((item)=>(
 
 <Link
 href={`/packages?tag=${item.title.toLocaleLowerCase()}`}
+ onClick={()=>{trackPageNavigation(`hero-BookingPanel-${item.title.toLocaleLowerCase()}`)}}
 key={item.title}
 
 className="
@@ -392,7 +394,7 @@ font-bold
 
 <button
 
-onClick={()=>router.push("/packages")}
+onClick={()=> {trackPageNavigation("Hero-BookingPanel-Packages");router.push("/packages")}}
 
 className="
 mt-4

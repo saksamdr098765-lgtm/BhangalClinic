@@ -18,6 +18,7 @@ import {
   FaFileMedical,
 } from "react-icons/fa6";
 import Link from "next/link";
+import { trackPackageClick, trackSearch } from "@/app/lib/tracking";
 
 
 const fadeUp = {
@@ -45,6 +46,7 @@ const router=useRouter();
 
 
 const handleSearch=()=>{
+  trackSearch(`packagesPage-${query}`)
 
 if(!query.trim()) return;
 
@@ -640,6 +642,7 @@ text-slate-900
 
 <Link
 href="/packages/bcl-med-health-pro-package"
+onClick={()=>{trackPackageClick(`packagesPage-bcl-med-health-pro-package`)}}
 className="
 flex
 h-14

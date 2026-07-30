@@ -9,12 +9,33 @@ import {
   FiCoffee,
 } from "react-icons/fi";
 import { defaultTheme, testTheme } from "../data/tests";
+import { trackTestClick } from "../lib/tracking";
+import SITE_CONFIG from "../SITE_CONFIG";
 
 
-export default function TestCard({ test, handleWhatsApp }) {
+export default function TestCard({ test ,location}) {
   const theme = testTheme[test.organ] || defaultTheme;
   const Icon = theme.icon;
+  const handleWhatsApp = (test) => {
+    trackTestClick(`${location}-${test.name}`)
+  const message = `Hello,
 
+I would like to book the following test.
+
+*Test:* ${test.name}
+*Description:* ${test.desc}
+*Price:* ${test.price}
+
+Please share the available slots and booking process.
+
+Thank you.`;
+
+  const url = `https://wa.me/${SITE_CONFIG.whatsapp}?text=${encodeURIComponent(
+    message
+  )}`;
+
+  window.open(url, "_blank");
+};
   return (
     <motion.article
       initial={{ opacity: 0, y: 20 }}

@@ -18,6 +18,7 @@ import {
 } from "react-icons/fa6";
 
 import SITE_CONFIG from "../SITE_CONFIG";
+import { trackPageNavigation, trackPhoneClick } from "../lib/tracking";
 
 
 export default function FooterCTA() {
@@ -214,6 +215,7 @@ sm:flex-row
 <Link
 
 href="/contact"
+onClick={()=>{trackPageNavigation("home-CTA-BookTEST")}}
 
 className="
 flex
@@ -251,6 +253,7 @@ Book Test
 <a
 
 href={`tel:${SITE_CONFIG.phone}`}
+onClick={()=>trackPhoneClick("home-CTa")}
 
 className="
 flex
@@ -635,6 +638,7 @@ font-black
 
 <Link
 href="/packages"
+onClick={()=>trackPageNavigation("home-CTA-packages")}
 className="
 flex
 h-12

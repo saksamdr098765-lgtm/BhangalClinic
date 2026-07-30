@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
+import { trackPackageClick } from "../lib/tracking";
 
 const featured = {
   title: "Full Body Checkup",
@@ -85,6 +86,7 @@ export default function LifestyleWellnessSection() {
         >
           <Link
             href={`/packages?tag=${featured.slug}`}
+            onClick={()=>{trackPackageClick(`LifestyleWellness-${featured.slug}`)}}
             className="group relative flex flex-col overflow-hidden rounded-[36px] bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-700 p-8 text-white shadow-2xl lg:flex-row lg:items-center lg:justify-between lg:p-14"
           >
             <div className="max-w-xl">
@@ -136,6 +138,7 @@ export default function LifestyleWellnessSection() {
     >
       <Link
         href={`/packages?tag=${item.slug}`}
+            onClick={()=>{trackPackageClick(`LifestyleWellness-${item.slug}`)}}
         className="group relative flex h-full overflow-hidden rounded-[30px] border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl"
       >
         {/* Background Decoration */}

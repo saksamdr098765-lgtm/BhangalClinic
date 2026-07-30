@@ -3,6 +3,7 @@
 import { packages } from "@/app/data/packages";
 import { tests } from "@/app/data/tests";
 import { bookingSchema } from "@/app/lib/BookingSchema";
+import { trackBookingForm } from "@/app/lib/tracking";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import {
@@ -38,7 +39,7 @@ const handleChange = (e) => {
 };
 const handleSubmit = async (e) => {
   e.preventDefault();
-
+trackBookingForm()
   const bookingData = {
     ...form,
     homeCollection,

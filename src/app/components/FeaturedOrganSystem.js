@@ -17,6 +17,7 @@ import {
   GiKidneys,
   GiLiver,
 } from "react-icons/gi";
+import { trackPackageClick } from "../lib/tracking";
 
 const organs = [
   {
@@ -121,6 +122,7 @@ export default function FeaturedOrgansSection() {
               >
                 <Link
                   href={`/packages?tag=${item.slug}`}
+                  onClick={()=>{trackPackageClick(`organ-${item.slug}`)}}
                   className={`group flex aspect-square flex-col items-center justify-center rounded-3xl border border-slate-200 bg-gradient-to-br ${theme.bg} p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl`}
                 >
                   <div
