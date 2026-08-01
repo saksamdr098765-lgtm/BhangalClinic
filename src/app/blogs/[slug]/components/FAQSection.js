@@ -1,10 +1,8 @@
-"use client";
 
-import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
+import FAQAccordion from "./FaqAccordian";
 
 export default function FAQSection({ faq = [] }) {
-  const [openIndex, setOpenIndex] = useState(0);
 
   if (!faq.length) return null;
 
@@ -27,47 +25,7 @@ export default function FAQSection({ faq = [] }) {
       </div>
 
       {/* FAQ */}
-      <div className="space-y-3 sm:space-y-4">
-        {faq.map((item, index) => {
-          const isOpen = openIndex === index;
-
-          return (
-            <div
-              key={index}
-              className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md"
-            >
-              <button
-                onClick={() => setOpenIndex(isOpen ? -1 : index)}
-                className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left sm:px-6"
-              >
-                <h3 className="flex-1 text-base font-semibold leading-7 text-slate-900 sm:text-lg">
-                  {item.question}
-                </h3>
-
-                <FiChevronDown
-                  className={`h-5 w-5 shrink-0 text-sky-600 transition-transform duration-300 ${
-                    isOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              <div
-                className={`grid transition-all duration-300 ease-in-out ${
-                  isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-                }`}
-              >
-                <div className="overflow-hidden">
-                  <div className="border-t border-slate-100 px-5 py-5 sm:px-6">
-                    <p className="text-sm leading-7 text-slate-600 sm:text-base sm:leading-8">
-                      {item.answer}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+    <FAQAccordion faq={faq}></FAQAccordion>
     </section>
   );
 }

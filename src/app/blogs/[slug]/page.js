@@ -13,6 +13,8 @@ import TableOfContents from "./components/TableOfContent";
 import RelatedPackages from "./components/RelatedPackages";
 import { getBlogSchema } from "@/schema/BlogSchema";
 import SITE_CONFIG from "@/app/SITE_CONFIG";
+import BlogCTA from "./components/BlogCTA";
+import BlogQuickInfo from "./components/BlogQuickInfo";
 
 export async function generateStaticParams() {
   return blogs.map((blog) => ({
@@ -121,7 +123,7 @@ export default async function BlogPage({ params }) {
             <Breadcrumb blog={blog} />
 
             <BlogHero blog={blog} />
-
+<BlogQuickInfo blog={blog}></BlogQuickInfo>
           </div>
         </section>
 
@@ -148,6 +150,7 @@ export default async function BlogPage({ params }) {
       <BlogContent content={blog.content} />
 
       <FAQSection faq={blog.faq} />
+      <BlogCTA></BlogCTA>
 <RelatedPackages
     relatedPackages={blog.relatedPackages}
 />

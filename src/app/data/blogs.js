@@ -56,6 +56,16 @@ relatedPackages: [
     "DK Bhangal Lab",
   ],
 },
+ quickInfo: {
+    testName: "Vitamin D (25-OH) Test",
+    price: "₹899",
+    sample: "Blood Sample",
+    fasting: "Not Required",
+    reportTime: "Same Day",
+    homeCollection: "Available",
+    recommendedFor: "Fatigue, Bone Pain, Muscle Weakness",
+    booking: "Online / Phone / WhatsApp",
+  },
 
 tags: [
   "Vitamin D Deficiency",
@@ -173,7 +183,22 @@ tags: [
     level: 2,
     text: "How is Vitamin D Deficiency Diagnosed?",
   },
-
+{
+  type: "heading",
+  level: 2,
+  text: "Normal Vitamin D Levels",
+},
+{
+  type: "table",
+  title: "Vitamin D (25-OH) Blood Test Reference Range",
+  headers: ["Vitamin D Level", "Interpretation"],
+  rows: [
+    ["Below 20 ng/mL", "Deficient"],
+    ["20–29 ng/mL", "Insufficient"],
+    ["30–100 ng/mL", "Normal"],
+    ["Above 100 ng/mL", "High (May Require Evaluation)"],
+  ],
+},
   {
     type: "paragraph",
     text: "The most reliable way to diagnose Vitamin D deficiency is through a 25-hydroxy Vitamin D blood test. This laboratory test measures the amount of Vitamin D circulating in the bloodstream and helps healthcare professionals determine whether your levels are adequate, insufficient, or deficient. Based on the results, your doctor may recommend dietary changes, supplements, or further investigations if an underlying medical condition is suspected.",
@@ -266,6 +291,26 @@ tags: [
     type: "paragraph",
     text: "Vitamin D is essential for maintaining healthy bones, muscles, and immunity. Because deficiency often develops silently, regular health screening plays an important role in early detection. If you frequently experience fatigue, muscle weakness, bone pain, or recurrent infections, consulting a healthcare professional and undergoing a Vitamin D blood test can provide valuable insight into your overall health. Early diagnosis and appropriate treatment can help prevent long-term complications and improve quality of life.",
   },
+  {
+  type: "references",
+  items: [
+    {
+      title: "Vitamin D - Fact Sheet for Health Professionals",
+      publisher: "National Institutes of Health (NIH)",
+      url: "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+    },
+    {
+      title: "Vitamin D",
+      publisher: "MedlinePlus",
+      url: "https://medlineplus.gov/vitamind.html",
+    },
+    {
+      title: "Vitamin D",
+      publisher: "Mayo Clinic",
+      url: "https://www.mayoclinic.org/",
+    },
+  ],
+}
 ],
 
     faq: [
@@ -288,353 +333,357 @@ tags: [
       },
     ],
   },
-  {
-  id: 2,
+//   {
+//   id: 2,
 
-  slug: "vitamin-b12-deficiency",
+//   slug: "vitamin-b12-deficiency",
 
-  title:
-    "Vitamin B12 Deficiency: Symptoms, Causes, Diagnosis & Treatment",
+//   title:
+//     "Vitamin B12 Deficiency: Symptoms, Causes, Diagnosis & Treatment",
 
-  excerpt:
-    "Learn about Vitamin B12 deficiency, including its symptoms, causes, diagnosis, treatment, prevention, and the importance of early blood testing for better health.",
+//   excerpt:
+//     "Learn about Vitamin B12 deficiency, including its symptoms, causes, diagnosis, treatment, prevention, and the importance of early blood testing for better health.",
 
-  category: "Health Tips",
+//   category: "Health Tips",
 
-  author: {
-    name: "DK Bhangal Lab",
-    image: "/team/author.jpg",
-  },
+//   author: {
+//     name: "DK Bhangal Lab",
+//     image: "/team/author.jpg",
+//   },
 
-  publishedAt: "July 20, 2026",
+//   publishedAt: "July 20, 2026",
 
-  readingTime: "9 min read",
+//   readingTime: "9 min read",
 
-  coverImage: "/blogs/vitamin-b12/cover.webp",
+//   coverImage: "/blogs/vitamin-b12/cover.webp",
 
-  featured: false,
+//   featured: false,
 
-  relatedPackages: [
-    "bhangal-ayush-profile-3",
-    "bhangal-ayush-profile-3-1",
-    "bhangal-master-health-screen",
-    "bcl-med-pro-65-package",
-    "bhangal-senior-citizen-profile",
-    "bcl-female-4-package",
-  ],
+//   relatedPackages: [
+//     "bhangal-ayush-profile-3",
+//     "bhangal-ayush-profile-3-1",
+//     "bhangal-master-health-screen",
+//     "bcl-med-pro-65-package",
+//     "bhangal-senior-citizen-profile",
+//     "bcl-female-4-package",
+//   ],
 
-seo: {
-  title:
-    "Vitamin B12 Deficiency: Symptoms, Causes, Diagnosis & Treatment | DK Bhangal Lab",
+// seo: {
+//   title:
+//     "Vitamin B12 Deficiency: Symptoms, Causes, Diagnosis & Treatment | DK Bhangal Lab",
 
-  description:
-    "Learn about Vitamin B12 deficiency, including symptoms, causes, diagnosis, blood tests, treatment options, and prevention. Expert health information from DK Bhangal Lab.",
+//   description:
+//     "Learn about Vitamin B12 deficiency, including symptoms, causes, diagnosis, blood tests, treatment options, and prevention. Expert health information from DK Bhangal Lab.",
 
-  keywords: [
-    "Vitamin B12 deficiency",
-    "Vitamin B12 symptoms",
-    "Vitamin B12 test",
-    "Vitamin B12 blood test",
-    "Low Vitamin B12",
-    "Vitamin B12 treatment",
-    "Vitamin B12 diagnosis",
-    "Health blog",
-    "Diagnostic laboratory",
-    "DK Bhangal Lab",
-  ],
-},
+//   keywords: [
+//     "Vitamin B12 deficiency",
+//     "Vitamin B12 symptoms",
+//     "Vitamin B12 test",
+//     "Vitamin B12 blood test",
+//     "Low Vitamin B12",
+//     "Vitamin B12 treatment",
+//     "Vitamin B12 diagnosis",
+//     "Health blog",
+//     "Diagnostic laboratory",
+//     "DK Bhangal Lab",
+//   ],
+// },
 
-tags: [
-  "Vitamin B12 Deficiency",
-  "Vitamin B12",
-  "Blood Tests",
-  "Nutrition",
-  "Preventive Healthcare",
-],
+// tags: [
+//   "Vitamin B12 Deficiency",
+//   "Vitamin B12",
+//   "Blood Tests",
+//   "Nutrition",
+//   "Preventive Healthcare",
+// ],
 
-  content: [{
-  type: "paragraph",
-  text: "Vitamin B12 deficiency is a common nutritional disorder that affects millions of people worldwide. Vitamin B12, also known as cobalamin, is an essential water-soluble vitamin required for healthy red blood cell formation, proper nerve function, DNA synthesis, and energy production. Because the human body cannot produce Vitamin B12 on its own, it must be obtained through food or supplements. When the body does not receive enough Vitamin B12 or cannot absorb it effectively, deficiency develops gradually and may lead to fatigue, weakness, nerve damage, anemia, and cognitive problems. Since the symptoms often appear slowly, many people remain undiagnosed for months or even years. Early detection through a simple blood test allows timely treatment and helps prevent long-term health complications.",
-},
+//   content: [{
+//   type: "paragraph",
+//   text: "Vitamin B12 deficiency is a common nutritional disorder that affects millions of people worldwide. Vitamin B12, also known as cobalamin, is an essential water-soluble vitamin required for healthy red blood cell formation, proper nerve function, DNA synthesis, and energy production. Because the human body cannot produce Vitamin B12 on its own, it must be obtained through food or supplements. When the body does not receive enough Vitamin B12 or cannot absorb it effectively, deficiency develops gradually and may lead to fatigue, weakness, nerve damage, anemia, and cognitive problems. Since the symptoms often appear slowly, many people remain undiagnosed for months or even years. Early detection through a simple blood test allows timely treatment and helps prevent long-term health complications.",
+// },
 
-{
-  type: "image",
-  src: "/blogs/vitamin-b12/image-1.webp",
-  alt: "Foods Rich in Vitamin B12",
-  caption: "Animal-based foods such as eggs, fish, dairy products, and meat are excellent natural sources of Vitamin B12.",
-},
+// {
+//   type: "image",
+//   src: "/blogs/vitamin-b12/image-1.webp",
+//   alt: "Foods Rich in Vitamin B12",
+//   caption: "Animal-based foods such as eggs, fish, dairy products, and meat are excellent natural sources of Vitamin B12.",
+// },
 
-{
-  type: "heading",
-  level: 2,
-  text: "What is Vitamin B12?",
-},
+// {
+//   type: "heading",
+//   level: 2,
+//   text: "What is Vitamin B12?",
+// },
 
-{
-  type: "paragraph",
-  text: "Vitamin B12 is an essential nutrient that plays a crucial role in maintaining overall health. It helps the body produce healthy red blood cells, supports the nervous system, and assists in DNA production. Adequate Vitamin B12 levels are also important for maintaining brain function, improving concentration, and converting food into energy. Since this vitamin is primarily found in animal-based foods, strict vegetarians and vegans are more likely to develop deficiency unless they consume fortified foods or supplements. Certain digestive disorders, medications, and age-related changes can also reduce Vitamin B12 absorption, making regular health checkups increasingly important.",
-},
+// {
+//   type: "paragraph",
+//   text: "Vitamin B12 is an essential nutrient that plays a crucial role in maintaining overall health. It helps the body produce healthy red blood cells, supports the nervous system, and assists in DNA production. Adequate Vitamin B12 levels are also important for maintaining brain function, improving concentration, and converting food into energy. Since this vitamin is primarily found in animal-based foods, strict vegetarians and vegans are more likely to develop deficiency unless they consume fortified foods or supplements. Certain digestive disorders, medications, and age-related changes can also reduce Vitamin B12 absorption, making regular health checkups increasingly important.",
+// },
 
-{
-  type: "heading",
-  level: 2,
-  text: "Symptoms of Vitamin B12 Deficiency",
-},
+// {
+//   type: "heading",
+//   level: 2,
+//   text: "Symptoms of Vitamin B12 Deficiency",
+// },
 
-{
-  type: "paragraph",
-  text: "The symptoms of Vitamin B12 deficiency can vary depending on its severity and duration. Initially, many people experience mild fatigue or weakness, but prolonged deficiency may affect the nervous system and lead to more serious health problems. Because these symptoms are often mistaken for stress or aging, laboratory testing is the most reliable way to confirm the diagnosis.",
-},
+// {
+//   type: "paragraph",
+//   text: "The symptoms of Vitamin B12 deficiency can vary depending on its severity and duration. Initially, many people experience mild fatigue or weakness, but prolonged deficiency may affect the nervous system and lead to more serious health problems. Because these symptoms are often mistaken for stress or aging, laboratory testing is the most reliable way to confirm the diagnosis.",
+// },
 
-{
-  type: "list",
-  items: [
-    "Persistent tiredness and fatigue",
-    "Weakness or reduced stamina",
-    "Pale or yellowish skin",
-    "Shortness of breath",
-    "Dizziness",
-    "Numbness or tingling in hands and feet",
-    "Difficulty walking or poor balance",
-    "Memory problems",
-    "Difficulty concentrating",
-    "Mood changes, anxiety, or depression",
-    "Frequent headaches",
-    "Glossitis (swollen, sore tongue)",
-  ],
-},
+// {
+//   type: "list",
+//   items: [
+//     "Persistent tiredness and fatigue",
+//     "Weakness or reduced stamina",
+//     "Pale or yellowish skin",
+//     "Shortness of breath",
+//     "Dizziness",
+//     "Numbness or tingling in hands and feet",
+//     "Difficulty walking or poor balance",
+//     "Memory problems",
+//     "Difficulty concentrating",
+//     "Mood changes, anxiety, or depression",
+//     "Frequent headaches",
+//     "Glossitis (swollen, sore tongue)",
+//   ],
+// },
 
-{
-  type: "tip",
-  title: "Health Tip",
-  text: "Persistent fatigue and tingling sensations in your hands or feet should never be ignored. A simple Vitamin B12 blood test can help identify deficiency before permanent nerve damage develops.",
-},
-{
-  type: "heading",
-  level: 2,
-  text: "Common Causes of Vitamin B12 Deficiency",
-},
+// {
+//   type: "tip",
+//   title: "Health Tip",
+//   text: "Persistent fatigue and tingling sensations in your hands or feet should never be ignored. A simple Vitamin B12 blood test can help identify deficiency before permanent nerve damage develops.",
+// },
+// {
+//   type: "heading",
+//   level: 2,
+//   text: "Common Causes of Vitamin B12 Deficiency",
+// },
 
-{
-  type: "paragraph",
-  text: "Vitamin B12 deficiency develops when the body does not receive enough Vitamin B12 through diet or cannot absorb it efficiently from the digestive tract. While inadequate dietary intake is a common reason, many medical conditions and medications can also interfere with Vitamin B12 absorption. Identifying the underlying cause is important because treatment varies depending on the reason behind the deficiency.",
-},
+// {
+//   type: "paragraph",
+//   text: "Vitamin B12 deficiency develops when the body does not receive enough Vitamin B12 through diet or cannot absorb it efficiently from the digestive tract. While inadequate dietary intake is a common reason, many medical conditions and medications can also interfere with Vitamin B12 absorption. Identifying the underlying cause is important because treatment varies depending on the reason behind the deficiency.",
+// },
 
-{
-  type: "list",
-  items: [
-    "Strict vegetarian or vegan diet",
-    "Poor dietary intake of animal-based foods",
-    "Pernicious anemia",
-    "Long-term use of acid-reducing medications",
-    "Metformin use in people with diabetes",
-    "Crohn's disease",
-    "Celiac disease",
-    "Previous stomach or intestinal surgery",
-    "Digestive disorders affecting nutrient absorption",
-    "Increasing age leading to reduced Vitamin B12 absorption",
-  ],
-},
+// {
+//   type: "list",
+//   items: [
+//     "Strict vegetarian or vegan diet",
+//     "Poor dietary intake of animal-based foods",
+//     "Pernicious anemia",
+//     "Long-term use of acid-reducing medications",
+//     "Metformin use in people with diabetes",
+//     "Crohn's disease",
+//     "Celiac disease",
+//     "Previous stomach or intestinal surgery",
+//     "Digestive disorders affecting nutrient absorption",
+//     "Increasing age leading to reduced Vitamin B12 absorption",
+//   ],
+// },
 
-{
-  type: "image",
-  src: "/blogs/vitamin-b12/image-2.webp",
-  alt: "Vitamin B12 Blood Test",
-  caption: "A Vitamin B12 blood test is the most reliable way to detect deficiency before serious complications occur.",
-},
+// {
+//   type: "image",
+//   src: "/blogs/vitamin-b12/image-2.webp",
+//   alt: "Vitamin B12 Blood Test",
+//   caption: "A Vitamin B12 blood test is the most reliable way to detect deficiency before serious complications occur.",
+// },
 
-{
-  type: "heading",
-  level: 2,
-  text: "Who is at Higher Risk?",
-},
+// {
+//   type: "heading",
+//   level: 2,
+//   text: "Who is at Higher Risk?",
+// },
 
-{
-  type: "paragraph",
-  text: "Although Vitamin B12 deficiency can affect anyone, certain groups have a significantly higher risk. Older adults often absorb less Vitamin B12 because stomach acid production naturally decreases with age. People following vegetarian or vegan diets may not consume enough Vitamin B12 since it is primarily found in animal-derived foods. Individuals with digestive disorders, autoimmune diseases, or those taking medications that reduce stomach acid are also more likely to develop deficiency. Pregnant women, breastfeeding mothers, and patients recovering from stomach surgery should discuss Vitamin B12 monitoring with their healthcare provider.",
-},
+// {
+//   type: "paragraph",
+//   text: "Although Vitamin B12 deficiency can affect anyone, certain groups have a significantly higher risk. Older adults often absorb less Vitamin B12 because stomach acid production naturally decreases with age. People following vegetarian or vegan diets may not consume enough Vitamin B12 since it is primarily found in animal-derived foods. Individuals with digestive disorders, autoimmune diseases, or those taking medications that reduce stomach acid are also more likely to develop deficiency. Pregnant women, breastfeeding mothers, and patients recovering from stomach surgery should discuss Vitamin B12 monitoring with their healthcare provider.",
+// },
 
-{
-  type: "heading",
-  level: 2,
-  text: "How is Vitamin B12 Deficiency Diagnosed?",
-},
+// {
+//   type: "heading",
+//   level: 2,
+//   text: "How is Vitamin B12 Deficiency Diagnosed?",
+// },
 
-{
-  type: "paragraph",
-  text: "Vitamin B12 deficiency is diagnosed through laboratory investigations combined with a medical evaluation. The primary test is a Vitamin B12 blood test, which measures the amount of Vitamin B12 circulating in the bloodstream. Depending on the symptoms and initial results, healthcare providers may recommend additional tests such as a Complete Blood Count (CBC), Folate Test, Methylmalonic Acid (MMA), or Homocysteine Test. These investigations help determine the severity of the deficiency and identify whether anemia or nerve involvement is present.",
-},
+// {
+//   type: "paragraph",
+//   text: "Vitamin B12 deficiency is diagnosed through laboratory investigations combined with a medical evaluation. The primary test is a Vitamin B12 blood test, which measures the amount of Vitamin B12 circulating in the bloodstream. Depending on the symptoms and initial results, healthcare providers may recommend additional tests such as a Complete Blood Count (CBC), Folate Test, Methylmalonic Acid (MMA), or Homocysteine Test. These investigations help determine the severity of the deficiency and identify whether anemia or nerve involvement is present.",
+// },
 
-{
-  type: "list",
-  items: [
-    "Vitamin B12 Blood Test",
-    "Complete Blood Count (CBC)",
-    "Folate Level Test",
-    "Methylmalonic Acid (MMA) Test",
-    "Homocysteine Test",
-    "Peripheral Blood Smear (if recommended)",
-  ],
-},
+// {
+//   type: "paragraph",
+//   text: "Your Vitamin D report should always be interpreted by a healthcare professional. Factors such as age, medical conditions, and symptoms may influence the clinical significance of your results.",
+// },
+// {
+//   type: "list",
+//   items: [
+//     "Vitamin B12 Blood Test",
+//     "Complete Blood Count (CBC)",
+//     "Folate Level Test",
+//     "Methylmalonic Acid (MMA) Test",
+//     "Homocysteine Test",
+//     "Peripheral Blood Smear (if recommended)",
+//   ],
+// },
 
-{
-  type: "warning",
-  title: "Important",
-  text: "Do not start Vitamin B12 supplements without proper evaluation if you have persistent fatigue, numbness, or anemia. Self-treatment may temporarily improve blood test results while delaying the diagnosis of an underlying medical condition requiring specific treatment.",
-},
-{
-  type: "heading",
-  level: 2,
-  text: "Best Food Sources of Vitamin B12",
-},
+// {
+//   type: "warning",
+//   title: "Important",
+//   text: "Do not start Vitamin B12 supplements without proper evaluation if you have persistent fatigue, numbness, or anemia. Self-treatment may temporarily improve blood test results while delaying the diagnosis of an underlying medical condition requiring specific treatment.",
+// },
+// {
+//   type: "heading",
+//   level: 2,
+//   text: "Best Food Sources of Vitamin B12",
+// },
 
-{
-  type: "paragraph",
-  text: "A balanced diet is one of the best ways to maintain healthy Vitamin B12 levels. Since Vitamin B12 is naturally found in animal-based foods, individuals who regularly consume these foods are less likely to develop deficiency. Vegetarians and vegans should consider fortified foods or supplements after consulting a healthcare professional. Maintaining a nutritious diet alongside routine health checkups can significantly reduce the risk of deficiency.",
-},
+// {
+//   type: "paragraph",
+//   text: "A balanced diet is one of the best ways to maintain healthy Vitamin B12 levels. Since Vitamin B12 is naturally found in animal-based foods, individuals who regularly consume these foods are less likely to develop deficiency. Vegetarians and vegans should consider fortified foods or supplements after consulting a healthcare professional. Maintaining a nutritious diet alongside routine health checkups can significantly reduce the risk of deficiency.",
+// },
 
-{
-  type: "list",
-  items: [
-    "Fish such as salmon, tuna, and sardines",
-    "Chicken and lean meat",
-    "Liver and organ meats",
-    "Eggs",
-    "Milk and dairy products",
-    "Cheese",
-    "Yogurt",
-    "Fortified breakfast cereals",
-    "Fortified plant-based milk",
-    "Nutritional yeast fortified with Vitamin B12",
-  ],
-},
+// {
+//   type: "list",
+//   items: [
+//     "Fish such as salmon, tuna, and sardines",
+//     "Chicken and lean meat",
+//     "Liver and organ meats",
+//     "Eggs",
+//     "Milk and dairy products",
+//     "Cheese",
+//     "Yogurt",
+//     "Fortified breakfast cereals",
+//     "Fortified plant-based milk",
+//     "Nutritional yeast fortified with Vitamin B12",
+//   ],
+// },
 
-{
-  type: "image",
-  src: "/blogs/vitamin-b12/image-3.webp",
-  alt: "Vitamin B12 Rich Foods",
-  caption: "Including Vitamin B12-rich foods in your daily diet helps support healthy nerves, red blood cells, and energy production.",
-},
+// {
+//   type: "image",
+//   src: "/blogs/vitamin-b12/image-3.webp",
+//   alt: "Vitamin B12 Rich Foods",
+//   caption: "Including Vitamin B12-rich foods in your daily diet helps support healthy nerves, red blood cells, and energy production.",
+// },
 
-{
-  type: "heading",
-  level: 2,
-  text: "Treatment Options",
-},
+// {
+//   type: "heading",
+//   level: 2,
+//   text: "Treatment Options",
+// },
 
-{
-  type: "paragraph",
-  text: "Treatment for Vitamin B12 deficiency depends on the underlying cause and the severity of the deficiency. Mild cases caused by poor dietary intake can often be managed with Vitamin B12-rich foods and oral supplements. Moderate or severe deficiency, especially when neurological symptoms are present, may require Vitamin B12 injections followed by maintenance therapy. Individuals with absorption disorders may need lifelong supplementation. Regular blood tests are important to monitor treatment progress and ensure Vitamin B12 levels return to the normal range.",
-},
+// {
+//   type: "paragraph",
+//   text: "Treatment for Vitamin B12 deficiency depends on the underlying cause and the severity of the deficiency. Mild cases caused by poor dietary intake can often be managed with Vitamin B12-rich foods and oral supplements. Moderate or severe deficiency, especially when neurological symptoms are present, may require Vitamin B12 injections followed by maintenance therapy. Individuals with absorption disorders may need lifelong supplementation. Regular blood tests are important to monitor treatment progress and ensure Vitamin B12 levels return to the normal range.",
+// },
 
-{
-  type: "heading",
-  level: 2,
-  text: "Possible Complications if Left Untreated",
-},
+// {
+//   type: "heading",
+//   level: 2,
+//   text: "Possible Complications if Left Untreated",
+// },
 
-{
-  type: "paragraph",
-  text: "Ignoring Vitamin B12 deficiency for a prolonged period can result in serious health complications. While anemia often improves after treatment, long-standing nerve damage may become difficult to reverse. This is why early diagnosis and timely medical intervention are extremely important.",
-},
+// {
+//   type: "paragraph",
+//   text: "Ignoring Vitamin B12 deficiency for a prolonged period can result in serious health complications. While anemia often improves after treatment, long-standing nerve damage may become difficult to reverse. This is why early diagnosis and timely medical intervention are extremely important.",
+// },
 
-{
-  type: "list",
-  items: [
-    "Megaloblastic anemia",
-    "Permanent nerve damage",
-    "Memory impairment",
-    "Difficulty maintaining balance",
-    "Reduced concentration",
-    "Mood disorders",
-    "Muscle weakness",
-    "Increased risk of falls in older adults",
-  ],
-},
+// {
+//   type: "list",
+//   items: [
+//     "Megaloblastic anemia",
+//     "Permanent nerve damage",
+//     "Memory impairment",
+//     "Difficulty maintaining balance",
+//     "Reduced concentration",
+//     "Mood disorders",
+//     "Muscle weakness",
+//     "Increased risk of falls in older adults",
+//   ],
+// },
 
-{
-  type: "success",
-  title: "Good News",
-  text: "Most people recover completely when Vitamin B12 deficiency is diagnosed early and treated appropriately. Routine blood testing allows healthcare providers to monitor recovery and adjust treatment whenever necessary.",
-},
+// {
+//   type: "success",
+//   title: "Good News",
+//   text: "Most people recover completely when Vitamin B12 deficiency is diagnosed early and treated appropriately. Routine blood testing allows healthcare providers to monitor recovery and adjust treatment whenever necessary.",
+// },
 
-{
-  type: "heading",
-  level: 2,
-  text: "How to Prevent Vitamin B12 Deficiency",
-},
+// {
+//   type: "heading",
+//   level: 2,
+//   text: "How to Prevent Vitamin B12 Deficiency",
+// },
 
-{
-  type: "paragraph",
-  text: "Preventing Vitamin B12 deficiency is often easier than treating its long-term complications. Eating a balanced diet, understanding personal risk factors, and scheduling regular preventive health checkups can help maintain healthy Vitamin B12 levels throughout life.",
-},
+// {
+//   type: "paragraph",
+//   text: "Preventing Vitamin B12 deficiency is often easier than treating its long-term complications. Eating a balanced diet, understanding personal risk factors, and scheduling regular preventive health checkups can help maintain healthy Vitamin B12 levels throughout life.",
+// },
 
-{
-  type: "list",
-  items: [
-    "Eat Vitamin B12-rich foods regularly",
-    "Choose fortified foods if you follow a vegetarian or vegan diet",
-    "Discuss supplements with your healthcare provider when needed",
-    "Manage digestive disorders appropriately",
-    "Avoid self-medicating with unnecessary supplements",
-    "Schedule routine preventive health screenings",
-    "Monitor Vitamin B12 levels if you take Metformin or acid-reducing medicines long-term",
-  ],
-},
-{
-  type: "heading",
-  level: 2,
-  text: "Conclusion",
-},
+// {
+//   type: "list",
+//   items: [
+//     "Eat Vitamin B12-rich foods regularly",
+//     "Choose fortified foods if you follow a vegetarian or vegan diet",
+//     "Discuss supplements with your healthcare provider when needed",
+//     "Manage digestive disorders appropriately",
+//     "Avoid self-medicating with unnecessary supplements",
+//     "Schedule routine preventive health screenings",
+//     "Monitor Vitamin B12 levels if you take Metformin or acid-reducing medicines long-term",
+//   ],
+// },
+// {
+//   type: "heading",
+//   level: 2,
+//   text: "Conclusion",
+// },
 
-{
-  type: "paragraph",
-  text: "Vitamin B12 deficiency is a common but often overlooked health condition that can significantly affect your quality of life if left untreated. Because the symptoms usually develop gradually, many individuals attribute fatigue, weakness, memory problems, or tingling sensations to stress or aging rather than an underlying nutritional deficiency. Fortunately, Vitamin B12 deficiency can be diagnosed accurately through simple laboratory blood tests and treated effectively when identified early. Maintaining a balanced diet, understanding your personal risk factors, and undergoing regular preventive health screenings are essential steps toward protecting your long-term health. If you experience persistent fatigue, numbness, difficulty concentrating, or symptoms of anemia, consult a healthcare professional and consider getting your Vitamin B12 levels tested. Early diagnosis and timely treatment can help restore energy, improve nerve function, and prevent long-term complications.",
-},
+// {
+//   type: "paragraph",
+//   text: "Vitamin B12 deficiency is a common but often overlooked health condition that can significantly affect your quality of life if left untreated. Because the symptoms usually develop gradually, many individuals attribute fatigue, weakness, memory problems, or tingling sensations to stress or aging rather than an underlying nutritional deficiency. Fortunately, Vitamin B12 deficiency can be diagnosed accurately through simple laboratory blood tests and treated effectively when identified early. Maintaining a balanced diet, understanding your personal risk factors, and undergoing regular preventive health screenings are essential steps toward protecting your long-term health. If you experience persistent fatigue, numbness, difficulty concentrating, or symptoms of anemia, consult a healthcare professional and consider getting your Vitamin B12 levels tested. Early diagnosis and timely treatment can help restore energy, improve nerve function, and prevent long-term complications.",
+// },
 
-{
-  type: "success",
-  title: "Key Takeaway",
-  text: "Vitamin B12 deficiency is highly treatable when detected early. Routine blood tests, a balanced diet, appropriate supplementation when required, and regular preventive health checkups are the most effective ways to maintain healthy Vitamin B12 levels and support lifelong brain, nerve, and blood health.",
-},
-  ],
+// {
+//   type: "success",
+//   title: "Key Takeaway",
+//   text: "Vitamin B12 deficiency is highly treatable when detected early. Routine blood tests, a balanced diet, appropriate supplementation when required, and regular preventive health checkups are the most effective ways to maintain healthy Vitamin B12 levels and support lifelong brain, nerve, and blood health.",
+// },
+//   ],
 
-  faq: [
-    {
-      question: "What are the early signs of Vitamin B12 deficiency?",
-      answer:
-        "Early symptoms commonly include fatigue, weakness, dizziness, pale skin, poor concentration, numbness or tingling in the hands and feet, and reduced stamina. Since these symptoms are not specific, a Vitamin B12 blood test is recommended for accurate diagnosis.",
-    },
+//   faq: [
+//     {
+//       question: "What are the early signs of Vitamin B12 deficiency?",
+//       answer:
+//         "Early symptoms commonly include fatigue, weakness, dizziness, pale skin, poor concentration, numbness or tingling in the hands and feet, and reduced stamina. Since these symptoms are not specific, a Vitamin B12 blood test is recommended for accurate diagnosis.",
+//     },
 
-    {
-      question: "How is Vitamin B12 deficiency diagnosed?",
-      answer:
-        "Vitamin B12 deficiency is primarily diagnosed using a Vitamin B12 blood test. Depending on your symptoms, your healthcare provider may also recommend tests such as a Complete Blood Count (CBC), Folate Test, Methylmalonic Acid (MMA), or Homocysteine Test.",
-    },
+//     {
+//       question: "How is Vitamin B12 deficiency diagnosed?",
+//       answer:
+//         "Vitamin B12 deficiency is primarily diagnosed using a Vitamin B12 blood test. Depending on your symptoms, your healthcare provider may also recommend tests such as a Complete Blood Count (CBC), Folate Test, Methylmalonic Acid (MMA), or Homocysteine Test.",
+//     },
 
-    {
-      question: "Who is most likely to develop Vitamin B12 deficiency?",
-      answer:
-        "Older adults, vegetarians, vegans, people with digestive disorders, individuals taking Metformin or acid-reducing medications, and patients who have undergone stomach or intestinal surgery are at increased risk of Vitamin B12 deficiency.",
-    },
+//     {
+//       question: "Who is most likely to develop Vitamin B12 deficiency?",
+//       answer:
+//         "Older adults, vegetarians, vegans, people with digestive disorders, individuals taking Metformin or acid-reducing medications, and patients who have undergone stomach or intestinal surgery are at increased risk of Vitamin B12 deficiency.",
+//     },
 
-    {
-      question: "Can Vitamin B12 deficiency be cured?",
-      answer:
-        "Yes. Most people recover completely when the deficiency is diagnosed early and treated appropriately with dietary improvements, Vitamin B12 supplements, or injections, depending on the underlying cause.",
-    },
+//     {
+//       question: "Can Vitamin B12 deficiency be cured?",
+//       answer:
+//         "Yes. Most people recover completely when the deficiency is diagnosed early and treated appropriately with dietary improvements, Vitamin B12 supplements, or injections, depending on the underlying cause.",
+//     },
 
-    {
-      question: "Which foods are rich in Vitamin B12?",
-      answer:
-        "Excellent dietary sources include fish, meat, eggs, milk, cheese, yogurt, fortified cereals, fortified plant-based milk, and other fortified food products.",
-    },
+//     {
+//       question: "Which foods are rich in Vitamin B12?",
+//       answer:
+//         "Excellent dietary sources include fish, meat, eggs, milk, cheese, yogurt, fortified cereals, fortified plant-based milk, and other fortified food products.",
+//     },
 
-    {
-      question: "How often should I check my Vitamin B12 levels?",
-      answer:
-        "Individuals with risk factors such as vegetarian diets, digestive disorders, diabetes treated with Metformin, or previous Vitamin B12 deficiency should discuss regular monitoring with their healthcare provider. Routine preventive health checkups can help detect deficiency before complications develop.",
-    },
-  ],
-},
+//     {
+//       question: "How often should I check my Vitamin B12 levels?",
+//       answer:
+//         "Individuals with risk factors such as vegetarian diets, digestive disorders, diabetes treated with Metformin, or previous Vitamin B12 deficiency should discuss regular monitoring with their healthcare provider. Routine preventive health checkups can help detect deficiency before complications develop.",
+//     },
+//   ],
+// },
 ];

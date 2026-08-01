@@ -1,5 +1,7 @@
 import Image from "next/image";
 import InfoCard from "./InfoCard";
+import BlogTable from "./BlogTable";
+import BlogReference from "./BlogReference";
 
 export default function BlogContent({ content }) {
   return (
@@ -107,7 +109,14 @@ export default function BlogContent({ content }) {
                 text={block.text}
               />
             );
-
+            case "table":
+  return (
+   <BlogTable key={index} block={block} index={index}></BlogTable>
+  );
+case "references":
+  return (
+<BlogReference block={block} key={index} index={index}></BlogReference>
+  );
           default:
             return null;
         }

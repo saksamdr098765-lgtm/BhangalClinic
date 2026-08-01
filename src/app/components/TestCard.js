@@ -11,9 +11,11 @@ import {
 import { defaultTheme, testTheme } from "../data/tests";
 import { trackTestClick } from "../lib/tracking";
 import SITE_CONFIG from "../SITE_CONFIG";
+import { useRouter } from "next/navigation";
 
 
 export default function TestCard({ test ,location}) {
+  const router=useRouter()
   const theme = testTheme[test.organ] || defaultTheme;
   const Icon = theme.icon;
   const handleWhatsApp = (test) => {
@@ -36,6 +38,15 @@ Thank you.`;
 
   window.open(url, "_blank");
 };
+const handleBookTest=(test)=>{
+if(test.status==="published"){
+router.push(`/tests/${test.slug}`)
+}
+else{
+
+  handleWhatsApp(test)
+}
+}
   return (
     <motion.article
       initial={{ opacity: 0, y: 20 }}
@@ -203,7 +214,7 @@ Thank you.`;
         <div className="mt-auto pt-6">
 
           <button
-            onClick={() => handleWhatsApp(test)}
+            onClick={()=>handleBookTest(test)}
             className={`
               w-full
               h-11

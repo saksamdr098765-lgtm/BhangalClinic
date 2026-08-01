@@ -1,11 +1,8 @@
-"use client";
 
-import { FiBookOpen, FiSearch, FiTrendingUp } from "react-icons/fi";
+import { FiBookOpen } from "react-icons/fi";
 
 export default function BlogHero({
   totalBlogs,
-  search,
-  setSearch,
 }) {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-white to-blue-50">
