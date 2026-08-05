@@ -1,7 +1,6 @@
 import React from 'react'
 import Hero from './components/AboutHero'
 import OurStory from './components/OurStroy'
-import MedicalLeadership from './components/MedicalLeadership'
 import CTA from './components/CTA'
 import { aboutSchema } from '@/schema/aboutSchema'
 import SITE_CONFIG from '../SITE_CONFIG'
@@ -41,7 +40,6 @@ export default function page() {
       <Hero></Hero>
       <Founder></Founder>
       <OurStory></OurStory>
-      {/* <MedicalLeadership></MedicalLeadership> */}
       <CTA></CTA>
     </div>
   )

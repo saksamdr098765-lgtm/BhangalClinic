@@ -1,14 +1,8 @@
-"use client";
 
-import Link from "next/link";
-import { motion } from "framer-motion";
 import {
-  FiArrowRight,
-  FiCalendar,
   FiHome,
 } from "react-icons/fi";
-import SITE_CONFIG from "@/app/SITE_CONFIG";
-import { trackPageNavigation, trackPhoneClick } from "@/app/lib/tracking";
+import CTAButtons from "./CTAButtons";
 
 const stats = [
   {
@@ -45,11 +39,7 @@ export default function CTA() {
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6">
 
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: .6 }}
+        <div
           className="mx-auto max-w-4xl text-center"
         >
 
@@ -82,15 +72,11 @@ export default function CTA() {
 
           </p>
 
-        </motion.div>
+        </div>
 
         {/* Trust Numbers */}
 
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: .15 }}
-          viewport={{ once: true }}
+        <div
           className="mt-20"
         >
 
@@ -117,14 +103,11 @@ export default function CTA() {
 
           </div>
 
-        </motion.div>
+        </div>
                 {/* ================= Action Area ================= */}
 
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: .25 }}
-          viewport={{ once: true }}
+        <div
+
           className="mt-16 grid items-center gap-8 lg:grid-cols-[1fr_auto]"
         >
 
@@ -167,41 +150,14 @@ export default function CTA() {
 
           {/* Buttons */}
 
-          <div className="flex flex-col gap-4">
+       <CTAButtons></CTAButtons>
 
-            <Link
-              href="/contact"
-              onClick={()=>{trackPageNavigation("about-BookHealthCheckup")}}
-              className="group inline-flex items-center justify-center gap-3 rounded-2xl bg-white px-8 py-4 font-semibold text-blue-700 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
-            >
-              Book Health Checkup
-
-              <FiArrowRight className="transition group-hover:translate-x-1" />
-
-            </Link>
-
-            <a
-              href={`tel:${SITE_CONFIG.phone}`}
-              onClick={()=>{trackPhoneClick("about-schedule-call")}}
-              className="inline-flex items-center justify-center gap-3 rounded-2xl border border-white/20 bg-transparent px-8 py-4 font-semibold text-white transition hover:bg-white/10"
-            >
-              <FiCalendar />
-
-              Schedule Home Collection
-
-            </a>
-
-          </div>
-
-        </motion.div>
+        </div>
 
         {/* Bottom Trust Statement */}
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: .35 }}
-          viewport={{ once: true }}
+        <div
+      
           className="mx-auto mt-16 max-w-3xl text-center"
         >
 
@@ -227,7 +183,7 @@ export default function CTA() {
 
           </div>
 
-        </motion.div>
+        </div>
 
       </div>
 

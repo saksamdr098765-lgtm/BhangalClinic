@@ -1,4 +1,3 @@
-"use client";
 
 import Background from "./Background";
 import BookingPanel from "./BookingPanel";

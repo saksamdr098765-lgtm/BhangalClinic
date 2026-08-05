@@ -1,6 +1,4 @@
-"use client";
 
-import { motion } from "framer-motion";
 import { FaHeartbeat } from "react-icons/fa";
 
 import {
@@ -38,18 +36,9 @@ to-white
 {/* Healthcare Glow */}
 
 
-<motion.div
+<div
 
-animate={{
-x:[0,30,0],
-y:[0,-20,0],
-}}
 
-transition={{
-duration:18,
-repeat:Infinity,
-ease:"easeInOut"
-}}
 
 className="
 absolute
@@ -68,18 +57,9 @@ blur-[150px]
 
 
 
-<motion.div
+<div
 
-animate={{
-x:[0,-30,0],
-y:[0,20,0],
-}}
 
-transition={{
-duration:20,
-repeat:Infinity,
-ease:"easeInOut"
-}}
 
 className="
 absolute

@@ -1,7 +1,5 @@
-"use client";
 
-import Link from "next/link";
-import { motion } from "framer-motion";
+
 import {
   FiArrowRight,
   FiHome,
@@ -11,7 +9,7 @@ import {
 
 import { packageTheme, packageThemeMap } from "../data/packages";
 import Image from "next/image";
-import { trackPackageClick } from "../lib/tracking";
+import PackageLink from "./PackageCardLink";
 
 
 export default function PackageCard({
@@ -37,26 +35,8 @@ export default function PackageCard({
 
   return (
 
-    <motion.article
-
-      initial={{
-        opacity:0,
-        y:20
-      }}
-
-      whileInView={{
-        opacity:1,
-        y:0
-      }}
-
-      viewport={{
-        once:true
-      }}
-
-      whileHover={{
-        y:-5
-      }}
-
+    <article
+itemScope itemType="https://schema.org/Product"
    className={`
 relative
 flex
@@ -98,21 +78,21 @@ ${theme.glow}
 
 {/* Package Image */}
 
-{/* Package Image */}
+
 
 <div className="relative mb-4 h-48 overflow-hidden rounded-2xl">
-  <Image
-    src={pkg.image}
-    alt={pkg.name}
-    fill
-    priority={featured}
-    className="object-cover object-top transition-transform duration-500 hover:scale-105"
-    sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
-  />
+ <Image
+  src={pkg.image}
+  alt={`${pkg.name} Health Package`}
+  fill
+  sizes="(max-width:768px) 100vw,(max-width:1200px) 50vw,33vw"
+  priority={featured}
+  className="object-cover object-top transition-transform duration-500 hover:scale-105"
+/>
 </div>
         {/* Header */}
 
-    {/* Header */}
+
 
 <div className="flex items-start gap-3">
   <div
@@ -159,7 +139,7 @@ ${theme.glow}
 
   <div className="mt-2 flex items-end gap-2">
 
-    <h2 className="text-4xl font-black text-slate-900">
+    <h2 itemProp="name" className="text-4xl font-black text-slate-900">
       ₹{pkg.price}
     </h2>
 
@@ -296,53 +276,32 @@ text-emerald-700
         {/* CTA */}
 
 
-        <Link
-onClick={()=>{trackPackageClick(`${location}-${pkg.slug}`)}}
-          href={`/packages/${pkg.slug}`}
+    <PackageLink
+  href={`/packages/${pkg.slug}`}
+  tracking={`${location}-${pkg.slug}`}
+  className={`
+    mt-4
+    flex
+    h-11
+    items-center
+    justify-between
+    rounded-xl
+    px-4
+    text-sm
+    font-semibold
+    text-white
+    shadow-md
+    transition
+    hover:shadow-lg
+    ${theme.button}
+  `}
+>
+  <span>View Package</span>
 
-          className={`
-mt-4
-flex
-h-11
-items-center
-justify-between
-rounded-xl
-px-4
-text-sm
-font-semibold
-text-white
-shadow-md
-transition
-hover:shadow-lg
-${theme.button}
-`}
-
-        >
-
-
-          <span>
-            View Package
-          </span>
-
-
-          <span
-            className="
-flex
-h-7
-w-7
-items-center
-justify-center
-rounded-full
-bg-white/20
-"
-          >
-
-            <FiArrowRight size={15}/>
-
-          </span>
-
-
-        </Link>
+  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/20">
+    <FiArrowRight size={15} />
+  </span>
+</PackageLink>
 
 
 
@@ -355,7 +314,7 @@ bg-white/20
       </div>
 
 
-    </motion.article>
+    </article>
 
   );
 }

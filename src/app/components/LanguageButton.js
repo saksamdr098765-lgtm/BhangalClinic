@@ -1,70 +1,88 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { FiGlobe } from "react-icons/fi";
 import { trackServiceClick } from "../lib/tracking";
 
-const languages = [
+const LANGUAGES = [
   { name: "English", code: "en", flag: "🇬🇧" },
   { name: "Hindi", code: "hi", flag: "🇮🇳" },
   { name: "Punjabi", code: "pa", flag: "🇮🇳" },
-//   { name: "French", code: "fr", flag: "🇫🇷" },
-//   { name: "German", code: "de", flag: "🇩🇪" },
-//   { name: "Spanish", code: "es", flag: "🇪🇸" },
 ];
 
 export default function LanguageButton() {
   const [open, setOpen] = useState(false);
-  const ref = useRef(null);
+  const containerRef = useRef(null);
 
-  const changeLanguage = (lang) => {
-    trackServiceClick("changeLanguage")
-    const interval = setInterval(() => {
+  const changeLanguage = useCallback((lang) => {
+    trackServiceClick("changeLanguage");
+
+    const interval = window.setInterval(() => {
       const select = document.querySelector(".goog-te-combo");
 
-      if (select) {
-        select.value = lang;
-        select.dispatchEvent(new Event("change"));
-        clearInterval(interval);
-        setOpen(false);
-      }
+      if (!select) return;
+
+      select.value = lang;
+      select.dispatchEvent(new Event("change"));
+
+      window.clearInterval(interval);
+      setOpen(false);
     }, 300);
 
-    setTimeout(() => clearInterval(interval), 5000);
-  };
+    window.setTimeout(() => {
+      window.clearInterval(interval);
+    }, 5000);
+  }, []);
 
   useEffect(() => {
-    function handleClick(e) {
-      if (!ref.current?.contains(e.target)) {
+    function handleClickOutside(event) {
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(event.target)
+      ) {
         setOpen(false);
       }
     }
 
-    document.addEventListener("mousedown", handleClick);
+    document.addEventListener("mousedown", handleClickOutside);
 
-    return () =>
-      document.removeEventListener("mousedown", handleClick);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
   return (
-    <div className="relative" ref={ref}>
+    <div
+      ref={containerRef}
+      className="relative"
+    >
       <button
-        onClick={() => setOpen(!open)}
-        className="flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-lg hover:scale-110 transition"
+        type="button"
+        aria-label="Change Language"
+        aria-expanded={open}
+        aria-haspopup="menu"
+        onClick={() => setOpen((prev) => !prev)}
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-lg transition-transform duration-200 hover:scale-110"
       >
         <FiGlobe className="text-2xl text-slate-700" />
       </button>
 
       {open && (
-        <div className="absolute bottom-16 right-0 w-52 overflow-hidden rounded-xl bg-white shadow-2xl border border-slate-200">
-          {languages.map((lang) => (
+        <div
+          role="menu"
+          className="absolute bottom-16 right-0 w-52 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-2xl"
+        >
+          {LANGUAGES.map((lang) => (
             <button
               key={lang.code}
+              type="button"
+              role="menuitem"
               onClick={() => changeLanguage(lang.code)}
-              className="flex w-full items-center gap-3 px-4 py-3 text-left hover:bg-slate-100 transition"
+              className="flex w-full items-center gap-3 px-4 py-3 text-left transition hover:bg-slate-100"
             >
               <span className="text-xl">{lang.flag}</span>
-              <span className="text-sm font-medium">
+
+              <span className="text-sm font-medium text-slate-700">
                 {lang.name}
               </span>
             </button>

@@ -1,15 +1,13 @@
-"use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
+
 import {
   FiArrowRight,
   FiAward,
   FiCheckCircle,
   FiHeart,
 } from "react-icons/fi";
-import { trackPageNavigation } from "@/app/lib/tracking";
+import FounderButtons from "./FounderButtons";
 
 const highlights = [
   "Patient-First Healthcare",
@@ -57,10 +55,8 @@ export default function Founder() {
         <div className="grid gap-12 lg:grid-cols-[460px_1fr] lg:gap-16">
           {/* IMAGE */}
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
+    
             className="relative order-1"
           >
             <div className="absolute inset-5 rounded-[36px] bg-blue-100/50 blur-3xl" />
@@ -68,7 +64,7 @@ export default function Founder() {
             <div className="relative overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-xl sm:rounded-[36px]">
               <div className="relative aspect-[4/5]">
                 <Image
-                  src="/doctor.png"
+                  src="/doctor.webp"
                   fill
                   alt="Founder"
                   className="object-cover"
@@ -77,14 +73,12 @@ export default function Founder() {
             </div>
 
           
-          </motion.div>
+          </div>
 
           {/* CONTENT */}
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
+ 
             className="order-2"
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-blue-700 sm:text-sm">
@@ -167,33 +161,14 @@ export default function Founder() {
               </div>
             </div>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="/contact"
-                 onClick={()=>{trackPageNavigation("about-BookYourTest-founderSection")}}
-                className="inline-flex items-center justify-center gap-3 rounded-2xl bg-slate-900 px-6 py-4 font-semibold text-white transition hover:bg-blue-600"
-              >
-                Book Your Test
-                <FiArrowRight />
-              </Link>
-
-              <Link
-                href="/packages"
-                 onClick={()=>{trackPageNavigation("about-founderSection-packages")}}
-                className="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-6 py-4 font-semibold text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
-              >
-                Learn More
-              </Link>
-            </div>
-          </motion.div>
+         <FounderButtons></FounderButtons>
+          </div>
         </div>
 
         {/* STATS */}
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+        <div
+   
           className="mt-16 sm:mt-20"
         >
           <div className="grid gap-4 md:grid-cols-3">
@@ -216,7 +191,7 @@ export default function Founder() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

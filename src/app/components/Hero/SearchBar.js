@@ -2,11 +2,10 @@
 
 import { useState } from "react";
 import { FiSearch, FiArrowRight } from "react-icons/fi";
-import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { trackSearch } from "@/app/lib/tracking";
 
-const popularTests = [
+const POPULAR_TESTS = [
   "CBC",
   "HbA1c",
   "Vitamin D",
@@ -16,21 +15,25 @@ const popularTests = [
 
 export default function SearchBar() {
   const [query, setQuery] = useState("");
-  const router=useRouter()
+  const router = useRouter();
+
   const handleSearch = () => {
-    if (!query.trim()) return;
- trackSearch(query)
+    const value = query.trim();
+
+    if (!value) return;
+
+    trackSearch(value);
+
     router.push(
-      `/packages?search=${encodeURIComponent(query)}`
+      `/packages?search=${encodeURIComponent(value)}`
     );
   };
+
   return (
     <div className="w-full">
-
       {/* Search Box */}
 
-      <motion.div
-        whileFocus={{ scale: 1.01 }}
+      <div
         className="
           group
           flex
@@ -39,10 +42,12 @@ export default function SearchBar() {
           border
           border-slate-200
           bg-white/80
-          backdrop-blur-2xl
           shadow-[0_20px_60px_rgba(15,23,42,.08)]
-          transition
+          backdrop-blur-2xl
+          transition-all
           duration-300
+          hover:shadow-[0_20px_70px_rgba(15,23,42,.12)]
+          focus-within:scale-[1.01]
           focus-within:border-blue-500
           focus-within:shadow-[0_20px_80px_rgba(37,99,235,.18)]
         "
@@ -52,12 +57,15 @@ export default function SearchBar() {
         </div>
 
         <input
+          type="search"
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
-           onKeyDown={(e) => {
-          if (e.key === "Enter") handleSearch();
-        }}
           placeholder="Search pathology tests..."
+          onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleSearch();
+            }
+          }}
           className="
             h-16
             flex-1
@@ -70,7 +78,9 @@ export default function SearchBar() {
         />
 
         <button
-        onClick={handleSearch}
+          type="button"
+          aria-label="Search Packages"
+          onClick={handleSearch}
           className="
             mr-2
             flex
@@ -81,27 +91,28 @@ export default function SearchBar() {
             rounded-full
             bg-slate-900
             text-white
-            transition
+            transition-all
+            duration-300
             hover:scale-105
             hover:bg-blue-600
           "
         >
           <FiArrowRight />
         </button>
-      </motion.div>
+      </div>
 
       {/* Popular Tests */}
 
       <div className="mt-5 flex flex-wrap items-center gap-3">
-
         <span className="text-sm text-slate-500">
           Popular:
         </span>
 
-        {popularTests.map((test) => (
+        {POPULAR_TESTS.map((test) => (
           <button
             key={test}
-            onClick={()=>{setQuery(test)}}
+            type="button"
+            onClick={() => setQuery(test)}
             className="
               rounded-full
               border
@@ -113,7 +124,8 @@ export default function SearchBar() {
               font-medium
               text-slate-700
               backdrop-blur-xl
-              transition
+              transition-all
+              duration-300
               hover:-translate-y-1
               hover:border-blue-400
               hover:bg-white
@@ -124,7 +136,6 @@ export default function SearchBar() {
           </button>
         ))}
       </div>
-
     </div>
   );
 }

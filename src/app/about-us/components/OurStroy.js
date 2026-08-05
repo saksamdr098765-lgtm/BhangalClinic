@@ -1,6 +1,4 @@
-"use client";
 
-import { motion } from "framer-motion";
 import {
   FiHeart,
   FiHome,
@@ -82,11 +80,7 @@ export default function OurStory() {
 
         {/* Header */}
 
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+        <div
           className="mx-auto max-w-3xl text-center"
         >
 
@@ -112,14 +106,11 @@ export default function OurStory() {
 
           </p>
 
-        </motion.div>
+        </div>
                 {/* Story */}
 
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+        <div
+   
           className="mx-auto mt-12 max-w-4xl rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:mt-16 sm:p-8 lg:p-10"
         >
           <p className="text-lg font-light leading-8 text-slate-700 sm:text-xl sm:leading-9 lg:text-2xl lg:leading-10">
@@ -138,15 +129,12 @@ export default function OurStory() {
           <p className="mt-1 text-slate-500">
             Trusted Diagnostic Partner
           </p>
-        </motion.div>
+        </div>
 
         {/* Journey */}
 
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+        <div
+
           className="mt-16 sm:mt-20"
         >
           <div className="text-center">
@@ -175,12 +163,9 @@ export default function OurStory() {
 
                 return (
 
-                  <motion.div
+                  <div
                     key={item.year}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.12 }}
-                    viewport={{ once: true }}
+                 
                     className="relative flex gap-5 md:grid md:grid-cols-[1fr_80px_1fr] md:gap-8"
                   >
 
@@ -235,7 +220,7 @@ export default function OurStory() {
                       }`}
                     />
 
-                  </motion.div>
+                  </div>
 
                 );
 
@@ -245,15 +230,12 @@ export default function OurStory() {
 
           </div>
 
-        </motion.div>
+        </div>
         
                 {/* ================= Statistics ================= */}
 
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+        <div
+
           className="mt-16 sm:mt-20 lg:mt-24"
         >
 
@@ -293,7 +275,7 @@ export default function OurStory() {
 
           </div>
 
-        </motion.div>
+        </div>
 
         {/* ================= Vision ================= */}
 

@@ -1,12 +1,8 @@
-"use client";
 
-import { trackPageNavigation } from "@/app/lib/tracking";
-import { motion } from "framer-motion";
-import Link from "next/link";
 import {
-  FiArrowRight,
   FiAward,
 } from "react-icons/fi";
+import HeroButtons from "./HeroButtons";
 
 const features = [
   {
@@ -33,7 +29,7 @@ const features = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-white py-24 lg:py-28">
 
       {/* Background */}
 
@@ -49,10 +45,7 @@ export default function Hero() {
 
           {/* LEFT */}
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: .6 }}
+          <div
           >
 
             <span className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-wide text-blue-700 shadow-sm sm:text-sm">
@@ -88,37 +81,13 @@ export default function Hero() {
 
             </p>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+      <HeroButtons></HeroButtons>
 
-              <Link
-                href="/contact"
-                onClick={()=>{trackPageNavigation("about-BookYourTest")}}
-                className="group inline-flex items-center justify-center gap-3 rounded-2xl bg-slate-900 px-6 py-4 font-semibold text-white transition hover:bg-blue-600"
-              >
-                Book Your Test
-
-                <FiArrowRight className="transition group-hover:translate-x-1" />
-
-              </Link>
-
-              <Link
-                href="/packages"
-                 onClick={()=>{trackPageNavigation("about-ExplorePackages")}}
-                className="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-6 py-4 font-semibold text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
-              >
-                Explore Packages
-              </Link>
-
-            </div>
-
-          </motion.div>
+          </div>
 
           {/* RIGHT */}
 
-          <motion.div
-            initial={{ opacity: 0, y: 35 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: .15 }}
+          <div
           >
 
             <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
@@ -180,7 +149,7 @@ export default function Hero() {
 
             </div>
 
-          </motion.div>
+          </div>
 
         </div>
 

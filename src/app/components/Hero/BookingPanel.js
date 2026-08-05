@@ -1,9 +1,6 @@
-"use client";
 
-import { trackPageNavigation } from "@/app/lib/tracking";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+
+import TrackedLink from "../TrackedLink";
 import {
   FaHeartPulse,
   FaLungs,
@@ -56,7 +53,6 @@ const healthAreas = [
 
 export default function BookingPanel(){
 
-const router = useRouter();
 
 
 return (
@@ -81,21 +77,9 @@ blur-[130px]
 
 
 
-<motion.div
+<div
 
-initial={{
-opacity:0,
-x:40
-}}
 
-animate={{
-opacity:1,
-x:0
-}}
-
-transition={{
-duration:.7
-}}
 
 className="
 relative
@@ -202,9 +186,9 @@ gap-3
 healthAreas.map((item)=>(
 
 
-<Link
+<TrackedLink
 href={`/packages?tag=${item.title.toLocaleLowerCase()}`}
- onClick={()=>{trackPageNavigation(`hero-BookingPanel-${item.title.toLocaleLowerCase()}`)}}
+ tracking={`hero-BookingPanel-${item.title.toLocaleLowerCase()}`}
 key={item.title}
 
 className="
@@ -259,7 +243,7 @@ text-slate-800
 </p>
 
 
-</Link>
+</TrackedLink>
 
 
 ))
@@ -392,33 +376,15 @@ font-bold
 
 
 
-<button
-
-onClick={()=> {trackPageNavigation("Hero-BookingPanel-Packages");router.push("/packages")}}
-
-className="
-mt-4
-flex
-w-full
-items-center
-justify-center
-gap-2
-rounded-xl
-bg-white
-py-3
-font-bold
-text-blue-600
-transition
-hover:scale-[1.02]
-"
-
+<TrackedLink
+  href="/packages"
+  tracking="Hero-BookingPanel-Packages"
+  className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-white py-3 font-bold text-blue-600 transition hover:scale-[1.02]"
 >
+  Explore Packages
 
-Explore Packages
-
-<FiArrowRight/>
-
-</button>
+  <FiArrowRight />
+</TrackedLink>
 
 
 </div>
@@ -427,7 +393,7 @@ Explore Packages
 
 
 
-</motion.div>
+</div>
 
 
 </div>
