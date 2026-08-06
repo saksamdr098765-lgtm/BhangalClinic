@@ -1,20 +1,16 @@
 import Link from "next/link";
 import { FaArrowRight, FaCalendarCheck } from "react-icons/fa";
 
-export default function BlogCTA({
-  title = "Book Your Blood Test Today",
-  description = "Get accurate reports, expert sample collection, and fast turnaround times from our experienced laboratory team.",
-  serviceName = "Blood Test",
-  serviceLink = "/tests",
-  bookingLink = "/book-test",
-  whatsappLink = "/contact",
-  features = [
-    "Home Sample Collection",
-    "Fast Digital Reports",
-    "Affordable Pricing",
-    "Experienced Technicians",
-  ],
-}) {
+export default function BlogCTA({CTA}) {
+  const {
+  title ,
+  description ,
+  serviceName ,
+  serviceLink ,
+  bookingLink,
+  whatsappLink ,
+  features,
+}=CTA
   return (
     <section className="my-10 overflow-hidden rounded-3xl bg-[#1447E6] shadow-xl">
       <div className="p-6 sm:p-8 lg:p-10">

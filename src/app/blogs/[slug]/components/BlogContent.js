@@ -2,6 +2,7 @@ import Image from "next/image";
 import InfoCard from "./InfoCard";
 import BlogTable from "./BlogTable";
 import BlogReference from "./BlogReference";
+import BlogInterlinking from "./BlogInterlinking";
 
 export default function BlogContent({ content }) {
   return (
@@ -116,6 +117,15 @@ export default function BlogContent({ content }) {
 case "references":
   return (
 <BlogReference block={block} key={index} index={index}></BlogReference>
+  );
+  case "interlinking":
+  return (
+    <BlogInterlinking
+      key={index}
+      title={block.title}
+      description={block.description}
+      items={block.items}
+    />
   );
           default:
             return null;

@@ -1,5 +1,7 @@
 // data/blogs.js
 
+import SITE_CONFIG from "../SITE_CONFIG";
+
 export const blogs = [
   {
     id: 1,
@@ -350,13 +352,13 @@ tags: [
     image: "/team/author.jpg",
   },
 
-  publishedAt: "August 6, 2026",
+  publishedAt: "August 12, 2026",
 
   readingTime: "10 min read",
 
   coverImage: "/blogs/list-of-blood-tests/cover.webp",
 
-  featured: true,
+  featured: false,
 
   relatedPackages: [
     "bhangal-ayush-profile-3",
@@ -366,7 +368,16 @@ tags: [
     "bhangal-senior-citizen-profile",
     "bcl-female-4-package",
   ],
-
+relatedTests: [
+  "cbc-test",
+  "blood-sugar-test",
+  "lipid-profile",
+  "kidney-function-test",
+  "liver-function-test",
+  "urine-examination",
+  "uric-acid-test",
+  "blood-group-test",
+],
   seo: {
     title:
       "Complete List of Blood Tests and What They Mean | DK Bhangal Lab",
@@ -393,16 +404,56 @@ tags: [
     ],
   },
 
-  quickInfo: {
-    testName: "Full Body Blood Test Panel",
-    price: "Starting ₹499",
-    sample: "Blood Sample",
-    fasting: "Recommended (8-10 hrs) for accurate sugar & lipid results",
-    reportTime: "Same Day",
-    homeCollection: "Available",
-    recommendedFor: "Routine Health Screening, Annual Checkup, Preventive Care",
-    booking: "Online / Phone / WhatsApp",
+quickInfo: [
+  {
+    label: "You Will Learn",
+    value: "Complete List of Blood Tests",
+    icon: "activity",
   },
+ 
+  {
+    label: "Reading Time",
+    value: "10 Minutes",
+    icon: "clock",
+  },
+  {
+    label: "Suitable For",
+    value: "Adults & Children",
+    icon: "users",
+  },
+  {
+    label: "Symptoms",
+    value: "Fatigue, Fever, Weakness",
+    icon: "heart",
+  },
+  {
+    label: "Recommended Test",
+    value: "CBC Blood Test",
+    icon: "test",
+  },
+ 
+  {
+    label: "Fasting",
+    value: "Not Required",
+    icon: "file",
+  },
+  {
+    label: "Report Time",
+    value: "Same Day",
+    icon: "clock",
+  },
+  {
+    label: "Price",
+    value: "₹249",
+    icon: "price",
+  },
+  {
+    label: "Home Collection",
+    value: "Available",
+    icon: "home",
+  },
+
+],
 
   tags: [
     "Blood Tests",
@@ -525,6 +576,71 @@ tags: [
         ["CRP", "Infection and inflammation markers"],
       ],
     },
+     {
+      type: "heading",
+      level: 2,
+      text: "Comparision Between Differnt blood Test",
+    },
+     {
+      type: "paragraph",
+      text: "Below is Table to describe the differnt between all three tests",
+    },
+    {
+  type: "table",
+  title: "5-Test vs 7-Test vs 14-Test Blood Panel Comparison",
+  headers: [
+    "Feature",
+    "5-Test Panel",
+    "7-Test Panel",
+    "14-Test Panel",
+  ],
+  rows: [
+    ["CBC", "✅", "✅", "✅"],
+    ["Blood Sugar", "✅", "✅", "✅"],
+    ["Lipid Profile", "✅", "✅", "✅"],
+    ["LFT", "✅", "✅", "✅"],
+    ["KFT", "✅", "✅", "✅"],
+    ["Thyroid (TSH)", "❌", "✅", "✅"],
+    ["Vitamin D", "❌", "✅", "✅"],
+    ["HbA1c", "❌", "❌", "✅"],
+    ["Vitamin B12", "❌", "❌", "✅"],
+    ["CRP", "❌", "❌", "✅"],
+    ["Iron/Ferritin", "❌", "❌", "✅"],
+    ["Best For", "Basic Checkup", "Preventive Health", "Complete Health Assessment"],
+  ],
+},
+{
+  type: "heading",
+  level: 2,
+  text: "Which Blood Test Should You Get Based on Your Symptoms?",
+},
+
+{
+  type: "paragraph",
+  text: "Different symptoms can point to different underlying health conditions, and choosing the right blood test helps doctors identify the cause more quickly. While a single symptom doesn't confirm a diagnosis, the tests below are commonly recommended based on the symptoms you may be experiencing. Always consult a healthcare professional for proper evaluation and interpretation of your results.",
+},
+
+{
+  type: "table",
+  title: "Symptoms and Recommended Blood Tests",
+  headers: [
+    "Symptom",
+    "Recommended Tests",
+    "Possible Conditions",
+  ],
+  rows: [
+    ["Fatigue & Weakness", "CBC, Iron, Vitamin B12", "Anemia, Vitamin Deficiency"],
+    ["Frequent Urination", "Fasting Sugar, HbA1c", "Diabetes"],
+    ["Weight Gain", "TSH, T3, T4", "Hypothyroidism"],
+    ["Weight Loss", "HbA1c, Thyroid Profile", "Diabetes, Hyperthyroidism"],
+    ["High Cholesterol", "Lipid Profile", "Heart Disease Risk"],
+    ["Joint Pain", "Uric Acid, CRP", "Gout, Inflammation"],
+    ["Persistent Fever", "CBC, ESR, CRP", "Infection"],
+    ["Hair Fall", "Iron, Vitamin D, Vitamin B12, TSH", "Nutritional Deficiency"],
+    ["Bone Pain", "Vitamin D, Calcium", "Vitamin D Deficiency"],
+    ["Swelling", "KFT, LFT", "Kidney/Liver Disorders"],
+  ],
+},
 
     {
       type: "heading",
@@ -613,11 +729,28 @@ tags: [
       level: 2,
       text: "Book Your Blood Test",
     },
-
     {
-      type: "paragraph",
-      text: "DK Bhangal Lab offers home sample collection and same-day reports for individual tests and full body checkup packages, with service available in Garhshankar, Nawanshahr, Hoshiarpur, Rahon, and Banga.",
+  type: "interlinking",
+  title: "Areas We Serve",
+  description: "We provide home sample collection and diagnostic services across the following locations.",
+  items: [
+    {
+      title: "Garhshankar",
+      description: "Blood tests and home sample collection.",
+      // href: "/locations/garhshankar",
     },
+    {
+      title: "Hoshiarpur",
+      description: "Diagnostic laboratory services.",
+      // href: "/locations/hoshiarpur",
+    },
+    {
+      title: "Nawanshahr",
+      description: "Health checkups and pathology tests.",
+      // href: "/locations/nawanshahr",
+    },
+  ],
+},
 
     {
       type: "references",
@@ -642,6 +775,26 @@ tags: [
   ],
 
   faq: [
+    {
+  question: "What is the main reason for a blood test?",
+  answer:
+    "The main reason for a blood test is to assess your overall health, detect medical conditions early, monitor existing diseases, and evaluate how well your organs are functioning. Blood tests can help diagnose conditions such as anemia, diabetes, infections, thyroid disorders, liver disease, kidney disease, and high cholesterol before symptoms become severe."
+},
+{
+  question: "What is the purpose of a blood test?",
+  answer:
+    "The purpose of a blood test is to provide important information about your health by measuring various components in your blood, such as red blood cells, white blood cells, platelets, glucose, cholesterol, hormones, vitamins, and enzymes. Doctors use blood tests for routine health checkups, diagnosing illnesses, monitoring treatment progress, and screening for potential health problems."
+},
+{
+  question: "What is the correct time for a blood test?",
+  answer:
+    "The correct time depends on the type of blood test. Many routine blood tests can be done at any time of the day, while fasting tests such as Fasting Blood Sugar and Lipid Profile are usually performed in the morning after 8–12 hours of fasting. Always follow the instructions provided by your doctor or laboratory."
+},
+{
+  question: "Can I eat or drink before a blood test?",
+  answer:
+    "It depends on the test being performed. Tests like CBC usually do not require fasting, so you can eat and drink normally. However, tests such as Fasting Blood Sugar and Lipid Profile require you to avoid food for 8–12 hours before sample collection. Drinking plain water is generally allowed unless your healthcare provider advises otherwise."
+},
     {
       question: "What are the 5 main blood tests?",
       answer:
@@ -673,6 +826,31 @@ tags: [
         "The blood draw itself takes about 5-10 minutes, and results for most routine tests are available the same day.",
     },
   ],
+cta: {
+  title: "Book Your Blood Test Today",
+
+  description:
+    "Looking for reliable blood testing? Book your blood test with convenient home sample collection, affordable pricing, and fast digital reports.",
+
+  serviceName: "Blood Test",
+
+  serviceLink: "/tests/cbc-test",
+
+  bookingLink:
+    `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20want%20to%20book%20a%20Blood%20Test.%20Please%20share%20the%20available%20slots.`,
+
+  whatsappLink:
+    `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20have%20a%20question%20about%20Blood%20Tests.`,
+
+  features: [
+    "100+ Blood Tests Available",
+    "Home Sample Collection",
+    "Fast Digital Reports",
+    "NABL Standard Testing",
+    "Affordable Pricing",
+    "Experienced Phlebotomists",
+  ],
+},
 }
 //   {
 //   id: 2,

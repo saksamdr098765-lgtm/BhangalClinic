@@ -15,6 +15,7 @@ import { getBlogSchema } from "@/schema/BlogSchema";
 import SITE_CONFIG from "@/app/SITE_CONFIG";
 import BlogCTA from "./components/BlogCTA";
 import BlogQuickInfo from "./components/BlogQuickInfo";
+import RelatedTests from "./components/RelatedTest";
 
 export async function generateStaticParams() {
   return blogs.map((blog) => ({
@@ -113,7 +114,7 @@ export default async function BlogPage({ params }) {
 ))}
       <ReadingProgress />
 
-      <main className="bg-white py-10">
+      <main className="bg-white ">
 
         {/* Hero */}
 
@@ -150,7 +151,8 @@ export default async function BlogPage({ params }) {
       <BlogContent content={blog.content} />
 
       <FAQSection faq={blog.faq} />
-      <BlogCTA></BlogCTA>
+      <BlogCTA CTA={blog.cta}></BlogCTA>
+      <RelatedTests relatedTests={blog.relatedTests}></RelatedTests>
 <RelatedPackages
     relatedPackages={blog.relatedPackages}
 />
