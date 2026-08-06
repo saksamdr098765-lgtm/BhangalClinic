@@ -1,7 +1,5 @@
-"use client";
-
 import Image from "next/image";
-import Link from "next/link";
+import TrackedLink from "@/app/components/TrackedLink";
 import {
   FiArrowRight,
   FiCheckCircle,
@@ -60,20 +58,22 @@ export default function Hero({ hero, priceCard }) {
 
           {/* CTA */}
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link
+            <TrackedLink
               href={hero.primaryButton.href}
+              tracking="price-hero-primary"
               className="inline-flex items-center justify-center rounded-xl bg-sky-600 px-6 py-4 text-base font-semibold text-white transition hover:bg-sky-700"
             >
               {hero.primaryButton.text}
               <FiArrowRight className="ml-2" />
-            </Link>
+            </TrackedLink>
 
-            <Link
+            <TrackedLink
               href={hero.secondaryButton.href}
+              tracking="price-hero-secondary"
               className="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-6 py-4 text-base font-semibold text-slate-700 transition hover:border-sky-500 hover:text-sky-600"
             >
               {hero.secondaryButton.text}
-            </Link>
+            </TrackedLink>
           </div>
         </div>
 
@@ -86,6 +86,7 @@ export default function Hero({ hero, priceCard }) {
               alt={hero.title}
               width={700}
               height={700}
+              sizes="(max-width: 1024px) 100vw, 50vw"
               priority
               className="h-full w-full object-cover"
             />

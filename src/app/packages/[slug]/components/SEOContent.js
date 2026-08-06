@@ -1,72 +1,19 @@
-"use client";
-
-import { motion } from "framer-motion";
-
 export default function SEOContent({ pkg }) {
   return (
     <section className="bg-white py-24">
       <div className="mx-auto max-w-4xl px-6">
-
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 30,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          viewport={{
-            once: true,
-          }}
-        >
-
-          <span
-            className="
-              inline-flex
-              rounded-full
-              border
-              border-blue-100
-              bg-blue-50
-              px-4
-              py-2
-              text-sm
-              font-medium
-              text-blue-700
-            "
-          >
+        <div>
+          <span className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-medium text-blue-700">
             Learn More
           </span>
 
-          <h2
-            className="
-              mt-6
-              text-4xl
-              font-black
-              tracking-tight
-              text-slate-900
-
-              lg:text-5xl
-            "
-          >
+          <h2 className="mt-6 text-4xl font-black tracking-tight text-slate-900 lg:text-5xl">
             Everything You Should Know About
             <br />
             {pkg.name}
           </h2>
 
-          <div
-            className="
-              prose
-              prose-slate
-              mt-12
-              max-w-none
-              prose-headings:font-bold
-              prose-headings:text-slate-900
-              prose-p:text-slate-600
-              prose-p:leading-8
-              prose-li:text-slate-600
-            "
-          >
+          <div className="prose prose-slate mt-12 max-w-none prose-headings:font-bold prose-headings:text-slate-900 prose-p:text-slate-600 prose-p:leading-8 prose-li:text-slate-600">
             <h3>Preventive Healthcare Matters</h3>
 
             <p>
@@ -98,16 +45,7 @@ export default function SEOContent({ pkg }) {
               through early awareness of potential health risks.
             </p>
 
-            <blockquote
-              className="
-                rounded-2xl
-                border-l-4
-                border-blue-500
-                bg-blue-50
-                p-6
-                not-italic
-              "
-            >
+            <blockquote className="rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-6 not-italic">
               Preventive health screening is often more effective and
               less costly than treating advanced disease.
             </blockquote>
@@ -169,11 +107,8 @@ export default function SEOContent({ pkg }) {
               services accessible, accurate, and convenient through
               digital reporting and home sample collection.
             </p>
-
           </div>
-
-        </motion.div>
-
+        </div>
       </div>
     </section>
   );

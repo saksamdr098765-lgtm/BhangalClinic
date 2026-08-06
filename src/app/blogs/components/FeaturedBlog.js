@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import TrackedLink from "@/app/components/TrackedLink";
 import {
   FiArrowRight,
   FiCalendar,
@@ -24,8 +24,9 @@ export default function FeaturedBlog({ blog }) {
         </div>
       </div>
 
-      <Link
+      <TrackedLink
         href={`/blogs/${blog.slug}`}
+        tracking={`featured-blog-${blog.slug}`}
         className="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
       >
         <div className="grid lg:grid-cols-2">
@@ -36,6 +37,7 @@ export default function FeaturedBlog({ blog }) {
               alt={blog.title}
               fill
               priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
 
@@ -85,13 +87,12 @@ export default function FeaturedBlog({ blog }) {
 
               <span className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-sky-600 px-5 py-3 text-sm font-semibold text-white transition-all duration-300 group-hover:bg-sky-700 sm:w-auto sm:px-6 sm:py-4 sm:text-base">
                 Read Article
-
                 <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
               </span>
             </div>
           </div>
         </div>
-      </Link>
+      </TrackedLink>
     </section>
   );
 }

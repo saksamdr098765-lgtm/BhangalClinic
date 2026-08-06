@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TrackedLink from "@/app/components/TrackedLink";
 import {
   FiActivity,
   FiArrowRight,
@@ -7,14 +7,32 @@ import {
   FiShield,
 } from "react-icons/fi";
 
-export default function HealthPackagesCTA() {
-  const benefits = [
-    "Accurate & Reliable Reports",
-    "Experienced Laboratory Team",
-    "Affordable Health Packages",
-    "Fast Report Delivery",
-  ];
+const benefits = [
+  "Accurate & Reliable Reports",
+  "Experienced Laboratory Team",
+  "Affordable Health Packages",
+  "Fast Report Delivery",
+];
 
+const reasons = [
+  {
+    icon: FiShield,
+    title: "Reliable Diagnostics",
+    text: "Advanced laboratory testing with dependable, high-quality reports.",
+  },
+  {
+    icon: FiClock,
+    title: "Fast Report Delivery",
+    text: "Receive your reports quickly with minimal waiting time.",
+  },
+  {
+    icon: FiCheckCircle,
+    title: "Preventive Healthcare",
+    text: "Comprehensive health packages designed for early disease detection.",
+  },
+];
+
+export default function HealthPackagesCTA() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:py-20">
       <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-sky-600 via-sky-700 to-blue-800 p-5 text-white shadow-2xl sm:p-8 lg:rounded-[32px] lg:p-14">
@@ -48,30 +66,29 @@ export default function HealthPackagesCTA() {
                   className="flex items-center gap-3 rounded-2xl bg-white/10 px-4 py-3 backdrop-blur"
                 >
                   <FiCheckCircle className="h-5 w-5 shrink-0 text-green-300" />
-
-                  <span className="text-sm font-medium">
-                    {benefit}
-                  </span>
+                  <span className="text-sm font-medium">{benefit}</span>
                 </div>
               ))}
             </div>
 
             {/* Buttons */}
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link
+              <TrackedLink
                 href="/packages"
+                tracking="blog-cta-packages"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3.5 font-semibold text-sky-700 transition hover:scale-[1.02] hover:bg-slate-100 sm:w-auto"
               >
                 Explore Packages
                 <FiArrowRight />
-              </Link>
+              </TrackedLink>
 
-              <Link
+              <TrackedLink
                 href="/contact"
+                tracking="blog-cta-contact"
                 className="inline-flex w-full items-center justify-center rounded-2xl border border-white/30 px-6 py-3.5 font-semibold text-white transition hover:bg-white/10 sm:w-auto"
               >
                 Contact Us
-              </Link>
+              </TrackedLink>
             </div>
           </div>
 
@@ -86,36 +103,14 @@ export default function HealthPackagesCTA() {
             </h3>
 
             <div className="mt-8 space-y-6">
-              {[
-                {
-                  icon: FiShield,
-                  title: "Reliable Diagnostics",
-                  text: "Advanced laboratory testing with dependable, high-quality reports.",
-                },
-                {
-                  icon: FiClock,
-                  title: "Fast Report Delivery",
-                  text: "Receive your reports quickly with minimal waiting time.",
-                },
-                {
-                  icon: FiCheckCircle,
-                  title: "Preventive Healthcare",
-                  text: "Comprehensive health packages designed for early disease detection.",
-                },
-              ].map((item) => (
-                <div
-                  key={item.title}
-                  className="flex items-start gap-4"
-                >
+              {reasons.map((item) => (
+                <div key={item.title} className="flex items-start gap-4">
                   <div className="rounded-xl bg-white/10 p-3">
                     <item.icon className="h-5 w-5" />
                   </div>
 
                   <div>
-                    <h4 className="font-semibold">
-                      {item.title}
-                    </h4>
-
+                    <h4 className="font-semibold">{item.title}</h4>
                     <p className="mt-1 text-sm leading-6 text-sky-100">
                       {item.text}
                     </p>

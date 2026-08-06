@@ -1,5 +1,3 @@
-"use client";
-
 import { FiCheckCircle, FiUsers } from "react-icons/fi";
 
 export default function WhoNeedsService({ service }) {

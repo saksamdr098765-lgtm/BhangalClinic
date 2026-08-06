@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
 import {
   FiCheckCircle,
   FiClock,
@@ -17,13 +14,7 @@ export default function PackageImage({ pkg }) {
 
       <div className="relative mx-auto max-w-5xl px-4 sm:px-6">
         {/* Heading */}
-
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mx-auto max-w-2xl text-center"
-        >
+        <div className="mx-auto max-w-2xl text-center">
           <span className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
             Package Overview
           </span>
@@ -35,33 +26,25 @@ export default function PackageImage({ pkg }) {
           <p className="mt-4 text-lg leading-relaxed text-slate-600">
             Everything included in your health package at a glance.
           </p>
-        </motion.div>
+        </div>
 
         {/* Card */}
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.15 }}
-          viewport={{ once: true }}
-          className="mt-12 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl"
-        >
+        <div className="mt-12 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
           {/* Image */}
-
-        <div className="flex justify-center bg-gradient-to-b from-slate-50 to-white p-6 sm:p-10">
-  <div className="relative h-[650px] w-full max-w-3xl">
-    <Image
-      src={pkg.posterImage || pkg.image}
-      alt={pkg.name}
-      fill
-      priority
-      className="object-contain"
-    />
-  </div>
-</div>
+          <div className="flex justify-center bg-gradient-to-b from-slate-50 to-white p-6 sm:p-10">
+            <div className="relative h-[650px] w-full max-w-3xl">
+              <Image
+                src={pkg.posterImage || pkg.image}
+                alt={`${pkg.name} Poster`}
+                fill
+                sizes="(max-width: 768px) 100vw, 768px"
+                loading="lazy"
+                className="object-contain"
+              />
+            </div>
+          </div>
 
           {/* Bottom Stats */}
-
           <div className="grid divide-y divide-slate-200 border-t border-slate-200 sm:grid-cols-4 sm:divide-x sm:divide-y-0">
             <Stat
               icon={<FiCheckCircle className="text-emerald-500" />}
@@ -87,7 +70,7 @@ export default function PackageImage({ pkg }) {
               value={`${pkg.rating} ★`}
             />
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

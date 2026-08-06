@@ -1,8 +1,5 @@
-"use client";
-
 import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
+import TrackedLink from "./TrackedLink";
 import {
   FiHome,
   FiClock,
@@ -10,7 +7,6 @@ import {
   FiFileText,
   FiArrowRight,
 } from "react-icons/fi";
-import { trackPageNavigation } from "../lib/tracking";
 
 const features = [
   {
@@ -52,26 +48,21 @@ export default function WhyChooseUs() {
     <section className="relative overflow-hidden py-16 sm:py-20 lg:py-28">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-white via-slate-50 to-white -z-20" />
-
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,#dbeafe,transparent_35%),radial-gradient(circle_at_bottom_right,#cffafe,transparent_35%)] opacity-80" />
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
           {/* Image */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="relative order-1 lg:order-2"
-          >
+          <div className="relative order-1 lg:order-2">
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-2xl">
               <Image
                 src="/doctor.png"
-                alt="Clinical Laboratory"
+                alt="Professional Clinical Laboratory Doctor and Diagnostics"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                loading="lazy"
                 className="object-cover"
               />
-
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
             </div>
 
@@ -81,15 +72,9 @@ export default function WhyChooseUs() {
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100">
                   <FiHome className="text-2xl text-blue-600" />
                 </div>
-
                 <div>
-                  <p className="text-sm text-slate-500">
-                    Trusted Service
-                  </p>
-
-                  <h4 className="font-bold text-slate-900">
-                    Home Collection
-                  </h4>
+                  <p className="text-sm text-slate-500">Trusted Service</p>
+                  <p className="font-bold text-slate-900">Home Collection</p>
                 </div>
               </div>
             </div>
@@ -100,27 +85,16 @@ export default function WhyChooseUs() {
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100">
                   <FiClock className="text-2xl text-emerald-600" />
                 </div>
-
                 <div>
-                  <p className="text-sm text-slate-500">
-                    Fast Reports
-                  </p>
-
-                  <h4 className="font-bold text-slate-900">
-                    Same Day Delivery
-                  </h4>
+                  <p className="text-sm text-slate-500">Fast Reports</p>
+                  <p className="font-bold text-slate-900">Same Day Delivery</p>
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="order-2 lg:order-1"
-          >
+          <div className="order-2 lg:order-1">
             <span className="inline-flex rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
               Why Choose Us
             </span>
@@ -139,22 +113,18 @@ export default function WhyChooseUs() {
             </p>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
-                            {features.map((feature) => {
+              {features.map((feature) => {
                 const Icon = feature.icon;
 
                 return (
-                  <motion.div
+                  <div
                     key={feature.title}
-                    whileHover={{ y: -6 }}
-                    transition={{ duration: 0.25 }}
-                    className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all hover:border-blue-100 hover:shadow-xl"
+                    className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-100 hover:shadow-xl"
                   >
                     <div
                       className={`mb-4 flex h-12 w-12 items-center justify-center rounded-xl ${feature.color}`}
                     >
-                      <Icon
-                        className={`text-xl ${feature.iconColor}`}
-                      />
+                      <Icon className={`text-xl ${feature.iconColor}`} />
                     </div>
 
                     <h3 className="text-lg font-semibold text-slate-900">
@@ -164,7 +134,7 @@ export default function WhyChooseUs() {
                     <p className="mt-2 text-sm leading-6 text-slate-600">
                       {feature.description}
                     </p>
-                  </motion.div>
+                  </div>
                 );
               })}
             </div>
@@ -172,27 +142,27 @@ export default function WhyChooseUs() {
             {/* Stats */}
             <div className="mt-10 grid grid-cols-3 gap-4 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
               <div className="text-center">
-                <h3 className="text-2xl font-black text-blue-600 sm:text-3xl">
+                <span className="block text-2xl font-black text-blue-600 sm:text-3xl">
                   15K+
-                </h3>
+                </span>
                 <p className="mt-1 text-xs text-slate-500 sm:text-sm">
                   Patients
                 </p>
               </div>
 
               <div className="text-center">
-                <h3 className="text-2xl font-black text-emerald-600 sm:text-3xl">
+                <span className="block text-2xl font-black text-emerald-600 sm:text-3xl">
                   250+
-                </h3>
+                </span>
                 <p className="mt-1 text-xs text-slate-500 sm:text-sm">
                   Tests
                 </p>
               </div>
 
               <div className="text-center">
-                <h3 className="text-2xl font-black text-violet-600 sm:text-3xl">
+                <span className="block text-2xl font-black text-violet-600 sm:text-3xl">
                   99%
-                </h3>
+                </span>
                 <p className="mt-1 text-xs text-slate-500 sm:text-sm">
                   Accuracy
                 </p>
@@ -201,20 +171,20 @@ export default function WhyChooseUs() {
 
             {/* CTA */}
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <Link
+              <TrackedLink
                 href="/contact"
-                onClick={()=>{trackPageNavigation("home-whyChooseus-bookyourtest")}}
+                tracking="home-whyChooseus-bookyourtest"
                 className="inline-flex items-center justify-center gap-2 rounded-2xl bg-blue-600 px-7 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-blue-700 hover:shadow-xl"
               >
                 Book Your Test
                 <FiArrowRight />
-              </Link>
+              </TrackedLink>
 
               <p className="text-sm text-slate-500">
                 Online booking • Home collection • Digital reports
               </p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

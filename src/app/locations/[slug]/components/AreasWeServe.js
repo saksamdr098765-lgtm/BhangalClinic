@@ -1,5 +1,3 @@
-"use client";
-
 import { FiMapPin, FiCheckCircle } from "react-icons/fi";
 
 export default function AreasWeServe({ location }) {

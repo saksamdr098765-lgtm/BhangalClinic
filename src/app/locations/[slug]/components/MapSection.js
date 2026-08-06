@@ -1,5 +1,3 @@
-"use client";
-
 import SITE_CONFIG from "@/app/SITE_CONFIG";
 import Link from "next/link";
 import {

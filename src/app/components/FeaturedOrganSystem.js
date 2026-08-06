@@ -1,7 +1,4 @@
-"use client";
-
-import { motion } from "framer-motion";
-import Link from "next/link";
+import TrackedLink from "./TrackedLink";
 
 import {
   FaHeartPulse,
@@ -17,7 +14,6 @@ import {
   GiKidneys,
   GiLiver,
 } from "react-icons/gi";
-import { trackPackageClick } from "../lib/tracking";
 
 const organs = [
   {
@@ -105,28 +101,19 @@ export default function FeaturedOrgansSection() {
         </div>
 
         <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
-          {organs.map((item, index) => {
+          {organs.map((item) => {
             const Icon = item.icon;
             const theme = colors[item.color];
 
             return (
-              <motion.div
-                key={item.slug}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.4,
-                  delay: index * 0.05,
-                }}
-                viewport={{ once: true }}
-              >
-                <Link
+              <div key={item.slug}>
+                <TrackedLink
                   href={`/packages?tag=${item.slug}`}
-                  onClick={()=>{trackPackageClick(`organ-${item.slug}`)}}
-                  className={`group flex aspect-square flex-col items-center justify-center rounded-3xl border border-slate-200 bg-gradient-to-br ${theme.bg} p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl`}
+                  tracking={`organ-${item.slug}`}
+                  className={`group flex aspect-square flex-col items-center justify-center rounded-3xl border border-slate-200 bg-gradient-to-br ${theme.bg} p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl`}
                 >
                   <div
-                    className={`flex h-20 w-20 items-center justify-center rounded-full ${theme.icon} transition group-hover:scale-110`}
+                    className={`flex h-20 w-20 items-center justify-center rounded-full ${theme.icon} transition duration-300 group-hover:scale-110`}
                   >
                     <Icon className="text-4xl" />
                   </div>
@@ -134,8 +121,8 @@ export default function FeaturedOrgansSection() {
                   <h3 className="mt-5 text-center text-lg font-semibold text-slate-900">
                     {item.title}
                   </h3>
-                </Link>
-              </motion.div>
+                </TrackedLink>
+              </div>
             );
           })}
         </div>

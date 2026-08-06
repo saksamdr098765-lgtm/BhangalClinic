@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { FiArrowRight, FiCheckCircle } from "react-icons/fi";
 

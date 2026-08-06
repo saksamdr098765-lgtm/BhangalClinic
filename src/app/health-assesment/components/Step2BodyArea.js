@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import {
   FiArrowLeft,
   FiArrowRight,
@@ -124,245 +121,76 @@ export default function Step2BodyArea({
   nextStep,
 }) {
   return (
-    <motion.section
-      initial={{
-        opacity: 0,
-        y: 24,
-      }}
-      animate={{
-        opacity: 1,
-        y: 0,
-      }}
-      transition={{
-        duration: 0.4,
-      }}
-      className="
-        rounded-3xl
-        border
-        border-slate-200
-        bg-white
-        p-6
-        shadow-sm
-
-        sm:p-8
-
-        lg:p-10
-      "
-    >
+    <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8 lg:p-10">
       {/* Heading */}
-
       <div className="max-w-3xl">
-        <span
-          className="
-            inline-flex
-            rounded-full
-            border
-            border-blue-100
-            bg-blue-50
-            px-4
-            py-2
-            text-xs
-            font-semibold
-            uppercase
-            tracking-[0.22em]
-            text-blue-700
-          "
-        >
+        <span className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-blue-700">
           Step 2 of 5
         </span>
 
-        <h2
-          className="
-            mt-5
-            text-3xl
-            font-black
-            leading-tight
-            text-slate-900
-
-            sm:text-4xl
-
-            lg:text-5xl
-          "
-        >
+        <h2 className="mt-5 text-3xl font-black leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
           Which body area
           <span className="block text-blue-600">
             needs attention?
           </span>
         </h2>
 
-        <p
-          className="
-            mt-5
-            max-w-2xl
-            text-base
-            leading-8
-            text-slate-600
-
-            sm:text-lg
-          "
-        >
+        <p className="mt-5 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
           Choose the body area that best matches your symptoms.
           We'll ask more specific questions in the next step.
         </p>
       </div>
 
-      <div
-        className="
-          mt-10
-          grid
-          gap-5
-
-          md:grid-cols-2
-
-          xl:grid-cols-3
-        "
-      >
-                {bodyAreas.map((item) => {
+      <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        {bodyAreas.map((item) => {
           const Icon = item.icon;
           const active = value === item.value;
 
           return (
-            <motion.button
+            <button
               key={item.value}
               type="button"
-              whileHover={{
-                y: -4,
-              }}
-              whileTap={{
-                scale: 0.98,
-              }}
               onClick={() => onChange(item.value)}
-              className={`
-                group
-                relative
-                overflow-hidden
-                rounded-2xl
-                border
-                p-6
-                text-left
-                transition-all
-                duration-300
-
-                ${
-                  active
-                    ? "border-blue-600 bg-blue-50 shadow-lg"
-                    : "border-slate-200 bg-white hover:border-blue-300 hover:shadow-md"
-                }
-              `}
+              className={`group relative overflow-hidden rounded-2xl border p-6 text-left transition-all duration-300 hover:-translate-y-1 ${
+                active
+                  ? "border-blue-600 bg-blue-50 shadow-lg"
+                  : "border-slate-200 bg-white hover:border-blue-300 hover:shadow-md"
+              }`}
             >
               {active && (
-                <motion.div
-                  initial={{
-                    scale: 0,
-                  }}
-                  animate={{
-                    scale: 1,
-                  }}
-                  className="
-                    absolute
-                    right-5
-                    top-5
-                    flex
-                    h-9
-                    w-9
-                    items-center
-                    justify-center
-                    rounded-full
-                    bg-blue-600
-                    text-white
-                  "
-                >
+                <div className="absolute right-5 top-5 flex h-9 w-9 items-center justify-center rounded-full bg-blue-600 text-white">
                   <FiCheck />
-                </motion.div>
+                </div>
               )}
 
               <div
-                className={`
-                  flex
-                  h-16
-                  w-16
-                  items-center
-                  justify-center
-                  rounded-2xl
-                  transition-all
-
-                  ${item.color}
-
-                  ${
-                    !active &&
-                    "group-hover:scale-105"
-                  }
-                `}
+                className={`flex h-16 w-16 items-center justify-center rounded-2xl transition-all ${item.color} ${
+                  !active && "group-hover:scale-105"
+                }`}
               >
                 <Icon className="text-3xl" />
               </div>
 
-              <h3
-                className="
-                  mt-6
-                  text-xl
-                  font-bold
-                  text-slate-900
-                "
-              >
+              <h3 className="mt-6 text-xl font-bold text-slate-900">
                 {item.title}
               </h3>
 
-              <p
-                className="
-                  mt-3
-                  text-sm
-                  leading-7
-                  text-slate-600
-                "
-              >
+              <p className="mt-3 text-sm leading-7 text-slate-600">
                 {item.description}
               </p>
-            </motion.button>
+            </button>
           );
         })}
       </div>
 
       {/* Footer */}
-
-      <div
-        className="
-          mt-12
-          flex
-          flex-col
-          gap-4
-          border-t
-          border-slate-200
-          pt-8
-
-          sm:flex-row
-          sm:items-center
-          sm:justify-between
-        "
-      >        <button
+      <div className="mt-12 flex flex-col gap-4 border-t border-slate-200 pt-8 sm:flex-row sm:items-center sm:justify-between">
+        <button
           type="button"
           onClick={previousStep}
-          className="
-            inline-flex
-            items-center
-            justify-center
-            gap-3
-            rounded-xl
-            border
-            border-slate-200
-            bg-white
-            px-7
-            py-3.5
-            font-semibold
-            text-slate-700
-            transition-all
-            duration-300
-            hover:border-slate-300
-            hover:bg-slate-50
-          "
+          className="inline-flex items-center justify-center gap-3 rounded-xl border border-slate-200 bg-white px-7 py-3.5 font-semibold text-slate-700 transition-all duration-300 hover:border-slate-300 hover:bg-slate-50"
         >
           <FiArrowLeft />
-
           Back
         </button>
 
@@ -370,40 +198,12 @@ export default function Step2BodyArea({
           type="button"
           disabled={!value}
           onClick={nextStep}
-          className="
-            group
-            inline-flex
-            items-center
-            justify-center
-            gap-3
-            rounded-xl
-            bg-blue-600
-            px-7
-            py-3.5
-            font-semibold
-            text-white
-            transition-all
-            duration-300
-            hover:-translate-y-0.5
-            hover:bg-blue-700
-            hover:shadow-lg
-            disabled:cursor-not-allowed
-            disabled:opacity-40
-            disabled:hover:translate-y-0
-            disabled:hover:shadow-none
-          "
+          className="group inline-flex items-center justify-center gap-3 rounded-xl bg-blue-600 px-7 py-3.5 font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:translate-y-0 disabled:hover:shadow-none"
         >
           Continue
-
-          <FiArrowRight
-            className="
-              transition-transform
-              duration-300
-              group-hover:translate-x-1
-            "
-          />
+          <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
         </button>
       </div>
-    </motion.section>
+    </section>
   );
 }

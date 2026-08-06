@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import TrackedLink from "./TrackedLink";
 import { trackPackageClick } from "../lib/tracking";
 
 export default function PackageLink({
@@ -8,14 +8,17 @@ export default function PackageLink({
   tracking,
   children,
   className,
+  ...props
 }) {
   return (
-    <Link
+    <TrackedLink
       href={href}
+      tracking={tracking}
       className={className}
       onClick={() => trackPackageClick(tracking)}
+      {...props}
     >
       {children}
-    </Link>
+    </TrackedLink>
   );
 }

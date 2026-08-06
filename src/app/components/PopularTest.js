@@ -1,27 +1,8 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
-import {
-  FiArrowRight,
-FiClock,
-FiHome,
-FiCheckCircle,
-FiShield,
-FiActivity,
-
-
-} from "react-icons/fi";
-import SITE_CONFIG from "../SITE_CONFIG";
 import { tests } from "../data/tests";
 import TestCard from "./TestCard";
-import { trackPageNavigation, trackTestClick } from "../lib/tracking";
-
-
+import TrackedLink from "./TrackedLink";
 
 export default function PopularTests() {
-  const router=useRouter()
-
   return (
     <section
       className="
@@ -32,16 +13,12 @@ export default function PopularTests() {
         via-blue-50/40
         to-white
         py-16
-
         sm:py-20
         lg:py-24
       "
     >
-
       {/* Background */}
-
       <div className="absolute inset-0 overflow-hidden">
-
         <div
           className="
             absolute
@@ -52,13 +29,11 @@ export default function PopularTests() {
             rounded-full
             bg-blue-200/30
             blur-[80px]
-
             sm:h-80
             sm:w-80
             sm:blur-[100px]
           "
         />
-
 
         <div
           className="
@@ -70,13 +45,11 @@ export default function PopularTests() {
             rounded-full
             bg-cyan-200/30
             blur-[90px]
-
             sm:h-96
             sm:w-96
             sm:blur-[120px]
           "
         />
-
 
         <div
           className="
@@ -90,31 +63,11 @@ export default function PopularTests() {
             backgroundSize: "60px 60px",
           }}
         />
-
       </div>
 
-
-
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6">
-
-
         {/* Heading */}
-
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 30,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          viewport={{
-            once: true,
-          }}
-          className="max-w-2xl"
-        >
-
+        <div className="max-w-2xl">
           <span
             className="
               text-xs
@@ -122,13 +75,11 @@ export default function PopularTests() {
               uppercase
               tracking-[0.2em]
               text-blue-600
-
               sm:text-sm
             "
           >
             Popular Tests
           </span>
-
 
           <h2
             className="
@@ -137,16 +88,13 @@ export default function PopularTests() {
               font-bold
               tracking-tight
               text-slate-900
-
               sm:mt-4
               sm:text-4xl
-
               lg:text-5xl
             "
           >
             Book your test in seconds.
           </h2>
-
 
           <p
             className="
@@ -154,7 +102,6 @@ export default function PopularTests() {
               text-base
               leading-7
               text-slate-600
-
               sm:mt-5
               sm:text-lg
               sm:leading-8
@@ -163,58 +110,37 @@ export default function PopularTests() {
             Transparent pricing, fast reports, and convenient home sample
             collection.
           </p>
-
-        </motion.div>
-
-
+        </div>
 
         {/* Cards */}
-
         <div
           className="
             mt-8
             grid
             gap-4
-
             sm:mt-12
             sm:gap-6
-
             md:grid-cols-2
             xl:grid-cols-3
           "
         >
-
-          {tests.slice(0,3).map((test, index) => (
-      <TestCard key={test.slug} test={test} location="Home"></TestCard>
-                ))}
-
+          {tests.slice(0, 3).map((test) => (
+            <TestCard key={test.slug} test={test} location="Home" />
+          ))}
         </div>
 
-
-
         {/* CTA */}
-
-        <motion.div
-          initial={{
-            opacity:0,
-          }}
-          whileInView={{
-            opacity:1,
-          }}
-          viewport={{
-            once:true,
-          }}
+        <div
           className="
             mt-10
             flex
             justify-center
-
             sm:mt-16
           "
         >
-
-          <button
-          onClick={()=>{trackPageNavigation("Home-PopularTests-viewAll");router.push('/packages#test-grid')}}
+          <TrackedLink
+            href="/packages#test-grid"
+            tracking="Home-PopularTests-viewAll"
             className="
               w-full
               rounded-full
@@ -222,25 +148,21 @@ export default function PopularTests() {
               border-slate-300
               px-8
               py-3.5
+              text-center
               font-semibold
               text-slate-700
               transition
-
+              duration-300
               hover:bg-slate-900
               hover:text-white
-
               sm:w-auto
               sm:py-4
             "
           >
             View All Tests
-          </button>
-
-        </motion.div>
-
-
+          </TrackedLink>
+        </div>
       </div>
-
     </section>
   );
 }

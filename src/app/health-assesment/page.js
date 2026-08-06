@@ -61,10 +61,11 @@ export const metadata = {
     images: [SITE_CONFIG.ogImage],
   },
 };
+
 export default function page() {
   return (
-   <>
-    {healthAssessmentSchema.map((schema, index) => (
+    <main>
+      {healthAssessmentSchema.map((schema, index) => (
         <script
           key={index}
           type="application/ld+json"
@@ -73,7 +74,7 @@ export default function page() {
           }}
         />
       ))}
-   <HealthAssessmentPage></HealthAssessmentPage>
-   </>
-  )
+      <HealthAssessmentPage />
+    </main>
+  );
 }

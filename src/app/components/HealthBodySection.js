@@ -1,7 +1,4 @@
-"use client";
-
-import { motion } from "framer-motion";
-import Link from "next/link";
+import TrackedLink from "./TrackedLink";
 
 import {
   FaHeartPulse,
@@ -104,47 +101,38 @@ const colors = {
     bg: "from-rose-50 via-white to-white",
     icon: "bg-rose-100 text-rose-600",
   },
-
   blue: {
     bg: "from-sky-50 via-white to-white",
     icon: "bg-sky-100 text-sky-600",
   },
-
   orange: {
     bg: "from-orange-50 via-white to-white",
     icon: "bg-orange-100 text-orange-600",
   },
-
   indigo: {
     bg: "from-indigo-50 via-white to-white",
     icon: "bg-indigo-100 text-indigo-600",
   },
-
   red: {
     bg: "from-red-50 via-white to-white",
     icon: "bg-red-100 text-red-600",
   },
-
   amber: {
     bg: "from-amber-50 via-white to-white",
     icon: "bg-amber-100 text-amber-600",
   },
-
   purple: {
     bg: "from-purple-50 via-white to-white",
     icon: "bg-purple-100 text-purple-600",
   },
-
   emerald: {
     bg: "from-emerald-50 via-white to-white",
     icon: "bg-emerald-100 text-emerald-600",
   },
-
   pink: {
     bg: "from-pink-50 via-white to-white",
     icon: "bg-pink-100 text-pink-600",
   },
-
   cyan: {
     bg: "from-cyan-50 via-white to-white",
     icon: "bg-cyan-100 text-cyan-600",
@@ -154,23 +142,15 @@ const colors = {
 function CardGrid({ items }) {
   return (
     <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-6 lg:gap-5">
-      {items.map((item, index) => {
+      {items.map((item) => {
         const Icon = item.icon;
         const theme = colors[item.color];
 
         return (
-          <motion.div
-            key={item.slug}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.45,
-              delay: index * 0.05,
-            }}
-            viewport={{ once: true }}
-          >
-            <Link
+          <div key={item.slug}>
+            <TrackedLink
               href={`/packages?category=${item.slug}`}
+              tracking={`healthbody-${item.slug}`}
               className={`
                 group
                 flex
@@ -211,11 +191,11 @@ function CardGrid({ items }) {
                 <Icon className="text-[38px]" />
               </div>
 
-              <h3 className="mt-5 text-center text-base font-semibold text-slate-900">
+              <h4 className="mt-5 text-center text-base font-semibold text-slate-900">
                 {item.title}
-              </h3>
-            </Link>
-          </motion.div>
+              </h4>
+            </TrackedLink>
+          </div>
         );
       })}
     </div>

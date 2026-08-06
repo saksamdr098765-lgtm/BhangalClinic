@@ -1,5 +1,3 @@
-"use client";
-
 import BlogCard from "@/app/blogs/components/BlogCard";
 import { blogs } from "@/app/data/blogs";
 import Link from "next/link";

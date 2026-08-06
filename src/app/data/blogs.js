@@ -333,6 +333,347 @@ tags: [
       },
     ],
   },
+  {
+  id: 2,
+
+  slug: "list-of-blood-tests",
+
+  title: "Complete List of Blood Tests and What They Mean (Full Panel Guide)",
+
+  excerpt:
+    "A complete guide to blood test names, the 5 main blood tests, 7 basic blood tests, and the 14-test full panel — what each one checks and how to read your report.",
+
+  category: "Health Tips",
+
+  author: {
+    name: "DK Bhangal Lab",
+    image: "/team/author.jpg",
+  },
+
+  publishedAt: "August 6, 2026",
+
+  readingTime: "10 min read",
+
+  coverImage: "/blogs/list-of-blood-tests/cover.webp",
+
+  featured: true,
+
+  relatedPackages: [
+    "bhangal-ayush-profile-3",
+    "bhangal-ayush-profile-3-1",
+    "bhangal-master-health-screen",
+    "bcl-med-pro-65-package",
+    "bhangal-senior-citizen-profile",
+    "bcl-female-4-package",
+  ],
+
+  seo: {
+    title:
+      "Complete List of Blood Tests and What They Mean | DK Bhangal Lab",
+
+    description:
+      "Explore the full list of blood tests, including the 5 main tests, 7 basic tests, and 14-test full panel. Learn what each blood test checks, normal ranges, and how to read your report.",
+
+    keywords: [
+      "list of blood tests",
+      "blood test names",
+      "blood test names and meanings",
+      "full blood test check",
+      "full panel blood test",
+      "5 main blood tests",
+      "7 basic blood tests",
+      "14 blood tests",
+      "blood test report",
+      "blood test normal range",
+      "blood test results chart",
+      "CBC test",
+      "full body checkup",
+      "diagnostic laboratory",
+      "DK Bhangal Lab",
+    ],
+  },
+
+  quickInfo: {
+    testName: "Full Body Blood Test Panel",
+    price: "Starting ₹499",
+    sample: "Blood Sample",
+    fasting: "Recommended (8-10 hrs) for accurate sugar & lipid results",
+    reportTime: "Same Day",
+    homeCollection: "Available",
+    recommendedFor: "Routine Health Screening, Annual Checkup, Preventive Care",
+    booking: "Online / Phone / WhatsApp",
+  },
+
+  tags: [
+    "Blood Tests",
+    "Full Body Checkup",
+    "Health Screening",
+    "CBC",
+    "Preventive Healthcare",
+    "Blood Test Report",
+  ],
+
+  content: [
+    {
+      type: "paragraph",
+      text: "Doctors use blood tests to check almost every system in your body — from blood cell counts to sugar, cholesterol, liver, kidney, and hormone levels. But most people booking a checkup have never heard the exact names of these tests, and the panels are often described differently by different labs and doctors. This guide breaks down the most common blood test panels — the 5 main tests, the 7 basic tests, and the full 14-test panel — so you know exactly what you're getting and what each result means.",
+    },
+
+    {
+      type: "image",
+      src: "/blogs/list-of-blood-tests/image-1.webp",
+      alt: "Blood sample tubes for lab testing",
+      caption: "A single blood draw can be split across multiple test panels.",
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "What Is a 'Full Blood Test Check'?",
+    },
+
+    {
+      type: "paragraph",
+      text: "A 'full blood test check' or 'full panel blood test' usually refers to a group of tests done together to give a broad picture of your health, rather than a single test. It's often called a full body checkup panel, and it commonly includes blood count, sugar, lipid profile, liver function, kidney function, and thyroid tests. The exact tests included can vary between labs, so it's worth checking the panel details before booking.",
+    },
+
+    {
+      type: "tip",
+      title: "Good to Know",
+      text: "'CBC' (Complete Blood Count) is often confused with a full body checkup — CBC is just one test within a larger panel, not the entire checkup.",
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "What Are the 5 Main Blood Tests?",
+    },
+
+    {
+      type: "paragraph",
+      text: "These five tests form the foundation of most routine health checkups and are usually the starting point doctors recommend.",
+    },
+
+    {
+      type: "table",
+      title: "5 Main Blood Tests",
+      headers: ["Test Name", "What It Checks"],
+      rows: [
+        ["Complete Blood Count (CBC)", "Red cells, white cells, platelets, hemoglobin"],
+        ["Blood Sugar (Fasting/Random)", "Diabetes risk and blood glucose control"],
+        ["Lipid Profile", "Cholesterol and triglyceride levels, heart health"],
+        ["Liver Function Test (LFT)", "Liver enzymes and overall liver health"],
+        ["Kidney Function Test (KFT)", "Creatinine, urea, and kidney health"],
+      ],
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "What Are the 7 Basic Blood Tests?",
+    },
+
+    {
+      type: "paragraph",
+      text: "Building on the 5 main tests above, these two additional tests are commonly added to form a more complete basic panel.",
+    },
+
+    {
+      type: "table",
+      title: "7 Basic Blood Tests",
+      headers: ["Test Name", "What It Checks"],
+      rows: [
+        ["CBC", "Blood cell counts and hemoglobin"],
+        ["Blood Sugar", "Diabetes risk and glucose control"],
+        ["Lipid Profile", "Cholesterol and heart health"],
+        ["LFT", "Liver health"],
+        ["KFT", "Kidney health"],
+        ["Thyroid Test (TSH)", "Thyroid hormone levels and metabolism"],
+        ["Vitamin D", "Bone health, immunity, and common deficiency"],
+      ],
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "What Are the 14 Blood Tests? (Comprehensive Panel)",
+    },
+
+    {
+      type: "paragraph",
+      text: "For a more thorough annual checkup, labs often combine the 7 basic tests above with additional markers covering inflammation, minerals, and infection screening.",
+    },
+
+    {
+      type: "table",
+      title: "14 Blood Test Full Panel",
+      headers: ["Test Name", "What It Checks"],
+      rows: [
+        ["CBC", "Blood cell counts and hemoglobin"],
+        ["ESR", "Inflammation markers in the body"],
+        ["Fasting Blood Sugar", "Diabetes screening"],
+        ["HbA1c", "Average blood sugar over 3 months"],
+        ["Lipid Profile", "Cholesterol and triglycerides"],
+        ["LFT", "Liver enzymes and function"],
+        ["KFT", "Creatinine, urea, kidney function"],
+        ["Thyroid Profile (TSH, T3, T4)", "Thyroid function"],
+        ["Vitamin D", "Bone and immune health"],
+        ["Vitamin B12", "Nerve function and energy levels"],
+        ["Calcium", "Bone health and muscle function"],
+        ["Uric Acid", "Gout risk and joint health"],
+        ["Iron / Ferritin", "Anemia and iron stores"],
+        ["CRP", "Infection and inflammation markers"],
+      ],
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "Full List of Blood Tests by Category",
+    },
+
+    {
+      type: "paragraph",
+      text: "Beyond the standard panels above, here is a categorized list of blood tests commonly available, organized by the body system they screen.",
+    },
+
+    {
+      type: "list",
+      items: [
+        "Blood Count & General Health: CBC, ESR, CRP",
+        "Diabetes & Sugar: Fasting Sugar, HbA1c, Random Sugar",
+        "Thyroid: TSH, T3, T4",
+        "Heart Health: Lipid Profile, Cholesterol",
+        "Liver & Kidney: LFT, KFT",
+        "Vitamins & Minerals: Vitamin D, Vitamin B12, Calcium, Iron, Ferritin",
+        "Infection Screening: Widal, Dengue, Malaria, Typhoid, HIV, TB",
+        "Other: Uric Acid, PSA, Hormone Panel, Allergy Panel",
+      ],
+    },
+
+    {
+      type: "image",
+      src: "/blogs/list-of-blood-tests/image-2.webp",
+      alt: "Lab technician reviewing blood test report",
+      caption: "Understanding your report helps you act on results faster.",
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "Understanding Your Blood Test Report",
+    },
+
+    {
+      type: "paragraph",
+      text: "Every blood test report typically shows the same four columns: the test name, your result, the normal reference range, and a flag if your result is high or low. If a value falls outside the normal range, it's marked (often in red or bold) so it's easy to spot — but an out-of-range result doesn't always mean something serious, so it should always be reviewed with a doctor.",
+    },
+
+    {
+      type: "table",
+      title: "Sample Blood Test Report Format",
+      headers: ["Test Name", "Result", "Normal Range", "Flag"],
+      rows: [
+        ["Hemoglobin", "13.5 g/dL", "13.0-17.0 g/dL", "Normal"],
+        ["Fasting Sugar", "110 mg/dL", "70-100 mg/dL", "High"],
+        ["Vitamin D", "18 ng/mL", "30-100 ng/mL", "Low"],
+      ],
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "How Long Does a Blood Test Take & Do You Need to Fast?",
+    },
+
+    {
+      type: "paragraph",
+      text: "Most blood draws take only 5-10 minutes, and results for common tests like CBC, sugar, and lipid profile are usually ready the same day. Fasting for 8-10 hours is recommended for sugar and lipid profile tests to get accurate results, but tests like CBC, thyroid, or Vitamin D generally don't require fasting.",
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "How Much Does a Blood Test Cost?",
+    },
+
+    {
+      type: "paragraph",
+      text: "Individual test prices vary depending on what's included, while full panels offer better value than booking tests separately. Check our current price list for exact rates on individual tests and bundled packages.",
+    },
+
+    {
+      type: "success",
+      title: "Key Takeaway",
+      text: "Whether you need a single test or a full 14-panel checkup, understanding what each blood test measures helps you make sense of your results and take timely action on your health. Regular screening — even when you feel fine — is one of the simplest ways to catch problems early.",
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "Book Your Blood Test",
+    },
+
+    {
+      type: "paragraph",
+      text: "DK Bhangal Lab offers home sample collection and same-day reports for individual tests and full body checkup packages, with service available in Garhshankar, Nawanshahr, Hoshiarpur, Rahon, and Banga.",
+    },
+
+    {
+      type: "references",
+      items: [
+        {
+          title: "Complete Blood Count (CBC)",
+          publisher: "MedlinePlus",
+          url: "https://medlineplus.gov/labtests/completebloodcountcbc.html",
+        },
+        {
+          title: "Blood Tests",
+          publisher: "National Heart, Lung, and Blood Institute (NIH)",
+          url: "https://www.nhlbi.nih.gov/health/blood-tests",
+        },
+        {
+          title: "Understanding Your Lab Test Results",
+          publisher: "Mayo Clinic",
+          url: "https://www.mayoclinic.org/",
+        },
+      ],
+    },
+  ],
+
+  faq: [
+    {
+      question: "What are the 5 main blood tests?",
+      answer:
+        "The 5 main blood tests are CBC (Complete Blood Count), blood sugar, lipid profile, liver function test (LFT), and kidney function test (KFT).",
+    },
+    {
+      question: "What are the 7 basic blood tests?",
+      answer:
+        "The 7 basic blood tests build on the 5 main tests by adding a thyroid test (TSH) and a Vitamin D test.",
+    },
+    {
+      question: "What are the 14 blood tests?",
+      answer:
+        "The 14-test panel typically includes CBC, ESR, fasting blood sugar, HbA1c, lipid profile, LFT, KFT, thyroid profile, Vitamin D, Vitamin B12, calcium, uric acid, iron/ferritin, and CRP.",
+    },
+    {
+      question: "What is a full blood test check?",
+      answer:
+        "A full blood test check refers to a combined panel of tests — usually covering blood count, sugar, cholesterol, liver, and kidney function — done together to give a broad picture of overall health.",
+    },
+    {
+      question: "Do I need to fast before a blood test?",
+      answer:
+        "Fasting for 8-10 hours is recommended for sugar and lipid profile tests. Tests like CBC, thyroid, or Vitamin D usually don't require fasting.",
+    },
+    {
+      question: "How long does a blood test take?",
+      answer:
+        "The blood draw itself takes about 5-10 minutes, and results for most routine tests are available the same day.",
+    },
+  ],
+}
 //   {
 //   id: 2,
 

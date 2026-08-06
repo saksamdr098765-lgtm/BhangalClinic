@@ -1,5 +1,3 @@
-"use client";
-
 import PackageCard from "@/app/components/PackageCard";
 import { packages } from "@/app/data/packages";
 import Link from "next/link";

@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 
 const durations = [
@@ -52,13 +51,8 @@ export default function Step4Details({
   };
 
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 25 }}
-      animate={{ opacity: 1, y: 0 }}
-      className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-7 lg:p-8"
-    >
+    <section className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-7 lg:p-8">
       {/* Heading */}
-
       <span className="inline-flex rounded-full bg-blue-50 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-blue-700 sm:px-4 sm:py-2 sm:text-sm">
         Step 4
       </span>
@@ -73,14 +67,14 @@ export default function Step4Details({
       </p>
 
       {/* Age & Gender */}
-
       <div className="mt-8 grid gap-6 lg:grid-cols-2">
         <div>
-          <label className="mb-2 block text-sm font-semibold text-slate-700">
+          <label htmlFor="ageInput" className="mb-2 block text-sm font-semibold text-slate-700">
             Age
           </label>
 
           <input
+            id="ageInput"
             type="number"
             min="1"
             max="120"
@@ -126,7 +120,6 @@ export default function Step4Details({
       </div>
 
       {/* Duration */}
-
       <div className="mt-8">
         <label className="mb-3 block text-sm font-semibold text-slate-700">
           How long have you had these symptoms?
@@ -156,7 +149,6 @@ export default function Step4Details({
       </div>
 
       {/* Medical Conditions */}
-
       <div className="mt-8">
         <label className="mb-3 block text-sm font-semibold text-slate-700">
           Existing Medical Conditions
@@ -181,7 +173,6 @@ export default function Step4Details({
       </div>
 
       {/* Footer */}
-
       <div className="mt-10 flex flex-col gap-3 border-t border-slate-100 pt-6 sm:mt-12 sm:flex-row sm:items-center sm:justify-between">
         <button
           type="button"
@@ -203,10 +194,9 @@ export default function Step4Details({
           className="group flex h-12 items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 font-semibold text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-40"
         >
           View Recommendations
-
           <FiArrowRight className="transition group-hover:translate-x-1" />
         </button>
       </div>
-    </motion.section>
+    </section>
   );
 }

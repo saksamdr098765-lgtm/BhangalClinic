@@ -1,8 +1,5 @@
-
-
 import { homeSchema } from "@/schema/homeSchema";
 import FooterCTA from "./components/CTA";
-import Footer from "./components/Footer";
 import Hero from "./components/Hero/Hero";
 import Packages from "./components/Packages";
 import PopularTests from "./components/PopularTest";
@@ -10,14 +7,11 @@ import SymptomAssessmentCTA from "./components/SymptomsAssesmentCta";
 import Testimonials from "./components/Testimonials";
 import WhyChooseUs from "./components/WhyChooseUs";
 import SITE_CONFIG from "./SITE_CONFIG";
-import HealthBodySection from "./components/HealthBodySection";
 import PackageImageCarousel from "./components/PackageImages";
 import FeaturedOrgansSection from "./components/FeaturedOrganSystem";
 import LifestyleWellnessSection from "./components/LifestyleWellnessSection";
-
 import ECGMonitor from "./components/ECGSection";
-import VisaMedicalSection from "./components/VisaMedicalServices";
-
+import HomeBlogsSection from "./components/HomeBlogsSection";
 
 export const metadata = {
   title: "Blood Tests, ECG & Full Body Checkups in Garhshankar",
@@ -54,23 +48,24 @@ export const metadata = {
     images: [SITE_CONFIG.ogImage],
   },
 };
+
 export default function Home() {
   return (
-  <>
-<Hero></Hero>
-<FeaturedOrgansSection></FeaturedOrgansSection>
-<PopularTests></PopularTests>
-<LifestyleWellnessSection></LifestyleWellnessSection>
-<Packages></Packages>
-<SymptomAssessmentCTA></SymptomAssessmentCTA>
-<PackageImageCarousel></PackageImageCarousel>
-<ECGMonitor></ECGMonitor>
-<VisaMedicalSection></VisaMedicalSection>
-<WhyChooseUs></WhyChooseUs>
-<Testimonials></Testimonials>
-<FooterCTA></FooterCTA>
+    <main>
+      <Hero />
+      <FeaturedOrgansSection />
+      <PopularTests />
+      <HomeBlogsSection />
+      <LifestyleWellnessSection />
+      <Packages />
+      <SymptomAssessmentCTA />
+      <PackageImageCarousel />
+      <ECGMonitor />
+      <WhyChooseUs />
+      <Testimonials />
+      <FooterCTA />
 
-  {homeSchema.map((schema, index) => (
+      {homeSchema.map((schema, index) => (
         <script
           key={index}
           type="application/ld+json"
@@ -79,6 +74,6 @@ export default function Home() {
           }}
         />
       ))}
-  </>
+    </main>
   );
 }

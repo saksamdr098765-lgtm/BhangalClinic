@@ -1,4 +1,3 @@
-
 import { blogsSchema } from "@/schema/blogsSchema";
 import { blogs } from "../data/blogs";
 import BlogGrid from "./components/BlogGrid";
@@ -77,28 +76,27 @@ export const metadata = {
     images: [SITE_CONFIG.ogImage],
   },
 };
+
 export default function BlogsPage() {
   const featuredBlog = blogs.find((blog) => blog.featured);
   const otherBlogs = blogs.filter((blog) => !blog.featured);
 
   return (
-    <>
-     {blogsSchema.map((schema, index) => (
-            <script
-              key={index}
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
-                __html: JSON.stringify(schema),
-              }}
-            />
-          ))}
+    <main>
+      {blogsSchema.map((schema, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schema),
+          }}
+        />
+      ))}
       <BlogHero totalBlogs={blogs.length} />
 
       <FeaturedBlog blog={featuredBlog} />
 
       <BlogGrid blogs={otherBlogs} />
-
-      {/* <HealthPackagesCTA /> */}
-    </>
+    </main>
   );
 }

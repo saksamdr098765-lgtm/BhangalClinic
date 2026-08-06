@@ -4,9 +4,9 @@ import "./globals.css";
 import { Toaster } from "sonner";
 import SITE_CONFIG from "./SITE_CONFIG";
 import { layoutSchema } from "@/schema/layoutSchema";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import FloatingButtons from "./components/FixedButtons";
 import Footer from "./components/Footer";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,7 +18,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
 export const metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
 
@@ -28,9 +27,7 @@ export const metadata = {
   },
 
   description: SITE_CONFIG.description,
-
   keywords: SITE_CONFIG.keywords,
-
   applicationName: SITE_CONFIG.shortName,
 
   authors: [
@@ -40,9 +37,7 @@ export const metadata = {
   ],
 
   creator: SITE_CONFIG.name,
-
   publisher: SITE_CONFIG.name,
-
   category: "Healthcare",
 
   alternates: {
@@ -64,17 +59,11 @@ export const metadata = {
 
   openGraph: {
     type: "website",
-
     locale: SITE_CONFIG.locale,
-
     url: SITE_CONFIG.url,
-
     siteName: SITE_CONFIG.name,
-
     title: SITE_CONFIG.name,
-
     description: SITE_CONFIG.description,
-
     images: [
       {
         url: SITE_CONFIG.ogImage,
@@ -87,19 +76,14 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-
     title: SITE_CONFIG.name,
-
     description: SITE_CONFIG.description,
-
     images: [SITE_CONFIG.ogImage],
   },
 
   icons: {
     icon: SITE_CONFIG.favicon,
-
     shortcut: SITE_CONFIG.favicon,
-
     apple: SITE_CONFIG.favicon,
   },
 
@@ -115,38 +99,49 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbar></Navbar>
-        <FloatingButtons></FloatingButtons>
+        <Navbar />
+        <FloatingButtons />
         {children}
-        <Footer></Footer>
-     
-         <Toaster
-    position="bottom-right"
-    richColors
-    closeButton
-    expand={false}
-    visibleToasts={4}
-    duration={4000}
-    toastOptions={{
-      className:
-        "!rounded-2xl !border !border-slate-200 !bg-white !text-slate-900 !shadow-2xl",
-      descriptionClassName: "!text-slate-500",
-    }}
-  />
-  {layoutSchema.map((schema, index) => (
-  <script
-    key={index}
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify(schema),
-    }}
-  />
-))}
-{/* My Analytics */}
-<GoogleAnalytics gaId={ process.env.NEXT_PUBLIC_GA_ID}/>
-{/* Client Analytics */}
-<GoogleAnalytics gaId="G-V9SYMOM57H" />
-  </body>
+        <Footer />
+
+        <Toaster
+          position="bottom-right"
+          richColors
+          closeButton
+          expand={false}
+          visibleToasts={4}
+          duration={4000}
+          toastOptions={{
+            className:
+              "!rounded-2xl !border !border-slate-200 !bg-white !text-slate-900 !shadow-2xl",
+            descriptionClassName: "!text-slate-500",
+          }}
+        />
+
+        {layoutSchema.map((schema, index) => (
+          <script
+            key={index}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(schema),
+            }}
+          />
+        ))}
+
+        {/* Analytics deferred with lazyOnload for 0ms render-blocking impact */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-V9SYMOM57H"
+          strategy="lazyOnload"
+        />
+        <Script id="google-analytics" strategy="lazyOnload">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-V9SYMOM57H');
+          `}
+        </Script>
+      </body>
     </html>
   );
 }

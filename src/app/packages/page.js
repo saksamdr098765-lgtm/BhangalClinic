@@ -3,11 +3,9 @@ import PackagesHero from './components/Hero'
 import PackagesPage from './components/Packages'
 import FAQ from './components/FAQ'
 import CTA from './components/CTA'
-// import SectionBackground from '../components/SectionBackground'
 import TestGrid from './components/TestGrid'
 import { packagesSchema } from '@/schema/packagesSchema'
 import SITE_CONFIG from '../SITE_CONFIG'
-import PackageImageCarousel from '../components/PackageImages'
 
 export const metadata = {
   title:
@@ -73,27 +71,29 @@ export const metadata = {
     images: [SITE_CONFIG.ogImage],
   },
 };
-export default function page() {
-  
-  return (
-    <Suspense fallback={null}>
-       {packagesSchema.map((schema, index) => (
-        <script
-          key={index}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schema),
-          }}
-        />
-      ))}
-        {/* <SectionBackground> */}
 
-<PackagesHero></PackagesHero>
-<PackagesPage></PackagesPage>
-<TestGrid></TestGrid>
-<FAQ></FAQ>
-<CTA></CTA>
-{/* </SectionBackground> */}
-    </Suspense>
+export default async function page({ searchParams }) {
+  const resolvedParams = await searchParams;
+
+  return (
+    <main>
+      <Suspense fallback={null}>
+        {packagesSchema.map((schema, index) => (
+          <script
+            key={index}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(schema),
+            }}
+          />
+        ))}
+
+        <PackagesHero searchParams={resolvedParams} />
+        <PackagesPage searchParams={resolvedParams} />
+        <TestGrid searchParams={resolvedParams} />
+        <FAQ />
+        <CTA />
+      </Suspense>
+    </main>
   )
 }

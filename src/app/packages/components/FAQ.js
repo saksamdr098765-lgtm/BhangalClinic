@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { FiChevronDown } from "react-icons/fi";
 
 const faqs = [
@@ -37,16 +36,12 @@ const faqs = [
   },
 ];
 
-function FAQItem({ faq, index, active, onToggle }) {
+function FAQItem({ faq, active, onToggle }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.08 }}
-      className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm sm:rounded-3xl"
-    >
+    <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm sm:rounded-3xl">
       <button
+        type="button"
+        aria-expanded={active}
         onClick={onToggle}
         className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left transition-colors hover:bg-slate-50 sm:px-7 sm:py-6"
       >
@@ -65,35 +60,14 @@ function FAQItem({ faq, index, active, onToggle }) {
         </div>
       </button>
 
-      <AnimatePresence initial={false}>
-        {active && (
-          <motion.div
-            initial={{
-              height: 0,
-              opacity: 0,
-            }}
-            animate={{
-              height: "auto",
-              opacity: 1,
-            }}
-            exit={{
-              height: 0,
-              opacity: 0,
-            }}
-            transition={{
-              duration: 0.25,
-            }}
-            className="overflow-hidden"
-          >
-            <div className="border-t border-slate-100 px-5 py-5 sm:px-7 sm:py-6">
-              <p className="text-sm leading-7 text-slate-600 sm:text-base">
-                {faq.answer}
-              </p>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.div>
+      {active && (
+        <div className="border-t border-slate-100 px-5 py-5 sm:px-7 sm:py-6">
+          <p className="text-sm leading-7 text-slate-600 sm:text-base">
+            {faq.answer}
+          </p>
+        </div>
+      )}
+    </div>
   );
 }
 
@@ -103,20 +77,7 @@ export default function FAQ() {
   return (
     <section className="bg-gradient-to-b from-slate-50 via-white to-blue-50 py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-4xl px-4 sm:px-6">
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 30,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          viewport={{
-            once: true,
-          }}
-          className="text-center"
-        >
+        <div className="text-center">
           <span className="inline-flex rounded-full border border-blue-100 bg-white px-3 py-1.5 text-xs font-semibold text-blue-700 shadow-sm sm:px-4 sm:py-2 sm:text-sm">
             Frequently Asked Questions
           </span>
@@ -130,14 +91,13 @@ export default function FAQ() {
             packages, home sample collection, reports, and the booking
             process.
           </p>
-        </motion.div>
+        </div>
 
         <div className="mt-10 space-y-4 sm:mt-14">
           {faqs.map((faq, index) => (
             <FAQItem
               key={faq.question}
               faq={faq}
-              index={index}
               active={open === index}
               onToggle={() =>
                 setOpen(open === index ? -1 : index)

@@ -1,7 +1,5 @@
-"use client";
-
-import Link from "next/link";
-import { motion } from "framer-motion";
+import Image from "next/image";
+import TrackedLink from "./TrackedLink";
 import {
   FiArrowRight,
   FiCheckCircle,
@@ -19,6 +17,13 @@ const popularTests = [
   "Diabetes Package",
 ];
 
+const trustItems = [
+  "NABL Standards",
+  "Same Day Reports",
+  "Home Collection",
+  "100+ Tests",
+];
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-white">
@@ -31,11 +36,7 @@ export default function Hero() {
       <div className="relative mx-auto max-w-7xl px-5 py-12 sm:py-16 lg:px-8 lg:py-24">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Left */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
+          <div>
             {/* Badge */}
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-medium text-blue-700">
               <FiShield />
@@ -57,62 +58,65 @@ export default function Hero() {
 
             {/* Search */}
             <div className="mt-10 rounded-2xl border border-slate-200 bg-white p-3 shadow-xl">
-              <div className="flex flex-col gap-3 lg:flex-row">
+              <form action="/packages" method="GET" className="flex flex-col gap-3 lg:flex-row">
                 <div className="flex flex-1 items-center gap-3 rounded-xl bg-slate-50 px-4">
                   <FiSearch className="text-slate-400" />
-
                   <input
                     type="text"
+                    name="search"
                     placeholder="Search tests, packages..."
+                    aria-label="Search tests and packages"
                     className="h-14 w-full bg-transparent text-sm outline-none placeholder:text-slate-400"
                   />
                 </div>
 
-                <button className="flex h-14 items-center justify-center gap-2 rounded-xl bg-blue-600 px-8 font-semibold text-white transition hover:bg-blue-700">
+                <button
+                  type="submit"
+                  className="flex h-14 items-center justify-center gap-2 rounded-xl bg-blue-600 px-8 font-semibold text-white transition duration-300 hover:bg-blue-700"
+                >
                   Search
                   <FiArrowRight />
                 </button>
-              </div>
+              </form>
 
               <div className="mt-4 flex flex-wrap gap-2">
                 {popularTests.map((item) => (
-                  <button
+                  <TrackedLink
                     key={item}
-                    className="rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-600 transition hover:bg-blue-50 hover:text-blue-600"
+                    href={`/packages?search=${encodeURIComponent(item)}`}
+                    tracking={`hero-populartest-${item.toLowerCase().replace(/\s+/g, "-")}`}
+                    className="rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-600 transition duration-300 hover:bg-blue-50 hover:text-blue-600"
                   >
                     {item}
-                  </button>
+                  </TrackedLink>
                 ))}
               </div>
             </div>
 
             {/* CTA */}
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link
+              <TrackedLink
                 href="/packages"
-                className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-6 py-4 font-semibold text-white transition hover:bg-slate-800"
+                tracking="hero-explore-packages"
+                className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-6 py-4 font-semibold text-white transition duration-300 hover:bg-slate-800"
               >
                 Explore Packages
                 <FiArrowRight />
-              </Link>
+              </TrackedLink>
 
-              <Link
-                href="/book-home-collection"
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-4 font-semibold text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
+              <TrackedLink
+                href="/contact"
+                tracking="hero-home-collection"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-4 font-semibold text-slate-700 transition duration-300 hover:border-blue-500 hover:text-blue-600"
               >
                 <FiHome />
                 Home Collection
-              </Link>
+              </TrackedLink>
             </div>
 
             {/* Trust */}
             <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
-              {[
-                "NABL Standards",
-                "Same Day Reports",
-                "Home Collection",
-                "100+ Tests",
-              ].map((item) => (
+              {trustItems.map((item) => (
                 <div key={item} className="flex items-center gap-2">
                   <FiCheckCircle className="text-green-500" />
                   <span className="text-sm font-medium text-slate-700">
@@ -121,21 +125,19 @@ export default function Hero() {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </div>
 
           {/* Right */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="relative"
-          >
+          <div className="relative">
             {/* Main Card */}
-            <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl">
-              <img
+            <div className="relative h-[560px] w-full overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl">
+              <Image
                 src="/images/hero-lab.webp"
-                alt="Diagnostic Laboratory"
-                className="h-[560px] w-full object-cover"
+                alt="Diagnostic Pathology Laboratory Equipment"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
               />
             </div>
 
@@ -147,10 +149,9 @@ export default function Hero() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-slate-900">
+                  <p className="font-semibold text-slate-900">
                     Home Collection
-                  </h4>
-
+                  </p>
                   <p className="text-sm text-slate-500">
                     Book in under 60 seconds
                   </p>
@@ -169,7 +170,6 @@ export default function Hero() {
                   <p className="font-semibold text-slate-900">
                     Reports in 24 Hours
                   </p>
-
                   <p className="text-sm text-slate-500">
                     Secure online access
                   </p>
@@ -188,7 +188,7 @@ export default function Hero() {
                 Home Sample Available
               </span>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
