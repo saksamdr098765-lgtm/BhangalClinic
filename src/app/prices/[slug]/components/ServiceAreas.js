@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
 import {
   FiMapPin,
   FiHome,
@@ -34,9 +34,10 @@ export default function ServiceAreas({ serviceAreas }) {
         <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
 
           {serviceAreas.areas.map((area) => (
-            <Link
+            <TrackingLink
               key={area.name}
               href={area.href}
+              tracking={`prices-service-area-${area.name}`}
               className="group flex items-center justify-between rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-sky-300 hover:shadow-lg"
             >
 
@@ -62,7 +63,7 @@ export default function ServiceAreas({ serviceAreas }) {
 
               <FiArrowRight className="text-slate-400 transition group-hover:translate-x-1 group-hover:text-sky-600" />
 
-            </Link>
+            </TrackingLink>
           ))}
 
         </div>
@@ -95,15 +96,16 @@ export default function ServiceAreas({ serviceAreas }) {
 
           </div>
 
-          <Link
+          <TrackingLink
             href="#booking"
+            tracking="prices-service-area-book-home-collection"
             className="mt-8 inline-flex items-center rounded-xl bg-white px-6 py-4 font-semibold text-sky-700 transition hover:bg-slate-100 lg:mt-0"
           >
             Book Home Collection
 
             <FiNavigation className="ml-2" />
 
-          </Link>
+          </TrackingLink>
 
         </div>
 

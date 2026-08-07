@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
 import {
   FiArrowRight,
 } from "react-icons/fi";
@@ -34,9 +34,10 @@ export default function RelatedTests({ relatedTests }) {
 
           {relatedTests.items.map((test) => (
 
-            <Link
+            <TrackingLink
               key={test.name}
               href={test.url}
+              tracking={`test-related-item-${test.name}`}
               className="group rounded-3xl border border-slate-200 bg-white p-6 transition hover:-translate-y-1 hover:shadow-lg"
             >
 
@@ -67,7 +68,7 @@ export default function RelatedTests({ relatedTests }) {
               </div>
 
 
-            </Link>
+            </TrackingLink>
 
           ))}
 

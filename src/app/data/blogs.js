@@ -3,338 +3,338 @@
 import SITE_CONFIG from "../SITE_CONFIG";
 
 export const blogs = [
-  {
-    id: 1,
+//   {
+//     id: 1,
 
-    slug: "vitamin-d-deficiency",
+//     slug: "vitamin-d-deficiency",
 
-    title: "Vitamin D Deficiency: Symptoms, Causes, Diagnosis & Treatment",
+//     title: "Vitamin D Deficiency: Symptoms, Causes, Diagnosis & Treatment",
 
-    excerpt:
-      "Learn everything about Vitamin D deficiency, including symptoms, causes, diagnosis, treatment, and prevention tips to maintain healthy bones and immunity.",
+//     excerpt:
+//       "Learn everything about Vitamin D deficiency, including symptoms, causes, diagnosis, treatment, and prevention tips to maintain healthy bones and immunity.",
 
-    category: "Health Tips",
+//     category: "Health Tips",
 
-    author: {
-      name: "DK Bhangal Lab",
-      image: "/team/author.jpg",
-    },
+//     author: {
+//       name: "DK Bhangal Lab",
+//       image: "/team/author.jpg",
+//     },
 
-    publishedAt: "July 19, 2026",
+//     publishedAt: "July 19, 2026",
 
-    readingTime: "8 min read",
+//     readingTime: "8 min read",
 
-    coverImage: "/blogs/vitamin-d/cover.webp",
+//     coverImage: "/blogs/vitamin-d/cover.webp",
 
-    featured: true,
-relatedPackages: [
-  "bhangal-ayush-profile-3",
-  "bhangal-ayush-profile-3-1",
-  "bhangal-master-health-screen",
-  "bcl-med-pro-65-package",
-  "bhangal-senior-citizen-profile",
-  "bcl-female-4-package",
-],
-   seo: {
-  title:
-    "Vitamin D Deficiency: Symptoms, Causes, Diagnosis & Treatment | DK Bhangal Lab",
+//     featured: true,
+// relatedPackages: [
+//   "bhangal-ayush-profile-3",
+//   "bhangal-ayush-profile-3-1",
+//   "bhangal-master-health-screen",
+//   "bcl-med-pro-65-package",
+//   "bhangal-senior-citizen-profile",
+//   "bcl-female-4-package",
+// ],
+//    seo: {
+//   title:
+//     "Vitamin D Deficiency: Symptoms, Causes, Diagnosis & Treatment | DK Bhangal Lab",
 
-  description:
-    "Learn about Vitamin D deficiency, including symptoms, causes, diagnosis, Vitamin D blood tests, treatment options, and prevention. Expert health information from DK Bhangal Lab.",
+//   description:
+//     "Learn about Vitamin D deficiency, including symptoms, causes, diagnosis, Vitamin D blood tests, treatment options, and prevention. Expert health information from DK Bhangal Lab.",
 
-  keywords: [
-    "Vitamin D deficiency",
-    "Vitamin D symptoms",
-    "Vitamin D test",
-    "Vitamin D blood test",
-    "Low Vitamin D",
-    "Vitamin D diagnosis",
-    "Vitamin D treatment",
-    "Vitamin D supplements",
-    "Bone health",
-    "Preventive healthcare",
-    "Health blog",
-    "Diagnostic laboratory",
-    "DK Bhangal Lab",
-  ],
-},
- quickInfo: {
-    testName: "Vitamin D (25-OH) Test",
-    price: "₹899",
-    sample: "Blood Sample",
-    fasting: "Not Required",
-    reportTime: "Same Day",
-    homeCollection: "Available",
-    recommendedFor: "Fatigue, Bone Pain, Muscle Weakness",
-    booking: "Online / Phone / WhatsApp",
-  },
+//   keywords: [
+//     "Vitamin D deficiency",
+//     "Vitamin D symptoms",
+//     "Vitamin D test",
+//     "Vitamin D blood test",
+//     "Low Vitamin D",
+//     "Vitamin D diagnosis",
+//     "Vitamin D treatment",
+//     "Vitamin D supplements",
+//     "Bone health",
+//     "Preventive healthcare",
+//     "Health blog",
+//     "Diagnostic laboratory",
+//     "DK Bhangal Lab",
+//   ],
+// },
+//  quickInfo: {
+//     testName: "Vitamin D (25-OH) Test",
+//     price: "₹899",
+//     sample: "Blood Sample",
+//     fasting: "Not Required",
+//     reportTime: "Same Day",
+//     homeCollection: "Available",
+//     recommendedFor: "Fatigue, Bone Pain, Muscle Weakness",
+//     booking: "Online / Phone / WhatsApp",
+//   },
 
-tags: [
-  "Vitamin D Deficiency",
-  "Vitamin D",
-  "Blood Tests",
-  "Nutrition",
-  "Bone Health",
-  "Preventive Healthcare",
-],
+// tags: [
+//   "Vitamin D Deficiency",
+//   "Vitamin D",
+//   "Blood Tests",
+//   "Nutrition",
+//   "Bone Health",
+//   "Preventive Healthcare",
+// ],
 
-  content: [
-  {
-    type: "paragraph",
-    text: "Vitamin D deficiency is one of the most common nutritional deficiencies worldwide. Vitamin D plays a vital role in maintaining healthy bones, muscles, teeth, and a strong immune system. Despite abundant sunlight in many regions, a large number of people still experience low Vitamin D levels because of indoor lifestyles, poor dietary intake, increasing use of sunscreen, aging, and certain medical conditions. Since the symptoms often develop gradually, many people remain unaware of the deficiency until it begins affecting their daily lives. Early diagnosis through a simple blood test can help prevent complications and improve overall health.",
-  },
+//   content: [
+//   {
+//     type: "paragraph",
+//     text: "Vitamin D deficiency is one of the most common nutritional deficiencies worldwide. Vitamin D plays a vital role in maintaining healthy bones, muscles, teeth, and a strong immune system. Despite abundant sunlight in many regions, a large number of people still experience low Vitamin D levels because of indoor lifestyles, poor dietary intake, increasing use of sunscreen, aging, and certain medical conditions. Since the symptoms often develop gradually, many people remain unaware of the deficiency until it begins affecting their daily lives. Early diagnosis through a simple blood test can help prevent complications and improve overall health.",
+//   },
 
-  {
-    type: "image",
-    src: "/blogs/vitamin-d/image-1.webp",
-    alt: "Vitamin D Rich Foods",
-    caption: "Foods naturally rich in Vitamin D help maintain healthy bones and immunity.",
-  },
+//   {
+//     type: "image",
+//     src: "/blogs/vitamin-d/image-1.webp",
+//     alt: "Vitamin D Rich Foods",
+//     caption: "Foods naturally rich in Vitamin D help maintain healthy bones and immunity.",
+//   },
 
-  {
-    type: "heading",
-    level: 2,
-    text: "What is Vitamin D?",
-  },
+//   {
+//     type: "heading",
+//     level: 2,
+//     text: "What is Vitamin D?",
+//   },
 
-  {
-    type: "paragraph",
-    text: "Vitamin D is a fat-soluble vitamin that helps the body absorb calcium and phosphorus, two essential minerals responsible for strong bones and healthy teeth. It also contributes to muscle function, nerve communication, and immune defense. The body naturally produces Vitamin D when the skin is exposed to sunlight, but it can also be obtained through food and supplements. Maintaining adequate Vitamin D levels is important for people of all ages, from growing children to older adults.",
-  },
+//   {
+//     type: "paragraph",
+//     text: "Vitamin D is a fat-soluble vitamin that helps the body absorb calcium and phosphorus, two essential minerals responsible for strong bones and healthy teeth. It also contributes to muscle function, nerve communication, and immune defense. The body naturally produces Vitamin D when the skin is exposed to sunlight, but it can also be obtained through food and supplements. Maintaining adequate Vitamin D levels is important for people of all ages, from growing children to older adults.",
+//   },
 
-  {
-    type: "heading",
-    level: 2,
-    text: "Symptoms of Vitamin D Deficiency",
-  },
+//   {
+//     type: "heading",
+//     level: 2,
+//     text: "Symptoms of Vitamin D Deficiency",
+//   },
 
-  {
-    type: "paragraph",
-    text: "The signs of Vitamin D deficiency may vary from person to person. Some individuals experience no symptoms at all, while others develop noticeable health problems. Persistent deficiency may affect physical performance, bone strength, and immunity.",
-  },
+//   {
+//     type: "paragraph",
+//     text: "The signs of Vitamin D deficiency may vary from person to person. Some individuals experience no symptoms at all, while others develop noticeable health problems. Persistent deficiency may affect physical performance, bone strength, and immunity.",
+//   },
 
-  {
-    type: "list",
-    items: [
-      "Persistent tiredness and fatigue",
-      "Bone or lower back pain",
-      "Muscle weakness",
-      "Frequent infections",
-      "Slow wound healing",
-      "Hair loss",
-      "Mood changes or depression",
-      "Difficulty climbing stairs",
-      "Joint discomfort",
-      "Poor bone density",
-    ],
-  },
+//   {
+//     type: "list",
+//     items: [
+//       "Persistent tiredness and fatigue",
+//       "Bone or lower back pain",
+//       "Muscle weakness",
+//       "Frequent infections",
+//       "Slow wound healing",
+//       "Hair loss",
+//       "Mood changes or depression",
+//       "Difficulty climbing stairs",
+//       "Joint discomfort",
+//       "Poor bone density",
+//     ],
+//   },
 
-  {
-    type: "tip",
-    title: "Health Tip",
-    text: "Morning sunlight exposure for 15–20 minutes several times a week may help your body naturally produce Vitamin D.",
-  },
+//   {
+//     type: "tip",
+//     title: "Health Tip",
+//     text: "Morning sunlight exposure for 15–20 minutes several times a week may help your body naturally produce Vitamin D.",
+//   },
 
-  {
-    type: "image",
-    src: "/blogs/vitamin-d/image-2.webp",
-    alt: "Morning Sunlight",
-    caption: "Moderate sunlight exposure is one of the best natural sources of Vitamin D.",
-  },
+//   {
+//     type: "image",
+//     src: "/blogs/vitamin-d/image-2.webp",
+//     alt: "Morning Sunlight",
+//     caption: "Moderate sunlight exposure is one of the best natural sources of Vitamin D.",
+//   },
 
-  {
-    type: "heading",
-    level: 2,
-    text: "Common Causes of Vitamin D Deficiency",
-  },
+//   {
+//     type: "heading",
+//     level: 2,
+//     text: "Common Causes of Vitamin D Deficiency",
+//   },
 
-  {
-    type: "paragraph",
-    text: "Several lifestyle and medical factors can contribute to low Vitamin D levels. Understanding these causes helps individuals take preventive measures before serious complications develop.",
-  },
+//   {
+//     type: "paragraph",
+//     text: "Several lifestyle and medical factors can contribute to low Vitamin D levels. Understanding these causes helps individuals take preventive measures before serious complications develop.",
+//   },
 
-  {
-    type: "list",
-    items: [
-      "Limited exposure to sunlight",
-      "Working indoors for long hours",
-      "Regular use of sunscreen",
-      "Darker skin pigmentation",
-      "Poor dietary intake",
-      "Obesity",
-      "Kidney or liver disorders",
-      "Digestive diseases affecting nutrient absorption",
-      "Increasing age",
-      "Pregnancy and breastfeeding",
-    ],
-  },
+//   {
+//     type: "list",
+//     items: [
+//       "Limited exposure to sunlight",
+//       "Working indoors for long hours",
+//       "Regular use of sunscreen",
+//       "Darker skin pigmentation",
+//       "Poor dietary intake",
+//       "Obesity",
+//       "Kidney or liver disorders",
+//       "Digestive diseases affecting nutrient absorption",
+//       "Increasing age",
+//       "Pregnancy and breastfeeding",
+//     ],
+//   },
 
-  {
-    type: "heading",
-    level: 2,
-    text: "Who is at Higher Risk?",
-  },
+//   {
+//     type: "heading",
+//     level: 2,
+//     text: "Who is at Higher Risk?",
+//   },
 
-  {
-    type: "paragraph",
-    text: "Certain individuals have a greater risk of developing Vitamin D deficiency. Older adults produce less Vitamin D through the skin, while infants who are exclusively breastfed may not receive adequate amounts unless supplementation is recommended. Individuals with chronic kidney disease, liver disease, obesity, inflammatory bowel disease, or those following strict vegetarian diets may also require closer monitoring of their Vitamin D levels.",
-  },
+//   {
+//     type: "paragraph",
+//     text: "Certain individuals have a greater risk of developing Vitamin D deficiency. Older adults produce less Vitamin D through the skin, while infants who are exclusively breastfed may not receive adequate amounts unless supplementation is recommended. Individuals with chronic kidney disease, liver disease, obesity, inflammatory bowel disease, or those following strict vegetarian diets may also require closer monitoring of their Vitamin D levels.",
+//   },
 
-  {
-    type: "heading",
-    level: 2,
-    text: "How is Vitamin D Deficiency Diagnosed?",
-  },
-{
-  type: "heading",
-  level: 2,
-  text: "Normal Vitamin D Levels",
-},
-{
-  type: "table",
-  title: "Vitamin D (25-OH) Blood Test Reference Range",
-  headers: ["Vitamin D Level", "Interpretation"],
-  rows: [
-    ["Below 20 ng/mL", "Deficient"],
-    ["20–29 ng/mL", "Insufficient"],
-    ["30–100 ng/mL", "Normal"],
-    ["Above 100 ng/mL", "High (May Require Evaluation)"],
-  ],
-},
-  {
-    type: "paragraph",
-    text: "The most reliable way to diagnose Vitamin D deficiency is through a 25-hydroxy Vitamin D blood test. This laboratory test measures the amount of Vitamin D circulating in the bloodstream and helps healthcare professionals determine whether your levels are adequate, insufficient, or deficient. Based on the results, your doctor may recommend dietary changes, supplements, or further investigations if an underlying medical condition is suspected.",
-  },
+//   {
+//     type: "heading",
+//     level: 2,
+//     text: "How is Vitamin D Deficiency Diagnosed?",
+//   },
+// {
+//   type: "heading",
+//   level: 2,
+//   text: "Normal Vitamin D Levels",
+// },
+// {
+//   type: "table",
+//   title: "Vitamin D (25-OH) Blood Test Reference Range",
+//   headers: ["Vitamin D Level", "Interpretation"],
+//   rows: [
+//     ["Below 20 ng/mL", "Deficient"],
+//     ["20–29 ng/mL", "Insufficient"],
+//     ["30–100 ng/mL", "Normal"],
+//     ["Above 100 ng/mL", "High (May Require Evaluation)"],
+//   ],
+// },
+//   {
+//     type: "paragraph",
+//     text: "The most reliable way to diagnose Vitamin D deficiency is through a 25-hydroxy Vitamin D blood test. This laboratory test measures the amount of Vitamin D circulating in the bloodstream and helps healthcare professionals determine whether your levels are adequate, insufficient, or deficient. Based on the results, your doctor may recommend dietary changes, supplements, or further investigations if an underlying medical condition is suspected.",
+//   },
 
-  {
-    type: "warning",
-    title: "Important",
-    text: "Avoid taking high-dose Vitamin D supplements without proper medical advice. Excess Vitamin D may lead to unwanted side effects and should only be taken according to professional recommendations.",
-  },
+//   {
+//     type: "warning",
+//     title: "Important",
+//     text: "Avoid taking high-dose Vitamin D supplements without proper medical advice. Excess Vitamin D may lead to unwanted side effects and should only be taken according to professional recommendations.",
+//   },
 
-  {
-    type: "heading",
-    level: 2,
-    text: "Best Food Sources of Vitamin D",
-  },
+//   {
+//     type: "heading",
+//     level: 2,
+//     text: "Best Food Sources of Vitamin D",
+//   },
 
-  {
-    type: "paragraph",
-    text: "Although sunlight is the primary natural source of Vitamin D, several foods can also contribute to maintaining healthy levels. Including these foods regularly in your diet supports overall wellness.",
-  },
+//   {
+//     type: "paragraph",
+//     text: "Although sunlight is the primary natural source of Vitamin D, several foods can also contribute to maintaining healthy levels. Including these foods regularly in your diet supports overall wellness.",
+//   },
 
-  {
-    type: "list",
-    items: [
-      "Fatty fish such as salmon and sardines",
-      "Egg yolks",
-      "Fortified milk",
-      "Fortified cereals",
-      "Cheese",
-      "Mushrooms exposed to sunlight",
-      "Fortified yogurt",
-    ],
-  },
+//   {
+//     type: "list",
+//     items: [
+//       "Fatty fish such as salmon and sardines",
+//       "Egg yolks",
+//       "Fortified milk",
+//       "Fortified cereals",
+//       "Cheese",
+//       "Mushrooms exposed to sunlight",
+//       "Fortified yogurt",
+//     ],
+//   },
 
-  {
-    type: "image",
-    src: "/blogs/vitamin-d/image-3.webp",
-    alt: "Foods containing Vitamin D",
-    caption: "A balanced diet supports healthy Vitamin D levels.",
-  },
+//   {
+//     type: "image",
+//     src: "/blogs/vitamin-d/image-3.webp",
+//     alt: "Foods containing Vitamin D",
+//     caption: "A balanced diet supports healthy Vitamin D levels.",
+//   },
 
-  {
-    type: "heading",
-    level: 2,
-    text: "Treatment Options",
-  },
+//   {
+//     type: "heading",
+//     level: 2,
+//     text: "Treatment Options",
+//   },
 
-  {
-    type: "paragraph",
-    text: "Treatment depends on the severity of the deficiency and the individual's overall health. Mild deficiencies may improve with dietary changes and increased sunlight exposure, while moderate to severe deficiencies often require Vitamin D supplements. Regular monitoring through blood tests helps ensure that Vitamin D levels return to the recommended range and remain stable over time.",
-  },
+//   {
+//     type: "paragraph",
+//     text: "Treatment depends on the severity of the deficiency and the individual's overall health. Mild deficiencies may improve with dietary changes and increased sunlight exposure, while moderate to severe deficiencies often require Vitamin D supplements. Regular monitoring through blood tests helps ensure that Vitamin D levels return to the recommended range and remain stable over time.",
+//   },
 
-  {
-    type: "heading",
-    level: 2,
-    text: "How to Prevent Vitamin D Deficiency",
-  },
+//   {
+//     type: "heading",
+//     level: 2,
+//     text: "How to Prevent Vitamin D Deficiency",
+//   },
 
-  {
-    type: "paragraph",
-    text: "Maintaining healthy Vitamin D levels is often easier than treating a long-standing deficiency. A combination of healthy lifestyle habits and routine health checkups can significantly reduce your risk.",
-  },
+//   {
+//     type: "paragraph",
+//     text: "Maintaining healthy Vitamin D levels is often easier than treating a long-standing deficiency. A combination of healthy lifestyle habits and routine health checkups can significantly reduce your risk.",
+//   },
 
-  {
-    type: "list",
-    items: [
-      "Spend time outdoors regularly",
-      "Eat Vitamin D-rich foods",
-      "Exercise consistently",
-      "Maintain a healthy body weight",
-      "Get routine health checkups",
-      "Consult your doctor before using supplements",
-    ],
-  },
+//   {
+//     type: "list",
+//     items: [
+//       "Spend time outdoors regularly",
+//       "Eat Vitamin D-rich foods",
+//       "Exercise consistently",
+//       "Maintain a healthy body weight",
+//       "Get routine health checkups",
+//       "Consult your doctor before using supplements",
+//     ],
+//   },
 
-  {
-    type: "success",
-    title: "Key Takeaway",
-    text: "Vitamin D deficiency is common but easily manageable when detected early. Regular blood testing, balanced nutrition, healthy lifestyle habits, and timely medical guidance help maintain optimal Vitamin D levels and support lifelong bone, muscle, and immune health.",
-  },
+//   {
+//     type: "success",
+//     title: "Key Takeaway",
+//     text: "Vitamin D deficiency is common but easily manageable when detected early. Regular blood testing, balanced nutrition, healthy lifestyle habits, and timely medical guidance help maintain optimal Vitamin D levels and support lifelong bone, muscle, and immune health.",
+//   },
 
-  {
-    type: "heading",
-    level: 2,
-    text: "Conclusion",
-  },
+//   {
+//     type: "heading",
+//     level: 2,
+//     text: "Conclusion",
+//   },
 
-  {
-    type: "paragraph",
-    text: "Vitamin D is essential for maintaining healthy bones, muscles, and immunity. Because deficiency often develops silently, regular health screening plays an important role in early detection. If you frequently experience fatigue, muscle weakness, bone pain, or recurrent infections, consulting a healthcare professional and undergoing a Vitamin D blood test can provide valuable insight into your overall health. Early diagnosis and appropriate treatment can help prevent long-term complications and improve quality of life.",
-  },
-  {
-  type: "references",
-  items: [
-    {
-      title: "Vitamin D - Fact Sheet for Health Professionals",
-      publisher: "National Institutes of Health (NIH)",
-      url: "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
-    },
-    {
-      title: "Vitamin D",
-      publisher: "MedlinePlus",
-      url: "https://medlineplus.gov/vitamind.html",
-    },
-    {
-      title: "Vitamin D",
-      publisher: "Mayo Clinic",
-      url: "https://www.mayoclinic.org/",
-    },
-  ],
-}
-],
+//   {
+//     type: "paragraph",
+//     text: "Vitamin D is essential for maintaining healthy bones, muscles, and immunity. Because deficiency often develops silently, regular health screening plays an important role in early detection. If you frequently experience fatigue, muscle weakness, bone pain, or recurrent infections, consulting a healthcare professional and undergoing a Vitamin D blood test can provide valuable insight into your overall health. Early diagnosis and appropriate treatment can help prevent long-term complications and improve quality of life.",
+//   },
+//   {
+//   type: "references",
+//   items: [
+//     {
+//       title: "Vitamin D - Fact Sheet for Health Professionals",
+//       publisher: "National Institutes of Health (NIH)",
+//       url: "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+//     },
+//     {
+//       title: "Vitamin D",
+//       publisher: "MedlinePlus",
+//       url: "https://medlineplus.gov/vitamind.html",
+//     },
+//     {
+//       title: "Vitamin D",
+//       publisher: "Mayo Clinic",
+//       url: "https://www.mayoclinic.org/",
+//     },
+//   ],
+// }
+// ],
 
-    faq: [
-      {
-        question: "What causes Vitamin D deficiency?",
-        answer:
-          "Limited sun exposure, poor diet, obesity, aging, and certain medical conditions can contribute to Vitamin D deficiency.",
-      },
+//     faq: [
+//       {
+//         question: "What causes Vitamin D deficiency?",
+//         answer:
+//           "Limited sun exposure, poor diet, obesity, aging, and certain medical conditions can contribute to Vitamin D deficiency.",
+//       },
 
-      {
-        question: "How is Vitamin D deficiency diagnosed?",
-        answer:
-          "A blood test measuring 25-hydroxy Vitamin D is commonly used to diagnose deficiency.",
-      },
+//       {
+//         question: "How is Vitamin D deficiency diagnosed?",
+//         answer:
+//           "A blood test measuring 25-hydroxy Vitamin D is commonly used to diagnose deficiency.",
+//       },
 
-      {
-        question: "Can Vitamin D deficiency be prevented?",
-        answer:
-          "Yes. Adequate sunlight exposure, a balanced diet, and medical advice regarding supplements can help prevent deficiency.",
-      },
-    ],
-  },
+//       {
+//         question: "Can Vitamin D deficiency be prevented?",
+//         answer:
+//           "Yes. Adequate sunlight exposure, a balanced diet, and medical advice regarding supplements can help prevent deficiency.",
+//       },
+//     ],
+//   },
   {
   id: 2,
 
@@ -361,12 +361,16 @@ tags: [
   featured: false,
 
   relatedPackages: [
-    "bhangal-ayush-profile-3",
-    "bhangal-ayush-profile-3-1",
-    "bhangal-master-health-screen",
-    "bcl-med-pro-65-package",
-    "bhangal-senior-citizen-profile",
+    "bhangal-basic-profile-plus",
+    "bhangal-advance-full-body-checkup",
+    "bhangal-basic-profile",
     "bcl-female-4-package",
+    "bhangal-senior-citizen-profile",
+    "bhangal-master-health-screen",
+    "bhangal-diabetic-profile",
+    "bhangal-ayush-profile-3",
+    "bhangal-ayush-profile-2",
+    "bhangal-ayush-profile-2-1"
   ],
 relatedTests: [
   "cbc-test",
@@ -472,7 +476,7 @@ quickInfo: [
 
     {
       type: "image",
-      src: "/blogs/list-of-blood-tests/image-1.webp",
+      src: "/blogs/list-of-blood-tests/Blood-sample-tubes.webp",
       alt: "Blood sample tubes for lab testing",
       caption: "A single blood draw can be split across multiple test panels.",
     },
@@ -492,6 +496,24 @@ quickInfo: [
       type: "tip",
       title: "Good to Know",
       text: "'CBC' (Complete Blood Count) is often confused with a full body checkup — CBC is just one test within a larger panel, not the entire checkup.",
+    },
+
+    {
+      type: "interlinking",
+      title: "Explore Our Services & Pricing",
+      description: "Now that you understand what blood tests involve, explore our dedicated service offerings and transparent pricing.",
+      items: [
+        {
+          title: "Blood Test Service Details",
+          description: "See what's included in our blood testing service, lab standards & processing.",
+          href: "/services/blood-tests",
+        },
+        {
+          title: "Blood Test Price List in Garhshankar",
+          description: "Check test rates, starting prices from ₹49, and doorstep home sample collection.",
+          href: "/prices/blood-test-price-garhshankar",
+        },
+      ],
     },
 
     {
@@ -669,7 +691,7 @@ quickInfo: [
 
     {
       type: "image",
-      src: "/blogs/list-of-blood-tests/image-2.webp",
+      src: "/blogs/list-of-blood-tests/Lab-technician-reviewing-blood-test-report.webp",
       alt: "Lab technician reviewing blood test report",
       caption: "Understanding your report helps you act on results faster.",
     },
@@ -719,6 +741,24 @@ quickInfo: [
     },
 
     {
+      type: "interlinking",
+      title: "Check Prices & Service Details",
+      description: "Ready to check cost or schedule your blood test? Move down the funnel to view exact prices and service details.",
+      items: [
+        {
+          title: "Blood Test Price in Garhshankar",
+          description: "View complete price list for CBC, Thyroid, Diabetes & full body checkup packages.",
+          href: "/prices/blood-test-price-garhshankar",
+        },
+        {
+          title: "Blood Test Service Overview",
+          description: "Learn what is included in our service, doorstep collection, and lab testing process.",
+          href: "/services/blood-tests",
+        },
+      ],
+    },
+
+    {
       type: "success",
       title: "Key Takeaway",
       text: "Whether you need a single test or a full 14-panel checkup, understanding what each blood test measures helps you make sense of your results and take timely action on your health. Regular screening — even when you feel fine — is one of the simplest ways to catch problems early.",
@@ -737,7 +777,7 @@ quickInfo: [
     {
       title: "Garhshankar",
       description: "Blood tests and home sample collection.",
-      // href: "/locations/garhshankar",
+      href: "/locations/blood-test-in-garhshankar",
     },
     {
       title: "Hoshiarpur",
@@ -834,7 +874,7 @@ cta: {
 
   serviceName: "Blood Test",
 
-  serviceLink: "/tests/cbc-test",
+  serviceLink: "/services/blood-tests",
 
   bookingLink:
     `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20want%20to%20book%20a%20Blood%20Test.%20Please%20share%20the%20available%20slots.`,

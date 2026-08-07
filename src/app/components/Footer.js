@@ -1,5 +1,7 @@
 import Image from "next/image";
 import TrackedLink from "./TrackedLink";
+import TrackingLink from "./TrackingLink";
+import TrackedPhoneLink from "./TrackedPhoneLink";
 import TrackedWhatsappLink from "./TrackedWhatsappLink";
 
 import {
@@ -149,30 +151,31 @@ export default function Footer() {
               <div className="mt-5 space-y-5">
                 <div className="flex gap-3">
                   <FiPhone className="mt-1 text-blue-600" />
-                  <a
-                    href={`tel:${SITE_CONFIG.phone}`}
+                  <TrackedPhoneLink
+                    location="footer-phone"
                     className="text-slate-600 transition hover:text-blue-600"
                   >
                     {SITE_CONFIG.phone}
-                  </a>
+                  </TrackedPhoneLink>
                 </div>
                 <div className="flex gap-3">
                   <TbDeviceLandlinePhone className="mt-1 text-blue-600" />
-                  <a
-                    href={`tel:${SITE_CONFIG.landLine}`}
+                  <TrackedPhoneLink
+                    location="footer-landline"
                     className="text-slate-600 transition hover:text-blue-600"
                   >
                     {SITE_CONFIG.landLine}
-                  </a>
+                  </TrackedPhoneLink>
                 </div>
                 <div className="flex gap-3">
                   <FiMail className="mt-1 text-blue-600" />
-                  <a
+                  <TrackingLink
                     href={`mailto:${SITE_CONFIG.email}`}
+                    tracking="footer-email"
                     className="break-all text-slate-600 transition hover:text-blue-600"
                   >
                     {SITE_CONFIG.email}
-                  </a>
+                  </TrackingLink>
                 </div>
                 <div className="flex gap-3">
                   <FiMapPin className="mt-1 shrink-0 text-red-500" />
@@ -215,24 +218,26 @@ export default function Footer() {
         {/* BOTTOM */}
         <div className="mt-12 flex flex-col gap-5 border-t border-slate-200 pt-8 md:flex-row md:items-center md:justify-between">
           <div className="flex gap-3">
-            <a
+            <TrackingLink
               href={SITE_CONFIG.social.instagram}
+              tracking="footer-social-instagram"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
               className="flex h-10 w-10 items-center justify-center rounded-full border border-blue-100 text-blue-600 transition hover:bg-blue-600 hover:text-white"
             >
               <FaInstagram />
-            </a>
-            <a
+            </TrackingLink>
+            <TrackingLink
               href={SITE_CONFIG.social.facebook}
+              tracking="footer-social-facebook"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
               className="flex h-10 w-10 items-center justify-center rounded-full border border-blue-100 text-blue-600 transition hover:bg-blue-600 hover:text-white"
             >
               <FaFacebookF />
-            </a>
+            </TrackingLink>
             <TrackedWhatsappLink
               phone={SITE_CONFIG.whatsapp}
               tracking="social-whatsapp"

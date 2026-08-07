@@ -10,6 +10,7 @@ import {
   FiTwitter,
 } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
+import { trackBlogShare } from "@/app/lib/tracking";
 
 export default function ShareButtons({ blog }) {
   const [copied, setCopied] = useState(false);
@@ -21,7 +22,12 @@ export default function ShareButtons({ blog }) {
 
   const shareText = blog.title;
 
+  const handleShareClick = (platform) => {
+    trackBlogShare(platform, blog.slug);
+  };
+
   const copyLink = async () => {
+    handleShareClick("copy_link");
     try {
       await navigator.clipboard.writeText(url);
       setCopied(true);
@@ -35,6 +41,7 @@ export default function ShareButtons({ blog }) {
   };
 
   const nativeShare = async () => {
+    handleShareClick("native_share");
     if (!navigator.share) return;
 
     try {
@@ -83,6 +90,7 @@ export default function ShareButtons({ blog }) {
                 href={`https://wa.me/?text=${encodeURIComponent(
                   `${shareText}\n${url}`
                 )}`}
+                onClick={() => handleShareClick("whatsapp")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-12 w-full items-center justify-center rounded-xl bg-green-500 text-white transition-transform duration-300 hover:scale-105 sm:h-12 sm:w-12"
@@ -95,6 +103,7 @@ export default function ShareButtons({ blog }) {
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
                   url
                 )}`}
+                onClick={() => handleShareClick("facebook")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-12 w-full items-center justify-center rounded-xl bg-blue-600 text-white transition-transform duration-300 hover:scale-105 sm:h-12 sm:w-12"
@@ -107,6 +116,7 @@ export default function ShareButtons({ blog }) {
                 href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
                   url
                 )}`}
+                onClick={() => handleShareClick("linkedin")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-12 w-full items-center justify-center rounded-xl bg-sky-700 text-white transition-transform duration-300 hover:scale-105 sm:h-12 sm:w-12"
@@ -119,6 +129,7 @@ export default function ShareButtons({ blog }) {
                 href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
                   shareText
                 )}&url=${encodeURIComponent(url)}`}
+                onClick={() => handleShareClick("twitter")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-12 w-full items-center justify-center rounded-xl bg-black text-white transition-transform duration-300 hover:scale-105 sm:h-12 sm:w-12"

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
 import {
   FiArrowLeft,
   FiArrowRight,
@@ -25,8 +25,9 @@ export default function PreviousNext({
       <div className="grid gap-5 md:grid-cols-2 lg:gap-6">
         {/* Previous */}
         {previous ? (
-          <Link
+          <TrackingLink
             href={`/blogs/${previous.slug}`}
+            tracking={`blog-prev-${previous.slug}`}
             className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-lg sm:rounded-3xl sm:p-6 lg:p-7"
           >
             <div className="mb-5 flex items-center gap-2 text-sky-600">
@@ -48,15 +49,16 @@ export default function PreviousNext({
             <p className="mt-3 line-clamp-2 text-sm leading-7 text-slate-600 sm:text-base">
               {previous.excerpt}
             </p>
-          </Link>
+          </TrackingLink>
         ) : (
           <div className="hidden md:block" />
         )}
 
         {/* Next */}
         {next ? (
-          <Link
+          <TrackingLink
             href={`/blogs/${next.slug}`}
+            tracking={`blog-next-${next.slug}`}
             className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-lg md:text-right sm:rounded-3xl sm:p-6 lg:p-7"
           >
             <div className="mb-5 flex items-center gap-2 text-sky-600 md:justify-end">
@@ -78,7 +80,7 @@ export default function PreviousNext({
             <p className="mt-3 line-clamp-2 text-sm leading-7 text-slate-600 sm:text-base">
               {next.excerpt}
             </p>
-          </Link>
+          </TrackingLink>
         ) : (
           <div className="hidden md:block" />
         )}

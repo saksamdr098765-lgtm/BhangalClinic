@@ -13,7 +13,11 @@ export default function TrackedLink({
 }) {
   const handleClick = (e) => {
     if (tracking) {
-      trackPageNavigation(tracking);
+      if (typeof tracking === "string") {
+        trackPageNavigation(tracking);
+      } else {
+        trackEvent(tracking);
+      }
     }
     if (onClick) {
       onClick(e);
@@ -30,4 +34,7 @@ export default function TrackedLink({
       {children}
     </Link>
   );
-}
+}
+
+export { TrackedLink as TrackingLink };
+

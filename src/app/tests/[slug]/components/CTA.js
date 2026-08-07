@@ -1,4 +1,5 @@
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
+import TrackedPhoneLink from "@/app/components/TrackedPhoneLink";
 import {
   FiArrowRight,
   FiPhone,
@@ -93,8 +94,9 @@ export default function CTA({ cta }) {
 
 
 
-              <Link
+              <TrackingLink
                 href={cta.bookingUrl}
+                tracking="test-cta-book-now"
                 className="mt-8 flex items-center justify-center rounded-xl bg-sky-600 px-6 py-4 font-semibold text-white transition hover:bg-sky-700"
               >
 
@@ -102,12 +104,12 @@ export default function CTA({ cta }) {
 
                 <FiArrowRight className="ml-2" />
 
-              </Link>
+              </TrackingLink>
 
 
 
-              <Link
-                href={cta.phone}
+              <TrackedPhoneLink
+                location="test-cta-phone-call"
                 className="mt-4 flex items-center justify-center rounded-xl border border-slate-300 px-6 py-4 font-semibold transition hover:border-sky-600 hover:text-sky-600"
               >
 
@@ -115,7 +117,7 @@ export default function CTA({ cta }) {
 
                 Call Now
 
-              </Link>
+              </TrackedPhoneLink>
 
 
             </div>

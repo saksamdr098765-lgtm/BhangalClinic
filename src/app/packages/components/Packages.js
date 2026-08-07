@@ -1,7 +1,7 @@
 import { FiArrowRight } from "react-icons/fi";
 import { packages } from "@/app/data/packages";
 import PackageCard from "@/app/components/PackageCard";
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
 
 export default function PackagesPage({ searchParams = {} }) {
   const search = searchParams.search?.toLowerCase() || "";
@@ -106,14 +106,15 @@ export default function PackagesPage({ searchParams = {} }) {
 
         {hasMore && (
           <div className="mt-14 flex justify-center">
-            <Link
+            <TrackingLink
               href={buildLoadMoreUrl()}
+              tracking="packages-load-more"
               scroll={false}
               className="group inline-flex items-center gap-3 rounded-2xl border border-blue-200 bg-white px-7 py-3 text-sm font-semibold text-blue-600 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-600 hover:bg-blue-600 hover:text-white"
             >
               Load More
               <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
-            </Link>
+            </TrackingLink>
           </div>
         )}
       </div>

@@ -2,7 +2,9 @@ import { getLocation, locations } from "@/app/data/locations";
 import { notFound } from "next/navigation";
 import Hero from "./components/Hero";
 import LocationOverview from "./components/LocationOverview";
+import CentralHubLinks from "./components/CentralHubLinks";
 import DiagnosticServices from "./components/DiagnosticServices";
+import PopularTests from "./components/PopularTests";
 import WhyChooseUs from "./components/WhyChooseUs";
 import HealthPackages from "./components/HealthPackages";
 import HomeCollection from "./components/HomeCollection";
@@ -27,7 +29,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const {slug}=await params
   const location = locations.find((location) => 
-    location.slug=slug,
+    location.slug === slug,
   )
 
   if (!location) {
@@ -141,7 +143,11 @@ const locationSchema=getLocationSchema(location)
 
         <LocationOverview location={location} />
 
+        <CentralHubLinks location={location} />
+
         <DiagnosticServices location={location} />
+
+        <PopularTests location={location} />
 
         <WhyChooseUs location={location} />
 

@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
+import TrackedPhoneLink from "@/app/components/TrackedPhoneLink";
 import {
   FiArrowRight,
   FiClock,
@@ -84,23 +85,24 @@ export default function Hero({ hero }) {
 
           <div className="mt-10 flex flex-wrap gap-4">
 
-            <Link
+            <TrackingLink
               href={hero.bookingUrl}
+              tracking="test-hero-book-now"
               className="inline-flex items-center rounded-xl bg-sky-600 px-7 py-4 font-semibold text-white transition hover:bg-sky-700"
             >
               {hero.bookButton}
 
               <FiArrowRight className="ml-2" />
-            </Link>
+            </TrackingLink>
 
-            <Link
-              href={hero.phone}
+            <TrackedPhoneLink
+              location="test-hero-call-now"
               className="inline-flex items-center rounded-xl border border-slate-300 px-7 py-4 font-semibold transition hover:border-sky-600 hover:text-sky-600"
             >
               <FiPhone className="mr-2" />
 
               Call Now
-            </Link>
+            </TrackedPhoneLink>
 
           </div>
 

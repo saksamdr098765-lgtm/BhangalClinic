@@ -2,33 +2,31 @@
 
 import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
-
+import { trackBlogFAQ } from "@/app/lib/tracking";
 
 export default function FAQAccordion({ faq }) {
-
   const [openIndex, setOpenIndex] = useState(0);
 
+  const handleToggle = (index, question) => {
+    const nextState = openIndex === index ? -1 : index;
+    if (nextState !== -1) {
+      trackBlogFAQ(question, "blog_faq");
+    }
+    setOpenIndex(nextState);
+  };
 
   return (
-
     <div className="space-y-3 sm:space-y-4">
-
-      {faq.map((item,index)=>{
-
+      {faq.map((item, index) => {
         const isOpen = openIndex === index;
 
-
         return (
-
           <div
             key={index}
             className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
           >
-
             <button
-              onClick={() =>
-                setOpenIndex(isOpen ? -1 : index)
-              }
+              onClick={() => handleToggle(index, item.question)}
               className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left sm:px-6"
             >
 

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
 import {
   FiActivity,
   FiArrowRight,
@@ -10,119 +10,110 @@ import {
 
 export default function ServiceCTA() {
   const benefits = [
-    "Accurate & Reliable Reports",
+    "Accurate Reports",
     "Affordable Pricing",
-    "Experienced Laboratory Team",
-    "Fast Report Delivery",
+    "Expert Lab Team",
+    "Fast Delivery",
   ];
 
   return (
-    <section className="bg-slate-50 py-12 sm:py-16 lg:py-24">
+    <section className="bg-slate-50 py-8 sm:py-12 lg:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-sky-600 via-sky-700 to-blue-800 shadow-2xl lg:rounded-[40px]">
-          {/* Background */}
+        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-sky-600 via-sky-700 to-blue-800 shadow-xl sm:rounded-3xl">
+          {/* Background Glow */}
+          <div className="absolute -right-20 -top-20 h-48 w-48 rounded-full bg-white/10 blur-2xl" />
+          <div className="absolute -bottom-20 -left-20 h-48 w-48 rounded-full bg-white/10 blur-2xl" />
 
-          <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
-          <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
-
-          <div className="relative grid gap-10 p-6 sm:p-8 lg:grid-cols-[1fr_400px] lg:items-center lg:gap-14 lg:p-14">
+          <div className="relative grid gap-6 p-5 sm:p-8 lg:grid-cols-[1fr_360px] lg:items-center lg:gap-10 lg:p-10">
             {/* Left */}
-
             <div>
-              <span className="inline-flex items-center rounded-full bg-white/15 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-white backdrop-blur sm:px-4 sm:py-2 sm:text-sm">
+              <span className="inline-flex items-center rounded-full bg-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white backdrop-blur">
                 Book Your Diagnostic Test Today
               </span>
 
-              <h2 className="mt-5 text-3xl font-black leading-tight text-white sm:text-4xl lg:text-5xl">
+              <h2 className="mt-3 text-2xl font-black leading-tight text-white sm:text-3xl lg:text-4xl">
                 Take the Next Step Towards Better Health
               </h2>
 
-              <p className="mt-5 max-w-2xl text-base leading-7 text-sky-100 sm:text-lg sm:leading-8">
-                Early diagnosis plays an important role in maintaining good
-                health. Whether you need routine blood tests, preventive health
-                screening, or specialized laboratory investigations, our team is
-                committed to delivering accurate reports with exceptional
-                patient care.
+              <p className="mt-3 text-xs leading-5 text-sky-100 sm:text-base sm:leading-7">
+                Early diagnosis plays an important role in maintaining good health. Our team is committed to delivering accurate reports with exceptional patient care.
               </p>
 
-              {/* Benefits */}
-
-              <div className="mt-8 grid gap-3 sm:grid-cols-2">
+              {/* Benefits (2-column grid on mobile) */}
+              <div className="mt-4 grid grid-cols-2 gap-2">
                 {benefits.map((benefit) => (
                   <div
                     key={benefit}
-                    className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/10 px-4 py-3 backdrop-blur"
+                    className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/10 px-3 py-2 backdrop-blur"
                   >
-                    <FiCheckCircle className="text-lg text-green-300" />
-
-                    <span className="text-sm font-medium text-white sm:text-base">
+                    <FiCheckCircle className="text-xs text-green-300 shrink-0" />
+                    <span className="text-xs font-medium text-white">
                       {benefit}
                     </span>
                   </div>
                 ))}
               </div>
 
-              {/* CTA */}
-
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Link
+              {/* CTA Buttons */}
+              <div className="mt-5 flex flex-col gap-2.5 sm:flex-row">
+                <TrackingLink
                   href="/packages"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3.5 font-semibold text-sky-700 transition-all duration-300 hover:-translate-y-0.5 hover:bg-slate-100 hover:shadow-xl sm:w-auto"
+                  tracking="service-cta-explore-packages"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 text-xs font-semibold text-sky-700 transition hover:bg-slate-100 sm:w-auto sm:text-sm"
                 >
                   Explore Health Packages
                   <FiArrowRight />
-                </Link>
+                </TrackingLink>
 
-                <Link
+                <TrackingLink
                   href="/contact"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/25 bg-white/5 px-6 py-3.5 font-semibold text-white backdrop-blur transition hover:bg-white/10 sm:w-auto"
+                  tracking="service-cta-contact-us"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/5 px-5 py-3 text-xs font-semibold text-white backdrop-blur transition hover:bg-white/10 sm:w-auto sm:text-sm"
                 >
                   Contact Us
                   <FiPhone />
-                </Link>
+                </TrackingLink>
               </div>
             </div>
 
             {/* Right Card */}
-
-            <div className="rounded-3xl bg-white p-6 shadow-2xl sm:p-8">
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-sky-100 text-sky-600 sm:h-20 sm:w-20 sm:rounded-3xl">
-                <FiActivity size={34} />
+            <div className="rounded-xl bg-white p-4 text-slate-900 shadow-md sm:rounded-2xl sm:p-6">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-100 text-sky-600">
+                <FiActivity size={26} />
               </div>
 
-              <h3 className="mt-6 text-2xl font-black text-slate-900 sm:text-3xl">
+              <h3 className="mt-3 text-lg font-bold sm:text-xl">
                 Why Patients Trust Us
               </h3>
 
-              <div className="mt-8 space-y-6">
+              <div className="mt-4 space-y-3">
                 {[
                   {
                     icon: FiShield,
                     title: "Reliable Diagnostics",
-                    text: "Advanced laboratory technology with strict quality control for dependable results.",
+                    text: "Advanced lab technology with strict quality control.",
                   },
                   {
                     icon: FiClock,
                     title: "Timely Reports",
-                    text: "Quick turnaround times help doctors and patients make timely healthcare decisions.",
+                    text: "Quick turnaround times for healthcare decisions.",
                   },
                   {
                     icon: FiCheckCircle,
                     title: "Patient-Focused Care",
-                    text: "Friendly staff, transparent pricing, and professional support throughout your healthcare journey.",
+                    text: "Friendly staff, transparent pricing, and support.",
                   },
                 ].map((item) => (
-                  <div key={item.title} className="flex gap-4">
-                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-600">
-                      <item.icon />
+                  <div key={item.title} className="flex gap-3">
+                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-sky-100 text-sky-600">
+                      <item.icon className="text-sm" />
                     </div>
 
                     <div>
-                      <h4 className="font-semibold text-slate-900">
+                      <h4 className="text-xs font-bold text-slate-900 sm:text-sm">
                         {item.title}
                       </h4>
-
-                      <p className="mt-1 text-sm leading-6 text-slate-600">
+                      <p className="mt-0.5 text-xs text-slate-600 leading-4">
                         {item.text}
                       </p>
                     </div>
@@ -130,33 +121,22 @@ export default function ServiceCTA() {
                 ))}
               </div>
 
-              {/* Stats */}
+              {/* Mini Stats */}
+              <div className="mt-4 grid grid-cols-3 gap-2 border-t border-slate-200 pt-3 text-center">
+                <div>
+                  <p className="text-lg font-black text-sky-600 sm:text-xl">100+</p>
+                  <p className="text-[10px] text-slate-500">Tests</p>
+                </div>
 
-              <div className="mt-8 grid grid-cols-3 gap-4 border-t border-slate-200 pt-6">
-                {[
-                  {
-                    value: "500+",
-                    label: "Lab Tests",
-                  },
-                  {
-                    value: "15+",
-                    label: "Years",
-                  },
-                  {
-                    value: "100%",
-                    label: "Care",
-                  },
-                ].map((stat) => (
-                  <div key={stat.label}>
-                    <p className="text-2xl font-black text-sky-600 sm:text-3xl">
-                      {stat.value}
-                    </p>
+                <div>
+                  <p className="text-lg font-black text-sky-600 sm:text-xl">15+</p>
+                  <p className="text-[10px] text-slate-500">Years</p>
+                </div>
 
-                    <p className="mt-1 text-xs text-slate-500 sm:text-sm">
-                      {stat.label}
-                    </p>
-                  </div>
-                ))}
+                <div>
+                  <p className="text-lg font-black text-sky-600 sm:text-xl">100%</p>
+                  <p className="text-[10px] text-slate-500">Care</p>
+                </div>
               </div>
             </div>
           </div>

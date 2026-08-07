@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TrackedLink from "@/app/components/TrackedLink";
+import TrackingLink from "@/app/components/TrackingLink";
 import {
   FiArrowRight,
   FiCalendar,
@@ -8,10 +8,10 @@ import {
 
 export default function BlogCard({ blog }) {
   return (
-    <TrackedLink
+    <TrackingLink
       href={`/blogs/${blog.slug}`}
       tracking={`blog-card-${blog.slug}`}
-      className="group flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-sky-200 hover:shadow-xl"
+      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xs transition-all duration-300 hover:-translate-y-1 hover:border-sky-300 hover:shadow-md"
     >
       {/* Cover Image */}
       <div className="relative overflow-hidden">
@@ -22,19 +22,19 @@ export default function BlogCard({ blog }) {
           height={450}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           loading="lazy"
-          className="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-110"
+          className="aspect-[16/9] w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
 
         {/* Category */}
-        <span className="absolute left-5 top-5 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-sky-700 backdrop-blur">
+        <span className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-0.5 text-[11px] font-semibold text-sky-700 backdrop-blur">
           {blog.category}
         </span>
       </div>
 
       {/* Content */}
-      <div className="flex flex-1 flex-col p-6">
+      <div className="flex flex-1 flex-col p-4 sm:p-5">
         {/* Meta */}
-        <div className="mb-4 flex flex-wrap items-center gap-4 text-sm text-slate-500">
+        <div className="mb-2 flex flex-wrap items-center gap-3 text-xs text-slate-500">
           <span className="flex items-center gap-1">
             <FiCalendar className="text-sky-600" />
             {blog.publishedAt}
@@ -47,19 +47,19 @@ export default function BlogCard({ blog }) {
         </div>
 
         {/* Title */}
-        <h3 className="line-clamp-2 text-2xl font-bold leading-snug text-slate-900 transition-colors duration-300 group-hover:text-sky-600">
+        <h3 className="line-clamp-2 text-base font-bold leading-snug text-slate-900 transition-colors group-hover:text-sky-600 sm:text-lg">
           {blog.title}
         </h3>
 
         {/* Excerpt */}
-        <p className="mt-4 line-clamp-3 flex-1 leading-7 text-slate-600">
+        <p className="mt-2 line-clamp-2 flex-1 text-xs leading-5 text-slate-600 sm:text-sm">
           {blog.excerpt}
         </p>
 
         {/* Footer */}
-        <div className="mt-6 flex items-center justify-between border-t border-slate-100 pt-5">
+        <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-3 text-xs">
           <div>
-            <p className="text-xs uppercase tracking-wide text-slate-400">
+            <p className="text-[10px] uppercase tracking-wide text-slate-400">
               By
             </p>
 
@@ -68,12 +68,12 @@ export default function BlogCard({ blog }) {
             </p>
           </div>
 
-          <span className="inline-flex items-center gap-2 font-semibold text-sky-600">
+          <span className="inline-flex items-center gap-1 font-bold text-sky-600">
             Read More
-            <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+            <FiArrowRight className="text-xs transition-transform duration-300 group-hover:translate-x-0.5" />
           </span>
         </div>
       </div>
-    </TrackedLink>
+    </TrackingLink>
   );
 }

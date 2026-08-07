@@ -1,5 +1,6 @@
 import SITE_CONFIG from "@/app/SITE_CONFIG";
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
+import TrackedPhoneLink from "@/app/components/TrackedPhoneLink";
 import {
   FiActivity,
   FiArrowRight,
@@ -26,9 +27,10 @@ export default function BlogSidebar({
 
         <div className="space-y-5">
           {recentBlogs.map((blog) => (
-            <Link
+            <TrackingLink
               key={blog.slug}
               href={`/blogs/${blog.slug}`}
+              tracking={`sidebar-recent-${blog.slug}`}
               className="group block rounded-xl transition hover:bg-slate-50 hover:p-2"
             >
               <p className="text-xs font-semibold uppercase tracking-wide text-sky-600">
@@ -44,7 +46,7 @@ export default function BlogSidebar({
 
                 <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
               </span>
-            </Link>
+            </TrackingLink>
           ))}
         </div>
       </div>
@@ -57,12 +59,14 @@ export default function BlogSidebar({
 
         <div className="flex flex-wrap gap-2">
           {categories.map((category) => (
-            <span
+            <TrackingLink
               key={category}
-              className="rounded-full bg-sky-50 px-3 py-1.5 text-xs font-semibold text-sky-700 sm:text-sm"
+              href="/blogs"
+              tracking={`sidebar-category-${category}`}
+              className="rounded-full bg-sky-50 px-3 py-1.5 text-xs font-semibold text-sky-700 transition hover:bg-sky-100 sm:text-sm"
             >
               {category}
-            </span>
+            </TrackingLink>
           ))}
         </div>
       </div>
@@ -82,14 +86,15 @@ export default function BlogSidebar({
           trusted professionals, and quick report delivery.
         </p>
 
-        <Link
+        <TrackingLink
           href="/packages"
+          tracking="sidebar-cta-packages"
           className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-sky-700 transition-all hover:scale-[1.02] hover:bg-slate-100 sm:w-auto"
         >
           View Packages
 
           <FiArrowRight />
-        </Link>
+        </TrackingLink>
       </div>
 
       {/* Contact */}
@@ -104,12 +109,12 @@ export default function BlogSidebar({
               Need Assistance?
             </p>
 
-            <a
-              href={`tel:${SITE_CONFIG.phone}`}
+            <TrackedPhoneLink
+              location="sidebar-phone-call"
               className="mt-1 block text-lg font-semibold text-slate-900 transition-colors hover:text-sky-600"
             >
               {SITE_CONFIG.phone}
-            </a>
+            </TrackedPhoneLink>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import {
   FiAward,
   FiCheckCircle,
   FiClock,
+  FiHome,
   FiShield,
   FiUsers,
 } from "react-icons/fi";
@@ -14,51 +15,47 @@ const icons = {
   users: FiUsers,
   activity: FiActivity,
   check: FiCheckCircle,
+  home: FiHome,
 };
 
 export default function WhyChooseLab({ service }) {
   return (
-    <section className="bg-slate-50 py-12 sm:py-16 lg:py-24">
+    <section className="bg-slate-50 py-8 sm:py-12 lg:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
-
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center rounded-full border border-sky-200 bg-sky-100 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-sky-700 sm:px-4 sm:py-2 sm:text-sm">
+          <span className="inline-flex items-center rounded-full border border-sky-200 bg-sky-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-700">
             Why Choose DK Bhangal Lab
           </span>
 
-          <h2 className="mt-5 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+          <h2 className="mt-3 text-2xl font-black tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
             Trusted Diagnostic Care Backed by Experience
           </h2>
 
-          <p className="mt-5 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-            At DK Bhangal Laboratory & ECG, we combine experienced healthcare
-            professionals, advanced diagnostic technology, and a patient-first
-            approach to deliver accurate laboratory testing with dependable
-            results and exceptional care.
+          <p className="mt-3 text-xs leading-5 text-slate-600 sm:text-base sm:leading-7">
+            At DK Bhangal Laboratory & ECG, we combine experienced professionals, advanced technology, and a patient-first approach.
           </p>
         </div>
 
-        {/* Features */}
-
-        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:mt-14 xl:grid-cols-3 xl:gap-8">
+        {/* Features (Compact 2-column on mobile) */}
+        <div className="mt-6 grid grid-cols-2 gap-2.5 sm:gap-4 lg:grid-cols-3">
           {service.whyChoose.features.map((feature) => {
-            const Icon = icons[feature.icon];
+            const Icon = icons[feature.icon] || FiShield;
 
             return (
               <div
                 key={feature.title}
-                className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl sm:p-8"
+                className="group rounded-2xl border border-slate-200 bg-white p-3.5 sm:p-5 shadow-2xs transition hover:-translate-y-0.5 hover:border-sky-200 hover:shadow-md"
               >
-                <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-sky-100 transition-colors duration-300 group-hover:bg-sky-600">
-                  <Icon className="text-3xl text-sky-600 transition-colors duration-300 group-hover:text-white" />
+                <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-xl bg-sky-100 text-sky-600 transition-colors group-hover:bg-sky-600 group-hover:text-white">
+                  <Icon className="text-xl sm:text-2xl" />
                 </div>
 
-                <h3 className="mt-6 text-xl font-bold text-slate-900">
+                <h3 className="mt-3 text-sm font-bold text-slate-900 sm:text-base">
                   {feature.title}
                 </h3>
 
-                <p className="mt-4 text-sm leading-7 text-slate-600 sm:text-base">
+                <p className="mt-1.5 text-xs leading-5 text-slate-600 sm:text-sm">
                   {feature.description}
                 </p>
               </div>
@@ -66,43 +63,32 @@ export default function WhyChooseLab({ service }) {
           })}
         </div>
 
-        {/* Bottom Section */}
-
-        <div className="relative mt-12 overflow-hidden rounded-3xl bg-gradient-to-r from-sky-600 via-sky-700 to-blue-800 lg:mt-16">
-          {/* Background Glow */}
-
-          <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-white/10 blur-3xl" />
-          <div className="absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-sky-300/20 blur-3xl" />
-
-          <div className="relative grid gap-8 p-6 sm:p-8 lg:grid-cols-[1fr_380px] lg:items-center lg:gap-12 lg:p-10">
+        {/* Bottom Banner */}
+        <div className="relative mt-8 overflow-hidden rounded-2xl bg-gradient-to-r from-sky-600 via-sky-700 to-blue-800 p-5 text-white sm:rounded-3xl sm:p-8">
+          <div className="relative grid gap-6 lg:grid-cols-[1fr_340px] lg:items-center lg:gap-8">
             {/* Left */}
-
-            <div className="text-white">
-              <h3 className="text-2xl font-bold sm:text-3xl">
+            <div>
+              <h3 className="text-xl font-bold sm:text-2xl lg:text-3xl">
                 Your Health Deserves Accuracy & Trust
               </h3>
 
-              <p className="mt-4 text-base leading-7 text-sky-100 sm:text-lg sm:leading-8">
-                Whether you're booking a routine blood test, preventive health
-                screening, or specialized diagnostic investigation, our focus
-                is delivering dependable laboratory services with complete
-                transparency, quality assurance, and timely reporting.
+              <p className="mt-3 text-xs leading-5 text-sky-100 sm:text-base sm:leading-7">
+                Whether you're booking a routine blood test or preventive screening, we deliver dependable laboratory services with complete transparency.
               </p>
 
-              <div className="mt-8 grid gap-3 sm:grid-cols-2">
+              <div className="mt-4 grid grid-cols-2 gap-2">
                 {[
-                  "Experienced Laboratory Team",
-                  "Modern Diagnostic Equipment",
-                  "Strict Quality Control",
+                  "Experienced Team",
+                  "Modern Equipment",
+                  "Quality Control",
                   "Affordable Pricing",
                 ].map((item) => (
                   <div
                     key={item}
-                    className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/10 px-4 py-3 backdrop-blur"
+                    className="flex items-center gap-2 rounded-lg border border-white/10 bg-white/10 p-2 backdrop-blur"
                   >
-                    <FiCheckCircle className="text-green-300" />
-
-                    <span className="text-sm font-medium sm:text-base">
+                    <FiCheckCircle className="text-xs text-green-300 shrink-0" />
+                    <span className="text-xs font-medium text-white">
                       {item}
                     </span>
                   </div>
@@ -111,36 +97,31 @@ export default function WhyChooseLab({ service }) {
             </div>
 
             {/* Right Card */}
-
-            <div className="rounded-3xl bg-white p-6 shadow-2xl sm:p-8">
-              <h4 className="text-2xl font-bold text-slate-900">
+            <div className="rounded-xl bg-white p-4 text-slate-900 shadow-md sm:rounded-2xl sm:p-6">
+              <h4 className="text-base font-bold sm:text-lg">
                 Our Commitment
               </h4>
 
-              <div className="mt-8 space-y-6">
+              <div className="mt-3 space-y-3">
                 {[
                   {
                     title: "Accuracy",
-                    text: "Reliable diagnostic reports generated using advanced laboratory technology.",
+                    text: "Reliable diagnostic reports generated using advanced technology.",
                   },
                   {
                     title: "Compassion",
-                    text: "Friendly healthcare professionals committed to patient comfort and support.",
+                    text: "Friendly healthcare professionals committed to patient comfort.",
                   },
                   {
                     title: "Excellence",
-                    text: "Continuous focus on quality, innovation, and dependable laboratory services.",
+                    text: "Continuous focus on quality and dependable laboratory services.",
                   },
                 ].map((item) => (
-                  <div
-                    key={item.title}
-                    className="border-b border-slate-100 pb-5 last:border-0 last:pb-0"
-                  >
-                    <h5 className="font-semibold text-sky-600">
+                  <div key={item.title} className="border-b border-slate-100 pb-2.5 last:border-0 last:pb-0">
+                    <h5 className="text-xs font-bold text-sky-600 sm:text-sm">
                       {item.title}
                     </h5>
-
-                    <p className="mt-2 text-sm leading-7 text-slate-600 sm:text-base">
+                    <p className="mt-0.5 text-xs text-slate-600 leading-4">
                       {item.text}
                     </p>
                   </div>
@@ -148,36 +129,18 @@ export default function WhyChooseLab({ service }) {
               </div>
 
               {/* Mini Stats */}
-
-              <div className="mt-8 grid grid-cols-3 gap-4 border-t border-slate-200 pt-6 text-center">
+              <div className="mt-4 grid grid-cols-3 gap-2 border-t border-slate-200 pt-3 text-center">
                 <div>
-                  <h5 className="text-2xl font-black text-sky-600 sm:text-3xl">
-                    15+
-                  </h5>
-
-                  <p className="mt-1 text-xs text-slate-500 sm:text-sm">
-                    Years
-                  </p>
+                  <h5 className="text-lg font-black text-sky-600 sm:text-xl">15+</h5>
+                  <p className="text-[10px] text-slate-500">Years</p>
                 </div>
-
                 <div>
-                  <h5 className="text-2xl font-black text-sky-600 sm:text-3xl">
-                    500+
-                  </h5>
-
-                  <p className="mt-1 text-xs text-slate-500 sm:text-sm">
-                    Tests
-                  </p>
+                  <h5 className="text-lg font-black text-sky-600 sm:text-xl">100+</h5>
+                  <p className="text-[10px] text-slate-500">Tests</p>
                 </div>
-
                 <div>
-                  <h5 className="text-2xl font-black text-sky-600 sm:text-3xl">
-                    100%
-                  </h5>
-
-                  <p className="mt-1 text-xs text-slate-500 sm:text-sm">
-                    Care
-                  </p>
+                  <h5 className="text-lg font-black text-sky-600 sm:text-xl">100%</h5>
+                  <p className="text-[10px] text-slate-500">Care</p>
                 </div>
               </div>
             </div>

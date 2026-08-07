@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
 import { packages } from "@/app/data/packages";
 import { FaArrowRight, FaBoxOpen } from "react-icons/fa";
 
@@ -31,9 +31,10 @@ export default function RelatedPackages({ relatedPackages = [] }) {
       {/* Compact responsive grid */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {recommended.map((pkg) => (
-          <Link
+          <TrackingLink
             key={pkg.slug ?? pkg.id}
             href={`/packages/${pkg.slug}`}
+            tracking={`blog-related-package-${pkg.slug}`}
             className="flex items-center justify-between gap-4 rounded-2xl border border-slate-200 bg-white px-4 py-4 transition-colors hover:bg-sky-50 sm:px-5"
           >
             <div className="flex min-w-0 items-start gap-3">
@@ -60,7 +61,7 @@ export default function RelatedPackages({ relatedPackages = [] }) {
               View
               <FaArrowRight className="h-3.5 w-3.5" />
             </span>
-          </Link>
+          </TrackingLink>
         ))}
       </div>
     </section>

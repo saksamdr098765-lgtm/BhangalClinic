@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TrackedLink from "@/app/components/TrackedLink";
+import TrackingLink from "@/app/components/TrackingLink";
 import {
   FiArrowRight,
   FiCalendar,
@@ -10,89 +10,86 @@ export default function FeaturedBlog({ blog }) {
   if (!blog) return null;
 
   return (
-    <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:py-20">
+    <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-10 lg:py-14">
       {/* Heading */}
-      <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-        <div>
-          <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold tracking-wide text-sky-700 sm:px-4 sm:py-1.5 sm:text-sm">
-            Featured Article
-          </span>
+      <div className="mb-4">
+        <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold tracking-wide text-sky-700">
+          Featured Article
+        </span>
 
-          <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-            Editor's Pick
-          </h2>
-        </div>
+        <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
+          Editor's Pick
+        </h2>
       </div>
 
-      <TrackedLink
+      <TrackingLink
         href={`/blogs/${blog.slug}`}
         tracking={`featured-blog-${blog.slug}`}
-        className="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+        className="group block overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xs transition hover:-translate-y-0.5 hover:shadow-md"
       >
         <div className="grid lg:grid-cols-2">
           {/* Image */}
-          <div className="relative aspect-[16/10] overflow-hidden lg:aspect-auto">
+          <div className="relative aspect-[16/9] overflow-hidden lg:aspect-auto">
             <Image
               src={blog.coverImage}
               alt={blog.title}
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
 
-            <div className="absolute left-4 top-4 sm:left-6 sm:top-6">
-              <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-sky-700 backdrop-blur sm:px-4 sm:py-2 sm:text-sm">
+            <div className="absolute left-3 top-3 sm:left-4 sm:top-4">
+              <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-sky-700 backdrop-blur">
                 {blog.category}
               </span>
             </div>
           </div>
 
           {/* Content */}
-          <div className="flex flex-col justify-center p-5 sm:p-8 lg:p-12">
+          <div className="flex flex-col justify-center p-4 sm:p-6 lg:p-8">
             {/* Meta */}
-            <div className="mb-5 flex flex-wrap items-center gap-4 text-xs text-slate-500 sm:gap-6 sm:text-sm">
-              <span className="flex items-center gap-2">
+            <div className="mb-3 flex flex-wrap items-center gap-3 text-xs text-slate-500">
+              <span className="flex items-center gap-1">
                 <FiCalendar className="text-sky-600" />
                 {blog.publishedAt}
               </span>
 
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-1">
                 <FiClock className="text-sky-600" />
                 {blog.readingTime}
               </span>
             </div>
 
             {/* Title */}
-            <h2 className="text-2xl font-black leading-tight text-slate-900 transition-colors duration-300 group-hover:text-sky-600 sm:text-3xl lg:text-4xl">
+            <h3 className="text-xl font-black leading-snug text-slate-900 transition-colors group-hover:text-sky-600 sm:text-2xl lg:text-3xl">
               {blog.title}
-            </h2>
+            </h3>
 
             {/* Excerpt */}
-            <p className="mt-4 text-sm leading-7 text-slate-600 sm:mt-5 sm:text-base sm:leading-8 lg:text-lg">
+            <p className="mt-2 text-xs leading-5 text-slate-600 sm:text-sm sm:leading-6">
               {blog.excerpt}
             </p>
 
             {/* Footer */}
-            <div className="mt-8 flex flex-col gap-5 border-t border-slate-100 pt-6 sm:flex-row sm:items-center sm:justify-between">
+            <div className="mt-5 flex items-center justify-between border-t border-slate-100 pt-4">
               <div>
-                <p className="text-xs uppercase tracking-wide text-slate-500">
+                <p className="text-[10px] uppercase tracking-wide text-slate-400">
                   Written by
                 </p>
-
-                <p className="mt-1 text-base font-semibold text-slate-900 sm:text-lg">
+                <p className="text-xs font-bold text-slate-900 sm:text-sm">
                   {blog.author.name}
                 </p>
               </div>
 
-              <span className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-sky-600 px-5 py-3 text-sm font-semibold text-white transition-all duration-300 group-hover:bg-sky-700 sm:w-auto sm:px-6 sm:py-4 sm:text-base">
+              <span className="inline-flex items-center gap-1.5 rounded-xl bg-sky-600 px-4 py-2 text-xs font-semibold text-white transition group-hover:bg-sky-700 sm:px-5 sm:py-2.5 sm:text-sm">
                 Read Article
-                <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+                <FiArrowRight className="transition-transform group-hover:translate-x-0.5" />
               </span>
             </div>
           </div>
         </div>
-      </TrackedLink>
+      </TrackingLink>
     </section>
   );
 }

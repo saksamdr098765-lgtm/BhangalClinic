@@ -1,5 +1,6 @@
 import SITE_CONFIG from "@/app/SITE_CONFIG";
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
+import TrackedPhoneLink from "@/app/components/TrackedPhoneLink";
 import {
   FiMapPin,
   FiPhone,
@@ -23,6 +24,7 @@ ${SITE_CONFIG.address.state}`,
       label: "Phone",
       value: location.phone,
       href: `tel:${SITE_CONFIG.phone}`,
+      isPhone: true,
     },
     {
       icon: FiMail,
@@ -88,13 +90,21 @@ ${SITE_CONFIG.address.state}`,
                         {item.label}
                       </p>
 
-                      {item.href ? (
-                        <a
-                          href={item.href}
+                      {item.isPhone ? (
+                        <TrackedPhoneLink
+                          location={`location-map-phone-${location.city}`}
                           className="mt-2 block text-sm font-semibold text-slate-700 transition hover:text-sky-600 sm:text-base"
                         >
                           {item.value}
-                        </a>
+                        </TrackedPhoneLink>
+                      ) : item.href ? (
+                        <TrackingLink
+                          href={item.href}
+                          tracking={`location-map-contact-${item.label}`}
+                          className="mt-2 block text-sm font-semibold text-slate-700 transition hover:text-sky-600 sm:text-base"
+                        >
+                          {item.value}
+                        </TrackingLink>
                       ) : (
                         <p className="mt-2 text-sm leading-7 text-slate-700 sm:text-base">
                           {item.value}
@@ -109,24 +119,26 @@ ${SITE_CONFIG.address.state}`,
             {/* Buttons */}
 
             <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:gap-4">
-              <Link
+              <TrackingLink
                 href={SITE_CONFIG.googleMaps.direction}
+                tracking="location-map-get-directions"
                 target="_blank"
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-sky-600 px-5 py-3 font-semibold text-white transition hover:bg-sky-700 sm:rounded-2xl sm:px-6 sm:py-4"
               >
                 Get Directions
 
                 <FiNavigation />
-              </Link>
+              </TrackingLink>
 
-              <Link
+              <TrackingLink
                 href="/contact"
+                tracking="location-map-contact-us"
                 className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 px-5 py-3 font-semibold text-slate-700 transition hover:border-sky-600 hover:text-sky-600 sm:rounded-2xl sm:px-6 sm:py-4"
               >
                 Contact Us
 
                 <FiArrowRight />
-              </Link>
+              </TrackingLink>
             </div>
           </div>
 

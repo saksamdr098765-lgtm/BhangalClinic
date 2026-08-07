@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { trackBlogTOC } from "@/app/lib/tracking";
 
 export default function TableOfContents({ content }) {
   const headings = content.filter(
@@ -64,6 +65,7 @@ export default function TableOfContents({ content }) {
               <li key={id}>
                 <a
                   href={`#${id}`}
+                  onClick={() => trackBlogTOC(id, "toc_click")}
                   className={`relative block rounded-xl border-l-2 py-2 pl-4 pr-3 text-sm leading-6 transition-all duration-200 ${
                     active
                       ? "border-sky-600 bg-sky-50 font-semibold text-sky-700"

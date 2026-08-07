@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
 import { FiChevronRight, FiHome } from "react-icons/fi";
 
 export default function Breadcrumb({ blog }) {
@@ -9,13 +9,14 @@ export default function Breadcrumb({ blog }) {
     >
       <ol className="flex min-w-max items-center gap-2 text-xs sm:text-sm">
         <li>
-          <Link
+          <TrackingLink
             href="/"
+            tracking="breadcrumb-home"
             className="flex items-center gap-1 rounded-lg px-1 py-1 text-slate-500 transition-colors hover:text-sky-600"
           >
             <FiHome className="h-4 w-4 shrink-0" />
             <span>Home</span>
-          </Link>
+          </TrackingLink>
         </li>
 
         <li>
@@ -23,12 +24,13 @@ export default function Breadcrumb({ blog }) {
         </li>
 
         <li>
-          <Link
+          <TrackingLink
             href="/blogs"
+            tracking="breadcrumb-blogs"
             className="rounded-lg px-1 py-1 text-slate-500 transition-colors hover:text-sky-600"
           >
             Blogs
-          </Link>
+          </TrackingLink>
         </li>
 
         <li>

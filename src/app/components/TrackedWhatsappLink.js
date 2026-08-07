@@ -1,6 +1,7 @@
 "use client";
 
 import { trackWhatsAppClick } from "@/app/lib/tracking";
+import SITE_CONFIG from "../SITE_CONFIG";
 
 export default function TrackedWhatsappLink({
   phone,
@@ -18,7 +19,7 @@ export default function TrackedWhatsappLink({
     }
   };
 
-  const whatsappUrl = `https://wa.me/${phone}${text ? `?text=${encodeURIComponent(text)}` : ""}`;
+  const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsapp}${text ? `?text=${encodeURIComponent(text)}` : ""}`;
 
   return (
     <a

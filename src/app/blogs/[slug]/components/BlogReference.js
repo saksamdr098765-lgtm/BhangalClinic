@@ -1,4 +1,5 @@
 import React from 'react'
+import TrackingLink from "@/app/components/TrackingLink";
 
 export default function BlogReference({block,index}) {
   return (
@@ -10,14 +11,15 @@ export default function BlogReference({block,index}) {
       <ul className="space-y-3">
         {block.items.map((item, i) => (
           <li key={i} className="text-sm leading-6 text-slate-700">
-            <a
+            <TrackingLink
               href={item.url}
+              tracking={`blog-reference-${item.title}`}
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-sky-700 underline underline-offset-2 hover:text-sky-900"
             >
               {item.title}
-            </a>
+            </TrackingLink>
 
             {item.publisher && (
               <span className="text-slate-500"> — {item.publisher}</span>

@@ -1,6 +1,6 @@
 import BlogCard from "@/app/blogs/components/BlogCard";
 import { blogs } from "@/app/data/blogs";
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
 import { FiArrowRight } from "react-icons/fi";
 
 export default function RelatedBlogs({ service }) {
@@ -11,60 +11,52 @@ export default function RelatedBlogs({ service }) {
   if (!relatedBlogs.length) return null;
 
   return (
-    <section className="bg-slate-50 py-12 sm:py-16 lg:py-24">
+    <section className="bg-slate-50 py-8 sm:py-12 lg:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
-
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center rounded-full border border-sky-200 bg-sky-100 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-sky-700 sm:px-4 sm:py-2 sm:text-sm">
+          <span className="inline-flex items-center rounded-full border border-sky-200 bg-sky-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-700">
             Health Education
           </span>
 
-          <h2 className="mt-5 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+          <h2 className="mt-3 text-2xl font-black tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
             Learn More About Your Health
           </h2>
 
-          <p className="mt-5 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-            Understanding your health is the first step toward prevention.
-            Explore our expert-written articles covering symptoms, diagnostic
-            tests, preventive care, nutrition, and common medical conditions
-            related to this service.
+          <p className="mt-3 text-xs leading-5 text-slate-600 sm:text-base sm:leading-7">
+            Explore expert-written articles covering symptoms, diagnostic tests, and preventive care.
           </p>
         </div>
 
-        {/* Blog Cards */}
-
-        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:mt-14 xl:grid-cols-3 xl:gap-8">
+        {/* Blog Cards Grid */}
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {relatedBlogs.map((blog) => (
             <BlogCard key={blog.slug} blog={blog} />
           ))}
         </div>
 
-        {/* CTA */}
-
-        <div className="mt-12 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:mt-16">
-          <div className="flex flex-col gap-8 p-6 sm:p-8 lg:flex-row lg:items-center lg:justify-between lg:p-10">
+        {/* CTA Banner */}
+        <div className="relative mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 shadow-xs sm:rounded-3xl sm:p-8">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="max-w-2xl">
-              <h3 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              <h3 className="text-lg font-bold text-slate-900 sm:text-2xl">
                 Explore More Health Articles
               </h3>
 
-              <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-                Browse our collection of expert-written blogs covering
-                preventive healthcare, laboratory testing, nutrition, common
-                diseases, and wellness tips to help you make informed
-                healthcare decisions.
+              <p className="mt-1.5 text-xs leading-5 text-slate-600 sm:text-sm sm:leading-6">
+                Browse our collection of expert-written blogs covering preventive healthcare and wellness.
               </p>
             </div>
 
             <div className="shrink-0">
-              <Link
+              <TrackingLink
                 href="/blogs"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-sky-600 px-6 py-3.5 font-semibold text-white transition-all duration-300 hover:bg-sky-700 hover:shadow-lg sm:w-auto"
+                tracking={`service-related-blogs-view-all-${service.slug}`}
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-sky-600 px-5 py-3 text-xs font-semibold text-white transition hover:bg-sky-700 sm:w-auto sm:px-6 sm:py-3.5 sm:text-sm"
               >
                 View All Blogs
                 <FiArrowRight />
-              </Link>
+              </TrackingLink>
             </div>
           </div>
         </div>

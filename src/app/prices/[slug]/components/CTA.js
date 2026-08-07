@@ -1,119 +1,105 @@
-import Link from "next/link";
-import {
-  FiArrowRight,
-  FiPhone,
-  FiCheckCircle,
-} from "react-icons/fi";
+import TrackingLink from "@/app/components/TrackingLink";
+import TrackedPhoneLink from "@/app/components/TrackedPhoneLink";
+import TrackedWhatsappLink from "@/app/components/TrackedWhatsappLink";
+import { FiArrowRight, FiPhone, FiCheckCircle } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 
-export default function CTA({ cta }) {
+export default function CTA({ cta, slug, testTitle }) {
+  if (!cta) return null;
+
+  const name = testTitle || cta.testName || "Blood Test";
+  const offerPrice = cta.offerPrice || 399;
+  const actualPrice = cta.actualPrice;
+
   return (
-    <section className="py-10 sm:py-14 lg:py-16">
+    <section className="bg-white py-8 sm:py-12 lg:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="overflow-hidden rounded-2xl bg-gradient-to-r from-sky-600 to-cyan-600 p-5 text-white shadow-xl sm:rounded-3xl sm:p-8 lg:p-10">
-          <div className="grid items-center gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10">
-
-            {/* Content */}
+        <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-sky-600 via-sky-700 to-blue-800 p-5 text-white shadow-xl sm:rounded-3xl sm:p-8 lg:p-10">
+          <div className="grid items-center gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10">
+            {/* Left Content */}
             <div>
-              <span className="inline-flex rounded-full bg-white/15 px-3 py-1.5 text-xs font-semibold sm:text-sm">
-                Ready to Book?
+              <span className="inline-flex rounded-full bg-white/15 px-3 py-1 text-xs font-semibold backdrop-blur">
+                Doorstep Collection Available
               </span>
 
-              <h2 className="mt-4 max-w-xl text-2xl font-bold leading-tight sm:text-3xl lg:text-4xl">
-                {cta.title}
+              <h2 className="mt-3 text-2xl font-black leading-tight sm:text-3xl lg:text-4xl">
+                {cta.title || `Book Your ${name} Today`}
               </h2>
 
-              <p className="mt-3 max-w-xl text-sm leading-6 text-sky-100 sm:text-base">
-                {cta.description}
+              <p className="mt-2 text-xs leading-5 text-sky-100 sm:text-base sm:leading-7">
+                {cta.description || `Fast, reliable diagnostic testing with same-day reports & doorstep sample pickup.`}
               </p>
 
-              <div className="mt-5 grid gap-2 sm:grid-cols-2">
-                {cta.highlights.map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-start gap-2 text-sm text-white"
-                  >
-                    <FiCheckCircle className="mt-0.5 shrink-0" />
+              <div className="mt-4 grid grid-cols-2 gap-2 text-xs">
+                {(cta.highlights || [
+                  "Home Sample Collection",
+                  "Digital Reports",
+                  "NABL Standards",
+                  "Doctor Support",
+                ]).map((item) => (
+                  <div key={item} className="flex items-center gap-1.5 text-white">
+                    <FiCheckCircle className="text-green-300 text-xs shrink-0" />
                     <span>{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Booking Card */}
-            <div className="rounded-2xl bg-white p-5 text-slate-900 shadow-lg sm:p-6">
-              <p className="text-xs font-bold uppercase tracking-wide text-sky-600">
-                Starting From
-              </p>
+            {/* Right Booking Card */}
+            <div className="rounded-xl bg-white p-4 text-slate-900 shadow-lg sm:rounded-2xl sm:p-6">
+              <span className="text-[10px] font-bold uppercase tracking-wide text-sky-600">
+                Special Offer Rate
+              </span>
 
-              <div className="mt-2 flex items-baseline gap-2">
-                {cta.actualPrice && (
-                  <span className="text-lg text-slate-400 line-through">
-                    ₹{cta.actualPrice}
+              <div className="mt-1 flex items-baseline gap-2">
+                <span className="text-3xl font-black text-sky-600 sm:text-4xl">
+                  ₹{offerPrice}
+                </span>
+                {actualPrice && (
+                  <span className="text-sm text-slate-400 line-through">
+                    ₹{actualPrice}
                   </span>
                 )}
-
-                <span className="text-3xl font-extrabold text-sky-600 sm:text-4xl">
-                  ₹{cta.offerPrice}
-                </span>
               </div>
 
-              <p className="mt-2 text-sm leading-5 text-slate-500">
-                Home sample collection with fast digital reports.
+              <p className="mt-1 text-xs text-slate-500">
+                Home collection with digital report delivery.
               </p>
 
-              {/* Buttons */}
-              <div className="mt-5 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-1">
-                <Link
-                  href={cta.bookingUrl}
-                  className="inline-flex items-center justify-center rounded-xl bg-sky-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-sky-700"
+              {/* Action Buttons */}
+              <div className="mt-4 flex flex-col gap-2">
+                <TrackedWhatsappLink
+                  text={`Hi, I want to book the "${name}" at ₹${offerPrice}. Please confirm collection schedule.`}
+                  location={`price-cta-whatsapp-book-${slug}`}
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-green-600 px-4 py-3 text-xs font-bold text-white transition hover:bg-green-700 sm:text-sm"
                 >
-                  {cta.buttonText}
-                  <FiArrowRight className="ml-2" />
-                </Link>
+                  <FaWhatsapp className="text-base" />
+                  Book Now via WhatsApp
+                </TrackedWhatsappLink>
 
-                <Link
-                  href={cta.phone}
-                  className="inline-flex items-center justify-center rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-700 transition hover:border-sky-500 hover:text-sky-600"
+                <TrackedPhoneLink
+                  location={`price-cta-phone-call-${slug}`}
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-300 px-4 py-2.5 text-xs font-bold text-slate-700 transition hover:border-sky-600 hover:text-sky-600 sm:text-sm"
                 >
-                  <FiPhone className="mr-2" />
-                  Call Now
-                </Link>
+                  <FiPhone className="text-xs" />
+                  Call Lab Now
+                </TrackedPhoneLink>
               </div>
 
-              {/* Resources */}
-              <div className="mt-6 border-t border-slate-100 pt-5">
-                <h3 className="text-sm font-bold text-slate-900">
-                  Helpful Resources
-                </h3>
+              {/* Links */}
+              <div className="mt-4 border-t border-slate-100 pt-3 flex items-center justify-between text-xs font-semibold text-sky-600">
+                <TrackingLink
+                  href="/packages"
+                  tracking={`prices-cta-packages-link-${slug}`}
+                  className="hover:underline flex items-center gap-1"
+                >
+                  View Health Packages
+                  <FiArrowRight className="text-[10px]" />
+                </TrackingLink>
 
-                <div className="mt-3 space-y-2">
-                  <Link
-                    href={cta.blogUrl}
-                    className="flex items-center justify-between rounded-lg bg-slate-50 px-3 py-2.5 text-sm transition hover:bg-sky-50"
-                  >
-                    <span>What is {cta.testName}?</span>
-                    <FiArrowRight className="text-sky-600" />
-                  </Link>
-
-                  <Link
-                    href={cta.serviceUrl}
-                    className="flex items-center justify-between rounded-lg bg-slate-50 px-3 py-2.5 text-sm transition hover:bg-sky-50"
-                  >
-                    <span>{cta.testName} Details</span>
-                    <FiArrowRight className="text-sky-600" />
-                  </Link>
-
-                  <Link
-                    href={cta.packageUrl}
-                    className="flex items-center justify-between rounded-lg bg-slate-50 px-3 py-2.5 text-sm transition hover:bg-sky-50"
-                  >
-                    <span>Health Packages</span>
-                    <FiArrowRight className="text-sky-600" />
-                  </Link>
-                </div>
+              
               </div>
             </div>
-
           </div>
         </div>
       </div>

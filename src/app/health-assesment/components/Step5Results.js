@@ -3,13 +3,15 @@
 import { FiCheckCircle, FiPackage, FiActivity } from "react-icons/fi";
 import { getRecommendations } from "./recommendationEngine";
 import { tests, packages } from "./data";
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
+import { trackWhatsAppClick } from "@/app/lib/tracking";
 import SITE_CONFIG from "@/app/SITE_CONFIG";
 
 export default function Step5Results({ assessment }) {
   const recommendations = getRecommendations(assessment);
 
   const handleWhatsApp = (test) => {
+    trackWhatsAppClick(`health-assessment-test-${test.name}`);
     const message = `Hello,
 
 I would like to book the following test.
@@ -80,9 +82,10 @@ Thank you.`;
               if (!pkg) return null;
 
               return (
-                <Link
+                <TrackingLink
                   key={item.packageId}
                   href={`/packages/${item.packageId}`}
+                  tracking={`health-assessment-package-${item.packageId}`}
                 >
                   <div className="rounded-2xl border border-blue-100 bg-blue-50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
                     <div className="flex items-start justify-between gap-4">
@@ -101,7 +104,7 @@ Thank you.`;
                       </span>
                     </div>
                   </div>
-                </Link>
+                </TrackingLink>
               );
             })}
           </div>

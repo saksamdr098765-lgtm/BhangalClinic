@@ -1,6 +1,6 @@
 import { tests } from "@/app/data/tests";
 import TestCard from "@/app/components/TestCard";
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
 
 const DEFAULT_LIMIT = 10;
 
@@ -64,9 +64,10 @@ export default function TestGrid({ searchParams = {} }) {
             {categories.map((category) => {
               const active = selectedCategory === category;
               return (
-                <Link
+                <TrackingLink
                   key={category}
                   href={buildCategoryUrl(category)}
+                  tracking={`test-grid-category-${category}`}
                   scroll={false}
                   className={`whitespace-nowrap rounded-full border px-5 py-2 text-sm font-semibold transition-all ${
                     active
@@ -75,7 +76,7 @@ export default function TestGrid({ searchParams = {} }) {
                   }`}
                 >
                   {category}
-                </Link>
+                </TrackingLink>
               );
             })}
           </div>
@@ -107,13 +108,14 @@ export default function TestGrid({ searchParams = {} }) {
         {/* Load More */}
         {hasMore && (
           <div className="mt-10 flex justify-center">
-            <Link
+            <TrackingLink
               href={buildLoadMoreUrl()}
+              tracking="test-grid-load-more"
               scroll={false}
               className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-blue-700 sm:w-auto sm:min-w-[220px]"
             >
               Load More Tests
-            </Link>
+            </TrackingLink>
           </div>
         )}
       </div>

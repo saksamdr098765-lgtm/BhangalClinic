@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
 import {
   FiArrowRight,
   FiTag,
@@ -64,8 +64,9 @@ export default function PricePreview({ pricePreview }) {
             </p>
 
 
-            <Link
+            <TrackingLink
               href={pricePreview.priceUrl}
+              tracking="test-price-preview-view-and-book"
               className="mt-6 inline-flex items-center rounded-xl bg-sky-600 px-6 py-3 font-semibold text-white transition hover:bg-sky-700"
             >
 
@@ -73,7 +74,7 @@ export default function PricePreview({ pricePreview }) {
 
               <FiArrowRight className="ml-2" />
 
-            </Link>
+            </TrackingLink>
 
 
           </div>

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
 import { FiArrowRight } from "react-icons/fi";
 
 export default function BlogInterlinking({
@@ -47,13 +47,14 @@ export default function BlogInterlinking({
           );
 
           return item.href ? (
-            <Link
+            <TrackingLink
               key={item.href}
               href={item.href}
+              tracking={`blog-interlink-${item.href}`}
               className={classes}
             >
               {Content}
-            </Link>
+            </TrackingLink>
           ) : (
             <div
               key={index}

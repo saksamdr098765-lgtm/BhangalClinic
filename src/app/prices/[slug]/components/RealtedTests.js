@@ -1,7 +1,12 @@
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
+import { tests } from "@/app/data/tests";
 import { FiArrowRight } from "react-icons/fi";
 
-export default function RelatedTests({ relatedTests }) {
+export default function RelatedTests({ priceData }) {
+  const relatedTests = tests
+    .filter((test) => priceData.relatedTests.includes(test.slug))
+console.log(relatedTests)
+  if (!relatedTests.length) return null;
   return (
     <section className="bg-slate-50 py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -30,9 +35,10 @@ export default function RelatedTests({ relatedTests }) {
 
           {relatedTests.map((test) => (
 
-            <Link
+            <TrackingLink
               key={test.slug}
               href={`/prices/${test.slug}`}
+              tracking={`prices-related-test-${test.slug}`}
               className="group rounded-3xl border border-slate-200 bg-white p-6 transition hover:-translate-y-1 hover:border-sky-300 hover:shadow-lg"
             >
 
@@ -63,7 +69,7 @@ export default function RelatedTests({ relatedTests }) {
 
               </div>
 
-            </Link>
+            </TrackingLink>
 
           ))}
 

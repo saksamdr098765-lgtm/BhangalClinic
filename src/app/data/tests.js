@@ -137,7 +137,7 @@ export const tests = [
 
   bookingUrl: "/prices/cbc-test-price-chandigarh",
 
-  phone: "tel:+911234567890",
+  phone: "tel:+918968038602",
 },
 quickFacts: {
   sample: "Blood Sample",
@@ -461,7 +461,7 @@ cta: {
 
 
   phone:
-    "tel:+911234567890",
+    "tel:+918968038602",
 
 
   buttonText:

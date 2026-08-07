@@ -2,81 +2,89 @@ export const locations = [
 {
   id: 1,
 
-  slug: "garhshankar",
+  slug: "blood-test-in-garhshankar",
 
   city: "Garhshankar",
 
   state: "Punjab",
 
-  title: "Diagnostic Laboratory in Garhshankar",
+  title: "Blood Test in Garhshankar",
 
   shortDescription:
-    "DK Bhangal Laboratory & ECG offers trusted blood tests, pathology services, ECG, preventive health checkups, and home sample collection in Garhshankar with accurate reports and affordable pricing.",
+    "Book accurate blood tests in Garhshankar with DK Bhangal Laboratory & ECG. Home sample collection, fast reports, and affordable pricing for CBC, thyroid, diabetes, and full body checkups.",
 
-  coverImage: "/locations/garhshankar/cover.jpg",
+
 
   seo: {
     title:
-      "Best Diagnostic Laboratory in Garhshankar | Blood Test & Health Packages",
+      "Blood Test in Garhshankar | Home Sample Collection & Lab Visit",
 
     description:
-      "Looking for a reliable diagnostic laboratory in Garhshankar? DK Bhangal Laboratory provides accurate blood tests, pathology services, ECG, preventive health packages, and home sample collection with fast reporting.",
+      "Get your blood test done in Garhshankar with DK Bhangal Laboratory — accurate reports, home sample collection, affordable prices, and same-day results. Book online today.",
 
     keywords: [
-      "Diagnostic Laboratory Garhshankar",
+      "Blood Test in Garhshankar",
       "Blood Test Garhshankar",
-      "Pathology Lab Garhshankar",
-      "ECG Test Garhshankar",
-      "Health Checkup Garhshankar",
+      "Blood Test Lab Garhshankar",
+      "Blood Test Near Me Garhshankar",
+      "Blood Test Center Garhshankar",
+      "Best Diagnostic Lab Near Me Blood Test Garhshankar",
+      "Pathology Lab Punjab Blood Test",
       "Home Sample Collection Garhshankar",
-      "Blood Test Near Me",
+      "Blood Test at Home Garhshankar",
+      "CBC Test Garhshankar",
+      "Thyroid Test Garhshankar",
+      "Diabetes Test Garhshankar",
       "Vitamin D Test Garhshankar",
       "Vitamin B12 Test Garhshankar",
-      "Thyroid Test Garhshankar",
-      "CBC Test Garhshankar",
-      "Diabetes Test Garhshankar",
+      "Full Body Checkup Garhshankar",
     ],
   },
 
   overview: {
+    heading: "Blood Test in Garhshankar",
+
     paragraphs: [
-      "DK Bhangal Laboratory & ECG is one of the trusted diagnostic laboratories serving Garhshankar and nearby villages with accurate pathology services, preventive health screening, ECG testing, and routine laboratory investigations. Our goal is to help individuals and families make informed healthcare decisions through reliable diagnostic reports produced using modern laboratory technology and strict quality control standards. Whether you require routine blood testing, specialized pathology investigations, or complete preventive health screening, our experienced laboratory team is committed to delivering dependable results with complete patient satisfaction.",
+      "Looking for a reliable blood test in Garhshankar? DK Bhangal Laboratory & ECG is a trusted diagnostic lab offering accurate blood testing for individuals and families across Garhshankar and surrounding villages. From routine screening to specialized investigations, our laboratory uses modern automated equipment and strict quality protocols to ensure dependable results every time.",
 
-      "Healthcare begins with accurate diagnosis. At DK Bhangal Laboratory, we understand that every test result plays an important role in identifying diseases, monitoring ongoing medical conditions, and supporting physicians in making informed treatment decisions. Our laboratory performs a wide range of blood tests including Complete Blood Count (CBC), Blood Sugar, Lipid Profile, Liver Function Test (LFT), Kidney Function Test (KFT), Thyroid Profile, Vitamin D Test, Vitamin B12 Test, HbA1c, Electrolytes, Urine Examination, Allergy Testing, and many other advanced diagnostic investigations. Each sample is handled with precision by trained professionals following standardized laboratory procedures to ensure reliable and reproducible results.",
-
-      "Patients across Garhshankar choose DK Bhangal Laboratory because of our commitment to quality, transparency, affordability, and compassionate patient care. We continuously invest in advanced diagnostic equipment and follow established quality assurance protocols to maintain high standards of accuracy. Our laboratory also provides preventive health packages designed for men, women, senior citizens, diabetes monitoring, thyroid evaluation, and complete wellness screening. For patients who cannot visit the laboratory, our home sample collection service offers a convenient and safe solution, allowing blood samples to be collected from the comfort of home without compromising quality. Fast report delivery, experienced professionals, friendly staff, and personalized healthcare support have made DK Bhangal Laboratory a preferred diagnostic partner for families throughout Garhshankar and surrounding areas."
+      "Whether you need a single test like CBC or Blood Sugar, or a complete health checkup package, we make blood testing in Garhshankar simple, affordable, and convenient. Visit our lab directly, or book a home sample collection and have a trained phlebotomist collect your sample from your doorstep — no travel, no waiting.",
     ],
 
     highlights: [
-      "Advanced Diagnostic Laboratory",
-      "500+ Laboratory Tests",
-      "Modern Automated Equipment",
-      "Experienced Pathology Professionals",
-      "Preventive Health Packages",
-      "ECG Testing",
+      "100+ Blood Tests Available",
       "Home Sample Collection",
-      "Fast & Accurate Reports",
-      "Affordable Pricing",
-      "Strict Quality Control",
-      "Patient-Centered Care",
-      "Trusted by Thousands of Families",
+      "Same-Day Reports for Routine Tests",
+      "Affordable, Transparent Pricing",
+      "Experienced Lab Technicians",
     ],
   },
 
-  services: [
-    "home-sample-collection",
-    "blood-test-at-home",
-    "ecg-test",
-    "cbc-test",
-    "thyroid-profile",
-    "vitamin-d-test",
-    "vitamin-b12-test",
-    "diabetes-testing",
-    "liver-function-test",
-    "kidney-function-test",
-    "lipid-profile",
-    "allergy-testing",
-  ],
+  popularTests: {
+    heading: "Popular Blood Tests in Garhshankar",
+
+    // tests: [
+    //   { name: "Complete Blood Count (CBC)", fasting: false },
+    //   { name: "Blood Sugar (Fasting/PP/Random)", fasting: true },
+    //   { name: "HbA1c (Diabetes)", fasting: false },
+    //   { name: "Thyroid Profile (TSH, T3, T4)", fasting: false },
+    //   { name: "Lipid Profile", fasting: true },
+    //   { name: "Liver Function Test (LFT)", fasting: true },
+    //   { name: "Kidney Function Test (KFT)", fasting: false },
+    //   { name: "Vitamin D Test", fasting: false },
+    //   { name: "Vitamin B12 Test", fasting: false },
+    //   { name: "CRP / Widal / Dengue Profile", fasting: false },
+    // ],
+    test:[
+"total-cholesterol",
+"lipid-profile",
+"blood-urea",
+"kidney-function-test",
+"blood-sugar-test",
+"cbc-test",
+"platelet-count"
+
+    ]
+  },
 
   packages: [
     "bhangal-basic-profile",
@@ -87,43 +95,74 @@ export const locations = [
     "bcl-med-pro-65-package",
   ],
 
+  process: {
+    heading: "How to Get a Blood Test in Garhshankar",
+
+    steps: [
+      {
+        icon: "search",
+        title: "Choose Your Test",
+        description:
+          "Select the blood test or health package you need, or ask our team for guidance.",
+      },
+      {
+        icon: "calendar",
+        title: "Book an Appointment",
+        description:
+          "Schedule online or by phone — visit our lab or request home sample collection.",
+      },
+      {
+        icon: "lab",
+        title: "Sample Collection",
+        description:
+          "Your sample is collected at our lab or your home by a trained phlebotomist.",
+      },
+      {
+        icon: "report",
+        title: "Get Your Report",
+        description:
+          "Receive accurate results digitally or in print, usually within the same day.",
+      },
+    ],
+  },
+
   whyChoose: {
     features: [
       {
         icon: "activity",
         title: "Advanced Diagnostic Technology",
         description:
-          "Our laboratory uses modern automated analyzers and advanced diagnostic equipment to ensure highly accurate and dependable test results.",
+          "Modern automated analyzers ensure accurate, dependable blood test results.",
       },
       {
         icon: "award",
-        title: "Experienced Laboratory Team",
+        title: "Experienced Lab Team",
         description:
-          "Qualified laboratory professionals follow strict quality standards throughout every stage of sample collection, processing, and reporting.",
+          "Qualified professionals follow strict standards from collection to reporting.",
       },
       {
         icon: "shield",
-        title: "Reliable Quality Assurance",
+        title: "Quality Assurance",
         description:
-          "Every sample is processed using standardized laboratory protocols with rigorous quality control procedures.",
+          "Every sample is processed with rigorous quality control checks.",
       },
       {
         icon: "clock",
-        title: "Fast Report Delivery",
+        title: "Fast Reports",
         description:
-          "Routine investigations are reported quickly so patients and doctors can begin timely treatment whenever needed.",
+          "Most routine blood test reports in Garhshankar are ready the same day.",
       },
       {
-        icon: "users",
-        title: "Patient-Focused Healthcare",
+        icon: "home",
+        title: "Home Collection Available",
         description:
-          "We believe every patient deserves respectful care, clear communication, and a comfortable diagnostic experience.",
+          "Skip the visit — get your blood sample collected at your doorstep in Garhshankar.",
       },
       {
         icon: "check",
-        title: "Affordable Diagnostic Services",
+        title: "Affordable Pricing",
         description:
-          "Transparent pricing and economical preventive health packages make quality diagnostics accessible for every family.",
+          "Transparent, competitive pricing on all blood tests and health packages.",
       },
     ],
   },
@@ -151,72 +190,122 @@ export const locations = [
     "Nearby Villages of Garhshankar",
   ],
 
+  hubLinks: {
+    heading: "Everything You Need to Know About Blood Tests in Garhshankar",
+    badge: "Garhshankar Central Diagnostics Hub",
+    description: "Whether you want to understand your test requirements, check what our service includes, or view pricing in Garhshankar — explore our central guides below.",
+    items: [
+      {
+        title: "What is a Blood Test?",
+        subtitle: "Educational Guide & Panel Breakdown",
+        description: "Understand blood test names, the 5 main tests, 7 basic tests, 14-panel full body checkups, and how to read your laboratory report.",
+        href: "/blogs/list-of-blood-tests",
+        icon: "FiBookOpen",
+        badge: "Context & Guide",
+        badgeColor: "bg-blue-100 text-blue-700 border-blue-200",
+        btnText: "Read Full Guide",
+        tag: "Educational",
+      },
+      {
+        title: "Blood Test Service Details",
+        subtitle: "What's Included & Testing Options",
+        description: "Explore our comprehensive blood test services, modern automated analyzers, NABL quality standards, and sample collection process.",
+        href: "/services/blood-tests",
+        icon: "FiActivity",
+        badge: "Service Overview",
+        badgeColor: "bg-teal-100 text-teal-700 border-teal-200",
+        btnText: "Explore Service",
+        tag: "Service",
+      },
+      {
+        title: "Blood Test Price in Garhshankar",
+        subtitle: "Transparent Rates & Package Discounts",
+        description: "Check transparent pricing for individual blood tests and checkups in Garhshankar, starting from ₹49 with free doorstep home collection.",
+        href: "/prices/blood-test-price-garhshankar",
+        icon: "FiTag",
+        badge: "Price & Cost",
+        badgeColor: "bg-amber-100 text-amber-700 border-amber-200",
+        btnText: "View Price List",
+        tag: "Cost & Rates",
+      },
+    ],
+  },
+
+  relatedLinks: {
+    heading: "Explore Key Blood Test Information",
+
+    links: [
+      {
+        label: "What is a Blood Test?",
+        description: "Guide to blood test names, 5, 7, & 14-panel test list, and report reading.",
+        slug: "/blogs/list-of-blood-tests",
+      },
+      {
+        label: "Blood Test Service Details",
+        description: "See what's included in our blood testing service, lab standards, and process.",
+        slug: "/services/blood-tests",
+      },
+      {
+        label: "Blood Test Price in Garhshankar",
+        description: "Check transparent pricing, starting rates from ₹49, and home sample collection.",
+        slug: "/prices/blood-test-price-garhshankar",
+      },
+    ],
+  },
+
   blogs: [
-    "vitamin-d-deficiency",
-    "vitamin-b12-deficiency",
-    "thyroid-disorders",
-    "diabetes-screening",
-    "anemia-symptoms",
-    "cbc-test-guide",
+    "list-of-blood-tests",
+  ],
+  services:[
+    "blood-tests"
   ],
 
   faq: [
-    {
-      question:
-        "Which is the best diagnostic laboratory in Garhshankar?",
-      answer:
-        "DK Bhangal Laboratory & ECG provides comprehensive pathology services including blood tests, ECG, preventive health packages, and home sample collection with reliable and accurate reporting.",
-    },
+{
+  question: "What is the cheapest blood test in Garhshankar?",
+  answer:
+    "Individual tests like ESR, Blood Sugar (Random), and basic CBC are among the most affordable blood tests we offer in Garhshankar, typically starting from ₹50. For patients looking for value, our basic health checkup packages also offer multiple tests bundled at a lower combined cost than booking each test separately. Contact us for our current price list.",
+},
 
+{
+  question: "Which blood test is the most costly?",
+  answer:
+    "Specialized and hormone-based tests tend to be the most expensive, such as Vitamin B12, Thyroid Profile (T3, T4, TSH), PSA, Allergy Panels, and comprehensive full-body checkup packages with 60+ parameters. These cost more because they require advanced reagents and specialized processing compared to routine tests like CBC or Blood Sugar. Full body checkup packages can range from around ₹1,000 to ₹7,000+ depending on the number of parameters included.",
+},
     {
-      question:
-        "Do you provide home sample collection in Garhshankar?",
+      question: "Where can I get a blood test in Garhshankar?",
       answer:
-        "Yes. Our trained phlebotomists safely collect blood samples from your home, making diagnostic testing convenient for children, senior citizens, and busy individuals.",
+        "DK Bhangal Laboratory & ECG offers accurate blood testing in Garhshankar, either at our lab or through convenient home sample collection.",
     },
-
     {
-      question:
-        "Which blood tests are available at DK Bhangal Laboratory?",
+      question: "Is home sample collection available for blood tests in Garhshankar?",
       answer:
-        "We offer CBC, Blood Sugar, HbA1c, Thyroid Profile, Liver Function Test, Kidney Function Test, Lipid Profile, Vitamin D Test, Vitamin B12 Test, Urine Tests, Allergy Testing, ECG, and many other pathology investigations.",
+        "Yes. Our trained phlebotomists collect blood samples from your home anywhere in Garhshankar and nearby areas.",
     },
-
     {
-      question:
-        "How can I book a blood test in Garhshankar?",
+      question: "How much does a blood test cost in Garhshankar?",
       answer:
-        "You can visit our laboratory directly, call our team, or schedule a convenient home sample collection appointment.",
+        "Pricing depends on the specific test or package. We offer transparent, affordable pricing — check our full price list or contact us for details.",
     },
-
     {
-      question:
-        "How quickly are laboratory reports delivered?",
+      question: "How soon will I get my blood test report in Garhshankar?",
       answer:
-        "Routine investigations are generally reported on the same day or within a short turnaround time, while specialized tests may require additional processing.",
+        "Most routine blood test reports are available the same day, while specialized tests may take slightly longer.",
     },
-
     {
-      question:
-        "Do you offer preventive health packages?",
+      question: "Do I need to fast before my blood test?",
       answer:
-        "Yes. We provide affordable preventive health checkup packages for men, women, senior citizens, diabetes monitoring, thyroid screening, heart health, and complete wellness assessment.",
+        "Some tests like Lipid Profile and Fasting Blood Sugar require 8-12 hours of fasting. Others, like CBC and Thyroid, do not. We'll confirm requirements when you book.",
     },
-
     {
-      question:
-        "Why should patients choose DK Bhangal Laboratory?",
+      question: "Which blood tests are most commonly done in Garhshankar?",
       answer:
-        "Patients trust us because of our accurate reports, experienced professionals, modern laboratory technology, affordable pricing, quality assurance, and patient-focused healthcare services.",
+        "CBC, Blood Sugar, HbA1c, Thyroid Profile, Lipid Profile, Liver Function Test, and Kidney Function Test are among the most frequently booked tests at our Garhshankar lab.",
     },
   ],
 
- 
-
   hours:
     "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
-
-
 }
 ];
 

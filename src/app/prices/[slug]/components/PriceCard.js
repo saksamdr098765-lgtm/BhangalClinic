@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
 import {
   FiCheckCircle,
   FiClock,
@@ -56,13 +56,14 @@ export default function PriceCard({ priceCard }) {
                 Inclusive of all charges.
               </p>
 
-              <Link
+              <TrackingLink
                 href={priceCard.bookingUrl}
+                tracking="prices-card-book-test"
                 className="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-sky-600 px-6 py-4 text-lg font-semibold text-white transition hover:bg-sky-700"
               >
                 Book Test
                 <FiArrowRight className="ml-2" />
-              </Link>
+              </TrackingLink>
             </div>
 
             {/* Right */}

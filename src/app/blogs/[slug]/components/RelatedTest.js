@@ -1,4 +1,5 @@
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
+import TrackedWhatsappLink from "@/app/components/TrackedWhatsappLink";
 import { tests } from "@/app/data/tests";
 import { FaArrowRight, FaFlask, FaWhatsapp } from "react-icons/fa";
 import SITE_CONFIG from "@/app/SITE_CONFIG";
@@ -81,23 +82,22 @@ export default function RelatedTests({ relatedTests = [] }) {
             "flex items-center justify-between gap-3 rounded-xl border border-slate-200 bg-white px-3.5 py-3 transition-colors";
 
           return isPublished ? (
-            <Link
+            <TrackingLink
               key={test.slug ?? index}
               href={`/tests/${test.slug}`}
+              tracking={`blog-related-test-${test.slug}`}
               className={`${baseClasses} hover:bg-sky-50`}
             >
               {content}
-            </Link>
+            </TrackingLink>
           ) : (
-            <a
+            <TrackedWhatsappLink
               key={test.slug ?? index}
-              href={whatsappHref}
-              target="_blank"
-              rel="noopener noreferrer"
+              location={`blog-related-test-${test.slug}`}
               className={`${baseClasses} hover:bg-green-50`}
             >
               {content}
-            </a>
+            </TrackedWhatsappLink>
           );
         })}
       </div>

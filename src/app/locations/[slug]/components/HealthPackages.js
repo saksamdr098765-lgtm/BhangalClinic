@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TrackingLink from "@/app/components/TrackingLink";
 import {
   FiArrowRight,
   FiCheckCircle,
@@ -24,31 +24,25 @@ export default function HealthPackages({ location }) {
   ];
 
   return (
-    <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
+    <section className="bg-slate-50 py-8 sm:py-12 lg:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
-
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex rounded-full bg-sky-100 px-3 py-1.5 text-xs font-semibold text-sky-700 sm:px-4 sm:py-2 sm:text-sm">
+          <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-sky-700">
             Preventive Healthcare
           </span>
 
-          <h2 className="mt-4 text-2xl font-black leading-tight text-slate-900 sm:mt-5 sm:text-3xl lg:text-4xl">
+          <h2 className="mt-3 text-2xl font-black leading-tight text-slate-900 sm:text-3xl lg:text-4xl">
             Health Checkup Packages in {location.city}
           </h2>
 
-          <p className="mt-4 text-sm leading-7 text-slate-600 sm:mt-6 sm:text-base lg:text-lg lg:leading-8">
-            Preventive health checkups play an important role in detecting
-            medical conditions before symptoms appear. Our carefully designed
-            health packages include comprehensive laboratory investigations
-            that help monitor your overall health, identify potential risks
-            early, and support timely medical care.
+          <p className="mt-3 text-xs leading-5 text-slate-600 sm:text-base sm:leading-7">
+            Comprehensive health packages helping monitor overall wellness and support early disease detection.
           </p>
         </div>
 
-        {/* Packages */}
-
-        <div className="mt-10 grid gap-5 sm:mt-12 md:grid-cols-2 xl:mt-16 xl:grid-cols-3 xl:gap-6">
+        {/* Packages Grid */}
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {availablePackages.map((pkg) => (
             <PackageCard
               key={pkg.slug}
@@ -57,23 +51,18 @@ export default function HealthPackages({ location }) {
           ))}
         </div>
 
-        {/* Bottom */}
-
-        <div className="mt-10 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:mt-14 sm:rounded-3xl sm:p-8 lg:mt-16 lg:flex lg:items-center lg:justify-between lg:p-10">
+        {/* Bottom Banner */}
+        <div className="mt-8 rounded-2xl bg-white p-4 shadow-xs ring-1 ring-slate-200 sm:p-7 lg:flex lg:items-center lg:justify-between">
           <div>
-            <h3 className="text-2xl font-bold text-slate-900 sm:text-3xl">
+            <h3 className="text-lg font-bold text-slate-900 sm:text-xl">
               Why Choose Preventive Health Checkups?
             </h3>
 
-            <div className="mt-5 grid gap-3 sm:mt-6 sm:grid-cols-2 sm:gap-4">
+            <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3">
               {benefits.map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-3"
-                >
-                  <FiCheckCircle className="h-5 w-5 shrink-0 text-sky-600" />
-
-                  <span className="text-sm text-slate-700 sm:text-base">
+                <div key={item} className="flex items-center gap-2">
+                  <FiCheckCircle className="h-4 w-4 shrink-0 text-sky-600 text-xs" />
+                  <span className="text-xs text-slate-700 font-medium">
                     {item}
                   </span>
                 </div>
@@ -81,14 +70,16 @@ export default function HealthPackages({ location }) {
             </div>
           </div>
 
-          <Link
-            href="/packages"
-            className="mt-8 inline-flex items-center justify-center gap-2 rounded-xl bg-sky-600 px-5 py-3 font-semibold text-white transition hover:bg-sky-700 sm:rounded-2xl sm:px-7 sm:py-4 lg:mt-0"
-          >
-            Explore All Packages
-
-            <FiArrowRight />
-          </Link>
+          <div className="mt-4 shrink-0 lg:mt-0">
+            <TrackingLink
+              href="/packages"
+              tracking={`location-packages-explore-all-${location.city}`}
+              className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-sky-600 px-5 py-3 text-xs font-bold text-white transition hover:bg-sky-700 sm:w-auto sm:text-sm"
+            >
+              Explore All Packages
+              <FiArrowRight />
+            </TrackingLink>
+          </div>
         </div>
       </div>
     </section>

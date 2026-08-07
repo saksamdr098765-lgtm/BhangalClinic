@@ -116,80 +116,48 @@ export default async function BlogPage({ params }) {
 
       <main className="bg-white ">
 
-        {/* Hero */}
-
+        {/* Hero Section */}
         <section className="border-b border-gray-100">
-          <div className="mx-auto max-w-7xl px-6 py-10">
-
+          <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-6 lg:px-8">
             <Breadcrumb blog={blog} />
-
             <BlogHero blog={blog} />
-<BlogQuickInfo blog={blog}></BlogQuickInfo>
+            <BlogQuickInfo blog={blog} />
           </div>
         </section>
 
-        {/* Content */}
+        {/* Content & Sidebars Section */}
+        <section className="mx-auto max-w-[1500px] px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+          <div className="grid gap-6 lg:gap-8 xl:grid-cols-[240px_minmax(0,1fr)_300px]">
+            {/* Left Sidebar */}
+            <aside className="hidden xl:block">
+              <div className="sticky top-24">
+                <TableOfContents content={blog.content} />
+              </div>
+            </aside>
 
-     <section className="mx-auto max-w-[1500px] px-6 py-14">
+            {/* Main Content */}
+            <article className="min-w-0">
+              <BlogContent content={blog.content} />
+              <FAQSection faq={blog.faq} />
+              <BlogCTA CTA={blog.cta} />
+              <RelatedTests relatedTests={blog.relatedTests} />
+              <RelatedPackages relatedPackages={blog.relatedPackages} />
+              <ShareButtons blog={blog} />
+              <PreviousNext currentBlog={blog} blogs={blogs} />
+            </article>
 
-  <div className="grid gap-10 xl:grid-cols-[260px_minmax(0,1fr)_320px]">
-
-    {/* Left Sidebar */}
-
-    <aside className="hidden xl:block">
-
-      <div className="sticky top-28">
-        <TableOfContents content={blog.content} />
-      </div>
-
-    </aside>
-
-    {/* Main Content */}
-
-    <article className="min-w-0">
-
-      <BlogContent content={blog.content} />
-
-      <FAQSection faq={blog.faq} />
-      <BlogCTA CTA={blog.cta}></BlogCTA>
-      <RelatedTests relatedTests={blog.relatedTests}></RelatedTests>
-<RelatedPackages
-    relatedPackages={blog.relatedPackages}
-/>
-      <ShareButtons blog={blog} />
-
-      <PreviousNext
-        currentBlog={blog}
-        blogs={blogs}
-      />
-
-    </article>
-
-    {/* Right Sidebar */}
-
-    <aside className="hidden lg:block">
-
-      <BlogSidebar
-        currentBlog={blog}
-        blogs={blogs}
-      />
-
-    </aside>
-
-  </div>
-
-</section>
-
-        {/* Related */}
-
-        <section className="border-t border-gray-100 bg-slate-50">
-
-          <div className="mx-auto max-w-7xl px-6 py-20">
-
-            <RelatedPosts blogs={relatedBlogs} />
-
+            {/* Right Sidebar */}
+            <aside className="hidden lg:block">
+              <BlogSidebar currentBlog={blog} blogs={blogs} />
+            </aside>
           </div>
+        </section>
 
+        {/* Related Posts Section */}
+        <section className="border-t border-gray-100 bg-slate-50">
+          <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+            <RelatedPosts blogs={relatedBlogs} />
+          </div>
         </section>
 
       </main>

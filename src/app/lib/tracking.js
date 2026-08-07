@@ -87,3 +87,65 @@ export const trackServiceClick = (service) => {
     label: service,
   });
 };
+
+// Generic Event Tracker
+export const trackEvent = (labelOrPayload, category = "Engagement", action = "button_click") => {
+  if (typeof labelOrPayload === "object" && labelOrPayload !== null) {
+    event(labelOrPayload);
+  } else {
+    event({
+      action,
+      category,
+      label: String(labelOrPayload),
+    });
+  }
+};
+
+// Blog tracking helpers
+export const trackBlogClick = (blogSlug, context = "blog_card") => {
+  event({
+    action: "blog_click",
+    category: "Blogs",
+    label: `${context}:${blogSlug}`,
+  });
+};
+
+export const trackBlogCategoryClick = (category) => {
+  event({
+    action: "blog_category_click",
+    category: "Blogs",
+    label: category,
+  });
+};
+
+export const trackBlogShare = (platform, blogSlug) => {
+  event({
+    action: "blog_share",
+    category: "Social Share",
+    label: `${platform}:${blogSlug}`,
+  });
+};
+
+export const trackBlogTOC = (sectionId, blogSlug) => {
+  event({
+    action: "blog_toc_click",
+    category: "Blog Navigation",
+    label: `${blogSlug}#${sectionId}`,
+  });
+};
+
+export const trackBlogFAQ = (question, blogSlug) => {
+  event({
+    action: "blog_faq_toggle",
+    category: "Blog FAQ",
+    label: `${blogSlug}:${question}`,
+  });
+};
+
+export const trackBlogExternalLink = (url, label) => {
+  event({
+    action: "blog_external_link",
+    category: "Outbound Link",
+    label: label ? `${label}:${url}` : url,
+  });
+};

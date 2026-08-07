@@ -7,15 +7,18 @@ import { getServiceSchema } from "@/schema/serviceSchema";
 
 import ServiceHero from "./components/Hero";
 import ServiceOverview from "./components/ServiceOverview";
+import ServiceInterlinking from "./components/ServiceInterlinking";
 import WhyServiceMatters from "./components/WhyServiceMatters";
 import WhoNeedsService from "./components/WhoNeedService";
 import ServiceIncludes from "./components/ServiceIncludes";
 import ServiceProcess from "./components/ServiceProcess";
 import WhyChooseLab from "./components/WhyChooseLab";
+import ServiceAreasWeServe from "./components/ServiceAreasWeServe";
 import RelatedPackages from "./components/RelatedPackages";
 import RelatedBlogs from "./components/RelatedBlogs";
 import ServiceFAQ from "./components/ServiceFAQ";
 import ServiceCTA from "./components/ServiceCTA";
+import RelatedTests from "./components/RelatedTest";
 
 export async function generateStaticParams() {
   return services.map((service) => ({
@@ -128,6 +131,9 @@ export default async function ServicePage({
 
         <ServiceOverview service={service} />
 
+        <ServiceInterlinking service={service} />
+
+      <RelatedTests relatedTests={service.relatedTests}></RelatedTests>
         <WhyServiceMatters service={service} />
 
         <WhoNeedsService service={service} />
@@ -137,6 +143,8 @@ export default async function ServicePage({
         <ServiceProcess service={service} />
 
         <WhyChooseLab service={service} />
+
+        <ServiceAreasWeServe service={service} />
 
         {/* Related */}
 

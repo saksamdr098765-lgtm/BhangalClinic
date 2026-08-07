@@ -1,4 +1,4 @@
-import TrackedLink from "@/app/components/TrackedLink";
+import TrackingLink from "@/app/components/TrackingLink";
 import {
   FiActivity,
   FiArrowRight,
@@ -73,22 +73,22 @@ export default function HealthPackagesCTA() {
 
             {/* Buttons */}
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <TrackedLink
+              <TrackingLink
                 href="/packages"
                 tracking="blog-cta-packages"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3.5 font-semibold text-sky-700 transition hover:scale-[1.02] hover:bg-slate-100 sm:w-auto"
               >
                 Explore Packages
                 <FiArrowRight />
-              </TrackedLink>
+              </TrackingLink>
 
-              <TrackedLink
+              <TrackingLink
                 href="/contact"
                 tracking="blog-cta-contact"
                 className="inline-flex w-full items-center justify-center rounded-2xl border border-white/30 px-6 py-3.5 font-semibold text-white transition hover:bg-white/10 sm:w-auto"
               >
                 Contact Us
-              </TrackedLink>
+              </TrackingLink>
             </div>
           </div>
 

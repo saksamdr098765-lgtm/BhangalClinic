@@ -1,347 +1,141 @@
+import { tests } from "./tests";
 
-import {
-  FaTint,
-  FaHeartbeat,
-  FaVial,
-  FaMicroscope,
-} from "react-icons/fa";
 export const prices = [
+
   {
-    slug: "cbc-test-price-chandigarh",
-
-  seo: {
-  title: "CBC Test Price in Chandigarh | Book CBC Test Online",
-  description:
-    "Book CBC Blood Test in Chandigarh at ₹399 with home sample collection and fast reports.",
-
-  keywords: [
-    "cbc test price in chandigarh",
-    "book cbc test",
-    "cbc blood test near me"
-  ],
-
-  canonical: "/prices/cbc-test-price-chandigarh",
-
-  ogImage: "/seo/cbc.webp",
-},
-hero: {
-  badge: "NABL Standards",
-
-  title: "CBC Test Price in Chandigarh",
-
-  subtitle:
-    "Affordable CBC blood testing with home sample collection and accurate reports.",
-
-  image: "/tests/cbc.webp",
-
-  primaryButton: {
-    text: "Book CBC Test",
-    href: "#booking",
-  },
-
-  secondaryButton: {
-    text: "Call Now",
-    href: "tel:+91XXXXXXXXXX",
-  },
-},
-   priceCard: {
-  actualPrice: 499,
-
-  offerPrice: 399,
-
-  offerText: "20% OFF",
-
-  reportTime: "24 Hours",
-
-  fasting: "Not Required",
-
-  sampleType: "Blood",
-
-  homeCollection: true,
-
-  labVisit: true,
-  bookingUrl:  "#booking",
-   includes: {
-  title: "What's Included",
-
-  items: [
-    "Home Sample Collection",
-    "Digital Report",
-    "NABL Standards",
-    "Doctor Support",
-    "No Hidden Charges",
-  ]
-}
-},
-  
-  trust: {
-  title: "Trusted Diagnostic Services in Chandigarh",
-
-  description:
-    "We provide accurate diagnostic testing with modern equipment, trained professionals, and convenient home sample collection.",
-
-  features: [
-    {
-      icon: "award",
-      title: "Certified Laboratory",
+    slug: "blood-test-price-garhshankar",
+    seo: {
+      title: "Blood Test Price in Garhshankar | Full Price List",
       description:
-        "Tests performed using quality-controlled processes and modern diagnostic equipment.",
+        "Check blood test prices in Garhshankar — CBC, Thyroid, Diabetes, Lipid Profile, Vitamin D & more, starting from ₹99, with doorstep home sample collection.",
+      keywords: [
+        "blood test price garhshankar",
+        "blood test cost garhshankar",
+        "blood test price list garhshankar",
+        "cheap blood test near me garhshankar",
+      ],
+
     },
-
-    {
-      icon: "home",
-      title: "Home Sample Collection",
-      description:
-        "Convenient doorstep blood sample collection across Chandigarh and nearby areas.",
+    hero: {
+      badge: "NABL Quality Standards",
+      title: "Blood Test Price in Garhshankar",
+      subtitle:
+        "Compare prices on 100+ blood tests in Garhshankar with high-accuracy automated testing and doorstep home sample collection.",
+      image: "/prices/blood-test.webp",
+   
     },
-
-    {
-      icon: "clock",
-      title: "Fast Reports",
-      description:
-        "Receive digital reports quickly without unnecessary waiting.",
+    priceCard: {
+      actualPrice: 400,
+      offerPrice: 300,
+      offerText: "Starting Price",
+      reportTime: "Same Day (12-24 Hrs)",
+      fasting: "Varies by Test",
+      sampleType: "Blood",
+      homeCollection: true,
+      labVisit: true,
+   
+      includes: {
+        title: "Every Booking Includes",
+        items: [
+          "Free Doorstep Home Sample Collection",
+          "Digital Report on WhatsApp & Email",
+          "NABL Quality Protocols",
+          "No Advance Payment Required",
+        ],
+      },
     },
-
-    {
-      icon: "shield",
-      title: "Reliable Results",
+    whyGetTest: {
+      title: "Why Get a Blood Test in Garhshankar",
       description:
-        "Experienced technicians and strict quality checks ensure dependable reports.",
+        "Regular blood testing helps detect health conditions early and supports timely medical decisions for you and your family.",
+      reasons: [
+        {
+          title: "Early Detection of Health Issues",
+          description: "Identifies diabetes, anemia, thyroid disorders, and infections before symptoms worsen.",
+        },
+        {
+          title: "Monitor Ongoing Conditions",
+          description: "Track chronic conditions like diabetes and thyroid disorders with regular follow-up testing.",
+        },
+        {
+          title: "Convenient & Affordable",
+          description: "Home sample collection and transparent pricing make routine screening accessible for every family.",
+        },
+      ],
     },
-
+  faqs: [
     {
-      icon: "users",
-      title: "Experienced Team",
-      description:
-        "Our trained phlebotomists ensure a safe and comfortable sample collection experience.",
+      question: "How much does a blood test cost in Garhshankar?",
+      answer: "Individual blood tests in Garhshankar start from ₹49, with most routine tests priced between ₹399 and ₹899 at DK Bhangal Laboratory.",
     },
-
     {
-      icon: "check",
-      title: "Transparent Pricing",
-      description:
-        "Affordable pricing with no hidden charges and easy online booking.",
+      question: "What is the cheapest blood test?",
+      answer: "ESR (Erythrocyte Sedimentation Rate) and Random Blood Sugar are among our most affordable individual tests, starting from ₹49. For patients needing multiple tests, our basic health checkup packages offer even better value than booking single tests separately.",
+    },
+    {
+      question: "Is home sample collection available in Garhshankar?",
+      answer: "Yes, our trained phlebotomists provide doorstep home sample collection across Garhshankar and nearby villages at no extra charge.",
+    },
+    {
+      question: "Which blood tests are most commonly booked in Garhshankar?",
+      answer: "CBC, Blood Sugar, HbA1c, Thyroid Profile, Lipid Profile, Liver Function Test, and Kidney Function Test are among our most booked tests.",
+    },
+    {
+      question: "How fast do I get my digital report?",
+      answer: "Most routine blood test reports are delivered digitally on WhatsApp & Email within 12 to 24 hours.",
     },
   ],
-
-  stats: [
-    {
-      value: "5000+",
-      label: "Patients Served",
+    relatedTests: [
+      "thyroid-profile-test",
+      "platelet-count",
+      "blood-sugar-test"
+    ],
+    interlinks: {
+      badge: "Included Services & Local Availability",
+      heading: "What's Included & Nearby Availability",
+      description: "Checking blood test prices? Explore what is included in this price and verify local availability near you in Garhshankar.",
+      items: [
+        {
+          title: "What's Included in This Price?",
+          subtitle: "Blood Test Service Details",
+          description: "Understand everything included in our blood testing service — from sterile sample collection to automated laboratory analysis and NABL quality standards.",
+          href: "/services/blood-tests",
+          icon: "FiActivity",
+          badge: "Service Details",
+          badgeColor: "bg-teal-100 text-teal-800 border-teal-200",
+          btnText: "Explore Service Included",
+          tracking: "price-interlink-service",
+        },
+        {
+          title: "Available Near You in Garhshankar",
+          subtitle: "Location & Home Collection",
+          description: "Check our diagnostic lab center, doorstep home sample collection coverage across Garhshankar city and surrounding villages, and operating hours.",
+          href: "/locations/blood-test-in-garhshankar",
+          icon: "FiMapPin",
+          badge: "Garhshankar Location",
+          badgeColor: "bg-sky-100 text-sky-800 border-sky-200",
+          btnText: "Visit Garhshankar Hub",
+          tracking: "price-interlink-location",
+        },
+      ],
     },
-    {
-      value: "24 hrs",
-      label: "Report Delivery",
+    cta: {
+      title: "Book Your Blood Test in Garhshankar Today",
+      description: "Affordable pricing, fast digital reports, and doorstep home sample collection across Garhshankar.",
+      offerPrice: 300,
+      actualPrice: 400,
+      buttonText: "Book a Test",
+      testName: "Blood Test",
+      blogUrl: "/blogs/list-of-blood-tests",
+      serviceUrl: "/services/blood-tests",
+      locationUrl: "/locations/blood-test-in-garhshankar",
+      packageUrl: "/packages",
+      highlights: ["Home Sample Collection", "Digital Report", "Affordable Rate", "Fast Turnaround"],
     },
-    {
-      value: "10+",
-      label: "Years Experience",
-    },
-    {
-      value: "98%",
-      label: "Patient Satisfaction",
-    },
-  ],
-},
-booking: {
-  title: "Book Your Test in 4 Simple Steps",
-
-  description:
-    "Schedule your CBC Blood Test online and receive accurate reports without hassle.",
-
-  steps: [
-    {
-      icon: "calendar",
-      title: "Book Online",
-      description:
-        "Choose your preferred test and submit your booking request.",
-    },
-
-    {
-      icon: "home",
-      title: "Sample Collection",
-      description:
-        "Our trained phlebotomist collects your sample at home or at the lab.",
-    },
-
-    {
-      icon: "test",
-      title: "Laboratory Testing",
-      description:
-        "Your sample is processed using modern diagnostic equipment.",
-    },
-
-    {
-      icon: "report",
-      title: "Receive Report",
-      description:
-        "Get your digital report within the expected turnaround time.",
-    },
-  ],
-},
-serviceAreas: {
-
-  title: "Home Sample Collection Across Chandigarh",
-
-  description:
-    "Our team provides doorstep blood sample collection across Chandigarh and nearby cities for your convenience.",
-
-  areas: [
-
-    {
-      name: "Chandigarh",
-      href: "/locations/chandigarh",
-    },
-
-    {
-      name: "Mohali",
-      href: "/locations/mohali",
-    },
-
-    {
-      name: "Panchkula",
-      href: "/locations/panchkula",
-    },
-
-    {
-      name: "Zirakpur",
-      href: "/locations/zirakpur",
-    },
-
-    {
-      name: "Kharar",
-      href: "/locations/kharar",
-    },
-
-    {
-      name: "Derabassi",
-      href: "/locations/derabassi",
-    },
-
-  ],
-
-},
-faqs: [
-  {
-    question: "What is the CBC Test price in Chandigarh?",
-    answer:
-      "The CBC Blood Test is available from ₹399. Pricing may vary depending on offers and home sample collection availability.",
   },
 
-  {
-    question: "Is home sample collection available?",
-    answer:
-      "Yes. Our trained phlebotomists provide home sample collection across Chandigarh and nearby areas.",
-  },
 
-  {
-    question: "How long does it take to receive the report?",
-    answer:
-      "Most CBC reports are available within 24 hours after sample collection.",
-  },
-
-  {
-    question: "Is fasting required for the CBC Test?",
-    answer:
-      "No, fasting is generally not required for a Complete Blood Count (CBC) Test unless your doctor has advised otherwise.",
-  },
-
-  {
-    question: "Can I book the CBC Test online?",
-    answer:
-      "Yes. You can book the test online or contact our team to schedule a home sample collection.",
-  },
-
-  {
-    question: "What sample is required?",
-    answer:
-      "A small blood sample is collected by our trained phlebotomist either at your home or at the laboratory.",
-  },
-],
-
-
-relatedTests: [
-
-  {
-    name: "Vitamin D Test",
-
-    slug: "vitamin-d-test-price-chandigarh",
-
-    description:
-      "Check Vitamin D deficiency and bone health.",
-
-    price: 999,
-
-    icon: <FaVial />,
-  },
-
-  {
-    name: "HbA1c Test",
-
-    slug: "hba1c-test-price-chandigarh",
-
-    description:
-      "Monitor average blood sugar levels.",
-
-    price: 699,
-
-    icon: <FaTint />,
-  },
-
-  {
-    name: "Thyroid Profile",
-
-    slug: "thyroid-test-price-chandigarh",
-
-    description:
-      "Evaluate thyroid gland function.",
-
-    price: 799,
-
-    icon: <FaHeartbeat />,
-  },
-
-  {
-    name: "Lipid Profile",
-
-    slug: "lipid-profile-price-chandigarh",
-
-    description:
-      "Assess cholesterol and heart health.",
-
-    price: 899,
-
-    icon: <FaMicroscope />,
-  },
-
-],
-cta: {
-  title: "Book Your CBC Blood Test Today",
-
-  description:
-    "Affordable pricing, fast reports, and convenient home sample collection across Chandigarh.",
-
-  offerPrice: 399,
-
-  actualPrice: 499,
-
-  bookingUrl: "#booking",
-
-  phone: "tel:+919876543210",
-
-  blogUrl: "/blog/what-is-cbc-test",
-serviceUrl:"servie",
-  buttonText: "Book CBC Test",
-  packageUrl:"",
-
-  blogButtonText: "Learn About CBC Test",
-
-  highlights: [
-    "Home Sample Collection",
-    "Digital Reports",
-    "Affordable Pricing",
-    "Fast Turnaround Time",
-  ],
-}
-  },
 ];
+
+
+
