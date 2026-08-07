@@ -846,7 +846,6 @@ cta: {
     "100+ Blood Tests Available",
     "Home Sample Collection",
     "Fast Digital Reports",
-    "NABL Standard Testing",
     "Affordable Pricing",
     "Experienced Phlebotomists",
   ],

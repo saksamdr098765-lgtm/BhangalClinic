@@ -1,6 +1,6 @@
 import SITE_CONFIG from "@/app/SITE_CONFIG";
 import Image from "next/image";
-import { FiCalendar, FiClock, FiUser } from "react-icons/fi";
+import { FiCalendar, FiClock, FiUser, FiCheck } from "react-icons/fi";
 
 export default function BlogHero({ blog }) {
   return (
@@ -21,6 +21,21 @@ export default function BlogHero({ blog }) {
         <p className="mt-4 text-base leading-7 text-slate-600 sm:mt-5 sm:text-lg sm:leading-8 lg:text-xl">
           {blog.excerpt}
         </p>
+
+        {/* Trust Badges */}
+        {blog.cta?.features?.length > 0 && (
+          <div className="mt-5 flex flex-wrap gap-2 sm:mt-6 sm:gap-3">
+            {blog.cta.features.map((feature, index) => (
+              <span
+                key={index}
+                className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1.5 text-xs font-medium text-emerald-700 sm:text-sm"
+              >
+                <FiCheck className="h-3.5 w-3.5 shrink-0 text-emerald-600" />
+                {feature}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Author & Meta */}
@@ -42,13 +57,8 @@ export default function BlogHero({ blog }) {
           )}
 
           <div>
-            <p className="font-semibold text-slate-900">
-              {blog.author.name}
-            </p>
-
-            <p className="text-sm text-slate-500">
-              Healthcare Expert
-            </p>
+            <p className="font-semibold text-slate-900">{blog.author.name}</p>
+            <p className="text-sm text-slate-500">Healthcare Expert</p>
           </div>
         </div>
 
