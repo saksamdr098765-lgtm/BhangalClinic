@@ -36,7 +36,7 @@ export function getLocationSchema(location) {
 
       areaServed: location.areas,
 
-      priceRange: "₹₹",
+   priceRange: "₹30 - ₹7999",
 
       medicalSpecialty: "Diagnostic Laboratory",
 
@@ -132,23 +132,20 @@ export function getLocationSchema(location) {
         name: location.city,
       },
 
-      hasOfferCatalog: {
-        "@type": "OfferCatalog",
-
-        name: "Diagnostic Services",
-
-        itemListElement: location.services.map((service) => ({
-          "@type": "Offer",
-
-          itemOffered: {
-            "@type": "MedicalTest",
-
-            name: service
-              .replace(/-/g, " ")
-              .replace(/\b\w/g, (c) => c.toUpperCase()),
-          },
-        })),
-      },
+    hasOfferCatalog: {
+  "@type": "OfferCatalog",
+  name: "Diagnostic Services",
+  itemListElement: location.services.map((service) => ({
+    "@type": "Offer",
+    availability: "https://schema.org/InStock",
+    itemOffered: {
+      "@type": "MedicalTest",
+      name: service
+        .replace(/-/g, " ")
+        .replace(/\b\w/g, (c) => c.toUpperCase()),
+    },
+  })),
+},
     },
   ];
 

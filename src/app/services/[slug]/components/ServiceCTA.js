@@ -7,14 +7,14 @@ import {
   FiPhone,
   FiShield,
 } from "react-icons/fi";
-
-export default function ServiceCTA() {
-  const benefits = [
+ const benefits = [
     "Accurate Reports",
     "Affordable Pricing",
     "Expert Lab Team",
     "Fast Delivery",
   ];
+export default function ServiceCTA() {
+ 
 
   return (
     <section className="bg-slate-50 py-8 sm:py-12 lg:py-16">

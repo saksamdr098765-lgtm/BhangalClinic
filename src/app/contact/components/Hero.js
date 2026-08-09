@@ -105,9 +105,9 @@ export default function Hero() {
                     Laboratory Status
                   </p>
 
-                  <h3 className="mt-1 text-2xl font-black text-slate-900">
+                  <h2 className="mt-1 text-2xl font-black text-slate-900">
                     Open Today
-                  </h3>
+                  </h2>
                 </div>
 
                 <div className="flex items-center gap-2">
@@ -155,9 +155,9 @@ export default function Hero() {
                   Need Assistance?
                 </p>
 
-                <h4 className="mt-2 text-xl font-bold">
+                <h3 className="mt-2 text-xl font-bold">
                   We're here to help.
-                </h4>
+                </h3>
 
                 <p className="mt-3 text-sm leading-7 text-blue-100">
                   Call our team or complete the booking form below.

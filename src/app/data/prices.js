@@ -39,7 +39,7 @@ export const prices = [
         items: [
           "Free Doorstep Home Sample Collection",
           "Digital Report on WhatsApp & Email",
-          "NABL Quality Protocols",
+      
           "No Advance Payment Required",
         ],
       },
@@ -98,7 +98,7 @@ export const prices = [
         {
           title: "What's Included in This Price?",
           subtitle: "Blood Test Service Details",
-          description: "Understand everything included in our blood testing service — from sterile sample collection to automated laboratory analysis and NABL quality standards.",
+          description: "Understand everything included in our blood testing service — from sterile sample collection to automated laboratory analysis",
           href: "/services/blood-tests",
           icon: "FiActivity",
           badge: "Service Details",

@@ -13,6 +13,12 @@ const icons = {
   check: FiCheckCircle,
   activity: FiActivity,
 };
+const benefits=[
+                  "Early disease detection",
+                  "Reliable laboratory reports",
+                  "Supports preventive care",
+                  "Convenient testing",
+                ]
 
 export default function WhyServiceMatters({ service }) {
   return (
@@ -84,12 +90,7 @@ export default function WhyServiceMatters({ service }) {
               </h4>
 
               <ul className="mt-3 space-y-2">
-                {[
-                  "Early disease detection",
-                  "Reliable laboratory reports",
-                  "Supports preventive care",
-                  "Convenient testing",
-                ].map((item) => (
+                {benefits.map((item) => (
                   <li key={item} className="flex items-center gap-2.5">
                     <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-400/20">
                       <FiCheckCircle className="text-xs text-green-300" />
