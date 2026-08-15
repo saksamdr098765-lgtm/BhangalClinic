@@ -4,6 +4,7 @@ import BlogGrid from "./components/BlogGrid";
 import BlogHero from "./components/BlogHero";
 import FeaturedBlog from "./components/FeaturedBlog";
 import SITE_CONFIG from "../SITE_CONFIG";
+import MedicalDisclaimer from "../components/MedicalDisclaimer";
 
 export const metadata = {
   title:
@@ -93,6 +94,10 @@ export default function BlogsPage() {
         />
       ))}
       <BlogHero totalBlogs={blogs.length} />
+
+      <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
+        <MedicalDisclaimer />
+      </div>
 
       <FeaturedBlog blog={featuredBlog} />
 

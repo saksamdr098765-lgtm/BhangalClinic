@@ -42,7 +42,7 @@ export default function HomeCollection({ location }) {
       text: "Fast digital & print report delivery.",
     },
   ];
-
+if(!location.homeCollection) return
   return (
     <section className="bg-white py-8 sm:py-12 lg:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

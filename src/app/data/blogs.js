@@ -336,7 +336,7 @@ export const blogs = [
 //     ],
 //   },
   {
-  id: 2,
+  id: 1,
 
   slug: "list-of-blood-tests",
 
@@ -347,8 +347,8 @@ export const blogs = [
 
   category: "Health Tips",
 
-  author: {
-    name: "DK Bhangal Lab",
+   author: {
+    name: "Bhangal Clinical Laboratories & ECG Center",
     image: "/team/author.jpg",
   },
 
@@ -890,6 +890,427 @@ cta: {
     "Experienced Phlebotomists",
   ],
 },
+},
+{
+  id: 2,
+
+  slug: "ecg-test-full-guide",
+
+  title: "ECG Test: Full Form, Procedure, Cost & What It Detects (Complete Guide)",
+
+  excerpt:
+    "Everything you need to know about the ECG test — full form, how it works, procedure steps, cost, preparation, and how to read a normal ECG report.",
+
+  category: "Health Tips",
+
+  author: { 
+    name: "Bhangal Clinical Laboratories & ECG Center",
+    image: "/team/author.jpg",
+  },
+
+  publishedAt: "August 18, 2026",
+
+  readingTime: "9 min read",
+
+  coverImage: "/blogs/ecg-test-full-guide/cover.webp",
+
+  featured: false,
+
+  relatedPackages: [],
+
+  relatedTests: [
+    "lipid-profile",
+    "total-cholesterol",
+    "triglycerides-test",
+    "hdl-cholesterol",
+    "ldl-cholesterol",
+    "vldl-cholesterol",
+    "serum-potassium",
+    "cpk-mb-test",
+    "troponin-t-test",
+  ],
+
+  seo: {
+    title: "ECG Test: Full Form, Procedure, Cost & Normal Report | Bhangal Clinical Laboratories",
+
+    description:
+      "Learn what an ECG test is, its full form, how the procedure works, cost, preparation tips, and how to read a normal ECG report. Book ECG test in Garhshankar with home sample collection.",
+
+    keywords: [
+      "ecg",
+      "ecg full form",
+      "what is ecg",
+      "ecg test",
+      "ecg meaning",
+      "ecg machine",
+      "ecg test cost",
+      "normal ecg report",
+      "how does an ecg work",
+      "ecg test near me",
+      "ecg center garhshankar",
+      "Bhangal Clinical Laboratories",
+    ],
+  },
+
+  quickInfo: [
+    {
+      label: "You Will Learn",
+      value: "Complete Guide to ECG Test",
+      icon: "activity",
+    },
+    {
+      label: "Reading Time",
+      value: "9 Minutes",
+      icon: "clock",
+    },
+    {
+      label: "Suitable For",
+      value: "Adults & Senior Citizens",
+      icon: "users",
+    },
+    {
+      label: "Symptoms",
+      value: "Chest Pain, Palpitations, Breathlessness",
+      icon: "heart",
+    },
+    {
+      label: "Recommended Test",
+      value: "ECG (Electrocardiogram)",
+      icon: "test",
+    },
+    {
+      label: "Fasting",
+      value: "Not Required",
+      icon: "file",
+    },
+    {
+      label: "Report Time",
+      value: "Same Day",
+      icon: "clock",
+    },
+    {
+      label: "Price",
+      value: "₹199",
+      icon: "price",
+    },
+    {
+      label: "Home Collection",
+      value: "Not Available",
+      icon: "home",
+    },
+  ],
+
+  tags: [
+    "ECG",
+    "Heart Health",
+    "Diagnostic Test",
+    "Cardiac Screening",
+    "Preventive Healthcare",
+    "ECG Report",
+  ],
+
+  content: [
+    {
+      type: "paragraph",
+      text: "At Bhangal Clinical Laboratories & ECG Center in Garhshankar, ECG is one of the most frequently requested tests at our centre — patients walk in with everything from doctor referrals to simple worry after about of chest tightness. Yet many aren't sure what the test actually measures or why their doctor ordered it. This guide explains what an ECG is, how the procedure works, what it costs, how to prepare, and how to make sense of your report once it's in hand.",
+    },
+
+    {
+      type: "image",
+      src: "/blogs/ecg-test-full-guide/ecg-machine.webp",
+      alt: "ECG machine recording heart activity",
+      caption: "An ECG records the heart's electrical activity in real time.",
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "What Is an ECG? (Full Form & Meaning)",
+    },
+
+    {
+      type: "paragraph",
+      text: "ECG stands for Electrocardiogram. It's a simple, painless test that records the electrical signals produced by your heart with each heartbeat. These signals are picked up through small electrodes placed on your chest, arms, and legs, and displayed as a wave pattern that shows how well your heart is beating and whether the rhythm is regular.",
+    },
+
+    {
+      type: "tip",
+      title: "Good to Know",
+      text: "ECG and EKG refer to the same test — EKG comes from the German spelling 'Elektrokardiogramm.' Both terms are used interchangeably worldwide.",
+    },
+
+
+    {
+      type: "heading",
+      level: 2,
+      text: "How Does an ECG Work?",
+    },
+
+    {
+      type: "paragraph",
+      text: "Your heart generates tiny electrical impulses every time it beats, which is what makes it contract and pump blood. An ECG machine uses electrodes attached to your skin to detect these impulses and translates them into a wave pattern on paper or a screen. A standard test uses 12 leads (recording points) to capture the heart's activity from different angles, giving doctors a complete picture of heart rhythm and function.",
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "ECG Test Procedure: Step by Step",
+    },
+
+    {
+      type: "paragraph",
+      text: "The test itself is quick and doesn't require any special equipment on your part. Here's what to expect during an ECG at our centre.",
+    },
+
+    {
+      type: "table",
+      title: "ECG Test Procedure",
+      headers: ["Step", "What Happens"],
+      rows: [
+        ["1. Preparation", "You lie down comfortably; areas of skin are cleaned for better electrode contact"],
+        ["2. Electrode Placement", "Small sticky electrodes are attached to chest, arms, and legs"],
+        ["3. Recording", "The machine records your heart's electrical activity for a few seconds"],
+        ["4. Completion", "Electrodes are removed; the whole process takes 5-10 minutes"],
+        ["5. Report", "A wave pattern is generated and reviewed for rate, rhythm, and abnormalities"],
+      ],
+    },
+
+    {
+      type: "tip",
+      title: "From Our Front Desk",
+      text: "One of the most common questions our staff hears before the test is 'will it hurt?' It's worth repeating clearly: an ECG involves no needles and no discomfort — just electrode pads placed on the skin.",
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "Do You Need to Prepare or Fast for an ECG?",
+    },
+
+    {
+      type: "paragraph",
+      text: "No fasting is required before an ECG. It's best to avoid applying oils or lotions to your chest on the day of the test, as this can affect electrode contact. Wearing a top that's easy to remove or lift also makes the process quicker — something our technicians often mention to patients booking same-day walk-in appointments.",
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "Why Is an ECG Done? Who Needs One?",
+    },
+
+    {
+      type: "paragraph",
+      text: "Doctors commonly recommend an ECG when a patient reports symptoms that could point to a heart problem, or as part of routine screening for at-risk individuals. In our experience, a large share of ECG requests at our Garhshankar centre come from two groups: patients referred after a check-up flagged high blood pressure or cholesterol, and older adults getting a routine pre-surgery clearance.",
+    },
+
+    {
+      type: "table",
+      title: "Symptoms and Reasons for an ECG",
+      headers: ["Symptom / Reason", "Why ECG Is Recommended"],
+      rows: [
+        ["Chest Pain", "Rule out heart attack or reduced blood flow"],
+        ["Palpitations", "Check for irregular heart rhythm (arrhythmia)"],
+        ["Breathlessness", "Assess heart function alongside lung causes"],
+        ["Fainting / Dizziness", "Detect abnormal heart rhythms causing low blood flow"],
+        ["Pre-Surgery Checkup", "Confirm heart is stable before anesthesia"],
+        ["Routine Screening", "Baseline heart health check for adults 40+"],
+      ],
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "Understanding Your ECG Report",
+    },
+
+    {
+      type: "paragraph",
+      text: "An ECG report shows a repeating wave pattern for each heartbeat, made up of sections labeled P wave, QRS complex, and T wave. Each part reflects a different phase of your heart's electrical cycle. A normal ECG shows a regular, evenly spaced pattern; irregularities in spacing, height, or shape can point to issues like arrhythmia, heart block, or reduced blood flow — though only a doctor can properly interpret these findings alongside your symptoms and history. Our lab shares digital reports the same day so your doctor can review them without delay.",
+    },
+
+    {
+      type: "table",
+      title: "Sample ECG Report Reading",
+      headers: ["Parameter", "Normal Range", "What It Indicates"],
+      rows: [
+        ["Heart Rate", "60-100 bpm", "Speed of heartbeat"],
+        ["P Wave", "Present, upright", "Normal electrical signal from upper chambers"],
+        ["QRS Complex", "0.06-0.10 sec", "Normal signal through lower chambers"],
+        ["Rhythm", "Regular", "Consistent, evenly spaced heartbeats"],
+      ],
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "How Much Does an ECG Test Cost?",
+    },
+
+    {
+      type: "paragraph",
+      text: "ECG is one of the more affordable diagnostic tests, and pricing is usually straightforward since it doesn't involve extensive lab processing. Check our current price list for the exact rate and any bundled packages that include ECG alongside other heart-health screenings.",
+    },
+
+    {
+      type: "interlinking",
+      title: "Check Prices & Service Details",
+      description: "Ready to check cost or schedule your ECG test? Move down the funnel to view exact prices and service details.",
+      items: [
+        {
+          title: "ECG Test Price",
+          description: "View the exact ECG test rate and any bundled heart health packages.",
+          href: "/prices/ecg-test-price-garhshankar",
+        },
+        {
+          title: "ECG Service Overview",
+          description: "Learn what is included in our ECG service and testing process.",
+          href: "/services/ecg-test",
+        },
+      ],
+    },
+
+    {
+      type: "success",
+      title: "Key Takeaway",
+      text: "An ECG is a quick, painless, and affordable way to check your heart's electrical activity. Whether you have symptoms like chest pain or palpitations, or simply want a routine heart health check, an ECG gives doctors valuable insight in just minutes.",
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "Book Your ECG Test",
+    },
+
+    {
+      type: "paragraph",
+      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. We're open daily from 7:00 AM to 8:00 PM (8:00 AM to 2:00 PM on Sundays). You can walk in, call ahead, or book a home sample collection.",
+    },
+
+    {
+      type: "interlinking",
+      title: "Areas We Serve",
+      description: "We provide home sample collection and diagnostic services across the following locations.",
+      items: [
+        {
+          title: "Garhshankar",
+          description: "ECG test and home sample collection.",
+          href: "/locations/ecg-test-in-garhshankar",
+        },
+        {
+          title: "Hoshiarpur",
+          description: "Diagnostic laboratory services.",
+        },
+        {
+          title: "Nawanshahr",
+          description: "Health checkups and pathology tests.",
+        },
+      ],
+    },
+
+    {
+      type: "references",
+      items: [
+        {
+          title: "Electrocardiogram (ECG or EKG)",
+          publisher: "MedlinePlus",
+          url: "https://medlineplus.gov/ency/article/003868.htm",
+        },
+        {
+          title: "Understanding Your ECG Results",
+          publisher: "Mayo Clinic",
+          url: "https://www.mayoclinic.org/",
+        },
+      ],
+    },
+  ],
+
+  faq: [
+    {
+      question: "How is an ECG done?",
+      answer:
+        "An ECG is done by attaching small electrodes to your chest, arms, and legs while you lie down comfortably. The machine picks up your heart's electrical signals and records them as a wave pattern, usually within a few seconds. The entire process, including setup, takes about 5-10 minutes.",
+    },
+    {
+      question: "Can ECG show heart blockage?",
+      answer:
+        "An ECG can show signs suggestive of a blockage, such as changes in the ST segment or T wave, especially during or after a heart attack. However, it doesn't directly visualize blocked arteries — for a clearer picture, doctors often recommend additional tests like a TMT or angiography.",
+    },
+    {
+      question: "What do V1 to V6 mean on an ECG?",
+      answer:
+        "V1 to V6 are the six chest (precordial) leads placed at specific points across the chest during a 12-lead ECG. Each one views the heart's electrical activity from a different angle, helping doctors pinpoint which part of the heart may be affected by an abnormality.",
+    },
+    {
+      question: "What is the best time to take an ECG?",
+      answer:
+        "There's no strict best time — an ECG can be taken any time of day since fasting isn't required. If you're experiencing symptoms like chest pain or palpitations, it's best to get the test done as soon as possible rather than waiting for a specific time.",
+    },
+    {
+      question: "How is an ECG performed on a woman?",
+      answer:
+        "The ECG procedure is the same for women and men — electrodes are placed on the chest, arms, and legs. For women, electrode placement on the chest is adjusted slightly to ensure accurate contact, and a private, comfortable setting is provided during the test.",
+    },
+    {
+      question: "What information does an ECG give about a person?",
+      answer:
+        "An ECG shows heart rate, rhythm regularity, and the timing of electrical signals through different parts of the heart. It can help identify irregular heartbeats, signs of a past or current heart attack, and other structural or electrical issues affecting the heart.",
+    },
+    {
+      question: "How do I check my ECG report and what does it cost?",
+      answer:
+        "Your ECG report is usually ready the same day and shows your heart rate, rhythm, and wave pattern details reviewed by a doctor or technician. ECG is one of the more affordable diagnostic tests — check our current price list for the exact rate.",
+    },
+    {
+      question: "Which patients need an ECG?",
+      answer:
+        "Patients with symptoms like chest pain, palpitations, breathlessness, or fainting are commonly advised to get an ECG. It's also recommended before surgery, for routine heart screening in adults over 40, and for those with risk factors like diabetes, high blood pressure, or a family history of heart disease.",
+    },
+    {
+      question: "How do I prepare for an ECG test?",
+      answer:
+        "No special preparation is needed — fasting isn't required. Avoid applying oils or lotions to your chest on the day of the test, and wear clothing that's easy to remove or lift so electrodes can be placed easily.",
+    },
+    {
+      question: "Can I book an ECG test at home?",
+      answer:
+        "Yes, ECG tests can be booked with home sample collection for your convenience. A trained technician visits your location to perform the test, and reports are shared digitally, just like our other diagnostic services.",
+    },
+    {
+      question: "Why is ECG called a 12-lead test?",
+      answer:
+        "A standard ECG uses 12 different leads (recording angles) placed on the limbs and chest to capture the heart's electrical activity from multiple directions. This gives a more complete view of heart function than a single-lead reading would.",
+    },
+    {
+      question: "What's the difference between ECG and EKG?",
+      answer:
+        "ECG and EKG refer to the exact same test — recording the heart's electrical activity. EKG comes from the German spelling 'Elektrokardiogramm,' while ECG is the English abbreviation. Both terms are used interchangeably by doctors and labs.",
+    },
+  ],
+
+  cta: {
+    title: "Book Your ECG Test Today",
+
+    description:
+      "Looking for reliable ECG testing in Garhshankar? Book your ECG test at Bhangal Clinical Laboratories & ECG Center with convenient home sample collection, affordable pricing, and fast digital reports.",
+
+    serviceName: "ECG Test",
+
+    serviceLink: "/services/ecg-test",
+
+    bookingLink:
+      `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20want%20to%20book%20an%20ECG%20Test.%20Please%20share%20the%20available%20slots.`,
+
+    whatsappLink:
+      `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20have%20a%20question%20about%20ECG%20Test.`,
+
+    features: [
+      "Quick & Painless Test",
+      "Home Sample Collection",
+      "Fast Digital Reports",
+      "Affordable Pricing",
+      "Experienced Technicians",
+    ],
+  },
 }
 //   {
 //   id: 2,

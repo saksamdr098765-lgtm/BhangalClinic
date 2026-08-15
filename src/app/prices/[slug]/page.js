@@ -73,6 +73,7 @@ export default async function PriceSlugPage({ params }) {
         hero={priceData.hero}
         priceCard={priceData.priceCard}
         slug={slug}
+        price={priceData}
       />
 
       {/* 2. Overview Section */}
@@ -91,6 +92,7 @@ export default async function PriceSlugPage({ params }) {
         relatedTests={priceData.relatedTests}
         priceData={priceData}
         slug={slug}
+        
       />
 
       {/* 4. Comparison with a Package Section */}
@@ -98,6 +100,7 @@ export default async function PriceSlugPage({ params }) {
         testTitle={testTitle}
         offerPrice={priceData.priceCard?.offerPrice}
         slug={slug}
+        priceData={priceData}
       />
 
       {/* 5. Why to Get This Test & Indications Section */}

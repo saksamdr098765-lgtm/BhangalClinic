@@ -11,13 +11,14 @@ import {
 } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
+
+
+export default function Hero({ location }) {
 const features = [
   "Advanced Diagnostic Technology",
   "Fast & Accurate Reports",
-  "Home Sample Collection",
+  ...(location.homeCollection ? ["Home Sample Collection"] : []),
 ];
-
-export default function Hero({ location }) {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-sky-600 via-sky-700 to-blue-800 py-6 sm:py-10 lg:py-16">
       {/* Background Glow */}
@@ -98,11 +99,11 @@ export default function Hero({ location }) {
                 <p className="text-[10px] text-sky-100 sm:text-xs">Service Area</p>
               </div>
 
-              <div className="rounded-xl bg-white/10 p-3 text-center backdrop-blur sm:p-4">
+             {location.homeCollection && <div className="rounded-xl bg-white/10 p-3 text-center backdrop-blur sm:p-4">
                 <FiHome className="mx-auto h-5 w-5 text-cyan-300" />
                 <p className="mt-1 text-base font-black text-white sm:text-lg">Home</p>
                 <p className="text-[10px] text-sky-100 sm:text-xs">Collection</p>
-              </div>
+              </div>}
             </div>
           </div>
 

@@ -319,7 +319,7 @@ faq: [
     "Comprehensive blood testing services covering hematology, diabetes, thyroid, liver, kidney, vitamins, hormones, and more — with accurate results and fast reporting.",
 
   description:
-    "DK Bhangal Laboratory offers a complete range of blood tests, from routine screenings to specialized diagnostic panels. Using advanced laboratory equipment and strict quality protocols, we deliver accurate, timely results to support early detection, diagnosis, and ongoing health monitoring.",
+    "Bhangal Clinical Laboratories & ECG Center offers a complete range of blood tests, from routine screenings to specialized diagnostic panels. Using advanced laboratory equipment and strict quality protocols, we deliver accurate, timely results to support early detection, diagnosis, and ongoing health monitoring.",
 
   category: "Diagnostic Services",
 
@@ -329,10 +329,10 @@ faq: [
 
   seo: {
     title:
-      "Blood Tests | Book All Blood Tests Online | DK Bhangal Laboratory",
+      "Blood Tests | Book All Blood Tests Online | Bhangal Clinical Laboratories & ECG Center",
 
     description:
-      "Book any blood test online with DK Bhangal Laboratory. CBC, thyroid, diabetes, lipid profile, liver, kidney, vitamin tests and more — accurate results, home sample collection available.",
+      "Book any blood test online with Bhangal Clinical Laboratories & ECG Center. CBC, thyroid, diabetes, lipid profile, liver, kidney, vitamin tests and more — accurate results, home sample collection available.",
 
     keywords: [
       "Blood Tests",
@@ -374,7 +374,7 @@ relatedTests: [
     paragraphs: [
       "Blood tests are diagnostic procedures that analyze a sample of your blood to check for a wide range of health markers, including blood cell counts, sugar levels, hormone levels, organ function, vitamin levels, and infection markers. They are one of the most common and important tools used by doctors to diagnose, monitor, and prevent illness.",
 
-      "At DK Bhangal Laboratory, we offer individual tests as well as grouped health packages, allowing patients to choose exactly what they need — whether it's a single routine test or a complete health screening. All samples are processed using advanced diagnostic equipment to ensure accurate, dependable results.",
+      "At Bhangal Clinical Laboratories & ECG Center, we offer individual tests as well as grouped health packages, allowing patients to choose exactly what they need — whether it's a single routine test or a complete health screening. All samples are processed using advanced diagnostic equipment to ensure accurate, dependable results.",
     ],
 
     benefits: [
@@ -508,7 +508,7 @@ relatedTests: [
     heading: "What's Included in Our Blood Testing Service?",
 
     description:
-      "Every blood test at DK Bhangal Laboratory follows strict quality and safety protocols, from sample collection to final report delivery.",
+      "Every blood test at Bhangal Clinical Laboratories & ECG Center follows strict quality and safety protocols, from sample collection to final report delivery.",
 
     items: [
       {
@@ -701,6 +701,390 @@ relatedTests: [
       // { name: "Pojewal", area: "Doorstep Collection" },
       // { name: "Balachaur", area: "Town & Surrounding Regions" },
       // { name: "Denowal Kalan", area: "Local Area Coverage" },
+    ],
+  },
+},
+{
+  id: 3,
+
+  slug: "ecg-test",
+
+  title: "ECG Test",
+
+  shortDescription:
+    "Accurate ECG (Electrocardiogram) testing to record your heart's electrical activity — helping detect arrhythmias, blockages, and heart attacks with fast reporting.",
+
+  description:
+    "Bhangal Clinical Laboratories & ECG Center offers reliable 12-lead ECG (Electrocardiogram) testing to assess heart rhythm and function. Using calibrated ECG machines and trained technicians, we deliver accurate, easy-to-understand reports to support timely diagnosis and cardiac care.",
+
+  category: "Diagnostic Services",
+
+  coverImage: "/services/ecg-test-cover.webp",
+
+  featured: false,
+
+  seo: {
+    title:
+      "ECG Test | Book ECG (Electrocardiogram) Online | Bhangal Clinical Laboratories & ECG Center",
+
+    description:
+      "Book an ECG test online with Bhangal Clinical Laboratories & ECG Center. Accurate 12-lead ECG for heart rhythm, arrhythmia, and heart attack detection — home collection available.",
+
+    keywords: [
+      "ECG Test",
+      "ECG Full Form",
+      "ECG Test Near Me",
+      "12 Lead ECG",
+      "ECG Test Price",
+      "ECG Machine",
+      "ECG Report Meaning",
+      "ECG vs EKG",
+      "ECG Test at Home",
+      "Book ECG Test",
+    ],
+  },
+
+  relatedPackages: [],
+
+  relatedTests: [
+    "lipid-profile",
+    "total-cholesterol",
+    "triglycerides-test",
+    "hdl-cholesterol",
+    "ldl-cholesterol",
+    "vldl-cholesterol",
+    "serum-potassium",
+    "cpk-mb-test",
+    "troponin-t-test",
+  ],
+
+  overview: {
+    heading: "What is an ECG Test?",
+
+    paragraphs: [
+      "An ECG (Electrocardiogram), sometimes referred to as EKG, is a simple, painless test that records the electrical activity of your heart using small electrodes placed on the chest, arms, and legs. It captures the heart's rhythm and electrical patterns as waveforms, helping doctors assess how well the heart is functioning.",
+
+      "At Bhangal Clinical Laboratories & ECG Center, we perform 12-lead ECG tests using calibrated, well-maintained machines operated by trained technicians. The test typically takes just a few minutes and is available at our lab as well as through doorstep home collection.",
+    ],
+
+    benefits: [
+      "Quick, painless, and non-invasive procedure",
+      "Detects irregular heart rhythms and blockages",
+      "Accurate 12-lead ECG readings",
+      "Fast report turnaround time",
+      "Affordable and transparent pricing",
+    ],
+  },
+
+  importance: {
+    heading: "Why is an ECG Test Important?",
+
+    description:
+      "An ECG helps detect heart-related problems early, often before serious symptoms appear. It is one of the most commonly used tools to diagnose arrhythmias, heart attacks, and other cardiac conditions.",
+
+    cards: [
+      {
+        icon: "activity",
+        title: "Detects Arrhythmias",
+        description:
+          "Identifies irregular heartbeats such as tachycardia, bradycardia, and other rhythm disorders.",
+      },
+      {
+        icon: "shield",
+        title: "Heart Attack Detection",
+        description:
+          "Helps identify signs of a current or past heart attack, including silent heart attacks.",
+      },
+      {
+        icon: "check",
+        title: "Blockage Assessment",
+        description:
+          "Can reveal signs of blocked or narrowed arteries affecting the heart's blood supply.",
+      },
+      {
+        icon: "growth",
+        title: "Routine Cardiac Screening",
+        description:
+          "Used for regular heart health checkups, especially for those with risk factors or family history.",
+      },
+    ],
+  },
+
+  idealFor: {
+    heading: "Who Should Get an ECG Test?",
+
+    description:
+      "An ECG is recommended for anyone experiencing symptoms related to heart function, as well as for routine cardiac screening in at-risk individuals.",
+
+    people: [
+      "Individuals Experiencing Chest Pain or Discomfort",
+      "Patients with Palpitations or Irregular Heartbeat",
+      "Individuals with High Blood Pressure or Diabetes",
+      "Senior Citizens",
+      "Patients with Family History of Heart Disease",
+      "Pre-Employment or Insurance Screening Candidates",
+      "Individuals Undergoing Routine Health Checkups",
+      "Patients Being Monitored for Existing Heart Conditions",
+    ],
+  },
+
+  testCategories: {
+    heading: "Types of ECG We Offer",
+
+    description:
+      "We offer different types of ECG testing depending on your symptoms and the level of monitoring required.",
+
+    categories: [
+      {
+        name: "Resting ECG",
+        tests: ["12-Lead ECG", "Standard Resting ECG"],
+      },
+      {
+        name: "Monitoring ECG",
+        tests: ["Holter Monitoring (24-hour)", "Rhythm Strip"],
+      },
+      {
+        name: "Stress ECG",
+        tests: ["Treadmill Test (TMT)"],
+      },
+      {
+        name: "Pediatric ECG",
+        tests: ["Pediatric ECG Screening"],
+      },
+    ],
+  },
+
+  popularTests: {
+    heading: "Most Booked ECG Services",
+
+    tests:[
+    "lipid-profile",
+    "total-cholesterol",
+    "triglycerides-test",
+    "hdl-cholesterol",
+    "ldl-cholesterol",
+    "vldl-cholesterol",
+    "serum-potassium",
+    "cpk-mb-test",
+    "troponin-t-test",
+  ],
+  },
+
+  includes: {
+    heading: "What's Included in Our ECG Testing Service?",
+
+    description:
+      "Every ECG test at Bhangal Clinical Laboratories & ECG Center follows strict quality and safety protocols, from electrode placement to final report delivery.",
+
+    items: [
+      {
+        title: "Calibrated ECG Machines",
+        description:
+          "Well-maintained, regularly calibrated equipment ensures accurate waveform readings.",
+      },
+      {
+        title: "Trained Technicians",
+        description:
+          "Experienced staff ensure correct lead placement for reliable, consistent results.",
+      },
+      {
+        title: "Accurate Recording",
+        description:
+          "Clear 12-lead waveform capture to support precise diagnosis.",
+      },
+      {
+        title: "Quality-Checked Reports",
+        description:
+          "All ECG reports undergo internal review before being released to patients.",
+      },
+      {
+        title: "Digital & Printed Reports",
+        description:
+          "Access your ECG report online or collect a printed copy, based on your preference.",
+      },
+      {
+        title: "Doctor Consultation Support",
+        description:
+          "Guidance available for understanding your ECG report and next steps.",
+      },
+    ],
+  },
+
+  process: {
+    heading: "How to Book an ECG Test",
+
+    description:
+      "Getting your ECG done with us is quick and simple, whether at our lab or through home collection.",
+
+    steps: [
+      {
+        icon: "search",
+        title: "Choose Your Service",
+        description:
+          "Select a standard ECG or ask our team for guidance based on your symptoms.",
+      },
+      {
+        icon: "calendar",
+        title: "Book an Appointment",
+        description:
+          "Schedule your ECG online or by phone, choosing your preferred date, time.",
+      },
+      {
+        icon: "lab",
+        title: "ECG Recording",
+        description:
+          "Visit our lab and a trained technician perform the ECG .",
+      },
+      {
+        icon: "report",
+        title: "Receive Your Report",
+        description:
+          "Get your ECG report delivered digitally or in print, usually within minutes to a few hours.",
+      },
+    ],
+  },
+
+  whyChoose: {
+    features: [
+      {
+        icon: "award",
+        title: "Experienced Technicians",
+        description:
+          "Trained staff ensure correct electrode placement and accurate waveform capture.",
+      },
+      {
+        icon: "activity",
+        title: "Advanced ECG Machines",
+        description:
+          "Modern, calibrated equipment delivers precise 12-lead readings.",
+      },
+      {
+        icon: "shield",
+        title: "Quality Assurance",
+        description:
+          "Rigorous quality checks at every stage, from recording to reporting.",
+      },
+      {
+        icon: "clock",
+        title: "Fast Turnaround",
+        description:
+          "Most ECG reports are ready within minutes to a few hours.",
+      },
+    
+      {
+        icon: "check",
+        title: "Transparent Pricing",
+        description:
+          "Clear, upfront pricing on all ECG services, with no hidden charges.",
+      },
+    ],
+  },
+
+  interlinks: {
+    badge: "Pricing & Local Availability",
+    heading: "Cost & Where to Get Tested",
+    description: "Someone reading about our ECG services usually wants to know costs and local availability in Garhshankar — explore both below.",
+    items: [
+      {
+        title: "ECG Test Price in Garhshankar",
+        subtitle: "Cost & Pricing Details",
+        description: "Check transparent pricing for ECG testing and combined cardiac health packages.",
+        href: "/prices/ecg-test-price-garhshankar",
+        icon: "FiTag",
+        badge: "View Cost",
+        badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200",
+        btnText: "Check Price List",
+        tracking: "service-interlink-price",
+      },
+      {
+        title: "Garhshankar Diagnostic Location Page",
+        subtitle: "Where to Get Tested",
+        description: "Find complete lab details, opening hours, covered villages, and doorstep home collection services in Garhshankar.",
+        href: "/locations/ecg-test-in-garhshankar",
+        icon: "FiMapPin",
+        badge: "Local Hub",
+        badgeColor: "bg-sky-100 text-sky-800 border-sky-200",
+        btnText: "Explore Location Page",
+        tracking: "service-interlink-location",
+      },
+    ],
+  },
+
+  relatedBlogs: [
+    "ecg-interpretation-guide"
+  ],
+
+  faq: [
+    {
+      question: "What is the full form of ECG?",
+      answer:
+        "ECG stands for Electrocardiogram, a test that records the electrical activity of the heart to assess its rhythm and function.",
+    },
+    {
+      question: "How is an ECG performed?",
+      answer:
+        "Small electrodes are placed on your chest, arms, and legs to record your heart's electrical signals. The procedure is painless and usually takes just a few minutes.",
+    },
+    {
+      question: "What is the difference between ECG and EKG?",
+      answer:
+        "ECG and EKG refer to the same test — Electrocardiogram. EKG comes from the German spelling 'Elektrokardiogramm,' while ECG is the English abbreviation. Both terms are used interchangeably.",
+    },
+    {
+      question: "What do V1, V2, V3, V4, V5, and V6 mean in an ECG?",
+      answer:
+        "These refer to the chest (precordial) leads placed at specific positions on the chest during a 12-lead ECG. Each lead views the heart's electrical activity from a different angle, helping doctors assess different regions of the heart.",
+    },
+    {
+      question: "Can an ECG show a heart blockage?",
+      answer:
+        "Yes, an ECG can reveal signs suggestive of blocked or narrowed arteries, such as changes in the ST segment, though further tests may be needed to confirm the diagnosis.",
+    },
+    {
+      question: "How do I know if my ECG report is abnormal?",
+      answer:
+        "An abnormal ECG report typically shows irregularities in heart rate, rhythm, or waveform patterns such as the P wave, QRS complex, or ST segment. A doctor should review your report to interpret these findings accurately.",
+    },
+    {
+      question: "How long does an ECG test take?",
+      answer:
+        "A standard resting ECG usually takes only 5 to 10 minutes to complete, including electrode placement and recording.",
+    },
+    {
+      question: "Is there any preparation needed before an ECG?",
+      answer:
+        "No special preparation or fasting is required. It's helpful to wear loose clothing for easy electrode placement and avoid applying lotions to the chest area beforehand.",
+    },
+    {
+      question: "Can I get an ECG done at home?",
+      answer:
+        "Yes, we offer ECG testing at your doorstep. A trained technician will visit your location with portable ECG equipment to perform the test.",
+    },
+    {
+      question: "Why are 12 leads used in an ECG?",
+      answer:
+        "12 leads provide a comprehensive view of the heart's electrical activity from multiple angles, helping doctors accurately detect abnormalities in different regions of the heart.",
+    },
+    {
+      question: "Who should get an ECG test done?",
+      answer:
+        "Anyone experiencing chest pain, palpitations, breathlessness, or those with risk factors like high blood pressure, diabetes, or a family history of heart disease should consider an ECG. It's also common as part of routine health checkups.",
+    },
+    {
+      question: "How soon will I get my ECG report?",
+      answer:
+        "ECG reports are typically generated immediately after the test, with a reviewed report available within a few hours.",
+    },
+  ],
+
+  serviceAreas: {
+    heading: "Areas We Serve for ECG Testing",
+    description: "Get your ECG test done with convenient doorstep service or lab visit across these major locations in Punjab.",
+    cities: [
+      { name: "Garhshankar", area: "Lab & Home Collection" },
+      { name: "Nawanshahr", area: "City & Suburbs" },
+      { name: "Hoshiarpur", area: "City & Nearby Areas" },
+      { name: "Banga", area: "Town & Surrounding Areas" },
     ],
   },
 }

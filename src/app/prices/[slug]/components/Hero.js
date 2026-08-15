@@ -11,7 +11,7 @@ import {
 } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
-export default function Hero({ hero, priceCard, slug }) {
+export default function Hero({ hero, priceCard, slug ,price}) {
   if (!hero || !priceCard) return null;
 
   return (
@@ -61,10 +61,10 @@ export default function Hero({ hero, priceCard, slug }) {
 
             {/* Highlights (2-column compact grid) */}
             <div className="mt-4 grid grid-cols-2 gap-2 text-xs">
-              <div className="flex items-center gap-1.5 rounded-lg bg-white p-2 border border-slate-200 shadow-2xs">
+            { price.homeCollection && <div className="flex items-center gap-1.5 rounded-lg bg-white p-2 border border-slate-200 shadow-2xs">
                 <FiHome className="text-sky-600 shrink-0" />
                 <span className="truncate">Doorstep Collection</span>
-              </div>
+              </div>}
               <div className="flex items-center gap-1.5 rounded-lg bg-white p-2 border border-slate-200 shadow-2xs">
                 <FiClock className="text-sky-600 shrink-0" />
                 <span className="truncate">Report in {priceCard.reportTime}</span>

@@ -4,7 +4,7 @@ import { packagesData } from "@/app/data/packages";
 import { FiCheckCircle, FiXCircle, FiPercent, FiArrowRight } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
-export default function PackageComparison({ testTitle, offerPrice = 399, slug }) {
+export default function PackageComparison({ testTitle, offerPrice = 399, slug ,priceData }) {
   // Select featured health package from packagesData
   const featuredPackage = packagesData[0] || {
     name: "Bhangal Basic Profile Plus",
@@ -58,10 +58,10 @@ export default function PackageComparison({ testTitle, offerPrice = 399, slug })
                   <FiCheckCircle className="text-sky-400 shrink-0 text-xs" />
                   Targeted screening for {testTitle}
                 </li>
-                <li className="flex items-center gap-2">
+                {priceData.homeCollecton && <li className="flex items-center gap-2">
                   <FiCheckCircle className="text-sky-400 shrink-0 text-xs" />
                   Doorstep Home Sample Collection
-                </li>
+                </li>}
                 <li className="flex items-center gap-2">
                   <FiXCircle className="text-red-400 shrink-0 text-xs" />
                   Does not cover other organs (Liver, Kidney, Thyroid)
@@ -118,10 +118,10 @@ export default function PackageComparison({ testTitle, offerPrice = 399, slug })
                   <FiCheckCircle className="text-emerald-400 shrink-0 text-xs" />
                   Full Body Vital & Organ Screening
                 </li>
-                <li className="flex items-center gap-2">
+               {priceData.homeCollecton &&  <li className="flex items-center gap-2">
                   <FiCheckCircle className="text-emerald-400 shrink-0 text-xs" />
                   Free Doorstep Home Sample Collection
-                </li>
+                </li>}
                 <li className="flex items-center gap-2">
                   <FiCheckCircle className="text-emerald-400 shrink-0 text-xs" />
                   Save over 50% compared to booking individually

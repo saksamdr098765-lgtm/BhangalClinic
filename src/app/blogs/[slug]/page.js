@@ -11,6 +11,7 @@ import FAQSection from "./components/FAQSection";
 import ShareButtons from "./components/ShareButton";
 import TableOfContents from "./components/TableOfContent";
 import RelatedPackages from "./components/RelatedPackages";
+import MedicalDisclaimer from "@/app/components/MedicalDisclaimer";
 import { getBlogSchema } from "@/schema/BlogSchema";
 import SITE_CONFIG from "@/app/SITE_CONFIG";
 import BlogCTA from "./components/BlogCTA";
@@ -137,6 +138,7 @@ export default async function BlogPage({ params }) {
 
             {/* Main Content */}
             <article className="min-w-0">
+              <MedicalDisclaimer className="mb-6" />
               <BlogContent content={blog.content} />
               <FAQSection faq={blog.faq} />
               <BlogCTA CTA={blog.cta} />
