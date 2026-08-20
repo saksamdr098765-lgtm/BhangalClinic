@@ -184,7 +184,9 @@ export default function Footer() {
                     <br />
                     {SITE_CONFIG.address.street}
                     <br />
-                    {SITE_CONFIG.address.state}
+                    {SITE_CONFIG.address.city}   {SITE_CONFIG.address.district}
+                    <br />
+                    {SITE_CONFIG.address.state} {SITE_CONFIG.address.postalCode} {SITE_CONFIG.address.country}
                   </address>
                 </div>
               </div>

@@ -589,7 +589,7 @@ quickInfo: [
         ["Lipid Profile", "Cholesterol and triglycerides"],
         ["LFT", "Liver enzymes and function"],
         ["KFT", "Creatinine, urea, kidney function"],
-        ["Thyroid Profile (TSH, T3, T4)", "Thyroid function"],
+        ["Thyroid Profile (T3, T4,TSH)", "Thyroid function"],
         ["Vitamin D", "Bone and immune health"],
         ["Vitamin B12", "Nerve function and energy levels"],
         ["Calcium", "Bone health and muscle function"],
@@ -653,7 +653,7 @@ quickInfo: [
   rows: [
     ["Fatigue & Weakness", "CBC, Iron, Vitamin B12", "Anemia, Vitamin Deficiency"],
     ["Frequent Urination", "Fasting Sugar, HbA1c", "Diabetes"],
-    ["Weight Gain", "TSH, T3, T4", "Hypothyroidism"],
+    ["Weight Gain", " T3, T4,TSH", "Hypothyroidism"],
     ["Weight Loss", "HbA1c, Thyroid Profile", "Diabetes, Hyperthyroidism"],
     ["High Cholesterol", "Lipid Profile", "Heart Disease Risk"],
     ["Joint Pain", "Uric Acid, CRP", "Gout, Inflammation"],
@@ -680,7 +680,7 @@ quickInfo: [
       items: [
         "Blood Count & General Health: CBC, ESR, CRP",
         "Diabetes & Sugar: Fasting Sugar, HbA1c, Random Sugar",
-        "Thyroid: TSH, T3, T4",
+        "Thyroid: T3, T4,  TSH",
         "Heart Health: Lipid Profile, Cholesterol",
         "Liver & Kidney: LFT, KFT",
         "Vitamins & Minerals: Vitamin D, Vitamin B12, Calcium, Iron, Ferritin",
