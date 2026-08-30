@@ -1,340 +1,9 @@
-// data/blogs.js
 
 import SITE_CONFIG from "../SITE_CONFIG";
+import { getTestPrice } from "./tests";
 
 export const blogs = [
-//   {
-//     id: 1,
 
-//     slug: "vitamin-d-deficiency",
-
-//     title: "Vitamin D Deficiency: Symptoms, Causes, Diagnosis & Treatment",
-
-//     excerpt:
-//       "Learn everything about Vitamin D deficiency, including symptoms, causes, diagnosis, treatment, and prevention tips to maintain healthy bones and immunity.",
-
-//     category: "Health Tips",
-
-//     author: {
-//       name: "DK Bhangal Lab",
-//       image: "/team/author.jpg",
-//     },
-
-//     publishedAt: "July 19, 2026",
-
-//     readingTime: "8 min read",
-
-//     coverImage: "/blogs/vitamin-d/cover.webp",
-
-//     featured: true,
-// relatedPackages: [
-//   "bhangal-ayush-profile-3",
-//   "bhangal-ayush-profile-3-1",
-//   "bhangal-master-health-screen",
-//   "bcl-med-pro-65-package",
-//   "bhangal-senior-citizen-profile",
-//   "bcl-female-4-package",
-// ],
-//    seo: {
-//   title:
-//     "Vitamin D Deficiency: Symptoms, Causes, Diagnosis & Treatment | DK Bhangal Lab",
-
-//   description:
-//     "Learn about Vitamin D deficiency, including symptoms, causes, diagnosis, Vitamin D blood tests, treatment options, and prevention. Expert health information from DK Bhangal Lab.",
-
-//   keywords: [
-//     "Vitamin D deficiency",
-//     "Vitamin D symptoms",
-//     "Vitamin D test",
-//     "Vitamin D blood test",
-//     "Low Vitamin D",
-//     "Vitamin D diagnosis",
-//     "Vitamin D treatment",
-//     "Vitamin D supplements",
-//     "Bone health",
-//     "Preventive healthcare",
-//     "Health blog",
-//     "Diagnostic laboratory",
-//     "DK Bhangal Lab",
-//   ],
-// },
-//  quickInfo: {
-//     testName: "Vitamin D (25-OH) Test",
-//     price: "₹899",
-//     sample: "Blood Sample",
-//     fasting: "Not Required",
-//     reportTime: "Same Day",
-//     homeCollection: "Available",
-//     recommendedFor: "Fatigue, Bone Pain, Muscle Weakness",
-//     booking: "Online / Phone / WhatsApp",
-//   },
-
-// tags: [
-//   "Vitamin D Deficiency",
-//   "Vitamin D",
-//   "Blood Tests",
-//   "Nutrition",
-//   "Bone Health",
-//   "Preventive Healthcare",
-// ],
-
-//   content: [
-//   {
-//     type: "paragraph",
-//     text: "Vitamin D deficiency is one of the most common nutritional deficiencies worldwide. Vitamin D plays a vital role in maintaining healthy bones, muscles, teeth, and a strong immune system. Despite abundant sunlight in many regions, a large number of people still experience low Vitamin D levels because of indoor lifestyles, poor dietary intake, increasing use of sunscreen, aging, and certain medical conditions. Since the symptoms often develop gradually, many people remain unaware of the deficiency until it begins affecting their daily lives. Early diagnosis through a simple blood test can help prevent complications and improve overall health.",
-//   },
-
-//   {
-//     type: "image",
-//     src: "/blogs/vitamin-d/image-1.webp",
-//     alt: "Vitamin D Rich Foods",
-//     caption: "Foods naturally rich in Vitamin D help maintain healthy bones and immunity.",
-//   },
-
-//   {
-//     type: "heading",
-//     level: 2,
-//     text: "What is Vitamin D?",
-//   },
-
-//   {
-//     type: "paragraph",
-//     text: "Vitamin D is a fat-soluble vitamin that helps the body absorb calcium and phosphorus, two essential minerals responsible for strong bones and healthy teeth. It also contributes to muscle function, nerve communication, and immune defense. The body naturally produces Vitamin D when the skin is exposed to sunlight, but it can also be obtained through food and supplements. Maintaining adequate Vitamin D levels is important for people of all ages, from growing children to older adults.",
-//   },
-
-//   {
-//     type: "heading",
-//     level: 2,
-//     text: "Symptoms of Vitamin D Deficiency",
-//   },
-
-//   {
-//     type: "paragraph",
-//     text: "The signs of Vitamin D deficiency may vary from person to person. Some individuals experience no symptoms at all, while others develop noticeable health problems. Persistent deficiency may affect physical performance, bone strength, and immunity.",
-//   },
-
-//   {
-//     type: "list",
-//     items: [
-//       "Persistent tiredness and fatigue",
-//       "Bone or lower back pain",
-//       "Muscle weakness",
-//       "Frequent infections",
-//       "Slow wound healing",
-//       "Hair loss",
-//       "Mood changes or depression",
-//       "Difficulty climbing stairs",
-//       "Joint discomfort",
-//       "Poor bone density",
-//     ],
-//   },
-
-//   {
-//     type: "tip",
-//     title: "Health Tip",
-//     text: "Morning sunlight exposure for 15–20 minutes several times a week may help your body naturally produce Vitamin D.",
-//   },
-
-//   {
-//     type: "image",
-//     src: "/blogs/vitamin-d/image-2.webp",
-//     alt: "Morning Sunlight",
-//     caption: "Moderate sunlight exposure is one of the best natural sources of Vitamin D.",
-//   },
-
-//   {
-//     type: "heading",
-//     level: 2,
-//     text: "Common Causes of Vitamin D Deficiency",
-//   },
-
-//   {
-//     type: "paragraph",
-//     text: "Several lifestyle and medical factors can contribute to low Vitamin D levels. Understanding these causes helps individuals take preventive measures before serious complications develop.",
-//   },
-
-//   {
-//     type: "list",
-//     items: [
-//       "Limited exposure to sunlight",
-//       "Working indoors for long hours",
-//       "Regular use of sunscreen",
-//       "Darker skin pigmentation",
-//       "Poor dietary intake",
-//       "Obesity",
-//       "Kidney or liver disorders",
-//       "Digestive diseases affecting nutrient absorption",
-//       "Increasing age",
-//       "Pregnancy and breastfeeding",
-//     ],
-//   },
-
-//   {
-//     type: "heading",
-//     level: 2,
-//     text: "Who is at Higher Risk?",
-//   },
-
-//   {
-//     type: "paragraph",
-//     text: "Certain individuals have a greater risk of developing Vitamin D deficiency. Older adults produce less Vitamin D through the skin, while infants who are exclusively breastfed may not receive adequate amounts unless supplementation is recommended. Individuals with chronic kidney disease, liver disease, obesity, inflammatory bowel disease, or those following strict vegetarian diets may also require closer monitoring of their Vitamin D levels.",
-//   },
-
-//   {
-//     type: "heading",
-//     level: 2,
-//     text: "How is Vitamin D Deficiency Diagnosed?",
-//   },
-// {
-//   type: "heading",
-//   level: 2,
-//   text: "Normal Vitamin D Levels",
-// },
-// {
-//   type: "table",
-//   title: "Vitamin D (25-OH) Blood Test Reference Range",
-//   headers: ["Vitamin D Level", "Interpretation"],
-//   rows: [
-//     ["Below 20 ng/mL", "Deficient"],
-//     ["20–29 ng/mL", "Insufficient"],
-//     ["30–100 ng/mL", "Normal"],
-//     ["Above 100 ng/mL", "High (May Require Evaluation)"],
-//   ],
-// },
-//   {
-//     type: "paragraph",
-//     text: "The most reliable way to diagnose Vitamin D deficiency is through a 25-hydroxy Vitamin D blood test. This laboratory test measures the amount of Vitamin D circulating in the bloodstream and helps healthcare professionals determine whether your levels are adequate, insufficient, or deficient. Based on the results, your doctor may recommend dietary changes, supplements, or further investigations if an underlying medical condition is suspected.",
-//   },
-
-//   {
-//     type: "warning",
-//     title: "Important",
-//     text: "Avoid taking high-dose Vitamin D supplements without proper medical advice. Excess Vitamin D may lead to unwanted side effects and should only be taken according to professional recommendations.",
-//   },
-
-//   {
-//     type: "heading",
-//     level: 2,
-//     text: "Best Food Sources of Vitamin D",
-//   },
-
-//   {
-//     type: "paragraph",
-//     text: "Although sunlight is the primary natural source of Vitamin D, several foods can also contribute to maintaining healthy levels. Including these foods regularly in your diet supports overall wellness.",
-//   },
-
-//   {
-//     type: "list",
-//     items: [
-//       "Fatty fish such as salmon and sardines",
-//       "Egg yolks",
-//       "Fortified milk",
-//       "Fortified cereals",
-//       "Cheese",
-//       "Mushrooms exposed to sunlight",
-//       "Fortified yogurt",
-//     ],
-//   },
-
-//   {
-//     type: "image",
-//     src: "/blogs/vitamin-d/image-3.webp",
-//     alt: "Foods containing Vitamin D",
-//     caption: "A balanced diet supports healthy Vitamin D levels.",
-//   },
-
-//   {
-//     type: "heading",
-//     level: 2,
-//     text: "Treatment Options",
-//   },
-
-//   {
-//     type: "paragraph",
-//     text: "Treatment depends on the severity of the deficiency and the individual's overall health. Mild deficiencies may improve with dietary changes and increased sunlight exposure, while moderate to severe deficiencies often require Vitamin D supplements. Regular monitoring through blood tests helps ensure that Vitamin D levels return to the recommended range and remain stable over time.",
-//   },
-
-//   {
-//     type: "heading",
-//     level: 2,
-//     text: "How to Prevent Vitamin D Deficiency",
-//   },
-
-//   {
-//     type: "paragraph",
-//     text: "Maintaining healthy Vitamin D levels is often easier than treating a long-standing deficiency. A combination of healthy lifestyle habits and routine health checkups can significantly reduce your risk.",
-//   },
-
-//   {
-//     type: "list",
-//     items: [
-//       "Spend time outdoors regularly",
-//       "Eat Vitamin D-rich foods",
-//       "Exercise consistently",
-//       "Maintain a healthy body weight",
-//       "Get routine health checkups",
-//       "Consult your doctor before using supplements",
-//     ],
-//   },
-
-//   {
-//     type: "success",
-//     title: "Key Takeaway",
-//     text: "Vitamin D deficiency is common but easily manageable when detected early. Regular blood testing, balanced nutrition, healthy lifestyle habits, and timely medical guidance help maintain optimal Vitamin D levels and support lifelong bone, muscle, and immune health.",
-//   },
-
-//   {
-//     type: "heading",
-//     level: 2,
-//     text: "Conclusion",
-//   },
-
-//   {
-//     type: "paragraph",
-//     text: "Vitamin D is essential for maintaining healthy bones, muscles, and immunity. Because deficiency often develops silently, regular health screening plays an important role in early detection. If you frequently experience fatigue, muscle weakness, bone pain, or recurrent infections, consulting a healthcare professional and undergoing a Vitamin D blood test can provide valuable insight into your overall health. Early diagnosis and appropriate treatment can help prevent long-term complications and improve quality of life.",
-//   },
-//   {
-//   type: "references",
-//   items: [
-//     {
-//       title: "Vitamin D - Fact Sheet for Health Professionals",
-//       publisher: "National Institutes of Health (NIH)",
-//       url: "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
-//     },
-//     {
-//       title: "Vitamin D",
-//       publisher: "MedlinePlus",
-//       url: "https://medlineplus.gov/vitamind.html",
-//     },
-//     {
-//       title: "Vitamin D",
-//       publisher: "Mayo Clinic",
-//       url: "https://www.mayoclinic.org/",
-//     },
-//   ],
-// }
-// ],
-
-//     faq: [
-//       {
-//         question: "What causes Vitamin D deficiency?",
-//         answer:
-//           "Limited sun exposure, poor diet, obesity, aging, and certain medical conditions can contribute to Vitamin D deficiency.",
-//       },
-
-//       {
-//         question: "How is Vitamin D deficiency diagnosed?",
-//         answer:
-//           "A blood test measuring 25-hydroxy Vitamin D is commonly used to diagnose deficiency.",
-//       },
-
-//       {
-//         question: "Can Vitamin D deficiency be prevented?",
-//         answer:
-//           "Yes. Adequate sunlight exposure, a balanced diet, and medical advice regarding supplements can help prevent deficiency.",
-//       },
-//     ],
-//   },
   {
   id: 1,
 
@@ -1311,358 +980,395 @@ cta: {
       "Experienced Technicians",
     ],
   },
+},
+{
+  id: 3,
+
+  slug: "cbc-test-full-guide",
+
+  title: "CBC Test: Full Form, Normal Range, Price & What It Detects (Complete Guide)",
+
+  excerpt:
+    "Everything about the CBC test — full form, normal range by age and gender, price, procedure, fasting rules, and what abnormal results can mean.",
+
+  category: "Health Tips",
+
+  author: {
+    name: "Bhangal Clinical Laboratories & ECG Center",
+    image: "/team/author.jpg",
+  },
+
+  publishedAt: "August 30, 2026",
+
+  readingTime: "9 min read",
+
+  coverImage: "/blogs/cbc-test-full-guide/cover.webp",
+
+  featured: true,
+
+  relatedPackages: [
+  "bcl-med-health-pro-package",
+  "bhangal-dengue-profile",
+  "bhangal-fever-mini-profile",
+  "bhangal-fever-maxi-profile",
+  "bhangal-basic-profile",
+  "bhangal-basic-profile-plus",
+],
+
+ relatedTests :[
+  "platelet-count",
+  "absolute-eosinophil-count",
+  "esr-test",
+  "peripheral-blood-film",
+  "bleeding-time-clotting-time",
+  "blood-group-test",
+  "dengue-test",
+  "mp-antigen-test",
+],
+
+  seo: {
+    title: "CBC Test: Full Form, Normal Range, Price & What It Detects | DK Bhangal Lab",
+
+    description:
+      "Learn what a CBC test checks, its full form, normal ranges by age and gender, price in Garhshankar, fasting requirements, and what high or low results mean.",
+
+    keywords: [
+      "cbc test",
+      "cbc test full form",
+      "cbc test price",
+      "cbc test near me",
+      "cbc test normal range",
+      "cbc blood test",
+      "complete blood count test",
+      "cbc test price in garhshankar",
+      "cbc test results chart",
+      "cbc test in pregnancy",
+      "cbc test fasting",
+      "cbc differential abnormal",
+      "Bhangal Clinical Laboratories",
+    ],
+  },
+
+  quickInfo: [
+    { label: "You Will Learn", value: "Complete Guide to CBC Test", icon: "activity" },
+    { label: "Reading Time", value: "9 Minutes", icon: "clock" },
+    { label: "Suitable For", value: "Adults & Children", icon: "users" },
+    { label: "Symptoms", value: "Fatigue, Fever, Weakness, Infection", icon: "heart" },
+    { label: "Recommended Test", value: "CBC Blood Test", icon: "test" },
+    { label: "Fasting", value: "Not Required", icon: "file" },
+    { label: "Report Time", value: "Same Day", icon: "clock" },
+    { label: "Price", value: getTestPrice("cbc-test"), icon: "price" },
+    { label: "Home Collection", value: "Available", icon: "home" },
+  ],
+
+  tags: [
+    "CBC",
+    "Blood Test",
+    "Full Body Checkup",
+    "Health Screening",
+    "Preventive Healthcare",
+    "Blood Test Report",
+  ],
+
+  content: [
+    {
+      type: "paragraph",
+      text: "CBC is one of the most commonly ordered blood tests at our Garhshankar centre — patients come in with a doctor's referral, or simply because they've been feeling unusually tired or feverish. Despite how often it's ordered, many people aren't sure what CBC actually stands for or what the individual numbers on the report mean. This guide covers the full form, what each part of the test checks, normal ranges, pricing, and how to read your report.",
+    },
+
+    {
+      type: "image",
+      src: "/blogs/cbc-test-full-guide/cbc-blood-sample.webp",
+      alt: "Blood sample tube for CBC test",
+      caption: "A single blood draw is enough to run a complete CBC panel.",
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "What Is a CBC Test? (Full Form & Meaning)",
+    },
+
+    {
+      type: "paragraph",
+      text: "CBC stands for Complete Blood Count. It's a routine blood test that measures the different components of your blood — red blood cells, white blood cells, platelets, and hemoglobin — to give doctors a broad snapshot of your overall health, including signs of anemia, infection, and clotting problems.",
+    },
+
+    {
+      type: "tip",
+      title: "Good to Know",
+      text: "CBC is sometimes called CBP (Complete Blood Picture) — both terms refer to the same test, just different naming conventions used by different labs.",
+    },
+
+  
+    {
+      type: "heading",
+      level: 2,
+      text: "What Does a CBC Test Check For?",
+    },
+
+    {
+      type: "paragraph",
+      text: "A CBC panel reports on several components of your blood, each pointing to a different aspect of health.",
+    },
+
+    {
+      type: "table",
+      title: "CBC Test Components",
+      headers: ["Component", "What It Checks"],
+      rows: [
+        ["RBC (Red Blood Cells)", "Oxygen-carrying capacity, anemia screening"],
+        ["Hemoglobin", "Amount of oxygen-carrying protein in blood"],
+        ["Hematocrit", "Proportion of blood volume made up of red cells"],
+        ["WBC (White Blood Cells)", "Infection-fighting cells, immune response"],
+        ["Platelets", "Blood clotting ability"],
+        ["MCV, MCH, MCHC", "Red blood cell size and hemoglobin content indices"],
+      ],
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "CBC Test Normal Range (By Age & Gender)",
+    },
+
+    {
+      type: "paragraph",
+      text: "Normal ranges vary slightly by age, gender, and the lab's equipment, so always compare your results against the reference range printed on your own report.",
+    },
+
+    {
+      type: "table",
+      title: "CBC Normal Range Chart",
+      headers: ["Parameter", "Adult Male", "Adult Female", "Children"],
+      rows: [
+        ["Hemoglobin", "13.5-17.5 g/dL", "12.0-15.5 g/dL", "11.0-14.0 g/dL"],
+        ["RBC Count", "4.5-5.9 million/µL", "4.0-5.2 million/µL", "4.0-5.5 million/µL"],
+        ["WBC Count", "4,000-11,000/µL", "4,000-11,000/µL", "5,000-13,000/µL"],
+        ["Platelet Count", "150,000-450,000/µL", "150,000-450,000/µL", "150,000-450,000/µL"],
+      ],
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "Is Fasting Required for a CBC Test?",
+    },
+
+    {
+      type: "paragraph",
+      text: "No, fasting is not required for a CBC test. You can eat and drink normally before your blood draw, unless your doctor has also ordered another test (like fasting sugar or lipid profile) alongside it, in which case fasting rules for that test would apply.",
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "Why Would a Doctor Order a CBC Test?",
+    },
+
+    {
+      type: "paragraph",
+      text: "Doctors order a CBC for routine checkups as well as to investigate specific symptoms. It's one of the first tests recommended when something feels off but the cause isn't clear yet.",
+    },
+
+    {
+      type: "table",
+      title: "Symptoms and What CBC May Reveal",
+      headers: ["Symptom", "What CBC May Show"],
+      rows: [
+        ["Fatigue & Weakness", "Low hemoglobin, anemia"],
+        ["Persistent Fever", "Raised WBC count, possible infection"],
+        ["Frequent Bruising", "Low platelet count"],
+        ["Pale Skin", "Low RBC count, iron deficiency"],
+        ["Unexplained Weight Loss", "Abnormal WBC differential, further workup needed"],
+        ["Routine Checkup", "Baseline blood health screening"],
+      ],
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "Understanding Your CBC Report",
+    },
+
+    {
+      type: "paragraph",
+      text: "Your CBC report lists each component, your result, and the normal reference range, with high or low values flagged for quick reference. A single abnormal value doesn't always indicate disease — it should always be interpreted by a doctor alongside your symptoms and history.",
+    },
+
+    {
+      type: "table",
+      title: "Sample CBC Report Format",
+      headers: ["Test Name", "Result", "Normal Range", "Flag"],
+      rows: [
+        ["Hemoglobin", "11.2 g/dL", "12.0-15.5 g/dL", "Low"],
+        ["WBC Count", "12,500/µL", "4,000-11,000/µL", "High"],
+        ["Platelet Count", "260,000/µL", "150,000-450,000/µL", "Normal"],
+      ],
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "CBC Test During Pregnancy",
+    },
+
+    {
+      type: "paragraph",
+      text: "CBC is a routine part of prenatal checkups, typically repeated across trimesters to monitor for anemia (common in pregnancy), infection, and platelet changes that can affect delivery planning.",
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "How Much Does a CBC Test Cost?",
+    },
+
+    {
+      type: "paragraph",
+      text: "CBC is one of the more affordable diagnostic tests available. Check our current price list for the exact rate and any bundled health packages that include CBC.",
+    },
+
+    {
+      type: "interlinking",
+      title: "Check Prices & Service Details",
+      description: "Ready to check cost or schedule your CBC test? Move down the funnel to view exact prices and service details.",
+      items: [
+        {
+          title: "CBC Test Price in Garhshankar",
+          description: "View the exact CBC test rate and bundled health packages.",
+          href: "/prices/cbc-test-price-garhshankar",
+        },
+        {
+          title: "CBC Service Overview",
+          description: "Learn what is included in our CBC testing service and process.",
+          href: "/tests/cbc-test",
+        },
+      ],
+    },
+
+    {
+      type: "success",
+      title: "Key Takeaway",
+      text: "A CBC test is a quick, affordable, and highly informative screening tool that can flag anemia, infection, and clotting issues early. Regular CBC checks — even without symptoms — help catch problems before they become serious.",
+    },
+
+    {
+      type: "heading",
+      level: 2,
+      text: "Book Your CBC Test",
+    },
+
+    {
+      type: "paragraph",
+      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. We're open daily from 7:00 AM to 8:00 PM (8:00 AM to 2:00 PM on Sundays). Walk in, call ahead, or book a home sample collection.",
+    },
+
+    {
+      type: "interlinking",
+      title: "Areas We Serve",
+      description: "We provide home sample collection and diagnostic services across the following locations.",
+      items: [
+        {
+          title: "Garhshankar",
+          description: "CBC test and home sample collection.",
+          href: "/locations/cbc-test-in-garhshankar",
+        },
+        {
+          title: "Hoshiarpur",
+          description: "Diagnostic laboratory services.",
+        },
+        {
+          title: "Nawanshahr",
+          description: "Health checkups and pathology tests.",
+        },
+      ],
+    },
+
+    {
+      type: "references",
+      items: [
+        {
+          title: "Complete Blood Count (CBC)",
+          publisher: "MedlinePlus",
+          url: "https://medlineplus.gov/labtests/completebloodcountcbc.html",
+        },
+        {
+          title: "Blood Tests",
+          publisher: "National Heart, Lung, and Blood Institute (NIH)",
+          url: "https://www.nhlbi.nih.gov/health/blood-tests",
+        },
+      ],
+    },
+  ],
+
+  faq: [
+    {
+      question: "What does a CBC test check for?",
+      answer:
+        "A CBC test checks red blood cells, white blood cells, platelets, and hemoglobin levels to assess anemia, infection, inflammation, and clotting ability, giving a broad picture of overall blood health.",
+    },
+    {
+      question: "What if CBC is high or low?",
+      answer:
+        "A high or low CBC value can point to different issues depending on which component is affected — for example, low hemoglobin suggests anemia, while high WBC often indicates infection. A single abnormal value should always be reviewed by a doctor alongside symptoms and history.",
+    },
+    {
+      question: "What diseases can a CBC detect?",
+      answer:
+        "CBC can help detect or flag anemia, infections, certain blood cancers, clotting disorders, and inflammatory conditions. It's often the first test used to identify that further investigation is needed, rather than a final diagnosis on its own.",
+    },
+    {
+      question: "Does a CBC check liver and kidney function?",
+      answer:
+        "No, CBC does not directly check liver or kidney function. Liver health is assessed with a Liver Function Test (LFT) and kidney health with a Kidney Function Test (KFT) — both separate panels from CBC.",
+    },
+    {
+      question: "Is fasting required for a CBC test?",
+      answer:
+        "No, fasting is not required for a CBC test. You can eat and drink normally before the blood draw unless another fasting test is being done at the same time.",
+    },
+    {
+      question: "Can a CBC test detect infection?",
+      answer:
+        "Yes, a raised white blood cell (WBC) count on a CBC is one of the most common indicators of an active infection or inflammation in the body.",
+    },
+    {
+      question: "What is the CBC test full form?",
+      answer:
+        "CBC stands for Complete Blood Count, a routine blood test measuring red cells, white cells, platelets, and hemoglobin.",
+    },
+    {
+      question: "How long does it take to get CBC test results?",
+      answer:
+        "CBC results are typically available the same day, often within a few hours of the blood draw.",
+    },
+  ],
+
+  cta: {
+    title: "Book Your CBC Test Today",
+
+    description:
+      "Looking for reliable CBC testing in Garhshankar? Book your CBC test with Bhangal Clinical Laboratories & ECG Center with convenient home sample collection, affordable pricing, and fast digital reports.",
+
+    serviceName: "CBC Test",
+
+    serviceLink: "/tests/cbc-test",
+
+    bookingLink:
+      `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20want%20to%20book%20a%20CBC%20Test.%20Please%20share%20the%20available%20slots.`,
+
+    whatsappLink:
+      `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20have%20a%20question%20about%20CBC%20Test.`,
+
+    features: [
+      "100+ Blood Tests Available",
+      "Home Sample Collection",
+      "Fast Digital Reports",
+      "Affordable Pricing",
+      "Experienced Phlebotomists",
+    ],
+  },
 }
-//   {
-//   id: 2,
 
-//   slug: "vitamin-b12-deficiency",
-
-//   title:
-//     "Vitamin B12 Deficiency: Symptoms, Causes, Diagnosis & Treatment",
-
-//   excerpt:
-//     "Learn about Vitamin B12 deficiency, including its symptoms, causes, diagnosis, treatment, prevention, and the importance of early blood testing for better health.",
-
-//   category: "Health Tips",
-
-//   author: {
-//     name: "DK Bhangal Lab",
-//     image: "/team/author.jpg",
-//   },
-
-//   publishedAt: "July 20, 2026",
-
-//   readingTime: "9 min read",
-
-//   coverImage: "/blogs/vitamin-b12/cover.webp",
-
-//   featured: false,
-
-//   relatedPackages: [
-//     "bhangal-ayush-profile-3",
-//     "bhangal-ayush-profile-3-1",
-//     "bhangal-master-health-screen",
-//     "bcl-med-pro-65-package",
-//     "bhangal-senior-citizen-profile",
-//     "bcl-female-4-package",
-//   ],
-
-// seo: {
-//   title:
-//     "Vitamin B12 Deficiency: Symptoms, Causes, Diagnosis & Treatment | DK Bhangal Lab",
-
-//   description:
-//     "Learn about Vitamin B12 deficiency, including symptoms, causes, diagnosis, blood tests, treatment options, and prevention. Expert health information from DK Bhangal Lab.",
-
-//   keywords: [
-//     "Vitamin B12 deficiency",
-//     "Vitamin B12 symptoms",
-//     "Vitamin B12 test",
-//     "Vitamin B12 blood test",
-//     "Low Vitamin B12",
-//     "Vitamin B12 treatment",
-//     "Vitamin B12 diagnosis",
-//     "Health blog",
-//     "Diagnostic laboratory",
-//     "DK Bhangal Lab",
-//   ],
-// },
-
-// tags: [
-//   "Vitamin B12 Deficiency",
-//   "Vitamin B12",
-//   "Blood Tests",
-//   "Nutrition",
-//   "Preventive Healthcare",
-// ],
-
-//   content: [{
-//   type: "paragraph",
-//   text: "Vitamin B12 deficiency is a common nutritional disorder that affects millions of people worldwide. Vitamin B12, also known as cobalamin, is an essential water-soluble vitamin required for healthy red blood cell formation, proper nerve function, DNA synthesis, and energy production. Because the human body cannot produce Vitamin B12 on its own, it must be obtained through food or supplements. When the body does not receive enough Vitamin B12 or cannot absorb it effectively, deficiency develops gradually and may lead to fatigue, weakness, nerve damage, anemia, and cognitive problems. Since the symptoms often appear slowly, many people remain undiagnosed for months or even years. Early detection through a simple blood test allows timely treatment and helps prevent long-term health complications.",
-// },
-
-// {
-//   type: "image",
-//   src: "/blogs/vitamin-b12/image-1.webp",
-//   alt: "Foods Rich in Vitamin B12",
-//   caption: "Animal-based foods such as eggs, fish, dairy products, and meat are excellent natural sources of Vitamin B12.",
-// },
-
-// {
-//   type: "heading",
-//   level: 2,
-//   text: "What is Vitamin B12?",
-// },
-
-// {
-//   type: "paragraph",
-//   text: "Vitamin B12 is an essential nutrient that plays a crucial role in maintaining overall health. It helps the body produce healthy red blood cells, supports the nervous system, and assists in DNA production. Adequate Vitamin B12 levels are also important for maintaining brain function, improving concentration, and converting food into energy. Since this vitamin is primarily found in animal-based foods, strict vegetarians and vegans are more likely to develop deficiency unless they consume fortified foods or supplements. Certain digestive disorders, medications, and age-related changes can also reduce Vitamin B12 absorption, making regular health checkups increasingly important.",
-// },
-
-// {
-//   type: "heading",
-//   level: 2,
-//   text: "Symptoms of Vitamin B12 Deficiency",
-// },
-
-// {
-//   type: "paragraph",
-//   text: "The symptoms of Vitamin B12 deficiency can vary depending on its severity and duration. Initially, many people experience mild fatigue or weakness, but prolonged deficiency may affect the nervous system and lead to more serious health problems. Because these symptoms are often mistaken for stress or aging, laboratory testing is the most reliable way to confirm the diagnosis.",
-// },
-
-// {
-//   type: "list",
-//   items: [
-//     "Persistent tiredness and fatigue",
-//     "Weakness or reduced stamina",
-//     "Pale or yellowish skin",
-//     "Shortness of breath",
-//     "Dizziness",
-//     "Numbness or tingling in hands and feet",
-//     "Difficulty walking or poor balance",
-//     "Memory problems",
-//     "Difficulty concentrating",
-//     "Mood changes, anxiety, or depression",
-//     "Frequent headaches",
-//     "Glossitis (swollen, sore tongue)",
-//   ],
-// },
-
-// {
-//   type: "tip",
-//   title: "Health Tip",
-//   text: "Persistent fatigue and tingling sensations in your hands or feet should never be ignored. A simple Vitamin B12 blood test can help identify deficiency before permanent nerve damage develops.",
-// },
-// {
-//   type: "heading",
-//   level: 2,
-//   text: "Common Causes of Vitamin B12 Deficiency",
-// },
-
-// {
-//   type: "paragraph",
-//   text: "Vitamin B12 deficiency develops when the body does not receive enough Vitamin B12 through diet or cannot absorb it efficiently from the digestive tract. While inadequate dietary intake is a common reason, many medical conditions and medications can also interfere with Vitamin B12 absorption. Identifying the underlying cause is important because treatment varies depending on the reason behind the deficiency.",
-// },
-
-// {
-//   type: "list",
-//   items: [
-//     "Strict vegetarian or vegan diet",
-//     "Poor dietary intake of animal-based foods",
-//     "Pernicious anemia",
-//     "Long-term use of acid-reducing medications",
-//     "Metformin use in people with diabetes",
-//     "Crohn's disease",
-//     "Celiac disease",
-//     "Previous stomach or intestinal surgery",
-//     "Digestive disorders affecting nutrient absorption",
-//     "Increasing age leading to reduced Vitamin B12 absorption",
-//   ],
-// },
-
-// {
-//   type: "image",
-//   src: "/blogs/vitamin-b12/image-2.webp",
-//   alt: "Vitamin B12 Blood Test",
-//   caption: "A Vitamin B12 blood test is the most reliable way to detect deficiency before serious complications occur.",
-// },
-
-// {
-//   type: "heading",
-//   level: 2,
-//   text: "Who is at Higher Risk?",
-// },
-
-// {
-//   type: "paragraph",
-//   text: "Although Vitamin B12 deficiency can affect anyone, certain groups have a significantly higher risk. Older adults often absorb less Vitamin B12 because stomach acid production naturally decreases with age. People following vegetarian or vegan diets may not consume enough Vitamin B12 since it is primarily found in animal-derived foods. Individuals with digestive disorders, autoimmune diseases, or those taking medications that reduce stomach acid are also more likely to develop deficiency. Pregnant women, breastfeeding mothers, and patients recovering from stomach surgery should discuss Vitamin B12 monitoring with their healthcare provider.",
-// },
-
-// {
-//   type: "heading",
-//   level: 2,
-//   text: "How is Vitamin B12 Deficiency Diagnosed?",
-// },
-
-// {
-//   type: "paragraph",
-//   text: "Vitamin B12 deficiency is diagnosed through laboratory investigations combined with a medical evaluation. The primary test is a Vitamin B12 blood test, which measures the amount of Vitamin B12 circulating in the bloodstream. Depending on the symptoms and initial results, healthcare providers may recommend additional tests such as a Complete Blood Count (CBC), Folate Test, Methylmalonic Acid (MMA), or Homocysteine Test. These investigations help determine the severity of the deficiency and identify whether anemia or nerve involvement is present.",
-// },
-
-// {
-//   type: "paragraph",
-//   text: "Your Vitamin D report should always be interpreted by a healthcare professional. Factors such as age, medical conditions, and symptoms may influence the clinical significance of your results.",
-// },
-// {
-//   type: "list",
-//   items: [
-//     "Vitamin B12 Blood Test",
-//     "Complete Blood Count (CBC)",
-//     "Folate Level Test",
-//     "Methylmalonic Acid (MMA) Test",
-//     "Homocysteine Test",
-//     "Peripheral Blood Smear (if recommended)",
-//   ],
-// },
-
-// {
-//   type: "warning",
-//   title: "Important",
-//   text: "Do not start Vitamin B12 supplements without proper evaluation if you have persistent fatigue, numbness, or anemia. Self-treatment may temporarily improve blood test results while delaying the diagnosis of an underlying medical condition requiring specific treatment.",
-// },
-// {
-//   type: "heading",
-//   level: 2,
-//   text: "Best Food Sources of Vitamin B12",
-// },
-
-// {
-//   type: "paragraph",
-//   text: "A balanced diet is one of the best ways to maintain healthy Vitamin B12 levels. Since Vitamin B12 is naturally found in animal-based foods, individuals who regularly consume these foods are less likely to develop deficiency. Vegetarians and vegans should consider fortified foods or supplements after consulting a healthcare professional. Maintaining a nutritious diet alongside routine health checkups can significantly reduce the risk of deficiency.",
-// },
-
-// {
-//   type: "list",
-//   items: [
-//     "Fish such as salmon, tuna, and sardines",
-//     "Chicken and lean meat",
-//     "Liver and organ meats",
-//     "Eggs",
-//     "Milk and dairy products",
-//     "Cheese",
-//     "Yogurt",
-//     "Fortified breakfast cereals",
-//     "Fortified plant-based milk",
-//     "Nutritional yeast fortified with Vitamin B12",
-//   ],
-// },
-
-// {
-//   type: "image",
-//   src: "/blogs/vitamin-b12/image-3.webp",
-//   alt: "Vitamin B12 Rich Foods",
-//   caption: "Including Vitamin B12-rich foods in your daily diet helps support healthy nerves, red blood cells, and energy production.",
-// },
-
-// {
-//   type: "heading",
-//   level: 2,
-//   text: "Treatment Options",
-// },
-
-// {
-//   type: "paragraph",
-//   text: "Treatment for Vitamin B12 deficiency depends on the underlying cause and the severity of the deficiency. Mild cases caused by poor dietary intake can often be managed with Vitamin B12-rich foods and oral supplements. Moderate or severe deficiency, especially when neurological symptoms are present, may require Vitamin B12 injections followed by maintenance therapy. Individuals with absorption disorders may need lifelong supplementation. Regular blood tests are important to monitor treatment progress and ensure Vitamin B12 levels return to the normal range.",
-// },
-
-// {
-//   type: "heading",
-//   level: 2,
-//   text: "Possible Complications if Left Untreated",
-// },
-
-// {
-//   type: "paragraph",
-//   text: "Ignoring Vitamin B12 deficiency for a prolonged period can result in serious health complications. While anemia often improves after treatment, long-standing nerve damage may become difficult to reverse. This is why early diagnosis and timely medical intervention are extremely important.",
-// },
-
-// {
-//   type: "list",
-//   items: [
-//     "Megaloblastic anemia",
-//     "Permanent nerve damage",
-//     "Memory impairment",
-//     "Difficulty maintaining balance",
-//     "Reduced concentration",
-//     "Mood disorders",
-//     "Muscle weakness",
-//     "Increased risk of falls in older adults",
-//   ],
-// },
-
-// {
-//   type: "success",
-//   title: "Good News",
-//   text: "Most people recover completely when Vitamin B12 deficiency is diagnosed early and treated appropriately. Routine blood testing allows healthcare providers to monitor recovery and adjust treatment whenever necessary.",
-// },
-
-// {
-//   type: "heading",
-//   level: 2,
-//   text: "How to Prevent Vitamin B12 Deficiency",
-// },
-
-// {
-//   type: "paragraph",
-//   text: "Preventing Vitamin B12 deficiency is often easier than treating its long-term complications. Eating a balanced diet, understanding personal risk factors, and scheduling regular preventive health checkups can help maintain healthy Vitamin B12 levels throughout life.",
-// },
-
-// {
-//   type: "list",
-//   items: [
-//     "Eat Vitamin B12-rich foods regularly",
-//     "Choose fortified foods if you follow a vegetarian or vegan diet",
-//     "Discuss supplements with your healthcare provider when needed",
-//     "Manage digestive disorders appropriately",
-//     "Avoid self-medicating with unnecessary supplements",
-//     "Schedule routine preventive health screenings",
-//     "Monitor Vitamin B12 levels if you take Metformin or acid-reducing medicines long-term",
-//   ],
-// },
-// {
-//   type: "heading",
-//   level: 2,
-//   text: "Conclusion",
-// },
-
-// {
-//   type: "paragraph",
-//   text: "Vitamin B12 deficiency is a common but often overlooked health condition that can significantly affect your quality of life if left untreated. Because the symptoms usually develop gradually, many individuals attribute fatigue, weakness, memory problems, or tingling sensations to stress or aging rather than an underlying nutritional deficiency. Fortunately, Vitamin B12 deficiency can be diagnosed accurately through simple laboratory blood tests and treated effectively when identified early. Maintaining a balanced diet, understanding your personal risk factors, and undergoing regular preventive health screenings are essential steps toward protecting your long-term health. If you experience persistent fatigue, numbness, difficulty concentrating, or symptoms of anemia, consult a healthcare professional and consider getting your Vitamin B12 levels tested. Early diagnosis and timely treatment can help restore energy, improve nerve function, and prevent long-term complications.",
-// },
-
-// {
-//   type: "success",
-//   title: "Key Takeaway",
-//   text: "Vitamin B12 deficiency is highly treatable when detected early. Routine blood tests, a balanced diet, appropriate supplementation when required, and regular preventive health checkups are the most effective ways to maintain healthy Vitamin B12 levels and support lifelong brain, nerve, and blood health.",
-// },
-//   ],
-
-//   faq: [
-//     {
-//       question: "What are the early signs of Vitamin B12 deficiency?",
-//       answer:
-//         "Early symptoms commonly include fatigue, weakness, dizziness, pale skin, poor concentration, numbness or tingling in the hands and feet, and reduced stamina. Since these symptoms are not specific, a Vitamin B12 blood test is recommended for accurate diagnosis.",
-//     },
-
-//     {
-//       question: "How is Vitamin B12 deficiency diagnosed?",
-//       answer:
-//         "Vitamin B12 deficiency is primarily diagnosed using a Vitamin B12 blood test. Depending on your symptoms, your healthcare provider may also recommend tests such as a Complete Blood Count (CBC), Folate Test, Methylmalonic Acid (MMA), or Homocysteine Test.",
-//     },
-
-//     {
-//       question: "Who is most likely to develop Vitamin B12 deficiency?",
-//       answer:
-//         "Older adults, vegetarians, vegans, people with digestive disorders, individuals taking Metformin or acid-reducing medications, and patients who have undergone stomach or intestinal surgery are at increased risk of Vitamin B12 deficiency.",
-//     },
-
-//     {
-//       question: "Can Vitamin B12 deficiency be cured?",
-//       answer:
-//         "Yes. Most people recover completely when the deficiency is diagnosed early and treated appropriately with dietary improvements, Vitamin B12 supplements, or injections, depending on the underlying cause.",
-//     },
-
-//     {
-//       question: "Which foods are rich in Vitamin B12?",
-//       answer:
-//         "Excellent dietary sources include fish, meat, eggs, milk, cheese, yogurt, fortified cereals, fortified plant-based milk, and other fortified food products.",
-//     },
-
-//     {
-//       question: "How often should I check my Vitamin B12 levels?",
-//       answer:
-//         "Individuals with risk factors such as vegetarian diets, digestive disorders, diabetes treated with Metformin, or previous Vitamin B12 deficiency should discuss regular monitoring with their healthcare provider. Routine preventive health checkups can help detect deficiency before complications develop.",
-//     },
-//   ],
-// },
 ];

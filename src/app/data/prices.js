@@ -1,4 +1,4 @@
-import { tests } from "./tests";
+import { getTestPrice, tests } from "./tests";
 
 export const prices = [
 
@@ -266,6 +266,146 @@ export const prices = [
     locationUrl: "/locations/ecg-test-in-garhshankar",
     packageUrl: "/packages",
     highlights: ["Home ECG Collection", "Digital Report", "Affordable Rate", "Fast Turnaround"],
+  },
+},
+{
+  slug: "cbc-test-price-garhshankar",
+  seo: {
+    title: "CBC Test Price in Garhshankar | Complete Blood Count Price List",
+    description:
+      "Check CBC test price in Garhshankar — Complete Blood Count, starting from ₹149, with doorstep home sample collection and same-day digital reports.",
+    keywords: [
+      "cbc test price garhshankar",
+      "cbc test cost garhshankar",
+      "cbc test price list garhshankar",
+      "cbc test price near me garhshankar",
+      "cheap cbc test near me garhshankar",
+      "complete blood count price garhshankar",
+    ],
+  },
+  homeCollection: true,
+  hero: {
+    badge: "",
+    title: "CBC Test Price in Garhshankar",
+    subtitle:
+      "Compare pricing on Complete Blood Count (CBC) testing in Garhshankar with accurate lab processing and doorstep home sample collection.",
+    image: "/prices/cbc-test.webp",
+  },
+  priceCard: {
+    actualPrice: 450,
+    offerPrice: getTestPrice("cbc-test"),
+    offerText: "Starting Price",
+    reportTime: "Same Day (Within Hours)",
+    fasting: "Not Required",
+    sampleType: "Blood Sample",
+    homeCollection: true,
+    labVisit: true,
+
+    includes: {
+      title: "Every Booking Includes",
+      items: [
+        "Digital Report on WhatsApp & Email",
+        "No Advance Payment Required",
+  
+      ],
+    },
+  },
+  whyGetTest: {
+    title: "Why Get a CBC Test in Garhshankar",
+    description:
+      "Regular CBC testing helps detect anemia, infection, and blood disorders early, supporting timely medical decisions for you and your family.",
+    reasons: [
+      {
+        title: "Early Detection of Blood Disorders",
+        description: "Identifies anemia, low platelet count, and infection markers before symptoms worsen.",
+      },
+      {
+        title: "Monitor Existing Conditions",
+        description: "Track blood health for patients with chronic illness, pregnancy, or ongoing treatment.",
+      },
+      {
+        title: "Convenient & Affordable",
+        description: "Home sample collection and transparent CBC test pricing make routine screening accessible for every family.",
+      },
+    ],
+  },
+  faqs: [
+    {
+      question: "How much does a CBC test cost in Garhshankar?",
+      answer: `CBC testing in Garhshankar starts from ₹${getTestPrice("cbc-test")} at Bhangal Clinical Laboratories & ECG Center, with home sample collection available at no extra charge.`,
+    },
+    {
+      question: "What is the CBC test cost compared to private hospitals?",
+      answer: "CBC testing at our lab is significantly more affordable than most private hospitals in the region, while using the same standardized testing procedures and trained technicians.",
+    },
+    {
+      question: "Is home sample collection available for CBC test in Garhshankar?",
+      answer: "Yes, our trained technicians provide doorstep CBC sample collection across Garhshankar and nearby villages.",
+    },
+    {
+      question: "How fast do I get my CBC test report?",
+      answer: "CBC test reports are usually ready the same day, with a digital copy delivered on WhatsApp & Email within a few hours of sample collection.",
+    },
+    {
+      question: "Does the CBC test price vary by package?",
+      answer: "Yes, pricing can vary if CBC is booked standalone versus as part of a full body checkup or health package. Contact us for a detailed rate list.",
+    },
+    {
+      question: "Is fasting required before a CBC test?",
+      answer: "No, fasting is not required for a CBC test. You can eat and drink normally before your sample is collected.",
+    },
+  ],
+ relatedTests :[
+  "platelet-count",
+  "absolute-eosinophil-count",
+  "esr-test",
+  "peripheral-blood-film",
+  "bleeding-time-clotting-time",
+  "blood-group-test",
+  "dengue-test",
+  "mp-antigen-test",
+],
+  interlinks: {
+    badge: "Included Services & Local Availability",
+    heading: "What's Included & Nearby Availability",
+    description: "Checking CBC test prices? Explore what is included in this price and verify local availability near you in Garhshankar.",
+    items: [
+      {
+        title: "What's Included in This Price?",
+        subtitle: "CBC Test Service Details",
+        description: "Understand everything included in our CBC testing service — from sample collection to accurate blood count analysis and reporting.",
+        href: "/tests/cbc-test",
+        icon: "FiActivity",
+        badge: "Service Details",
+        badgeColor: "bg-teal-100 text-teal-800 border-teal-200",
+        btnText: "Explore Service Included",
+        tracking: "price-interlink-service",
+      },
+      {
+        title: "Available Near You in Garhshankar",
+        subtitle: "Location & Home Collection",
+        description: "Check our diagnostic center, doorstep home sample collection coverage across Garhshankar city and surrounding villages, and operating hours.",
+        href: "/locations/cbc-test-in-garhshankar",
+        icon: "FiMapPin",
+        badge: "Garhshankar Location",
+        badgeColor: "bg-sky-100 text-sky-800 border-sky-200",
+        btnText: "Visit Garhshankar Hub",
+        tracking: "price-interlink-location",
+      },
+    ],
+  },
+  cta: {
+    title: "Book Your CBC Test in Garhshankar Today",
+    description: "Affordable pricing, fast digital reports, and doorstep home sample collection across Garhshankar.",
+    offerPrice: getTestPrice("cbc-test"),
+    actualPrice: 450,
+    buttonText: "Book a Test",
+    testName: "CBC Test",
+    blogUrl: "/blogs/cbc-test-full-guide",
+    serviceUrl: "/tests/cbc-test",
+    locationUrl: "/locations/cbc-test-in-garhshankar",
+    packageUrl: "/packages",
+    highlights: ["Home Sample Collection", "Digital Report", "Affordable Rate", "Fast Turnaround"],
   },
 }
 

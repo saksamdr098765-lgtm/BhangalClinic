@@ -94,7 +94,7 @@ export const tests = [
        status:"draft"
   },
 
-  {
+{
     slug: "cbc-test",
     name: "Complete Blood Count",
     shortName: "CBC",
@@ -106,368 +106,372 @@ export const tests = [
     homeCollection: true,
     popular: true,
     description:
-      "Comprehensive blood test that evaluates red cells, white cells, platelets and hemoglobin.",
+      "CBC (Complete Blood Count) test checks red blood cells, white blood cells, platelets and hemoglobin levels to evaluate your overall blood health.",
     price: 300,
     reportTime: "24 Hours",
-     status:"published",
-     hero: {
-  badge: "Home Sample Collection Available",
+    status: "published",
 
-  title: "CBC Blood Test",
+    seo: {
+      title: "CBC Test - Full Form, Price & Normal Range | Book CBC Blood Test",
+      description:
+        "Book a CBC test (Complete Blood Count) with home sample collection. Check CBC test price, normal range, and same-day digital reports.",
+      keywords: [
+        "cbc test",
+        "cbc test full form",
+        "cbc blood test",
+        "complete blood count test",
+        "cbc test price",
+        "cbc test near me",
+        "cbc test normal range",
+        "cbc test results chart",
+        "cbc test fasting",
+        "cbc panel test",
+      ],
+    },
 
-  description:
-    "Book a CBC Blood Test with fast report delivery, professional sample collection, and convenient home collection services.",
+    hero: {
+      badge: "Home Sample Collection Available",
 
-  image: "/images/tests/cbc.webp",
-
-  imageAlt: "CBC Blood Test",
-
-  reportTime: "24 Hours",
-
-  homeCollection: "Available",
-
-  trustPoints: [
-    "Professional Sample Collection",
-    "Digital Reports",
-    "Affordable Pricing",
-    "Quality-Controlled Testing",
-  ],
-
-  bookButton: "Book Test",
-
-  bookingUrl: "/prices/cbc-test-price-chandigarh",
-
-  phone: "tel:+918968038602",
-},
-quickFacts: {
-  sample: "Blood Sample",
-
-  reportTime: "24 Hours",
-
-  fasting: "Not Required",
-
-  homeCollection: "Available",
-
-  ageGroup: "Adults & Children",
-},
-whyChooseUs: {
-
-  title: "Why Choose Our CBC Blood Test Service?",
-
-  description:
-    "Get reliable laboratory testing with convenient booking, professional sample collection, and easy access to digital reports.",
-
-
-  items: [
-
-    {
-      title: "Professional Sample Collection",
+      title: "CBC Blood Test - Complete Blood Count",
 
       description:
-        "Samples are collected using proper procedures for a comfortable testing experience.",
+        "Book a CBC Test (Complete Blood Count) near you with fast report delivery, professional sample collection, and convenient home collection services. Check CBC test price and book online.",
+
+      image: "/tests/cbc.webp",
+
+      imageAlt: "CBC Blood Test - Complete Blood Count Test",
+
+      reportTime: "24 Hours",
+
+      homeCollection: "Available",
+
+      trustPoints: [
+        "Professional Sample Collection",
+        "Digital Reports",
+        "Affordable CBC Test Price",
+        "Quality-Controlled Testing",
+      ],
+
+      bookButton: "Book CBC Test",
+
+      bookingUrl: "/prices/cbc-test-price-garhshankar",
+
+      phone: "tel:+918968038602",
     },
 
+    quickFacts: {
+      sample: "Blood Sample",
 
-    {
-      title: "Quality Testing Process",
+      reportTime: "24 Hours",
+
+      fasting: "Not Required",
+
+      homeCollection: "Available",
+
+      ageGroup: "Adults & Children",
+    },
+
+    whyChooseUs: {
+
+      title: "Why Choose Our CBC Blood Test Service?",
 
       description:
-        "Tests are processed using standardized laboratory procedures.",
+        "Get a reliable CBC test near you with convenient booking, professional sample collection, and easy access to digital reports.",
+
+
+      items: [
+
+        {
+          title: "Professional Sample Collection",
+
+          description:
+            "Samples are collected using proper procedures for a comfortable testing experience.",
+        },
+
+
+        {
+          title: "Quality Testing Process",
+
+          description:
+            "Your CBC test is processed using standardized laboratory procedures for accurate results.",
+        },
+
+
+        {
+          title: "Fast Digital Reports",
+
+          description:
+            "Receive your CBC test report conveniently after completion of testing.",
+        },
+
+
+        {
+          title: "Home Collection Available",
+
+          description:
+            "Book CBC test home sample collection from your home at a convenient time.",
+        },
+
+      ],
+
     },
 
+    testDetails: {
 
-    {
-      title: "Fast Digital Reports",
+      title: "About CBC Blood Test (Full Form: Complete Blood Count)",
+
+      description: [
+
+        "CBC test full form is Complete Blood Count — a common blood test used to check different components of blood, including red blood cells, white blood cells, hemoglobin, hematocrit, and platelets.",
+
+        "This test helps healthcare professionals evaluate general health status, screen for anemia and infection, and identify conditions that may require further medical attention.",
+
+      ],
+
+
+      included: [
+
+        "Hemoglobin Level",
+
+        "Red Blood Cell (RBC) Count",
+
+        "White Blood Cell (WBC) Count",
+
+        "Platelet Count",
+
+        "Hematocrit (PCV)",
+
+        "MCV, MCH, MCHC Indices",
+
+      ],
+
+    },
+
+    preparation: {
+
+      title: "Preparation Before CBC Blood Test",
 
       description:
-        "Receive your reports conveniently after completion of testing.",
+        "Follow these simple instructions before your CBC test to ensure a smooth sample collection experience.",
+
+
+      items: [
+
+        {
+          title: "CBC Test Fasting Requirement",
+
+          description:
+            "Fasting is generally not required for a CBC Blood Test. Follow your healthcare provider's instructions if additional tests are included.",
+        },
+
+
+        {
+          title: "Stay Hydrated",
+
+          description:
+            "Drinking enough water can make the sample collection process more comfortable.",
+        },
+
+
+        {
+          title: "Inform About Medications",
+
+          description:
+            "Inform the healthcare professional about any medicines or supplements you are taking.",
+        },
+
+
+      ],
+
     },
 
+    bookingProcess: {
 
-    {
-      title: "Home Collection Available",
+      title: "How to Book Your CBC Blood Test",
 
       description:
-        "Book sample collection from your home at a convenient time.",
+        "Book your CBC test easily with a simple process and get your sample collected at your preferred time.",
+
+
+      steps: [
+
+        {
+          title: "Book Test",
+
+          description:
+            "Choose your CBC test and submit your booking request online or contact our team.",
+        },
+
+
+        {
+          title: "Sample Collection",
+
+          description:
+            "Our trained professional collects the sample safely from your location.",
+        },
+
+
+        {
+          title: "Laboratory Testing",
+
+          description:
+            "Your sample is processed using standard laboratory procedures.",
+        },
+
+
+        {
+          title: "Receive Report",
+
+          description:
+            "Get your digital CBC test report after the test is completed.",
+        },
+
+      ],
+
     },
 
-  ],
+    pricePreview: {
 
-},
-testDetails: {
-
-  title: "About CBC Blood Test",
-
-  description: [
-
-    "CBC (Complete Blood Count) is a common blood test used to check different components of blood, including red blood cells, white blood cells, and platelets.",
-
-    "This test helps healthcare professionals evaluate general health status and identify conditions that may require further medical attention.",
-
-  ],
-
-
-  included: [
-
-    "Hemoglobin Level",
-
-    "Red Blood Cell Count",
-
-    "White Blood Cell Count",
-
-    "Platelet Count",
-
-  ],
-
-},
-preparation: {
-
-  title: "Preparation Before CBC Blood Test",
-
-  description:
-    "Follow these simple instructions before your test to ensure a smooth sample collection experience.",
-
-
-  items: [
-
-    {
-      title: "Fasting Requirement",
+      title: "CBC Blood Test Price",
 
       description:
-        "Fasting is generally not required for a CBC Blood Test. Follow your healthcare provider's instructions if additional tests are included.",
+        "Check the latest CBC test price near you and book your test with convenient home sample collection.",
+
+
+      price: 300,
+
+      priceUrl:
+        "/prices/cbc-test-price-garhshankar",
+
     },
 
+    relatedTests :[
+  "platelet-count",
+  "absolute-eosinophil-count",
+  "esr-test",
+  "peripheral-blood-film",
+  "bleeding-time-clotting-time",
+  "blood-group-test",
+  "dengue-test",
+  "mp-antigen-test",
+],
 
-    {
-      title: "Stay Hydrated",
+    faq: {
+
+      title: "Frequently Asked Questions",
 
       description:
-        "Drinking enough water can make the sample collection process more comfortable.",
+        "Find answers to common questions about the CBC test, its price, results, and booking.",
+
+
+      items: [
+
+        {
+          question:
+            "What does a CBC test check for?",
+
+          answer:
+            "A CBC (Complete Blood Count) test checks red blood cells, white blood cells, platelets, and hemoglobin to evaluate anemia, infection, and overall blood health.",
+        },
+
+
+        {
+          question:
+            "What if CBC is high or low?",
+
+          answer:
+            "High or low CBC values can point to different conditions depending on the component affected — for example, low hemoglobin may indicate anemia, while high WBC often points to infection. Always review abnormal results with a doctor.",
+        },
+
+
+        {
+          question:
+            "Is fasting required for a CBC Blood Test?",
+
+          answer:
+            "CBC Blood Test usually does not require fasting. However, follow any instructions provided by your healthcare professional if multiple tests are booked together.",
+        },
+
+
+        {
+          question:
+            "How long does it take to receive the CBC test report?",
+
+          answer:
+            "CBC reports are usually available within 24 hours after sample collection and laboratory processing.",
+        },
+
+
+        {
+          question:
+            "Is home sample collection available for CBC test?",
+
+          answer:
+            "Yes, home sample collection is available for the CBC test. You can book an appointment and choose a convenient collection time.",
+        },
+
+
+        {
+          question:
+            "What is the CBC test price?",
+
+          answer:
+            "You can check the latest CBC test price on our pricing page and book online with home sample collection.",
+        },
+
+
+        {
+          question:
+            "How can I book a CBC test?",
+
+          answer:
+            "You can book the CBC test online through our booking page or contact our support team for assistance.",
+        },
+
+      ],
+
     },
 
+    cta: {
 
-    {
-      title: "Inform About Medications",
+      title:
+        "Book Your CBC Blood Test Today",
 
       description:
-        "Inform the healthcare professional about any medicines or supplements you are taking.",
+        "Get convenient sample collection, reliable CBC testing, and easy access to your reports.",
+
+
+      highlights: [
+
+        "Home Sample Collection Available",
+
+        "Fast Report Delivery",
+
+        "Professional Collection Process",
+
+      ],
+
+
+      price:
+        "300",
+
+
+      priceText:
+        "Check detailed CBC test pricing and booking options.",
+
+
+      bookingUrl:
+        "/prices/cbc-test-price-garhshankar",
+
+
+      phone:
+        "tel:+918968038602",
+
+
+      buttonText:
+        "Book CBC Test",
+
     },
-
-
-  ],
-
-},
-bookingProcess: {
-
-  title: "How to Book Your CBC Blood Test",
-
-  description:
-    "Book your test easily with a simple process and get your sample collected at your preferred time.",
-
-
-  steps: [
-
-    {
-      title: "Book Test",
-
-      description:
-        "Choose your test and submit your booking request online or contact our team.",
-    },
-
-
-    {
-      title: "Sample Collection",
-
-      description:
-        "Our trained professional collects the sample safely from your location.",
-    },
-
-
-    {
-      title: "Laboratory Testing",
-
-      description:
-        "Your sample is processed using standard laboratory procedures.",
-    },
-
-
-    {
-      title: "Receive Report",
-
-      description:
-        "Get your digital report after the test is completed.",
-    },
-
-  ],
-
-},
-pricePreview: {
-
-  title: "CBC Blood Test Price",
-
-  description:
-    "Check the latest CBC Blood Test price and book your test with convenient home sample collection.",
-
-
-  price: "399",
-
-  priceUrl:
-    "/prices/cbc-test-price-chandigarh",
-
-},
-relatedTests: {
-
-  title: "Related Tests",
-
-  description:
-    "Explore other commonly recommended health tests and profiles.",
-
-
-  items: [
-
-    {
-      name: "HbA1c Test",
-
-      description:
-        "A blood test used to monitor average blood sugar levels.",
-
-      url:
-        "/tests/hba1c-test",
-    },
-
-
-    {
-      name: "Vitamin D Test",
-
-      description:
-        "Check vitamin D levels with a simple blood sample.",
-
-      url:
-        "/tests/vitamin-d-test",
-    },
-
-
-    {
-      name: "Thyroid Profile Test",
-
-      description:
-        "Evaluate thyroid hormone levels through blood testing.",
-
-      url:
-        "/tests/thyroid-profile-test",
-    },
-
-
-    {
-      name: "Lipid Profile Test",
-
-      description:
-        "Measure cholesterol and other lipid levels.",
-
-      url:
-        "/tests/lipid-profile-test",
-    },
-
-  ],
-
-},
-faq: {
-
-  title: "Frequently Asked Questions",
-
-  description:
-    "Find answers to common questions about this test, booking, and sample collection.",
-
-
-  items: [
-
-    {
-      question:
-        "Is fasting required for a CBC Blood Test?",
-
-      answer:
-        "CBC Blood Test usually does not require fasting. However, follow any instructions provided by your healthcare professional if multiple tests are booked together.",
-    },
-
-
-    {
-      question:
-        "How long does it take to receive the report?",
-
-      answer:
-        "Reports are usually available within the mentioned turnaround time after sample collection and laboratory processing.",
-    },
-
-
-    {
-      question:
-        "Is home sample collection available?",
-
-      answer:
-        "Yes, home sample collection is available. You can book an appointment and choose a convenient collection time.",
-    },
-
-
-    {
-      question:
-        "How can I book this test?",
-
-      answer:
-        "You can book the test online through our booking page or contact our support team for assistance.",
-    },
-
-
-    {
-      question:
-        "What sample is required for this test?",
-
-      answer:
-        "The required sample depends on the test. For CBC Blood Test, a blood sample is collected by trained professionals.",
-    },
-
-  ],
-
-},
-cta: {
-
-  title:
-    "Book Your CBC Blood Test Today",
-
-  description:
-    "Get convenient sample collection, reliable testing, and easy access to your reports.",
-
-
-  highlights: [
-
-    "Home Sample Collection Available",
-
-    "Fast Report Delivery",
-
-    "Professional Collection Process",
-
-  ],
-
-
-  price:
-    "399",
-
-
-  priceText:
-    "Check detailed pricing and booking options.",
-
-
-  bookingUrl:
-    "/prices/cbc-test-price-chandigarh",
-
-
-  phone:
-    "tel:+918968038602",
-
-
-  buttonText:
-    "Book CBC Test",
-
-},
   },
 
   {
@@ -1701,3 +1705,8 @@ export const defaultTheme = {
   border: "hover:border-slate-200",
   glow: "hover:shadow-slate-100",
 };
+
+export const getTestPrice=(slug)=>{
+ const test=  tests.find((test)=>test.slug===slug)
+ return test.price
+}

@@ -256,6 +256,8 @@ export const locations = [
 
   blogs: [
     "list-of-blood-tests",
+     "cbc-test-full-guide",
+     "ecg-test-full-guide",
   ],
   services:[
      "ecg-test",
@@ -581,6 +583,292 @@ homeCollection:false,
       question: "Who should get an ECG done in Garhshankar?",
       answer:
         "Anyone experiencing chest pain, palpitations, or breathlessness, as well as individuals with high blood pressure, diabetes, or a family history of heart disease, should consider an ECG. It's also common as part of routine health checkups.",
+    },
+  ],
+
+  hours:
+    "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
+},
+{
+  id: 3,
+
+  slug: "cbc-test-in-garhshankar",
+
+  city: "Garhshankar",
+
+  state: "Punjab",
+
+  title: "CBC Test in Garhshankar",
+
+  shortDescription:
+    "Book accurate CBC (Complete Blood Count) tests in Garhshankar with Bhangal Clinical Laboratories & ECG Center. Home sample collection, fast reports, and affordable pricing for blood health screening.",
+
+  seo: {
+    title:
+      "CBC Test in Garhshankar | Home Sample Collection & Lab Visit",
+
+    description:
+      "Get your CBC test done in Garhshankar with Bhangal Clinical Laboratories & ECG Center — accurate Complete Blood Count testing, home sample collection, affordable prices, and same-day reports. Book online today.",
+
+    keywords: [
+      "CBC Test in Garhshankar",
+      "CBC Garhshankar",
+      "CBC Test Lab Garhshankar",
+      "CBC Test Near Me Garhshankar",
+      "Complete Blood Count Garhshankar",
+      "Best Diagnostic Lab Near Me CBC Garhshankar",
+      "CBC Test Price Garhshankar",
+      "CBC Blood Test Garhshankar",
+      "Blood Test Center Garhshankar",
+      "CBC Report Garhshankar",
+      "CBC Test Home Collection Garhshankar",
+    ],
+  },
+  homeCollection: true,
+  overview: {
+    heading: "CBC Test in Garhshankar",
+
+    paragraphs: [
+      "Looking for a reliable CBC test in Garhshankar? Bhangal Clinical Laboratories & ECG Center is a trusted diagnostic center offering accurate CBC (Complete Blood Count) testing for individuals and families across Garhshankar and surrounding villages. Using standardized lab procedures and trained technicians, we ensure precise readings for detecting anemia, infection, and blood-related conditions.",
+
+      "Whether you need a routine CBC as part of a health checkup or a diagnostic CBC for symptoms like fatigue, fever, or weakness, we make CBC testing in Garhshankar simple, affordable, and convenient. Visit our lab directly, or book a home sample collection and have a trained technician collect your sample at your doorstep — no travel, no waiting.",
+    ],
+
+    highlights: [
+      "24-Parameter CBC Testing Available",
+      "Same-Day Reports",
+      "Affordable, Transparent Pricing",
+      "Home Sample Collection Available",
+    ],
+  },
+
+  popularTests: {
+    heading: "Popular Blood Tests in Garhshankar",
+
+    test:[
+  "platelet-count",
+  "absolute-eosinophil-count",
+  "esr-test",
+  "peripheral-blood-film",
+  "bleeding-time-clotting-time",
+  "blood-group-test",
+  "dengue-test",
+  "mp-antigen-test",
+],
+  },
+
+  packages: [
+  "bcl-med-health-pro-package",
+  "bhangal-dengue-profile",
+  "bhangal-fever-mini-profile",
+  "bhangal-fever-maxi-profile",
+  "bhangal-basic-profile",
+  "bhangal-basic-profile-plus",
+],
+
+  process: {
+    heading: "How to Get a CBC Test in Garhshankar",
+
+    steps: [
+      {
+        icon: "search",
+        title: "Choose Your Service",
+        description:
+          "Select a standard CBC test or ask our team for guidance based on your symptoms.",
+      },
+      {
+        icon: "calendar",
+        title: "Book an Appointment",
+        description:
+          "Schedule online or by phone — visit our center or request home sample collection.",
+      },
+      {
+        icon: "lab",
+        title: "Sample Collection",
+        description:
+          "Your blood sample is collected at our center or your home by a trained technician.",
+      },
+      {
+        icon: "report",
+        title: "Get Your Report",
+        description:
+          "Receive your CBC test report digitally or in print, usually within the same day.",
+      },
+    ],
+  },
+
+  whyChoose: {
+    features: [
+      {
+        icon: "activity",
+        title: "Accurate CBC Testing",
+        description:
+          "Standardized lab procedures ensure accurate, dependable CBC results.",
+      },
+      {
+        icon: "award",
+        title: "Experienced Technicians",
+        description:
+          "Trained staff ensure correct sample collection for reliable results.",
+      },
+      {
+        icon: "shield",
+        title: "Quality Assurance",
+        description:
+          "Every CBC sample is processed with rigorous quality control checks.",
+      },
+      {
+        icon: "clock",
+        title: "Fast Reports",
+        description:
+          "Most CBC reports in Garhshankar are ready the same day.",
+      },
+      {
+        icon: "check",
+        title: "Affordable Pricing",
+        description:
+          "Transparent, competitive pricing on CBC testing and health packages.",
+      },
+    ],
+  },
+
+  areas: [
+    "Garhshankar City",
+    "Civil Hospital Area",
+    "Railway Road",
+    "Main Bazaar",
+    "Nawanshahr Road",
+    "Hoshiarpur Road",
+    "Banga Road",
+    "Mahilpur Road",
+    "Saila Khurd",
+    "Binewal",
+    "Denowal Kalan",
+    "Denowal Khurd",
+    "Chak Guru",
+    "Pojewal",
+    "Pandori",
+    "Purhiran",
+    "Chak Singha",
+    "Bharta",
+    "Kukar Majara",
+    "Nearby Villages of Garhshankar",
+  ],
+
+  hubLinks: {
+    heading: "Everything You Need to Know About CBC Tests in Garhshankar",
+    badge: "Garhshankar Central Diagnostics Hub",
+    description: "Whether you want to understand what a CBC test checks, view what our service includes, or check pricing in Garhshankar — explore our central guides below.",
+    items: [
+      {
+        title: "What is a CBC Test?",
+        subtitle: "Educational Guide & Report Breakdown",
+        description: "Understand CBC basics, full form, normal ranges by age and gender, and how to interpret your CBC report.",
+        href: "/blogs/cbc-test-full-guide",
+        icon: "FiBookOpen",
+        badge: "Context & Guide",
+        badgeColor: "bg-blue-100 text-blue-700 border-blue-200",
+        btnText: "Read Full Guide",
+        tag: "Educational",
+      },
+      {
+        title: "CBC Service Details",
+        subtitle: "What's Included & Testing Options",
+        description: "Explore our comprehensive CBC testing service, lab standards, trained technicians, and sample collection process.",
+        href: "/tests/cbc-test",
+        icon: "FiActivity",
+        badge: "Service Overview",
+        badgeColor: "bg-teal-100 text-teal-700 border-teal-200",
+        btnText: "Explore Service",
+        tag: "Service",
+      },
+      {
+        title: "CBC Test Price in Garhshankar",
+        subtitle: "Transparent Rates & Package Discounts",
+        description: "Check transparent pricing for CBC testing in Garhshankar, with free doorstep home sample collection.",
+        href: "/prices/cbc-test-price-garhshankar",
+        icon: "FiTag",
+        badge: "Price & Cost",
+        badgeColor: "bg-amber-100 text-amber-700 border-amber-200",
+        btnText: "View Price List",
+        tag: "Cost & Rates",
+      },
+    ],
+  },
+
+  relatedLinks: {
+    heading: "Explore Key CBC Test Information",
+
+    links: [
+      {
+        label: "What is a CBC Test?",
+        description: "Guide to CBC basics, full form, normal ranges, and report interpretation.",
+        slug: "/blogs/cbc-test-full-guide",
+      },
+      {
+        label: "CBC Service Details",
+        description: "See what's included in our CBC testing service, lab standards, and process.",
+        slug: "/tests/cbc-test",
+      },
+      {
+        label: "CBC Test Price in Garhshankar",
+        description: "Check transparent pricing and home sample collection availability.",
+        slug: "/prices/cbc-test-price-garhshankar",
+      },
+    ],
+  },
+
+  blogs: [
+    "cbc-test-full-guide",
+    "list-of-blood-tests",
+    "ecg-test-full-guide",
+  ],
+  services: [
+    "cbc-test",
+    "blood-tests",
+     "ecg-test"
+  ],
+
+  faq: [
+    {
+      question: "Where can I get a CBC test in Garhshankar?",
+      answer:
+        "Bhangal Clinical Laboratories & ECG Center offers accurate CBC testing in Garhshankar, either at our center or through convenient home sample collection.",
+    },
+    {
+      question: "Is home sample collection available for CBC test in Garhshankar?",
+      answer:
+        "Yes, home sample collection is available for CBC testing across Garhshankar and nearby villages — please contact us to book a convenient time.",
+    },
+    {
+      question: "How much does a CBC test cost in Garhshankar?",
+      answer:
+        "CBC pricing is affordable and transparent at our Garhshankar center. Check our full price list or contact us for current rates, including any home collection charges.",
+    },
+    {
+      question: "How soon will I get my CBC report in Garhshankar?",
+      answer:
+        "CBC reports are typically ready the same day after sample collection and lab processing.",
+    },
+    {
+      question: "Do I need to fast before a CBC test?",
+      answer:
+        "No, fasting is generally not required for a CBC test. You can eat and drink normally before your sample is collected.",
+    },
+    {
+      question: "What does a CBC test check for?",
+      answer:
+        "A CBC checks red blood cells, white blood cells, platelets, and hemoglobin to screen for anemia, infection, and other blood-related conditions.",
+    },
+    {
+      question: "What if CBC is high or low?",
+      answer:
+        "High or low CBC values can point to different conditions depending on the component affected. Any abnormal result should be reviewed with a doctor alongside your symptoms and history.",
+    },
+    {
+      question: "Who should get a CBC test done in Garhshankar?",
+      answer:
+        "Anyone experiencing fatigue, fever, weakness, or frequent infections, as well as individuals undergoing routine health checkups, pregnancy monitoring, or pre-surgery evaluation, should consider a CBC test.",
     },
   ],
 
