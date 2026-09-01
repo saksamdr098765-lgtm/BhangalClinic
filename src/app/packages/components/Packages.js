@@ -65,9 +65,9 @@ export default function PackagesPage({ searchParams = {} }) {
             Preventive Healthcare
           </span>
 
-          <h1 className="mt-7 text-5xl font-black tracking-tight text-nowrap text-blue-500 lg:text-7xl">
+          <h2 className="mt-7 text-5xl font-black tracking-tight text-nowrap text-blue-500 lg:text-7xl">
             {pageTitle}
-          </h1>
+          </h2>
 
           <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-slate-600">
             Discover comprehensive diagnostic packages designed for

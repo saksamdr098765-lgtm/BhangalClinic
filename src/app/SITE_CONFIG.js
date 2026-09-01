@@ -35,7 +35,7 @@ export const SITE_CONFIG = {
   /*                                  Website                                   */
   /* -------------------------------------------------------------------------- */
 
-  url: "https://dkbhangallab.com", 
+   url: "https://www.dkbhangallab.com", 
   domain: "dkbhangallab.com",
 
   language: "en-IN",

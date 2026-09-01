@@ -9,17 +9,16 @@ import SITE_CONFIG from "../SITE_CONFIG";
 
 export async function generateMetadata({ searchParams }) {
   const resolvedParams = await searchParams;
-  const tag = resolvedParams?.tag;
 
-  const isFilteredPage = Boolean(tag);
+  // Catches ANY query param — tag, category, limit, testLimit, or any
+  // future one you add. Only bare /packages (zero params) stays indexable.
+  const isFilteredPage = Object.keys(resolvedParams || {}).length > 0;
 
   return {
-    title:
-      "Health Packages | Full Body Checkups | Bhangal Clinical Laboratories",
+   title: "Health Packages | Full Body Checkup Plans | Bhangal Lab",
 
-    description:
-      "Explore affordable health packages including full body checkups, diabetes care, thyroid profiles, senior citizen packages, and preventive health screenings at Bhangal Clinical Laboratories & ECG Center.",
-
+description:
+  "Explore affordable health packages — full body checkups, diabetes care, thyroid & senior citizen screenings — at Bhangal Lab, Garhshankar.",
     keywords: [
       "Health Packages",
       "Full Body Checkup",
@@ -33,6 +32,8 @@ export async function generateMetadata({ searchParams }) {
       "Pathology Lab Packages",
     ],
 
+    // Same canonical for EVERY variant: /packages, ?tag=heart,
+    // ?category=Biochemistry, ?limit=12, ?testLimit=20, and every combo.
     alternates: {
       canonical: `${SITE_CONFIG.url}/packages`,
     },

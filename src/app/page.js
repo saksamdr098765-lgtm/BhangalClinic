@@ -16,9 +16,8 @@ import HomeBlogsSection from "./components/HomeBlogsSection";
 export const metadata = {
   title: "Blood Tests, ECG & Full Body Checkups in Garhshankar",
 
-  description:
-    "Book blood tests, ECG, full body checkups, and home sample collection with Bhangal Clinical Laboratories & ECG Center. Accurate reports, affordable pricing, and trusted diagnostic services in Garhshankar.",
-
+ description:
+  "Book blood tests, ECG & full body checkups at Bhangal Clinical Laboratories, Garhshankar. Home sample collection, accurate reports, affordable pricing.",
   keywords: [
     "Blood Test Garhshankar",
     "ECG Center Garhshankar",
@@ -29,7 +28,7 @@ export const metadata = {
   ],
 
   alternates: {
-    canonical: "/",
+    canonical:SITE_CONFIG.url,
   },
 
   openGraph: {
