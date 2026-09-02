@@ -7,11 +7,11 @@ import { contactSchema } from '@/schema/contactSchema'
 import SITE_CONFIG from "@/app/SITE_CONFIG";
 
 export const metadata = {
-  title: "Contact Bhangal Clinical Laboratories & ECG Center | Book Blood Tests",
-
-  description:
-    "Contact Bhangal Clinical Laboratories & ECG Center in Garhshankar to book blood tests, ECG, health checkups, and home sample collection. Call, WhatsApp, or book online.",
-
+title: "Contact Us | Book Blood Tests & ECG in Garhshankar",
+// 52 chars
+ description:
+  "Contact Bhangal Clinical Laboratories, Garhshankar to book blood tests, ECG & health checkups. Home sample collection available. Call or WhatsApp today.",
+// 156 chars
   keywords: [
     "Contact Bhangal Clinical Laboratories",
     "Blood Test Booking Garhshankar",

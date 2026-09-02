@@ -4,12 +4,12 @@ import { healthAssessmentSchema } from '@/schema/healthAssessmentSchema'
 import SITE_CONFIG from "@/app/SITE_CONFIG";
 
 export const metadata = {
-  title:
-    "Health Assessment | Find the Right Blood Test | Bhangal Clinical Laboratories",
+title: "Health Assessment | Find the Right Blood Test",
+// 47 chars — dropped the brand segment, keeps the two core parts
 
-  description:
-    "Choose your symptoms, body part, or illness to receive personalized blood test recommendations and book your diagnostic tests online.",
-
+description:
+  "Choose your symptoms, body part, or illness to get personalized blood test recommendations. Book your diagnostic tests online in Garhshankar.",
+// 145 chars
   keywords: [
     "Health Assessment",
     "Blood Test Finder",

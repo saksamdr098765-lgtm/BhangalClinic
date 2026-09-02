@@ -8,12 +8,13 @@ import Founder from './components/Founder'
 
 
 export const metadata = {
-  title: "About Bhangal Clinical Laboratories & ECG Center",
+title: "About Us | Diagnostic Lab & ECG in Garhshankar",
+// 48 chars
 
-  description:
-    "Learn about Bhangal Clinical Laboratories & ECG Center, our diagnostic expertise, experienced professionals, advanced equipment, and commitment to quality healthcare.",
-
-  alternates: {
+description:
+  "Bhangal Clinical Laboratories offers accurate diagnostics in Garhshankar with NABL-quality testing, experienced staff, and home sample collection.",
+// 151 chars
+ alternates: {
     canonical: "/about-us",
   },
 

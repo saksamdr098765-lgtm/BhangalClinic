@@ -7,12 +7,12 @@ import SITE_CONFIG from "../SITE_CONFIG";
 import MedicalDisclaimer from "../components/MedicalDisclaimer";
 
 export const metadata = {
-  title:
-    "Health Blog | Expert Health Tips & Diagnostic Guides | Bhangal Clinical Laboratories",
+ title: "Health Blog | Diagnostic Guides - Garhshankar",
+// 47 chars
 
-  description:
-    "Read expert health articles, preventive healthcare tips, diagnostic test guides, wellness advice, disease awareness, and laboratory insights from Bhangal Clinical Laboratories & ECG Center.",
-
+description:
+  "Diagnostic test guides, preventive health tips, and wellness advice from Bhangal Clinical Laboratories, Garhshankar — covering CBC, ECG, blood tests & more.",
+// 159 chars
   keywords: [
     "Health Blog",
     "Health Articles",

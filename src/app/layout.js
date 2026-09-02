@@ -23,7 +23,7 @@ export const metadata = {
 
   title: {
     default: SITE_CONFIG.name,
-    template: `%s | ${SITE_CONFIG.shortName}`,
+    template: `%s`,
   },
 
   description: SITE_CONFIG.description,

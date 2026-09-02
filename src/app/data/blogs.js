@@ -51,12 +51,13 @@ relatedTests: [
   "uric-acid-test",
   "blood-group-test",
 ],
-  seo: {
-    title:
-      "Complete List of Blood Tests and What They Mean | DK Bhangal Lab",
+ seo: {
+  title: "Complete List of Blood Tests and What They Mean",
+  // 49 chars — same phrase as title, just drops "(Full Panel Guide)"
 
-    description:
-      "Explore the full list of blood tests, including the 5 main tests, 7 basic tests, and 14-test full panel. Learn what each blood test checks, normal ranges, and how to read your report.",
+  description:
+    "A complete guide to blood test names, the 5 main blood tests, 7 basic blood tests, and the 14-test full panel — what each checks & how to read your report.",
+  // 159 chars — same as your excerpt, trimmed to fit
 
     keywords: [
       "list of blood tests",
@@ -599,11 +600,13 @@ cta: {
     "troponin-t-test",
   ],
 
-  seo: {
-    title: "ECG Test: Full Form, Procedure, Cost & Normal Report | Bhangal Clinical Laboratories",
+seo: {
+  title: "ECG Test: Full Form, Procedure, Cost & What It Detects",
+  // 56 chars — same phrase as title, just drops "(Complete Guide)"
 
-    description:
-      "Learn what an ECG test is, its full form, how the procedure works, cost, preparation tips, and how to read a normal ECG report. Book ECG test in Garhshankar with home sample collection.",
+  description:
+    "Everything about the ECG test — full form, how it works, procedure, cost, preparation, and how to read a normal report. Book ECG in Garhshankar.",
+  // 147 chars — same as your excerpt, trimmed + location added
 
     keywords: [
       "ecg",
@@ -1026,11 +1029,13 @@ cta: {
   "mp-antigen-test",
 ],
 
-  seo: {
-    title: "CBC Test: Full Form, Normal Range, Price & What It Detects | DK Bhangal Lab",
+seo: {
+  title: "CBC Test: Full Form, Normal Range, Price & Detects",
+  // 52 chars — same phrase as title, just drops "(Complete Guide)"
 
-    description:
-      "Learn what a CBC test checks, its full form, normal ranges by age and gender, price in Garhshankar, fasting requirements, and what high or low results mean.",
+  description:
+    "Everything about the CBC test — full form, normal range by age and gender, price, procedure, fasting rules, and what abnormal results mean.",
+  // 142 chars — matches your excerpt almost exactly
 
     keywords: [
       "cbc test",

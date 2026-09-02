@@ -15,7 +15,7 @@ export async function generateMetadata({ searchParams }) {
   const isFilteredPage = Object.keys(resolvedParams || {}).length > 0;
 
   return {
-   title: "Health Packages | Full Body Checkup Plans | Bhangal Lab",
+   title: "Health Packages | Full Body Checkup Plans",
 
 description:
   "Explore affordable health packages — full body checkups, diabetes care, thyroid & senior citizen screenings — at Bhangal Lab, Garhshankar.",
