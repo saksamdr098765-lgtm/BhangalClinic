@@ -98,11 +98,11 @@ export default function Hero() {
                   WHY BHANGAL LAB
                 </span>
 
-                <h3 className="mt-3 text-2xl font-black text-slate-900 sm:text-3xl">
+                <h2 className="mt-3 text-2xl font-black text-slate-900 sm:text-3xl">
 
                   Trusted by Thousands of Families
 
-                </h3>
+                </h2>
 
                 <p className="mt-4 text-sm leading-7 text-slate-600 sm:text-base">
 

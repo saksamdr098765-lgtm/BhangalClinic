@@ -37,9 +37,9 @@ export default function BlogSidebar({
                 {blog.category}
               </p>
 
-              <h4 className="mt-2 text-base font-semibold leading-6 text-slate-900 transition-colors group-hover:text-sky-600">
+              <p className="mt-2 text-base font-semibold leading-6 text-slate-900 transition-colors group-hover:text-sky-600">
                 {blog.title}
-              </h4>
+              </p>
 
               <span className="mt-3 inline-flex items-center gap-2 text-sm font-medium text-slate-500 transition-colors group-hover:text-sky-600">
                 Read Article

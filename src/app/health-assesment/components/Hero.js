@@ -84,9 +84,9 @@ export default function Hero() {
                     <Icon className="text-xl text-blue-600" />
                   </div>
 
-                  <h3 className="mt-4 text-base font-bold text-slate-900">
+                  <h2 className="mt-4 text-base font-bold text-slate-900">
                     {item.title}
-                  </h3>
+                  </h2>
 
                   <p className="mt-2 text-sm leading-6 text-slate-600">
                     {item.text}

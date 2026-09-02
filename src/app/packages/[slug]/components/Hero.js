@@ -144,9 +144,9 @@ Thank you.`;
                   Included In This Package
                 </p>
 
-                <h3 className="mt-3 text-3xl font-black text-slate-900">
+                <h2 className="mt-3 text-3xl font-black text-slate-900">
                   Everything You Need
-                </h3>
+                </h2>
               </div>
 
               {/* Feature Cards */}

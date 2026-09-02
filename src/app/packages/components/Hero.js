@@ -96,9 +96,9 @@ export default function PackagesHero({ searchParams = {} }) {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm text-slate-500">Popular Package</p>
-                  <h3 className="mt-1 text-2xl font-black text-slate-900">
+                  <h2 className="mt-1 text-2xl font-black text-slate-900">
                     Full Body Checkup
-                  </h3>
+                  </h2>
                 </div>
 
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50">

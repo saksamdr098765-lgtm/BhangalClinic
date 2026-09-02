@@ -55,11 +55,11 @@ export default function InfoCard({
         </div>
 
         <div className="min-w-0 flex-1">
-          <h4
+          <h3
             className={`mb-2 text-base font-bold leading-6 ${style.title} sm:text-lg`}
           >
             {title}
-          </h4>
+          </h3>
 
           <p className="text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             {text}
