@@ -1007,7 +1007,7 @@ seo: {
 
   coverImage: "/blogs/cbc-test-full-guide/cover.webp",
 
-  featured: true,
+  featured: false,
 
   relatedPackages: [
   "bcl-med-health-pro-package",
@@ -1368,6 +1368,471 @@ seo: {
 
     features: [
       "100+ Blood Tests Available",
+      "Home Sample Collection",
+      "Fast Digital Reports",
+      "Affordable Pricing",
+      "Experienced Phlebotomists",
+    ],
+  },
+},
+{
+  id: 4,
+ 
+  slug: "blood-sugar-hba1c-test-full-guide",
+ 
+  title:
+    "Blood Sugar & HbA1c Test: Normal Range, Price & What It Detects (Complete Guide)",
+ 
+  excerpt:
+    "A complete guide to Blood Sugar and HbA1c testing — normal range by age, fasting rules, price, and what high or low results mean for diabetes risk.",
+ 
+  category: "Health Tips",
+ 
+  author: {
+    name: "Bhangal Clinical Laboratories & ECG Center",
+    image: "/team/author.jpg",
+  },
+ 
+  publishedAt: "September 9, 2026",
+ 
+  readingTime: "11 min read",
+ 
+  coverImage: "/blogs/blood-sugar-hba1c-test-full-guide/cover.webp",
+ 
+  featured: true,
+ 
+  relatedPackages: [
+  "bhangal-basic-profile-plus",
+  "bhangal-advance-full-body-checkup",
+  "bhangal-basic-profile",
+  "bcl-female-4-package",
+  "bhangal-senior-citizen-profile",
+  "bhangal-master-health-screen",
+  "bhangal-diabetic-profile",
+  "bhangal-ayush-profile-3",
+  "bhangal-ayush-profile-2",
+  "bhangal-ayush-profile-2-1",
+  "bhangal-ayush-profile-3-1",
+  "bhangal-fever-mini-profile",
+  "bhangal-dengue-profile",
+  "bhangal-fever-maxi-profile",
+  "bcl-med-pro-64-package",
+  "bcl-lfs-diamed-scan-package",
+  "bcl-med-health-pro-package",
+  "bcl-med-pro-65-package",
+  "bcl-med-max-panel-package"
+],
+ 
+  relatedTests: [
+  "cbc-test",
+  "platelet-count",
+  "absolute-eosinophil-count",
+  "esr-test",
+  "peripheral-blood-film",
+  "bleeding-time-clotting-time",
+  "blood-sugar-test",
+  "glucose-tolerance-test",
+  "glucose-challenge-test"
+],
+ 
+  seo: {
+    title: "Blood Sugar & HbA1c Test: Normal Range & Price",
+    // 47 chars — same phrase as title, trimmed to fit
+ 
+    description:
+      "Everything about Blood Sugar and HbA1c tests — normal range by age, fasting rules, price, and what results mean for diabetes risk in Garhshankar.",
+    // 153 chars
+ 
+    keywords: [
+      "blood sugar test",
+      "hba1c test",
+      "normal blood sugar range",
+      "hba1c normal range",
+      "fasting blood sugar test",
+      "random blood sugar test",
+      "hba1c full form",
+      "blood sugar level chart",
+      "hba1c normal range chart",
+      "diabetes test price",
+      "sugar test near me",
+      "hba1c 5.7 means",
+      "hba1c 6.5 means",
+      "blood sugar test price garhshankar",
+      "DK Bhangal Lab",
+    ],
+  },
+ 
+  quickInfo: [
+    {
+      label: "You Will Learn",
+      value: "Blood Sugar & HbA1c Normal Ranges",
+      icon: "activity",
+    },
+    { label: "Reading Time", value: "11 Minutes", icon: "clock" },
+    { label: "Suitable For", value: "Adults & Diabetics", icon: "users" },
+    {
+      label: "Symptoms",
+      value: "Frequent Urination, Fatigue, Weight Loss",
+      icon: "heart",
+    },
+    { label: "Recommended Test", value: "Blood Sugar / HbA1c", icon: "test" },
+    { label: "Fasting", value: "Required for Fasting Sugar Only", icon: "file" },
+    { label: "Report Time", value: "Same Day", icon: "clock" },
+    { label: "Price", value: getTestPrice("blood-sugar-test"), icon: "price" },
+    { label: "Home Collection", value: "Available", icon: "home" },
+  ],
+ 
+  tags: [
+    "Blood Sugar",
+    "HbA1c",
+    "Diabetes",
+    "Health Screening",
+    "Preventive Healthcare",
+    "Blood Test Report",
+  ],
+ 
+  content: [
+    {
+      type: "paragraph",
+      text: "Blood Sugar and HbA1c are two of the most frequently booked tests at our Garhshankar centre, especially among patients managing or screening for diabetes. Many people know they need 'a sugar test' but aren't sure whether that means fasting sugar, random sugar, or HbA1c — or how the three differ. This guide breaks down what each test measures, normal ranges by category, fasting rules, pricing, and what your numbers actually mean.",
+    },
+ 
+    {
+      type: "image",
+      src: "/blogs/blood-sugar-hba1c-test-full-guide/blood-sugar-check.webp",
+      alt: "Blood sample being prepared for sugar and HbA1c testing",
+      caption: "A single visit can cover both a sugar test and HbA1c.",
+    },
+ 
+    {
+      type: "heading",
+      level: 2,
+      text: "Blood Sugar vs HbA1c: What's the Difference?",
+    },
+ 
+    {
+      type: "paragraph",
+      text: "A blood sugar test measures your glucose level at one specific moment — right now, after fasting, or after a meal. HbA1c, on the other hand, reflects your average blood sugar over the past 2-3 months by measuring sugar attached to hemoglobin in red blood cells. Doctors often order both together: blood sugar for an immediate snapshot, and HbA1c for the bigger picture of long-term control.",
+    },
+ 
+    {
+      type: "tip",
+      title: "Good to Know",
+      text: "HbA1c is sometimes written as A1C or 'glycated hemoglobin' — all three terms refer to the same test.",
+    },
+ 
+ 
+    {
+      type: "heading",
+      level: 2,
+      text: "Types of Blood Sugar Tests",
+    },
+ 
+    {
+      type: "table",
+      title: "Types of Blood Sugar Tests",
+      headers: ["Test Name", "When It's Taken", "Fasting Required"],
+      rows: [
+        ["Fasting Blood Sugar (FBS)", "After 8-12 hours of fasting", "Yes"],
+        ["Random Blood Sugar (RBS)", "Any time of day", "No"],
+        [
+          "Post Prandial Blood Sugar (PP)",
+          "2 hours after a meal",
+          "No (timed from meal)",
+        ],
+        ["Glucose Tolerance Test (GTT/GCT)", "Fasting + after glucose drink", "Yes (initial sample)"],
+        ["HbA1c", "Any time of day", "No"],
+      ],
+    },
+ 
+    {
+      type: "heading",
+      level: 2,
+      text: "Normal Blood Sugar Range (By Category)",
+    },
+ 
+    {
+      type: "paragraph",
+      text: "Normal ranges vary depending on whether the sample was taken fasting, randomly, or after a meal. Values above these ranges may point toward prediabetes or diabetes, though a single reading should always be confirmed with your doctor.",
+    },
+ 
+    {
+      type: "table",
+      title: "Blood Sugar Normal Range Chart",
+      headers: ["Test Type", "Normal", "Prediabetes", "Diabetes"],
+      rows: [
+        ["Fasting Blood Sugar", "70-100 mg/dL", "100-125 mg/dL", "126 mg/dL or higher"],
+        ["Random Blood Sugar", "Below 140 mg/dL", "140-199 mg/dL", "200 mg/dL or higher"],
+        ["Post Prandial (2 hrs)", "Below 140 mg/dL", "140-199 mg/dL", "200 mg/dL or higher"],
+      ],
+    },
+ 
+    {
+      type: "heading",
+      level: 2,
+      text: "HbA1c Normal Range & What Your Number Means",
+    },
+ 
+    {
+      type: "paragraph",
+      text: "Unlike a same-day sugar test, HbA1c gives a 3-month average, which makes it harder to influence with a single good or bad day before the test — and more useful for tracking long-term diabetes control.",
+    },
+ 
+    {
+      type: "table",
+      title: "HbA1c Normal Range Chart",
+      headers: ["HbA1c Level", "Category", "What It Means"],
+      rows: [
+        ["Below 5.7%", "Normal", "Healthy blood sugar control"],
+        ["5.7% - 6.4%", "Prediabetes", "Increased risk of developing diabetes"],
+        ["6.5% and above", "Diabetes", "Confirms a diabetes diagnosis (with repeat testing)"],
+        ["Above 8%", "Poor Control", "Often flagged as a 'danger zone' needing treatment review"],
+      ],
+    },
+ 
+    {
+      type: "tip",
+      title: "From Our Front Desk",
+      text: "Patients often ask if fasting is needed for HbA1c — it isn't. You can eat normally before this test, which is one reason doctors prefer it for routine diabetes monitoring.",
+    },
+ 
+    {
+      type: "heading",
+      level: 2,
+      text: "Who Should Get a Blood Sugar or HbA1c Test?",
+    },
+ 
+    {
+      type: "table",
+      title: "Symptoms and Recommended Tests",
+      headers: ["Symptom", "Recommended Test", "Possible Condition"],
+      rows: [
+        ["Frequent Urination & Thirst", "Fasting Sugar, HbA1c", "Diabetes"],
+        ["Unexplained Weight Loss", "HbA1c, Thyroid Profile", "Diabetes, Hyperthyroidism"],
+        ["Fatigue & Blurred Vision", "Random Sugar, HbA1c", "Uncontrolled Blood Sugar"],
+        ["Family History of Diabetes", "Fasting Sugar, HbA1c", "Diabetes Screening"],
+        ["Pregnancy (24-28 weeks)", "GCT / GTT", "Gestational Diabetes"],
+        ["Routine Annual Checkup", "Fasting Sugar, HbA1c", "Preventive Screening"],
+      ],
+    },
+ 
+    {
+      type: "heading",
+      level: 2,
+      text: "How to Lower High Blood Sugar or HbA1c",
+    },
+ 
+    {
+      type: "paragraph",
+      text: "Lowering elevated blood sugar or HbA1c is a gradual process best guided by a doctor, but common approaches include consistent meal timing, reducing refined carbs and sugary drinks, regular physical activity, adequate sleep, and taking prescribed medication as directed. HbA1c typically takes 2-3 months to reflect any change, since it measures a rolling average rather than a single day's effort.",
+    },
+ 
+    {
+      type: "heading",
+      level: 2,
+      text: "Understanding Your Report",
+    },
+ 
+    {
+      type: "table",
+      title: "Sample Blood Sugar & HbA1c Report Format",
+      headers: ["Test Name", "Result", "Normal Range", "Flag"],
+      rows: [
+        ["Fasting Blood Sugar", "112 mg/dL", "70-100 mg/dL", "High"],
+        ["HbA1c", "6.1%", "Below 5.7%", "Prediabetes Range"],
+      ],
+    },
+ 
+    {
+      type: "heading",
+      level: 2,
+      text: "How Much Do These Tests Cost?",
+    },
+ 
+    {
+      type: "paragraph",
+      text: "Blood sugar tests are among the most affordable individual tests we offer, while HbA1c is priced slightly higher due to specialized processing. Check our current price list for exact rates and any bundled diabetic health packages.",
+    },
+ 
+    {
+  type: "interlinking",
+  title: "Check Prices & Service Details",
+  description:
+    "Ready to book? View exact pricing and service details below.",
+  items: [
+    {
+      title: "Blood Sugar & HbA1c Price in Garhshankar",
+      description:
+        "View complete pricing for fasting sugar, random sugar, and HbA1c.",
+      href: "/prices/blood-sugar-hba1c-test-price-garhshankar",
+    },
+    {
+      title: "Blood Sugar Test",
+      description:
+        "Learn about blood sugar testing, normal ranges, preparation, and results.",
+      href: "/tests/blood-sugar-test",
+    },
+    {
+      title: "Blood Test Service Overview",
+      description:
+        "Learn what's included in our testing service and home collection process.",
+      href: "/services/blood-tests",
+    },
+  ],
+},
+ 
+    {
+      type: "success",
+      title: "Key Takeaway",
+      text: "Blood sugar tells you your glucose level right now; HbA1c tells you your average over the past 3 months. Together, they give the clearest picture of your diabetes risk or control — and regular testing helps catch problems before they progress.",
+    },
+ 
+    {
+      type: "heading",
+      level: 2,
+      text: "Book Your Blood Sugar or HbA1c Test",
+    },
+ 
+    {
+      type: "paragraph",
+      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. We're open daily from 7:00 AM to 8:00 PM (8:00 AM to 2:00 PM on Sundays). Walk in, call ahead, or book a home sample collection.",
+    },
+ 
+    {
+      type: "interlinking",
+      title: "Areas We Serve",
+      description:
+        "We provide home sample collection and diagnostic services across the following locations.",
+      items: [
+        {
+          title: "Garhshankar",
+          description: "Blood sugar & HbA1c testing with home sample collection.",
+          href: "/locations/blood-sugar-hba1c-test-in-garhshankar",
+        },
+        {
+          title: "Hoshiarpur",
+          description: "Diagnostic laboratory services.",
+        },
+        {
+          title: "Nawanshahr",
+          description: "Health checkups and pathology tests.",
+        },
+      ],
+    },
+ 
+    {
+      type: "references",
+      items: [
+        {
+          title: "Diabetes Tests",
+          publisher: "MedlinePlus",
+          url: "https://medlineplus.gov/diabetestype2.html",
+        },
+        {
+          title: "The A1C Test & Diabetes",
+          publisher: "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)",
+          url: "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test",
+        },
+      ],
+    },
+  ],
+ 
+  faq: [
+    {
+      question: "What is the normal test of sugar?",
+      answer:
+        "A normal fasting blood sugar is 70-100 mg/dL, and normal random blood sugar is below 140 mg/dL. HbA1c is considered normal below 5.7%.",
+    },
+    {
+      question: "What are the 5 tests for diabetes?",
+      answer:
+        "The commonly used tests for diabetes are Fasting Blood Sugar, Random Blood Sugar, Post Prandial Blood Sugar, HbA1c, and the Glucose Tolerance Test (GTT/GCT).",
+    },
+    {
+      question: "Is 7.8 blood sugar high?",
+      answer:
+        "A value of 7.8 mmol/L (about 140 mg/dL) falls in the prediabetes to early-diabetes range if taken randomly or post-meal, but interpretation depends on when the sample was taken. Always discuss your reading with a doctor.",
+    },
+    {
+      question: "What are 5 signs your blood sugar is high?",
+      answer:
+        "Common signs of high blood sugar include frequent urination, excessive thirst, fatigue, blurred vision, and unexplained weight loss. These symptoms warrant a blood sugar or HbA1c test.",
+    },
+    {
+      question: "What is a normal HbA1c level?",
+      answer:
+        "A normal HbA1c level is below 5.7%. Levels between 5.7% and 6.4% indicate prediabetes, and 6.5% or above indicates diabetes.",
+    },
+    {
+      question: "What is the difference between a sugar test and HbA1c?",
+      answer:
+        "A sugar test measures your glucose level at one point in time, while HbA1c reflects your average blood sugar over the past 2-3 months, making it more useful for tracking long-term control.",
+    },
+    {
+      question: "What is the danger zone for HbA1c?",
+      answer:
+        "An HbA1c above 8% is generally considered a danger zone, indicating poor blood sugar control and a higher risk of diabetes complications. This should be reviewed with a doctor promptly.",
+    },
+    {
+      question: "Is the HbA1c test fasting required?",
+      answer:
+        "No, fasting is not required for an HbA1c test. You can eat and drink normally before the blood draw.",
+    },
+    {
+      question: "How much does a blood sugar test cost?",
+      answer:
+        "Blood sugar tests at our Garhshankar lab start from ₹99, with HbA1c priced separately due to specialized processing. Check our full price list for exact rates.",
+    },
+    {
+      question: "Can I do a sugar test at home?",
+      answer:
+        "Yes, we offer home sample collection for blood sugar and HbA1c testing across Garhshankar and nearby villages at no extra charge.",
+    },
+    {
+      question: "Is a 140 sugar level normal?",
+      answer:
+        "A random or post-meal reading of 140 mg/dL sits right at the upper edge of normal and the start of the prediabetes range. Fasting sugar of 140 mg/dL would be considered high. Context matters, so share the timing with your doctor.",
+    },
+    {
+      question: "What is normal HbA1c by age?",
+      answer:
+        "HbA1c targets are largely the same for adults regardless of age — below 5.7% is normal — though doctors may set slightly more relaxed targets for elderly patients managing diabetes to avoid low blood sugar episodes.",
+    },
+    {
+      question: "How to reduce HbA1c naturally?",
+      answer:
+        "Consistent meal timing, reducing refined sugar and carbs, regular exercise, adequate sleep, and stress management can help lower HbA1c over time, alongside any treatment prescribed by your doctor. Changes typically show up after 2-3 months.",
+    },
+    {
+      question: "What is a 3-month sugar test?",
+      answer:
+        "The '3-month sugar test' commonly refers to HbA1c, which reflects your average blood glucose over the preceding 2-3 months rather than a single day's reading.",
+    },
+    {
+      question: "How often should I get an HbA1c test?",
+      answer:
+        "Diabetics are typically advised to get HbA1c checked every 3 months, while those with prediabetes or a family history may test every 6-12 months as part of routine screening.",
+    },
+  ],
+ 
+  cta: {
+    title: "Book Your Blood Sugar or HbA1c Test Today",
+ 
+    description:
+      "Looking for reliable diabetes screening? Book your Blood Sugar or HbA1c test with home sample collection, affordable pricing, and fast digital reports.",
+ 
+    serviceName: "Blood Sugar & HbA1c Test",
+ 
+    serviceLink: "/services/blood-tests",
+ 
+    bookingLink:
+      `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20want%20to%20book%20a%20Blood%20Sugar%2FHbA1c%20Test.%20Please%20share%20the%20available%20slots.`,
+ 
+    whatsappLink:
+      `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20have%20a%20question%20about%20Blood%20Sugar%2FHbA1c%20Test.`,
+ 
+    features: [
+      "Fasting, Random & HbA1c Available",
       "Home Sample Collection",
       "Fast Digital Reports",
       "Affordable Pricing",

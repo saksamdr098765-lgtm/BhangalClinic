@@ -7,7 +7,7 @@ export const prices = [
     seo: {
       title: "Blood Test Price in Garhshankar | Full Price List",
       description:
-        "Check blood test prices in Garhshankar — CBC, Thyroid, Diabetes, Lipid Profile, Vitamin D & more, starting from ₹99, with doorstep home sample collection.",
+        "Check blood test prices in Garhshankar — CBC, Thyroid, Diabetes, Lipid Profile, Vitamin D & more, starting from 300, with doorstep home sample collection.",
       keywords: [
         "blood test price garhshankar",
         "blood test cost garhshankar",
@@ -17,7 +17,7 @@ export const prices = [
 
     },
     hero: {
-      badge: "NABL Quality Standards",
+   
       title: "Blood Test Price in Garhshankar",
       subtitle:
         "Compare prices on 100+ blood tests in Garhshankar with high-accuracy automated testing and doorstep home sample collection.",
@@ -138,7 +138,7 @@ export const prices = [
   seo: {
     title: "ECG Test Price in Garhshankar | Full Price List",
     description:
-      "Check ECG test prices in Garhshankar — 12-lead ECG, starting from ₹99, with doorstep home ECG collection and same-day digital reports.",
+      "Check ECG test prices in Garhshankar — 12-lead ECG, starting from ₹199, with doorstep home ECG collection and same-day digital reports.",
     keywords: [
       "ecg test price garhshankar",
       "ecg cost garhshankar",
@@ -406,6 +406,174 @@ export const prices = [
     locationUrl: "/locations/cbc-test-in-garhshankar",
     packageUrl: "/packages",
     highlights: ["Home Sample Collection", "Digital Report", "Affordable Rate", "Fast Turnaround"],
+  },
+},
+ {
+  slug: "blood-sugar-hba1c-test-price-garhshankar",
+ 
+  seo: {
+    title: "Blood Sugar & HbA1c Test Price in Garhshankar | Full Price List",
+    description:
+      "Check Blood Sugar and HbA1c test prices in Garhshankar — starting from ₹30, with doorstep home sample collection and same-day digital reports.",
+    keywords: [
+      "blood sugar test price garhshankar",
+      "hba1c test price garhshankar",
+      "sugar test cost garhshankar",
+      "diabetes test price garhshankar",
+      "sugar test price near me garhshankar",
+      "hba1c test price",
+    ],
+  },
+ 
+  homeCollection: true,
+ 
+  hero: {
+  
+    title: "Blood Sugar & HbA1c Test Price in Garhshankar",
+    subtitle:
+      "Compare prices on Fasting Sugar, Random Sugar, and HbA1c testing in Garhshankar with accurate lab processing and doorstep home sample collection.",
+    image: "/prices/blood-sugar-hba1c-test.webp",
+  },
+ 
+  priceCard: {
+    actualPrice: 99,
+    offerPrice: getTestPrice("blood-sugar-test"),
+    offerText: "Blood Sugar Starting Price",
+    reportTime: "Same Day (Within Hours)",
+    fasting: "Required for Fasting Sugar Only",
+    sampleType: "Blood Sample",
+    homeCollection: true,
+    labVisit: true,
+ 
+    includes: {
+      title: "Every Booking Includes",
+      items: [
+        "Free Doorstep Home Sample Collection",
+        "Digital Report on WhatsApp & Email",
+        "No Advance Payment Required",
+      ],
+    },
+  },
+ 
+  whyGetTest: {
+    title: "Why Get a Blood Sugar or HbA1c Test in Garhshankar",
+    description:
+      "Regular blood sugar and HbA1c testing helps detect diabetes early and supports timely medical decisions for you and your family.",
+    reasons: [
+      {
+        title: "Early Detection of Diabetes",
+        description:
+          "Identifies prediabetes and diabetes before symptoms worsen or complications develop.",
+      },
+      {
+        title: "Track Long-Term Control",
+        description:
+          "HbA1c shows your 3-month average, helping doctors monitor treatment effectiveness over time.",
+      },
+      {
+        title: "Convenient & Affordable",
+        description:
+          "Home sample collection and transparent pricing make diabetes screening accessible for every family.",
+      },
+    ],
+  },
+ 
+  faqs: [
+    {
+      question: "How much does a blood sugar test cost in Garhshankar?",
+      answer:
+        "Blood sugar testing in Garhshankar starts from ₹30 at Bhangal Clinical Laboratories & ECG Center, with home sample collection available at no extra charge.",
+    },
+    // {
+    //   question: "How much does an HbA1c test cost?",
+    //   answer:
+    //     "HbA1c testing is priced separately from a same-day sugar test due to specialized processing, typically starting from ₹399. Contact us for the current exact rate.",
+    // },
+    {
+      question: "Is home sample collection available for sugar tests in Garhshankar?",
+      answer:
+        "Yes, our trained phlebotomists provide doorstep sample collection for Blood Sugar and HbA1c testing across Garhshankar and nearby villages.",
+    },
+    {
+      question: "Which is cheaper — sugar test or HbA1c?",
+      answer:
+        "A standalone Fasting or Random Blood Sugar test is generally cheaper than HbA1c, since HbA1c requires more specialized lab processing to measure the 3-month average.",
+    },
+    {
+      question: "How fast do I get my report?",
+      answer:
+        "Both Blood Sugar and HbA1c reports are typically delivered digitally on WhatsApp & Email within a few hours of sample collection.",
+    },
+    {
+      question: "Does the price vary if I book both tests together?",
+      answer:
+        "Yes, booking Blood Sugar and HbA1c together, or as part of a diabetic health package, is usually more cost-effective than booking them separately. Contact us for a bundled rate.",
+    },
+  ],
+ 
+  relatedTests: [
+  "cbc-test",
+  "platelet-count",
+  "absolute-eosinophil-count",
+  "esr-test",
+  "peripheral-blood-film",
+  "bleeding-time-clotting-time",
+  "blood-sugar-test",
+  "glucose-tolerance-test",
+  "glucose-challenge-test"
+],
+ 
+  interlinks: {
+    badge: "Included Services & Local Availability",
+    heading: "What's Included & Nearby Availability",
+    description:
+      "Checking Blood Sugar or HbA1c prices? Explore what is included in this price and verify local availability near you in Garhshankar.",
+    items: [
+      {
+        title: "What's Included in This Price?",
+        subtitle: "Blood Sugar & HbA1c Service Details",
+        description:
+          "Understand everything included in our testing service — from sample collection to lab analysis and reporting.",
+        href: "/tests/blood-sugar-test",
+        icon: "FiActivity",
+        badge: "Service Details",
+        badgeColor: "bg-teal-100 text-teal-800 border-teal-200",
+        btnText: "Explore Service Included",
+        tracking: "price-interlink-service",
+      },
+      {
+        title: "Available Near You in Garhshankar",
+        subtitle: "Location & Home Collection",
+        description:
+          "Check our diagnostic center, doorstep home sample collection coverage across Garhshankar city and surrounding villages, and operating hours.",
+        href: "/locations/blood-sugar-hba1c-test-in-garhshankar",
+        icon: "FiMapPin",
+        badge: "Garhshankar Location",
+        badgeColor: "bg-sky-100 text-sky-800 border-sky-200",
+        btnText: "Visit Garhshankar Hub",
+        tracking: "price-interlink-location",
+      },
+    ],
+  },
+ 
+  cta: {
+    title: "Book Your Blood Sugar or HbA1c Test in Garhshankar Today",
+    description:
+      "Affordable pricing, fast digital reports, and doorstep home sample collection across Garhshankar.",
+    actualPrice: 99,
+    offerPrice: getTestPrice("blood-sugar-test"),
+    buttonText: "Book a Test",
+    testName: "Blood Sugar & HbA1c Test",
+    blogUrl: "/blogs/blood-sugar-hba1c-test-full-guide",
+    serviceUrl: "/services/blood-tests",
+    locationUrl: "/locations/blood-sugar-hba1c-test-in-garhshankar",
+    packageUrl: "/packages",
+    highlights: [
+      "Home Sample Collection",
+      "Digital Report",
+      "Affordable Rate",
+      "Fast Turnaround",
+    ],
   },
 }
 

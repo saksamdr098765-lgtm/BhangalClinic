@@ -550,23 +550,298 @@ export const tests = [
      status:"draft"
   },
 
-  {
-    slug: "blood-sugar-test",
-    name: "Blood Sugar Test",
-    shortName: "FBS / PPBS / RBS",
-    category: "Biochemistry",
-    organ: "Pancreas",
-    sampleType: "Blood",
-    parameterCount: 1,
-    fasting: false,
-    homeCollection: true,
-    popular: true,
+{
+  slug: "blood-sugar-test",
+ 
+  name: "Blood Sugar Test",
+ 
+  shortName: "FBS / PPBS / RBS",
+ 
+  category: "Biochemistry",
+ 
+  organ: "Pancreas",
+ 
+  sampleType: "Blood",
+ 
+  parameterCount: 1,
+ 
+  fasting: false,
+  // Set at test level as "not always required" since Random Blood
+  // Sugar (the most commonly booked variant) needs no fasting.
+  // Fasting/PP-specific rules are called out in `preparation` below.
+ 
+  homeCollection: true,
+ 
+  popular: true,
+ 
+  description:
+    "Blood Sugar test measures glucose levels in your blood — as Fasting, Post-Prandial, or Random Sugar — to screen for and monitor diabetes.",
+ 
+  price: 30,
+ 
+  reportTime: "24 Hours",
+ 
+  status: "published",
+ 
+  seo: {
+    title: "Blood Sugar Test - Price, Normal Range | Book Sugar Test",
+    // 58 chars
+ 
     description:
-      "Measures blood glucose levels for diabetes screening and monitoring.",
-    price: 30,
-    reportTime: "24 Hours",
-     status:"draft"
+      "Book a Blood Sugar test (Fasting/Random/PP) with home sample collection. Check blood sugar test price, normal range, and same-day digital reports.",
+    // 150 chars
+ 
+    keywords: [
+      "blood sugar test",
+      "blood sugar test price",
+      "fasting blood sugar test",
+      "random blood sugar test",
+      "post prandial blood sugar test",
+      "blood sugar test near me",
+      "blood sugar normal range",
+      "blood sugar test at home",
+      "sugar test price",
+      "diabetes blood test",
+    ],
   },
+ 
+  hero: {
+    badge: "Home Sample Collection Available",
+ 
+    title: "Blood Sugar Test - Fasting, Random & PP",
+ 
+    description:
+      "Book a Blood Sugar Test near you with fast report delivery, professional sample collection, and convenient home collection services. Check blood sugar test price and book online.",
+ 
+    image: "/tests/blood-sugar.webp",
+ 
+    imageAlt: "Blood Sugar Test - Fasting, Random & Post-Prandial",
+ 
+    reportTime: "24 Hours",
+ 
+    homeCollection: "Available",
+ 
+    trustPoints: [
+      "Professional Sample Collection",
+      "Digital Reports",
+      "Affordable Blood Sugar Test Price",
+      "Quality-Controlled Testing",
+    ],
+ 
+    bookButton: "Book Blood Sugar Test",
+ 
+    bookingUrl: "/prices/blood-sugar-hba1c-test-price-garhshankar",
+ 
+    phone: "tel:+918968038602",
+  },
+ 
+  quickFacts: {
+    sample: "Blood Sample",
+ 
+    reportTime: "24 Hours",
+ 
+    fasting: "Required for Fasting Sugar Only",
+ 
+    homeCollection: "Available",
+ 
+    ageGroup: "Adults & Children",
+  },
+ 
+  whyChooseUs: {
+    title: "Why Choose Our Blood Sugar Test Service?",
+ 
+    description:
+      "Get a reliable blood sugar test near you with convenient booking, professional sample collection, and easy access to digital reports.",
+ 
+    items: [
+      {
+        title: "Professional Sample Collection",
+        description:
+          "Samples are collected using proper procedures for a comfortable testing experience.",
+      },
+      {
+        title: "Quality Testing Process",
+        description:
+          "Your blood sugar test is processed using standardized laboratory procedures for accurate results.",
+      },
+      {
+        title: "Fast Digital Reports",
+        description:
+          "Receive your blood sugar test report conveniently after completion of testing.",
+      },
+      {
+        title: "Home Collection Available",
+        description:
+          "Book blood sugar test home sample collection from your home at a convenient time.",
+      },
+    ],
+  },
+ 
+  testDetails: {
+    title: "About Blood Sugar Test (Fasting, Random & Post-Prandial)",
+ 
+    description: [
+      "A Blood Sugar test measures the amount of glucose circulating in your blood at the time of sample collection. It can be taken as Fasting Blood Sugar (FBS, after 8-12 hours without food), Random Blood Sugar (RBS, any time of day), or Post-Prandial Blood Sugar (PPBS, 2 hours after a meal).",
+ 
+      "This test helps healthcare professionals screen for and monitor diabetes and prediabetes, and is often ordered alongside HbA1c for a complete picture of both current and long-term blood sugar control.",
+    ],
+ 
+    included: [
+      "Fasting Blood Sugar (FBS)",
+      "Random Blood Sugar (RBS)",
+      "Post-Prandial Blood Sugar (PPBS)",
+      "Glucose Level (mg/dL)",
+    ],
+  },
+ 
+  preparation: {
+    title: "Preparation Before Blood Sugar Test",
+ 
+    description:
+      "Preparation depends on which type of sugar test is ordered — follow these instructions for a smooth sample collection experience.",
+ 
+    items: [
+      {
+        title: "Fasting Blood Sugar Requirement",
+        description:
+          "Fasting for 8-12 hours (water is fine) is required before a Fasting Blood Sugar test. No fasting is needed for Random Blood Sugar or HbA1c.",
+      },
+      {
+        title: "Post-Prandial Timing",
+        description:
+          "For a Post-Prandial (PP) test, the sample is collected exactly 2 hours after starting a meal — note your meal start time when booking.",
+      },
+      {
+        title: "Inform About Medications",
+        description:
+          "Inform the healthcare professional about any diabetes medication, insulin, or supplements you are taking, as timing can affect results.",
+      },
+    ],
+  },
+ 
+  bookingProcess: {
+    title: "How to Book Your Blood Sugar Test",
+ 
+    description:
+      "Book your blood sugar test easily with a simple process and get your sample collected at your preferred time.",
+ 
+    steps: [
+      {
+        title: "Book Test",
+        description:
+          "Choose Fasting, Random, or PP Blood Sugar and submit your booking request online or contact our team.",
+      },
+      {
+        title: "Sample Collection",
+        description:
+          "Our trained professional collects the sample safely from your location, at the correct fasting or post-meal timing.",
+      },
+      {
+        title: "Laboratory Testing",
+        description:
+          "Your sample is processed using standard laboratory procedures.",
+      },
+      {
+        title: "Receive Report",
+        description:
+          "Get your digital blood sugar test report after the test is completed.",
+      },
+    ],
+  },
+ 
+  pricePreview: {
+    title: "Blood Sugar Test Price",
+ 
+    description:
+      "Check the latest blood sugar test price near you and book your test with convenient home sample collection.",
+ 
+    price: 99,
+ 
+    priceUrl: "/prices/blood-sugar-hba1c-test-price-garhshankar",
+  },
+ 
+  relatedTests: [
+    "hba1c-test",
+    "lipid-profile",
+    "kidney-function-test",
+    "liver-function-test",
+    "thyroid-profile-test",
+    "urine-examination",
+  ],
+ 
+  faq: {
+    title: "Frequently Asked Questions",
+ 
+    description:
+      "Find answers to common questions about the blood sugar test, its price, results, and booking.",
+ 
+    items: [
+      {
+        question: "What is the normal blood sugar range?",
+        answer:
+          "Normal Fasting Blood Sugar is 70-100 mg/dL, and normal Random or Post-Prandial Blood Sugar is below 140 mg/dL. Values above these ranges may indicate prediabetes or diabetes.",
+      },
+      {
+        question: "Do I need to fast before a blood sugar test?",
+        answer:
+          "Fasting for 8-12 hours is required only for a Fasting Blood Sugar test. Random Blood Sugar can be done any time without fasting, and Post-Prandial is timed 2 hours after a meal instead.",
+      },
+      {
+        question: "What is the difference between FBS, RBS, and PPBS?",
+        answer:
+          "FBS (Fasting Blood Sugar) is measured after 8-12 hours without food, RBS (Random Blood Sugar) can be measured at any time, and PPBS (Post-Prandial Blood Sugar) is measured 2 hours after eating.",
+      },
+      {
+        question: "Is a blood sugar level of 140 normal?",
+        answer:
+          "A reading of 140 mg/dL sits at the upper edge of normal for a random or post-meal test, but would be considered high if taken fasting. Share the test type and timing with your doctor for accurate interpretation.",
+      },
+      {
+        question: "How long does it take to receive the blood sugar test report?",
+        answer:
+          "Blood sugar reports are usually available within 24 hours after sample collection and laboratory processing, often much sooner for routine bookings.",
+      },
+      {
+        question: "Is home sample collection available for blood sugar test?",
+        answer:
+          "Yes, home sample collection is available for Fasting, Random, and Post-Prandial Blood Sugar tests. You can book an appointment and choose a convenient collection time.",
+      },
+      {
+        question: "What is the blood sugar test price?",
+        answer:
+          "You can check the latest blood sugar test price on our pricing page and book online with home sample collection.",
+      },
+      {
+        question: "Should I get HbA1c along with a blood sugar test?",
+        answer:
+          "Many doctors recommend HbA1c alongside a blood sugar test since HbA1c reflects your 3-month average, while blood sugar shows your level at that specific moment — together they give a fuller picture of diabetes control.",
+      },
+    ],
+  },
+ 
+  cta: {
+    title: "Book Your Blood Sugar Test Today",
+ 
+    description:
+      "Get convenient sample collection, reliable blood sugar testing, and easy access to your reports.",
+ 
+    highlights: [
+      "Home Sample Collection Available",
+      "Fast Report Delivery",
+      "Professional Collection Process",
+    ],
+ 
+    price: "30",
+ 
+    priceText: "Check detailed blood sugar test pricing and booking options.",
+ 
+    bookingUrl: "/prices/blood-sugar-hba1c-test-price-garhshankar",
+ 
+    phone: "tel:+918968038602",
+ 
+    buttonText: "Book Blood Sugar Test",
+  },
+},
   // =========================
 // KIDNEY FUNCTION TEST (KFT)
 // =========================

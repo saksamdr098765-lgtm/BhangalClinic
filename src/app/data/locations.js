@@ -874,6 +874,308 @@ homeCollection:false,
 
   hours:
     "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
+},
+ {
+  id: 4,
+ 
+  slug: "blood-sugar-hba1c-test-in-garhshankar",
+ 
+  city: "Garhshankar",
+  homeCollection: true,
+  state: "Punjab",
+ 
+  title: "Blood Sugar & HbA1c Test in Garhshankar",
+ 
+  shortDescription:
+    "Book accurate Blood Sugar and HbA1c tests in Garhshankar with Bhangal Clinical Laboratories & ECG Center. Home sample collection, fast reports, and affordable pricing for diabetes screening.",
+ 
+  seo: {
+    title:
+      "Blood Sugar & HbA1c Test in Garhshankar | Home Sample Collection",
+    description:
+      "Get your Blood Sugar and HbA1c test done in Garhshankar with Bhangal Clinical Laboratories & ECG Center — accurate results, home sample collection, affordable prices, and same-day reports. Book online today.",
+    keywords: [
+      "Blood Sugar Test in Garhshankar",
+      "HbA1c Test in Garhshankar",
+      "Sugar Test Near Me Garhshankar",
+      "Diabetes Test Garhshankar",
+      "Blood Sugar Test Lab Garhshankar",
+      "HbA1c Test Near Me Garhshankar",
+      "Sugar Test at Home Garhshankar",
+      "Diabetes Screening Garhshankar",
+      "Best Diagnostic Lab Near Me Sugar Test Garhshankar",
+    ],
+  },
+ 
+  overview: {
+    heading: "Blood Sugar & HbA1c Test in Garhshankar",
+ 
+    paragraphs: [
+      "Looking for a reliable Blood Sugar or HbA1c test in Garhshankar? Bhangal Clinical Laboratories & ECG Center is a trusted diagnostic lab offering accurate diabetes screening for individuals and families across Garhshankar and surrounding villages. From a quick fasting or random sugar check to a 3-month HbA1c average, our lab uses standardized procedures to ensure dependable results every time.",
+ 
+      "Whether you need a single sugar test, HbA1c for ongoing diabetes management, or a complete diabetic health checkup package, we make testing in Garhshankar simple, affordable, and convenient. Visit our lab directly, or book a home sample collection and have a trained phlebotomist collect your sample from your doorstep — no travel, no waiting.",
+    ],
+ 
+    highlights: [
+      "Fasting, Random & Post-Prandial Sugar Tests",
+      "HbA1c (3-Month Average) Testing",
+      "Home Sample Collection",
+      "Same-Day Reports",
+      "Affordable, Transparent Pricing",
+    ],
+  },
+ 
+  popularTests: {
+    heading: "Popular Diabetes Tests in Garhshankar",
+    test: [
+  "cbc-test",
+  "platelet-count",
+  "absolute-eosinophil-count",
+  "esr-test",
+  "peripheral-blood-film",
+  "bleeding-time-clotting-time",
+  "blood-sugar-test",
+  "glucose-tolerance-test",
+  "glucose-challenge-test"
+]
+  },
+ 
+  packages: [
+  "bhangal-basic-profile-plus",
+  "bhangal-advance-full-body-checkup",
+  "bhangal-basic-profile",
+  "bcl-female-4-package",
+  "bhangal-senior-citizen-profile",
+  "bhangal-master-health-screen",
+  "bhangal-diabetic-profile",
+  "bhangal-ayush-profile-3",
+  "bhangal-ayush-profile-2",
+  "bhangal-ayush-profile-2-1",
+  "bhangal-ayush-profile-3-1",
+  "bhangal-fever-mini-profile",
+  "bhangal-dengue-profile",
+  "bhangal-fever-maxi-profile",
+  "bcl-med-pro-64-package",
+  "bcl-lfs-diamed-scan-package",
+  "bcl-med-health-pro-package",
+  "bcl-med-pro-65-package",
+  "bcl-med-max-panel-package"
+],
+ 
+  process: {
+    heading: "How to Get a Blood Sugar or HbA1c Test in Garhshankar",
+    steps: [
+      {
+        icon: "search",
+        title: "Choose Your Test",
+        description:
+          "Select Fasting Sugar, Random Sugar, HbA1c, or a diabetic health package, or ask our team for guidance.",
+      },
+      {
+        icon: "calendar",
+        title: "Book an Appointment",
+        description:
+          "Schedule online or by phone — visit our lab or request home sample collection.",
+      },
+      {
+        icon: "lab",
+        title: "Sample Collection",
+        description:
+          "Your sample is collected at our lab or your home by a trained phlebotomist.",
+      },
+      {
+        icon: "report",
+        title: "Get Your Report",
+        description:
+          "Receive accurate results digitally or in print, usually within the same day.",
+      },
+    ],
+  },
+ 
+  whyChoose: {
+    features: [
+      {
+        icon: "activity",
+        title: "Accurate Diabetes Screening",
+        description:
+          "Standardized lab procedures ensure dependable sugar and HbA1c results.",
+      },
+      {
+        icon: "award",
+        title: "Experienced Lab Team",
+        description:
+          "Qualified professionals follow strict standards from collection to reporting.",
+      },
+      {
+        icon: "shield",
+        title: "Quality Assurance",
+        description:
+          "Every sample is processed with rigorous quality control checks.",
+      },
+      {
+        icon: "clock",
+        title: "Fast Reports",
+        description:
+          "Most sugar test reports in Garhshankar are ready the same day.",
+      },
+      {
+        icon: "home",
+        title: "Home Collection Available",
+        description:
+          "Skip the visit — get your sample collected at your doorstep in Garhshankar.",
+      },
+      {
+        icon: "check",
+        title: "Affordable Pricing",
+        description:
+          "Transparent, competitive pricing on all sugar tests, HbA1c, and diabetic packages.",
+      },
+    ],
+  },
+ 
+  areas: [
+    "Garhshankar City",
+    "Civil Hospital Area",
+    "Railway Road",
+    "Main Bazaar",
+    "Nawanshahr Road",
+    "Hoshiarpur Road",
+    "Banga Road",
+    "Mahilpur Road",
+    "Saila Khurd",
+    "Binewal",
+    "Denowal Kalan",
+    "Denowal Khurd",
+    "Chak Guru",
+    "Pojewal",
+    "Pandori",
+    "Purhiran",
+    "Chak Singha",
+    "Bharta",
+    "Kukar Majara",
+    "Nearby Villages of Garhshankar",
+  ],
+ 
+  hubLinks: {
+    heading:
+      "Everything You Need to Know About Blood Sugar & HbA1c Tests in Garhshankar",
+    badge: "Garhshankar Central Diagnostics Hub",
+    description:
+      "Whether you want to understand your normal range, check what our service includes, or view pricing in Garhshankar — explore our central guides below.",
+    items: [
+      {
+        title: "What is a Blood Sugar / HbA1c Test?",
+        subtitle: "Educational Guide & Normal Range Breakdown",
+        description:
+          "Understand fasting vs random sugar, HbA1c normal range, and how to read your diabetes test report.",
+        href: "/blogs/blood-sugar-hba1c-test-full-guide",
+        icon: "FiBookOpen",
+        badge: "Context & Guide",
+        badgeColor: "bg-blue-100 text-blue-700 border-blue-200",
+        btnText: "Read Full Guide",
+        tag: "Educational",
+      },
+      {
+        title: "Blood Test Service Details",
+        subtitle: "What's Included & Testing Options",
+        description:
+          "Explore our comprehensive blood sugar test services, modern automated analyzers, and sample collection process.",
+        href: "/tests/blood-sugar-test",
+        icon: "FiActivity",
+        badge: "Service Overview",
+        badgeColor: "bg-teal-100 text-teal-700 border-teal-200",
+        btnText: "Explore Service",
+        tag: "Service",
+      },
+      {
+        title: "Blood Sugar & HbA1c Price in Garhshankar",
+        subtitle: "Transparent Rates & Package Discounts",
+        description:
+          "Check transparent pricing for sugar and HbA1c testing in Garhshankar, starting from ₹99 with free doorstep home collection.",
+        href: "/prices/blood-sugar-hba1c-test-price-garhshankar",
+        icon: "FiTag",
+        badge: "Price & Cost",
+        badgeColor: "bg-amber-100 text-amber-700 border-amber-200",
+        btnText: "View Price List",
+        tag: "Cost & Rates",
+      },
+    ],
+  },
+ 
+  relatedLinks: {
+    heading: "Explore Key Blood Sugar & HbA1c Information",
+    links: [
+      {
+        label: "What is a Blood Sugar / HbA1c Test?",
+        description:
+          "Guide to normal ranges, fasting rules, and report interpretation.",
+        slug: "/blogs/blood-sugar-hba1c-test-full-guide",
+      },
+      {
+        label: "Blood Test Service Details",
+        description:
+          "See what's included in our blood testing service, lab standards, and process.",
+        slug: "/services/blood-tests",
+      },
+      {
+        label: "Blood Sugar & HbA1c Price in Garhshankar",
+        description:
+          "Check transparent pricing, starting rates from ₹99, and home sample collection.",
+        slug: "/prices/blood-sugar-hba1c-test-price-garhshankar",
+      },
+    ],
+  },
+ 
+  blogs: [
+    "blood-sugar-hba1c-test-full-guide",
+    "list-of-blood-tests",
+    "cbc-test-full-guide"
+  ],
+ 
+  services: ["blood-tests",
+    "ecg-test",
+
+  ],
+ 
+  faq: [
+    {
+      question: "Where can I get a Blood Sugar or HbA1c test in Garhshankar?",
+      answer:
+        "Bhangal Clinical Laboratories & ECG Center offers accurate Blood Sugar and HbA1c testing in Garhshankar, either at our lab or through convenient home sample collection.",
+    },
+    {
+      question: "Is home sample collection available for sugar tests in Garhshankar?",
+      answer:
+        "Yes. Our trained phlebotomists collect samples for Blood Sugar and HbA1c testing from your home anywhere in Garhshankar and nearby areas.",
+    },
+    {
+      question: "How much does a Blood Sugar or HbA1c test cost in Garhshankar?",
+      answer:
+        "Blood Sugar testing starts from ₹99, while HbA1c is priced separately due to specialized processing. Check our full price list or contact us for current rates.",
+    },
+    {
+      question: "Do I need to fast before my blood sugar test?",
+      answer:
+        "Fasting is required for a Fasting Blood Sugar test (8-12 hours) but not for Random Blood Sugar or HbA1c. We'll confirm requirements when you book.",
+    },
+    {
+      question: "How soon will I get my report in Garhshankar?",
+      answer:
+        "Most Blood Sugar and HbA1c reports are available the same day, delivered digitally on WhatsApp & Email within a few hours of sample collection.",
+    },
+    {
+      question: "Which diabetes tests are most commonly booked in Garhshankar?",
+      answer:
+        "Fasting Blood Sugar, Random Blood Sugar, and HbA1c are the most frequently booked tests at our Garhshankar lab, often alongside a Lipid Profile or Kidney Function Test.",
+    },
+    {
+      question: "Can I get a sugar test done during pregnancy in Garhshankar?",
+      answer:
+        "Yes, we offer Glucose Challenge Test (GCT) and Glucose Tolerance Test (GTT) for gestational diabetes screening, available at our lab or via home sample collection.",
+    },
+  ],
+ 
+  hours: "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
 }
 ];
 
