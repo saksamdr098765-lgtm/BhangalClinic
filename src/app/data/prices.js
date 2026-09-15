@@ -132,6 +132,31 @@ export const prices = [
       packageUrl: "/packages",
       highlights: ["Home Sample Collection", "Digital Report", "Affordable Rate", "Fast Turnaround"],
     },
+    packageComparison: {
+      type: "option",
+      title: "Single Blood Test vs. Full Body Checkup Package",
+      subtitle: "Should you book just an individual blood test or upgrade to a complete health checkup package?",
+      featuredPackageSlug: "bhangal-basic-profile-plus",
+      optionA: {
+        title: "Just Single Blood Test",
+        highlights: [
+          "Targeted screening for specific blood parameters",
+          "Free Doorstep Home Sample Collection",
+          "Does not cover complete organ systems (Liver, Kidney, Thyroid, Diabetes)",
+        ],
+      },
+      optionB: {
+        badge: "BEST VALUE OVERALL",
+        subtitle: "RECOMMENDED OPTION B",
+        title: "Bhangal Basic Profile Plus",
+        highlights: [
+          "Includes Blood Test + 55 Health Parameters",
+          "Evaluates Diabetes, Thyroid, Liver, Kidney, Lipid & Blood Count",
+          "Free Doorstep Home Sample Collection",
+          "Save over 50% compared to booking single tests separately",
+        ],
+      },
+    },
   },
   {
   slug: "ecg-test-price-garhshankar",
@@ -266,6 +291,31 @@ export const prices = [
     locationUrl: "/locations/ecg-test-in-garhshankar",
     packageUrl: "/packages",
     highlights: ["Home ECG Collection", "Digital Report", "Affordable Rate", "Fast Turnaround"],
+  },
+  packageComparison: {
+    type: "option",
+    title: "Single ECG Test vs. Cardiac & Full Body Package",
+    subtitle: "Should you book just a 12-Lead ECG or upgrade to a complete health checkup package with cardiac screening?",
+    featuredPackageSlug: "bhangal-basic-profile-plus",
+    optionA: {
+      title: "Just 12-Lead ECG Test",
+      highlights: [
+        "Calibrated 12-Lead ECG cardiac rhythm recording",
+        "Fast digital report delivery",
+        "Does not include blood health, lipid profile, or organ screening",
+      ],
+    },
+    optionB: {
+      badge: "BEST VALUE OVERALL",
+      subtitle: "RECOMMENDED OPTION B",
+      title: "Bhangal Basic Profile Plus",
+      highlights: [
+        "Comprehensive organ, blood & cholesterol screening",
+        "Evaluates Diabetes, Thyroid, Liver, Kidney & Blood Count",
+        "Free Doorstep Home Sample Collection",
+        "Complete cardiovascular risk prevention",
+      ],
+    },
   },
 },
 {
@@ -406,6 +456,31 @@ export const prices = [
     locationUrl: "/locations/cbc-test-in-garhshankar",
     packageUrl: "/packages",
     highlights: ["Home Sample Collection", "Digital Report", "Affordable Rate", "Fast Turnaround"],
+  },
+  packageComparison: {
+    type: "option",
+    title: "Single CBC Test vs. Full Body Package",
+    subtitle: "Should you book just the Complete Blood Count (CBC) or upgrade to a complete health checkup panel?",
+    featuredPackageSlug: "bhangal-basic-profile-plus",
+    optionA: {
+      title: "Just Complete Blood Count (CBC)",
+      highlights: [
+        "Detailed 24-parameter blood count screening",
+        "Free Doorstep Home Sample Collection",
+        "Does not cover organ functions (Liver, Kidney, Thyroid, Diabetes)",
+      ],
+    },
+    optionB: {
+      badge: "BEST VALUE OVERALL",
+      subtitle: "RECOMMENDED OPTION B",
+      title: "Bhangal Basic Profile Plus",
+      highlights: [
+        "Includes Complete CBC + 55 Total Diagnostic Parameters",
+        "Comprehensive Liver, Kidney, Thyroid, Diabetes & Lipid screening",
+        "Free Doorstep Home Sample Collection",
+        "Save over 50% compared to booking individual tests",
+      ],
+    },
   },
 },
  {
@@ -575,7 +650,187 @@ export const prices = [
       "Fast Turnaround",
     ],
   },
-}
+  packageComparison: {
+    type: "option",
+    title: "Blood Sugar Test vs. Diabetic & Full Body Package",
+    subtitle: "Should you book just a Blood Sugar or HbA1c test or upgrade to a comprehensive diabetic health panel?",
+    featuredPackageSlug: "bhangal-diabetic-profile",
+    optionA: {
+      title: "Just Blood Sugar / HbA1c",
+      highlights: [
+        "Targeted blood sugar & HbA1c glucose screening",
+        "Free Doorstep Home Sample Collection",
+        "Does not cover cholesterol, kidney, or liver complications",
+      ],
+    },
+    optionB: {
+      badge: "BEST VALUE FOR DIABETICS",
+      subtitle: "RECOMMENDED OPTION B",
+      title: "Bhangal Diabetic Profile",
+      highlights: [
+        "Includes HbA1c + 67 Total Diagnostic Parameters",
+        "Complete Kidney, Liver, Lipid Profile & Blood Count evaluation",
+        "Free Doorstep Home Sample Collection",
+        "Comprehensive screening for diabetic organ health",
+      ],
+    },
+  },
+},
+{
+  slug: "full-body-checkup-price-garhshankar",
+  seo: {
+    title: "Full Body Checkup Price in Garhshankar | From ₹800",
+    // 53 chars
+    description:
+      "Compare full body checkup prices in Garhshankar — packages from ₹800 to ₹3500, with home sample collection and fast digital reports.",
+    // 141 chars
+    keywords: [
+      "full body checkup price garhshankar",
+      "full body checkup cost garhshankar",
+      "full body checkup package garhshankar",
+      "master health checkup price garhshankar",
+      "cheap full body checkup near me garhshankar",
+    ],
+  },
+  homeCollection: true,
+  hero: {
+    title: "Full Body Checkup Price in Garhshankar",
+    subtitle:
+      "Compare full body checkup packages in Garhshankar — from basic to advance panels — with home sample collection and same-day digital reports.",
+    image: "/prices/full-body-checkup.webp",
+  },
+  priceCard: {
+    actualPrice: 3200,
+    offerPrice: 2499,
+    offerText: "Advance Package Starting Price",
+    reportTime: "24-48 Hours",
+    fasting: "10-12 Hours Required",
+    sampleType: "Blood & Urine",
+    homeCollection: true,
+    labVisit: true,
+    includes: {
+      title: "Every Booking Includes",
+      items: [
+        "Free Doorstep Home Sample Collection",
+        "Digital Report on WhatsApp & Email",
+        "No Advance Payment Required",
+      ],
+    },
+  },
+  packageComparison: {
+    type: "table",
+    title: "Compare Our Full Body Checkup Packages",
+    subtitle: "Compare all diagnostic checkup packages available in Garhshankar to find the right panel for your health needs.",
+    headers: ["Package", "Price", "Tests Included", "Fasting"],
+    rows: [
+      ["BCL MED Health Pro", "₹800", "5", "10-12 Hrs"],
+      ["BCL LFS Diamed Scan", "₹1800", "7", "10-12 Hrs"],
+      ["Bhangal Basic Profile", "₹1299", "45", "10-12 Hrs"],
+      ["Bhangal Basic Profile Plus", "₹1499", "55", "10-12 Hrs"],
+      ["Bhangal Diabetic Profile", "₹1499", "67", "10-12 Hrs"],
+      ["Bhangal Ayush Profile 3", "₹1499", "60", "10-12 Hrs"],
+      ["Bhangal Advance Full Body Checkup", "₹2499", "70", "10-12 Hrs"],
+      ["BCL 4.0 Female Package", "₹2999", "16", "10-12 Hrs"],
+      ["Bhangal Senior Citizen Profile", "₹2999", "80", "10-12 Hrs"],
+      ["Bhangal Master Health Screen", "₹3500", "79", "10-12 Hrs"],
+    ],
+  },
+  whyGetTest: {
+    title: "Why Get a Full Body Checkup in Garhshankar",
+    description:
+      "A full body checkup helps catch lifestyle disorders and nutritional deficiencies early, supporting timely medical decisions for you and your family.",
+    reasons: [
+      {
+        title: "Screens Multiple Organ Systems at Once",
+        description: "Covers diabetes, blood health, liver, kidney, thyroid, and vitamin levels in a single visit.",
+      },
+      {
+        title: "Catches Silent Conditions Early",
+        description: "Many risk factors like high cholesterol or thyroid imbalance show no symptoms until later stages.",
+      },
+      {
+        title: "Convenient & Affordable",
+        description: "Home sample collection and transparent pricing make annual screening accessible for every family.",
+      },
+    ],
+  },
+  faqs: [
+    {
+      question: "How much does a full body checkup cost in Garhshankar?",
+      answer:
+        "Our full body checkup packages range from ₹800 to ₹3500 depending on scope. The Advance Full Body Checkup, covering 70 parameters, is priced at ₹2499 (down from ₹3200).",
+    },
+    {
+      question: "What is the cheapest full body checkup available?",
+      answer:
+        "The BCL MED Health Pro Package, covering 5 core tests (CBC, sugar, liver, kidney, lipid profile), is our most affordable option at ₹800.",
+    },
+    {
+      question: "What is included in the full body checkup price?",
+      answer:
+        "The price includes all listed lab tests, home sample collection, and a digital report delivered on WhatsApp and Email within 24-48 hours.",
+    },
+    {
+      question: "Is home sample collection available for full body checkups in Garhshankar?",
+      answer:
+        "Yes, our trained phlebotomists provide doorstep sample collection for full body checkup packages across Garhshankar and nearby villages.",
+    },
+    {
+      question: "Which full body checkup package is the best value?",
+      answer:
+        "It depends on your needs — the Advance Full Body Checkup offers the most tests per rupee for comprehensive annual screening at ₹2499. If you only need core screening, the Bhangal Basic Profile at ₹1299 covers CBC, sugar, lipid, liver, kidney, and thyroid.",
+    },
+    {
+      question: "Do I need to fast before a full body checkup?",
+      answer:
+        "Yes, a fasting period of 10-12 hours is recommended for all our full body checkup packages since they include fasting glucose and lipid profile.",
+    },
+  ],
+  relatedTests: ["cbc-test", "blood-sugar-test", "lipid-profile", "kidney-function-test"],
+  interlinks: {
+    badge: "Included Services & Local Availability",
+    heading: "What's Included & Nearby Availability",
+    description:
+      "Checking full body checkup prices? Explore what's included and verify local availability near you in Garhshankar.",
+    items: [
+      {
+        title: "What's Included in This Package?",
+        subtitle: "Full Body Checkup Details",
+        description: "See the complete test breakdown, preparation guidelines, and reporting process.",
+        href: "/packages/bhangal-advance-full-body-checkup",
+        icon: "FiActivity",
+        badge: "Package Details",
+        badgeColor: "bg-teal-100 text-teal-800 border-teal-200",
+        btnText: "View Full Package",
+        tracking: "price-interlink-service",
+      },
+      {
+        title: "Available Near You in Garhshankar",
+        subtitle: "Location & Home Collection",
+        description: "Check our diagnostic centre, home collection coverage, and operating hours in Garhshankar.",
+        href: "/locations/full-body-checkup-in-garhshankar",
+        icon: "FiMapPin",
+        badge: "Garhshankar Location",
+        badgeColor: "bg-sky-100 text-sky-800 border-sky-200",
+        btnText: "Visit Garhshankar Hub",
+        tracking: "price-interlink-location",
+      },
+    ],
+  },
+  cta: {
+    title: "Book Your Full Body Checkup in Garhshankar Today",
+    description: "Affordable pricing, fast digital reports, and doorstep home sample collection across Garhshankar.",
+    offerPrice: 2499,
+    actualPrice: 3200,
+    buttonText: "Book a Test",
+    testName: "Full Body Checkup",
+    blogUrl: "/blogs/full-body-checkup-full-guide",
+    serviceUrl: "/packages/bhangal-advance-full-body-checkup",
+    locationUrl: "/locations/full-body-checkup-in-garhshankar",
+    packageUrl: "/packages",
+    highlights: ["Home Sample Collection", "Digital Report", "Affordable Rate", "Fast Turnaround"],
+  },
+},
 
 
 ];

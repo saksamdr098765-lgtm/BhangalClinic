@@ -1399,7 +1399,7 @@ seo: {
  
   coverImage: "/blogs/blood-sugar-hba1c-test-full-guide/cover.webp",
  
-  featured: true,
+  featured: false,
  
   relatedPackages: [
   "bhangal-basic-profile-plus",
@@ -1839,6 +1839,320 @@ seo: {
       "Experienced Phlebotomists",
     ],
   },
-}
+},
+{
+  id: 5,
+  slug: "full-body-checkup-full-guide",
+  title: "Full Body Checkup: Tests Included, Price & How Often to Get One (Complete Guide)",
+  excerpt:
+    "A complete guide to full body checkups — which tests are included, how much they cost, how often you need one, and how to choose between basic and advance packages.",
+  category: "Health Tips",
+  author: {
+    name: "Bhangal Clinical Laboratories & ECG Center",
+    image: "/team/author.jpg",
+  },
+  publishedAt: "September 20, 2026",
+  readingTime: "10 min read",
+  coverImage: "/blogs/full-body-checkup-full-guide/cover.webp",
+  featured: true,
+
+  relatedPackages: [
+    "bhangal-advance-full-body-checkup",
+    "bhangal-basic-profile",
+    "bhangal-basic-profile-plus",
+    "bhangal-master-health-screen",
+    "bhangal-senior-citizen-profile",
+    "bcl-female-4-package",
+    "bhangal-diabetic-profile",
+  ],
+  relatedTests: [
+    "cbc-test",
+    "blood-sugar-test",
+    "lipid-profile",
+    "kidney-function-test",
+    "liver-function-test",
+    "thyroid-profile-test",
+    "urine-examination",
+  ],
+
+  seo: {
+    title: "Full Body Checkup: Tests Included, Price & Guide",
+    // 51 chars
+    description:
+      "Full body checkup guide — which tests are included, price range, fasting rules, and how often to get one. Compare packages in Garhshankar.",
+    // 143 chars
+    keywords: [
+      "full body checkup",
+      "full body checkup package",
+      "full body checkup price",
+      "full body checkup cost",
+      "master health checkup",
+      "full body test price",
+      "full body checkup for men",
+      "full body checkup for women",
+      "full body checkup includes which tests",
+      "Bhangal Clinical Laboratories",
+    ],
+  },
+
+  quickInfo: [
+    { label: "You Will Learn", value: "What's in a Full Body Checkup", icon: "activity" },
+    { label: "Reading Time", value: "10 Minutes", icon: "clock" },
+    { label: "Suitable For", value: "Adults 18+", icon: "users" },
+    { label: "Symptoms", value: "Routine Screening, Fatigue, Lifestyle Risk", icon: "heart" },
+    { label: "Recommended Test", value: "Advance Full Body Checkup", icon: "test" },
+    { label: "Fasting", value: "10-12 Hours Required", icon: "file" },
+    { label: "Report Time", value: "24-48 Hours", icon: "clock" },
+    { label: "Price", value: "₹2499", icon: "price" },
+    { label: "Home Collection", value: "Available", icon: "home" },
+  ],
+
+  tags: [
+    "Full Body Checkup",
+    "Health Packages",
+    "Preventive Healthcare",
+    "Blood Test",
+    "Master Health Checkup",
+  ],
+
+  content: [
+    {
+      type: "paragraph",
+      text: "A full body checkup is one of the most requested packages at our Garhshankar centre — but patients often book it without knowing exactly which tests are inside, whether they need the basic or advance version, or how often they should repeat it. This guide breaks down what's typically included, how the packages differ, pricing, and how often you actually need one.",
+    },
+   
+    {
+      type: "heading",
+      level: 2,
+      text: "What Is a Full Body Checkup?",
+    },
+    {
+      type: "paragraph",
+      text: "A full body checkup is a bundled health package that screens multiple organ systems in one visit — usually blood count, diabetes, cholesterol, liver, kidney, thyroid, and sometimes vitamins and urine — rather than booking each test separately. It's designed to flag early, often symptomless, health risks like diabetes, thyroid disorders, or high cholesterol before they become serious.",
+    },
+    {
+      type: "tip",
+      title: "Good to Know",
+      text: "\"Full body checkup\" and \"master health checkup\" are usually the same type of package — the name just varies by lab. Always check the test list, not just the name, before comparing prices.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "What Tests Are Typically Included?",
+    },
+    {
+      type: "table",
+      title: "Common Full Body Checkup Components",
+      headers: ["Category", "Tests Usually Included"],
+      rows: [
+        ["Blood Health", "CBC (Complete Blood Picture)"],
+        ["Diabetes Screening", "Fasting/Random Glucose, HbA1c"],
+        ["Heart Health", "Lipid Profile (Cholesterol, Triglycerides)"],
+        ["Liver Function", "Liver Function Profile"],
+        ["Kidney Function", "Kidney Basic Profile"],
+        ["Thyroid Health", "T3, T4, TSH"],
+        ["Vitamins & Minerals", "Vitamin D, Vitamin B12, Calcium, Iron Profile"],
+        ["Other", "Complete Urine Examination, RA Factor (in advance packages)"],
+      ],
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Basic vs Advance Full Body Checkup",
+    },
+    {
+      type: "paragraph",
+      text: "Packages generally scale in two ways — how many organ systems they cover, and how detailed each panel is. Our Basic Profile covers the core panel (CBC, sugar, lipid, liver, kidney, thyroid, calcium, urine), while the Advance Full Body Checkup adds Vitamin D, Vitamin B12, iron studies, and RA Factor for joint health.",
+    },
+    {
+      type: "table",
+      title: "Basic vs Advance Comparison",
+      headers: ["Feature", "Bhangal Basic Profile", "Bhangal Advance Full Body Checkup"],
+      rows: [
+        ["Price", "₹1299", "₹2499"],
+        ["Tests Included", "45", "70"],
+        ["CBC", "✅", "✅"],
+        ["Blood Sugar", "✅", "✅"],
+        ["Lipid Profile", "✅", "✅"],
+        ["LFT & Kidney Profile", "✅", "✅"],
+        ["Thyroid Profile", "✅", "✅"],
+        ["HbA1c", "❌", "✅"],
+        ["Vitamin D & B12", "❌", "✅"],
+        ["Iron Profile", "❌", "✅"],
+        ["RA Factor", "❌", "✅"],
+        ["Best For", "First-time / budget checkup", "Annual comprehensive screening"],
+      ],
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Who Should Get a Full Body Checkup, and How Often?",
+    },
+    {
+      type: "table",
+      title: "Recommended Frequency by Age & Risk",
+      headers: ["Group", "Recommended Frequency"],
+      rows: [
+        ["Adults 18-30, no risk factors", "Every 2 years"],
+        ["Adults 30-50", "Once a year"],
+        ["Adults 50+ or senior citizens", "Once a year, or every 6 months if managing a condition"],
+        ["Diabetic / hypertensive patients", "Every 3-6 months for relevant panels"],
+        ["Pregnant women", "As advised by gynecologist"],
+      ],
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Full Body Checkup for Men vs Women",
+    },
+    {
+      type: "paragraph",
+      text: "The core panel (CBC, sugar, lipid, liver, kidney, thyroid) is the same for both. Our BCL 4.0 Female Package adds hormone testing (Testosterone), RA Factor, and a breast cancer marker (CA 15.3) alongside the core panel — built specifically for women's preventive screening. Ask our team which package fits your profile.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Do You Need to Fast Before a Full Body Checkup?",
+    },
+    {
+      type: "paragraph",
+      text: "Yes — a fasting period of 10-12 hours is recommended before any full body checkup, since these packages include fasting glucose and lipid profile. Drink plain water during the fasting window unless advised otherwise. One blood draw after fasting covers the entire panel.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "How Much Does a Full Body Checkup Cost?",
+    },
+    {
+      type: "paragraph",
+      text: "Pricing depends on how many tests are bundled. Our packages range from ₹800 for a basic 5-test panel up to ₹3500 for our 79-test Master Health Screen. Our Advance Full Body Checkup, covering 70 tests, is priced at ₹2499. Check our full price comparison to find the right fit for your budget and screening needs.",
+    },
+    {
+      type: "interlinking",
+      title: "Check Prices & Packages",
+      description: "Ready to compare packages or book? View exact pricing and package details below.",
+      items: [
+        {
+          title: "Full Body Checkup Price in Garhshankar",
+          description: "Compare full body checkup packages and pricing.",
+          href: "/prices/full-body-checkup-price-garhshankar",
+        },
+        {
+          title: "Bhangal Advance Full Body Checkup",
+          description: "70 tests covering diabetes, blood, liver, kidney, thyroid & more.",
+          href: "/packages/bhangal-advance-full-body-checkup",
+        },
+      ],
+    },
+    {
+      type: "success",
+      title: "Key Takeaway",
+      text: "A full body checkup is the most efficient way to screen major organ systems in one visit. Match the package to your age and risk profile rather than picking the cheapest or largest option by default, and repeat it on a schedule that fits your health needs.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Book Your Full Body Checkup",
+    },
+    {
+      type: "interlinking",
+      title: "Areas We Serve",
+      description: "We provide home sample collection and diagnostic services across the following locations.",
+      items: [
+        {
+          title: "Garhshankar",
+          description: "Full body checkup with home sample collection.",
+          href: "/locations/full-body-checkup-in-garhshankar",
+        },
+        { title: "Hoshiarpur", description: "Diagnostic laboratory services." },
+        { title: "Nawanshahr", description: "Health checkups and pathology tests." },
+      ],
+    },
+    {
+      type: "references",
+      items: [
+        {
+          title: "Routine Health Checkups",
+          publisher: "MedlinePlus",
+          url: "https://medlineplus.gov/labtests/",
+        },
+        {
+          title: "Preventive Health Screening",
+          publisher: "Mayo Clinic",
+          url: "https://www.mayoclinic.org/",
+        },
+      ],
+    },
+  ],
+
+  faq: [
+    {
+      question: "What is done in a full body checkup?",
+      answer:
+        "A full body checkup usually combines blood tests covering CBC, blood sugar, cholesterol, liver function, kidney function, and often thyroid and vitamin levels — all from a single blood draw, sometimes alongside a urine test.",
+    },
+    {
+      question: "What are the 5 main tests for a full body checkup?",
+      answer:
+        "The five core tests are CBC, Blood Sugar, Lipid Profile, Liver Function Test (LFT), and Kidney Function Test (KFT). Our basic packages start from these core panels.",
+    },
+    {
+      question: "Is a full body checkup necessary?",
+      answer:
+        "A full body checkup isn't mandatory, but it's a useful preventive tool since many conditions like diabetes, thyroid disorders, and high cholesterol often show no symptoms in early stages. Doctors generally recommend it as part of routine annual screening, especially after age 30.",
+    },
+    {
+      question: "At what age is a full body checkup best?",
+      answer:
+        "There's no single ideal age, but doctors commonly recommend starting annual full body checkups from age 30, or every 2 years for younger adults with no risk factors. People with diabetes, obesity, or a family history of chronic disease may need earlier and more frequent screening.",
+    },
+    {
+      question: "Which test is best for a full body checkup?",
+      answer:
+        "There's no single 'best' test — a full body checkup is a bundle of tests, not one test. The right package depends on your age, symptoms, and risk factors, so it's worth discussing with your doctor or lab which panel fits your needs.",
+    },
+    {
+      question: "What is the average cost of a full body checkup in India?",
+      answer:
+        "Full body checkup prices vary widely by city, lab, and number of tests included. At our Garhshankar lab, packages range from ₹800 to ₹3500 depending on scope, with our Advance Full Body Checkup at ₹2499 for 70 tests.",
+    },
+    {
+      question: "How many tests are in a full body checkup?",
+      answer:
+        "This varies by package — our basic panels cover around 45 parameters, while our Advance and Master Health packages cover 70-79 parameters across blood, liver, kidney, thyroid, and vitamin screening.",
+    },
+    {
+      question: "Is fasting required for a full body checkup?",
+      answer:
+        "Yes, a fasting period of 10-12 hours is recommended for accurate glucose and lipid profile results, which are included in nearly all full body checkup packages.",
+    },
+  ],
+
+  cta: {
+    title: "Book Your Full Body Checkup Today",
+    description:
+      "Looking for a reliable full body checkup in Garhshankar? Book with home sample collection, affordable pricing, and fast digital reports.",
+    serviceName: "Full Body Checkup",
+    serviceLink: "/packages/bhangal-advance-full-body-checkup",
+    bookingLink: `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20want%20to%20book%20a%20Full%20Body%20Checkup.%20Please%20share%20the%20available%20slots.`,
+    whatsappLink: `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20have%20a%20question%20about%20the%20Full%20Body%20Checkup.`,
+    features: [
+      "45-79 Tests Available Across Packages",
+      "Home Sample Collection",
+      "Fast Digital Reports",
+      "Affordable Pricing",
+      "Experienced Phlebotomists",
+    ],
+  },
+},
+
+
+
+
+
+
+
+
+
 
 ];

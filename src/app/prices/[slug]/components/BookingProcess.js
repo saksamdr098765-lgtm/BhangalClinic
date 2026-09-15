@@ -4,7 +4,6 @@ import {
   FiActivity,
   FiFileText,
 } from "react-icons/fi";
-
 const icons = {
   calendar: FiCalendar,
   home: FiHome,

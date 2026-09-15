@@ -1176,7 +1176,234 @@ homeCollection:false,
   ],
  
   hours: "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
-}
+},
+
+{
+  id: 5,
+  slug: "full-body-checkup-in-garhshankar",
+  city: "Garhshankar",
+  homeCollection: true,
+  state: "Punjab",
+  title: "Full Body Checkup in Garhshankar",
+  shortDescription:
+    "Book a full body checkup in Garhshankar with Bhangal Clinical Laboratories & ECG Center. Home sample collection, fast reports, and affordable packages from ₹800 to ₹3500.",
+
+  seo: {
+    title: "Full Body Checkup in Garhshankar | Home Collection",
+    // 53 chars
+    description:
+      "Get a full body checkup in Garhshankar with home sample collection, same-day reports, and affordable pricing. Basic to advance packages available.",
+    // 152 chars
+    keywords: [
+      "Full Body Checkup in Garhshankar",
+      "Full Body Checkup Garhshankar",
+      "Master Health Checkup Garhshankar",
+      "Full Body Checkup Near Me Garhshankar",
+      "Full Body Checkup Home Collection Garhshankar",
+      "Full Body Checkup Package Garhshankar",
+    ],
+  },
+
+  overview: {
+    heading: "Full Body Checkup in Garhshankar",
+    paragraphs: [
+      "Looking for a reliable full body checkup in Garhshankar? Bhangal Clinical Laboratories & ECG Center offers preventive health packages covering blood health, diabetes, liver, kidney, thyroid, and vitamin screening — all from a single visit or home sample collection.",
+      "Choose from packages starting at ₹800 for core screening, up to our 79-test Master Health Screen for comprehensive annual checkups. Visit our lab directly, or book a home sample collection and have a trained phlebotomist collect your sample from your doorstep.",
+    ],
+    highlights: [
+      "Packages from ₹800 to ₹3500",
+      "Home Sample Collection",
+      "24-48 Hour Reports",
+      "Affordable, Transparent Pricing",
+      "Experienced Lab Technicians",
+    ],
+  },
+
+  popularTests: {
+    heading: "Tests Included in Full Body Checkups",
+    test: ["cbc-test", "blood-sugar-test", "lipid-profile", "kidney-function-test", "liver-function-test"],
+  },
+
+  packages: [
+    "bhangal-advance-full-body-checkup",
+    "bhangal-basic-profile",
+    "bhangal-basic-profile-plus",
+    "bhangal-master-health-screen",
+    "bhangal-senior-citizen-profile",
+    "bcl-female-4-package",
+    "bcl-med-health-pro-package",
+  ],
+
+  process: {
+    heading: "How to Get a Full Body Checkup in Garhshankar",
+    steps: [
+      {
+        icon: "search",
+        title: "Choose Your Package",
+        description: "Select from our basic to advance full body checkup packages, or ask our team for guidance.",
+      },
+      {
+        icon: "calendar",
+        title: "Book an Appointment",
+        description: "Schedule online or by phone — visit our lab or request home sample collection.",
+      },
+      {
+        icon: "lab",
+        title: "Sample Collection",
+        description: "Your sample is collected at our lab or your home by a trained phlebotomist.",
+      },
+      {
+        icon: "report",
+        title: "Get Your Report",
+        description: "Receive your full body checkup report digitally within 24-48 hours.",
+      },
+    ],
+  },
+
+  whyChoose: {
+    features: [
+      {
+        icon: "activity",
+        title: "Comprehensive Screening",
+        description: "Covers blood health, diabetes, liver, kidney, thyroid, and vitamin levels in one package.",
+      },
+      {
+        icon: "award",
+        title: "Experienced Lab Team",
+        description: "Qualified professionals follow strict standards from collection to reporting.",
+      },
+      {
+        icon: "shield",
+        title: "Quality Assurance",
+        description: "Every sample is processed with rigorous quality control checks.",
+      },
+      {
+        icon: "clock",
+        title: "Fast Reports",
+        description: "Full body checkup reports are ready within 24-48 hours.",
+      },
+      {
+        icon: "home",
+        title: "Home Collection Available",
+        description: "Skip the visit — get your sample collected at your doorstep in Garhshankar.",
+      },
+      {
+        icon: "check",
+        title: "Affordable Pricing",
+        description: "Transparent pricing across packages from ₹800 to ₹3500.",
+      },
+    ],
+  },
+
+  areas: [
+    "Garhshankar City", "Civil Hospital Area", "Railway Road", "Main Bazaar",
+    "Nawanshahr Road", "Hoshiarpur Road", "Banga Road", "Mahilpur Road",
+    "Saila Khurd", "Binewal", "Denowal Kalan", "Denowal Khurd", "Chak Guru",
+    "Pojewal", "Pandori", "Purhiran", "Chak Singha", "Bharta", "Kukar Majara",
+    "Nearby Villages of Garhshankar",
+  ],
+
+  hubLinks: {
+    heading: "Everything You Need to Know About Full Body Checkups in Garhshankar",
+    badge: "Garhshankar Central Diagnostics Hub",
+    description:
+      "Whether you want to understand which tests are included, compare packages, or check pricing — explore our central guides below.",
+    items: [
+      {
+        title: "What Is a Full Body Checkup?",
+        subtitle: "Educational Guide & Test Breakdown",
+        description: "Understand which tests are included, basic vs advance packages, and how often to get one.",
+        href: "/blogs/full-body-checkup-full-guide",
+        icon: "FiBookOpen",
+        badge: "Context & Guide",
+        badgeColor: "bg-blue-100 text-blue-700 border-blue-200",
+        btnText: "Read Full Guide",
+        tag: "Educational",
+      },
+      {
+        title: "Full Body Checkup Package Details",
+        subtitle: "What's Included",
+        description: "Explore our Advance Full Body Checkup — 70 tests, home collection, and fast reports.",
+        href: "/packages/bhangal-advance-full-body-checkup",
+        icon: "FiActivity",
+        badge: "Package Overview",
+        badgeColor: "bg-teal-100 text-teal-700 border-teal-200",
+        btnText: "Explore Package",
+        tag: "Package",
+      },
+      {
+        title: "Full Body Checkup Price in Garhshankar",
+        subtitle: "Transparent Rates & Package Discounts",
+        description: "Check transparent pricing starting from ₹800 with free doorstep home collection.",
+        href: "/prices/full-body-checkup-price-garhshankar",
+        icon: "FiTag",
+        badge: "Price & Cost",
+        badgeColor: "bg-amber-100 text-amber-700 border-amber-200",
+        btnText: "View Price List",
+        tag: "Cost & Rates",
+      },
+    ],
+  },
+
+  relatedLinks: {
+    heading: "Explore Key Full Body Checkup Information",
+    links: [
+      {
+        label: "What Is a Full Body Checkup?",
+        description: "Guide to included tests, basic vs advance packages, and screening frequency.",
+        slug: "/blogs/full-body-checkup-full-guide",
+      },
+      {
+        label: "Full Body Checkup Package Details",
+        description: "See what's included in our Advance Full Body Checkup.",
+        slug: "/packages/bhangal-advance-full-body-checkup",
+      },
+      {
+        label: "Full Body Checkup Price in Garhshankar",
+        description: "Check transparent pricing and home sample collection availability.",
+        slug: "/prices/full-body-checkup-price-garhshankar",
+      },
+    ],
+  },
+
+  blogs: ["full-body-checkup-full-guide", "list-of-blood-tests", "cbc-test-full-guide"],
+  services: ["blood-tests", "ecg-test"],
+
+  faq: [
+    {
+      question: "Where can I get a full body checkup in Garhshankar?",
+      answer:
+        "Bhangal Clinical Laboratories & ECG Center offers full body checkup packages in Garhshankar, either at our lab or through home sample collection.",
+    },
+    {
+      question: "Is home sample collection available for full body checkups in Garhshankar?",
+      answer:
+        "Yes, our trained phlebotomists collect samples for full body checkup packages from your home anywhere in Garhshankar and nearby villages.",
+    },
+    {
+      question: "How much does a full body checkup cost in Garhshankar?",
+      answer:
+        "Our full body checkup packages range from ₹800 to ₹3500. The Advance Full Body Checkup is priced at ₹2499 for 70 tests — contact us for the full package list.",
+    },
+    {
+      question: "How soon will I get my full body checkup report?",
+      answer:
+        "Full body checkup reports are typically ready within 24-48 hours of sample collection.",
+    },
+    {
+      question: "Do I need to fast before a full body checkup in Garhshankar?",
+      answer:
+        "Yes, a fasting period of 10-12 hours is recommended since our packages include fasting glucose and lipid profile.",
+    },
+    {
+      question: "Which full body checkup package should I choose?",
+      answer:
+        "It depends on your age and health goals — the Bhangal Basic Profile covers core screening (CBC, sugar, lipid, liver, kidney, thyroid) at ₹1299, while the Advance package adds vitamins and iron studies at ₹2499. Our team can help you choose based on your needs.",
+    },
+  ],
+
+  hours: "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
+},
 ];
 
 export function getLocation(slug) {

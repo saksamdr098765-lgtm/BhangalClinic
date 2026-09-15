@@ -1,44 +1,68 @@
 import TrackedWhatsappLink from "@/app/components/TrackedWhatsappLink";
 import TrackingLink from "@/app/components/TrackingLink";
-import { tests as allTests } from "@/app/data/tests";
-import { FiActivity, FiArrowRight } from "react-icons/fi";
+import { tests as allTests, getTestPrice } from "@/app/data/tests";
+import { prices as allPrices } from "@/app/data/prices";
+import { FiActivity } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function TestComparison({ testTitle, relatedTests, priceData, slug }) {
-  // Extract raw list of related tests from props or priceData
-  const rawList = relatedTests || priceData?.relatedTests || [];
+  // Extract custom testComparison configuration if provided in priceData
+  const compConfig = priceData?.testComparison;
+  const rawList = compConfig?.items || relatedTests || priceData?.relatedTests || [];
+
+  const badgeText = compConfig?.badge || "Related Tests";
+  const sectionTitle = compConfig?.title || `Compare ${testTitle} With Other Related Tests`;
+  const sectionSubtitle = compConfig?.subtitle || "Not sure which diagnostic test to choose? Explore and compare rates below.";
 
   // Normalize items whether they are strings (slugs) or objects
   let list = rawList
     .map((item) => {
       if (typeof item === "string") {
-        const found = allTests.find(
+        // 1. Look up in tests.js first
+        const foundTest = allTests.find(
           (t) =>
             t.slug === item ||
             t.slug === item.replace(/-test$/, "") ||
             t.slug === item.replace(/-price-.*$/, "") ||
-            t.name.toLowerCase().replace(/[^a-z0-9]+/g, "-") === item
+            t.name?.toLowerCase().replace(/[^a-z0-9]+/g, "-") === item
         );
 
-        if (found) {
+        if (foundTest) {
+          const resolvedPrice = foundTest.price || getTestPrice(foundTest.slug);
           return {
-            name: found.name,
-            slug: found.slug,
-            description: found.description || "Comprehensive pathology screening.",
-            price: found.price || 399,
+            name: foundTest.name,
+            slug: foundTest.slug,
+            description: foundTest.description || "Comprehensive pathology screening.",
+            price: resolvedPrice || 300,
           };
         }
 
-        // Fallback formatted title if not found in tests.js
+        // 2. Look up in prices.js
+        const foundPrice = allPrices?.find(
+          (p) => p.slug === item || p.slug === `${item}-price-garhshankar`
+        );
+
+        if (foundPrice) {
+          return {
+            name: foundPrice.hero?.title || foundPrice.seo?.title || item,
+            slug: foundPrice.slug,
+            description: foundPrice.hero?.subtitle || "Pathology diagnostic investigation.",
+            price: foundPrice.priceCard?.offerPrice || 300,
+          };
+        }
+
+        // 3. Fallback formatted item
         const nameFormatted = item
           .replace(/-/g, " ")
           .replace(/\b\w/g, (l) => l.toUpperCase());
+
+        const fallbackPrice = getTestPrice(item);
 
         return {
           name: nameFormatted,
           slug: item,
           description: "Pathology diagnostic investigation.",
-          price: 399,
+          price: fallbackPrice || 300,
         };
       }
 
@@ -55,7 +79,7 @@ export default function TestComparison({ testTitle, relatedTests, priceData, slu
         name: t.name,
         slug: t.slug,
         description: t.description || "Comprehensive pathology screening.",
-        price: t.price || 399,
+        price: t.price || getTestPrice(t.slug) || 300,
       }));
   }
 
@@ -68,15 +92,15 @@ export default function TestComparison({ testTitle, relatedTests, priceData, slu
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-700">
             <FiActivity className="text-sky-600" />
-            Related Tests
+            {badgeText}
           </span>
 
           <h2 className="mt-3 text-2xl font-black tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
-            Compare {testTitle} With Other Related Tests
+            {sectionTitle}
           </h2>
 
           <p className="mt-2 text-xs leading-5 text-slate-600 sm:text-base sm:leading-7">
-            Not sure which diagnostic test to choose? Explore and compare rates below.
+            {sectionSubtitle}
           </p>
         </div>
 
@@ -106,16 +130,14 @@ export default function TestComparison({ testTitle, relatedTests, priceData, slu
                   </p>
                 </div>
 
-                <div className="mt-4 flex items-center gap-2 pt-3 border-t border-slate-100">
-               
-
+                <div className="mt-4 flex items-center justify-end gap-2 pt-3 border-t border-slate-100">
                   <TrackedWhatsappLink
                     text={whatsappText}
                     location={`test-comparison-whatsapp-${testSlug}-${slug}`}
                     className="inline-flex items-center justify-center gap-1 rounded-lg bg-green-600 px-3 py-1.5 text-xs font-bold text-white transition hover:bg-green-700"
                   >
                     <FaWhatsapp className="text-xs" />
-                    Book
+                    Book (₹{t.price})
                   </TrackedWhatsappLink>
                 </div>
               </div>
@@ -126,3 +148,4 @@ export default function TestComparison({ testTitle, relatedTests, priceData, slu
     </section>
   );
 }
+

@@ -29,14 +29,14 @@ export default function FeaturedBlog({ blog }) {
       >
         <div className="grid lg:grid-cols-2">
           {/* Image */}
-          <div className="relative aspect-[16/9] overflow-hidden lg:aspect-auto">
+          <div className="relative aspect-[16/9] min-h-[220px] overflow-hidden bg-slate-50 sm:aspect-[16/10] lg:aspect-auto lg:min-h-[340px]">
             <Image
               src={blog.coverImage}
               alt={blog.title}
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              className="object-contain p-2 transition-transform duration-500 group-hover:scale-105"
             />
 
             <div className="absolute left-3 top-3 sm:left-4 sm:top-4">

@@ -36,13 +36,14 @@ export default function RelatedPosts({ blogs = [] }) {
             className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xs transition-all duration-300 hover:-translate-y-1 hover:border-sky-300 hover:shadow-md"
           >
             {/* Image */}
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden bg-slate-50">
               <Image
                 src={blog.coverImage}
                 alt={blog.title}
                 width={700}
                 height={450}
-                className="aspect-[16/9] h-auto w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="aspect-[16/9] h-auto w-full object-contain p-1 transition-transform duration-500 group-hover:scale-105"
               />
 
               <span className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-0.5 text-[11px] font-semibold text-sky-700 backdrop-blur">

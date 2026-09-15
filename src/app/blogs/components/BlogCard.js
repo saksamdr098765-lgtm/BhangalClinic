@@ -14,7 +14,7 @@ export default function BlogCard({ blog }) {
       className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xs transition-all duration-300 hover:-translate-y-1 hover:border-sky-300 hover:shadow-md"
     >
       {/* Cover Image */}
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden bg-slate-50">
         <Image
           src={blog.coverImage}
           alt={blog.title}
@@ -22,7 +22,7 @@ export default function BlogCard({ blog }) {
           height={450}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           loading="lazy"
-          className="aspect-[16/9] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="aspect-[16/9] h-auto w-full object-contain p-1 transition-transform duration-500 group-hover:scale-105"
         />
 
         {/* Category */}

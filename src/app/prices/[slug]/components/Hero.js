@@ -93,15 +93,15 @@ export default function Hero({ hero, priceCard, slug ,price}) {
 
           {/* Right Image */}
           {hero.image && (
-            <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md">
-              <div className="relative aspect-[16/10] w-full sm:aspect-[16/9]">
+            <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-md sm:p-3">
+              <div className="relative aspect-[16/10] w-full bg-slate-50/50 sm:aspect-[16/9] lg:aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
                   src={hero.image}
                   alt={hero.title}
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   priority
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
             </div>

@@ -121,13 +121,14 @@ export default function ServiceHero({ service }) {
           <div className="order-1 lg:order-2">
             <div className="relative mx-auto max-w-sm lg:max-w-none">
               <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-lg sm:rounded-3xl">
-                <div className="relative aspect-[16/10] sm:aspect-[4/3] lg:aspect-[4/5] overflow-hidden rounded-xl sm:rounded-2xl">
+                <div className="relative aspect-[16/10] sm:aspect-[4/3] lg:aspect-[4/5] overflow-hidden rounded-xl bg-slate-50/50 sm:rounded-2xl">
                   <Image
                     src={service.coverImage}
                     alt={service.title}
                     fill
                     priority
-                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 40vw, 500px"
+                    className="object-contain"
                   />
                 </div>
               </div>

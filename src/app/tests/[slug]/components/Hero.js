@@ -109,22 +109,19 @@ export default function Hero({ hero }) {
         </div>
 
         {/* Right */}
-
         <div>
-
-          <div className="overflow-hidden rounded-3xl bg-white shadow-2xl">
-
-            <Image
-              src={hero.image}
-              alt={hero.imageAlt}
-              width={700}
-              height={700}
-              className="h-full w-full object-cover"
-              priority
-            />
-
+          <div className="relative overflow-hidden rounded-3xl bg-white p-2 shadow-2xl border border-slate-200 sm:p-3">
+            <div className="relative aspect-square sm:aspect-[4/3] lg:aspect-square w-full bg-slate-50/50 rounded-2xl overflow-hidden">
+              <Image
+                src={hero.image}
+                alt={hero.imageAlt}
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-contain"
+                priority
+              />
+            </div>
           </div>
-
         </div>
 
       </div>

@@ -46,8 +46,9 @@ export default function BlogHero({ blog }) {
             <Image
               src={SITE_CONFIG.logo}
               alt={blog.author.name}
-              width={52}
-              height={52}
+              width={56}
+              height={56}
+              sizes="56px"
               className="h-12 w-12 rounded-full object-cover ring-2 ring-sky-100 sm:h-14 sm:w-14"
             />
           ) : (
@@ -77,14 +78,15 @@ export default function BlogHero({ blog }) {
       </div>
 
       {/* Cover Image */}
-      <div className="overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200 sm:rounded-3xl">
+      <div className="overflow-hidden rounded-2xl bg-slate-50 shadow-lg ring-1 ring-slate-200 sm:rounded-3xl">
         <Image
           src={blog.coverImage}
           alt={blog.title}
           width={1600}
           height={900}
           priority
-          className="aspect-[16/9] h-auto w-full object-cover transition-transform duration-500 hover:scale-105"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+          className="aspect-[16/9] h-auto w-full object-contain transition-transform duration-500 hover:scale-105"
         />
       </div>
     </section>

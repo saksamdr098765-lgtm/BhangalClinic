@@ -755,7 +755,7 @@ export const tests = [
     description:
       "Check the latest blood sugar test price near you and book your test with convenient home sample collection.",
  
-    price: 99,
+    price: 30,
  
     priceUrl: "/prices/blood-sugar-hba1c-test-price-garhshankar",
   },
@@ -1981,7 +1981,7 @@ export const defaultTheme = {
   glow: "hover:shadow-slate-100",
 };
 
-export const getTestPrice=(slug)=>{
- const test=  tests.find((test)=>test.slug===slug)
- return test.price
-}
+export const getTestPrice = (slug) => {
+  const test = tests.find((t) => t.slug === slug);
+  return test ? test.price : null;
+};
