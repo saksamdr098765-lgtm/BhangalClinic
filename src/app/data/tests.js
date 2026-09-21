@@ -1229,10 +1229,232 @@ export const tests = [
   homeCollection: true,
   popular: true,
   description:
-    "Detects antibodies against Salmonella bacteria to help diagnose typhoid fever.",
+    "Widal test detects antibodies against Salmonella Typhi bacteria in your blood to help diagnose typhoid fever.",
   price: 50,
   reportTime: "24 Hours",
-   status:"draft"
+  status: "published",
+
+  seo: {
+    title: "Widal Test - Price, Normal Range | Book Typhoid Test",
+    // 56 chars
+    description:
+      "Book a Widal test for typhoid diagnosis with home sample collection. Check Widal test price, normal range, and same-day digital reports.",
+    // 139 chars
+    keywords: [
+      "widal test",
+      "widal test price",
+      "widal test near me",
+      "widal test normal range",
+      "widal test positive means",
+      "typhoid test",
+      "s typhi o s typhi h",
+      "widal test 1:80 meaning",
+      "widal test 1:160 meaning",
+      "typhoid test price",
+    ],
+  },
+
+  hero: {
+    badge: "Home Sample Collection Available",
+    title: "Widal Test - Typhoid Fever Screening",
+    description:
+      "Book a Widal Test near you with fast report delivery, professional sample collection, and convenient home collection services. Check Widal test price and book online.",
+    image: "/tests/widal.webp",
+    imageAlt: "Widal Test - Typhoid Fever Antibody Test",
+    reportTime: "24 Hours",
+    homeCollection: "Available",
+    trustPoints: [
+      "Professional Sample Collection",
+      "Digital Reports",
+      "Affordable Widal Test Price",
+      "Quality-Controlled Testing",
+    ],
+    bookButton: "Book Widal Test",
+    bookingUrl: "/prices/widal-test-price-garhshankar",
+    phone: "tel:+918968038602",
+  },
+
+  quickFacts: {
+    sample: "Blood Sample",
+    reportTime: "24 Hours",
+    fasting: "Not Required",
+    homeCollection: "Available",
+    ageGroup: "Adults & Children",
+  },
+
+  whyChooseUs: {
+    title: "Why Choose Our Widal Test Service?",
+    description:
+      "Get a reliable Widal test near you with convenient booking, professional sample collection, and easy access to digital reports.",
+    items: [
+      {
+        title: "Professional Sample Collection",
+        description:
+          "Samples are collected using proper procedures for a comfortable testing experience.",
+      },
+      {
+        title: "Quality Testing Process",
+        description:
+          "Your Widal test is processed using standardized laboratory procedures for accurate results.",
+      },
+      {
+        title: "Fast Digital Reports",
+        description:
+          "Receive your Widal test report conveniently after completion of testing.",
+      },
+      {
+        title: "Home Collection Available",
+        description:
+          "Book Widal test home sample collection from your home at a convenient time.",
+      },
+    ],
+  },
+
+  testDetails: {
+    title: "About Widal Test (Typhoid Fever Screening)",
+    description: [
+      "The Widal test detects antibodies (agglutinins) produced by the body against Salmonella Typhi and Salmonella Paratyphi bacteria, which cause typhoid fever. It measures two main antigens — 'O' (somatic) and 'H' (flagellar) — and reports results as a titre, such as 1:80 or 1:160.",
+      "This test helps healthcare professionals identify a probable typhoid infection, especially in areas where typhoid is common, and is often ordered alongside CBC when a patient has persistent fever.",
+    ],
+    included: [
+      "S. Typhi O Antibody Titre",
+      "S. Typhi H Antibody Titre",
+      "S. Paratyphi AH Titre",
+      "S. Paratyphi BH Titre",
+    ],
+  },
+
+  preparation: {
+    title: "Preparation Before Widal Test",
+    description:
+      "Follow these simple instructions before your Widal test to ensure a smooth sample collection experience.",
+    items: [
+      {
+        title: "Widal Test Fasting Requirement",
+        description:
+          "Fasting is not required for a Widal Test. Follow your healthcare provider's instructions if additional tests are included.",
+      },
+      {
+        title: "Best Timing",
+        description:
+          "The test is usually most reliable after the first week of fever onset, when antibody levels rise. Your doctor may recommend a repeat test to confirm a rising titre.",
+      },
+      {
+        title: "Inform About Medications",
+        description:
+          "Inform the healthcare professional about any antibiotics or medicines you are taking, as prior antibiotic use can affect results.",
+      },
+    ],
+  },
+
+  bookingProcess: {
+    title: "How to Book Your Widal Test",
+    description:
+      "Book your Widal test easily with a simple process and get your sample collected at your preferred time.",
+    steps: [
+      {
+        title: "Book Test",
+        description:
+          "Choose your Widal test and submit your booking request online or contact our team.",
+      },
+      {
+        title: "Sample Collection",
+        description:
+          "Our trained professional collects the sample safely from your location.",
+      },
+      {
+        title: "Laboratory Testing",
+        description:
+          "Your sample is processed using standard laboratory procedures.",
+      },
+      {
+        title: "Receive Report",
+        description:
+          "Get your digital Widal test report after the test is completed.",
+      },
+    ],
+  },
+
+  pricePreview: {
+    title: "Widal Test Price",
+    description:
+      "Check the latest Widal test price near you and book your test with convenient home sample collection.",
+    price: 50,
+    priceUrl: "/prices/widal-test-price-garhshankar",
+  },
+
+  relatedTests: [
+    "typhidot-test",
+    "cbc-test",
+    "esr-test",
+    "crp-quantitative-test",
+    "vdrl-test",
+    "blood-group-test",
+  ],
+
+  faq: {
+    title: "Frequently Asked Questions",
+    description:
+      "Find answers to common questions about the Widal test, its price, results, and booking.",
+    items: [
+      {
+        question: "What does a Widal test check for?",
+        answer:
+          "A Widal test checks for antibodies against Salmonella Typhi and Paratyphi bacteria in the blood, helping diagnose typhoid fever.",
+      },
+      {
+        question: "What does Widal test positive mean?",
+        answer:
+          "A positive Widal test means antibodies against typhoid-causing bacteria were detected above the normal threshold. A single positive result should be interpreted alongside symptoms, titre level, and sometimes a repeat test, since past infection or vaccination can also raise titres.",
+      },
+      {
+        question: "What is the normal range for a Widal test?",
+        answer:
+          "A titre below 1:80 is generally considered normal or negative in most regions. A titre of 1:160 or higher, especially when rising on a repeat test, is more suggestive of active typhoid infection. Reference ranges can vary by region and lab.",
+      },
+      {
+        question: "What is the difference between Widal and Typhidot test?",
+        answer:
+          "Widal detects antibody titres and is more affordable but can give false positives from past exposure. Typhidot detects specific IgM and IgG antibodies and is generally faster and more specific for a current infection.",
+      },
+      {
+        question: "Is fasting required for a Widal test?",
+        answer:
+          "No, fasting is not required for a Widal test. You can eat and drink normally before your sample is collected.",
+      },
+      {
+        question: "How long does it take to receive the Widal test report?",
+        answer:
+          "Widal test reports are usually available within 24 hours after sample collection and laboratory processing.",
+      },
+      {
+        question: "Is home sample collection available for Widal test?",
+        answer:
+          "Yes, home sample collection is available for the Widal test. You can book an appointment and choose a convenient collection time.",
+      },
+      {
+        question: "What is the Widal test price?",
+        answer:
+          "You can check the latest Widal test price on our pricing page and book online with home sample collection.",
+      },
+    ],
+  },
+
+  cta: {
+    title: "Book Your Widal Test Today",
+    description:
+      "Get convenient sample collection, reliable typhoid screening, and easy access to your reports.",
+    highlights: [
+      "Home Sample Collection Available",
+      "Fast Report Delivery",
+      "Professional Collection Process",
+    ],
+    price: "50",
+    priceText: "Check detailed Widal test pricing and booking options.",
+    bookingUrl: "/prices/widal-test-price-garhshankar",
+    phone: "tel:+918968038602",
+    buttonText: "Book Widal Test",
+  },
 },
 
 {

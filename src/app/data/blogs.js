@@ -1854,7 +1854,7 @@ seo: {
   publishedAt: "September 20, 2026",
   readingTime: "10 min read",
   coverImage: "/blogs/full-body-checkup-full-guide/cover.webp",
-  featured: true,
+  featured: false,
 
   relatedPackages: [
     "bhangal-advance-full-body-checkup",
@@ -2143,6 +2143,265 @@ seo: {
       "Affordable Pricing",
       "Experienced Phlebotomists",
     ],
+  },
+},
+{
+  id: 6,
+  slug: "widal-test-full-guide",
+  title: "Widal Test: Full Form, Normal Range, Price & What It Detects (Complete Guide)",
+  excerpt:
+    "Everything about the Widal test — what it checks, titre normal range, O and H antigen meaning, price, and how it compares to Typhidot for typhoid diagnosis.",
+  category: "Health Tips",
+  author: {
+    name: "Bhangal Clinical Laboratories & ECG Center",
+    image: "/team/author.jpg",
+  },
+  publishedAt: "September 21, 2026",
+  readingTime: "9 min read",
+  coverImage: "/blogs/widal-test-full-guide/cover.webp",
+  featured: true,
+
+  relatedPackages: ["bhangal-fever-mini-profile", "bhangal-fever-maxi-profile", "bhangal-dengue-profile", "bhangal-basic-profile"],
+  relatedTests: ["typhidot-test", "cbc-test", "esr-test", "crp-quantitative-test", "vdrl-test"],
+
+  seo: {
+    title: "Widal Test: Full Form, Normal Range & Price",
+    // 48 chars
+    description:
+      "Everything about the Widal test — normal titre range, O/H antigen meaning, price, and how it compares to Typhidot for typhoid diagnosis.",
+    // 140 chars
+    keywords: [
+      "widal test",
+      "widal test normal range",
+      "widal test positive means",
+      "widal test 1:80 meaning",
+      "widal test 1:160 meaning",
+      "widal test price",
+      "s typhi o s typhi h",
+      "widal vs typhidot test",
+      "typhoid test full form",
+      "Bhangal Clinical Laboratories",
+    ],
+  },
+
+  quickInfo: [
+    { label: "You Will Learn", value: "Complete Guide to Widal Test", icon: "activity" },
+    { label: "Reading Time", value: "9 Minutes", icon: "clock" },
+    { label: "Suitable For", value: "Adults & Children", icon: "users" },
+    { label: "Symptoms", value: "Persistent Fever, Weakness, Abdominal Pain", icon: "heart" },
+    { label: "Recommended Test", value: "Widal Test", icon: "test" },
+    { label: "Fasting", value: "Not Required", icon: "file" },
+    { label: "Report Time", value: "Same Day", icon: "clock" },
+    { label: "Price", value: getTestPrice("widal-test"), icon: "price" },
+    { label: "Home Collection", value: "Available", icon: "home" },
+  ],
+
+  tags: ["Widal Test", "Typhoid", "Fever Screening", "Blood Test", "Preventive Healthcare"],
+
+  content: [
+    {
+      type: "paragraph",
+      text: "The Widal test is one of the most commonly ordered tests at our Garhshankar centre for patients with fever lasting more than a few days. Despite how often it's ordered, many patients aren't sure what the titre numbers on their report actually mean, or how it differs from a Typhidot test. This guide covers what Widal checks, normal range, and pricing.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "What Is a Widal Test? (Full Form & Meaning)",
+    },
+    {
+      type: "paragraph",
+      text: "The Widal test detects antibodies your immune system produces against Salmonella Typhi and Salmonella Paratyphi — the bacteria that cause typhoid fever. It measures two types of antigens: 'O' (somatic) and 'H' (flagellar), reported as a titre such as 1:80 or 1:160, indicating antibody concentration in your blood.",
+    },
+    {
+      type: "tip",
+      title: "Good to Know",
+      text: "A single Widal titre reading isn't always conclusive — doctors often recommend a repeat test after a few days to check whether the titre is rising, which is more suggestive of an active infection.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Widal Test Normal Range & What Your Titre Means",
+    },
+    {
+      type: "table",
+      title: "Widal Test Titre Interpretation",
+      headers: ["Titre Level", "Interpretation"],
+      rows: [
+        ["Below 1:80", "Generally considered normal / negative"],
+        ["1:80", "Borderline — may need clinical correlation or repeat test"],
+        ["1:160", "Suggestive of typhoid infection, especially with symptoms"],
+        ["1:320 or higher", "Strongly suggestive of active typhoid infection"],
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "Normal reference ranges can vary slightly by region since prior typhoid exposure or vaccination in the local population affects baseline titres. Always compare your result against the range printed on your own report and discuss it with your doctor.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "What Do S. Typhi O and S. Typhi H Mean?",
+    },
+    {
+      type: "paragraph",
+      text: "'O' (somatic) antigen antibodies typically appear first and indicate a more recent infection, while 'H' (flagellar) antigen antibodies persist longer, sometimes from a past infection or vaccination. Doctors look at both values together, not in isolation, to assess how likely a current typhoid infection is.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Widal Test vs Typhidot Test: Which Is Better?",
+    },
+    {
+      type: "table",
+      title: "Widal vs Typhidot Comparison",
+      headers: ["Feature", "Widal Test", "Typhidot Test"],
+      rows: [
+        ["What it detects", "Antibody titre (O & H antigens)", "Specific IgM & IgG antibodies"],
+        ["Speed", "Same day", "Faster, often within hours"],
+        ["Specificity", "Can give false positives from past exposure", "More specific to current infection"],
+        ["Cost", "More affordable", "Slightly higher"],
+        ["Best for", "Initial screening, repeat titre tracking", "Confirming a recent, active infection"],
+      ],
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Is Fasting Required for a Widal Test?",
+    },
+    {
+      type: "paragraph",
+      text: "No, fasting is not required for a Widal test. You can eat and drink normally before your blood draw, unless another fasting test is being done at the same time.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Why Would a Doctor Order a Widal Test?",
+    },
+    {
+      type: "table",
+      title: "Symptoms and What Widal May Reveal",
+      headers: ["Symptom", "What Widal May Show"],
+      rows: [
+        ["Persistent Fever (5+ days)", "Raised O/H titres suggesting typhoid"],
+        ["Abdominal Pain & Loss of Appetite", "Supports typhoid workup alongside CBC"],
+        ["Weakness & Headache", "Common accompanying typhoid symptoms"],
+        ["Rose Spots on Skin", "Classic (though less common) typhoid sign, warrants testing"],
+      ],
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "How Much Does a Widal Test Cost?",
+    },
+    {
+      type: "paragraph",
+      text: "Widal is one of the more affordable diagnostic tests available. Check our current price list for the exact rate and any bundled fever panel packages that include Widal alongside CBC and dengue screening.",
+    },
+    {
+      type: "interlinking",
+      title: "Check Prices & Service Details",
+      description: "Ready to check cost or schedule your Widal test? View exact prices and service details below.",
+      items: [
+        {
+          title: "Widal Test Price in Garhshankar",
+          description: "View the exact Widal test rate and bundled fever panel packages.",
+          href: "/prices/widal-test-price-garhshankar",
+        },
+        {
+          title: "Widal Service Overview",
+          description: "Learn what is included in our Widal testing service and process.",
+          href: "/tests/widal-test",
+        },
+      ],
+    },
+    {
+      type: "success",
+      title: "Key Takeaway",
+      text: "A Widal test is a quick, affordable first step in diagnosing typhoid fever, especially when read alongside your symptoms and, if needed, a repeat titre or a Typhidot test for confirmation.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Book Your Widal Test",
+    },
+    {
+      type: "paragraph",
+      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. We're open daily from 7:00 AM to 8:00 PM (8:00 AM to 2:00 PM on Sundays). Walk in, call ahead, or book a home sample collection.",
+    },
+    {
+      type: "interlinking",
+      title: "Areas We Serve",
+      description: "We provide home sample collection and diagnostic services across the following locations.",
+      items: [
+        {
+          title: "Garhshankar",
+          description: "Widal test and home sample collection.",
+          href: "/locations/widal-test-in-garhshankar",
+        },
+        { title: "Hoshiarpur", description: "Diagnostic laboratory services." },
+        { title: "Nawanshahr", description: "Health checkups and pathology tests." },
+      ],
+    },
+    {
+      type: "references",
+      items: [
+        {
+          title: "Typhoid Fever Diagnostic Tests",
+          publisher: "MedlinePlus",
+          url: "https://medlineplus.gov/typhoidfever.html",
+        },
+        {
+          title: "Widal Test",
+          publisher: "National Center for Biotechnology Information (NCBI)",
+          url: "https://www.ncbi.nlm.nih.gov/",
+        },
+      ],
+    },
+  ],
+
+  faq: [
+    {
+      question: "What does a Widal test check for?",
+      answer: "A Widal test checks for antibodies against Salmonella Typhi and Paratyphi bacteria to help diagnose typhoid fever.",
+    },
+    {
+      question: "What does Widal test positive mean?",
+      answer: "A positive Widal test means antibody titres against typhoid bacteria were detected above the normal threshold. It should be interpreted alongside symptoms and titre level, since past infection or vaccination can also cause a positive result.",
+    },
+    {
+      question: "What is a normal Widal test titre?",
+      answer: "A titre below 1:80 is generally considered normal in most regions, while 1:160 or higher, especially rising on a repeat test, is more suggestive of active typhoid infection.",
+    },
+    {
+      question: "Is Widal test 1:160 high?",
+      answer: "A titre of 1:160 is generally considered suggestive of typhoid infection when combined with symptoms, though a doctor should interpret it alongside your clinical picture and, if needed, a repeat test.",
+    },
+    {
+      question: "What is the difference between Widal and Typhidot test?",
+      answer: "Widal measures antibody titres and is more affordable but can be less specific due to past exposure. Typhidot detects specific IgM and IgG antibodies and is generally faster and more specific for a current infection.",
+    },
+    {
+      question: "Is fasting required for a Widal test?",
+      answer: "No, fasting is not required for a Widal test. You can eat and drink normally before the blood draw.",
+    },
+    {
+      question: "How much does a Widal test cost?",
+      answer: "Widal testing at our Garhshankar lab is one of the more affordable individual tests — check our current price list for the exact rate.",
+    },
+    {
+      question: "Can a Widal test be done at home?",
+      answer: "Yes, home sample collection is available for the Widal test across Garhshankar and nearby villages.",
+    },
+  ],
+
+  cta: {
+    title: "Book Your Widal Test Today",
+    description: "Looking for reliable typhoid screening in Garhshankar? Book your Widal test with home sample collection, affordable pricing, and fast digital reports.",
+    serviceName: "Widal Test",
+    serviceLink: "/tests/widal-test",
+    bookingLink: `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20want%20to%20book%20a%20Widal%20Test.%20Please%20share%20the%20available%20slots.`,
+    whatsappLink: `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20have%20a%20question%20about%20Widal%20Test.`,
+    features: ["Home Sample Collection", "Fast Digital Reports", "Affordable Pricing", "Experienced Phlebotomists"],
   },
 },
 

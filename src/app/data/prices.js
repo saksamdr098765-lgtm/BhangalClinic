@@ -831,6 +831,158 @@ export const prices = [
     highlights: ["Home Sample Collection", "Digital Report", "Affordable Rate", "Fast Turnaround"],
   },
 },
+{
+  slug: "widal-test-price-garhshankar",
+  seo: {
+    title: "Widal Test Price in Garhshankar | Typhoid Test",
+    // 49 chars
+    description:
+      "Check Widal test price in Garhshankar — typhoid screening, starting from ₹50, with doorstep home sample collection and same-day reports.",
+    // 141 chars
+    keywords: [
+      "widal test price garhshankar",
+      "widal test cost garhshankar",
+      "widal test price list garhshankar",
+      "typhoid test price garhshankar",
+      "widal test near me garhshankar",
+      "s typhi test price garhshankar",
+    ],
+  },
+  homeCollection: true,
+  hero: {
+    badge: "",
+    title: "Widal Test Price in Garhshankar",
+    subtitle:
+      "Compare pricing on Widal (typhoid) testing in Garhshankar with accurate lab processing and doorstep home sample collection.",
+    image: "/prices/widal-test.webp",
+  },
+  priceCard: {
+    actualPrice: 100,
+    offerPrice: getTestPrice("widal-test"),
+    offerText: "Starting Price",
+    reportTime: "Same Day (Within Hours)",
+    fasting: "Not Required",
+    sampleType: "Blood Sample",
+    homeCollection: true,
+    labVisit: true,
+    includes: {
+      title: "Every Booking Includes",
+      items: [
+        "Digital Report on WhatsApp & Email",
+        "No Advance Payment Required",
+      ],
+    },
+  },
+  whyGetTest: {
+    title: "Why Get a Widal Test in Garhshankar",
+    description:
+      "Regular Widal testing helps detect typhoid fever early, supporting timely treatment and preventing complications.",
+    reasons: [
+      {
+        title: "Early Typhoid Detection",
+        description: "Identifies typhoid fever before it progresses to more severe complications.",
+      },
+      {
+        title: "Confirm Persistent Fever Cause",
+        description: "Helps distinguish typhoid from other causes of prolonged fever.",
+      },
+      {
+        title: "Convenient & Affordable",
+        description: "Home sample collection and transparent pricing make typhoid screening accessible for every family.",
+      },
+    ],
+  },
+  faqs: [
+    {
+      question: "How much does a Widal test cost in Garhshankar?",
+      answer: `Widal testing in Garhshankar starts from ₹${getTestPrice("widal-test")} at Bhangal Clinical Laboratories & ECG Center, with home sample collection available at no extra charge.`,
+    },
+    {
+      question: "Is home sample collection available for Widal test in Garhshankar?",
+      answer: "Yes, our trained technicians provide doorstep Widal sample collection across Garhshankar and nearby villages.",
+    },
+    {
+      question: "How fast do I get my Widal test report?",
+      answer: "Widal test reports are usually ready the same day, with a digital copy delivered on WhatsApp & Email within a few hours.",
+    },
+    {
+      question: "Is fasting required before a Widal test?",
+      answer: "No, fasting is not required for a Widal test. You can eat and drink normally before your sample is collected.",
+    },
+    {
+      question: "Does the Widal test price vary by package?",
+      answer: "Yes, pricing can vary if Widal is booked standalone versus as part of a fever profile package. Contact us for a detailed rate list.",
+    },
+  ],
+  relatedTests: ["typhidot-test", "cbc-test", "esr-test", "crp-quantitative-test", "vdrl-test"],
+  interlinks: {
+    badge: "Included Services & Local Availability",
+    heading: "What's Included & Nearby Availability",
+    description: "Checking Widal test prices? Explore what is included in this price and verify local availability near you in Garhshankar.",
+    items: [
+      {
+        title: "What's Included in This Price?",
+        subtitle: "Widal Test Service Details",
+        description: "Understand everything included in our Widal testing service — from sample collection to accurate antibody titre analysis and reporting.",
+        href: "/tests/widal-test",
+        icon: "FiActivity",
+        badge: "Service Details",
+        badgeColor: "bg-teal-100 text-teal-800 border-teal-200",
+        btnText: "Explore Service Included",
+        tracking: "price-interlink-service",
+      },
+      {
+        title: "Available Near You in Garhshankar",
+        subtitle: "Location & Home Collection",
+        description: "Check our diagnostic center, doorstep home sample collection coverage across Garhshankar city and surrounding villages, and operating hours.",
+        href: "/locations/widal-test-in-garhshankar",
+        icon: "FiMapPin",
+        badge: "Garhshankar Location",
+        badgeColor: "bg-sky-100 text-sky-800 border-sky-200",
+        btnText: "Visit Garhshankar Hub",
+        tracking: "price-interlink-location",
+      },
+    ],
+  },
+  cta: {
+    title: "Book Your Widal Test in Garhshankar Today",
+    description: "Affordable pricing, fast digital reports, and doorstep home sample collection across Garhshankar.",
+    offerPrice: getTestPrice("widal-test"),
+    actualPrice: 100,
+    buttonText: "Book a Test",
+    testName: "Widal Test",
+    blogUrl: "/blogs/widal-test-full-guide",
+    serviceUrl: "/tests/widal-test",
+    locationUrl: "/locations/widal-test-in-garhshankar",
+    packageUrl: "/packages",
+    highlights: ["Home Sample Collection", "Digital Report", "Affordable Rate", "Fast Turnaround"],
+  },
+  packageComparison: {
+    type: "option",
+    title: "Single Widal Test vs. Fever Panel Package",
+    subtitle: "Should you book just the Widal test or upgrade to a complete fever screening panel?",
+    featuredPackageSlug: "bhangal-fever-maxi-profile",
+    optionA: {
+      title: "Just Widal Test",
+      highlights: [
+        "Targeted typhoid antibody screening",
+        "Free Doorstep Home Sample Collection",
+        "Does not cover dengue, malaria, or CBC infection markers",
+      ],
+    },
+    optionB: {
+      badge: "BEST VALUE FOR FEVER",
+      subtitle: "RECOMMENDED OPTION B",
+      title: "Bhangal Fever Maxi Profile",
+      highlights: [
+        "Includes Widal + CBC + Dengue + Malaria screening",
+        "Comprehensive fever cause evaluation in one panel",
+        "Free Doorstep Home Sample Collection",
+        "Save compared to booking individual fever tests separately",
+      ],
+    },
+  },
+},
 
 
 ];

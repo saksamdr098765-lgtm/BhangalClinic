@@ -1404,6 +1404,220 @@ homeCollection:false,
 
   hours: "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
 },
+{
+  id: 6,
+  slug: "widal-test-in-garhshankar",
+  city: "Garhshankar",
+  homeCollection: true,
+  state: "Punjab",
+  title: "Widal Test in Garhshankar",
+  shortDescription:
+    "Book accurate Widal (typhoid) tests in Garhshankar with Bhangal Clinical Laboratories & ECG Center. Home sample collection, fast reports, and affordable pricing for typhoid screening.",
+
+  seo: {
+    title: "Widal Test in Garhshankar | Home Sample Collection",
+    // 54 chars
+    description:
+      "Get your Widal test done in Garhshankar with Bhangal Clinical Laboratories — accurate typhoid screening, home collection, same-day reports.",
+    // 145 chars
+    keywords: [
+      "Widal Test in Garhshankar",
+      "Widal Test Garhshankar",
+      "Typhoid Test Garhshankar",
+      "Widal Test Near Me Garhshankar",
+      "Typhoid Test Lab Garhshankar",
+      "Best Diagnostic Lab Near Me Typhoid Garhshankar",
+      "Widal Test Price Garhshankar",
+      "Typhoid Test Home Collection Garhshankar",
+      "S Typhi Test Garhshankar",
+    ],
+  },
+
+  overview: {
+    heading: "Widal Test in Garhshankar",
+    paragraphs: [
+      "Looking for a reliable Widal test in Garhshankar? Bhangal Clinical Laboratories & ECG Center is a trusted diagnostic center offering accurate typhoid fever screening for individuals and families across Garhshankar and surrounding villages. Using standardized lab procedures, we ensure dependable antibody titre results for detecting typhoid infection.",
+      "Whether you need a routine Widal test for persistent fever or a complete fever panel alongside CBC and dengue screening, we make testing in Garhshankar simple, affordable, and convenient. Visit our lab directly, or book a home sample collection and have a trained phlebotomist collect your sample from your doorstep.",
+    ],
+    highlights: [
+      "Accurate Typhoid Antibody Testing",
+      "Home Sample Collection",
+      "Same-Day Reports",
+      "Affordable, Transparent Pricing",
+      "Experienced Lab Technicians",
+    ],
+  },
+
+  popularTests: {
+    heading: "Popular Fever & Infection Tests in Garhshankar",
+    test: ["widal-test", "typhidot-test", "cbc-test", "esr-test", "crp-quantitative-test", "dengue-test"],
+  },
+
+  packages: ["bhangal-fever-mini-profile", "bhangal-fever-maxi-profile", "bhangal-dengue-profile", "bhangal-basic-profile"],
+
+  process: {
+    heading: "How to Get a Widal Test in Garhshankar",
+    steps: [
+      {
+        icon: "search",
+        title: "Choose Your Test",
+        description: "Select the Widal test or a fever panel, or ask our team for guidance based on your symptoms.",
+      },
+      {
+        icon: "calendar",
+        title: "Book an Appointment",
+        description: "Schedule online or by phone — visit our lab or request home sample collection.",
+      },
+      {
+        icon: "lab",
+        title: "Sample Collection",
+        description: "Your sample is collected at our lab or your home by a trained phlebotomist.",
+      },
+      {
+        icon: "report",
+        title: "Get Your Report",
+        description: "Receive accurate results digitally, usually within the same day.",
+      },
+    ],
+  },
+
+  whyChoose: {
+    features: [
+      {
+        icon: "activity",
+        title: "Accurate Typhoid Screening",
+        description: "Standardized lab procedures ensure dependable Widal test results.",
+      },
+      {
+        icon: "award",
+        title: "Experienced Lab Team",
+        description: "Qualified professionals follow strict standards from collection to reporting.",
+      },
+      {
+        icon: "shield",
+        title: "Quality Assurance",
+        description: "Every sample is processed with rigorous quality control checks.",
+      },
+      {
+        icon: "clock",
+        title: "Fast Reports",
+        description: "Most Widal test reports in Garhshankar are ready the same day.",
+      },
+      {
+        icon: "home",
+        title: "Home Collection Available",
+        description: "Skip the visit — get your sample collected at your doorstep in Garhshankar.",
+      },
+      {
+        icon: "check",
+        title: "Affordable Pricing",
+        description: "Transparent, competitive pricing on Widal testing and fever panels.",
+      },
+    ],
+  },
+
+  areas: [
+    "Garhshankar City", "Civil Hospital Area", "Railway Road", "Main Bazaar",
+    "Nawanshahr Road", "Hoshiarpur Road", "Banga Road", "Mahilpur Road",
+    "Saila Khurd", "Binewal", "Denowal Kalan", "Denowal Khurd", "Chak Guru",
+    "Pojewal", "Pandori", "Purhiran", "Chak Singha", "Bharta", "Kukar Majara",
+    "Nearby Villages of Garhshankar",
+  ],
+
+  hubLinks: {
+    heading: "Everything You Need to Know About Widal Tests in Garhshankar",
+    badge: "Garhshankar Central Diagnostics Hub",
+    description: "Whether you want to understand what a Widal test checks, view what our service includes, or check pricing — explore our guides below.",
+    items: [
+      {
+        title: "What is a Widal Test?",
+        subtitle: "Educational Guide & Titre Breakdown",
+        description: "Understand Widal test basics, O and H titres, normal range, and how to interpret your report.",
+        href: "/blogs/widal-test-full-guide",
+        icon: "FiBookOpen",
+        badge: "Context & Guide",
+        badgeColor: "bg-blue-100 text-blue-700 border-blue-200",
+        btnText: "Read Full Guide",
+        tag: "Educational",
+      },
+      {
+        title: "Widal Test Service Details",
+        subtitle: "What's Included & Testing Options",
+        description: "Explore our Widal testing service, lab standards, and sample collection process.",
+        href: "/tests/widal-test",
+        icon: "FiActivity",
+        badge: "Service Overview",
+        badgeColor: "bg-teal-100 text-teal-700 border-teal-200",
+        btnText: "Explore Service",
+        tag: "Service",
+      },
+      {
+        title: "Widal Test Price in Garhshankar",
+        subtitle: "Transparent Rates & Package Discounts",
+        description: "Check transparent pricing for Widal testing in Garhshankar, with free doorstep home sample collection.",
+        href: "/prices/widal-test-price-garhshankar",
+        icon: "FiTag",
+        badge: "Price & Cost",
+        badgeColor: "bg-amber-100 text-amber-700 border-amber-200",
+        btnText: "View Price List",
+        tag: "Cost & Rates",
+      },
+    ],
+  },
+
+  relatedLinks: {
+    heading: "Explore Key Widal Test Information",
+    links: [
+      {
+        label: "What is a Widal Test?",
+        description: "Guide to Widal basics, titre interpretation, and report reading.",
+        slug: "/blogs/widal-test-full-guide",
+      },
+      {
+        label: "Widal Test Service Details",
+        description: "See what's included in our Widal testing service and process.",
+        slug: "/tests/widal-test",
+      },
+      {
+        label: "Widal Test Price in Garhshankar",
+        description: "Check transparent pricing and home sample collection availability.",
+        slug: "/prices/widal-test-price-garhshankar",
+      },
+    ],
+  },
+
+  blogs: ["widal-test-full-guide", "cbc-test-full-guide", "list-of-blood-tests"],
+  services: [ "blood-tests","ecg-test","home-sample-collection"],
+
+  faq: [
+    {
+      question: "Where can I get a Widal test in Garhshankar?",
+      answer: "Bhangal Clinical Laboratories & ECG Center offers accurate Widal testing in Garhshankar, either at our center or through convenient home sample collection.",
+    },
+    {
+      question: "Is home sample collection available for Widal test in Garhshankar?",
+      answer: "Yes, home sample collection is available for Widal testing across Garhshankar and nearby villages — please contact us to book a convenient time.",
+    },
+    {
+      question: "How much does a Widal test cost in Garhshankar?",
+      answer: "Widal pricing is affordable and transparent at our Garhshankar center. Check our full price list or contact us for current rates, including any home collection charges.",
+    },
+    {
+      question: "How soon will I get my Widal report in Garhshankar?",
+      answer: "Widal reports are typically ready the same day after sample collection and lab processing.",
+    },
+    {
+      question: "What does a Widal test check for?",
+      answer: "A Widal test checks for antibodies against Salmonella Typhi and Paratyphi to screen for typhoid fever.",
+    },
+    {
+      question: "Who should get a Widal test done in Garhshankar?",
+      answer: "Anyone with persistent fever lasting more than 5-7 days, especially with symptoms like weakness, abdominal discomfort, or loss of appetite, should consider a Widal test.",
+    },
+  ],
+
+  hours: "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
+},
 ];
 
 export function getLocation(slug) {
