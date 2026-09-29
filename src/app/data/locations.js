@@ -1618,6 +1618,224 @@ homeCollection:false,
 
   hours: "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
 },
+{
+  id: 7,
+  slug: "typhoid-test-in-garhshankar",
+  city: "Garhshankar",
+  homeCollection: true,
+  state: "Punjab",
+  title: "Typhoid Test in Garhshankar",
+  shortDescription:
+    "Book accurate typhoid fever testing (Widal Test) in Garhshankar with Bhangal Clinical Laboratories & ECG Center. Home sample collection, fast reports, and affordable pricing.",
+
+  seo: {
+    title: "Typhoid Test in Garhshankar | Widal Test Booking",
+    // 51 chars
+    description:
+      "Get your typhoid test done in Garhshankar with Bhangal Clinical Laboratories — accurate Widal screening, home collection, same-day reports.",
+    // 144 chars
+    keywords: [
+      "Typhoid Test in Garhshankar",
+      "Typhoid Test Garhshankar",
+      "Typhoid Test Near Me Garhshankar",
+      "Typhoid Test Lab Garhshankar",
+      "Best Diagnostic Lab Near Me Typhoid Garhshankar",
+      "Typhoid Test Price Garhshankar",
+      "Typhoid Test Home Collection Garhshankar",
+      "Typhoid Fever Test Garhshankar",
+    ],
+  },
+
+  overview: {
+    heading: "Typhoid Test in Garhshankar",
+    paragraphs: [
+      "Looking for a reliable typhoid test in Garhshankar? Bhangal Clinical Laboratories & ECG Center diagnoses typhoid fever using the Widal Test — a trusted, standardized blood test that checks antibody titres against Salmonella Typhi and Paratyphi bacteria. We serve individuals and families across Garhshankar and surrounding villages with accurate, same-day results.",
+      "Whether you have persistent fever, weakness, or abdominal discomfort, or simply want a routine screening, our Widal test makes typhoid testing in Garhshankar simple, affordable, and convenient. Visit our lab directly, or book a home sample collection and have a trained phlebotomist collect your sample from your doorstep.",
+    ],
+    highlights: [
+      "Accurate Widal Test for Typhoid Screening",
+      "Home Sample Collection",
+      "Same-Day Reports",
+      "Affordable, Transparent Pricing",
+      "Experienced Lab Technicians",
+    ],
+  },
+
+  popularTests: {
+    heading: "Typhoid & Fever Screening Tests in Garhshankar",
+    test: ["widal-test", "typhidot-test", "cbc-test", "esr-test", "crp-quantitative-test", "dengue-test"],
+  },
+
+  packages: [
+    "bhangal-fever-mini-profile",
+    "bhangal-fever-maxi-profile",
+    "bhangal-dengue-profile",
+    "bhangal-basic-profile",
+  ],
+
+  process: {
+    heading: "How to Get a Typhoid Test in Garhshankar",
+    steps: [
+      {
+        icon: "search",
+        title: "Choose Your Test",
+        description: "We screen for typhoid using the Widal Test, or ask our team for guidance based on your symptoms.",
+      },
+      {
+        icon: "calendar",
+        title: "Book an Appointment",
+        description: "Schedule online or by phone — visit our lab or request home sample collection.",
+      },
+      {
+        icon: "lab",
+        title: "Sample Collection",
+        description: "Your sample is collected at our lab or your home by a trained phlebotomist.",
+      },
+      {
+        icon: "report",
+        title: "Get Your Report",
+        description: "Receive accurate results digitally, usually within the same day.",
+      },
+    ],
+  },
+
+  whyChoose: {
+    features: [
+      {
+        icon: "activity",
+        title: "Accurate Typhoid Screening",
+        description: "Standardized lab procedures ensure dependable Widal test results.",
+      },
+      {
+        icon: "award",
+        title: "Experienced Lab Team",
+        description: "Qualified professionals follow strict standards from collection to reporting.",
+      },
+      {
+        icon: "shield",
+        title: "Quality Assurance",
+        description: "Every sample is processed with rigorous quality control checks.",
+      },
+      {
+        icon: "clock",
+        title: "Fast Reports",
+        description: "Most typhoid test reports in Garhshankar are ready the same day.",
+      },
+      {
+        icon: "home",
+        title: "Home Collection Available",
+        description: "Skip the visit — get your sample collected at your doorstep in Garhshankar.",
+      },
+      {
+        icon: "check",
+        title: "Affordable Pricing",
+        description: "Transparent, competitive pricing on typhoid testing and fever panels.",
+      },
+    ],
+  },
+
+  areas: [
+    "Garhshankar City", "Civil Hospital Area", "Railway Road", "Main Bazaar",
+    "Nawanshahr Road", "Hoshiarpur Road", "Banga Road", "Mahilpur Road",
+    "Saila Khurd", "Binewal", "Denowal Kalan", "Denowal Khurd", "Chak Guru",
+    "Pojewal", "Pandori", "Purhiran", "Chak Singha", "Bharta", "Kukar Majara",
+    "Nearby Villages of Garhshankar",
+  ],
+
+  hubLinks: {
+    heading: "Everything You Need to Know About Typhoid Testing in Garhshankar",
+    badge: "Garhshankar Central Diagnostics Hub",
+    description: "Whether you want to understand how typhoid is diagnosed, check what our service includes, or view pricing — explore our guides below.",
+    items: [
+      {
+        title: "What is a Typhoid Test?",
+        subtitle: "Educational Guide & Test Comparison",
+        description: "Understand typhoid symptoms, how Widal and Typhidot diagnose it, and how to read your report.",
+        href: "/blogs/typhoid-test-full-guide",
+        icon: "FiBookOpen",
+        badge: "Context & Guide",
+        badgeColor: "bg-blue-100 text-blue-700 border-blue-200",
+        btnText: "Read Full Guide",
+        tag: "Educational",
+      },
+      {
+        title: "Widal Test Service Details",
+        subtitle: "What's Included & Testing Options",
+        description: "Explore our Widal testing service — the test we use to diagnose typhoid — including lab standards and sample collection.",
+        href: "/tests/widal-test",
+        icon: "FiActivity",
+        badge: "Service Overview",
+        badgeColor: "bg-teal-100 text-teal-700 border-teal-200",
+        btnText: "Explore Service",
+        tag: "Service",
+      },
+      {
+        title: "Typhoid Test Price in Garhshankar",
+        subtitle: "Transparent Rates & Package Discounts",
+        description: "Check transparent pricing for typhoid (Widal) testing in Garhshankar, with free doorstep home sample collection.",
+        href: "/prices/typhoid-test-price-garhshankar",
+        icon: "FiTag",
+        badge: "Price & Cost",
+        badgeColor: "bg-amber-100 text-amber-700 border-amber-200",
+        btnText: "View Price List",
+        tag: "Cost & Rates",
+      },
+    ],
+  },
+
+  relatedLinks: {
+    heading: "Explore Key Typhoid Test Information",
+    links: [
+      {
+        label: "What is a Typhoid Test?",
+        description: "Guide to typhoid symptoms, Widal vs Typhidot, and report reading.",
+        slug: "/blogs/typhoid-test-full-guide",
+      },
+      {
+        label: "Widal Test Service Details",
+        description: "See what's included in our typhoid testing service and process.",
+        slug: "/tests/widal-test",
+      },
+      {
+        label: "Typhoid Test Price in Garhshankar",
+        description: "Check transparent pricing and home sample collection availability.",
+        slug: "/prices/typhoid-test-price-garhshankar",
+      },
+    ],
+  },
+
+  blogs: ["typhoid-test-full-guide", "widal-test-full-guide", "cbc-test-full-guide", "list-of-blood-tests"],
+  services: ["home-sample-collection", "blood-tests","ecg-test"],
+
+  faq: [
+    {
+      question: "Where can I get a typhoid test in Garhshankar?",
+      answer: "Bhangal Clinical Laboratories & ECG Center diagnoses typhoid using the Widal Test, either at our center or through convenient home sample collection.",
+    },
+    {
+      question: "Which test do you use to diagnose typhoid?",
+      answer: "We use the Widal Test to screen for typhoid fever, which checks antibody titres against Salmonella Typhi and Paratyphi bacteria.",
+    },
+    {
+      question: "Is home sample collection available for typhoid test in Garhshankar?",
+      answer: "Yes, home sample collection is available for typhoid (Widal) testing across Garhshankar and nearby villages — please contact us to book a convenient time.",
+    },
+    {
+      question: "How much does a typhoid test cost in Garhshankar?",
+      answer: "Typhoid testing (Widal) pricing is affordable and transparent at our Garhshankar center. Check our full price list or contact us for current rates.",
+    },
+    {
+      question: "How soon will I get my typhoid test report in Garhshankar?",
+      answer: "Typhoid test (Widal) reports are typically ready the same day after sample collection and lab processing.",
+    },
+    {
+      question: "Who should get a typhoid test done in Garhshankar?",
+      answer: "Anyone with persistent fever lasting more than 5-7 days, especially with symptoms like weakness, abdominal discomfort, or loss of appetite, should consider a typhoid test.",
+    },
+  ],
+
+  hours: "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
+},
 ];
 
 export function getLocation(slug) {

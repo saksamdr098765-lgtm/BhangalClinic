@@ -2159,7 +2159,7 @@ seo: {
   publishedAt: "September 21, 2026",
   readingTime: "9 min read",
   coverImage: "/blogs/widal-test-full-guide/cover.webp",
-  featured: true,
+  featured: false,
 
   relatedPackages: ["bhangal-fever-mini-profile", "bhangal-fever-maxi-profile", "bhangal-dengue-profile", "bhangal-basic-profile"],
   relatedTests: ["typhidot-test", "cbc-test", "esr-test", "crp-quantitative-test", "vdrl-test"],
@@ -2401,6 +2401,272 @@ seo: {
     serviceLink: "/tests/widal-test",
     bookingLink: `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20want%20to%20book%20a%20Widal%20Test.%20Please%20share%20the%20available%20slots.`,
     whatsappLink: `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20have%20a%20question%20about%20Widal%20Test.`,
+    features: ["Home Sample Collection", "Fast Digital Reports", "Affordable Pricing", "Experienced Phlebotomists"],
+  },
+},
+{
+  id: 7,
+  slug: "typhoid-test-full-guide",
+  title: "Typhoid Test Guide: Symptoms, Diagnosis, Price & How It's Detected (Complete Guide)",
+  excerpt:
+    "A complete guide to typhoid fever testing — symptoms, how doctors diagnose it (Widal vs Typhidot), normal range, price, and treatment overview.",
+  category: "Health Tips",
+  author: {
+    name: "Bhangal Clinical Laboratories & ECG Center",
+    image: "/team/author.jpg",
+  },
+  publishedAt: "September 21, 2026",
+  readingTime: "10 min read",
+  coverImage: "/blogs/typhoid-test-full-guide/cover.webp",
+  featured: true,
+
+  relatedPackages: ["bhangal-fever-mini-profile", "bhangal-fever-maxi-profile", "bhangal-dengue-profile", "bhangal-basic-profile"],
+  relatedTests: ["widal-test", "typhidot-test", "cbc-test", "esr-test", "dengue-test"],
+
+  seo: {
+    title: "Typhoid Test Guide: Symptoms, Diagnosis & Price",
+    // 51 chars
+    description:
+      "Complete typhoid test guide — symptoms, how it's diagnosed (Widal vs Typhidot), normal range, and price. Book in Garhshankar.",
+    // 128 chars
+    keywords: [
+      "typhoid test",
+      "typhoid symptoms",
+      "typhoid test full form",
+      "typhoid test normal range",
+      "typhoid test price",
+      "widal vs typhidot test",
+      "typhoid causes",
+      "typhoid treatment",
+      "typhoid test near me",
+      "Bhangal Clinical Laboratories",
+    ],
+  },
+
+  quickInfo: [
+    { label: "You Will Learn", value: "Typhoid Symptoms & Diagnosis", icon: "activity" },
+    { label: "Reading Time", value: "10 Minutes", icon: "clock" },
+    { label: "Suitable For", value: "Adults & Children", icon: "users" },
+    { label: "Symptoms", value: "Persistent Fever, Weakness, Abdominal Pain", icon: "heart" },
+    { label: "Recommended Test", value: "Typhidot-Test", icon: "test" },
+    { label: "Fasting", value: "Not Required", icon: "file" },
+    { label: "Report Time", value: "Same Day", icon: "clock" },
+    { label: "Price", value: getTestPrice("typhidot-test"), icon: "price" },
+    { label: "Home Collection", value: "Available", icon: "home" },
+  ],
+
+  tags: ["Typhoid", "Widal Test", "Fever Screening", "Blood Test", "Preventive Healthcare"],
+
+  content: [
+    {
+      type: "paragraph",
+      text: "Typhoid fever is one of the most common causes of prolonged fever we see referrals for at our Garhshankar centre, especially during the monsoon and post-monsoon months. Many patients ask for 'a typhoid test' without realizing that typhoid is the disease, not a single test — labs actually diagnose it using tests like Widal or Typhidot. This guide explains typhoid symptoms, how it's diagnosed, and what to expect from testing.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "What Is Typhoid Fever?",
+    },
+    {
+      type: "paragraph",
+      text: "Typhoid fever is a bacterial infection caused by Salmonella Typhi (and the related Salmonella Paratyphi), usually spread through contaminated food or water. It causes sustained high fever, weakness, abdominal pain, and loss of appetite, and can lead to serious complications if left untreated.",
+    },
+    {
+      type: "tip",
+      title: "Good to Know",
+      text: "\"Typhoid test\" isn't one specific test — it's a general term for the blood tests used to diagnose typhoid fever, most commonly the Widal test.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Common Symptoms of Typhoid",
+    },
+    {
+      type: "table",
+      title: "Typhoid Fever Symptoms",
+      headers: ["Symptom", "Details"],
+      rows: [
+        ["Sustained High Fever", "Often rises gradually and stays elevated for days"],
+        ["Weakness & Fatigue", "Common alongside fever"],
+        ["Abdominal Pain", "May be accompanied by loss of appetite"],
+        ["Headache", "Often persistent during the fever phase"],
+        ["Rose-Colored Spots", "Less common, appears on chest/abdomen in some cases"],
+      ],
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "How Is Typhoid Diagnosed? (Widal vs Typhidot)",
+    },
+    {
+      type: "paragraph",
+      text: "Doctors diagnose typhoid using blood tests that detect the body's immune response to Salmonella bacteria. The two most common tests are Widal and Typhidot — at our lab, we use the Widal test as our primary typhoid screening method.",
+    },
+    {
+      type: "table",
+      title: "How Typhoid Is Diagnosed",
+      headers: ["Test", "What It Measures", "Turnaround"],
+      rows: [
+        ["Widal Test", "Antibody titres (O & H antigens)", "Same day"],
+        ["Typhidot Test", "Specific IgM/IgG antibodies", "Same day, often faster"],
+        ["Blood Culture", "Direct bacterial growth (gold standard, hospital setting)", "48-72 hours"],
+      ],
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Typhoid Test Normal Range (Widal)",
+    },
+    {
+      type: "table",
+      title: "Widal Test Titre Interpretation",
+      headers: ["Titre Level", "Interpretation"],
+      rows: [
+        ["Below 1:80", "Generally considered normal / negative"],
+        ["1:80", "Borderline — may need clinical correlation or repeat test"],
+        ["1:160 or higher", "Suggestive of typhoid infection, especially with symptoms"],
+      ],
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Is Fasting Required for a Typhoid Test?",
+    },
+    {
+      type: "paragraph",
+      text: "No, fasting is not required. You can eat and drink normally before your blood sample is collected for a Widal test.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Typhoid Treatment Overview",
+    },
+    {
+      type: "paragraph",
+      text: "Typhoid is treated with a course of antibiotics prescribed by a doctor, along with rest, hydration, and a light, easily digestible diet. Most patients recover fully within 1-2 weeks of starting appropriate treatment, though completing the full antibiotic course is important to prevent relapse or complications.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "How Much Does a Typhoid Test Cost?",
+    },
+    {
+      type: "paragraph",
+      text: "Typhoid screening (Widal) is one of the more affordable diagnostic tests. Check our current price list for the exact rate and any bundled fever panel packages.",
+    },
+    {
+      type: "interlinking",
+      title: "Check Prices & Service Details",
+      description: "Ready to check cost or schedule your typhoid test? View exact prices and service details below.",
+      items: [
+        {
+          title: "Typhoid Test Price in Garhshankar",
+          description: "View the exact typhoid (Widal) test rate and bundled fever panel packages.",
+          href: "/prices/typhoid-test-price-garhshankar",
+        },
+        {
+          title: "Widal Test Service Overview",
+          description: "Learn what is included in our typhoid testing service and process.",
+          href: "/tests/widal-test",
+        },
+        {
+          title: "Widal Test Price",
+          description: "View the exact Widal test rate and bundled fever panel packages.",
+          href: "/prices/widal-test-price-garhshankar",
+        },
+      ],
+    },
+    {
+      type: "success",
+      title: "Key Takeaway",
+      text: "Typhoid is the disease; Widal is the test we use to diagnose it. If you have persistent fever, a Widal test — often alongside CBC — is the right first step, with your doctor confirming the diagnosis based on your symptoms and titre results.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Book Your Typhoid Test",
+    },
+    {
+      type: "paragraph",
+      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. We're open daily from 7:00 AM to 8:00 PM (8:00 AM to 2:00 PM on Sundays). Walk in, call ahead, or book a home sample collection.",
+    },
+    {
+      type: "interlinking",
+      title: "Areas We Serve",
+      description: "We provide home sample collection and diagnostic services across the following locations.",
+      items: [
+        {
+          title: "Garhshankar",
+          description: "Typhoid (Widal) test and home sample collection.",
+          href: "/locations/typhoid-test-in-garhshankar",
+        },
+        { title: "Hoshiarpur", description: "Diagnostic laboratory services." },
+        { title: "Nawanshahr", description: "Health checkups and pathology tests." },
+      ],
+    },
+    {
+      type: "references",
+      items: [
+        {
+          title: "Typhoid Fever",
+          publisher: "MedlinePlus",
+          url: "https://medlineplus.gov/typhoidfever.html",
+        },
+        {
+          title: "Typhoid Fever Fact Sheet",
+          publisher: "World Health Organization (WHO)",
+          url: "https://www.who.int/news-room/fact-sheets/detail/typhoid",
+        },
+      ],
+    },
+  ],
+
+  faq: [
+    {
+      question: "Is typhoid fever very serious?",
+      answer: "Typhoid can become serious if left untreated, potentially leading to complications like intestinal bleeding or perforation. However, with timely diagnosis and antibiotic treatment, most people recover fully within 1-2 weeks.",
+    },
+    {
+      question: "What are the four symptoms of typhoid?",
+      answer: "Common typhoid symptoms include sustained high fever, weakness and fatigue, abdominal pain, and loss of appetite. Headache and, less commonly, rose-colored skin spots may also occur.",
+    },
+    {
+      question: "Which test is used to diagnose typhoid?",
+      answer: "The Widal test is the most commonly used first-line test to diagnose typhoid, measuring antibody titres against Salmonella Typhi and Paratyphi. Typhidot and blood culture are other diagnostic options.",
+    },
+    {
+      question: "Can a CBC confirm typhoid?",
+      answer: "No, a CBC alone cannot confirm typhoid. It can show supporting signs like changes in white blood cell count, but a Widal or Typhidot test is needed to specifically detect typhoid antibodies.",
+    },
+    {
+      question: "What is the normal range for a typhoid test?",
+      answer: "For the Widal test, a titre below 1:80 is generally considered normal, while 1:160 or higher, especially with symptoms, is more suggestive of active typhoid infection.",
+    },
+    {
+      question: "How is typhoid transmitted?",
+      answer: "Typhoid spreads through contaminated food or water, often linked to poor sanitation or hygiene. It can also spread through close contact with an infected person in some cases.",
+    },
+    {
+      question: "Is typhoid 100% curable?",
+      answer: "Yes, typhoid is fully treatable with an appropriate course of antibiotics prescribed by a doctor. Completing the full course is important to prevent relapse or complications.",
+    },
+    {
+      question: "How much does a typhoid test cost?",
+      answer: "Typhoid screening (Widal test) at our Garhshankar lab is one of the more affordable individual tests — check our current price list for the exact rate.",
+    },
+    {
+      question: "Can typhoid be tested at home?",
+      answer: "Yes, we offer home sample collection for typhoid (Widal) testing across Garhshankar and nearby villages at no extra charge.",
+    },
+  ],
+
+  cta: {
+    title: "Book Your Typhoid Test Today",
+    description: "Looking for reliable typhoid screening in Garhshankar? Book your test with home sample collection, affordable pricing, and fast digital reports.",
+    serviceName: "Typhoid Test (Widal)",
+    serviceLink: "/tests/widal-test",
+    bookingLink: `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20want%20to%20book%20a%20Typhoid%20Test.%20Please%20share%20the%20available%20slots.`,
+    whatsappLink: `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20have%20a%20question%20about%20Typhoid%20Test.`,
     features: ["Home Sample Collection", "Fast Digital Reports", "Affordable Pricing", "Experienced Phlebotomists"],
   },
 },

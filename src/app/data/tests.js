@@ -1469,10 +1469,230 @@ export const tests = [
   homeCollection: true,
   popular: true,
   description:
-    "Rapid blood test for detecting IgM and IgG antibodies against typhoid infection.",
+    "Typhidot test detects IgM and IgG antibodies against Salmonella Typhi in your blood for accurate, rapid typhoid diagnosis.",
   price: 400,
   reportTime: "24 Hours",
-   status:"draft"
+  status: "published",
+
+  seo: {
+    title: "Typhidot Test - Price, IgM IgG Meaning | Book Now",
+    // 55 chars
+    description:
+      "Book a Typhidot test for accurate typhoid diagnosis with home sample collection. Check Typhidot test price and same-day digital reports.",
+    // 139 chars
+    keywords: [
+      "typhidot test",
+      "typhidot test price",
+      "typhidot test near me",
+      "typhidot igm positive means",
+      "typhidot igg positive means",
+      "what is typhidot test",
+      "widal vs typhidot test",
+      "typhidot test accuracy",
+      "typhoid igm igg test",
+      "typhidot test cost",
+    ],
+  },
+
+  hero: {
+    badge: "Home Sample Collection Available",
+    title: "Typhidot Test - Rapid Typhoid Diagnosis",
+    description:
+      "Book a Typhidot Test near you with fast report delivery, professional sample collection, and convenient home collection services. Check Typhidot test price and book online.",
+    image: "/tests/typhidot.webp",
+    imageAlt: "Typhidot Test - IgM IgG Typhoid Antibody Test",
+    reportTime: "24 Hours",
+    homeCollection: "Available",
+    trustPoints: [
+      "Professional Sample Collection",
+      "Digital Reports",
+      "Higher Accuracy Than Widal",
+      "Quality-Controlled Testing",
+    ],
+    bookButton: "Book Typhidot Test",
+    bookingUrl: "/prices/typhidot-test-price-garhshankar",
+    phone: "tel:+918968038602",
+  },
+
+  quickFacts: {
+    sample: "Blood Sample",
+    reportTime: "24 Hours",
+    fasting: "Not Required",
+    homeCollection: "Available",
+    ageGroup: "Adults & Children",
+  },
+
+  whyChooseUs: {
+    title: "Why Choose Our Typhidot Test Service?",
+    description:
+      "Get a reliable Typhidot test near you with convenient booking, professional sample collection, and easy access to digital reports.",
+    items: [
+      {
+        title: "Professional Sample Collection",
+        description:
+          "Samples are collected using proper procedures for a comfortable testing experience.",
+      },
+      {
+        title: "Quality Testing Process",
+        description:
+          "Your Typhidot test is processed using standardized rapid immunoassay procedures for accurate results.",
+      },
+      {
+        title: "Fast Digital Reports",
+        description:
+          "Receive your Typhidot test report conveniently after completion of testing.",
+      },
+      {
+        title: "Home Collection Available",
+        description:
+          "Book Typhidot test home sample collection from your home at a convenient time.",
+      },
+    ],
+  },
+
+  testDetails: {
+    title: "About Typhidot Test (IgM & IgG Typhoid Antibody Test)",
+    description: [
+      "The Typhidot test is a rapid, dot-based immunoassay that detects specific IgM and IgG antibodies produced against the Salmonella Typhi outer membrane protein. IgM antibodies indicate a current, recent infection, while IgG antibodies can indicate either a current infection or past exposure.",
+      "This test helps healthcare professionals confirm typhoid fever with greater specificity than Widal, and is often preferred when a doctor needs a faster, more accurate result for a patient with persistent fever.",
+    ],
+    included: [
+      "S. Typhi IgM Antibody Detection",
+      "S. Typhi IgG Antibody Detection",
+    ],
+  },
+
+  preparation: {
+    title: "Preparation Before Typhidot Test",
+    description:
+      "Follow these simple instructions before your Typhidot test to ensure a smooth sample collection experience.",
+    items: [
+      {
+        title: "Typhidot Test Fasting Requirement",
+        description:
+          "Fasting is not required for a Typhidot Test. Follow your healthcare provider's instructions if additional tests are included.",
+      },
+      {
+        title: "Best Timing",
+        description:
+          "The test is typically most accurate after the first few days of fever onset, once IgM antibodies have developed.",
+      },
+      {
+        title: "Inform About Medications",
+        description:
+          "Inform the healthcare professional about any antibiotics or medicines you are taking, as prior treatment can affect antibody detection.",
+      },
+    ],
+  },
+
+  bookingProcess: {
+    title: "How to Book Your Typhidot Test",
+    description:
+      "Book your Typhidot test easily with a simple process and get your sample collected at your preferred time.",
+    steps: [
+      {
+        title: "Book Test",
+        description:
+          "Choose your Typhidot test and submit your booking request online or contact our team.",
+      },
+      {
+        title: "Sample Collection",
+        description:
+          "Our trained professional collects the sample safely from your location.",
+      },
+      {
+        title: "Laboratory Testing",
+        description:
+          "Your sample is processed using standard rapid immunoassay procedures.",
+      },
+      {
+        title: "Receive Report",
+        description:
+          "Get your digital Typhidot test report after the test is completed.",
+      },
+    ],
+  },
+
+  pricePreview: {
+    title: "Typhidot Test Price",
+    description:
+      "Check the latest Typhidot test price near you and book your test with convenient home sample collection.",
+    price: 400,
+    priceUrl: "/prices/typhidot-test-price-garhshankar",
+  },
+
+  relatedTests: [
+    "widal-test",
+    "cbc-test",
+    "esr-test",
+    "crp-quantitative-test",
+    "vdrl-test",
+    "blood-group-test",
+  ],
+
+  faq: {
+    title: "Frequently Asked Questions",
+    description:
+      "Find answers to common questions about the Typhidot test, its price, results, and booking.",
+    items: [
+      {
+        question: "What does a Typhidot test check for?",
+        answer:
+          "A Typhidot test checks for specific IgM and IgG antibodies against Salmonella Typhi, helping confirm typhoid fever with higher accuracy than titre-based tests.",
+      },
+      {
+        question: "What does Typhidot IgM positive mean?",
+        answer:
+          "A positive Typhidot IgM result indicates a current or recent typhoid infection, since IgM antibodies typically appear early in the illness and decline as it resolves.",
+      },
+      {
+        question: "What does Typhidot IgG positive mean?",
+        answer:
+          "A positive Typhidot IgG result can indicate either an ongoing infection or a past exposure to typhoid, since IgG antibodies persist longer. Doctors usually interpret it alongside the IgM result and symptoms.",
+      },
+      {
+        question: "What is the difference between Widal and Typhidot test?",
+        answer:
+          "Widal measures antibody titres and is more affordable but can give false positives from past exposure. Typhidot detects specific IgM and IgG antibodies, offering faster and more specific results for a current infection, at a higher cost.",
+      },
+      {
+        question: "Is fasting required for a Typhidot test?",
+        answer:
+          "No, fasting is not required for a Typhidot test. You can eat and drink normally before your sample is collected.",
+      },
+      {
+        question: "How long does it take to receive the Typhidot test report?",
+        answer:
+          "Typhidot test reports are usually available within 24 hours after sample collection and laboratory processing.",
+      },
+      {
+        question: "Is home sample collection available for Typhidot test?",
+        answer:
+          "Yes, home sample collection is available for the Typhidot test. You can book an appointment and choose a convenient collection time.",
+      },
+      {
+        question: "What is the Typhidot test price?",
+        answer:
+          "You can check the latest Typhidot test price on our pricing page and book online with home sample collection.",
+      },
+    ],
+  },
+
+  cta: {
+    title: "Book Your Typhidot Test Today",
+    description:
+      "Get convenient sample collection, accurate typhoid confirmation, and easy access to your reports.",
+    highlights: [
+      "Home Sample Collection Available",
+      "Fast Report Delivery",
+      "Higher Accuracy Than Widal",
+    ],
+    price: "400",
+    priceText: "Check detailed Typhidot test pricing and booking options.",
+    bookingUrl: "/prices/typhidot-test-price-garhshankar",
+    phone: "tel:+918968038602",
+    buttonText: "Book Typhidot Test",
+  },
 },
 
 // {
