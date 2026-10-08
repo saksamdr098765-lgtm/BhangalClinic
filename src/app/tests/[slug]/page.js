@@ -12,6 +12,7 @@ import PricePreview from "./components/PricePreview";
 import RelatedTests from "./components/RelatedTest";
 import FAQ from "./components/FAQ";
 import CTA from "./components/CTA";
+import ResultGuide from "./components/ResultGuide";
 
 // Generate static routes only for published tests
 export async function generateStaticParams() {
@@ -97,6 +98,7 @@ export default async function TestSlugPage({ params }) {
     <main className="bg-white">
       <Hero hero={test.hero} />
       <QuickFacts quickFacts={test.quickFacts} />
+      <ResultGuide data={test.resultGuide} />
       <WhyChooseUs whyChooseUs={test.whyChooseUs} />
       <TestDetails testDetails={test.testDetails} />
       <Preparation preparation={test.preparation} />

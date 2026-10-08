@@ -3,7 +3,7 @@
 import { trackPhoneClick } from "@/app/lib/tracking";
 
 export default function TrackedPhoneLink({
-  phone,
+  phone="+918968038602",
   tracking = "phone-call",
   children,
   className,

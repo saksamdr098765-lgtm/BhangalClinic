@@ -11,6 +11,8 @@ import SITE_CONFIG from "@/app/SITE_CONFIG";
 import { notFound } from "next/navigation";
 import { prices } from "@/app/data/prices";
 import { getPriceSchema } from "@/schema/priceSchema";
+import PriceList from "./components/PriceList";
+import Overview from "./components/Overview";
 
 export async function generateStaticParams() {
   return prices.map((price) => ({
@@ -75,7 +77,8 @@ export default async function PriceSlugPage({ params }) {
         slug={slug}
         price={priceData}
       />
-
+<Overview data={priceData.overview} />
+<PriceList data={priceData.priceList} />
       {/* 2. Overview Section */}
       <PriceOverview
         priceCard={priceData.priceCard}

@@ -833,34 +833,51 @@ export const prices = [
 },
 {
   slug: "widal-test-price-garhshankar",
-  seo: {
-    title: "Widal Test Price in Garhshankar | Typhoid Test",
-    // 49 chars
-    description:
-      "Check Widal test price in Garhshankar — typhoid screening, starting from ₹50, with doorstep home sample collection and same-day reports.",
-    // 141 chars
-    keywords: [
-      "widal test price garhshankar",
-      "widal test cost garhshankar",
-      "widal test price list garhshankar",
-      "typhoid test price garhshankar",
-      "widal test near me garhshankar",
-      "s typhi test price garhshankar",
-    ],
-  },
+ seo: {
+  title: `Widal Test Price in Garhshankar – ₹${getTestPrice("widal-test")} | Same-Day Report`,
+  description:
+    `Widal test cost in Garhshankar: ₹${getTestPrice("widal-test")} at Bhangal Lab. Home sample collection, no fasting, digital report on WhatsApp. Call or book now.`,
+  keywords: [
+    "widal test price garhshankar",
+    "widal test cost garhshankar",
+    "widal test price list garhshankar",
+    "typhoid test price garhshankar",
+    "widal test near me garhshankar",
+  ],
+},
   homeCollection: true,
-  hero: {
-    badge: "",
-    title: "Widal Test Price in Garhshankar",
-    subtitle:
-      "Compare pricing on Widal (typhoid) testing in Garhshankar with accurate lab processing and doorstep home sample collection.",
-    image: "/prices/widal-test.webp",
-  },
+hero: {
+  badge: "Home Sample Collection Available",
+  title: `Widal Test Price & Cost in Garhshankar (Starting ₹${getTestPrice("widal-test")})`,
+  subtitle:
+    "Typhoid (Widal) test at Bhangal Lab, Garhshankar: no fasting, free home sample collection and a digital report on WhatsApp.",
+  image: "/prices/widal-test.webp",
+},
+overview: {
+  title: "Widal Test Cost in Garhshankar: What You Pay",
+  paragraphs: [
+    `The Widal test price in Garhshankar starts from ₹${getTestPrice("widal-test")} at Bhangal Lab, Opposite Civil Hospital, Sri Anandpur Sahib Road. The rate includes sample collection, testing and a digital report, with home collection available across Garhshankar and nearby villages.`,
+    "Widal is a blood test that checks for antibodies against Salmonella Typhi and Paratyphi, the bacteria that cause typhoid. It is most useful after the first week of fever, and your doctor may ask for a repeat test to see whether the titre is rising. If you want to understand your result, read our Widal test normal range and result guide.",
+  ],
+  linkText: "Widal test normal range and result guide",
+  linkHref: "/tests/widal-test",
+},
+
+priceList: {
+  title: "Fever & Typhoid Test Price List in Garhshankar",
+  description: "Rates for the tests doctors commonly advise together for fever.",
+  rows: [
+    { test: "Widal Test", price: getTestPrice("widal-test"), note: "Typhoid antibody titres" },
+    { test: "Typhidot Test (IgM/IgG)", price: getTestPrice("typhidot-test"), note: "More specific for current infection" },
+    { test: "Complete Blood Count (CBC)", price: getTestPrice("cbc-test"), note: "Infection and platelet check" },
+    { test: "Bhangal Fever Maxi Profile", price: 1500, note: "Widal + CBC + Dengue + Malaria" },
+  ],
+},
   priceCard: {
     actualPrice: 100,
     offerPrice: getTestPrice("widal-test"),
     offerText: "Starting Price",
-    reportTime: "Same Day (Within Hours)",
+    reportTime: "24 Hours",
     fasting: "Not Required",
     sampleType: "Blood Sample",
     homeCollection: true,
@@ -910,9 +927,15 @@ export const prices = [
       answer: "No, fasting is not required for a Widal test. You can eat and drink normally before your sample is collected.",
     },
     {
-      question: "Does the Widal test price vary by package?",
-      answer: "Yes, pricing can vary if Widal is booked standalone versus as part of a fever profile package. Contact us for a detailed rate list.",
-    },
+  question: "Does the Widal test price vary by package?",
+  answer:
+    `The standalone Widal test costs ₹${getTestPrice("widal-test")}. If booked inside the Bhangal Fever Maxi Profile (Widal + CBC + Dengue + Malaria), the package rate applies instead. Call or WhatsApp us to confirm the right option for your symptoms.`,
+},
+{
+  question: "Which is better, Widal or Typhidot, and what does each cost?",
+  answer:
+    `Widal (₹${getTestPrice("widal-test")}) is the more affordable screening test. Typhidot (₹${getTestPrice("typhidot-test")}) checks IgM and IgG antibodies and is generally more specific for a current infection. Your doctor will advise which one suits your symptoms and how many days you have had fever.`,
+},
   ],
   relatedTests: ["typhidot-test", "cbc-test", "esr-test", "crp-quantitative-test", "vdrl-test"],
   interlinks: {
@@ -950,6 +973,7 @@ export const prices = [
     offerPrice: getTestPrice("widal-test"),
     actualPrice: 100,
     buttonText: "Book a Test",
+      phone: "tel:+918968038602",
     testName: "Widal Test",
     blogUrl: "/blogs/widal-test-full-guide",
     serviceUrl: "/tests/widal-test",

@@ -1234,32 +1234,29 @@ export const tests = [
   reportTime: "24 Hours",
   status: "published",
 
-  seo: {
-    title: "Widal Test - Price, Normal Range | Book Typhoid Test",
-    // 56 chars
-    description:
-      "Book a Widal test for typhoid diagnosis with home sample collection. Check Widal test price, normal range, and same-day digital reports.",
-    // 139 chars
-    keywords: [
-      "widal test",
-      "widal test price",
-      "widal test near me",
-      "widal test normal range",
-      "widal test positive means",
-      "typhoid test",
-      "s typhi o s typhi h",
-      "widal test 1:80 meaning",
-      "widal test 1:160 meaning",
-      "typhoid test price",
-    ],
-  },
+seo: {
+  title: "Widal Test: Normal Range, Positive Meaning & Price (₹50)",
+  description:
+    "Widal test normal range, 1:80 and 1:160 meaning, typhoid positive result explained. Price ₹50 with home collection, no fasting. Book at Bhangal Lab.",
+  keywords: [
+    "widal test",
+    "widal test normal range",
+    "widal test positive means",
+    "widal test 1:80 meaning",
+    "widal test 1:160 meaning",
+    "widal test report time",
+    "typhidot vs widal test",
+    "s typhi o s typhi h",
+    "typhoid test",
+  ],
+},
 
   hero: {
     badge: "Home Sample Collection Available",
-    title: "Widal Test - Typhoid Fever Screening",
-    description:
-      "Book a Widal Test near you with fast report delivery, professional sample collection, and convenient home collection services. Check Widal test price and book online.",
-    image: "/tests/widal.webp",
+    title: "Widal Test: Normal Range, Positive Meaning & Typhoid Screening",
+description:
+  "Understand your Widal test result: normal range, what 1:80 and 1:160 mean, and what a positive result indicates. Book a Widal test in Garhshankar for ₹50 with home sample collection, no fasting and digital reports on WhatsApp.",
+  image: "/tests/widal.webp",
     imageAlt: "Widal Test - Typhoid Fever Antibody Test",
     reportTime: "24 Hours",
     homeCollection: "Available",
@@ -1273,6 +1270,19 @@ export const tests = [
     bookingUrl: "/prices/widal-test-price-garhshankar",
     phone: "tel:+918968038602",
   },
+  resultGuide: {
+  title: "Widal Test Normal Range & Result Meaning",
+  description:
+    "Widal results are reported as titres (such as 1:80 or 1:160) for the O and H antigens. This is how they are commonly interpreted. Reference ranges vary by lab and region, so always read your result with your doctor.",
+  rows: [
+    { titre: "Below 1:80", meaning: "Usually considered normal or not significant" },
+    { titre: "1:80", meaning: "Borderline; interpreted with symptoms and how long the fever has lasted" },
+    { titre: "1:160 or higher", meaning: "Suggestive of typhoid, especially when the O titre is raised" },
+    { titre: "Rising on a repeat test (after 7–10 days)", meaning: "The most reliable sign of active infection" },
+  ],
+  note:
+    "Past infection, typhoid vaccination and earlier antibiotics can all affect titres. Widal alone does not confirm typhoid, so your doctor may also advise a Typhidot test, blood culture or CBC.",
+},
 
   quickFacts: {
     sample: "Blood Sample",
@@ -1435,7 +1445,7 @@ export const tests = [
       {
         question: "What is the Widal test price?",
         answer:
-          "You can check the latest Widal test price on our pricing page and book online with home sample collection.",
+         "Widal test price starts from ₹50 at Bhangal Lab, Garhshankar, with free home sample collection."
       },
     ],
   },
