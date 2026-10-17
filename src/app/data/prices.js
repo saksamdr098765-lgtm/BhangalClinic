@@ -1163,6 +1163,162 @@ priceList: {
     },
   },
 },
+{
+  slug: "dengue-test-price-garhshankar",
+  seo: {
+    title: "Dengue Test Price in Garhshankar | NS1, IgG IgM",
+    // 47 chars
+    description:
+      "Dengue test price in Garhshankar starts at ₹600. See the price list for dengue test, CBC and platelet count, with home sample collection.",
+    // 137 chars
+    keywords: [
+      "dengue test price garhshankar",
+      "dengue test price",
+      "dengue blood test price",
+      "dengue ns1 test price",
+      "dengue igg igm test price",
+      "dengue test price list",
+      "cbc and dengue test price",
+      "dengue test package",
+    ],
+  },
+  homeCollection: true,
+  hero: {
+    badge: "",
+    title: "Dengue Test Price in Garhshankar",
+    subtitle:
+      "Clear pricing for dengue testing (NS1 antigen, IgM and IgG) in Garhshankar, plus the related tests doctors usually order alongside it.",
+    image: "/prices/dengue-test.webp",
+  },
+  priceCard: {
+    actualPrice: 800,
+    offerPrice: getTestPrice("dengue-test"),
+    offerText: "Dengue Test Price",
+    reportTime: "Same Day (12-24 Hrs)",
+    fasting: "Not Required",
+    sampleType: "Blood Sample",
+    homeCollection: true,
+    labVisit: true,
+    includes: {
+      title: "Every Booking Includes",
+      items: [
+        "NS1 Antigen + IgM + IgG Testing",
+        "Digital Report on WhatsApp & Email",
+        "No Advance Payment Required",
+      ],
+    },
+  },
+  whyGetTest: {
+    title: "Why Get a Dengue Test in Garhshankar",
+    description:
+      "A fever that lasts beyond two or three days is worth testing, because dengue can look like an ordinary viral fever at first.",
+    reasons: [
+      {
+        title: "Confirms the Cause of Fever",
+        description: "Separates dengue from other fevers such as typhoid, malaria or flu, so treatment is not guesswork.",
+      },
+      {
+        title: "Helps You Catch the Critical Phase",
+        description: "Knowing it is dengue means you and your doctor watch platelets and warning signs when they matter most.",
+      },
+      {
+        title: "Rest at Home, Test at Home",
+        description: "Home sample collection spares an unwell patient the trip to a crowded hospital.",
+      },
+    ],
+  },
+  faqs: [
+    {
+      question: "How much does a dengue test cost in Garhshankar?",
+      answer: `The dengue test at Bhangal Clinical Laboratories & ECG Center is priced at ₹${getTestPrice("dengue-test")}, covering NS1 antigen and IgM and IgG antibodies, with home sample collection available.`,
+    },
+    {
+      question: "What is included in the dengue test price?",
+      answer: "The price covers testing for dengue NS1 antigen and IgM and IgG antibodies from a single blood sample, plus a digital report on WhatsApp and email.",
+    },
+    {
+      question: "Do I need a CBC or platelet count with the dengue test?",
+      answer: "Doctors commonly order a CBC or platelet count alongside it, since the dengue test confirms infection while platelets show how it is affecting your blood. Both are listed in the price table below.",
+    },
+    {
+      question: "Is the dengue test cheaper in a government hospital?",
+      answer: "Government hospitals may offer dengue testing at low or no cost, especially in outbreak season. A private lab like ours adds home collection and faster digital reports.",
+    },
+    {
+      question: "Is home sample collection available for the dengue test?",
+      answer: "Yes, our technicians collect samples at home across Garhshankar and nearby villages.",
+    },
+    {
+      question: "How fast do I get my dengue report?",
+      answer: "Reports are usually ready within 24 hours and are sent digitally on WhatsApp and email.",
+    },
+  ],
+  relatedTests: [
+    "platelet-count",
+    "cbc-test",
+    "esr-test",
+    "mp-antigen-test",
+    "widal-test",
+    "chikungunya-igm-test",
+  ],
+  interlinks: {
+    badge: "Included Services & Local Availability",
+    heading: "What's Included & Nearby Availability",
+    description: "Checking dengue test prices? See exactly what the test covers and confirm home collection near you in Garhshankar.",
+    items: [
+      {
+        title: "What Does the Dengue Test Cover?",
+        subtitle: "NS1, IgM & IgG Details",
+        description: "Learn how the three markers work, which day of fever suits which marker, and how to prepare for the test.",
+        href: "/tests/dengue-test",
+        icon: "FiActivity",
+        badge: "Service Details",
+        badgeColor: "bg-teal-100 text-teal-800 border-teal-200",
+        btnText: "Explore Dengue Test",
+        tracking: "price-interlink-service",
+      },
+      {
+        title: "Available Near You in Garhshankar",
+        subtitle: "Location & Home Collection",
+        description: "See our Garhshankar lab, the areas where we collect samples at home, and our opening hours.",
+        href: "/locations/dengue-test-in-garhshankar",
+        icon: "FiMapPin",
+        badge: "Garhshankar Location",
+        badgeColor: "bg-sky-100 text-sky-800 border-sky-200",
+        btnText: "Visit Garhshankar Hub",
+        tracking: "price-interlink-location",
+      },
+    ],
+  },
+  cta: {
+    title: "Book Your Dengue Test in Garhshankar Today",
+    description: "Transparent pricing, digital reports, and home sample collection across Garhshankar.",
+    offerPrice: getTestPrice("dengue-test"),
+    actualPrice: 800,
+    buttonText: "Book a Test",
+    testName: "Dengue Test",
+    blogUrl: "/blogs/dengue-test-full-guide",
+    serviceUrl: "/tests/dengue-test",
+    locationUrl: "/locations/dengue-test-in-garhshankar",
+    packageUrl: "/packages",
+    highlights: ["Home Sample Collection", "Digital Report", "Clear Pricing", "Fast Turnaround"],
+  },
+  packageComparison: {
+    type: "table",
+    title: "Dengue-Related Test Price List",
+    subtitle: "Tests commonly ordered with or instead of a dengue test during a fever, with current prices at our Garhshankar lab.",
+    headers: ["Test", "Price", "Why It Is Done With Dengue", "Fasting"],
+    rows: [
+      ["Dengue Test (NS1 + IgM + IgG)", `₹${getTestPrice("dengue-test")}`, "Confirms dengue infection", "Not Required"],
+      ["Platelet Count", `₹${getTestPrice("platelet-count")}`, "Tracks the platelet drop during dengue", "Not Required"],
+      ["CBC", `₹${getTestPrice("cbc-test")}`, "Platelets, WBC and hematocrit in one report", "Not Required"],
+      ["ESR", `₹${getTestPrice("esr-test")}`, "Shows inflammation level", "Not Required"],
+      ["MP Antigen (Malaria)", `₹${getTestPrice("mp-antigen-test")}`, "Rules out malaria in the same fever", "Not Required"],
+      ["Widal (Typhoid)", `₹${getTestPrice("widal-test")}`, "Rules out typhoid in prolonged fever", "Not Required"],
+      ["Chikungunya IgM", `₹${getTestPrice("chikungunya-igm-test")}`, "Similar symptoms to dengue", "Not Required"],
+    ],
+  },
+},
 
 ];
 

@@ -2418,7 +2418,7 @@ seo: {
   publishedAt: "September 21, 2026",
   readingTime: "10 min read",
   coverImage: "/blogs/typhoid-test-full-guide/cover.webp",
-  featured: true,
+  featured: false,
 
   relatedPackages: ["bhangal-fever-mini-profile", "bhangal-fever-maxi-profile", "bhangal-dengue-profile", "bhangal-basic-profile"],
   relatedTests: ["widal-test", "typhidot-test", "cbc-test", "esr-test", "dengue-test"],
@@ -2668,6 +2668,376 @@ seo: {
     bookingLink: `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20want%20to%20book%20a%20Typhoid%20Test.%20Please%20share%20the%20available%20slots.`,
     whatsappLink: `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20have%20a%20question%20about%20Typhoid%20Test.`,
     features: ["Home Sample Collection", "Fast Digital Reports", "Affordable Pricing", "Experienced Phlebotomists"],
+  },
+},
+{
+  id: 8,
+  slug: "dengue-test-full-guide",
+  title: "Dengue Fever: Symptoms, Tests, Platelet Count & When to Worry (Complete Guide)",
+  excerpt:
+    "Dengue symptoms and stages, which test to take on which day of fever (NS1, IgM, IgG), normal platelet count, warning signs and treatment basics.",
+  category: "Health Tips",
+  author: {
+    name: "Bhangal Clinical Laboratories & ECG Center",
+    image: "/team/author.jpg",
+  },
+  publishedAt: "October 17, 2026",
+  readingTime: "11 min read",
+  coverImage: "/blogs/dengue-test-full-guide/cover.webp",
+  featured: true,
+
+  relatedPackages: [
+    "bhangal-dengue-profile",
+    "bhangal-fever-mini-profile",
+    "bhangal-fever-maxi-profile",
+    "bhangal-basic-profile",
+  ],
+  relatedTests: [
+    "dengue-test",
+    "platelet-count",
+    "cbc-test",
+    "esr-test",
+    "mp-antigen-test",
+    "chikungunya-igm-test",
+  ],
+
+  seo: {
+    title: "Dengue Symptoms, Test & Platelet Count Guide",
+    // 44 chars
+    description:
+      "Dengue symptoms, which test to take on which day (NS1, IgM, IgG), normal platelet count, warning signs and treatment basics explained.",
+    // 134 chars
+    keywords: [
+      "dengue symptoms",
+      "dengue treatment",
+      "normal platelet count",
+      "dengue test",
+      "dengue ns1 vs igm",
+      "dengue test window period",
+      "dengue test after how many days of fever",
+      "platelet count in dengue",
+      "dengue warning signs",
+      "Bhangal Clinical Laboratories",
+    ],
+  },
+
+  quickInfo: [
+    { label: "You Will Learn", value: "Dengue Symptoms, Tests & Platelets", icon: "activity" },
+    { label: "Reading Time", value: "11 Minutes", icon: "clock" },
+    { label: "Suitable For", value: "Adults & Children", icon: "users" },
+    { label: "Symptoms", value: "High Fever, Body Ache, Rash, Pain Behind Eyes", icon: "heart" },
+    { label: "Recommended Test", value: "Dengue NS1 / IgM / IgG", icon: "test" },
+    { label: "Fasting", value: "Not Required", icon: "file" },
+    { label: "Report Time", value: "Within 24 Hours", icon: "clock" },
+    { label: "Price", value: getTestPrice("dengue-test"), icon: "price" },
+    { label: "Home Collection", value: "Available", icon: "home" },
+  ],
+
+  tags: ["Dengue", "Platelet Count", "Fever Screening", "Blood Test", "Preventive Healthcare"],
+
+  content: [
+    {
+      type: "paragraph",
+      text: "Every monsoon and post-monsoon season, dengue is one of the first things people worry about when a fever refuses to settle. The confusing part is that early dengue looks like an ordinary viral fever, and the test you need depends on how many days you have been ill. This guide covers the symptoms, the stages, which test fits which day, what platelet numbers mean, and when to stop waiting and see a doctor.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "What Is Dengue Fever?",
+    },
+    {
+      type: "paragraph",
+      text: "Dengue is a viral infection spread by Aedes mosquitoes, which bite mostly during the day and breed in clean, standing water. There are four dengue virus types, and catching one type does not protect you from the others. Most infections are mild, but a minority turn severe, which is why watching for warning signs matters.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Common Dengue Symptoms",
+    },
+    {
+      type: "list",
+      items: [
+        "Sudden high fever, often 102-104°F (39-40°C)",
+        "Severe headache and pain behind the eyes",
+        "Muscle, bone and joint pain",
+        "Nausea or vomiting",
+        "Skin rash, usually appearing a few days into the fever",
+        "Mild bleeding such as nosebleeds or bleeding gums",
+      ],
+    },
+    {
+      type: "tip",
+      title: "Good to Know",
+      text: "A high fever alone cannot tell dengue from typhoid, malaria or flu. Only a blood test confirms it, so test rather than guess.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Stages of Dengue: What Happens Day by Day",
+    },
+    {
+      type: "table",
+      title: "Three Phases of Dengue",
+      headers: ["Phase", "Typical Days", "What Happens"],
+      rows: [
+        ["Febrile (stage 1)", "Days 1-3 or 4", "High fever, headache, body ache, nausea"],
+        ["Critical", "Days 3-7, often as fever falls", "Platelets drop, fluid can leak from blood vessels, warning signs may appear"],
+        ["Recovery", "Days 7-10", "Appetite returns, platelets climb, rash may itch"],
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "The critical phase surprises many families, because the fever seems to be settling just when the risk is highest. A patient who feels slightly better but is weaker, vomiting or in stomach pain needs medical review, not reassurance.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Which Dengue Test Should You Take, and When?",
+    },
+    {
+      type: "paragraph",
+      text: "A dengue test looks for either the virus itself or your body's reaction to it. Because these appear at different times, the day of fever decides which marker is reliable.",
+    },
+    {
+      type: "table",
+      title: "Dengue Test Window Period",
+      headers: ["Day of Fever", "Most Useful Marker", "Why"],
+      rows: [
+        ["Day 1-5", "NS1 antigen", "The viral protein is present in blood early in the illness"],
+        ["From about Day 5", "IgM antibody", "Your immune system starts producing IgM about now"],
+        ["After about Day 7-10", "IgG antibody (with IgM)", "IgG rises later, or earlier in a repeat infection"],
+      ],
+    },
+    {
+      type: "interlinking",
+      title: "Get Tested in Garhshankar",
+      description: "Our dengue test checks NS1, IgM and IgG from a single sample, so timing is less of a worry.",
+      items: [
+        {
+          title: "Dengue Test Details",
+          description: "See what the test covers and how to prepare.",
+          href: "/tests/dengue-test",
+        },
+        {
+          title: "Dengue Test Price in Garhshankar",
+          description: "Check the price along with platelet count and CBC.",
+          href: "/prices/dengue-test-price-garhshankar",
+        },
+      ],
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "How to Read Your Dengue Test Report",
+    },
+    {
+      type: "paragraph",
+      text: "A normal (negative) dengue report shows NS1, IgM and IgG all as negative or non-reactive. Reference values vary slightly between test kits, so always compare against the range printed on your own report.",
+    },
+    {
+      type: "table",
+      title: "Dengue Report Combinations and What They Suggest",
+      headers: ["NS1", "IgM", "IgG", "What It Usually Suggests"],
+      rows: [
+        ["Positive", "Negative", "Negative", "Early, active infection"],
+        ["Positive", "Positive", "Negative", "Active infection, a few days in"],
+        ["Negative", "Positive", "Negative", "Recent infection"],
+        ["Negative", "Positive", "Positive", "Recent infection, possibly a repeat one"],
+        ["Negative", "Negative", "Positive", "Past exposure"],
+        ["Negative", "Negative", "Negative", "No markers found yet; a repeat test may be advised if fever continues"],
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "These are general patterns, not a diagnosis. Your doctor will read the report alongside your symptoms, fever day and platelet trend.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Normal Platelet Count and Platelets in Dengue",
+    },
+    {
+      type: "paragraph",
+      text: "A normal platelet count is about 150,000 to 450,000 per microlitre of blood. Dengue lowers platelets, usually bottoming out in the critical phase, then recovers on its own as the illness resolves. Doctors usually repeat the count every day or two, because the direction of the trend matters more than a single number.",
+    },
+    {
+      type: "table",
+      title: "Platelet Count Ranges",
+      headers: ["Platelet Count (per µL)", "Category", "What It Means"],
+      rows: [
+        ["150,000 - 450,000", "Normal", "Healthy range"],
+        ["100,000 - 149,000", "Mildly low", "Common early in dengue"],
+        ["50,000 - 99,000", "Moderately low", "Common in dengue, monitored closely"],
+        ["20,000 - 49,000", "Severely low", "Needs medical supervision"],
+        ["Below 20,000", "Critically low", "Needs urgent medical evaluation"],
+      ],
+    },
+    {
+      type: "tip",
+      title: "Platelets Alone Do Not Decide Treatment",
+      text: "Bleeding, a rapidly falling count and other warning signs matter as much as the number. Any low count with bleeding or severe symptoms needs a doctor the same day.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Warning Signs: When to Go to Hospital",
+    },
+    {
+      type: "list",
+      items: [
+        "Severe or persistent stomach pain",
+        "Repeated vomiting",
+        "Bleeding from nose or gums, or blood in vomit or stool",
+        "Unusual drowsiness, restlessness or irritability",
+        "Swelling or fluid build-up, such as a swollen belly",
+        "Cold, clammy skin or difficulty breathing",
+        "A sudden drop in platelets",
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "Warning signs usually appear around the time the fever falls. If you notice any of them, go to a hospital without waiting for the next scheduled test.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Dengue Treatment: What Doctors Usually Advise",
+    },
+    {
+      type: "paragraph",
+      text: "There is no specific antiviral medicine for dengue, so care is supportive. Doctors typically advise plenty of fluids such as water and ORS, rest, and paracetamol for fever. Aspirin, ibuprofen and similar painkillers are usually avoided because they can raise bleeding risk. Follow your doctor's instructions, and keep every follow-up blood test.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Can a CBC Confirm Dengue?",
+    },
+    {
+      type: "paragraph",
+      text: "No. A CBC can show low platelets, low white cells or a raised hematocrit, all of which fit dengue, but only an NS1 or antibody test confirms it. That is why doctors usually order both: the dengue test for diagnosis and the CBC to monitor.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "How Much Does a Dengue Test Cost?",
+    },
+    {
+      type: "paragraph",
+      text: "Prices depend on which markers are included and whether you add a CBC or platelet count. Check our current price list for the dengue test and related fever tests.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "How to Prevent Dengue",
+    },
+    {
+      type: "paragraph",
+      text: "Empty or cover any container that holds standing water, such as coolers, tyres, buckets and flower pots, at least once a week. Use repellent and wear full sleeves during the day, and use nets or screens where you can.",
+    },
+    {
+      type: "success",
+      title: "Key Takeaway",
+      text: "Match the test to the day of fever, track platelets through the critical phase, and treat warning signs as an emergency. An early, confirmed diagnosis is what lets you and your doctor plan safely.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Book Your Dengue Test",
+    },
+    {
+      type: "paragraph",
+      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. Walk in, call ahead, or book a home sample collection.",
+    },
+    {
+      type: "interlinking",
+      title: "Areas We Serve",
+      description: "We provide home sample collection and diagnostic services across the following locations.",
+      items: [
+        {
+          title: "Garhshankar",
+          description: "Dengue test and home sample collection.",
+          href: "/locations/dengue-test-in-garhshankar",
+        },
+        { title: "Hoshiarpur", description: "Diagnostic laboratory services." },
+        { title: "Nawanshahr", description: "Health checkups and pathology tests." },
+      ],
+    },
+    {
+      type: "references",
+      items: [
+        {
+          title: "Dengue and Severe Dengue",
+          publisher: "World Health Organization (WHO)",
+          url: "https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue",
+        },
+        {
+          title: "Dengue",
+          publisher: "Centers for Disease Control and Prevention (CDC)",
+          url: "https://www.cdc.gov/dengue/",
+        },
+      ],
+    },
+  ],
+
+  faq: [
+    {
+      question: "What is stage 1 dengue?",
+      answer: "Stage 1 is the febrile phase, usually the first three to four days, with high fever, headache, body ache and nausea. It often looks like any viral fever.",
+    },
+    {
+      question: "Can a CBC confirm dengue?",
+      answer: "No. A CBC can show low platelets or other changes that fit dengue, but only an NS1 or antibody test confirms it.",
+    },
+    {
+      question: "What tests are done for dengue?",
+      answer: "The main tests are the NS1 antigen test, IgM and IgG antibody tests, and a CBC or platelet count to monitor the illness.",
+    },
+    {
+      question: "After how many days of fever should I get a dengue test?",
+      answer: "You can test from day one. NS1 is most useful in roughly the first five days, and antibodies become more useful after about day five.",
+    },
+    {
+      question: "What does NS1 positive with IgG and IgM negative mean?",
+      answer: "It usually means early, active dengue, because the virus protein appears before antibodies develop.",
+    },
+    {
+      question: "What is the normal platelet count?",
+      answer: "About 150,000 to 450,000 per microlitre of blood. Counts below that are common in dengue and are monitored by your doctor.",
+    },
+    {
+      question: "Is 80,000 platelet count normal in dengue?",
+      answer: "It is below the normal range, but a count in this range is common during dengue. Your doctor will usually repeat it to check the trend.",
+    },
+    {
+      question: "Is a platelet count of 200,000 normal in dengue?",
+      answer: "200,000 is within the normal range. Platelets can still fall quickly in dengue, so a doctor may repeat the count over the next days.",
+    },
+    {
+      question: "What are the warning signs of dengue?",
+      answer: "Severe stomach pain, repeated vomiting, bleeding from the nose or gums, drowsiness or restlessness, fluid build-up and a rapid platelet drop. Go to hospital if you see any of these.",
+    },
+    {
+      question: "Is a 103°F fever normal in dengue?",
+      answer: "Dengue often causes fever of 102-104°F, so 103°F fits, but many other infections do too. A blood test is needed to know the cause.",
+    },
+    {
+      question: "What should I do if my dengue test is positive?",
+      answer: "Contact your doctor, drink plenty of fluids, rest, and avoid aspirin or ibuprofen unless advised. Watch for warning signs and keep follow-up blood tests.",
+    },
+    {
+      question: "Can I get a dengue test done at home?",
+      answer: "Yes. We offer home sample collection across Garhshankar and nearby villages, and the report is delivered digitally.",
+    },
+  ],
+
+  cta: {
+    title: "Book Your Dengue Test Today",
+    description: "Looking for a dengue test in Garhshankar? Book with home sample collection, digital reports and clear pricing.",
+    serviceName: "Dengue Test",
+    serviceLink: "/tests/dengue-test",
+    bookingLink: `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20want%20to%20book%20a%20Dengue%20Test.%20Please%20share%20the%20available%20slots.`,
+    whatsappLink: `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20have%20a%20question%20about%20the%20Dengue%20Test.`,
+    features: ["NS1 + IgM + IgG Covered", "Home Sample Collection", "Fast Digital Reports", "Experienced Phlebotomists"],
   },
 },
 

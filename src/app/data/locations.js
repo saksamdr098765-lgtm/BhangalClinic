@@ -1836,6 +1836,238 @@ homeCollection:false,
 
   hours: "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
 },
+{
+  id: 8,
+  slug: "dengue-test-in-garhshankar",
+  city: "Garhshankar",
+  homeCollection: true,
+  state: "Punjab",
+  title: "Dengue Test in Garhshankar",
+  shortDescription:
+    "Dengue testing in Garhshankar at Bhangal Clinical Laboratories & ECG Center. NS1, IgM and IgG in one sample, with home collection and digital reports.",
+
+  seo: {
+    title: "Dengue Test in Garhshankar | Home Sample Collection",
+    // 51 chars
+    description:
+      "Get your dengue test done in Garhshankar — NS1, IgM and IgG testing at Bhangal Clinical Laboratories with home collection and fast reports.",
+    // 139 chars
+    keywords: [
+      "Dengue Test in Garhshankar",
+      "Dengue Test Garhshankar",
+      "Dengue Test Near Me Garhshankar",
+      "Dengue NS1 Test Garhshankar",
+      "Dengue IgG IgM Test Garhshankar",
+      "Dengue Test Home Collection Garhshankar",
+      "Dengue Test Lab Garhshankar",
+      "Best Pathology Lab for Dengue Garhshankar",
+      "Dengue Test Hoshiarpur",
+    ],
+  },
+
+  overview: {
+    heading: "Dengue Test in Garhshankar",
+    paragraphs: [
+      "When a fever lingers, people in Garhshankar and the surrounding villages want a fast, trustworthy answer on dengue. Bhangal Clinical Laboratories & ECG Center tests for the dengue NS1 antigen and for IgM and IgG antibodies from a single blood sample, so you get a useful result whether you are on the second day of fever or the seventh.",
+      "Visit the lab opposite Civil Hospital, or book home sample collection if the patient is too weak to travel. Reports reach you digitally, ready to forward to your doctor, and we can add a platelet count or CBC to the same visit.",
+    ],
+    highlights: [
+      "NS1 + IgM + IgG in One Sample",
+      "Home Sample Collection",
+      "Digital Reports on WhatsApp",
+      "Platelet Count & CBC Available",
+      "Experienced Lab Technicians",
+    ],
+  },
+
+  popularTests: {
+    heading: "Fever & Dengue-Related Tests in Garhshankar",
+    test: [
+      "dengue-test",
+      "platelet-count",
+      "cbc-test",
+      "esr-test",
+      "mp-antigen-test",
+      "widal-test",
+      "typhidot-test",
+      "chikungunya-igm-test",
+    ],
+  },
+
+  packages: [
+    "bhangal-dengue-profile",
+    "bhangal-fever-mini-profile",
+    "bhangal-fever-maxi-profile",
+    "bhangal-basic-profile",
+  ],
+
+  process: {
+    heading: "How to Get a Dengue Test in Garhshankar",
+    steps: [
+      {
+        icon: "search",
+        title: "Tell Us Your Fever Day",
+        description: "Let us know how many days you have had fever so the right markers are read correctly.",
+      },
+      {
+        icon: "calendar",
+        title: "Book Lab Visit or Home Collection",
+        description: "Call or book online, then choose a lab visit or have a technician come to you.",
+      },
+      {
+        icon: "lab",
+        title: "Sample Collection",
+        description: "A small blood sample is collected and tested for NS1, IgM and IgG.",
+      },
+      {
+        icon: "report",
+        title: "Get Your Report",
+        description: "Receive the digital report within about 24 hours and share it with your doctor.",
+      },
+    ],
+  },
+
+  whyChoose: {
+    features: [
+      {
+        icon: "activity",
+        title: "Three Markers, One Sample",
+        description: "NS1 and both antibodies are checked together, so timing is less likely to cause a missed result.",
+      },
+      {
+        icon: "award",
+        title: "Experienced Lab Team",
+        description: "Trained staff handle collection and reporting with standard lab procedures.",
+      },
+      {
+        icon: "shield",
+        title: "Quality Assurance",
+        description: "Every sample goes through quality control checks before the report is released.",
+      },
+      {
+        icon: "clock",
+        title: "Quick Turnaround",
+        description: "Most dengue reports in Garhshankar are ready within 24 hours.",
+      },
+      {
+        icon: "home",
+        title: "Home Collection",
+        description: "Rest at home while the sample is collected at your doorstep.",
+      },
+      {
+        icon: "check",
+        title: "Clear Pricing",
+        description: "See the price before you book, with no advance payment.",
+      },
+    ],
+  },
+
+  areas: [
+    "Garhshankar City", "Civil Hospital Area", "Railway Road", "Main Bazaar",
+    "Nawanshahr Road", "Hoshiarpur Road", "Banga Road", "Mahilpur Road",
+    "Saila Khurd", "Binewal", "Denowal Kalan", "Denowal Khurd", "Chak Guru",
+    "Pojewal", "Pandori", "Purhiran", "Chak Singha", "Bharta", "Kukar Majara",
+    "Nearby Villages of Garhshankar",
+  ],
+
+  hubLinks: {
+    heading: "Everything You Need to Know About Dengue Testing in Garhshankar",
+    badge: "Garhshankar Central Diagnostics Hub",
+    description: "Learn the symptoms and stages of dengue, understand your report, or check pricing — start with the guides below.",
+    items: [
+      {
+        title: "Dengue Symptoms, Tests & Platelet Count",
+        subtitle: "Educational Guide & Warning Signs",
+        description: "Understand dengue stages, which test suits which day of fever, normal platelet counts, and when to seek urgent care.",
+        href: "/blogs/dengue-test-full-guide",
+        icon: "FiBookOpen",
+        badge: "Context & Guide",
+        badgeColor: "bg-blue-100 text-blue-700 border-blue-200",
+        btnText: "Read Full Guide",
+        tag: "Educational",
+      },
+      {
+        title: "Dengue Test Details",
+        subtitle: "NS1, IgM & IgG Explained",
+        description: "See what the test covers, how to prepare, and how to read each marker.",
+        href: "/tests/dengue-test",
+        icon: "FiActivity",
+        badge: "Service Overview",
+        badgeColor: "bg-teal-100 text-teal-700 border-teal-200",
+        btnText: "Explore Service",
+        tag: "Service",
+      },
+      {
+        title: "Dengue Test Price in Garhshankar",
+        subtitle: "Price List for Related Fever Tests",
+        description: "Check the dengue test price along with platelet count, CBC and other fever tests.",
+        href: "/prices/dengue-test-price-garhshankar",
+        icon: "FiTag",
+        badge: "Price & Cost",
+        badgeColor: "bg-amber-100 text-amber-700 border-amber-200",
+        btnText: "View Price List",
+        tag: "Cost & Rates",
+      },
+    ],
+  },
+
+  relatedLinks: {
+    heading: "Explore Key Dengue Information",
+    links: [
+      {
+        label: "Dengue Symptoms, Tests & Platelet Count",
+        description: "Stages of dengue, warning signs, platelet ranges and how to read the report.",
+        slug: "/blogs/dengue-test-full-guide",
+      },
+      {
+        label: "Dengue Test Details",
+        description: "What NS1, IgM and IgG show and how to prepare.",
+        slug: "/tests/dengue-test",
+      },
+      {
+        label: "Dengue Test Price in Garhshankar",
+        description: "Current prices for the dengue test and related fever tests.",
+        slug: "/prices/dengue-test-price-garhshankar",
+      },
+    ],
+  },
+
+  blogs: ["dengue-test-full-guide", "cbc-test-full-guide", "list-of-blood-tests"],
+  services: ["dengue-test", "blood-tests"],
+
+  faq: [
+    {
+      question: "Where can I get a dengue test in Garhshankar?",
+      answer: "Bhangal Clinical Laboratories & ECG Center, opposite Civil Hospital on Sri Anandpur Sahib Road, offers dengue testing at the lab or through home sample collection.",
+    },
+    {
+      question: "Is home sample collection available for the dengue test in Garhshankar?",
+      answer: "Yes. A technician can collect the sample at your home in Garhshankar and nearby villages. Please call to confirm a time.",
+    },
+    {
+      question: "Which dengue tests do you offer?",
+      answer: "We test for the dengue NS1 antigen and for IgM and IgG antibodies from a single blood sample. A platelet count or CBC can be added.",
+    },
+    {
+      question: "How much does a dengue test cost in Garhshankar?",
+      answer: "Please see our dengue test price page for the current rate and the related-test price list.",
+    },
+    {
+      question: "How soon will I get my dengue report?",
+      answer: "Reports are usually ready within 24 hours and sent digitally on WhatsApp and email.",
+    },
+    {
+      question: "When should I get tested for dengue?",
+      answer: "If fever has lasted more than two or three days, especially with body ache, headache, pain behind the eyes or a rash, consider testing. Seek urgent care for severe stomach pain, repeated vomiting or any bleeding.",
+    },
+    {
+      question: "Do I need to fast before a dengue test?",
+      answer: "No. You can eat and drink normally before the sample is collected.",
+    },
+  ],
+
+  hours: "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
+},
 ];
 
 export function getLocation(slug) {

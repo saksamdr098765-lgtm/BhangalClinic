@@ -2077,15 +2077,242 @@ description:
   category: "Infectious Disease",
   organ: "Immune System",
   sampleType: "Blood",
-  parameterCount: 1,
+  parameterCount: 3,
   fasting: false,
   homeCollection: true,
   popular: true,
   description:
-    "Detects dengue infection for early diagnosis and treatment.",
+    "Dengue test checks NS1 antigen and IgM/IgG antibodies in your blood to confirm dengue infection at the right stage of fever.",
   price: 600,
   reportTime: "24 Hours",
-   status:"draft"
+  status: "published",
+
+  seo: {
+    title: "Dengue Test - NS1, IgG IgM Price & Report Guide",
+    // 47 chars
+    description:
+      "Book a dengue test (NS1 antigen, IgM, IgG) with home sample collection. Know which test suits your fever day, price, and report time.",
+    // 133 chars
+    keywords: [
+      "dengue test",
+      "dengue ns1 antigen test",
+      "dengue igm test",
+      "dengue igg igm test",
+      "dengue rapid test",
+      "dengue test accuracy",
+      "what is dengue test",
+      "dengue test full form",
+      "dengue fever test",
+      "dengue blood test",
+    ],
+  },
+
+  hero: {
+    badge: "Home Sample Collection Available",
+    title: "Dengue Test - NS1 Antigen, IgM & IgG",
+    description:
+      "Book a dengue test near you with professional sample collection, digital reports, and home collection. One blood sample checks for both early virus markers and antibodies.",
+    image: "/tests/dengue.webp",
+    imageAlt: "Dengue Test - NS1 Antigen, IgM and IgG Blood Test",
+    reportTime: "24 Hours",
+    homeCollection: "Available",
+    trustPoints: [
+      "NS1 + IgM + IgG Covered",
+      "Professional Sample Collection",
+      "Digital Reports",
+      "Quality-Controlled Testing",
+    ],
+    bookButton: "Book Dengue Test",
+    bookingUrl: "/prices/dengue-test-price-garhshankar",
+    phone: "tel:+918968038602",
+  },
+
+  quickFacts: {
+    sample: "Blood Sample",
+    reportTime: "24 Hours",
+    fasting: "Not Required",
+    homeCollection: "Available",
+    ageGroup: "Adults & Children",
+  },
+
+  whyChooseUs: {
+    title: "Why Choose Our Dengue Test Service?",
+    description:
+      "Get a dengue test near you without waiting in a crowded hospital queue, with trained staff and reports delivered digitally.",
+    items: [
+      {
+        title: "Early and Late Markers Together",
+        description:
+          "Testing NS1 and antibodies together means a useful result whether you are on day 2 or day 7 of fever.",
+      },
+      {
+        title: "Gentle Sample Collection",
+        description:
+          "Trained staff collect the sample carefully, which matters when you are already weak from fever.",
+      },
+      {
+        title: "Digital Reports",
+        description:
+          "Receive your dengue report on WhatsApp and email so you can share it with your doctor immediately.",
+      },
+      {
+        title: "Home Collection Available",
+        description:
+          "Stay at home and rest while a technician collects your sample at a time that suits you.",
+      },
+    ],
+  },
+
+  testDetails: {
+    title: "About Dengue Test (NS1 Antigen, IgM & IgG)",
+    description: [
+      "Dengue is a viral infection spread by Aedes mosquitoes. The dengue test looks for two kinds of evidence in one blood sample: the NS1 antigen, a viral protein that appears in blood from the first day of fever, and IgM and IgG antibodies, which your immune system produces as it fights the virus.",
+      "Timing matters. NS1 is most useful in roughly the first five days of fever, IgM usually becomes detectable after about day five, and IgG rises later (or earlier in a repeat infection). Checking all three together lowers the chance of a missed result, whichever day you walk in.",
+    ],
+    included: [
+      "Dengue NS1 Antigen",
+      "Dengue IgM Antibody",
+      "Dengue IgG Antibody",
+    ],
+  },
+
+  preparation: {
+    title: "Preparation Before Dengue Test",
+    description:
+      "No special preparation is needed, but a few details help your doctor read the report correctly.",
+    items: [
+      {
+        title: "No Fasting Needed",
+        description:
+          "You can eat and drink normally. Staying hydrated is encouraged, especially if you have a fever.",
+      },
+      {
+        title: "Note Your Fever Day",
+        description:
+          "Tell the technician how many days ago the fever started. The day of illness decides which marker is most reliable.",
+      },
+      {
+        title: "Keep Earlier Reports Handy",
+        description:
+          "If you already have a CBC or platelet count from the last few days, keep it ready so the trend can be compared.",
+      },
+    ],
+  },
+
+  bookingProcess: {
+    title: "How to Book Your Dengue Test",
+    description:
+      "Book in a few minutes and get your sample collected without leaving home if you prefer.",
+    steps: [
+      {
+        title: "Book Test",
+        description:
+          "Request your dengue test online or call our team and mention how many days you have had fever.",
+      },
+      {
+        title: "Sample Collection",
+        description:
+          "A trained technician collects a small blood sample at our lab or at your home.",
+      },
+      {
+        title: "Laboratory Testing",
+        description:
+          "The sample is tested for NS1 antigen and IgM and IgG antibodies.",
+      },
+      {
+        title: "Receive Report",
+        description:
+          "Get your digital dengue report on WhatsApp and email, then share it with your doctor.",
+      },
+    ],
+  },
+
+  pricePreview: {
+    title: "Dengue Test Price",
+    description:
+      "See the current dengue test price and what is covered before you book, with no advance payment required.",
+    price: 600,
+    priceUrl: "/prices/dengue-test-price-garhshankar",
+  },
+
+  relatedTests: [
+    "platelet-count",
+    "cbc-test",
+    "esr-test",
+    "mp-antigen-test",
+    "widal-test",
+    "typhidot-test",
+    "chikungunya-igm-test",
+  ],
+
+  faq: {
+    title: "Frequently Asked Questions",
+    description:
+      "Quick answers about the dengue test, how to read it, and when to get it done.",
+    items: [
+      {
+        question: "What does a dengue test check for?",
+        answer:
+          "It checks for the dengue virus NS1 antigen and for IgM and IgG antibodies in your blood. Together they show whether you have a current or recent dengue infection.",
+      },
+      {
+        question: "What is the difference between NS1, IgM and IgG?",
+        answer:
+          "NS1 is a viral protein that appears in the first few days of fever. IgM antibodies appear a few days later and point to a recent infection. IgG antibodies appear later still and can also reflect past exposure.",
+      },
+      {
+        question: "After how many days of fever should I get a dengue test?",
+        answer:
+          "You can test from day one. NS1 works best in roughly the first five days, and antibody tests become more useful after about day five. If symptoms continue, your doctor may repeat the test.",
+      },
+      {
+        question: "What does NS1 positive with IgM and IgG negative mean?",
+        answer:
+          "It usually means an early, active dengue infection, because the virus protein is present before antibodies have developed. Your doctor will guide next steps and may ask for a repeat CBC.",
+      },
+      {
+        question: "Do I need a platelet count along with the dengue test?",
+        answer:
+          "A dengue test confirms infection, while a platelet count or CBC tracks how the illness is affecting your blood. Doctors often order both, and platelets may be rechecked every day or two.",
+      },
+      {
+        question: "Is fasting required for a dengue test?",
+        answer:
+          "No. You can eat and drink normally before the sample is collected.",
+      },
+      {
+        question: "How long does it take to receive the dengue test report?",
+        answer:
+          "Reports are usually ready within 24 hours of sample collection, and delivered digitally on WhatsApp and email.",
+      },
+      {
+        question: "Is home sample collection available for the dengue test?",
+        answer:
+          "Yes. Home collection is available across Garhshankar and nearby villages, which is helpful when the patient is too unwell to travel.",
+      },
+      {
+        question: "What is the dengue test price?",
+        answer:
+          "Check the current dengue test price on our pricing page. Booking needs no advance payment.",
+      },
+    ],
+  },
+
+  cta: {
+    title: "Book Your Dengue Test Today",
+    description:
+      "One sample, three markers, and a digital report you can show your doctor the same day it is ready.",
+    highlights: [
+      "NS1 + IgM + IgG Covered",
+      "Home Sample Collection Available",
+      "Fast Digital Reports",
+    ],
+    price: "600",
+    priceText: "Check detailed dengue test pricing and booking options.",
+    bookingUrl: "/prices/dengue-test-price-garhshankar",
+    phone: "tel:+918968038602",
+    buttonText: "Book Dengue Test",
+  },
 },
 
 {
