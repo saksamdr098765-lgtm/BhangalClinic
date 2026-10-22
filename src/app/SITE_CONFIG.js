@@ -79,10 +79,17 @@ export const SITE_CONFIG = {
   googleMaps:{
     direction:"https://www.google.com/maps/dir//Bhangal+Clinical+Laboratories+%26+ECG+Garhshankar,+Shri,+Anandpur+Rd,+opposite+Civil+Hospital,+Garhshankar,+Punjab+144527/@31.2133209,76.1461101,17z/data=!4m16!1m7!3m6!1s0x391abf3a872c804b:0x3c7889898304438b!2sBhangal+Clinical+Laboratories+%26+ECG+Garhshankar!8m2!3d31.213321!4d76.150981!16s%2Fg%2F11h1bz3q8l!4m7!1m0!1m5!1m1!1s0x391abf3a872c804b:0x3c7889898304438b!2m2!1d76.150981!2d31.213321?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
     iframe:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3412.2673743929913!2d76.1484061!3d31.213321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391abf3a872c804b%3A0x3c7889898304438b!2sBhangal%20Clinical%20Laboratories%20%26%20ECG%20Garhshankar!5e0!3m2!1sen!2sin!4v1783939998979!5m2!1sen!2sin", // Replace with actual Google Maps link
+    review: "https://maps.app.goo.gl/J6rjnHWhPUAF6MFv5",
   },
+  latitude: "31.213029370127114",
+  longitude: "76.15008221349308",
   coordinates: {
-    latitude: "",
-    longitude: "",
+    latitude: 31.213029370127114,
+    longitude: 76.15008221349308,
+  },
+  geo: {
+    latitude: 31.213029370127114,
+    longitude: 76.15008221349308,
   },
 
   /* -------------------------------------------------------------------------- */
@@ -94,13 +101,23 @@ export const SITE_CONFIG = {
   priceRange: "₹₹",
 
   businessHours: {
-    monday: "07:00-20:00",
-    tuesday: "07:00-20:00",
-    wednesday: "07:00-20:00",
-    thursday: "07:00-20:00",
-    friday: "07:00-20:00",
-    saturday: "07:00-20:00",
-    sunday: "08:00-14:00",
+    monday: "07:30-20:00",
+    tuesday: "07:30-20:00",
+    wednesday: "07:30-20:00",
+    thursday: "07:30-20:00",
+    friday: "07:30-20:00",
+    saturday: "08:30-17:30",
+    sunday: "09:00-16:00",
+  },
+
+  elderlyHours: {
+    monday: "09:00-17:00",
+    tuesday: "09:00-17:00",
+    wednesday: "09:00-17:00",
+    thursday: "09:00-17:00",
+    friday: "09:00-17:00",
+    saturday: "09:00-17:00",
+    sunday: "09:00-17:00",
   },
 
   /* -------------------------------------------------------------------------- */

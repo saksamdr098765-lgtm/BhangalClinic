@@ -5,8 +5,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
-import { FiChevronLeft, FiChevronRight, FiMessageCircle } from "react-icons/fi";
+import { FiChevronLeft, FiChevronRight, FiArrowRight } from "react-icons/fi";
 import TrackedWhatsappLink from "./TrackedWhatsappLink";
+import TrackedLink from "./TrackedLink";
 import SITE_CONFIG from "../SITE_CONFIG";
 
 export default function PackageImageCarouselClient({ packages }) {
@@ -68,35 +69,42 @@ export default function PackageImageCarouselClient({ packages }) {
       >
         {packages.map((pkg) => (
           <SwiperSlide key={pkg.name}>
-            <TrackedWhatsappLink
-              phone={SITE_CONFIG.whatsapp}
-              text={`Hello, I want details about ${pkg.name} test`}
-              tracking={`whatsapp-${pkg.name}`}
+            <TrackedLink
+              href={pkg.slug ? `/packages/${pkg.slug}` : "/packages"}
+              tracking={`carousel-${pkg.slug || pkg.name}`}
               className="group relative block w-full overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
               <div className="relative aspect-[3/4] overflow-hidden">
                 <Image
                   src={pkg.image}
-                  alt={pkg.name}
+                  alt={`${pkg.name} - ₹${pkg.price} Diagnostic Package`}
                   fill
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                  sizes="(max-width: 640px) 55vw, (max-width: 1024px) 33vw, 220px"
                   loading="lazy"
                   className="object-cover transition duration-500 group-hover:scale-105"
                 />
 
-                <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-900/60 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-slate-900/85 via-slate-900/40 to-transparent" />
 
                 <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-left text-sm font-bold text-white">
+                  <p className="text-left text-sm font-bold text-white line-clamp-1">
                     {pkg.name}
+                  </p>
+                  <p className="mt-0.5 text-left text-xs font-semibold text-emerald-300">
+                    ₹{pkg.price}{" "}
+                    {pkg.originalPrice && (
+                      <span className="line-through text-slate-300 font-normal">
+                        ₹{pkg.originalPrice}
+                      </span>
+                    )}
                   </p>
                 </div>
               </div>
 
-              <div className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-lg">
-                <FiMessageCircle className="text-emerald-600" size={18} />
+              <div className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 shadow-md backdrop-blur-sm group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                <FiArrowRight className="text-slate-700 group-hover:text-white" size={15} />
               </div>
-            </TrackedWhatsappLink>
+            </TrackedLink>
           </SwiperSlide>
         ))}
       </Swiper>

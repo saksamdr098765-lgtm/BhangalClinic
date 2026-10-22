@@ -2,27 +2,45 @@ import PackageImageCarouselClient from "./PackageImageCarouselClient";
 
 const packages = [
   {
-    name: "bhangal ayush profile 2.1",
+    name: "Bhangal Ayush Profile 2.1",
+    price: 1500,
+    originalPrice: 2000,
+    slug: "bhangal-ayush-profile-2-1",
     image: "/carausol/bhangal-ayush-profile-2-1.webp",
   },
   {
-    name: "bhangal ayush profile 3.1",
+    name: "Bhangal Ayush Profile 3.1",
+    price: 2250,
+    originalPrice: 3000,
+    slug: "bhangal-ayush-profile-3-1",
     image: "/carausol/bhangal-ayush-profile-3-1.webp",
   },
   {
-    name: "bhangal ayush profile 3",
+    name: "Bhangal Ayush Profile 3",
+    price: 1499,
+    originalPrice: 2000,
+    slug: "bhangal-ayush-profile-3",
     image: "/carausol/bhangal-ayush-profile-3.webp",
   },
   {
-    name: "bhangal ayush profile 2",
+    name: "Bhangal Ayush Profile 2",
+    price: 1125,
+    originalPrice: 1500,
+    slug: "bhangal-ayush-profile-2",
     image: "/carausol/bhangal-ayush-profile-2.webp",
   },
   {
-    name: "bhangal dengue profile",
+    name: "Bhangal Dengue Profile",
+    price: 1500,
+    originalPrice: 2000,
+    slug: "bhangal-dengue-profile",
     image: "/carausol/bhangal-dengue-profile.webp",
   },
   {
-    name: "bhangal diabetic profile",
+    name: "Bhangal Diabetic Profile",
+    price: 1499,
+    originalPrice: 2000,
+    slug: "bhangal-diabetic-profile",
     image: "/carausol/bhangal-diabetic-profile.webp",
   },
 ];

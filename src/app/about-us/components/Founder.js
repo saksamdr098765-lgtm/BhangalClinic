@@ -25,10 +25,10 @@ const stats = [
     color: "text-blue-600",
   },
   {
-    number: "10+",
+    number: "15+",
     title: "Years of Excellence",
     description:
-      "A decade of quality pathology services and patient-focused care.",
+      "Over 15 years of quality pathology services and patient-focused care.",
     color: "text-emerald-600",
   },
   {
@@ -66,7 +66,8 @@ export default function Founder() {
                 <Image
                   src="/doctor.webp"
                   fill
-                  alt="Founder"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 460px"
+                  alt="Founder - Bhangal Clinical Laboratory"
                   className="object-cover"
                 />
               </div>

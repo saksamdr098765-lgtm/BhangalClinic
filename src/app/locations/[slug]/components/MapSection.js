@@ -37,6 +37,11 @@ ${SITE_CONFIG.address.state}`,
       label: "Working Hours",
       value: location.hours,
     },
+    {
+      icon: FiClock,
+      label: "Hours for the Elderly",
+      value: location.elderlyHours || "Monday – Sunday: 9:00 AM – 5:00 PM",
+    },
   ];
 
   return (

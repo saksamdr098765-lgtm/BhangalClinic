@@ -152,7 +152,7 @@ export default function WhyChooseUs() {
 
               <div className="text-center">
                 <span className="block text-2xl font-black text-emerald-600 sm:text-3xl">
-                  250+
+                  200+
                 </span>
                 <p className="mt-1 text-xs text-slate-500 sm:text-sm">
                   Tests

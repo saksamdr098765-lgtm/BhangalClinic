@@ -10,11 +10,16 @@ import {
   FiUser,
   FiPhone,
   FiMail,
+  FiCheckCircle,
+  FiExternalLink,
 } from "react-icons/fi";
 import { toast } from "sonner";
+import SITE_CONFIG from "@/app/SITE_CONFIG";
 
 export default function InteractiveBookingForm({ tests = [], packages = [] }) {
   const [homeCollection, setHomeCollection] = useState(true);
+  const [submitted, setSubmitted] = useState(false);
+  const [lastBooking, setLastBooking] = useState(null);
 
   const [form, setForm] = useState({
     name: "",
@@ -73,6 +78,8 @@ export default function InteractiveBookingForm({ tests = [], packages = [] }) {
       }
 
       toast.success("Booking submitted successfully.");
+      setLastBooking({ name: form.name, phone: form.phone, test: form.test });
+      setSubmitted(true);
 
       setForm({
         name: "",
@@ -91,6 +98,55 @@ export default function InteractiveBookingForm({ tests = [], packages = [] }) {
       toast.error("Something went wrong.");
     }
   };
+
+  if (submitted) {
+    return (
+      <div className="order-2 rounded-3xl border border-emerald-200 bg-white p-6 shadow-sm sm:p-8 text-center lg:order-1 lg:col-span-7">
+        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
+          <FiCheckCircle size={36} />
+        </div>
+        <h3 className="mt-4 text-2xl font-black text-slate-900 sm:text-3xl">
+          Booking Request Received!
+        </h3>
+        <p className="mt-2 text-sm leading-6 text-slate-600 max-w-lg mx-auto">
+          Thank you, <span className="font-bold text-slate-900">{lastBooking?.name || "Patient"}</span>. Our phlebotomy coordinator will call you at <span className="font-bold text-slate-900">{lastBooking?.phone}</span> shortly to confirm your appointment time and home sample collection.
+        </p>
+
+        {/* Google Review Prompt */}
+        <div className="mt-8 rounded-2xl border border-amber-200 bg-amber-50/70 p-6 text-left">
+          <div className="flex items-center gap-1.5 text-amber-500 text-lg">
+            <span>★★★★★</span>
+            <span className="text-xs font-bold uppercase tracking-wider text-amber-800 ml-2">
+              Share Your Feedback
+            </span>
+          </div>
+          <h4 className="mt-2 text-base font-bold text-slate-900">
+            Help Others in Garhshankar Find Trusted Diagnostics
+          </h4>
+          <p className="mt-1 text-xs text-slate-600 leading-5">
+            Your review helps local families make informed healthcare decisions. If you have visited our lab or used our doorstep collection, please take a moment to leave a review on Google!
+          </p>
+          <a
+            href={SITE_CONFIG.googleMaps.review}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center gap-2 rounded-xl bg-amber-500 px-5 py-2.5 text-xs font-bold text-white transition hover:bg-amber-600 shadow-sm"
+          >
+            <span>Rate Us on Google Reviews</span>
+            <FiExternalLink />
+          </a>
+        </div>
+
+        <button
+          type="button"
+          onClick={() => setSubmitted(false)}
+          className="mt-6 inline-block text-xs font-semibold text-slate-500 hover:text-blue-600 underline"
+        >
+          Book Another Test or Package
+        </button>
+      </div>
+    );
+  }
 
   return (
     <form
@@ -245,11 +301,12 @@ export default function InteractiveBookingForm({ tests = [], packages = [] }) {
               className="h-12 w-full rounded-xl border border-slate-200 bg-white pl-11 pr-4 text-sm outline-none transition focus:border-blue-500"
             >
               <option value="">Select Time</option>
-              <option>08:00 AM - 10:00 AM</option>
+              <option>07:30 AM - 10:00 AM</option>
               <option>10:00 AM - 12:00 PM</option>
               <option>12:00 PM - 02:00 PM</option>
               <option>02:00 PM - 04:00 PM</option>
               <option>04:00 PM - 06:00 PM</option>
+              <option>06:00 PM - 08:00 PM</option>
             </select>
           </div>
         </div>

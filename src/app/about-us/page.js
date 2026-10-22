@@ -12,7 +12,7 @@ title: "About Us | Diagnostic Lab & ECG in Garhshankar",
 // 48 chars
 
 description:
-  "Bhangal Clinical Laboratories offers accurate diagnostics in Garhshankar with NABL-quality testing, experienced staff, and home sample collection.",
+  "Bhangal Clinical Laboratories offers accurate diagnostics in Garhshankar with certified quality testing, experienced staff, and home sample collection.",
 // 151 chars
  alternates: {
     canonical: "/about-us",

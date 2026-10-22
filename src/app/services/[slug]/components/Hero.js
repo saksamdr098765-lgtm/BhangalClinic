@@ -97,12 +97,12 @@ export default function ServiceHero({ service }) {
                   label: "Years Exp.",
                 },
                 {
-                  number: "100+",
+                  number: "200+",
                   label: "Tests Available",
                 },
                 {
-                  number: "100%",
-                  label: "Patient Care",
+                  number: "15K+",
+                  label: "Patients Served",
                 },
               ].map((stat) => (
                 <div key={stat.label}>

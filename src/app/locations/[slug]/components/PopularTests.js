@@ -113,7 +113,7 @@ if(!popularTests.length) return
             </h3>
 
             <p className="mt-1 text-xs text-slate-600 leading-5 sm:text-sm">
-              We offer 100+ diagnostic tests & specialized pathology profiles. Ask our team for availability.
+              We offer 200+ diagnostic tests & specialized pathology profiles. Ask our team for availability.
             </p>
           </div>
 

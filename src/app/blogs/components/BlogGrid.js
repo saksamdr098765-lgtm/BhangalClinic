@@ -1,6 +1,6 @@
 import BlogCard from "./BlogCard";
 
-export default function BlogGrid({ blogs = [] }) {
+export default function BlogGrid({ blogs = [], totalArticles }) {
   if (!blogs.length) return null;
 
   return (
@@ -28,7 +28,7 @@ export default function BlogGrid({ blogs = [] }) {
           </p>
 
           <p className="mt-1 text-2xl font-black text-sky-600 sm:text-3xl">
-            {blogs.length}
+            {totalArticles || blogs.length}
           </p>
         </div>
       </div>

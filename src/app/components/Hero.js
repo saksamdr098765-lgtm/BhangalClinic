@@ -18,10 +18,10 @@ const popularTests = [
 ];
 
 const trustItems = [
-  "NABL Standards",
+  "Certified Standards",
   "Same Day Reports",
   "Home Collection",
-  "100+ Tests",
+  "200+ Tests",
 ];
 
 export default function Hero() {

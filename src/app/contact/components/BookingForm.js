@@ -78,15 +78,35 @@ export default function BookingForm() {
 
               {/* Working Hours */}
               <div className="mt-8 rounded-2xl bg-slate-50 p-5">
-                <p className="text-xs uppercase tracking-wider text-slate-500">
+                <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">
                   Working Hours
                 </p>
 
-                <h4 className="mt-2 text-xl font-bold text-slate-900">
-                  8:00 AM – 8:00 PM
-                </h4>
+                <div className="mt-3 space-y-1.5 text-sm text-slate-700">
+                  <div className="flex items-center justify-between font-medium">
+                    <span>Monday – Friday:</span>
+                    <span className="font-bold text-slate-900">7:30 AM – 8:00 PM</span>
+                  </div>
+                  <div className="flex items-center justify-between font-medium">
+                    <span>Saturday:</span>
+                    <span className="font-bold text-slate-900">8:30 AM – 5:30 PM</span>
+                  </div>
+                  <div className="flex items-center justify-between font-medium">
+                    <span>Sunday:</span>
+                    <span className="font-bold text-slate-900">9:00 AM – 4:00 PM</span>
+                  </div>
+                </div>
 
-                <p className="mt-3 text-sm leading-6 text-slate-600">
+                <div className="mt-4 border-t border-slate-200 pt-3">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-blue-700">
+                    Hours for the Elderly
+                  </p>
+                  <p className="mt-1 text-sm font-bold text-slate-900">
+                    9:00 AM – 5:00 PM <span className="text-xs font-normal text-slate-500">(All Days)</span>
+                  </p>
+                </div>
+
+                <p className="mt-3 text-xs leading-5 text-slate-600">
                   Our team is available throughout the day to assist with
                   appointments, test selection, and home sample collection.
                 </p>

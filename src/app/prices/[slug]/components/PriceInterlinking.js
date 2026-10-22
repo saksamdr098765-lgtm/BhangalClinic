@@ -33,7 +33,7 @@ export default function PriceInterlinking({ priceData }) {
           </p>
         </div>
 
-        <div className="mt-6 grid gap-5 sm:grid-cols-2">
+        <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {interlinkData.items.map((item, index) => {
             const Icon = typeof item.icon === "string" ? ICON_MAP[item.icon] || FiActivity : item.icon || FiActivity;
 

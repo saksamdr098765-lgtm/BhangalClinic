@@ -3387,9 +3387,9 @@ tags: [
 
   price: 800,
 
-  originalPrice: 2499,
+  originalPrice: 999,
 
-  discount: "67% OFF",
+  discount: "20% OFF",
 
   reportTime: "24-48 Hours",
 

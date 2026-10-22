@@ -42,19 +42,15 @@ export default function HeroContent() {
       </div>
 
       {/* Heading */}
-      <h1 className="mt-6 text-[42px] font-black leading-[1] tracking-tight text-slate-900 sm:text-5xl md:text-6xl lg:text-7xl">
-        Better Health
-        <br />
-        <span className="text-blue-700">Starts With</span>
-        <br />
-        <span className="text-teal-600">Better Testing</span>
+      <h1 className="mt-6 text-[36px] font-black leading-[1.1] tracking-tight text-slate-900 sm:text-5xl md:text-6xl lg:text-6xl">
+        Blood Tests, ECG &amp;{" "}
+        <span className="text-blue-700">Health Checkups</span>{" "}
+        in <span className="text-teal-600">Garhshankar</span>
       </h1>
 
       {/* Description */}
       <p className="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-        Comprehensive health checkups, preventive screenings, and accurate
-        diagnostics with convenient home sample collection and trusted digital
-        reports.
+        Bhangal Clinical Laboratories &amp; ECG offers accurate pathology tests, CBC, HbA1c, Thyroid, Lipid Profile, Liver Function tests, and computerized ECG right opposite Civil Hospital, Sri Anandpur Sahib Road, Garhshankar. Serving families across Garhshankar, Saila Khurd, Mahilpur, Nawanshahr Road, and Kot Fatuhi with reliable home blood sample collection and fast digital WhatsApp reports.
       </p>
 
       {/* Search */}

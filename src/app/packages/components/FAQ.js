@@ -20,9 +20,9 @@ const faqs = [
       "Most reports are delivered digitally within 24 to 48 hours. Some specialized tests may require additional processing time.",
   },
   {
-    question: "Are your laboratories NABL certified?",
+    question: "What quality standards do your laboratories follow?",
     answer:
-      "Yes. All tests are processed in NABL-certified laboratories using advanced diagnostic equipment to ensure reliable and accurate results.",
+      "All tests are processed using fully automated, calibrated diagnostic analyzers following stringent clinical quality control protocols to ensure reliable and accurate results.",
   },
   {
     question: "Do I need to fast before the test?",

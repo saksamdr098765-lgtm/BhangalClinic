@@ -27,21 +27,39 @@ export async function generateMetadata({ params }) {
   if (!priceData) return {};
 
   const url = `${SITE_CONFIG.url}${priceData.seo?.canonical || `/prices/${priceData.slug}`}`;
+  const imagePath = priceData.hero?.image || priceData.image || SITE_CONFIG.ogImage;
+  const imageUrl = imagePath.startsWith("http") ? imagePath : `${SITE_CONFIG.url}${imagePath}`;
+  const title = priceData.seo?.title || priceData.hero?.title;
+  const description = priceData.seo?.description || priceData.hero?.subtitle;
 
   return {
-    title: priceData.seo?.title || priceData.hero?.title,
-    description: priceData.seo?.description || priceData.hero?.subtitle,
+    title,
+    description,
     keywords: priceData.seo?.keywords || [],
     alternates: {
       canonical: url,
     },
     openGraph: {
-      title: priceData.seo?.title,
-      description: priceData.seo?.description,
+      title,
+      description,
       url,
       siteName: SITE_CONFIG.name,
       locale: "en_IN",
       type: "website",
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [imageUrl],
     },
   };
 }

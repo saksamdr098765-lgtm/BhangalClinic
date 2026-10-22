@@ -2,6 +2,123 @@ import { tests } from "../data/tests";
 import TestCard from "./TestCard";
 import TrackedLink from "./TrackedLink";
 
+const POPULAR_TESTS = [
+  {
+    slug: "cbc-test",
+    name: "Complete Blood Count",
+    shortName: "CBC Test",
+    organ: "Blood",
+    sampleType: "Blood",
+    parameterCount: 24,
+    fasting: false,
+    homeCollection: true,
+    description: "Evaluates overall health and detects anemia, infections, leukemia, and platelet disorders.",
+    price: 250,
+    reportTime: "Same Day",
+    status: "published",
+    href: "/tests/cbc-test",
+  },
+  {
+    slug: "blood-sugar-test",
+    name: "Blood Sugar (Fasting & PP)",
+    shortName: "Blood Sugar",
+    organ: "Pancreas",
+    sampleType: "Blood",
+    parameterCount: 2,
+    fasting: true,
+    homeCollection: true,
+    description: "Measures fasting and postprandial glucose levels to detect prediabetes and monitor diabetes.",
+    price: 70,
+    reportTime: "Same Day",
+    status: "published",
+    href: "/tests/blood-sugar-test",
+  },
+  {
+    slug: "blood-sugar-hba1c-test",
+    name: "HbA1c (Glycated Hemoglobin)",
+    shortName: "HbA1c Test",
+    organ: "Pancreas",
+    sampleType: "Blood",
+    parameterCount: 1,
+    fasting: false,
+    homeCollection: true,
+    description: "Gold standard test giving an accurate 3-month average of blood sugar levels.",
+    price: 350,
+    reportTime: "Same Day",
+    href: "/prices/blood-sugar-hba1c-test-price-garhshankar",
+  },
+  {
+    slug: "thyroid-profile",
+    name: "Thyroid Profile (T3, T4, TSH)",
+    shortName: "Thyroid Profile",
+    organ: "Thyroid",
+    sampleType: "Blood",
+    parameterCount: 3,
+    fasting: true,
+    homeCollection: true,
+    description: "Evaluates thyroid gland function, metabolism, and screens for hyper/hypothyroidism.",
+    price: 400,
+    reportTime: "Same Day",
+    href: "/packages?search=Thyroid",
+  },
+  {
+    slug: "lipid-profile",
+    name: "Lipid Profile (Cholesterol)",
+    shortName: "Lipid Profile",
+    organ: "Heart",
+    sampleType: "Blood",
+    parameterCount: 5,
+    fasting: true,
+    homeCollection: true,
+    description: "Comprehensive cholesterol test (HDL, LDL, Triglycerides) to evaluate heart health.",
+    price: 450,
+    reportTime: "Same Day",
+    href: "/packages/bhangal-basic-profile-plus",
+  },
+  {
+    slug: "ecg-test",
+    name: "12-Lead Computerized ECG",
+    shortName: "12-Lead ECG",
+    organ: "Heart",
+    sampleType: "ECG Recording",
+    parameterCount: 1,
+    fasting: false,
+    homeCollection: false,
+    description: "High-accuracy resting electrocardiogram for early detection of rhythm disorders and blockages.",
+    price: 199,
+    reportTime: "Immediate",
+    href: "/prices/ecg-test-price-garhshankar",
+  },
+  {
+    slug: "vitamin-d",
+    name: "Vitamin D (25-OH)",
+    shortName: "Vitamin D Test",
+    organ: "Nutrition",
+    sampleType: "Blood",
+    parameterCount: 1,
+    fasting: false,
+    homeCollection: true,
+    description: "Essential screening for bone density, fatigue, joint pain, and immune function.",
+    price: 900,
+    reportTime: "Same Day",
+    href: "/packages?search=Vitamin+D",
+  },
+  {
+    slug: "liver-function-test",
+    name: "Liver Function Test (LFT)",
+    shortName: "Liver Function (LFT)",
+    organ: "Liver",
+    sampleType: "Blood",
+    parameterCount: 6,
+    fasting: true,
+    homeCollection: true,
+    description: "Assesses liver enzymes (SGOT, SGPT), bilirubin, and protein levels for liver health.",
+    price: 500,
+    reportTime: "Same Day",
+    href: "/packages/bhangal-basic-profile-plus",
+  },
+];
+
 export default function PopularTests() {
   return (
     <section
@@ -121,10 +238,10 @@ export default function PopularTests() {
             sm:mt-12
             sm:gap-6
             md:grid-cols-2
-            xl:grid-cols-3
+            lg:grid-cols-3
           "
         >
-          {tests.slice(0, 3).map((test) => (
+          {POPULAR_TESTS.map((test) => (
             <TestCard key={test.slug} test={test} location="Home" />
           ))}
         </div>

@@ -32,6 +32,12 @@ export const layoutSchema = [
       addressCountry: "IN",
     },
 
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: SITE_CONFIG.coordinates.latitude,
+      longitude: SITE_CONFIG.coordinates.longitude,
+    },
+
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -41,16 +47,36 @@ export const layoutSchema = [
           "Wednesday",
           "Thursday",
           "Friday",
-          "Saturday",
         ],
-        opens: "07:00",
+        opens: "07:30",
         closes: "20:00",
       },
       {
         "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "08:30",
+        closes: "17:30",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
         dayOfWeek: "Sunday",
-        opens: "08:00",
-        closes: "14:00",
+        opens: "09:00",
+        closes: "16:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        name: "Hours for the elderly",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
+        opens: "09:00",
+        closes: "17:00",
       },
     ],
 

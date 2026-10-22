@@ -105,16 +105,16 @@ export default function WhyServiceMatters({ service }) {
               {/* Mini Stats */}
               <div className="mt-4 grid grid-cols-3 gap-2 border-t border-white/15 pt-3 text-center">
                 <div>
-                  <h5 className="text-lg font-black text-white sm:text-xl">100+</h5>
+                  <h5 className="text-lg font-black text-white sm:text-xl">200+</h5>
                   <p className="text-[10px] text-sky-100">Tests</p>
                 </div>
                 <div>
                   <h5 className="text-lg font-black text-white sm:text-xl">15+</h5>
-                  <p className="text-[10px] text-sky-100">Years</p>
+                  <p className="text-[10px] text-sky-100">Years Exp.</p>
                 </div>
                 <div>
-                  <h5 className="text-lg font-black text-white sm:text-xl">100%</h5>
-                  <p className="text-[10px] text-sky-100">Care</p>
+                  <h5 className="text-lg font-black text-white sm:text-xl">15K+</h5>
+                  <p className="text-[10px] text-sky-100">Patients</p>
                 </div>
               </div>
             </div>

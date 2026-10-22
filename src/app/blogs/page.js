@@ -101,7 +101,7 @@ export default function BlogsPage() {
 
       <FeaturedBlog blog={featuredBlog} />
 
-      <BlogGrid blogs={otherBlogs} />
+      <BlogGrid blogs={blogs} totalArticles={blogs.length} />
     </main>
   );
 }

@@ -93,6 +93,8 @@ export default function RelatedTests({ relatedTests = [] }) {
           ) : (
             <TrackedWhatsappLink
               key={test.slug ?? index}
+              phone={SITE_CONFIG.whatsapp}
+              text={`Hi, I want to book the "${test.name}" test at Bhangal Clinical Laboratory Garhshankar. Please share details and home collection availability.`}
               location={`blog-related-test-${test.slug}`}
               className={`${baseClasses} hover:bg-green-50`}
             >

@@ -44,7 +44,6 @@ export async function generateMetadata({ params }) {
   }
 
   const url = `${SITE_CONFIG.url}/locations/${location.slug}`;
-  const image = `${SITE_CONFIG.url}${location.coverImage}`;
 
   return {
     title: location.seo.title,
@@ -75,9 +74,6 @@ export async function generateMetadata({ params }) {
       googleBot: {
         index: true,
         follow: true,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-        "max-video-preview": -1,
       },
     },
 
@@ -89,21 +85,11 @@ export async function generateMetadata({ params }) {
       locale: "en_IN",
       type: "website",
 
-      images: [
-        {
-          url: image,
-          width: 1200,
-          height: 630,
-          alt: location.title,
-        },
-      ],
     },
 
     twitter: {
-      card: "summary_large_image",
       title: location.seo.title,
       description: location.seo.description,
-      images: [image],
     },
 
     category: "Health",

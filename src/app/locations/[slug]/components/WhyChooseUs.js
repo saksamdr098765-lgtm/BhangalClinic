@@ -90,7 +90,7 @@ export default function WhyChooseUs({ location }) {
             {/* Mini Stats */}
             <div className="grid grid-cols-2 gap-2 text-center sm:gap-3">
               <div className="rounded-xl bg-white/10 p-3 backdrop-blur">
-                <p className="text-xl font-black text-white sm:text-2xl">100+</p>
+                <p className="text-xl font-black text-white sm:text-2xl">200+</p>
                 <p className="text-[10px] text-sky-100 sm:text-xs">Lab Tests</p>
               </div>
 

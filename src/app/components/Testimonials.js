@@ -4,34 +4,38 @@ import {
   FiShield,
   FiClock,
   FiHome,
+  FiExternalLink,
 } from "react-icons/fi";
 
 import {
   FaMicroscope,
   FaUserDoctor,
 } from "react-icons/fa6";
+import { FaGoogle } from "react-icons/fa";
+import TrackingLink from "./TrackingLink";
+import SITE_CONFIG from "../SITE_CONFIG";
 
 const testimonials = [
   {
-    name: "Rahul Sharma",
-    location: "Mohali",
-    service: "Full Body Checkup",
+    name: "Gurpreet Singh",
+    location: "Garhshankar",
+    service: "Google Review",
     text:
-      "Home sample collection was smooth and reports were delivered quickly. The entire experience was professional.",
+      "Very professional Laboratory with excellent customer service.",
   },
   {
-    name: "Priya Verma",
-    location: "Chandigarh",
-    service: "Thyroid Profile",
+    name: "Amrik Bhangal",
+    location: "Garhshankar",
+    service: "Google Review",
     text:
-      "Easy booking process with reliable reports. The staff was very helpful and supportive.",
+      "Excellent service and very professional staff.",
   },
   {
-    name: "Aman Singh",
-    location: "Zirakpur",
-    service: "Health Screening",
+    name: "Jaswinder Kumar",
+    location: "Garhshankar",
+    service: "Google Review",
     text:
-      "Accurate reports and excellent service quality. I recommend it for family health testing.",
+      "Great laboratory with very good, cooperative staff and fast reports.",
   },
 ];
 
@@ -39,7 +43,7 @@ const stats = [
   {
     icon: FaMicroscope,
     value: "15K+",
-    label: "Tests Completed",
+    label: "Patients Served",
   },
   {
     icon: FiShield,
@@ -69,8 +73,8 @@ export default function Testimonials() {
         {/* Heading */}
         <div className="text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-teal-100 bg-teal-50 px-4 py-2 text-sm font-semibold text-teal-700">
-            <FaUserDoctor />
-            Patient Trust
+            <FaGoogle className="text-blue-600" />
+            Verified Google Reviews
           </span>
 
           <h2 className="mt-6 text-4xl font-black tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
@@ -125,8 +129,8 @@ export default function Testimonials() {
                   ))}
                 </div>
 
-                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-50">
-                  <FiCheckCircle className="text-emerald-600" />
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-50 text-blue-600">
+                  <FaGoogle size={14} />
                 </div>
               </div>
 
@@ -134,7 +138,8 @@ export default function Testimonials() {
                 "{item.text}"
               </p>
 
-              <div className="mt-5 inline-flex rounded-full bg-teal-50 px-3 py-1 text-xs font-semibold text-teal-700">
+              <div className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3 py-1 text-xs font-semibold text-teal-700">
+                <FiCheckCircle className="text-teal-600" />
                 {item.service}
               </div>
 
@@ -150,6 +155,21 @@ export default function Testimonials() {
               </div>
             </article>
           ))}
+        </div>
+
+        {/* View on Google Maps Link */}
+        <div className="mt-12 text-center">
+          <TrackingLink
+            href={SITE_CONFIG.googleMaps.review}
+            target="_blank"
+            rel="noopener noreferrer"
+            tracking="home-google-reviews-view"
+            className="inline-flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-700 shadow-sm transition hover:border-blue-400 hover:text-blue-600 hover:shadow-md"
+          >
+            <FaGoogle className="text-blue-600" />
+            <span>Read More Google Reviews</span>
+            <FiExternalLink className="text-slate-400" />
+          </TrackingLink>
         </div>
       </div>
     </section>

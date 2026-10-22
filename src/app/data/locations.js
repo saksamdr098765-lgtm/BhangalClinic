@@ -52,7 +52,7 @@ export const locations = [
     ],
 
     highlights: [
-      "100+ Blood Tests Available",
+      "200+ Blood Tests Available",
       "Home Sample Collection",
       "Same-Day Reports for Routine Tests",
       "Affordable, Transparent Pricing",
@@ -210,7 +210,7 @@ export const locations = [
       {
         title: "Blood Test Service Details",
         subtitle: "What's Included & Testing Options",
-        description: "Explore our comprehensive blood test services, modern automated analyzers, NABL quality standards, and sample collection process.",
+        description: "Explore our comprehensive blood test services, modern automated analyzers, certified diagnostic quality standards, and sample collection process.",
         href: "/services/blood-tests",
         icon: "FiActivity",
         badge: "Service Overview",
@@ -308,8 +308,8 @@ export const locations = [
     },
   ],
 
-  hours:
-    "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
+  hours: "Monday – Friday: 7:30 AM – 8:00 PM | Saturday: 8:30 AM – 5:30 PM | Sunday: 9:00 AM – 4:00 PM",
+  elderlyHours: "Monday – Sunday: 9:00 AM – 5:00 PM",
 },
 {
   id: 2,
@@ -519,7 +519,7 @@ homeCollection:false,
       {
         label: "What is an ECG Test?",
         description: "Guide to ECG basics, 12-lead placement, waveform reading, and report interpretation.",
-        slug: "/blogs/ecg-interpretation-guide",
+        slug: "/blogs/ecg-test-full-guide",
       },
       {
         label: "ECG Service Details",
@@ -586,8 +586,8 @@ homeCollection:false,
     },
   ],
 
-  hours:
-    "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
+  hours: "Monday – Friday: 7:30 AM – 8:00 PM | Saturday: 8:30 AM – 5:30 PM | Sunday: 9:00 AM – 4:00 PM",
+  elderlyHours: "Monday – Sunday: 9:00 AM – 5:00 PM",
 },
 {
   id: 3,
@@ -608,7 +608,7 @@ homeCollection:false,
       "CBC Test in Garhshankar | Home Sample Collection & Lab Visit",
 
     description:
-      "Get your CBC test done in Garhshankar with Bhangal Clinical Laboratories & ECG Center — accurate Complete Blood Count testing, home sample collection, affordable prices, and same-day reports. Book online today.",
+      "Get your CBC test done in Garhshankar with Bhangal Clinical Laboratories & ECG Center — accurate Complete Blood Count testing, home sample collection, affordable prices, and  reports in 24 hours. Book online today.",
 
     keywords: [
       "CBC Test in Garhshankar",
@@ -636,7 +636,7 @@ homeCollection:false,
 
     highlights: [
       "24-Parameter CBC Testing Available",
-      "Same-Day Reports",
+      " Reports in 24 Hours",
       "Affordable, Transparent Pricing",
       "Home Sample Collection Available",
     ],
@@ -721,7 +721,7 @@ homeCollection:false,
         icon: "clock",
         title: "Fast Reports",
         description:
-          "Most CBC reports in Garhshankar are ready the same day.",
+          "Most CBC reports in Garhshankar are ready within 24 Hours .",
       },
       {
         icon: "check",
@@ -848,7 +848,7 @@ homeCollection:false,
     {
       question: "How soon will I get my CBC report in Garhshankar?",
       answer:
-        "CBC reports are typically ready the same day after sample collection and lab processing.",
+        "CBC reports are typically ready within 24 hours after sample collection and lab processing.",
     },
     {
       question: "Do I need to fast before a CBC test?",
@@ -872,8 +872,8 @@ homeCollection:false,
     },
   ],
 
-  hours:
-    "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
+  hours: "Monday – Friday: 7:30 AM – 8:00 PM | Saturday: 8:30 AM – 5:30 PM | Sunday: 9:00 AM – 4:00 PM",
+  elderlyHours: "Monday – Sunday: 9:00 AM – 5:00 PM",
 },
  {
   id: 4,
@@ -1175,7 +1175,8 @@ homeCollection:false,
     },
   ],
  
-  hours: "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
+  hours: "Monday – Friday: 7:30 AM – 8:00 PM | Saturday: 8:30 AM – 5:30 PM | Sunday: 9:00 AM – 4:00 PM",
+  elderlyHours: "Monday – Sunday: 9:00 AM – 5:00 PM",
 },
 
 {
@@ -1402,7 +1403,8 @@ homeCollection:false,
     },
   ],
 
-  hours: "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
+  hours: "Monday – Friday: 7:30 AM – 8:00 PM | Saturday: 8:30 AM – 5:30 PM | Sunday: 9:00 AM – 4:00 PM",
+  elderlyHours: "Monday – Sunday: 9:00 AM – 5:00 PM",
 },
 {
   id: 6,
@@ -1616,7 +1618,8 @@ homeCollection:false,
     },
   ],
 
-  hours: "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
+  hours: "Monday – Friday: 7:30 AM – 8:00 PM | Saturday: 8:30 AM – 5:30 PM | Sunday: 9:00 AM – 4:00 PM",
+  elderlyHours: "Monday – Sunday: 9:00 AM – 5:00 PM",
 },
 {
   id: 7,
@@ -1834,7 +1837,8 @@ homeCollection:false,
     },
   ],
 
-  hours: "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
+  hours: "Monday – Friday: 7:30 AM – 8:00 PM | Saturday: 8:30 AM – 5:30 PM | Sunday: 9:00 AM – 4:00 PM",
+  elderlyHours: "Monday – Sunday: 9:00 AM – 5:00 PM",
 },
 {
   id: 8,
@@ -2066,7 +2070,8 @@ homeCollection:false,
     },
   ],
 
-  hours: "Monday – Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 2:00 PM",
+  hours: "Monday – Friday: 7:30 AM – 8:00 PM | Saturday: 8:30 AM – 5:30 PM | Sunday: 9:00 AM – 4:00 PM",
+  elderlyHours: "Monday – Sunday: 9:00 AM – 5:00 PM",
 },
 ];
 

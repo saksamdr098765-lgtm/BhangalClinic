@@ -115,7 +115,7 @@ export default function PriceOverview({ priceCard, testTitle, slug }) {
               <div className="mt-5 rounded-xl bg-sky-50 border border-sky-200 p-3.5 text-xs text-sky-900">
                 <p className="font-bold">✨ Fast & Reliable Results</p>
                 <p className="mt-1 text-sky-700 leading-4">
-                  Samples are processed using modern automated equipment under strict NABL diagnostic protocols.
+                  Samples are processed using modern automated equipment under strict clinical diagnostic protocols.
                 </p>
               </div>
             </div>

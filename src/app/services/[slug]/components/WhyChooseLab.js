@@ -132,15 +132,15 @@ export default function WhyChooseLab({ service }) {
               <div className="mt-4 grid grid-cols-3 gap-2 border-t border-slate-200 pt-3 text-center">
                 <div>
                   <h5 className="text-lg font-black text-sky-600 sm:text-xl">15+</h5>
-                  <p className="text-[10px] text-slate-500">Years</p>
+                  <p className="text-[10px] text-slate-500">Years Exp.</p>
                 </div>
                 <div>
-                  <h5 className="text-lg font-black text-sky-600 sm:text-xl">100+</h5>
+                  <h5 className="text-lg font-black text-sky-600 sm:text-xl">200+</h5>
                   <p className="text-[10px] text-slate-500">Tests</p>
                 </div>
                 <div>
-                  <h5 className="text-lg font-black text-sky-600 sm:text-xl">100%</h5>
-                  <p className="text-[10px] text-slate-500">Care</p>
+                  <h5 className="text-lg font-black text-sky-600 sm:text-xl">15K+</h5>
+                  <p className="text-[10px] text-slate-500">Patients</p>
                 </div>
               </div>
             </div>

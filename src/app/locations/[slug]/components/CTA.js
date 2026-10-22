@@ -12,7 +12,7 @@ import {
 import { FaWhatsapp } from "react-icons/fa";
 
 const benefits = [
-  "100+ Laboratory Tests",
+  "200+ Laboratory Tests",
   "Health Packages",
   "Home Sample Collection",
   "Fast & Accurate Reports",
@@ -58,7 +58,7 @@ export default function CTA({ location }) {
               </h2>
 
               <p className="mt-3 text-xs leading-5 text-sky-100 sm:text-base sm:leading-7">
-                Whether you need routine blood tests, health packages, ECG, or home sample collection, we deliver reliable diagnostics with patient-first care.
+                Whether you need routine blood tests, preventive health packages, or 12-lead ECG, our certified laboratory provides precise automated analysis and doorstep sample pickup.
               </p>
 
               {/* Benefits (2-column compact grid) */}
@@ -142,7 +142,7 @@ export default function CTA({ location }) {
               <div className="mt-4 grid grid-cols-2 gap-2 border-t border-white/15 pt-3 text-center">
                 <div>
                   <span className="block text-xl font-black sm:text-2xl">
-                    100+
+                    200+
                   </span>
                   <p className="text-[10px] text-sky-100">Lab Tests</p>
                 </div>

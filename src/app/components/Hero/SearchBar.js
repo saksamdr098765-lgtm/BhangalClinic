@@ -4,13 +4,14 @@ import { useState } from "react";
 import { FiSearch, FiArrowRight } from "react-icons/fi";
 import { useRouter } from "next/navigation";
 import { trackSearch } from "@/app/lib/tracking";
+import TrackedLink from "../TrackedLink";
 
 const POPULAR_TESTS = [
-  "CBC",
-  "HbA1c",
-  "Vitamin D",
-  "Thyroid",
-  "LFT",
+  { name: "CBC", href: "/tests/cbc-test" },
+  { name: "HbA1c", href: "/prices/blood-sugar-hba1c-test-price-garhshankar" },
+  { name: "Vitamin D", href: "/packages?search=Vitamin+D" },
+  { name: "Thyroid", href: "/packages?search=Thyroid" },
+  { name: "LFT", href: "/tests/liver-function-test" },
 ];
 
 export default function SearchBar() {
@@ -109,10 +110,10 @@ export default function SearchBar() {
         </span>
 
         {POPULAR_TESTS.map((test) => (
-          <button
-            key={test}
-            type="button"
-            onClick={() => setQuery(test)}
+          <TrackedLink
+            key={test.name}
+            href={test.href}
+            tracking={`SearchBar-${test.name}`}
             className="
               rounded-full
               border
@@ -132,8 +133,8 @@ export default function SearchBar() {
               hover:shadow-lg
             "
           >
-            {test}
-          </button>
+            {test.name}
+          </TrackedLink>
         ))}
       </div>
     </div>

@@ -51,11 +51,11 @@ const stats = [
     label: "Patients Served",
   },
   {
-    value: "50+",
+    value: "200+",
     label: "Diagnostic Tests",
   },
   {
-    value: "10+",
+    value: "15+",
     label: "Years Experience",
   },
   {

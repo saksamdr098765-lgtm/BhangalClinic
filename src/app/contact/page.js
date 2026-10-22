@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from './components/Hero'
 import BookingForm from './components/BookingForm'
+import ContactMap from './components/ContactMap'
 import FAQ from './components/FAQ'
 import SectionBackground from '../components/SectionBackground'
 import { contactSchema } from '@/schema/contactSchema'
@@ -53,6 +54,13 @@ title: "Contact Us | Book Blood Tests & ECG in Garhshankar",
       "Contact us to book blood tests, ECG, home sample collection, and health packages in Garhshankar.",
     images: [SITE_CONFIG.ogImage],
   },
+
+  other: {
+    "geo.region": "IN-PB",
+    "geo.placename": SITE_CONFIG.address.city,
+    "geo.position": `${SITE_CONFIG.latitude};${SITE_CONFIG.longitude}`,
+    ICBM: `${SITE_CONFIG.latitude}, ${SITE_CONFIG.longitude}`,
+  },
 };
 export default function page() {
   return (
@@ -69,6 +77,7 @@ export default function page() {
       <SectionBackground>
       <Hero></Hero>
       <BookingForm></BookingForm>
+      <ContactMap></ContactMap>
       <FAQ></FAQ>
      </SectionBackground>
     </div>

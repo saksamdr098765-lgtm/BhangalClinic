@@ -34,7 +34,7 @@ export default function CTA({ cta, slug, testTitle }) {
                 {(cta.highlights || [
                   "Home Sample Collection",
                   "Digital Reports",
-                  "NABL Standards",
+                  "Certified Standards",
                   "Doctor Support",
                 ]).map((item) => (
                   <div key={item} className="flex items-center gap-1.5 text-white">

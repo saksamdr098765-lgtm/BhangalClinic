@@ -9,7 +9,11 @@ import {
 } from "react-icons/fi";
 
 const labInfo = [
-  ["Working Hours", "8:00 AM – 8:00 PM"],
+  [
+    "Working Hours",
+    "Mon–Fri: 7:30 AM – 8:00 PM\nSat: 8:30 AM – 5:30 PM\nSun: 9:00 AM – 4:00 PM",
+  ],
+  ["Hours for Elderly", "9:00 AM – 5:00 PM (Daily)"],
   ["Home Collection", "Available"],
   ["Digital Reports", "Same Day*"],
   ["Booking Time", "< 1 Minute"],
@@ -123,12 +127,12 @@ export default function Hero() {
                 {labInfo.map(([label, value]) => (
                   <div
                     key={label}
-                    className="flex items-center justify-between border-b border-slate-200 pb-3 last:border-0 last:pb-0"
+                    className="flex items-start justify-between gap-3 border-b border-slate-200 pb-3 last:border-0 last:pb-0"
                   >
-                    <span className="text-sm text-slate-500">
+                    <span className="text-sm text-slate-500 shrink-0">
                       {label}
                     </span>
-                    <span className="text-sm font-semibold text-slate-900">
+                    <span className="text-sm font-semibold text-slate-900 text-right whitespace-pre-line">
                       {value}
                     </span>
                   </div>

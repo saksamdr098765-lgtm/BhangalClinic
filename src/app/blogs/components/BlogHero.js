@@ -32,7 +32,7 @@ export default function BlogHero({ totalBlogs }) {
           {/* Stats Row */}
           <div className="mt-6 flex flex-wrap justify-center gap-3 sm:gap-4">
             <div className="rounded-xl border border-slate-100 bg-white px-4 py-2.5 shadow-2xs text-center">
-              <p className="text-xl font-bold text-sky-600 sm:text-2xl">{totalBlogs}+</p>
+              <p className="text-xl font-bold text-sky-600 sm:text-2xl">{totalBlogs}</p>
               <p className="text-[11px] text-slate-500">Health Articles</p>
             </div>
 

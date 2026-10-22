@@ -7,21 +7,25 @@ import HeroButtons from "./HeroButtons";
 const features = [
   {
     title: "Advanced Laboratory Equipment",
+    desc: "Fully automated biochemistry and hematology analyzers with daily calibration.",
     color: "bg-blue-100",
     icon: "🔬",
   },
   {
-    title: "Experienced Pathologists",
+    title: "Experienced Technologists",
+    desc: "Over 15 years of diagnostic excellence and accurate clinical testing.",
     color: "bg-emerald-100",
     icon: "👨‍⚕️",
   },
   {
-    title: "Home Sample Collection",
+    title: "Doorstep Sample Collection",
+    desc: "Safe, sterile sample pickup from your home across Garhshankar & nearby villages.",
     color: "bg-cyan-100",
     icon: "🏠",
   },
   {
-    title: "Secure Digital Reports",
+    title: "Fast Digital Reports",
+    desc: "Same-day verified test results delivered directly to your WhatsApp and email.",
     color: "bg-violet-100",
     icon: "📄",
   },
@@ -52,7 +56,7 @@ export default function Hero() {
 
               <FiAward />
 
-              Trusted Since 2014
+              Trusted Since 2006
 
             </span>
 
@@ -136,7 +140,7 @@ export default function Hero() {
                       </h4>
 
                       <p className="mt-1 text-sm text-slate-500">
-                        Quality healthcare you can trust.
+                        {item.desc}
                       </p>
 
                     </div>

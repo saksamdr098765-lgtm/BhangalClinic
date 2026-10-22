@@ -90,6 +90,13 @@ export const metadata = {
   verification: {
     google: SITE_CONFIG.verification.google,
   },
+
+  other: {
+    "geo.region": "IN-PB",
+    "geo.placename": SITE_CONFIG.address.city,
+    "geo.position": `${SITE_CONFIG.latitude};${SITE_CONFIG.longitude}`,
+    ICBM: `${SITE_CONFIG.latitude}, ${SITE_CONFIG.longitude}`,
+  },
 };
 
 export default function RootLayout({ children }) {

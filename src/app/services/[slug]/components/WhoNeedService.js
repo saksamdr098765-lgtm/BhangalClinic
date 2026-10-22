@@ -67,18 +67,18 @@ export default function WhoNeedsService({ service }) {
             {/* Mini Stats */}
             <div className="mt-5 grid grid-cols-3 gap-2 border-t border-white/15 pt-4 text-center">
               <div>
-                <h4 className="text-xl font-black sm:text-2xl">All Ages</h4>
+                <h4 className="text-xl font-black sm:text-2xl">15K+</h4>
                 <p className="text-[10px] text-sky-100">Patients</p>
               </div>
 
               <div>
-                <h4 className="text-xl font-black sm:text-2xl">100+</h4>
+                <h4 className="text-xl font-black sm:text-2xl">200+</h4>
                 <p className="text-[10px] text-sky-100">Tests</p>
               </div>
 
               <div>
-                <h4 className="text-xl font-black sm:text-2xl">100%</h4>
-                <p className="text-[10px] text-sky-100">Care</p>
+                <h4 className="text-xl font-black sm:text-2xl">15+</h4>
+                <p className="text-[10px] text-sky-100">Years Exp.</p>
               </div>
             </div>
           </div>

@@ -15,9 +15,21 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function Hero({ location }) {
 const features = [
-  "Advanced Diagnostic Technology",
-  "Fast & Accurate Reports",
-  ...(location.homeCollection ? ["Home Sample Collection"] : []),
+  {
+    title: "Advanced Diagnostic Technology",
+    desc: `Fully automated analyzers ensuring accurate pathology testing in ${location.city}.`,
+  },
+  {
+    title: "Fast & Accurate Reports",
+    desc: "Same-day verified digital reports delivered directly to your WhatsApp and email.",
+  },
+  ...(location.homeCollection ? [{
+    title: "Doorstep Sample Collection",
+    desc: `Trained phlebotomists collect blood samples safely at your home across ${location.city}.`,
+  }] : [{
+    title: "Convenient Laboratory Visit",
+    desc: "Located opposite Civil Hospital on Sri Anandpur Sahib Road with zero long queues.",
+  }]),
 ];
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-sky-600 via-sky-700 to-blue-800 py-6 sm:py-10 lg:py-16">
@@ -81,7 +93,7 @@ const features = [
             <div className="mt-6 grid grid-cols-2 gap-2.5 sm:grid-cols-4 sm:gap-3">
               <div className="rounded-xl bg-white/10 p-3 text-center backdrop-blur sm:p-4">
                 <FiActivity className="mx-auto h-5 w-5 text-cyan-300" />
-                <p className="mt-1 text-lg font-black text-white sm:text-xl">100+</p>
+                <p className="mt-1 text-lg font-black text-white sm:text-xl">200+</p>
                 <p className="text-[10px] text-sky-100 sm:text-xs">Lab Tests</p>
               </div>
 
@@ -125,7 +137,7 @@ const features = [
             <div className="mt-4 space-y-2.5">
               {features.map((item) => (
                 <div
-                  key={item}
+                  key={item.title}
                   className="flex items-center gap-2.5 rounded-xl border border-slate-100 p-2.5 transition hover:bg-sky-50/50 sm:p-3"
                 >
                   <div className="rounded-lg bg-sky-100 p-2 text-sky-600">
@@ -133,9 +145,9 @@ const features = [
                   </div>
 
                   <div>
-                    <h3 className="text-xs font-bold text-slate-900 sm:text-sm">{item}</h3>
+                    <h3 className="text-xs font-bold text-slate-900 sm:text-sm">{item.title}</h3>
                     <p className="text-[11px] text-slate-500 leading-4">
-                      Quality diagnostics with patient-first care.
+                      {item.desc}
                     </p>
                   </div>
                 </div>

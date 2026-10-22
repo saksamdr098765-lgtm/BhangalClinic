@@ -85,7 +85,7 @@ export default function AreasWeServe({ location }) {
                   <p className="text-[10px] text-emerald-100">Areas Covered</p>
                 </div>
                 <div>
-                  <p className="text-lg font-black">100+</p>
+                  <p className="text-lg font-black">200+</p>
                   <p className="text-[10px] text-emerald-100">Lab Tests</p>
                 </div>
               </div>

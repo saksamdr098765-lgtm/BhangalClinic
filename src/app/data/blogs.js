@@ -553,7 +553,7 @@ cta: {
     `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20have%20a%20question%20about%20Blood%20Tests.`,
 
   features: [
-    "100+ Blood Tests Available",
+    "200+ Blood Tests Available",
     "Home Sample Collection",
     "Fast Digital Reports",
     "Affordable Pricing",
@@ -855,7 +855,7 @@ seo: {
 
     {
       type: "paragraph",
-      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. We're open daily from 7:00 AM to 8:00 PM (8:00 AM to 2:00 PM on Sundays). You can walk in, call ahead, or book a home sample collection.",
+      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. We're open Monday to Friday 7:30 AM to 8:00 PM, Saturday 8:30 AM to 5:30 PM, and Sunday 9:00 AM to 4:00 PM (with dedicated hours for the elderly from 9:00 AM to 5:00 PM daily). You can walk in, call ahead, or book a home sample collection.",
     },
 
     {
@@ -1061,7 +1061,7 @@ seo: {
     { label: "Symptoms", value: "Fatigue, Fever, Weakness, Infection", icon: "heart" },
     { label: "Recommended Test", value: "CBC Blood Test", icon: "test" },
     { label: "Fasting", value: "Not Required", icon: "file" },
-    { label: "Report Time", value: "Same Day", icon: "clock" },
+    { label: "Report Time", value: "24 Hours", icon: "clock" },
     { label: "Price", value: getTestPrice("cbc-test"), icon: "price" },
     { label: "Home Collection", value: "Available", icon: "home" },
   ],
@@ -1266,7 +1266,7 @@ seo: {
 
     {
       type: "paragraph",
-      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. We're open daily from 7:00 AM to 8:00 PM (8:00 AM to 2:00 PM on Sundays). Walk in, call ahead, or book a home sample collection.",
+      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. We're open Monday to Friday 7:30 AM to 8:00 PM, Saturday 8:30 AM to 5:30 PM, and Sunday 9:00 AM to 4:00 PM (with dedicated hours for the elderly from 9:00 AM to 5:00 PM daily). Walk in, call ahead, or book a home sample collection.",
     },
 
     {
@@ -1346,7 +1346,7 @@ seo: {
     {
       question: "How long does it take to get CBC test results?",
       answer:
-        "CBC results are typically available the same day, often within a few hours of the blood draw.",
+        "CBC results are typically available within 24 Hours , often within a few hours of the blood draw.",
     },
   ],
 
@@ -1367,7 +1367,7 @@ seo: {
       `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20have%20a%20question%20about%20CBC%20Test.`,
 
     features: [
-      "100+ Blood Tests Available",
+      "200+ Blood Tests Available",
       "Home Sample Collection",
       "Fast Digital Reports",
       "Affordable Pricing",
@@ -1695,7 +1695,7 @@ seo: {
  
     {
       type: "paragraph",
-      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. We're open daily from 7:00 AM to 8:00 PM (8:00 AM to 2:00 PM on Sundays). Walk in, call ahead, or book a home sample collection.",
+      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. We're open Monday to Friday 7:30 AM to 8:00 PM, Saturday 8:30 AM to 5:30 PM, and Sunday 9:00 AM to 4:00 PM (with dedicated hours for the elderly from 9:00 AM to 5:00 PM daily). Walk in, call ahead, or book a home sample collection.",
     },
  
     {
@@ -2326,7 +2326,7 @@ seo: {
     },
     {
       type: "paragraph",
-      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. We're open daily from 7:00 AM to 8:00 PM (8:00 AM to 2:00 PM on Sundays). Walk in, call ahead, or book a home sample collection.",
+      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. We're open Monday to Friday 7:30 AM to 8:00 PM, Saturday 8:30 AM to 5:30 PM, and Sunday 9:00 AM to 4:00 PM (with dedicated hours for the elderly from 9:00 AM to 5:00 PM daily). Walk in, call ahead, or book a home sample collection.",
     },
     {
       type: "interlinking",
@@ -2588,7 +2588,7 @@ seo: {
     },
     {
       type: "paragraph",
-      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. We're open daily from 7:00 AM to 8:00 PM (8:00 AM to 2:00 PM on Sundays). Walk in, call ahead, or book a home sample collection.",
+      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. We're open Monday to Friday 7:30 AM to 8:00 PM, Saturday 8:30 AM to 5:30 PM, and Sunday 9:00 AM to 4:00 PM (with dedicated hours for the elderly from 9:00 AM to 5:00 PM daily). Walk in, call ahead, or book a home sample collection.",
     },
     {
       type: "interlinking",
@@ -2946,7 +2946,7 @@ seo: {
     },
     {
       type: "paragraph",
-      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. Walk in, call ahead, or book a home sample collection.",
+      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. We're open Monday to Friday 7:30 AM to 8:00 PM, Saturday 8:30 AM to 5:30 PM, and Sunday 9:00 AM to 4:00 PM (with dedicated hours for the elderly from 9:00 AM to 5:00 PM daily). Walk in, call ahead, or book a home sample collection.",
     },
     {
       type: "interlinking",

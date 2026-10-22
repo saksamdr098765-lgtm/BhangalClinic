@@ -14,10 +14,10 @@ import ECGMonitor from "./components/ECGSection";
 import HomeBlogsSection from "./components/HomeBlogsSection";
 
 export const metadata = {
-  title: "Blood Tests, ECG & Full Body Checkups in Garhshankar",
+  title: "Blood Test & ECG in Garhshankar | Home Collection from ₹399 – Bhangal Lab",
 
  description:
-  "Book blood tests, ECG & full body checkups at Bhangal Clinical Laboratories, Garhshankar. Home sample collection, accurate reports, affordable pricing.",
+  "Blood tests, ECG & full body checkups in Garhshankar. Free home sample collection, digital reports in 24 hrs. Open from 7:30 AM. Call or WhatsApp.",
   keywords: [
     "Blood Test Garhshankar",
     "ECG Center Garhshankar",

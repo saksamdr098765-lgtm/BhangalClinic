@@ -158,9 +158,9 @@ Thank you.`;
 
         {/* CTA */}
         <div className="mt-auto pt-6">
-          {test.status === "published" ? (
+          {test.href || test.bookingUrl || test.status === "published" ? (
             <TrackedLink
-              href={`/tests/${test.slug}`}
+              href={test.href || test.bookingUrl || `/tests/${test.slug}`}
               tracking={`${location}-${test.name}`}
               aria-label={`Book ${test.name} test`}
               className={`

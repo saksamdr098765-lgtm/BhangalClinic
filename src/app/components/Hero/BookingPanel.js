@@ -114,7 +114,7 @@ export default function BookingPanel() {
           <div className="mt-5 flex items-center justify-between rounded-2xl bg-white/15 p-3">
             <div className="flex items-center gap-2 text-sm">
               <FiCheckCircle />
-              NABL Quality Testing
+              Certified Quality Testing
             </div>
 
             <div className="text-sm font-bold">

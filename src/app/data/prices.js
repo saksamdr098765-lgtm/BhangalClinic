@@ -20,7 +20,7 @@ export const prices = [
    
       title: "Blood Test Price in Garhshankar",
       subtitle:
-        "Compare prices on 100+ blood tests in Garhshankar with high-accuracy automated testing and doorstep home sample collection.",
+        "Compare prices on 200+ blood tests in Garhshankar with high-accuracy automated testing and doorstep home sample collection.",
       image: "/prices/blood-test.webp",
    
     },
@@ -117,7 +117,16 @@ export const prices = [
           btnText: "Visit Garhshankar Hub",
           tracking: "price-interlink-location",
         },
-      ],
+      ,
+        {
+          title: "Complete Blood Tests Guide",
+          subtitle: "Clinical Diagnostic Guide",
+          description: "Read our comprehensive guide covering blood test types, fasting preparation, and normal ranges.",
+          href: "/blogs/list-of-blood-tests",
+          icon: "FiBookOpen",
+          badge: "Health Guide",
+          btnText: "Read Blood Test Guide",
+        }],
     },
     cta: {
       title: "Book Your Blood Test in Garhshankar Today",
@@ -277,7 +286,16 @@ export const prices = [
         btnText: "Visit Garhshankar Hub",
         tracking: "price-interlink-location",
       },
-    ],
+    ,
+        {
+          title: "12-Lead ECG Test Complete Guide",
+          subtitle: "Heart Health Guide",
+          description: "Learn how a 12-lead resting ECG works, when doctors recommend it, and how to understand your report.",
+          href: "/blogs/ecg-test-full-guide",
+          icon: "FiBookOpen",
+          badge: "Health Guide",
+          btnText: "Read ECG Guide",
+        }],
   },
   cta: {
     title: "Book Your ECG Test in Garhshankar Today",
@@ -323,7 +341,7 @@ export const prices = [
   seo: {
     title: "CBC Test Price in Garhshankar | Complete Blood Count Price List",
     description:
-      "Check CBC test price in Garhshankar — Complete Blood Count, starting from ₹149, with doorstep home sample collection and same-day digital reports.",
+      "Check CBC test price in Garhshankar — Complete Blood Count, starting from ₹300, with doorstep home sample collection and same-day digital reports.",
     keywords: [
       "cbc test price garhshankar",
       "cbc test cost garhshankar",
@@ -342,10 +360,10 @@ export const prices = [
     image: "/prices/cbc-test.webp",
   },
   priceCard: {
-    actualPrice: 450,
+    actualPrice: 350,
     offerPrice: getTestPrice("cbc-test"),
     offerText: "Starting Price",
-    reportTime: "Same Day (Within Hours)",
+    reportTime: "24 Hours",
     fasting: "Not Required",
     sampleType: "Blood Sample",
     homeCollection: true,
@@ -394,7 +412,7 @@ export const prices = [
     },
     {
       question: "How fast do I get my CBC test report?",
-      answer: "CBC test reports are usually ready the same day, with a digital copy delivered on WhatsApp & Email within a few hours of sample collection.",
+      answer: "CBC test reports are usually ready the same day, with a digital copy delivered on WhatsApp & Email within 24 hours of sample collection.",
     },
     {
       question: "Does the CBC test price vary by package?",
@@ -442,13 +460,22 @@ export const prices = [
         btnText: "Visit Garhshankar Hub",
         tracking: "price-interlink-location",
       },
-    ],
+    ,
+        {
+          title: "Complete Blood Count (CBC) Guide",
+          subtitle: "Haematology Guide",
+          description: "Understand hemoglobin, WBC, RBC, and platelet count normal values and what abnormal levels mean.",
+          href: "/blogs/cbc-test-full-guide",
+          icon: "FiBookOpen",
+          badge: "Health Guide",
+          btnText: "Read CBC Guide",
+        }],
   },
   cta: {
     title: "Book Your CBC Test in Garhshankar Today",
     description: "Affordable pricing, fast digital reports, and doorstep home sample collection across Garhshankar.",
     offerPrice: getTestPrice("cbc-test"),
-    actualPrice: 450,
+    actualPrice: 350,
     buttonText: "Book a Test",
     testName: "CBC Test",
     blogUrl: "/blogs/cbc-test-full-guide",
@@ -628,7 +655,16 @@ export const prices = [
         btnText: "Visit Garhshankar Hub",
         tracking: "price-interlink-location",
       },
-    ],
+    ,
+        {
+          title: "Blood Sugar & HbA1c Test Guide",
+          subtitle: "Diabetes Management Guide",
+          description: "Understand the key differences between fasting blood glucose and 3-month HbA1c for diabetes diagnosis.",
+          href: "/blogs/blood-sugar-hba1c-test-full-guide",
+          icon: "FiBookOpen",
+          badge: "Health Guide",
+          btnText: "Read Diabetes Guide",
+        }],
   },
  
   cta: {
@@ -681,6 +717,9 @@ export const prices = [
   seo: {
     title: "Full Body Checkup Price in Garhshankar | From ₹800",
     // 53 chars
+
+
+
     description:
       "Compare full body checkup prices in Garhshankar — packages from ₹800 to ₹3500, with home sample collection and fast digital reports.",
     // 141 chars
@@ -815,7 +854,16 @@ export const prices = [
         btnText: "Visit Garhshankar Hub",
         tracking: "price-interlink-location",
       },
-    ],
+    ,
+        {
+          title: "Full Body Health Checkup Guide",
+          subtitle: "Preventive Healthcare Guide",
+          description: "Explore why annual full body health screenings are essential, what tests are included, and preparation tips.",
+          href: "/blogs/full-body-checkup-full-guide",
+          icon: "FiBookOpen",
+          badge: "Health Guide",
+          btnText: "Read Checkup Guide",
+        }],
   },
   cta: {
     title: "Book Your Full Body Checkup in Garhshankar Today",
@@ -965,7 +1013,16 @@ priceList: {
         btnText: "Visit Garhshankar Hub",
         tracking: "price-interlink-location",
       },
-    ],
+    ,
+        {
+          title: "Widal Test for Typhoid Fever Guide",
+          subtitle: "Infectious Disease Guide",
+          description: "Understand how the Widal agglutination test works for detecting Salmonella infection and accurate timing.",
+          href: "/blogs/widal-test-full-guide",
+          icon: "FiBookOpen",
+          badge: "Health Guide",
+          btnText: "Read Widal Guide",
+        }],
   },
   cta: {
     title: "Book Your Widal Test in Garhshankar Today",
@@ -1122,7 +1179,16 @@ priceList: {
         btnText: "Visit Garhshankar Hub",
         tracking: "price-interlink-location",
       },
-    ],
+    ,
+        {
+          title: "Typhoid Fever Diagnosis & Testing",
+          subtitle: "Enteric Fever Guide",
+          description: "Learn about symptoms, Typhidot rapid tests, Widal titers, and when to get tested for enteric fever.",
+          href: "/blogs/typhoid-test-full-guide",
+          icon: "FiBookOpen",
+          badge: "Health Guide",
+          btnText: "Read Typhoid Guide",
+        }],
   },
   cta: {
     title: "Book Your Typhoid Test in Garhshankar Today",
@@ -1288,7 +1354,16 @@ priceList: {
         btnText: "Visit Garhshankar Hub",
         tracking: "price-interlink-location",
       },
-    ],
+    ,
+        {
+          title: "Dengue Fever Test & Platelet Guide",
+          subtitle: "Viral Fever Guide",
+          description: "Complete guide to NS1 antigen, Dengue IgM/IgG antibodies, and monitoring platelet counts during dengue.",
+          href: "/blogs/dengue-test-full-guide",
+          icon: "FiBookOpen",
+          badge: "Health Guide",
+          btnText: "Read Dengue Guide",
+        }],
   },
   cta: {
     title: "Book Your Dengue Test in Garhshankar Today",

@@ -10,6 +10,7 @@ import Preparation from "./components/Preparation";
 import BookingProcess from "./components/BookingProcess";
 import PricePreview from "./components/PricePreview";
 import RelatedTests from "./components/RelatedTest";
+import IncludedInPackages from "./components/IncludedInPackages";
 import FAQ from "./components/FAQ";
 import CTA from "./components/CTA";
 import ResultGuide from "./components/ResultGuide";
@@ -104,6 +105,7 @@ export default async function TestSlugPage({ params }) {
       <Preparation preparation={test.preparation} />
       <BookingProcess bookingProcess={test.bookingProcess} />
       <PricePreview pricePreview={test.pricePreview} />
+      <IncludedInPackages testSlug={test.slug} testName={test.name} />
       <RelatedTests relatedTests={test.relatedTests} />
       <FAQ faq={test.faq} />
       <CTA cta={test.cta} />

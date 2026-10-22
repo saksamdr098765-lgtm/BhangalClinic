@@ -124,7 +124,7 @@ export default function ServiceCTA() {
               {/* Mini Stats */}
               <div className="mt-4 grid grid-cols-3 gap-2 border-t border-slate-200 pt-3 text-center">
                 <div>
-                  <p className="text-lg font-black text-sky-600 sm:text-xl">100+</p>
+                  <p className="text-lg font-black text-sky-600 sm:text-xl">200+</p>
                   <p className="text-[10px] text-slate-500">Tests</p>
                 </div>
 
@@ -134,8 +134,8 @@ export default function ServiceCTA() {
                 </div>
 
                 <div>
-                  <p className="text-lg font-black text-sky-600 sm:text-xl">100%</p>
-                  <p className="text-[10px] text-slate-500">Care</p>
+                  <p className="text-lg font-black text-sky-600 sm:text-xl">15K+</p>
+                  <p className="text-[10px] text-slate-500">Patients</p>
                 </div>
               </div>
             </div>

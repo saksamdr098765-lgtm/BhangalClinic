@@ -70,6 +70,7 @@ export default function BlogCTA({ CTA }) {
 
           <TrackedWhatsappLink
             location={`blog-cta-chat-${serviceName}`}
+            text={`Hi, I have a question about ${serviceName || "diagnostic testing"} at Bhangal Clinical Laboratory Garhshankar.`}
             className="inline-flex items-center justify-center gap-1.5 text-center text-xs text-sky-100 hover:text-white"
           >
             <FaWhatsapp className="text-green-400" />
