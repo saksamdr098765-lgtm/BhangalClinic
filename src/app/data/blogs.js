@@ -565,8 +565,7 @@ cta: {
   id: 2,
 
   slug: "ecg-test-full-guide",
-
-  title: "ECG Test: Full Form, Procedure, Cost & What It Detects (Complete Guide)",
+title: "ECG Full Form: Electrocardiogram Test, Procedure, Price & Normal Report",
 
   excerpt:
     "Everything you need to know about the ECG test — full form, how it works, procedure steps, cost, preparation, and how to read a normal ECG report.",
@@ -601,12 +600,10 @@ cta: {
   ],
 
 seo: {
-  title: "ECG Test: Full Form, Procedure, Cost & What It Detects",
-  // 56 chars — same phrase as title, just drops "(Complete Guide)"
+  title: "ECG Full Form, Normal Report & Price (₹199)",
 
   description:
-    "Everything about the ECG test — full form, how it works, procedure, cost, preparation, and how to read a normal report. Book ECG in Garhshankar.",
-  // 147 chars — same as your excerpt, trimmed + location added
+    "ECG full form is Electrocardiogram. See how the 5-minute test works, normal report values and the ₹199 price. In-lab at Garhshankar, same-day report.",
 
     keywords: [
       "ecg",
@@ -693,17 +690,16 @@ seo: {
       alt: "ECG machine recording heart activity",
       caption: "An ECG records the heart's electrical activity in real time.",
     },
+  
+   {
+  type: "paragraph",
+  text: "ECG stands for Electrocardiogram. It is a painless 5–10 minute test that records your heart's electrical activity through small electrodes on your chest, arms and legs. No fasting is needed. At our Garhshankar centre an ECG costs ₹199, with the report the same day.",
+},
 
-    {
-      type: "heading",
-      level: 2,
-      text: "What Is an ECG? (Full Form & Meaning)",
-    },
-
-    {
-      type: "paragraph",
-      text: "ECG stands for Electrocardiogram. It's a simple, painless test that records the electrical signals produced by your heart with each heartbeat. These signals are picked up through small electrodes placed on your chest, arms, and legs, and displayed as a wave pattern that shows how well your heart is beating and whether the rhythm is regular.",
-    },
+{
+  type: "paragraph",
+  text: "ECG is one of the most frequently requested tests at our centre. Patients walk in with doctor referrals, or simply after a bout of chest tightness. This guide explains how the test works, the procedure, how to prepare, how to read your report, and what it costs.",
+},
 
     {
       type: "tip",
@@ -756,7 +752,7 @@ seo: {
     {
       type: "heading",
       level: 2,
-      text: "Do You Need to Prepare or Fast for an ECG?",
+    text: "Is Fasting Required for an ECG Test?",  
     },
 
     {
@@ -811,17 +807,27 @@ seo: {
         ["Rhythm", "Regular", "Consistent, evenly spaced heartbeats"],
       ],
     },
-
     {
-      type: "heading",
-      level: 2,
-      text: "How Much Does an ECG Test Cost?",
-    },
+  type: "heading",
+  level: 2,
+  text: "How Long Does an ECG Report Take?",
+},
 
-    {
-      type: "paragraph",
-      text: "ECG is one of the more affordable diagnostic tests, and pricing is usually straightforward since it doesn't involve extensive lab processing. Check our current price list for the exact rate and any bundled packages that include ECG alongside other heart-health screenings.",
-    },
+{
+  type: "paragraph",
+  text: "The ECG recording itself takes about 5–10 minutes, and your report is ready the same day. We share digital reports so your doctor can review them without delay.",
+},
+
+   {
+  type: "heading",
+  level: 2,
+  text: "ECG Test Price in Garhshankar: ₹199",
+},
+
+{
+  type: "paragraph",
+  text: "A 12-lead ECG at Bhangal Clinical Laboratories & ECG Center costs ₹199, with the report the same day. You can walk in or call ahead. Bundled packages that include ECG alongside other heart-health screenings are listed below.",
+},
 
     {
       type: "interlinking",
@@ -861,11 +867,12 @@ seo: {
     {
       type: "interlinking",
       title: "Areas We Serve",
-      description: "We provide home sample collection and diagnostic services across the following locations.",
+      description: "Our centre serves patients from these areas. ECG is done in the lab; home sample collection is available for blood tests.",
+
       items: [
         {
           title: "Garhshankar",
-          description: "ECG test and home sample collection.",
+          description: "12-Lead ECG test and certified diagnostics.",
           href: "/locations/ecg-test-in-garhshankar",
         },
         {
@@ -890,7 +897,7 @@ seo: {
         {
           title: "Understanding Your ECG Results",
           publisher: "Mayo Clinic",
-          url: "https://www.mayoclinic.org/",
+        url: "https://www.mayoclinic.org/tests-procedures/ekg/about/pac-20384983",
         },
       ],
     },
@@ -945,7 +952,7 @@ seo: {
     {
       question: "Can I book an ECG test at home?",
       answer:
-        "Yes, ECG tests can be booked with home sample collection for your convenience. A trained technician visits your location to perform the test, and reports are shared digitally, just like our other diagnostic services.",
+        "No, ECG testing is performed exclusively at our diagnostic centre opposite Civil Hospital, Garhshankar. An accurate 12-lead ECG requires specialized calibrated equipment, proper electrical grounding, and a quiet, stable resting environment. While blood samples can be collected from your home, ECG tests require a short in-person visit to our lab.",
     },
     {
       question: "Why is ECG called a 12-lead test?",
@@ -957,13 +964,43 @@ seo: {
       answer:
         "ECG and EKG refer to the exact same test — recording the heart's electrical activity. EKG comes from the German spelling 'Elektrokardiogramm,' while ECG is the English abbreviation. Both terms are used interchangeably by doctors and labs.",
     },
+    {
+  question: "ECG ka full form kya hai?",
+  answer:
+    "ECG ka full form Electrocardiogram (इलेक्ट्रोकार्डियोग्राम) hai. ECG machine ko Electrocardiograph kehte hain. ECG aur EKG ek hi test hain.",
+},
+{
+  question: "ECG test kitne ka hota hai?",
+  answer:
+    "Bhangal Lab Garhshankar me 12-lead ECG test ₹199 me hota hai. Report usi din mil jaati hai.",
+},
+{
+  question: "ECG ki jaanch kaise hoti hai?",
+  answer:
+    "Aap aaram se let jaate hain. Chest, haath aur pair par chhote sticky electrodes lagaye jaate hain aur machine dil ke electrical signals record karti hai. Isme koi sui ya dard nahi hota aur poora test 5-10 minute me ho jaata hai.",
+},
+{
+  question: "ECG ke liye khali pet (fasting) zaroori hai?",
+  answer:
+    "Nahi, ECG ke liye fasting zaroori nahi hai. Test se pehle chest par tel ya lotion na lagayein aur aisa top pehnein jo aasaani se utar ya uth sake.",
+},
+{
+  question: "ECG report kitne time me milti hai?",
+  answer:
+    "ECG ki report usi din mil jaati hai. Recording me khud sirf 5-10 minute lagte hain.",
+},
+{
+  question: "Kya ECG ghar par ho sakta hai?",
+  answer:
+    "Nahi, ECG sirf hamare lab (Civil Hospital ke saamne, Garhshankar) me hota hai. Blood tests ke liye ghar se sample collection available hai.",
+},
   ],
 
   cta: {
     title: "Book Your ECG Test Today",
 
     description:
-      "Looking for reliable ECG testing in Garhshankar? Book your ECG test at Bhangal Clinical Laboratories & ECG Center with convenient home sample collection, affordable pricing, and fast digital reports.",
+      "Looking for reliable ECG testing in Garhshankar? Visit Bhangal Clinical Laboratories & ECG Center opposite Civil Hospital for quick in-lab 12-lead ECG testing, affordable pricing, and fast digital reports.",
 
     serviceName: "ECG Test",
 
@@ -975,13 +1012,13 @@ seo: {
     whatsappLink:
       `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20have%20a%20question%20about%20ECG%20Test.`,
 
-    features: [
-      "Quick & Painless Test",
-      "Home Sample Collection",
-      "Fast Digital Reports",
-      "Affordable Pricing",
-      "Experienced Technicians",
-    ],
+   features: [
+  "Quick & Painless Test",
+  "12-Lead Digital ECG",
+  "Fast Digital Reports",
+  "Affordable Pricing",
+  "Experienced Technicians",
+],
   },
 },
 {
@@ -1030,12 +1067,11 @@ seo: {
 ],
 
 seo: {
-  title: "CBC Test: Full Form, Normal Range, Price & Detects",
-  // 52 chars — same phrase as title, just drops "(Complete Guide)"
+ title: "CBC Full Form, Normal Range Chart & Price",
 
   description:
-    "Everything about the CBC test — full form, normal range by age and gender, price, procedure, fasting rules, and what abnormal results mean.",
-  // 142 chars — matches your excerpt almost exactly
+    "CBC full form: Complete Blood Count. Normal range chart for men, women & children, no-fasting rule, price and how to read your report. Garhshankar lab.",
+
 
     keywords: [
       "cbc test",
@@ -1076,6 +1112,15 @@ seo: {
   ],
 
   content: [
+    {
+  type: "paragraph",
+  text: "CBC stands for Complete Blood Count. It is a routine blood test that measures your red blood cells, white blood cells, platelets and hemoglobin to check for anemia, infection and clotting problems. No fasting is needed, and reports are usually ready within 24 hours.",
+},
+
+{
+  type: "paragraph",
+  text: "CBC is one of the most commonly ordered blood tests at our Garhshankar centre. Patients come with a doctor's referral, or because they feel unusually tired or feverish. This guide covers what each part of the test checks, normal ranges by age and gender, pricing, and how to read your report.",
+},
     {
       type: "paragraph",
       text: "CBC is one of the most commonly ordered blood tests at our Garhshankar centre — patients come in with a doctor's referral, or simply because they've been feeling unusually tired or feverish. Despite how often it's ordered, many people aren't sure what CBC actually stands for or what the individual numbers on the report mean. This guide covers the full form, what each part of the test checks, normal ranges, pricing, and how to read your report.",
@@ -1307,7 +1352,35 @@ seo: {
     },
   ],
 
-  faq: [
+  faq: [{
+  question: "CBC ka full form kya hai?",
+  answer:
+    "CBC ka full form Complete Blood Count hai. Is test ko kuch labs CBP (Complete Blood Picture) bhi kehte hain. Dono ek hi test hain.",
+},
+{
+  question: "CBC ka normal range kya hota hai?",
+  answer:
+    "Adult male me hemoglobin 13.5-17.5 g/dL aur adult female me 12.0-15.5 g/dL hota hai. WBC count 4,000-11,000/µL aur platelets 1.5 se 4.5 lakh/µL (150,000-450,000) normal maane jaate hain. Exact range lab aur age par thoda alag ho sakta hai, isliye apni report me likhe reference range se compare karein.",
+},
+{
+  question: "CBC test ke liye khali pet (fasting) zaroori hai?",
+  answer:
+    "Nahi, CBC ke liye fasting zaroori nahi hai. Aap normal khana-peena kar sakte hain. Sirf tab fasting karein jab saath me sugar ya lipid profile jaisa koi doosra test ho.",
+},
+{
+  question: "CBC ki report kitne time me aati hai?",
+  answer:
+    "CBC ki report aam taur par 24 ghante ke andar mil jaati hai, aksar blood sample dene ke kuch ghanton me. Report WhatsApp par digital bhi bheji jaati hai.",
+},
+{
+  question: "CBC test kitne ka hota hai?",
+  answer: `Bhangal Lab Garhshankar me CBC test ka rate ${getTestPrice("cbc-test")} hai. Health packages me CBC kam kharch me bhi shamil hota hai.`,
+},
+{
+  question: "Kya CBC test se sugar ka pata chalta hai?",
+  answer:
+    "Nahi, CBC se blood sugar ka pata nahi chalta. CBC red cells, white cells aur platelets check karta hai. Sugar ke liye fasting/PP blood sugar ya HbA1c test alag se hota hai.",
+},
     {
       question: "What does a CBC test check for?",
       answer:

@@ -18,8 +18,8 @@ const stats = [
     label: "Diagnostic Tests",
   },
   {
-    value: "99%",
-    label: "Reliable Results",
+    value: "15+",
+    label: "Years Experience",
   },
 ];
 

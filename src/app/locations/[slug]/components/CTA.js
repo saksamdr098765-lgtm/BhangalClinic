@@ -1,3 +1,4 @@
+import SITE_CONFIG from '@/app/SITE_CONFIG';
 import TrackingLink from "@/app/components/TrackingLink";
 import TrackedPhoneLink from "@/app/components/TrackedPhoneLink";
 import TrackedWhatsappLink from "@/app/components/TrackedWhatsappLink";
@@ -95,7 +96,7 @@ export default function CTA({ location }) {
                 </TrackedWhatsappLink>
 
                 <TrackedPhoneLink
-                  phone={location.phone}
+                  phone={location.phone || SITE_CONFIG.phone}
                   tracking={`location-cta-call-${location.city}`}
                   className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/5 px-5 py-3 text-xs font-bold text-white backdrop-blur transition hover:bg-white/10 sm:text-sm"
                 >
@@ -149,9 +150,9 @@ export default function CTA({ location }) {
 
                 <div>
                   <span className="block text-xl font-black sm:text-2xl">
-                    100%
+                    15+
                   </span>
-                  <p className="text-[10px] text-sky-100">Patient Care</p>
+                  <p className="text-[10px] text-sky-100">Years Exp</p>
                 </div>
               </div>
             </div>

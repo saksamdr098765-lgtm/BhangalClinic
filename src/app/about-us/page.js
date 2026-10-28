@@ -15,7 +15,7 @@ description:
   "Bhangal Clinical Laboratories offers accurate diagnostics in Garhshankar with certified quality testing, experienced staff, and home sample collection.",
 // 151 chars
  alternates: {
-    canonical: "/about-us",
+    canonical: `${SITE_CONFIG.url}/about-us`,
   },
 
   openGraph: {

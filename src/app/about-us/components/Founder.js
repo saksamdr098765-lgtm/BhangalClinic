@@ -32,10 +32,10 @@ const stats = [
     color: "text-emerald-600",
   },
   {
-    number: "99%",
-    title: "Trusted Accuracy",
+    number: "200+",
+    title: "Diagnostic Tests",
     description:
-      "Reliable reports processed with advanced laboratory technology.",
+      "Comprehensive pathology tests and specialized panels processed daily.",
     color: "text-cyan-600",
   },
 ];

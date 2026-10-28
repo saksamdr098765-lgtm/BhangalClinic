@@ -6,6 +6,21 @@ const nextConfig = {
     formats: ["image/avif", "image/webp"],
     qualities: [60, 75],
   },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "dkbhangallab.com",
+          },
+        ],
+        destination: "https://www.dkbhangallab.com/:path*",
+        statusCode: 301,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

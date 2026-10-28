@@ -5,7 +5,9 @@ export const locations = [
   slug: "blood-test-in-garhshankar",
 
   city: "Garhshankar",
-  homeCollection:true,
+    phone: "+918968038602",
+    email: "info@dkbhangallab.com",
+    homeCollection:true,
 
   state: "Punjab",
 
@@ -323,14 +325,14 @@ export const locations = [
   title: "ECG Test in Garhshankar",
 
   shortDescription:
-    "Book accurate ECG (Electrocardiogram) tests in Garhshankar with Bhangal Clinical Laboratories & ECG Center. Home ECG collection, fast reports, and affordable pricing for heart rhythm and cardiac screening.",
+    "Book accurate ECG (Electrocardiogram) tests in Garhshankar with Bhangal Clinical Laboratories & ECG Center. In-lab testing, fast reports, and affordable pricing for heart rhythm and cardiac screening.",
 
   seo: {
     title:
-      "ECG Test in Garhshankar | Home ECG Collection & Lab Visit",
+      "ECG Test in Garhshankar | 12-Lead In-Lab Testing",
 
     description:
-      "Get your ECG test done in Garhshankar with Bhangal Clinical Laboratories & ECG Center — accurate 12-lead ECG, home collection, affordable prices, and same-day reports. Book online today.",
+      "Get your ECG test done in Garhshankar with Bhangal Clinical Laboratories & ECG Center — accurate 12-lead ECG, in-lab visit, affordable prices, and same-day reports. Book online today.",
 
     keywords: [
       "ECG Test in Garhshankar",
@@ -353,7 +355,7 @@ homeCollection:false,
     paragraphs: [
       "Looking for a reliable ECG test in Garhshankar? Bhangal Clinical Laboratories & ECG Center is a trusted diagnostic center offering accurate ECG (Electrocardiogram) testing for individuals and families across Garhshankar and surrounding villages. Using calibrated 12-lead ECG machines and trained technicians, we ensure precise readings for detecting heart rhythm issues, blockages, and cardiac abnormalities.",
 
-      "Whether you need a routine ECG as part of a health checkup or a diagnostic ECG for symptoms like chest pain or palpitations, we make ECG testing in Garhshankar simple, affordable, and convenient. Visit our lab directly, or book a home ECG and have a trained technician perform the test at your doorstep — no travel, no waiting.",
+      "Whether you need a routine ECG as part of a health checkup or a diagnostic ECG for symptoms like chest pain or palpitations, we make ECG testing in Garhshankar simple, affordable, and convenient. Visit our lab directly opposite Civil Hospital on Sri Anandpur Sahib Road for fast, comfortable in-lab testing.",
     ],
 
     highlights: [
@@ -396,13 +398,13 @@ homeCollection:false,
         icon: "calendar",
         title: "Book an Appointment",
         description:
-          "Schedule online or by phone — visit our center or request home ECG collection.",
+          "Schedule online or by phone — visit our center opposite Civil Hospital, Garhshankar.",
       },
       {
         icon: "lab",
         title: "ECG Recording",
         description:
-          "Your ECG is performed at our center or your home by a trained technician.",
+          "Your ECG is performed at our diagnostic center by a trained technician.",
       },
       {
         icon: "report",
@@ -501,7 +503,7 @@ homeCollection:false,
       {
         title: "ECG Test Price in Garhshankar",
         subtitle: "Transparent Rates & Package Discounts",
-        description: "Check transparent pricing for ECG testing in Garhshankar, with free doorstep home collection.",
+        description: "Check transparent pricing for ECG testing in Garhshankar at our diagnostic center.",
         href: "/prices/ecg-test-price-garhshankar",
         icon: "FiTag",
         badge: "Price & Cost",
@@ -528,7 +530,7 @@ homeCollection:false,
       },
       {
         label: "ECG Test Price in Garhshankar",
-        description: "Check transparent pricing and home ECG collection availability.",
+        description: "Check transparent pricing and in-lab ECG testing availability.",
         slug: "/prices/ecg-test-price-garhshankar",
       },
     ],
@@ -547,7 +549,7 @@ homeCollection:false,
     {
       question: "Where can I get an ECG test in Garhshankar?",
       answer:
-        "Bhangal Clinical Laboratories & ECG Center offers accurate ECG testing in Garhshankar, either at our center or through convenient home ECG collection.",
+        "Bhangal Clinical Laboratories & ECG Center offers accurate ECG testing in Garhshankar at our center opposite Civil Hospital.",
     },
   {
   question: "Is home ECG collection available in Garhshankar?",
@@ -557,7 +559,7 @@ homeCollection:false,
     {
       question: "How much does an ECG test cost in Garhshankar?",
       answer:
-        "ECG pricing is affordable and transparent at our Garhshankar center. Check our full price list or contact us for current rates, including any home collection charges.",
+        "ECG pricing is affordable and transparent at our Garhshankar center starting from ₹199. Check our full price list or contact us for current rates.",
     },
     {
       question: "How soon will I get my ECG report in Garhshankar?",
@@ -881,7 +883,9 @@ homeCollection:false,
   slug: "blood-sugar-hba1c-test-in-garhshankar",
  
   city: "Garhshankar",
-  homeCollection: true,
+    phone: "+918968038602",
+    email: "info@dkbhangallab.com",
+    homeCollection: true,
   state: "Punjab",
  
   title: "Blood Sugar & HbA1c Test in Garhshankar",
@@ -1183,7 +1187,9 @@ homeCollection:false,
   id: 5,
   slug: "full-body-checkup-in-garhshankar",
   city: "Garhshankar",
-  homeCollection: true,
+    phone: "+918968038602",
+    email: "info@dkbhangallab.com",
+    homeCollection: true,
   state: "Punjab",
   title: "Full Body Checkup in Garhshankar",
   shortDescription:
@@ -1410,7 +1416,9 @@ homeCollection:false,
   id: 6,
   slug: "widal-test-in-garhshankar",
   city: "Garhshankar",
-  homeCollection: true,
+    phone: "+918968038602",
+    email: "info@dkbhangallab.com",
+    homeCollection: true,
   state: "Punjab",
   title: "Widal Test in Garhshankar",
   shortDescription:
@@ -1625,7 +1633,9 @@ homeCollection:false,
   id: 7,
   slug: "typhoid-test-in-garhshankar",
   city: "Garhshankar",
-  homeCollection: true,
+    phone: "+918968038602",
+    email: "info@dkbhangallab.com",
+    homeCollection: true,
   state: "Punjab",
   title: "Typhoid Test in Garhshankar",
   shortDescription:
@@ -1844,7 +1854,9 @@ homeCollection:false,
   id: 8,
   slug: "dengue-test-in-garhshankar",
   city: "Garhshankar",
-  homeCollection: true,
+    phone: "+918968038602",
+    email: "info@dkbhangallab.com",
+    homeCollection: true,
   state: "Punjab",
   title: "Dengue Test in Garhshankar",
   shortDescription:

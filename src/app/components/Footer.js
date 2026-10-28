@@ -39,10 +39,12 @@ const navLinks = [
 const topTests = [
   { name: "Complete Blood Count (CBC)", href: "/tests/cbc-test" },
   { name: "Blood Sugar (Fasting & PP)", href: "/tests/blood-sugar-test" },
-  { name: "HbA1c Diabetes Test", href: "/prices/blood-sugar-hba1c-test-price-garhshankar" },
+  { name: "Lipid Profile (Cholesterol)", href: "/tests/lipid-profile" },
+  { name: "Liver Function Test (LFT)", href: "/tests/liver-function-test" },
+  { name: "Thyroid Profile (T3, T4, TSH)", href: "/tests/thyroid-profile" },
+  { name: "Vitamin D (25-OH)", href: "/tests/vitamin-d-test" },
   { name: "12-Lead Resting ECG", href: "/prices/ecg-test-price-garhshankar" },
-  { name: "Widal Typhoid Test", href: "/tests/widal-test" },
-  { name: "Dengue NS1 & Platelet", href: "/tests/dengue-test" },
+  { name: "HbA1c Diabetes Test", href: "/prices/blood-sugar-hba1c-test-price-garhshankar" },
 ];
 
 const topPackages = [
@@ -158,7 +160,7 @@ export default function Footer() {
                 <div>
                   <p className="text-xs text-slate-500">Lab Landline</p>
                   <TrackedPhoneLink
-                    phone={SITE_CONFIG.landLine}
+                    phone={SITE_CONFIG.landLineDial || SITE_CONFIG.landLine}
                     location="footer-landline"
                     className="font-semibold text-slate-900 hover:text-blue-600"
                   >
@@ -186,7 +188,7 @@ export default function Footer() {
                 <div>
                   <p className="text-xs text-slate-500">Location</p>
                   <address className="not-italic text-xs leading-5 text-slate-700">
-                    {SITE_CONFIG.address.line1}, {SITE_CONFIG.address.street}, {SITE_CONFIG.address.city}, {SITE_CONFIG.address.district}, {SITE_CONFIG.address.state} - {SITE_CONFIG.address.postalCode}
+                    {SITE_CONFIG.address.formatted}
                   </address>
                 </div>
               </div>
@@ -292,7 +294,7 @@ export default function Footer() {
                 Find Our Diagnostic Centre
               </h3>
               <p className="mt-1 text-xs text-slate-600">
-                Opposite Civil Hospital, Sri Anandpur Sahib Road, Garhshankar, Punjab 144527
+                {SITE_CONFIG.address.formatted}
               </p>
             </div>
 

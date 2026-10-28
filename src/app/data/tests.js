@@ -156,7 +156,7 @@ export const tests = [
 
       bookingUrl: "/prices/cbc-test-price-garhshankar",
 
-      phone: "tel:+918968038602",
+      phone: "+918968038602",
     },
 
     quickFacts: {
@@ -464,8 +464,7 @@ export const tests = [
         "/prices/cbc-test-price-garhshankar",
 
 
-      phone:
-        "tel:+918968038602",
+      phone: "+918968038602",
 
 
       buttonText:
@@ -473,6 +472,388 @@ export const tests = [
 
     },
   },
+
+{
+  slug: "thyroid-profile",
+  name: "Thyroid Profile (T3, T4, TSH)",
+  shortName: "Thyroid Profile",
+  category: "Endocrine Diagnostics",
+  organ: "Thyroid",
+  sampleType: "Blood",
+  parameterCount: 3,
+  fasting: true,
+  homeCollection: true,
+  popular: true,
+  description:
+    "Comprehensive thyroid panel evaluating T3, T4, and TSH levels to screen for hypothyroidism, hyperthyroidism, weight changes, fatigue, and hormonal imbalance.",
+  price: 400,
+  reportTime: "Same Day (12-24 Hrs)",
+  status: "published",
+
+  seo: {
+    title: "Thyroid Profile Test (T3, T4, TSH) - Price & Normal Range | Garhshankar",
+    description:
+      "Book Thyroid Profile Test (T3, T4, TSH) in Garhshankar with home collection. Accurate hormone screening at ₹400. Same-day digital reports.",
+    keywords: [
+      "thyroid profile test",
+      "thyroid test price garhshankar",
+      "t3 t4 tsh test price",
+      "tsh normal range",
+      "hypothyroidism test",
+      "hyperthyroidism blood test",
+    ],
+  },
+
+  hero: {
+    badge: "Home Sample Collection Available",
+    title: "Thyroid Profile Blood Test (T3, T4, TSH)",
+    description:
+      "Screen for thyroid disorders, unexplained weight changes, and metabolic imbalance with precision hormone immunoassay and same-day reports in Garhshankar.",
+    image: "/tests/thyroid.webp",
+    imageAlt: "Thyroid Profile Test - T3 T4 TSH Hormone Blood Test",
+    reportTime: "Same Day (12-24 Hrs)",
+    homeCollection: "Available",
+    trustPoints: [
+      "Complete T3, T4 & TSH Trio",
+      "Ultra-Sensitive Hormone Assay",
+      "Same-Day WhatsApp Delivery",
+      "Doorstep Blood Collection",
+    ],
+    bookButton: "Book Thyroid Profile",
+    bookingUrl: "/contact",
+    phone: "+918968038602",
+  },
+
+  quickFacts: {
+    sample: "Blood Sample",
+    reportTime: "Same Day (12-24 Hrs)",
+    fasting: "Recommended (Morning Sample)",
+    homeCollection: "Available",
+    ageGroup: "Adults, Women & Seniors",
+  },
+
+  whyChooseUs: {
+    title: "Why Choose Our Thyroid Profile Service?",
+    description:
+      "Accurate endocrine evaluation with calibrated immunoassay analyzers, dedicated phlebotomists, and prompt digital reports.",
+    items: [
+      {
+        title: "Ultra-Sensitive TSH",
+        description: "Detects subtle thyroid dysfunction before severe symptoms develop.",
+      },
+      {
+        title: "Morning Home Collection",
+        description: "Convenient doorstep sample pickup at optimal morning peak hormone times.",
+      },
+      {
+        title: "Fast Results",
+        description: "Digital reports delivered directly to WhatsApp within 12-24 hours.",
+      },
+      {
+        title: "Affordable Rate",
+        description: "Complete 3-hormone thyroid profile for just ₹400.",
+      },
+    ],
+  },
+
+  testDetails: {
+    title: "About Thyroid Profile Test (T3, T4, TSH)",
+    description: [
+      "The thyroid is a butterfly-shaped gland located at the base of your neck that produces hormones controlling metabolism, heart rate, body temperature, and energy expenditure.",
+      "A Thyroid Profile measures Triiodothyronine (T3), Thyroxine (T4), and Thyroid Stimulating Hormone (TSH) to diagnose an underactive thyroid (hypothyroidism) or overactive thyroid (hyperthyroidism).",
+    ],
+    included: [
+      "Total Triiodothyronine (T3)",
+      "Total Thyroxine (T4)",
+      "Thyroid Stimulating Hormone (TSH)",
+    ],
+  },
+
+  preparation: {
+    title: "Preparation for Thyroid Test",
+    description: "Follow these recommendations for optimal hormonal evaluation.",
+    items: [
+      {
+        title: "Morning Sample Preferred",
+        description: "TSH levels have a diurnal rhythm and are best evaluated between 7:30 AM and 10:00 AM.",
+      },
+      {
+        title: "Thyroid Medication Timing",
+        description: "If you take thyroid hormone replacement pills (like Thyronorm or Eltroxin), consult your doctor on whether to take it before or after blood draw.",
+      },
+      {
+        title: "Light Fasting",
+        description: "Fasting or a light breakfast without biotin supplements is recommended.",
+      },
+    ],
+  },
+
+  bookingProcess: {
+    title: "How to Book Your Thyroid Test",
+    description: "Fast and easy booking with Bhangal Clinical Laboratories.",
+    steps: [
+      {
+        title: "Select Thyroid Profile",
+        description: "Book online, call +91 89680-38602, or send a WhatsApp message.",
+      },
+      {
+        title: "Morning Blood Draw",
+        description: "Visit our lab opposite Civil Hospital or request home sample collection.",
+      },
+      {
+        title: "Chemiluminescence Assay",
+        description: "Processed using precision hormone immunoassay protocols.",
+      },
+      {
+        title: "Digital Report",
+        description: "Receive your PDF report within 12-24 hours on WhatsApp and email.",
+      },
+    ],
+  },
+
+  pricePreview: {
+    title: "Thyroid Profile Price",
+    description:
+      "Check affordable pricing for thyroid testing in Garhshankar.",
+    price: 400,
+    priceUrl: "/prices/blood-test-price-garhshankar",
+  },
+
+  relatedTests: [
+    "cbc-test",
+    "blood-sugar-test",
+    "lipid-profile",
+    "vitamin-d-test",
+  ],
+
+  faq: {
+    title: "Frequently Asked Questions",
+    description: "Common questions about thyroid testing and hormone levels.",
+    items: [
+      {
+        question: "What is the difference between hypothyroidism and hyperthyroidism?",
+        answer:
+          "Hypothyroidism (underactive) occurs when high TSH and low T3/T4 cause fatigue, weight gain, cold sensitivity, and dry skin. Hyperthyroidism (overactive) occurs when low TSH and high T3/T4 cause anxiety, weight loss, and rapid heartbeat.",
+      },
+      {
+        question: "What is the normal TSH range?",
+        answer:
+          "Normal adult TSH levels typically range between 0.4 to 4.5 µIU/mL, though reference ranges may slightly vary by age and pregnancy status.",
+      },
+      {
+        question: "How much is a Thyroid Profile test in Garhshankar?",
+        answer:
+          "The complete 3-hormone Thyroid Profile (T3, T4, TSH) is available for ₹400 at Bhangal Clinical Laboratories with same-day reports.",
+      },
+    ],
+  },
+
+  cta: {
+    title: "Book Your Thyroid Profile Today",
+    description:
+      "Assess your metabolism and hormone balance with precision thyroid testing in Garhshankar.",
+    highlights: [
+      "Complete T3 + T4 + TSH",
+      "Home Collection Available",
+      "Same-Day Digital Delivery",
+    ],
+    price: "400",
+    priceText: "Full thyroid hormone profile for only ₹400.",
+    bookingUrl: "/contact",
+    phone: "+918968038602",
+    buttonText: "Book Thyroid Test",
+  },
+},
+
+{
+  slug: "vitamin-d-test",
+  name: "Vitamin D (25-OH)",
+  shortName: "Vitamin D",
+  category: "Nutritional Health",
+  organ: "Bones & Immunity",
+  sampleType: "Blood",
+  parameterCount: 1,
+  fasting: false,
+  homeCollection: true,
+  popular: true,
+  description:
+    "Measures 25-hydroxy vitamin D levels to assess bone density, calcium absorption, unexplained bone/joint pain, muscle weakness, and immune resistance.",
+  price: 900,
+  reportTime: "Same Day (12-24 Hrs)",
+  status: "published",
+
+  seo: {
+    title: "Vitamin D Test (25-OH) - Normal Range & Price | Garhshankar",
+    description:
+      "Book Vitamin D Test (25-Hydroxy) in Garhshankar with home collection. Check deficiency levels at ₹900. Same-day digital reports.",
+    keywords: [
+      "vitamin d test",
+      "vitamin d price garhshankar",
+      "25 hydroxy vitamin d test",
+      "vitamin d normal range",
+      "vitamin d deficiency symptoms",
+      "bone density blood test",
+    ],
+  },
+
+  hero: {
+    badge: "Home Sample Collection Available",
+    title: "Vitamin D (25-OH) Blood Test",
+    description:
+      "Identify vitamin D deficiency, support bone and joint health, and boost immunity with precision laboratory testing and fast digital reports in Garhshankar.",
+    image: "/tests/vitamin-d.webp",
+    imageAlt: "Vitamin D 25-Hydroxy Blood Test - Bone Health and Immunity",
+    reportTime: "Same Day (12-24 Hrs)",
+    homeCollection: "Available",
+    trustPoints: [
+      "Gold-Standard 25-OH Assay",
+      "No Fasting Required",
+      "Same-Day WhatsApp Delivery",
+      "Doorstep Blood Collection",
+    ],
+    bookButton: "Book Vitamin D Test",
+    bookingUrl: "/contact",
+    phone: "+918968038602",
+  },
+
+  quickFacts: {
+    sample: "Blood Sample",
+    reportTime: "Same Day (12-24 Hrs)",
+    fasting: "Not Required",
+    homeCollection: "Available",
+    ageGroup: "All Age Groups",
+  },
+
+  whyChooseUs: {
+    title: "Why Choose Our Vitamin D Test?",
+    description:
+      "Accurate quantitative 25-hydroxy vitamin D measurement with calibrated automated analyzers and prompt clinical reports.",
+    items: [
+      {
+        title: "Clinical Accuracy",
+        description: "Measures total 25-OH Vitamin D (D2 + D3) for a true clinical reflection of body stores.",
+      },
+      {
+        title: "Convenient Home Collection",
+        description: "Our phlebotomists collect your blood sample comfortably at your home.",
+      },
+      {
+        title: "Fast Turnaround",
+        description: "Digital reports delivered within 12-24 hours via WhatsApp and email.",
+      },
+      {
+        title: "Clear Deficiency Categorization",
+        description: "Reports display standard deficiency (<20 ng/mL), insufficiency (20-30 ng/mL), and sufficiency (>30 ng/mL) brackets.",
+      },
+    ],
+  },
+
+  testDetails: {
+    title: "About Vitamin D (25-OH) Test",
+    description: [
+      "Vitamin D is a fat-soluble vitamin that is essential for maintaining normal blood levels of calcium and phosphorus, helping to build and keep bones strong.",
+      "Deficiency is extremely common and often causes vague symptoms such as chronic fatigue, frequent illness, dull bone pain, hair loss, muscle cramps, and mood depression.",
+    ],
+    included: [
+      "25-Hydroxy Vitamin D (Total D2 + D3)",
+    ],
+  },
+
+  preparation: {
+    title: "Preparation for Vitamin D Test",
+    description: "Simple testing process with minimal preparation.",
+    items: [
+      {
+        title: "No Fasting Needed",
+        description: "You may eat and drink normally before sample collection.",
+      },
+      {
+        title: "Mention Supplements",
+        description: "Inform our staff if you are currently taking high-dose vitamin D3 sachet supplements or injections.",
+      },
+      {
+        title: "Any Time of Day",
+        description: "Samples can be drawn at any convenient hour during lab timings.",
+      },
+    ],
+  },
+
+  bookingProcess: {
+    title: "How to Book Your Vitamin D Test",
+    description: "Quick 4-step booking for Garhshankar residents.",
+    steps: [
+      {
+        title: "Book Your Slot",
+        description: "Book online, call +91 89680-38602, or WhatsApp us.",
+      },
+      {
+        title: "Sample Collection",
+        description: "Visit our lab opposite Civil Hospital or request home collection.",
+      },
+      {
+        title: "Laboratory Assay",
+        description: "Serum tested on calibrated quantitative analyzer.",
+      },
+      {
+        title: "Receive Report",
+        description: "Delivered to your phone within 12-24 hours on WhatsApp and email.",
+      },
+    ],
+  },
+
+  pricePreview: {
+    title: "Vitamin D Test Price",
+    description:
+      "Check pricing for 25-hydroxy vitamin D testing in Garhshankar.",
+    price: 900,
+    priceUrl: "/prices/blood-test-price-garhshankar",
+  },
+
+  relatedTests: [
+    "cbc-test",
+    "thyroid-profile",
+    "kidney-function-test",
+    "blood-sugar-test",
+  ],
+
+  faq: {
+    title: "Frequently Asked Questions",
+    description: "Common questions regarding vitamin D testing and normal ranges.",
+    items: [
+      {
+        question: "What is a normal Vitamin D level?",
+        answer:
+          "Levels above 30 ng/mL are considered sufficient. 20 to 30 ng/mL is considered insufficient, and below 20 ng/mL indicates clinical deficiency requiring supplementation.",
+      },
+      {
+        question: "Does Vitamin D testing require fasting?",
+        answer:
+          "No, fasting is not required for a Vitamin D test. You can have your sample collected at any convenient time.",
+      },
+      {
+        question: "What is the cost of a Vitamin D test in Garhshankar?",
+        answer:
+          "At Bhangal Clinical Laboratories, the Vitamin D (25-OH) test is available at ₹900 with same-day reports.",
+      },
+    ],
+  },
+
+  cta: {
+    title: "Book Your Vitamin D Test Today",
+    description:
+      "Check your bone strength and immune health with accurate Vitamin D testing in Garhshankar.",
+    highlights: [
+      "Total 25-OH Measurement",
+      "Home Collection Available",
+      "Same-Day Digital Delivery",
+    ],
+    price: "900",
+    priceText: "Vitamin D test for only ₹900.",
+    bookingUrl: "/contact",
+    phone: "+918968038602",
+    buttonText: "Book Vitamin D Test",
+  },
+},
 
   {
     slug: "peripheral-blood-film",
@@ -632,7 +1013,7 @@ export const tests = [
  
     bookingUrl: "/prices/blood-sugar-hba1c-test-price-garhshankar",
  
-    phone: "tel:+918968038602",
+    phone: "+918968038602",
   },
  
   quickFacts: {
@@ -837,7 +1218,7 @@ export const tests = [
  
     bookingUrl: "/prices/blood-sugar-hba1c-test-price-garhshankar",
  
-    phone: "tel:+918968038602",
+    phone: "+918968038602",
  
     buttonText: "Book Blood Sugar Test",
   },
@@ -980,7 +1361,7 @@ export const tests = [
   slug: "lipid-profile",
   name: "Lipid Profile",
   shortName: "Lipid Profile",
-  category: "Cholesterol Test",
+  category: "Cardiovascular Screening",
   organ: "Heart",
   sampleType: "Blood",
   parameterCount: 5,
@@ -988,10 +1369,193 @@ export const tests = [
   homeCollection: true,
   popular: true,
   description:
-    "Comprehensive cholesterol profile to assess cardiovascular disease risk.",
+    "Comprehensive cholesterol panel measuring Total Cholesterol, HDL, LDL, VLDL, and Triglycerides to evaluate cardiac health and cardiovascular risk.",
   price: 450,
-  reportTime: "24 Hours",
-   status:"draft"
+  reportTime: "Same Day (12-24 Hrs)",
+  status: "published",
+
+  seo: {
+    title: "Lipid Profile Test - Cholesterol Normal Range & Price | Garhshankar",
+    description:
+      "Book a Lipid Profile Test in Garhshankar with home sample collection. Comprehensive cholesterol check (HDL, LDL, Triglycerides) at ₹450. Same-day reports.",
+    keywords: [
+      "lipid profile test",
+      "cholesterol test garhshankar",
+      "lipid profile price",
+      "lipid profile normal range",
+      "triglycerides test",
+      "hdl ldl test",
+    ],
+  },
+
+  hero: {
+    badge: "Home Sample Collection Available",
+    title: "Lipid Profile Blood Test (Cholesterol Panel)",
+    description:
+      "Comprehensive screening for heart disease risk and arterial health with doorstep blood sample collection and fast same-day digital reports in Garhshankar.",
+    image: "/tests/lipid-profile.webp",
+    imageAlt: "Lipid Profile Test - Cholesterol and Heart Health Screening",
+    reportTime: "Same Day (12-24 Hrs)",
+    homeCollection: "Available",
+    trustPoints: [
+      "5 Critical Lipid Parameters",
+      "Professional Home Phlebotomy",
+      "Same-Day WhatsApp Reports",
+      "Certified Quality Diagnostics",
+    ],
+    bookButton: "Book Lipid Profile",
+    bookingUrl: "/contact",
+    phone: "+918968038602",
+  },
+
+  quickFacts: {
+    sample: "Blood Sample",
+    reportTime: "Same Day (12-24 Hrs)",
+    fasting: "Required (10-12 Hours Fasting)",
+    homeCollection: "Available",
+    ageGroup: "Adults & Seniors",
+  },
+
+  whyChooseUs: {
+    title: "Why Choose Our Lipid Profile Test Service?",
+    description:
+      "Accurate cardiovascular risk assessment with certified protocols, daily automated analyzer calibration, and fast digital reports delivered directly to your phone.",
+    items: [
+      {
+        title: "Precision Lipid Calibration",
+        description: "Enzymatic testing with strict daily quality control for reliable cholesterol fractions.",
+      },
+      {
+        title: "Doorstep Phlebotomy",
+        description: "Convenient morning fasting home collection across Garhshankar and nearby villages.",
+      },
+      {
+        title: "Same-Day Delivery",
+        description: "Digital reports sent promptly via WhatsApp and email so you can share with your doctor.",
+      },
+      {
+        title: "Transparent Lab Pricing",
+        description: "Affordable full 5-parameter profile at just ₹450 with zero hidden charges.",
+      },
+    ],
+  },
+
+  testDetails: {
+    title: "About Lipid Profile Test (Cardiovascular Cholesterol Panel)",
+    description: [
+      "A Lipid Profile is a panel of blood tests used to find abnormalities in lipids (fats and cholesterol). It is a vital tool for assessing your risk of coronary heart disease, stroke, and peripheral vascular disease.",
+      "The test measures circulating cholesterol fractions to evaluate atherosclerosis plaque risk and guide dietary or statin therapy under medical supervision.",
+    ],
+    included: [
+      "Total Cholesterol",
+      "High-Density Lipoprotein (HDL - Good Cholesterol)",
+      "Low-Density Lipoprotein (LDL - Bad Cholesterol)",
+      "Very Low-Density Lipoprotein (VLDL)",
+      "Triglycerides",
+      "TC/HDL Cholesterol Ratio",
+    ],
+  },
+
+  preparation: {
+    title: "Preparation for Lipid Profile Test",
+    description:
+      "Accurate cholesterol and triglyceride measurements require proper overnight fasting.",
+    items: [
+      {
+        title: "10-12 Hours Overnight Fasting",
+        description: "Do not eat or drink anything except plain water for 10 to 12 hours before morning blood collection.",
+      },
+      {
+        title: "Avoid Alcohol & High-Fat Meals",
+        description: "Avoid heavy fatty dinners or alcohol 24 hours prior, as they temporarily spike triglyceride levels.",
+      },
+      {
+        title: "Continue Regular Medication",
+        description: "Take prescribed blood pressure or thyroid medications with water unless specifically instructed by your physician.",
+      },
+    ],
+  },
+
+  bookingProcess: {
+    title: "How to Book Your Lipid Profile Test",
+    description: "Quick 4-step process for in-lab or home collection in Garhshankar.",
+    steps: [
+      {
+        title: "Request Appointment",
+        description: "Select Lipid Profile online, call +91 89680-38602, or WhatsApp us.",
+      },
+      {
+        title: "Fasting Morning Sample",
+        description: "Visit our lab opposite Civil Hospital or request phlebotomist visit to your home.",
+      },
+      {
+        title: "Automated Processing",
+        description: "Sample tested on calibrated clinical chemistry analyzers.",
+      },
+      {
+        title: "Receive Report",
+        description: "Get verified digital report within 12-24 hours via WhatsApp and email.",
+      },
+    ],
+  },
+
+  pricePreview: {
+    title: "Lipid Profile Test Price",
+    description:
+      "Check transparent pricing for comprehensive 5-parameter lipid testing in Garhshankar.",
+    price: 450,
+    priceUrl: "/prices/blood-test-price-garhshankar",
+  },
+
+  relatedTests: [
+    "cbc-test",
+    "blood-sugar-test",
+    "liver-function-test",
+    "kidney-function-test",
+  ],
+
+  faq: {
+    title: "Frequently Asked Questions",
+    description: "Common questions about lipid profile testing, normal cholesterol values, and fasting.",
+    items: [
+      {
+        question: "Why is fasting necessary for a Lipid Profile?",
+        answer:
+          "Triglyceride and LDL levels are significantly altered by recently consumed food. 10 to 12 hours of overnight fasting ensures an accurate baseline reading.",
+      },
+      {
+        question: "What is a healthy total cholesterol level?",
+        answer:
+          "Generally, a total cholesterol level below 200 mg/dL is desirable. Levels between 200–239 mg/dL are borderline high, and 240 mg/dL or above is considered high.",
+      },
+      {
+        question: "Can I get home sample collection for Lipid Profile in Garhshankar?",
+        answer:
+          "Yes, we provide morning home sample collection across Garhshankar and surrounding areas for fasting blood tests at affordable rates.",
+      },
+      {
+        question: "How long does the Lipid Profile report take?",
+        answer:
+          "Reports are ready on the same day, typically delivered within 12–24 hours via WhatsApp and email.",
+      },
+    ],
+  },
+
+  cta: {
+    title: "Book Your Lipid Profile Test Today",
+    description:
+      "Protect your heart with an accurate 5-parameter cholesterol screening in Garhshankar.",
+    highlights: [
+      "Complete 5-Parameter Panel",
+      "Home Sample Collection Available",
+      "Same-Day Digital Delivery",
+    ],
+    price: "450",
+    priceText: "Comprehensive lipid profile for only ₹450.",
+    bookingUrl: "/contact",
+    phone: "+918968038602",
+    buttonText: "Book Lipid Profile",
+  },
 },
 
 {
@@ -1100,10 +1664,187 @@ export const tests = [
   homeCollection: true,
   popular: true,
   description:
-    "Comprehensive liver profile that evaluates liver enzymes, bilirubin and protein levels.",
+    "Comprehensive liver profile evaluating bilirubin (Total, Direct, Indirect), enzymes (SGOT, SGPT, ALP), and proteins for jaundice, fatty liver, or hepatic health.",
   price: 500,
-  reportTime: "24 Hours",
-   status:"draft"
+  reportTime: "Same Day (12-24 Hrs)",
+  status: "published",
+
+  seo: {
+    title: "Liver Function Test (LFT) - Normal Range & Price | Garhshankar",
+    description:
+      "Book Liver Function Test (LFT) in Garhshankar with home collection. Check SGOT, SGPT, Bilirubin & ALP at ₹500. Same-day digital reports.",
+    keywords: [
+      "liver function test",
+      "lft test price garhshankar",
+      "sgpt test price",
+      "sgot sgot normal range",
+      "bilirubin test garhshankar",
+      "lft test normal range",
+    ],
+  },
+
+  hero: {
+    badge: "Home Sample Collection Available",
+    title: "Liver Function Test (LFT Panel)",
+    description:
+      "Comprehensive evaluation of liver enzymes, bilirubin, and protein levels with comfortable sample collection and same-day digital reports in Garhshankar.",
+    image: "/tests/liver-function-test.webp",
+    imageAlt: "Liver Function Test LFT - Hepatic Health and Enzymes Screening",
+    reportTime: "Same Day (12-24 Hrs)",
+    homeCollection: "Available",
+    trustPoints: [
+      "6 Vital Hepatic Markers",
+      "Same-Day WhatsApp Reports",
+      "Experienced Phlebotomists",
+      "Calibrated Chemistry Analyzers",
+    ],
+    bookButton: "Book LFT Test",
+    bookingUrl: "/contact",
+    phone: "+918968038602",
+  },
+
+  quickFacts: {
+    sample: "Blood Sample",
+    reportTime: "Same Day (12-24 Hrs)",
+    fasting: "Required (8-10 Hours Fasting)",
+    homeCollection: "Available",
+    ageGroup: "Adults & Children",
+  },
+
+  whyChooseUs: {
+    title: "Why Choose Our Liver Function Test?",
+    description:
+      "Detect fatty liver, jaundice, and medication side-effects early with calibrated diagnostic instruments and expert lab review.",
+    items: [
+      {
+        title: "Comprehensive Enzyme Panel",
+        description: "Accurate quantification of SGOT/AST, SGPT/ALT, and Alkaline Phosphatase.",
+      },
+      {
+        title: "Bilirubin Breakdown",
+        description: "Clear fractionation of Total, Direct, and Indirect Bilirubin to pinpoint causes of jaundice.",
+      },
+      {
+        title: "Home Sample Collection",
+        description: "Trained phlebotomists collect fasting samples safely at your home.",
+      },
+      {
+        title: "Affordable ₹500 Pricing",
+        description: "Complete 6-test panel priced affordably with fast same-day digital delivery.",
+      },
+    ],
+  },
+
+  testDetails: {
+    title: "About Liver Function Test (LFT)",
+    description: [
+      "The Liver Function Test (LFT) is a group of blood tests that detect inflammation, infection, or damage to the liver. The liver is vital for detoxifying the blood, aiding digestion, and storing essential nutrients.",
+      "An LFT is commonly recommended for individuals experiencing yellowing of eyes/skin (jaundice), abdominal discomfort, nausea, unexplained fatigue, or those taking long-term medications.",
+    ],
+    included: [
+      "Serum Bilirubin Total",
+      "Serum Bilirubin Direct (Conjugated)",
+      "Serum Bilirubin Indirect (Unconjugated)",
+      "SGOT / AST (Aspartate Aminotransferase)",
+      "SGPT / ALT (Alanine Aminotransferase)",
+      "Alkaline Phosphatase (ALP)",
+    ],
+  },
+
+  preparation: {
+    title: "Preparation for LFT Test",
+    description: "Follow these simple guidelines before your liver blood test.",
+    items: [
+      {
+        title: "8-10 Hours Fasting",
+        description: "Fasting overnight ensures liver enzymes and bilirubin are not influenced by recent meals.",
+      },
+      {
+        title: "Avoid Alcohol",
+        description: "Do not consume alcoholic beverages for at least 48 hours prior to testing.",
+      },
+      {
+        title: "Mention Medications",
+        description: "Tell the technician about all regular prescription drugs, antibiotics, or herbal supplements.",
+      },
+    ],
+  },
+
+  bookingProcess: {
+    title: "How to Book Your LFT Test",
+    description: "Simple online or phone booking for Garhshankar residents.",
+    steps: [
+      {
+        title: "Book Test",
+        description: "Reserve your slot online, call +91 89680-38602, or message via WhatsApp.",
+      },
+      {
+        title: "Blood Sample Collection",
+        description: "Visit our lab opposite Civil Hospital or request home sample pickup.",
+      },
+      {
+        title: "Biochemical Testing",
+        description: "Processed on fully automated clinical biochemistry analyzers.",
+      },
+      {
+        title: "Same-Day Report",
+        description: "Receive your verified digital report within 12-24 hours via WhatsApp and email.",
+      },
+    ],
+  },
+
+  pricePreview: {
+    title: "Liver Function Test Price",
+    description:
+      "Check pricing for comprehensive LFT screening in Garhshankar.",
+    price: 500,
+    priceUrl: "/prices/blood-test-price-garhshankar",
+  },
+
+  relatedTests: [
+    "cbc-test",
+    "blood-sugar-test",
+    "lipid-profile",
+    "kidney-function-test",
+  ],
+
+  faq: {
+    title: "Frequently Asked Questions",
+    description: "Common questions about LFT tests, normal ranges, and liver health.",
+    items: [
+      {
+        question: "What do high SGOT and SGPT levels mean?",
+        answer:
+          "Elevated SGOT and SGPT enzymes typically indicate liver inflammation or cell irritation, frequently caused by fatty liver, viral hepatitis, certain medications, or alcohol consumption.",
+      },
+      {
+        question: "Is fasting strictly required for LFT?",
+        answer:
+          "Yes, an 8–10 hour overnight fast is recommended for the most reliable enzyme and bilirubin readings.",
+      },
+      {
+        question: "What is the cost of LFT in Garhshankar?",
+        answer:
+          "At Bhangal Clinical Laboratories, the complete Liver Function Test is available at an affordable rate of ₹500.",
+      },
+    ],
+  },
+
+  cta: {
+    title: "Book Your Liver Function Test Today",
+    description:
+      "Get accurate liver enzyme and bilirubin insights with same-day reports in Garhshankar.",
+    highlights: [
+      "Complete 6-Parameter LFT",
+      "Home Collection Available",
+      "Same-Day Digital Delivery",
+    ],
+    price: "500",
+    priceText: "Comprehensive LFT panel for only ₹500.",
+    bookingUrl: "/contact",
+    phone: "+918968038602",
+    buttonText: "Book LFT Test",
+  },
 },
 
 {
@@ -1268,7 +2009,7 @@ description:
     ],
     bookButton: "Book Widal Test",
     bookingUrl: "/prices/widal-test-price-garhshankar",
-    phone: "tel:+918968038602",
+    phone: "+918968038602",
   },
   resultGuide: {
   title: "Widal Test Normal Range & Result Meaning",
@@ -1462,7 +2203,7 @@ description:
     price: "50",
     priceText: "Check detailed Widal test pricing and booking options.",
     bookingUrl: "/prices/widal-test-price-garhshankar",
-    phone: "tel:+918968038602",
+    phone: "+918968038602",
     buttonText: "Book Widal Test",
   },
 },
@@ -1521,7 +2262,7 @@ description:
     ],
     bookButton: "Book Typhidot Test",
     bookingUrl: "/prices/typhidot-test-price-garhshankar",
-    phone: "tel:+918968038602",
+    phone: "+918968038602",
   },
 
   quickFacts: {
@@ -1700,7 +2441,7 @@ description:
     price: "400",
     priceText: "Check detailed Typhidot test pricing and booking options.",
     bookingUrl: "/prices/typhidot-test-price-garhshankar",
-    phone: "tel:+918968038602",
+    phone: "+918968038602",
     buttonText: "Book Typhidot Test",
   },
 },
@@ -2124,7 +2865,7 @@ description:
     ],
     bookButton: "Book Dengue Test",
     bookingUrl: "/prices/dengue-test-price-garhshankar",
-    phone: "tel:+918968038602",
+    phone: "+918968038602",
   },
 
   quickFacts: {
@@ -2310,7 +3051,7 @@ description:
     price: "600",
     priceText: "Check detailed dengue test pricing and booking options.",
     bookingUrl: "/prices/dengue-test-price-garhshankar",
-    phone: "tel:+918968038602",
+    phone: "+918968038602",
     buttonText: "Book Dengue Test",
   },
 },

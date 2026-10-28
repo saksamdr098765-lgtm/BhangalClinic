@@ -105,8 +105,8 @@ export default function WhyChooseUs({ location }) {
               </div>
 
               <div className="rounded-xl bg-white/10 p-3 backdrop-blur">
-                <p className="text-xl font-black text-white sm:text-2xl">100%</p>
-                <p className="text-[10px] text-sky-100 sm:text-xs">Patient Care</p>
+                <p className="text-xl font-black text-white sm:text-2xl">15K+</p>
+                <p className="text-[10px] text-sky-100 sm:text-xs">Patients Served</p>
               </div>
             </div>
           </div>

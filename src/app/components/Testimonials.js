@@ -47,8 +47,8 @@ const stats = [
   },
   {
     icon: FiShield,
-    value: "99%",
-    label: "Report Accuracy",
+    value: "15+",
+    label: "Years Experience",
   },
   {
     icon: FiHome,
@@ -160,7 +160,7 @@ export default function Testimonials() {
         {/* View on Google Maps Link */}
         <div className="mt-12 text-center">
           <TrackingLink
-            href={SITE_CONFIG.googleMaps.review}
+            href={SITE_CONFIG.googleMaps.place || SITE_CONFIG.googleMaps.review}
             target="_blank"
             rel="noopener noreferrer"
             tracking="home-google-reviews-view"

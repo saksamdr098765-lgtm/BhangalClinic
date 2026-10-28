@@ -5,6 +5,7 @@ import { Toaster } from "sonner";
 import SITE_CONFIG from "./SITE_CONFIG";
 import { layoutSchema } from "@/schema/layoutSchema";
 import FloatingButtons from "./components/FixedButtons";
+import StickyContactBar from "./components/StickyContactBar";
 import Footer from "./components/Footer";
 import Script from "next/script";
 
@@ -105,9 +106,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col pb-16 md:pb-0">
         <Navbar />
         <FloatingButtons />
+        <StickyContactBar />
         {children}
         <Footer />
 

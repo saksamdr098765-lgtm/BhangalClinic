@@ -1,17 +1,33 @@
 "use client";
 
 import { trackPhoneClick } from "@/app/lib/tracking";
+import SITE_CONFIG from "@/app/SITE_CONFIG";
 
 export default function TrackedPhoneLink({
-  phone="+918968038602",
+  phone,
   tracking = "phone-call",
+  location,
   children,
   className,
   onClick,
   ...props
 }) {
+  // Always sanitize phone number and ensure it falls back to SITE_CONFIG.phone
+  let rawPhone = phone || SITE_CONFIG?.phone || "+918968038602";
+  if (
+    typeof rawPhone !== "string" ||
+    rawPhone.trim() === "" ||
+    rawPhone === "undefined" ||
+    rawPhone === "null"
+  ) {
+    rawPhone = SITE_CONFIG?.phone || "+918968038602";
+  }
+
+  // Strip any accidental 'tel:' prefix
+  const cleanPhone = rawPhone.replace(/^tel:/i, "").trim();
+
   const handleClick = (e) => {
-    trackPhoneClick(tracking);
+    trackPhoneClick(tracking || location || "phone-call");
     if (onClick) {
       onClick(e);
     }
@@ -19,12 +35,12 @@ export default function TrackedPhoneLink({
 
   return (
     <a
-      href={`tel:${phone}`}
+      href={`tel:${cleanPhone}`}
       className={className}
       onClick={handleClick}
       {...props}
     >
-      {children}
+      {children || cleanPhone}
     </a>
   );
 }

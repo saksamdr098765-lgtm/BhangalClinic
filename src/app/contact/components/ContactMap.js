@@ -58,7 +58,7 @@ export default function ContactMap() {
                     </TrackedPhoneLink>
                     <span className="text-slate-300">|</span>
                     <TrackedPhoneLink
-                      phone={SITE_CONFIG.landLine}
+                      phone={SITE_CONFIG.landLineDial || SITE_CONFIG.landLine}
                       location="contact-map-landline"
                       className="font-semibold text-slate-900 hover:text-blue-600"
                     >

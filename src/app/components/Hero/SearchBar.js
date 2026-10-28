@@ -9,9 +9,10 @@ import TrackedLink from "../TrackedLink";
 const POPULAR_TESTS = [
   { name: "CBC", href: "/tests/cbc-test" },
   { name: "HbA1c", href: "/prices/blood-sugar-hba1c-test-price-garhshankar" },
-  { name: "Vitamin D", href: "/packages?search=Vitamin+D" },
-  { name: "Thyroid", href: "/packages?search=Thyroid" },
+  { name: "Vitamin D", href: "/tests/vitamin-d-test" },
+  { name: "Thyroid", href: "/tests/thyroid-profile" },
   { name: "LFT", href: "/tests/liver-function-test" },
+  { name: "Lipid Profile", href: "/tests/lipid-profile" },
 ];
 
 export default function SearchBar() {

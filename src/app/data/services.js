@@ -728,7 +728,7 @@ relatedTests: [
       "ECG Test | Book ECG (Electrocardiogram) Online | Bhangal Clinical Laboratories & ECG Center",
 
     description:
-      "Book an ECG test online with Bhangal Clinical Laboratories & ECG Center. Accurate 12-lead ECG for heart rhythm, arrhythmia, and heart attack detection — home collection available.",
+      "Book an ECG test online with Bhangal Clinical Laboratories & ECG Center. Accurate 12-lead ECG for heart rhythm, arrhythmia, and heart attack detection — in-lab visit opposite Civil Hospital.",
 
     keywords: [
       "ECG Test",
@@ -739,7 +739,7 @@ relatedTests: [
       "ECG Machine",
       "ECG Report Meaning",
       "ECG vs EKG",
-      "ECG Test at Home",
+      "In-Lab 12-Lead ECG",
       "Book ECG Test",
     ],
   },
@@ -764,7 +764,7 @@ relatedTests: [
     paragraphs: [
       "An ECG (Electrocardiogram), sometimes referred to as EKG, is a simple, painless test that records the electrical activity of your heart using small electrodes placed on the chest, arms, and legs. It captures the heart's rhythm and electrical patterns as waveforms, helping doctors assess how well the heart is functioning.",
 
-      "At Bhangal Clinical Laboratories & ECG Center, we perform 12-lead ECG tests using calibrated, well-maintained machines operated by trained technicians. The test typically takes just a few minutes and is available at our lab as well as through doorstep home collection.",
+      "At Bhangal Clinical Laboratories & ECG Center, we perform 12-lead ECG tests using calibrated, well-maintained machines operated by trained technicians. The test typically takes just a few minutes and is conducted at our diagnostic centre opposite Civil Hospital, Garhshankar.",
     ],
 
     benefits: [
@@ -914,7 +914,7 @@ relatedTests: [
     heading: "How to Book an ECG Test",
 
     description:
-      "Getting your ECG done with us is quick and simple, whether at our lab or through home collection.",
+      "Getting your ECG done with us is quick and simple at our lab opposite Civil Hospital, Garhshankar.",
 
     steps: [
       {
@@ -1058,7 +1058,7 @@ relatedTests: [
     {
       question: "Can I get an ECG done at home?",
       answer:
-        "Yes, we offer ECG testing at your doorstep. A trained technician will visit your location with portable ECG equipment to perform the test.",
+        "No, ECG tests must be performed at our diagnostic centre opposite Civil Hospital, Garhshankar. Accurate 12-lead electrocardiography requires precision calibrated equipment and an electrically stable, grounded resting environment. While blood samples can be collected from your home, ECG testing is strictly conducted in-lab.",
     },
     {
       question: "Why are 12 leads used in an ECG?",

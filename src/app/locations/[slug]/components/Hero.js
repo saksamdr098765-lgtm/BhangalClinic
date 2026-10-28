@@ -1,3 +1,4 @@
+import SITE_CONFIG from '@/app/SITE_CONFIG';
 import TrackingLink from "@/app/components/TrackingLink";
 import TrackedPhoneLink from "@/app/components/TrackedPhoneLink";
 import TrackedWhatsappLink from "@/app/components/TrackedWhatsappLink";
@@ -80,7 +81,7 @@ const features = [
               </TrackedWhatsappLink>
 
               <TrackedPhoneLink
-                phone={location.phone}
+                phone={location.phone || SITE_CONFIG.phone}
                 tracking={`location-hero-phone-${location.city}`}
                 className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/30 px-4 py-2.5 text-xs font-semibold text-white transition hover:bg-white/10 sm:px-6 sm:py-3 sm:text-sm"
               >
@@ -99,8 +100,8 @@ const features = [
 
               <div className="rounded-xl bg-white/10 p-3 text-center backdrop-blur sm:p-4">
                 <FiShield className="mx-auto h-5 w-5 text-cyan-300" />
-                <p className="mt-1 text-lg font-black text-white sm:text-xl">100%</p>
-                <p className="text-[10px] text-sky-100 sm:text-xs">Accurate</p>
+                <p className="mt-1 text-lg font-black text-white sm:text-xl">15+</p>
+                <p className="text-[10px] text-sky-100 sm:text-xs">Years Exp</p>
               </div>
 
               <div className="rounded-xl bg-white/10 p-3 text-center backdrop-blur sm:p-4">

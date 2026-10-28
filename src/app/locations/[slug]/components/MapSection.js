@@ -22,14 +22,14 @@ ${SITE_CONFIG.address.state}`,
     {
       icon: FiPhone,
       label: "Phone",
-      value: location.phone,
+      value: location.phone || SITE_CONFIG.phone,
       href: `tel:${SITE_CONFIG.phone}`,
       isPhone: true,
     },
     {
       icon: FiMail,
       label: "Email",
-      value: location.email,
+      value: location.email || SITE_CONFIG.email,
       href: `mailto:${SITE_CONFIG.email}`,
     },
     {

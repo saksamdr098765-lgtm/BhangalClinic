@@ -92,8 +92,8 @@ export default function ServiceProcess({ service }) {
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-black sm:text-2xl">100%</h4>
-                  <p className="text-[10px] text-sky-100">Quality</p>
+                  <h4 className="text-xl font-black sm:text-2xl">Daily</h4>
+                  <p className="text-[10px] text-sky-100">Quality Checks</p>
                 </div>
 
                 <div>

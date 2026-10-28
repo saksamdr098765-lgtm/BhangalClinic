@@ -161,10 +161,10 @@ export default function WhyChooseUs() {
 
               <div className="text-center">
                 <span className="block text-2xl font-black text-violet-600 sm:text-3xl">
-                  99%
+                  15+
                 </span>
                 <p className="mt-1 text-xs text-slate-500 sm:text-sm">
-                  Accuracy
+                  Years Exp
                 </p>
               </div>
             </div>

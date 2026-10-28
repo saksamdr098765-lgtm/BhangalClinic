@@ -59,8 +59,8 @@ const stats = [
     label: "Years Experience",
   },
   {
-    value: "99%",
-    label: "Reliable Results",
+    value: "5.0 ★",
+    label: "Patient Rating",
   },
 ];
 

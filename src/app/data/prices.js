@@ -172,7 +172,7 @@ export const prices = [
   seo: {
     title: "ECG Test Price in Garhshankar | Full Price List",
     description:
-      "Check ECG test prices in Garhshankar — 12-lead ECG, starting from ₹199, with doorstep home ECG collection and same-day digital reports.",
+      "Check ECG test prices in Garhshankar — 12-lead ECG, starting from ₹199, with certified in-lab testing and same-day digital reports.",
     keywords: [
       "ecg test price garhshankar",
       "ecg cost garhshankar",
@@ -186,7 +186,7 @@ export const prices = [
     badge: "",
     title: "ECG Test Price in Garhshankar",
     subtitle:
-      "Compare pricing on 12-lead ECG testing in Garhshankar with calibrated equipment and doorstep home ECG collection.",
+      "Compare pricing on 12-lead ECG testing in Garhshankar with calibrated equipment and comfortable in-lab testing.",
     image: "/prices/ecg-test.webp",
   },
   priceCard: {
@@ -222,14 +222,14 @@ export const prices = [
       },
       {
         title: "Convenient & Affordable",
-        description: "Home ECG collection and transparent pricing make cardiac screening accessible for every family.",
+        description: "Certified 12-lead ECG testing and transparent pricing make cardiac screening accessible for every family.",
       },
     ],
   },
   faqs: [
     {
       question: "How much does an ECG test cost in Garhshankar?",
-      answer: "ECG testing in Garhshankar starts from ₹199 at Bhangal Clinical Laboratories & ECG Center, with home collection available at no extra charge.",
+      answer: "ECG testing in Garhshankar starts from ₹199 at Bhangal Clinical Laboratories & ECG Center, conducted at our diagnostic centre opposite Civil Hospital.",
     },
     {
       question: "What is the ECG cost compared to private hospitals?",
@@ -237,7 +237,7 @@ export const prices = [
     },
     {
       question: "Is home ECG collection available in Garhshankar?",
-      answer: "Yes, our trained technicians provide doorstep ECG testing across Garhshankar and nearby villages using portable ECG machines.",
+      answer: "No, ECG testing is conducted exclusively at our diagnostic laboratory opposite Civil Hospital, Garhshankar. An accurate 12-lead ECG requires precision calibrated equipment and an electrically grounded, stable resting environment. Blood tests are available for home sample collection, but ECG requires an in-lab visit.",
     },
     {
       question: "How fast do I get my ECG report?",
@@ -278,7 +278,7 @@ export const prices = [
       {
         title: "Available Near You in Garhshankar",
         subtitle: "Location & Home Collection",
-        description: "Check our diagnostic center, doorstep home ECG collection coverage across Garhshankar city and surrounding villages, and operating hours.",
+        description: "Visit our diagnostic center opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar with convenient operating hours from 7:30 AM.",
         href: "/locations/ecg-test-in-garhshankar",
         icon: "FiMapPin",
         badge: "Garhshankar Location",
@@ -299,7 +299,7 @@ export const prices = [
   },
   cta: {
     title: "Book Your ECG Test in Garhshankar Today",
-    description: "Affordable pricing, fast digital reports, and doorstep home ECG collection across Garhshankar.",
+    description: "Affordable pricing, fast digital reports, and professional in-lab 12-lead ECG testing in Garhshankar.",
     offerPrice: 199,
     actualPrice: 300,
     buttonText: "Book a Test",
@@ -308,7 +308,7 @@ export const prices = [
     serviceUrl: "/services/ecg-test",
     locationUrl: "/locations/ecg-test-in-garhshankar",
     packageUrl: "/packages",
-    highlights: ["Home ECG Collection", "Digital Report", "Affordable Rate", "Fast Turnaround"],
+    highlights: ["12-Lead ECG", "Digital Report", "Affordable Rate", "Immediate Results"],
   },
   packageComparison: {
     type: "option",
@@ -1030,7 +1030,7 @@ priceList: {
     offerPrice: getTestPrice("widal-test"),
     actualPrice: 100,
     buttonText: "Book a Test",
-      phone: "tel:+918968038602",
+      phone: "+918968038602",
     testName: "Widal Test",
     blogUrl: "/blogs/widal-test-full-guide",
     serviceUrl: "/tests/widal-test",
