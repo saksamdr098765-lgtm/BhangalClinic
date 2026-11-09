@@ -667,191 +667,244 @@ export const tests = [
 
 {
   slug: "vitamin-d-test",
-  name: "Vitamin D (25-OH)",
-  shortName: "Vitamin D",
-  category: "Nutritional Health",
-  organ: "Bones & Immunity",
+  name: "Vitamin D3 Test",
+  shortName: "Vitamin D3",
+  category: "Vitamin Test",
+  organ: "Bone",
   sampleType: "Blood",
   parameterCount: 1,
   fasting: false,
   homeCollection: true,
   popular: true,
   description:
-    "Measures 25-hydroxy vitamin D levels to assess bone density, calcium absorption, unexplained bone/joint pain, muscle weakness, and immune resistance.",
-  price: 900,
-  reportTime: "Same Day (12-24 Hrs)",
+    "Vitamin D3 test measures your blood vitamin D3 level to check for deficiency, low levels or excess, and to guide supplement treatment.",
+  price: 1000,
+  reportTime: "24 Hours",
   status: "published",
 
   seo: {
-    title: "Vitamin D Test (25-OH) - Normal Range & Price | Garhshankar",
+    title: "Vitamin D Test (D3) - Normal Range, Price & Guide",
+    // 49 chars
     description:
-      "Book Vitamin D Test (25-Hydroxy) in Garhshankar with home collection. Check deficiency levels at ₹900. Same-day digital reports.",
+      "Book a vitamin D3 test with home sample collection. Know the normal range, what low levels mean, fasting rules and report time.",
+    // 127 chars
     keywords: [
       "vitamin d test",
-      "vitamin d price garhshankar",
-      "25 hydroxy vitamin d test",
-      "vitamin d normal range",
-      "vitamin d deficiency symptoms",
-      "bone density blood test",
+      "vitamin d3 test",
+      "vitamin d level test",
+      "vitamin d deficiency test",
+      "what is vitamin d test",
+      "vitamin d test full form",
+      "vitamin d test normal range",
+      "vitamin d test fasting required",
+      "vitamin d test accuracy",
+      "vitamin d3 test report time",
     ],
   },
 
   hero: {
     badge: "Home Sample Collection Available",
-    title: "Vitamin D (25-OH) Blood Test",
+    title: "Vitamin D3 Test - Check Your Vitamin D Level",
     description:
-      "Identify vitamin D deficiency, support bone and joint health, and boost immunity with precision laboratory testing and fast digital reports in Garhshankar.",
+      "Book a vitamin D3 test near you with professional sample collection, digital reports and home collection. One blood sample shows whether your level is low, borderline or normal.",
     image: "/tests/vitamin-d.webp",
-    imageAlt: "Vitamin D 25-Hydroxy Blood Test - Bone Health and Immunity",
-    reportTime: "Same Day (12-24 Hrs)",
+    imageAlt: "Vitamin D3 Test - Blood Test for Vitamin D Level",
+    reportTime: "24 Hours",
     homeCollection: "Available",
     trustPoints: [
-      "Gold-Standard 25-OH Assay",
-      "No Fasting Required",
-      "Same-Day WhatsApp Delivery",
-      "Doorstep Blood Collection",
+      "No Fasting Needed",
+      "Professional Sample Collection",
+      "Digital Reports",
+      "Quality-Controlled Testing",
     ],
-    bookButton: "Book Vitamin D Test",
-    bookingUrl: "/contact",
-    phone: "+918968038602",
+    bookButton: "Book Vitamin D3 Test",
+    bookingUrl: "/prices/vitamin-d-test-price-garhshankar",
+    phone: "tel:+918968038602",
   },
 
   quickFacts: {
     sample: "Blood Sample",
-    reportTime: "Same Day (12-24 Hrs)",
+    reportTime: "24 Hours",
     fasting: "Not Required",
     homeCollection: "Available",
-    ageGroup: "All Age Groups",
+    ageGroup: "Adults & Children",
   },
 
   whyChooseUs: {
-    title: "Why Choose Our Vitamin D Test?",
+    title: "Why Choose Our Vitamin D3 Test Service?",
     description:
-      "Accurate quantitative 25-hydroxy vitamin D measurement with calibrated automated analyzers and prompt clinical reports.",
+      "Get a vitamin D3 test near you at a time that suits you, with a clear report you can show your doctor the same day it is ready.",
     items: [
       {
-        title: "Clinical Accuracy",
-        description: "Measures total 25-OH Vitamin D (D2 + D3) for a true clinical reflection of body stores.",
+        title: "No Fasting, Flexible Timing",
+        description:
+          "No fasting is needed, so you can book any slot during lab hours around work, school or your doctor's appointment.",
       },
       {
-        title: "Convenient Home Collection",
-        description: "Our phlebotomists collect your blood sample comfortably at your home.",
+        title: "Clear Range-Based Report",
+        description:
+          "Your result is shown in ng/mL against a reference range, with low or borderline values flagged.",
       },
       {
-        title: "Fast Turnaround",
-        description: "Digital reports delivered within 12-24 hours via WhatsApp and email.",
+        title: "Digital Reports",
+        description:
+          "Receive your report on WhatsApp and email so you can share it with your doctor straight away.",
       },
       {
-        title: "Clear Deficiency Categorization",
-        description: "Reports display standard deficiency (<20 ng/mL), insufficiency (20-30 ng/mL), and sufficiency (>30 ng/mL) brackets.",
+        title: "Home Collection Available",
+        description:
+          "A trained technician can collect the sample at your home in Garhshankar and nearby villages.",
       },
     ],
   },
 
   testDetails: {
-    title: "About Vitamin D (25-OH) Test",
+    title: "About Vitamin D3 Test",
     description: [
-      "Vitamin D is a fat-soluble vitamin that is essential for maintaining normal blood levels of calcium and phosphorus, helping to build and keep bones strong.",
-      "Deficiency is extremely common and often causes vague symptoms such as chronic fatigue, frequent illness, dull bone pain, hair loss, muscle cramps, and mood depression.",
+      "The vitamin D3 test is a blood test that shows how much vitamin D3 is in your blood, which tells your doctor whether your level is low, borderline or sufficient. Reports may print it as Vitamin D or Vitamin D3, and people often search for it simply as a vitamin D test. All of these refer to the same test.",
+      "Vitamin D helps your body absorb calcium for strong bones and also supports muscles and immunity. Results are usually reported in ng/mL: below 20 is generally treated as deficient, 20 to 29 as insufficient, and 30 to 100 as sufficient. Exact cut-offs vary slightly between labs, so read your result against the range printed on your own report.",
     ],
     included: [
-      "25-Hydroxy Vitamin D (Total D2 + D3)",
+      "Vitamin D3 Level",
+      "Result in ng/mL with Reference Range",
     ],
   },
 
   preparation: {
-    title: "Preparation for Vitamin D Test",
-    description: "Simple testing process with minimal preparation.",
+    title: "Preparation Before Vitamin D3 Test",
+    description:
+      "There is very little to prepare, but a few details help your doctor read the result correctly.",
     items: [
       {
         title: "No Fasting Needed",
-        description: "You may eat and drink normally before sample collection.",
+        description:
+          "You can eat and drink normally before the sample is collected, unless other fasting tests are booked with it.",
       },
       {
-        title: "Mention Supplements",
-        description: "Inform our staff if you are currently taking high-dose vitamin D3 sachet supplements or injections.",
+        title: "Tell Us About Supplements",
+        description:
+          "Mention any vitamin D tablets, sachets or multivitamins you take. Your doctor may want a starting level, or a recheck after a course.",
       },
       {
-        title: "Any Time of Day",
-        description: "Samples can be drawn at any convenient hour during lab timings.",
+        title: "Bring Earlier Reports",
+        description:
+          "If you have a past vitamin D result, keep it handy so your doctor can compare the two.",
       },
     ],
   },
 
   bookingProcess: {
-    title: "How to Book Your Vitamin D Test",
-    description: "Quick 4-step booking for Garhshankar residents.",
+    title: "How to Book Your Vitamin D3 Test",
+    description:
+      "Book in a few minutes and choose between a lab visit and home collection.",
     steps: [
       {
-        title: "Book Your Slot",
-        description: "Book online, call +91 89680-38602, or WhatsApp us.",
+        title: "Book Test",
+        description:
+          "Request your vitamin D3 test online or call our team, and mention any other tests your doctor has asked for.",
       },
       {
         title: "Sample Collection",
-        description: "Visit our lab opposite Civil Hospital or request home collection.",
+        description:
+          "A trained technician collects a small blood sample at our lab or at your home.",
       },
       {
-        title: "Laboratory Assay",
-        description: "Serum tested on calibrated quantitative analyzer.",
+        title: "Laboratory Testing",
+        description:
+          "Your sample is tested for vitamin D3 using standard laboratory procedures.",
       },
       {
         title: "Receive Report",
-        description: "Delivered to your phone within 12-24 hours on WhatsApp and email.",
+        description:
+          "Get your digital vitamin D3 report on WhatsApp and email, then share it with your doctor.",
       },
     ],
   },
 
   pricePreview: {
-    title: "Vitamin D Test Price",
+    title: "Vitamin D3 Test Price",
     description:
-      "Check pricing for 25-hydroxy vitamin D testing in Garhshankar.",
-    price: 900,
-    priceUrl: "/prices/blood-test-price-garhshankar",
+      "See the current vitamin D3 test price and the related bone-health tests before you book. No advance payment is required.",
+    price: 1000,
+    priceUrl: "/prices/vitamin-d-test-price-garhshankar",
   },
 
   relatedTests: [
+    "serum-calcium",
+    "alkaline-phosphatase-test",
     "cbc-test",
-    "thyroid-profile",
     "kidney-function-test",
+    "uric-acid-test",
     "blood-sugar-test",
   ],
 
   faq: {
     title: "Frequently Asked Questions",
-    description: "Common questions regarding vitamin D testing and normal ranges.",
+    description:
+      "Quick answers about the vitamin D3 test, its normal range and how to prepare.",
     items: [
       {
-        question: "What is a normal Vitamin D level?",
+        question: "What does a vitamin D3 test check for?",
         answer:
-          "Levels above 30 ng/mL are considered sufficient. 20 to 30 ng/mL is considered insufficient, and below 20 ng/mL indicates clinical deficiency requiring supplementation.",
+          "It measures the amount of vitamin D3 in your blood, which shows whether you are deficient, borderline or have enough vitamin D for healthy bones, muscles and immunity.",
       },
       {
-        question: "Does Vitamin D testing require fasting?",
+        question: "What is the normal range for a vitamin D test?",
         answer:
-          "No, fasting is not required for a Vitamin D test. You can have your sample collected at any convenient time.",
+          "Most labs treat 30 to 100 ng/mL as sufficient, 20 to 29 ng/mL as insufficient, and below 20 ng/mL as deficient. Ranges vary slightly by lab, so compare your result with the range on your report.",
       },
       {
-        question: "What is the cost of a Vitamin D test in Garhshankar?",
+        question: "Is the vitamin D normal range different for men and women?",
         answer:
-          "At Bhangal Clinical Laboratories, the Vitamin D (25-OH) test is available at ₹900 with same-day reports.",
+          "Most labs use the same thresholds for men and women. Your doctor may set a different target depending on your age, pregnancy, bone health or other conditions.",
+      },
+      {
+        question: "Are the vitamin D test and the vitamin D3 test the same?",
+        answer:
+          "Yes. Our vitamin D test is the Vitamin D3 test. People search for it as a vitamin D test or a D3 test, and both mean the same sample and the same report.",
+      },
+      {
+        question: "Is fasting required for a vitamin D3 test?",
+        answer:
+          "No. You can eat and drink normally. Fast only if other tests booked with it, such as fasting sugar or lipid profile, need it.",
+      },
+      {
+        question: "How accurate is the vitamin D test?",
+        answer:
+          "Laboratory testing is a reliable way to measure vitamin D status, though results can differ slightly between labs and methods. For a repeat test, it helps to use the same lab so the two numbers compare fairly.",
+      },
+      {
+        question: "How long does it take to receive the vitamin D3 report?",
+        answer:
+          "Reports are usually ready within 24 hours of sample collection and are delivered digitally on WhatsApp and email.",
+      },
+      {
+        question: "Is home sample collection available for the vitamin D3 test?",
+        answer:
+          "Yes. Home collection is available across Garhshankar and nearby villages.",
+      },
+      {
+        question: "What is the vitamin D3 test price?",
+        answer:
+          "The vitamin D3 test is priced at ₹1000 against an MRP of ₹1200. Booking needs no advance payment.",
       },
     ],
   },
 
   cta: {
-    title: "Book Your Vitamin D Test Today",
+    title: "Book Your Vitamin D3 Test Today",
     description:
-      "Check your bone strength and immune health with accurate Vitamin D testing in Garhshankar.",
+      "One blood sample, no fasting, and a digital report you can share with your doctor.",
     highlights: [
-      "Total 25-OH Measurement",
-      "Home Collection Available",
-      "Same-Day Digital Delivery",
+      "No Fasting Needed",
+      "Home Sample Collection Available",
+      "Fast Digital Reports",
     ],
-    price: "900",
-    priceText: "Vitamin D test for only ₹900.",
-    bookingUrl: "/contact",
-    phone: "+918968038602",
-    buttonText: "Book Vitamin D Test",
+    price: "1000",
+    priceText: "Check detailed vitamin D3 test pricing and booking options.",
+    bookingUrl: "/prices/vitamin-d-test-price-garhshankar",
+    phone: "tel:+918968038602",
+    buttonText: "Book Vitamin D3 Test",
   },
 },
 

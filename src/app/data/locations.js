@@ -2085,6 +2085,238 @@ homeCollection:false,
   hours: "Monday – Friday: 7:30 AM – 8:00 PM | Saturday: 8:30 AM – 5:30 PM | Sunday: 9:00 AM – 4:00 PM",
   elderlyHours: "Monday – Sunday: 9:00 AM – 5:00 PM",
 },
+{
+  id: 9,
+  slug: "vitamin-d-test-in-garhshankar",
+  city: "Garhshankar",
+  homeCollection: true,
+  state: "Punjab",
+  title: "Vitamin D Test in Garhshankar",
+  shortDescription:
+    "Vitamin D3 testing in Garhshankar at Bhangal Clinical Laboratories & ECG Center. No fasting, home collection and digital reports.",
+
+  seo: {
+    title: "Vitamin D Test (D3) in Garhshankar | Home Collection",
+    // 52 chars
+    description:
+      "Get your vitamin D3 test in Garhshankar at Bhangal Clinical Laboratories. Home collection, no fasting and digital reports within 24 hours.",
+    // 138 chars
+    keywords: [
+      "Vitamin D Test in Garhshankar",
+      "Vitamin D Test Garhshankar",
+      "Vitamin D Test Near Me Garhshankar",
+      "Vitamin D3 Test Garhshankar",
+      "Vitamin D Level Test Garhshankar",
+      "Vitamin D Test Home Collection Garhshankar",
+      "Vitamin D Test Lab Garhshankar",
+      "Best Pathology Lab for Vitamin D Garhshankar",
+      "Vitamin D Test Hoshiarpur",
+    ],
+  },
+
+  overview: {
+    heading: "Vitamin D Test in Garhshankar",
+    paragraphs: [
+      "Body aches, constant tiredness and hair fall send many people in Garhshankar and nearby villages to ask about vitamin D. Bhangal Clinical Laboratories & ECG Center offers the vitamin D3 test from a single blood sample, with no fasting needed, so you can visit at any time during lab hours.",
+      "Visit the lab opposite Civil Hospital, or book home sample collection if travelling is difficult. Your report arrives digitally in about 24 hours, ready to share with your doctor, and tests such as calcium, ALP or CBC can be added to the same visit.",
+    ],
+    highlights: [
+      "No Fasting Needed",
+      "Home Sample Collection",
+      "Digital Reports on WhatsApp",
+      "Calcium, ALP & CBC Can Be Added",
+      "Experienced Lab Technicians",
+    ],
+  },
+
+  popularTests: {
+    heading: "Vitamin D and Bone-Health Tests in Garhshankar",
+    test: [
+      "vitamin-d-test",
+      "serum-calcium",
+      "alkaline-phosphatase-test",
+      "cbc-test",
+      "kidney-function-test",
+      "uric-acid-test",
+      "blood-sugar-test",
+    ],
+  },
+
+  packages: [
+    "bhangal-advance-full-body-checkup",
+    "bhangal-master-health-screen",
+    "bhangal-senior-citizen-profile",
+    "bcl-female-4-package",
+  ],
+
+  process: {
+    heading: "How to Get a Vitamin D Test in Garhshankar",
+    steps: [
+      {
+        icon: "search",
+        title: "Choose Your Test",
+        description: "Book the vitamin D3 test alone, or add calcium, ALP, CBC or a full body checkup.",
+      },
+      {
+        icon: "calendar",
+        title: "Book Lab Visit or Home Collection",
+        description: "Call or book online, then pick a lab visit or have a technician come to you.",
+      },
+      {
+        icon: "lab",
+        title: "Sample Collection",
+        description: "A small blood sample is collected. No fasting is needed for vitamin D.",
+      },
+      {
+        icon: "report",
+        title: "Get Your Report",
+        description: "Receive the digital report in about 24 hours and share it with your doctor.",
+      },
+    ],
+  },
+
+  whyChoose: {
+    features: [
+      {
+        icon: "activity",
+        title: "Clear Range-Based Result",
+        description: "Your level is shown in ng/mL against a reference range, with low values flagged.",
+      },
+      {
+        icon: "award",
+        title: "Experienced Lab Team",
+        description: "Trained staff handle collection and reporting with standard lab procedures.",
+      },
+      {
+        icon: "shield",
+        title: "Quality Assurance",
+        description: "Every sample goes through quality control checks before the report is released.",
+      },
+      {
+        icon: "clock",
+        title: "Quick Turnaround",
+        description: "Most vitamin D reports in Garhshankar are ready within 24 hours.",
+      },
+      {
+        icon: "home",
+        title: "Home Collection",
+        description: "Skip the trip. The sample is collected at your doorstep.",
+      },
+      {
+        icon: "check",
+        title: "Clear Pricing",
+        description: "See the price before you book, with no advance payment.",
+      },
+    ],
+  },
+
+  areas: [
+    "Garhshankar City", "Civil Hospital Area", "Railway Road", "Main Bazaar",
+    "Nawanshahr Road", "Hoshiarpur Road", "Banga Road", "Mahilpur Road",
+    "Saila Khurd", "Binewal", "Denowal Kalan", "Denowal Khurd", "Chak Guru",
+    "Pojewal", "Pandori", "Purhiran", "Chak Singha", "Bharta", "Kukar Majara",
+    "Nearby Villages of Garhshankar",
+  ],
+
+  hubLinks: {
+    heading: "Everything You Need to Know About Vitamin D Testing in Garhshankar",
+    badge: "Garhshankar Central Diagnostics Hub",
+    description: "Learn the symptoms of low vitamin D, how to read your result, or check pricing. Start with the guides below.",
+    items: [
+      {
+        title: "Vitamin D Deficiency: Symptoms, Foods & Levels",
+        subtitle: "Educational Guide & Range Chart",
+        description: "Understand low vitamin D signs, what your ng/mL result means, food and sunlight sources, and when to see a doctor.",
+        href: "/blogs/vitamin-d-deficiency-symptoms-guide",
+        icon: "FiBookOpen",
+        badge: "Context & Guide",
+        badgeColor: "bg-blue-100 text-blue-700 border-blue-200",
+        btnText: "Read Full Guide",
+        tag: "Educational",
+      },
+      {
+        title: "Vitamin D3 Test Details",
+        subtitle: "Vitamin D3 Test Explained",
+        description: "See what the test shows, how to prepare, and how the normal range is read.",
+        href: "/tests/vitamin-d-test",
+        icon: "FiActivity",
+        badge: "Service Overview",
+        badgeColor: "bg-teal-100 text-teal-700 border-teal-200",
+        btnText: "Explore Service",
+        tag: "Service",
+      },
+      {
+        title: "Vitamin D Test Price in Garhshankar",
+        subtitle: "Price List for Related Tests",
+        description: "Check the vitamin D3 test price along with calcium, ALP, CBC and a full body checkup.",
+        href: "/prices/vitamin-d-test-price-garhshankar",
+        icon: "FiTag",
+        badge: "Price & Cost",
+        badgeColor: "bg-amber-100 text-amber-700 border-amber-200",
+        btnText: "View Price List",
+        tag: "Cost & Rates",
+      },
+    ],
+  },
+
+  relatedLinks: {
+    heading: "Explore Key Vitamin D Information",
+    links: [
+      {
+        label: "Vitamin D Deficiency: Symptoms, Foods & Levels",
+        description: "Signs of low vitamin D, range chart, foods, sunlight and treatment basics.",
+        slug: "/blogs/vitamin-d-deficiency-symptoms-guide",
+      },
+      {
+        label: "Vitamin D3 Test Details",
+        description: "What the vitamin D3 test shows and how to prepare.",
+        slug: "/tests/vitamin-d-test",
+      },
+      {
+        label: "Vitamin D Test Price in Garhshankar",
+        description: "Current prices for the vitamin D3 test and related tests.",
+        slug: "/prices/vitamin-d-test-price-garhshankar",
+      },
+    ],
+  },
+
+  blogs: ["vitamin-d-deficiency-symptoms-guide", "list-of-blood-tests", "full-body-checkup-full-guide"],
+  services: ["vitamin-d-test", "blood-tests"],
+
+  faq: [
+    {
+      question: "Where can I get a vitamin D test in Garhshankar?",
+      answer: "Bhangal Clinical Laboratories & ECG Center, opposite Civil Hospital on Sri Anandpur Sahib Road, offers the vitamin D3 test at the lab or through home sample collection.",
+    },
+    {
+      question: "Is home sample collection available for the vitamin D test in Garhshankar?",
+      answer: "Yes. A technician can collect the sample at your home in Garhshankar and nearby villages. Please call to confirm a time.",
+    },
+    {
+      question: "Do I need to fast before a vitamin D test?",
+      answer: "No. You can eat and drink normally before the sample is collected.",
+    },
+    {
+      question: "How much does a vitamin D test cost in Garhshankar?",
+      answer: "The vitamin D3 test is ₹1000 (MRP ₹1200), with home sample collection available. See our price page for related tests such as calcium, ALP and CBC.",
+    },
+    {
+      question: "How soon will I get my vitamin D report?",
+      answer: "Reports are usually ready within 24 hours and sent digitally on WhatsApp and email.",
+    },
+    {
+      question: "Can I get vitamin D and B12 tested together?",
+      answer: "Yes. Both can be run from one blood sample. Contact us for the combined rate, or choose a full body checkup package that includes them.",
+    },
+    {
+      question: "Who should get a vitamin D test?",
+      answer: "People with ongoing tiredness, bone or muscle pain, frequent illness or hair fall, those with little sun exposure, older adults, and anyone whose doctor has advised it, including during pregnancy.",
+    },
+  ],
+
+  hours: "Monday – Friday: 7:30 AM – 8:00 PM | Saturday: 8:30 AM – 5:30 PM | Sunday: 9:00 AM – 4:00 PM",
+  elderlyHours: "Monday – Sunday: 9:00 AM – 5:00 PM",
+},
 ];
 
 export function getLocation(slug) {

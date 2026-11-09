@@ -1394,6 +1394,161 @@ priceList: {
     ],
   },
 },
+{
+  slug: "vitamin-d-test-price-garhshankar",
+  seo: {
+    title: "Vitamin D Test (D3) Price in Garhshankar | ₹1000",
+    // 48 chars
+    description:
+      "Vitamin D3 test price in Garhshankar: ₹1000 (MRP ₹1200). Home sample collection, digital reports and no fasting needed.",
+    // 120 chars
+    keywords: [
+      "vitamin d test price garhshankar",
+      "vitamin d test price",
+      "vitamin d3 test price",
+      "vitamin d blood test price",
+      "vitamin d test cost",
+      "vitamin d test price list",
+      "vitamin d test package",
+      "vitamin d and b12 test price",
+    ],
+  },
+  homeCollection: true,
+  hero: {
+    badge: "",
+    title: "Vitamin D Test (D3) Price in Garhshankar",
+    subtitle:
+      "Clear pricing for the vitamin D3 test in Garhshankar, plus the bone-health tests doctors often order with it.",
+    image: "/prices/vitamin-d-test.webp",
+  },
+  priceCard: {
+    actualPrice: 1200,
+    offerPrice: getTestPrice("vitamin-d-test"),
+    offerText: "Vitamin D3 Test Offer Price",
+    reportTime: "Same Day (12-24 Hrs)",
+    fasting: "Not Required",
+    sampleType: "Blood Sample",
+    homeCollection: true,
+    labVisit: true,
+    includes: {
+      title: "Every Booking Includes",
+      items: [
+        "Vitamin D3 Blood Test",
+        "Digital Report on WhatsApp & Email",
+        "No Advance Payment Required",
+      ],
+    },
+  },
+  whyGetTest: {
+    title: "Why Get a Vitamin D3 Test in Garhshankar",
+    description:
+      "Tiredness, body aches and hair fall have many causes, and a blood level is the only reliable way to know if vitamin D is one of them.",
+    reasons: [
+      {
+        title: "Symptoms Alone Cannot Tell",
+        description: "Low vitamin D, low B12, thyroid problems and anaemia can feel alike. A number removes the guesswork.",
+      },
+      {
+        title: "Treatment Starts From Your Level",
+        description: "Doctors choose the supplement plan from your result, so a starting value matters.",
+      },
+      {
+        title: "Track Your Progress",
+        description: "A repeat test after a course of treatment shows whether your level has actually improved.",
+      },
+    ],
+  },
+  faqs: [
+    {
+      question: "How much does a vitamin D3 test cost in Garhshankar?",
+      answer: `The vitamin D3 test at Bhangal Clinical Laboratories & ECG Center is priced at ₹${getTestPrice("vitamin-d-test")} against an MRP of ₹1200, with home sample collection available.`,
+    },
+    {
+      question: "Why is a vitamin D3 test costlier than a routine blood test?",
+      answer: "Vitamin D is measured on a specialised immunoassay analyser with its own reagents, which makes it dearer than routine tests such as blood sugar or CBC.",
+    },
+    {
+      question: "Is the vitamin D test the same as the vitamin D3 test?",
+      answer: "Yes. Our vitamin D test is the Vitamin D3 test, so the price on this page covers whichever name your doctor uses.",
+    },
+    {
+      question: "Can I get vitamin D and B12 tested together, and what does it cost?",
+      answer: "Yes. Both can be run from the same blood sample. Contact us for the combined rate, or see our Advance Full Body Checkup, which includes both.",
+    },
+    {
+      question: "Is the vitamin D test cheaper in a government hospital?",
+      answer: "Availability and price at government facilities vary. A private lab like ours adds home collection and quick digital reports.",
+    },
+    {
+      question: "Is home sample collection available for the vitamin D3 test?",
+      answer: "Yes, our technicians collect samples at home across Garhshankar and nearby villages.",
+    },
+  ],
+  relatedTests: [
+    "serum-calcium",
+    "alkaline-phosphatase-test",
+    "cbc-test",
+    "kidney-function-test",
+    "uric-acid-test",
+    "blood-sugar-test",
+  ],
+  interlinks: {
+    badge: "Included Services & Local Availability",
+    heading: "What's Included & Nearby Availability",
+    description: "Checking vitamin D3 test prices? See what the test covers and confirm home collection near you in Garhshankar.",
+    items: [
+      {
+        title: "What Does the Vitamin D3 Test Cover?",
+        subtitle: "Vitamin D3 Test Details",
+        description: "Learn what the result means, how to prepare, and how the normal range is read.",
+        href: "/tests/vitamin-d-test",
+        icon: "FiActivity",
+        badge: "Service Details",
+        badgeColor: "bg-teal-100 text-teal-800 border-teal-200",
+        btnText: "Explore Vitamin D3 Test",
+        tracking: "price-interlink-service",
+      },
+      {
+        title: "Available Near You in Garhshankar",
+        subtitle: "Location & Home Collection",
+        description: "See our Garhshankar lab, the areas where we collect samples at home, and our opening hours.",
+        href: "/locations/vitamin-d-test-in-garhshankar",
+        icon: "FiMapPin",
+        badge: "Garhshankar Location",
+        badgeColor: "bg-sky-100 text-sky-800 border-sky-200",
+        btnText: "Visit Garhshankar Hub",
+        tracking: "price-interlink-location",
+      },
+    ],
+  },
+  cta: {
+    title: "Book Your Vitamin D3 Test in Garhshankar Today",
+    description: "Transparent pricing, digital reports and home sample collection across Garhshankar.",
+    offerPrice: getTestPrice("vitamin-d-test"),
+    actualPrice: 1200,
+    buttonText: "Book a Test",
+    testName: "Vitamin D3 Test",
+    blogUrl: "/blogs/vitamin-d-deficiency-symptoms-guide",
+    serviceUrl: "/tests/vitamin-d-test",
+    locationUrl: "/locations/vitamin-d-test-in-garhshankar",
+    packageUrl: "/packages",
+    highlights: ["Home Sample Collection", "Digital Report", "Clear Pricing", "Fast Turnaround"],
+  },
+  packageComparison: {
+    type: "table",
+    title: "Vitamin D3 Test and Related Test Price List",
+    subtitle: "Bone-health and fatigue tests commonly ordered with or after a vitamin D3 test, with current prices at our Garhshankar lab.",
+    headers: ["Test", "Price", "Why It Is Done With Vitamin D", "Fasting"],
+    rows: [
+      ["Vitamin D3", `₹${getTestPrice("vitamin-d-test")}`, "Measures your vitamin D level", "Not Required"],
+      ["Serum Calcium", `₹${getTestPrice("serum-calcium")}`, "Vitamin D helps absorb calcium", "Not Required"],
+      ["Alkaline Phosphatase (ALP)", `₹${getTestPrice("alkaline-phosphatase-test")}`, "Raised in some bone conditions", "Not Required"],
+      ["Kidney Function Test", `₹${getTestPrice("kidney-function-test")}`, "Kidneys help activate vitamin D", "Not Required"],
+      ["CBC", `₹${getTestPrice("cbc-test")}`, "Checks for anaemia when you feel tired", "Not Required"],
+      ["Bhangal Advance Full Body Checkup", "₹2499", "70 tests including Vitamin D and B12", "10-12 Hrs"],
+    ],
+  },
+},
 
 ];
 

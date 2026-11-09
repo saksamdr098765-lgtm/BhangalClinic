@@ -2757,7 +2757,7 @@ seo: {
   publishedAt: "October 17, 2026",
   readingTime: "11 min read",
   coverImage: "/blogs/dengue-test-full-guide/cover.webp",
-  featured: true,
+  featured: false,
 
   relatedPackages: [
     "bhangal-dengue-profile",
@@ -3112,8 +3112,425 @@ seo: {
     whatsappLink: `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20have%20a%20question%20about%20the%20Dengue%20Test.`,
     features: ["NS1 + IgM + IgG Covered", "Home Sample Collection", "Fast Digital Reports", "Experienced Phlebotomists"],
   },
+  
 },
+{
+  id: 9,
+  slug: "vitamin-d-deficiency-symptoms-guide",
+  title: "Vitamin D Deficiency: Symptoms, Test Range, Foods & Treatment (Complete Guide)",
+  excerpt:
+    "Signs of low vitamin D, what your ng/mL result means, foods and sunlight that help, and how deficiency is treated.",
+  category: "Health Tips",
+  author: {
+    name: "Bhangal Clinical Laboratories & ECG Center",
+    image: "/team/author.jpg",
+  },
+  publishedAt: "November 9, 2026",
+  readingTime: "12 min read",
+  coverImage: "/blogs/vitamin-d-deficiency-symptoms-guide/cover.webp",
+  featured: true,
 
+  relatedPackages: [
+    "bhangal-advance-full-body-checkup",
+    "bhangal-master-health-screen",
+    "bhangal-senior-citizen-profile",
+    "bcl-female-4-package",
+  ],
+  relatedTests: [
+    "vitamin-d-test",
+    "serum-calcium",
+    "alkaline-phosphatase-test",
+    "cbc-test",
+    "kidney-function-test",
+    "uric-acid-test",
+  ],
+
+  seo: {
+    title: "Vitamin D Deficiency: Symptoms, Foods, Test & Range",
+    // 51 chars
+    description:
+      "Vitamin D deficiency symptoms, normal range, foods, sunlight and when to test. A plain guide to vitamin D3 results and low vitamin D treatment.",
+    // 143 chars
+    keywords: [
+      "vitamin d deficiency symptoms",
+      "vitamin d ki kami ke lakshan",
+      "vitamin d deficiency treatment",
+      "vitamin d deficiency causes",
+      "low vitamin d symptoms",
+      "vitamin d rich foods",
+      "vitamin d deficiency level",
+      "vitamin d level 15 means",
+      "vitamin d3 60000 iu",
+      "how to increase vitamin d naturally",
+      "Bhangal Clinical Laboratories",
+    ],
+  },
+
+  quickInfo: [
+    { label: "You Will Learn", value: "Vitamin D Symptoms, Range & Foods", icon: "activity" },
+    { label: "Reading Time", value: "12 Minutes", icon: "clock" },
+    { label: "Suitable For", value: "Adults & Children", icon: "users" },
+    { label: "Symptoms", value: "Tiredness, Bone Pain, Muscle Weakness, Hair Fall", icon: "heart" },
+    { label: "Recommended Test", value: "Vitamin D3 Test", icon: "test" },
+    { label: "Fasting", value: "Not Required", icon: "file" },
+    { label: "Report Time", value: "Within 24 Hours", icon: "clock" },
+    { label: "Price", value: getTestPrice("vitamin-d-test"), icon: "price" },
+    { label: "Home Collection", value: "Available", icon: "home" },
+  ],
+
+  tags: ["Vitamin D", "Deficiency Symptoms", "Bone Health", "Blood Test", "Preventive Healthcare"],
+
+  content: [
+    {
+      type: "paragraph",
+      text: "At our Garhshankar centre, vitamin D comes up often. It usually starts with someone who has been tired for months, has aching legs or a sore back, or is losing more hair than usual. Low vitamin D is very common in India, even in a sunny state like Punjab, because many of us work indoors, cover up outdoors, or have diets low in vitamin D. This guide covers the signs, the causes, how to read your test result, and what usually helps.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "What Does Vitamin D Do in Your Body?",
+    },
+    {
+      type: "paragraph",
+      text: "Vitamin D helps your gut absorb calcium and phosphorus, which is why it matters so much for bones and teeth. It also supports muscle strength and the immune system. Your skin makes it when exposed to sunlight, and your liver and kidneys then convert it into its active form. So the organ most affected by a shortage is the skeleton, followed by muscles.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Vitamin D Deficiency Symptoms",
+    },
+    {
+      type: "paragraph",
+      text: "Mild deficiency often causes no clear symptoms. When symptoms do appear, they are usually vague, which is why they are easy to blame on stress or ageing.",
+    },
+    {
+      type: "table",
+      title: "Common Signs of Low Vitamin D",
+      headers: ["Sign", "What You Might Notice"],
+      rows: [
+        ["Constant tiredness", "Feeling drained even after a full night's sleep"],
+        ["Bone pain", "Deep, aching pain in the legs, hips or ribs"],
+        ["Back pain", "Persistent lower back ache"],
+        ["Muscle weakness", "Heavy legs, feeling weak while lifting or walking"],
+        ["Muscle aches or cramps", "Frequent cramps, especially in the legs"],
+        ["Joint pain", "Stiff or sore joints"],
+        ["Frequent infections", "Repeated colds, coughs or throat infections"],
+        ["Low mood", "Feeling flat or low without a clear reason"],
+        ["Hair fall", "More hair loss than usual"],
+        ["Slow wound healing", "Cuts and sores taking longer to heal"],
+        ["Difficulty with stairs", "Trouble climbing stairs or standing up from a chair"],
+        ["Fractures or low bone density", "Bones breaking more easily than expected"],
+        ["Delayed growth in children", "Late walking, bowed legs or soft bones"],
+        ["Disturbed sleep", "Poor sleep, linked to low vitamin D in some studies"],
+      ],
+    },
+    {
+      type: "tip",
+      title: "Good to Know",
+      text: "None of these signs is specific to vitamin D. Low B12, thyroid problems and anaemia can feel exactly the same, so a blood test is the only way to know.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Vitamin D Ki Kami Ke Lakshan (Hinglish Summary)",
+    },
+    {
+      type: "list",
+      items: [
+        "Hamesha thakaan aur kamzori rehna",
+        "Haddiyon, kamar aur jodon mein dard",
+        "Maspeshiyon mein kheenchav ya dard",
+        "Baal zyada jhadna",
+        "Baar baar bimaar padna",
+        "Mood kharab ya udaas rehna",
+        "Zakhm der se bharna",
+        "Bachchon mein der se chalna ya taangon ka tedha hona",
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "Yeh lakshan doosri samasyaon mein bhi ho sakte hain, isliye sirf andaza lagane ke bajay vitamin D ka blood test karwakar confirm karein.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Vitamin D Deficiency Causes",
+    },
+    {
+      type: "list",
+      items: [
+        "Little sun exposure: indoor jobs, covering most of the skin, or heavy use of sunscreen",
+        "Darker skin, which makes less vitamin D from the same amount of sun",
+        "Winter fog and low sun angle, which reduce the UVB your skin can use",
+        "A diet low in vitamin D, which is common in vegetarian diets",
+        "Older age, since skin makes less vitamin D over time",
+        "Obesity, because body fat can hold on to vitamin D",
+        "Kidney or liver disease, which affect how vitamin D is activated",
+        "Gut conditions or medicines that reduce absorption",
+      ],
+    },
+    {
+      type: "interlinking",
+      title: "Get Tested in Garhshankar",
+      description: "A vitamin D3 test needs no fasting and the report is ready in about 24 hours.",
+      items: [
+        {
+          title: "Vitamin D3 Test Details",
+          description: "See what the vitamin D3 test shows and how to prepare.",
+          href: "/tests/vitamin-d-test",
+        },
+        {
+          title: "Vitamin D Test Price in Garhshankar",
+          description: "Check the price along with calcium, ALP and CBC.",
+          href: "/prices/vitamin-d-test-price-garhshankar",
+        },
+      ],
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Which Test Checks Vitamin D?",
+    },
+    {
+      type: "paragraph",
+      text: "A blood test measures your vitamin D level. At our lab it is the Vitamin D3 test. Reports may print it as Vitamin D or Vitamin D3, and these refer to the same test. A CBC cannot detect vitamin D deficiency, although it can show anaemia, which sometimes travels with it.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Vitamin D Normal Range and Deficiency Levels",
+    },
+    {
+      type: "paragraph",
+      text: "Results are usually given in ng/mL. Some labs use nmol/L, and you can convert by multiplying ng/mL by 2.5. Cut-offs vary a little between labs and guidelines, so always compare against the range printed on your own report.",
+    },
+    {
+      type: "table",
+      title: "Vitamin D Level Chart",
+      headers: ["Level (ng/mL)", "Level (nmol/L)", "Category", "What It Usually Means"],
+      rows: [
+        ["Below 10", "Below 25", "Severe deficiency", "Needs medical review and treatment soon"],
+        ["10 - 19", "25 - 49", "Deficiency", "Treatment is usually advised"],
+        ["20 - 29", "50 - 74", "Insufficiency", "Below the ideal range; your doctor may advise correction"],
+        ["30 - 100", "75 - 250", "Sufficient (normal)", "Healthy range"],
+        ["Above 100", "Above 250", "Possibly too high", "Often linked to excess supplements; review with a doctor"],
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "A few readings come up a lot. A level of 15 falls in the deficiency range. A level of 8 is severe deficiency: it is not usually an emergency, but it should be treated promptly because long-standing severe deficiency weakens bones. A level of 20 sits right at the lower edge, and most labs call it insufficient rather than comfortably normal. A level of 30 is the start of the sufficient range.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "How to Read Your Vitamin D Report",
+    },
+    {
+      type: "table",
+      title: "Sample Vitamin D3 Report Format",
+      headers: ["Test Name", "Result", "Reference Range", "Flag"],
+      rows: [
+        ["Vitamin D3", "14 ng/mL", "30 - 100 ng/mL", "Low"],
+        ["Vitamin D3", "42 ng/mL", "30 - 100 ng/mL", "Normal"],
+      ],
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Can Vitamin D Be Too High?",
+    },
+    {
+      type: "paragraph",
+      text: "Yes, though it almost always comes from too many supplements rather than food or sun. Very high levels can raise blood calcium and cause nausea, vomiting, weakness, constant thirst and frequent urination, and over time can harm the kidneys. If you take vitamin D tablets, follow the dose and duration your doctor gave you.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Vitamin D Deficiency Treatment",
+    },
+    {
+      type: "paragraph",
+      text: "Treatment depends on your level, age and health conditions, so it is decided by your doctor. It usually combines a vitamin D3 supplement, more sensible sun exposure and a better diet, followed by a repeat test after a few months to check the response.",
+    },
+    {
+      type: "paragraph",
+      text: "You may hear about vitamin D3 60000 IU. This is a high-strength preparation that doctors prescribe as a supervised course for a confirmed deficiency, not a daily vitamin. Taking high-strength vitamin D on your own, or for longer than advised, can push levels too high. Vitamin D is fat-soluble, so it is generally absorbed better with a meal that contains some fat, and the time of day matters less than taking it as prescribed.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "How to Increase Vitamin D Naturally: Sunlight",
+    },
+    {
+      type: "paragraph",
+      text: "Sunlight is the main natural source. Commonly cited guidance is roughly 10 to 30 minutes of midday sun on the arms and legs, a few times a week, for lighter skin. Darker skin needs longer, winter sun in North India is weaker, and sunlight through glass does not help. Aim to stay below the point where your skin starts to redden, because sunburn does more harm than good.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Vitamin D Rich Foods",
+    },
+    {
+      type: "table",
+      title: "Food Sources of Vitamin D",
+      headers: ["Food", "Notes"],
+      rows: [
+        ["Fatty fish (salmon, mackerel, sardines)", "Among the richest natural sources"],
+        ["Egg yolk", "Provides a small amount"],
+        ["Fortified milk and curd", "Many brands add vitamin D; check the label"],
+        ["Fortified edible oil and cereals", "Check the label for added vitamin D"],
+        ["Mushrooms exposed to UV light", "One of the few plant sources; amounts vary"],
+        ["Cod liver oil", "Very rich but also high in vitamin A; ask a doctor before regular use"],
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "Food alone rarely corrects a real deficiency, especially on a vegetarian diet, which is why testing and doctor-guided supplements are usually part of the plan.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Vitamin D, B12 and Thyroid: Are They Related?",
+    },
+    {
+      type: "paragraph",
+      text: "They are separate nutrients and hormones, but low vitamin D, low B12 and an underactive thyroid can all cause tiredness, aches and hair fall. Doctors therefore often order them together when someone has these complaints. Some studies link low vitamin D with autoimmune thyroid disease, but that does not mean one causes the other.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "How Much Does a Vitamin D Test Cost?",
+    },
+    {
+      type: "paragraph",
+      text: `At our lab the vitamin D3 test is ₹${getTestPrice("vitamin-d-test")} (MRP ₹1200), with home sample collection available. It costs more than routine tests like blood sugar because it runs on a specialised analyser. See our price list for the related tests doctors order alongside it.`,
+    },
+    {
+      type: "success",
+      title: "Key Takeaway",
+      text: "Tiredness, body pain and hair fall can come from several causes. A vitamin D3 test gives you a number, your doctor decides the treatment from it, and a repeat test after a few months shows whether it worked.",
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: "Book Your Vitamin D3 Test",
+    },
+    {
+      type: "paragraph",
+      text: "Bhangal Clinical Laboratories & ECG Center is located opposite Civil Hospital on Sri Anandpur Sahib Road, Garhshankar, Hoshiarpur district, Punjab. Walk in, call ahead, or book a home sample collection.",
+    },
+    {
+      type: "interlinking",
+      title: "Areas We Serve",
+      description: "We provide home sample collection and diagnostic services across the following locations.",
+      items: [
+        {
+          title: "Garhshankar",
+          description: "Vitamin D3 test and home sample collection.",
+          href: "/locations/vitamin-d-test-in-garhshankar",
+        },
+        { title: "Hoshiarpur", description: "Diagnostic laboratory services." },
+        { title: "Nawanshahr", description: "Health checkups and pathology tests." },
+      ],
+    },
+    {
+      type: "references",
+      items: [
+        {
+          title: "Vitamin D: Fact Sheet for Health Professionals",
+          publisher: "NIH Office of Dietary Supplements",
+          url: "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+        },
+        {
+          title: "Vitamin D",
+          publisher: "MedlinePlus",
+          url: "https://medlineplus.gov/vitamind.html",
+        },
+      ],
+    },
+  ],
+
+  faq: [
+    {
+      question: "What happens if vitamin D is low?",
+      answer: "Your body absorbs less calcium, which can lead to bone and muscle pain, weakness and tiredness. Long-standing severe deficiency can cause soft or weak bones, called rickets in children and osteomalacia in adults.",
+    },
+    {
+      question: "What are the signs of very low vitamin D?",
+      answer: "Persistent bone pain, marked muscle weakness, difficulty climbing stairs or standing up, and frequent fractures. In children, delayed walking or bowed legs. A blood test confirms it.",
+    },
+    {
+      question: "What is a normal vitamin D level?",
+      answer: "Most labs treat 30 to 100 ng/mL as sufficient, 20 to 29 as insufficient and below 20 as deficient. Check the range printed on your own report.",
+    },
+    {
+      question: "What does a vitamin D level of 15 mean?",
+      answer: "It falls in the deficiency range, and doctors usually advise treatment and a repeat test later.",
+    },
+    {
+      question: "Is a vitamin D level of 8 dangerous?",
+      answer: "It is severe deficiency. It is not usually an emergency, but it should be treated promptly under a doctor's guidance because prolonged severe deficiency weakens bones.",
+    },
+    {
+      question: "Is 20 ng/mL vitamin D low or normal?",
+      answer: "It is at the lower edge. Many labs call 20 to 29 ng/mL insufficient, so it is generally below the ideal range even if not severely deficient.",
+    },
+    {
+      question: "Which organ is affected by vitamin D?",
+      answer: "Mainly the bones, because vitamin D controls calcium absorption. It also affects muscles and the immune system, and the liver and kidneys help activate it.",
+    },
+    {
+      question: "Can I check vitamin D without a blood test?",
+      answer: "Not reliably. Symptoms and sun exposure give only a rough idea. A vitamin D3 blood test is the dependable way to know your level.",
+    },
+    {
+      question: "Can a CBC detect vitamin D deficiency?",
+      answer: "No. A CBC checks your blood cells and can show anaemia, but it does not measure vitamin D.",
+    },
+    {
+      question: "Are vitamin D and B12 related?",
+      answer: "They are different nutrients, but low levels of both are common and cause similar symptoms such as tiredness and aches, so they are often tested together.",
+    },
+    {
+      question: "Is vitamin D related to TSH?",
+      answer: "Not directly. Thyroid problems and low vitamin D can both cause tiredness and hair fall, so doctors often order both tests. Some research links low vitamin D with autoimmune thyroid disease, but cause and effect is not established.",
+    },
+    {
+      question: "What is the best time to take a vitamin D tablet?",
+      answer: "Vitamin D is fat-soluble, so taking it with a meal that contains some fat helps absorption. Consistency and following your doctor's schedule matter more than the exact hour.",
+    },
+    {
+      question: "How long should I sit in the sun for vitamin D?",
+      answer: "Commonly cited guidance is about 10 to 30 minutes of midday sun on the arms and legs, a few times a week, with darker skin needing longer. Avoid sunburn.",
+    },
+    {
+      question: "Do I need to fast for a vitamin D test?",
+      answer: "No. You can eat and drink normally unless other fasting tests are booked with it.",
+    },
+    {
+      question: "Why is my vitamin D test taking so long?",
+      answer: "Vitamin D runs on a specialised analyser, and some labs process it in batches or send it out, which can add a day. At our lab the report is usually ready within 24 hours.",
+    },
+    {
+      question: "Are rapid vitamin D tests accurate?",
+      answer: "Quick point-of-care kits exist, but a laboratory test is the more dependable way to measure and track your level, especially when treatment decisions depend on it.",
+    },
+    {
+      question: "Can I get a vitamin D test at home?",
+      answer: "Yes. We offer home sample collection across Garhshankar and nearby villages, and the report is delivered digitally.",
+    },
+  ],
+
+  cta: {
+    title: "Book Your Vitamin D3 Test Today",
+    description: "Looking for a vitamin D3 test in Garhshankar? Book with home sample collection, digital reports and clear pricing.",
+    serviceName: "Vitamin D3 Test",
+    serviceLink: "/tests/vitamin-d-test",
+    bookingLink: `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20want%20to%20book%20a%20Vitamin%20D3%20Test.%20Please%20share%20the%20available%20slots.`,
+    whatsappLink: `https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%2C%20I%20have%20a%20question%20about%20the%20Vitamin%20D3%20Test.`,
+    features: ["No Fasting Needed", "Home Sample Collection", "Fast Digital Reports", "Experienced Phlebotomists"],
+  },
+},
 
 
 
