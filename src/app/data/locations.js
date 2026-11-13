@@ -2317,6 +2317,237 @@ homeCollection:false,
   hours: "Monday – Friday: 7:30 AM – 8:00 PM | Saturday: 8:30 AM – 5:30 PM | Sunday: 9:00 AM – 4:00 PM",
   elderlyHours: "Monday – Sunday: 9:00 AM – 5:00 PM",
 },
+{
+  id: 10,
+  slug: "vitamin-b12-test-in-garhshankar",
+  city: "Garhshankar",
+  homeCollection: true,
+  state: "Punjab",
+  title: "Vitamin B12 Test in Garhshankar",
+  shortDescription:
+    "Vitamin B12 testing in Garhshankar at Bhangal Clinical Laboratories & ECG Center. Home collection, digital reports and a Vitamin D3 + B12 combo.",
+
+  seo: {
+    title: "Vitamin B12 Test in Garhshankar | Home Collection",
+    // 49 chars
+    description:
+      "Get your vitamin B12 test in Garhshankar at Bhangal Clinical Laboratories. Home collection, digital reports within 24 hours and a D3 + B12 combo.",
+    // 145 chars
+    keywords: [
+      "Vitamin B12 Test in Garhshankar",
+      "Vitamin B12 Test Garhshankar",
+      "Vitamin B12 Test Near Me Garhshankar",
+      "Vitamin B12 Test Home Collection Garhshankar",
+      "Vitamin B12 Test Lab Garhshankar",
+      "Best Pathology Lab for Vitamin B12 Garhshankar",
+      "Vitamin D and B12 Test Garhshankar",
+      "Vitamin B12 Test Hoshiarpur",
+    ],
+  },
+
+  overview: {
+    heading: "Vitamin B12 Test in Garhshankar",
+    paragraphs: [
+      "Constant tiredness, tingling in the hands and feet, or a diet with little milk, egg or meat are common reasons people in Garhshankar and nearby villages ask about vitamin B12. Bhangal Clinical Laboratories & ECG Center tests your B12 level from a single blood sample and reports it in pg/mL against a reference range.",
+      "Visit the lab opposite Civil Hospital, or book home sample collection if travelling is difficult. Your report arrives digitally in about 24 hours. Because low B12 and low vitamin D often come together, you can also book the Vitamin D3 + B12 combo from the same sample.",
+    ],
+    highlights: [
+      "Home Sample Collection",
+      "Digital Reports on WhatsApp",
+      "Vitamin D3 + B12 Combo Available",
+      "CBC Can Be Added",
+      "Experienced Lab Technicians",
+    ],
+  },
+
+  popularTests: {
+    heading: "Vitamin B12 and Related Tests in Garhshankar",
+    test: [
+      "vitamin-b12-test",
+      "vitamin-d-test",
+      "cbc-test",
+      "peripheral-blood-film",
+      "blood-sugar-test",
+      "liver-function-test",
+    ],
+  },
+
+  packages: [
+    "bhangal-advance-full-body-checkup",
+    "bhangal-master-health-screen",
+    "bhangal-senior-citizen-profile",
+    "bcl-female-4-package",
+  ],
+
+  process: {
+    heading: "How to Get a Vitamin B12 Test in Garhshankar",
+    steps: [
+      {
+        icon: "search",
+        title: "Choose Your Test",
+        description: "Book the vitamin B12 test alone, as a D3 + B12 combo, or add a CBC.",
+      },
+      {
+        icon: "calendar",
+        title: "Book Lab Visit or Home Collection",
+        description: "Call or book online, then pick a lab visit or have a technician come to you.",
+      },
+      {
+        icon: "lab",
+        title: "Sample Collection",
+        description: "A small blood sample is collected. Tell the technician about any B12 tablets or injections you take.",
+      },
+      {
+        icon: "report",
+        title: "Get Your Report",
+        description: "Receive the digital report in about 24 hours and share it with your doctor.",
+      },
+    ],
+  },
+
+  whyChoose: {
+    features: [
+      {
+        icon: "activity",
+        title: "Clear Range-Based Result",
+        description: "Your B12 level is shown in pg/mL against a reference range, with low values flagged.",
+      },
+      {
+        icon: "award",
+        title: "Experienced Lab Team",
+        description: "Trained staff handle collection and reporting with standard lab procedures.",
+      },
+      {
+        icon: "shield",
+        title: "Quality Assurance",
+        description: "Every sample goes through quality control checks before the report is released.",
+      },
+      {
+        icon: "clock",
+        title: "Quick Turnaround",
+        description: "Most vitamin B12 reports in Garhshankar are ready within 24 hours.",
+      },
+      {
+        icon: "home",
+        title: "Home Collection",
+        description: "Skip the trip. The sample is collected at your doorstep.",
+      },
+      {
+        icon: "check",
+        title: "Clear Pricing",
+        description: "See the price before you book, with no advance payment.",
+      },
+    ],
+  },
+
+  areas: [
+    "Garhshankar City", "Civil Hospital Area", "Railway Road", "Main Bazaar",
+    "Nawanshahr Road", "Hoshiarpur Road", "Banga Road", "Mahilpur Road",
+    "Saila Khurd", "Binewal", "Denowal Kalan", "Denowal Khurd", "Chak Guru",
+    "Pojewal", "Pandori", "Purhiran", "Chak Singha", "Bharta", "Kukar Majara",
+    "Nearby Villages of Garhshankar",
+  ],
+
+  hubLinks: {
+    heading: "Everything You Need to Know About Vitamin B12 Testing in Garhshankar",
+    badge: "Garhshankar Central Diagnostics Hub",
+    description: "Learn the symptoms of low B12, how to read your result, or check pricing. Start with the guides below.",
+    items: [
+      {
+        title: "Vitamin B12 Deficiency: Symptoms, Range & Foods",
+        subtitle: "Educational Guide & Range Chart",
+        description: "Understand low B12 signs, what your pg/mL result means, tablets versus injections, and B12-rich foods.",
+        href: "/blogs/vitamin-b12-deficiency-symptoms-guide",
+        icon: "FiBookOpen",
+        badge: "Context & Guide",
+        badgeColor: "bg-blue-100 text-blue-700 border-blue-200",
+        btnText: "Read Full Guide",
+        tag: "Educational",
+      },
+      {
+        title: "Vitamin B12 Test Details",
+        subtitle: "Vitamin B12 Test Explained",
+        description: "See what the test shows, how to prepare, and how the normal range is read.",
+        href: "/tests/vitamin-b12-test",
+        icon: "FiActivity",
+        badge: "Service Overview",
+        badgeColor: "bg-teal-100 text-teal-700 border-teal-200",
+        btnText: "Explore Service",
+        tag: "Service",
+      },
+      {
+        title: "Vitamin B12 Test Price in Garhshankar",
+        subtitle: "Price List & D3 + B12 Combo",
+        description: "Check the vitamin B12 test price, the D3 + B12 combo, and related tests.",
+        href: "/prices/vitamin-b12-test-price-garhshankar",
+        icon: "FiTag",
+        badge: "Price & Cost",
+        badgeColor: "bg-amber-100 text-amber-700 border-amber-200",
+        btnText: "View Price List",
+        tag: "Cost & Rates",
+      },
+    ],
+  },
+
+  relatedLinks: {
+    heading: "Explore Key Vitamin B12 Information",
+    links: [
+      {
+        label: "Vitamin B12 Deficiency: Symptoms, Range & Foods",
+        description: "Signs of low B12, range chart, foods, tablets versus injections and treatment basics.",
+        slug: "/blogs/vitamin-b12-deficiency-symptoms-guide",
+      },
+      {
+        label: "Vitamin B12 Test Details",
+        description: "What the vitamin B12 test shows and how to prepare.",
+        slug: "/tests/vitamin-b12-test",
+      },
+      {
+        label: "Vitamin B12 Test Price in Garhshankar",
+        description: "Current prices for the vitamin B12 test, the D3 + B12 combo and related tests.",
+        slug: "/prices/vitamin-b12-test-price-garhshankar",
+      },
+    ],
+  },
+
+  blogs: ["vitamin-b12-deficiency-symptoms-guide", "vitamin-d-deficiency-symptoms-guide", "cbc-test-full-guide"],
+  services: ["vitamin-b12-test", "blood-tests"],
+
+  faq: [
+    {
+      question: "Where can I get a vitamin B12 test in Garhshankar?",
+      answer: "Bhangal Clinical Laboratories & ECG Center, opposite Civil Hospital on Sri Anandpur Sahib Road, offers the vitamin B12 test at the lab or through home sample collection.",
+    },
+    {
+      question: "Is home sample collection available for the vitamin B12 test in Garhshankar?",
+      answer: "Yes. A technician can collect the sample at your home in Garhshankar and nearby villages. Please call to confirm a time.",
+    },
+    {
+      question: "Do I need to fast before a vitamin B12 test?",
+      answer: "Not for a standalone B12 test. Fast only if other tests booked with it, such as blood sugar or lipid profile, need it.",
+    },
+    {
+      question: "How much does a vitamin B12 test cost in Garhshankar?",
+      answer: "The vitamin B12 test is ₹800 (MRP ₹1000), with home sample collection available. See our price page for related tests such as CBC.",
+    },
+    {
+      question: "Can I get vitamin D3 and B12 tested together?",
+      answer: "Yes. The Vitamin D3 + B12 combo is ₹1500 and is run from one blood sample.",
+    },
+    {
+      question: "How soon will I get my vitamin B12 report?",
+      answer: "Reports are usually ready within 24 hours and sent digitally on WhatsApp and email.",
+    },
+    {
+      question: "Who should get a vitamin B12 test?",
+      answer: "People with ongoing tiredness, tingling or numbness, memory problems or anaemia, vegetarians and vegans, older adults, people on metformin or long-term acid-reducing medicines, and anyone whose doctor has advised it.",
+    },
+  ],
+
+  hours: "Monday – Friday: 7:30 AM – 8:00 PM | Saturday: 8:30 AM – 5:30 PM | Sunday: 9:00 AM – 4:00 PM",
+  elderlyHours: "Monday – Sunday: 9:00 AM – 5:00 PM",
+},
+
 ];
 
 export function getLocation(slug) {

@@ -664,7 +664,6 @@ export const tests = [
     buttonText: "Book Thyroid Test",
   },
 },
-
 {
   slug: "vitamin-d-test",
   name: "Vitamin D3 Test",
@@ -905,6 +904,248 @@ export const tests = [
     bookingUrl: "/prices/vitamin-d-test-price-garhshankar",
     phone: "tel:+918968038602",
     buttonText: "Book Vitamin D3 Test",
+  },
+},
+{
+  slug: "vitamin-b12-test",
+  name: "Vitamin B12 Test",
+  shortName: "Vitamin B12",
+  category: "Vitamin Test",
+  organ: "Blood",
+  sampleType: "Blood",
+  parameterCount: 1,
+  fasting: false,
+  homeCollection: true,
+  popular: true,
+  description:
+    "Vitamin B12 test measures the B12 level in your blood to find out whether tiredness, tingling, numbness or anaemia could be caused by a deficiency.",
+  price: 800,
+  reportTime: "24 Hours",
+  status: "published",
+
+  seo: {
+    title: "Vitamin B12 Test - Normal Range, Price & Guide",
+    // 46 chars
+    description:
+      "Book a vitamin B12 test with home sample collection. Know the normal range in pg/mL, what low or high levels mean, and when fasting is needed.",
+    // 142 chars
+    keywords: [
+      "vitamin b12 test",
+      "b12 test",
+      "serum vitamin b12 test",
+      "vitamin b12 level test",
+      "vitamin b12 blood test",
+      "vitamin b12 normal range",
+      "vitamin b12 normal level",
+      "vitamin b12 test normal range",
+      "what is vitamin b12 test",
+      "vitamin b12 test report time",
+      "vitamin b12 test fasting required",
+    ],
+  },
+
+  hero: {
+    badge: "Home Sample Collection Available",
+    title: "Vitamin B12 Test - Check Your B12 Level",
+    description:
+      "Book a vitamin B12 test near you with professional sample collection, digital reports and home collection. One blood sample shows whether your B12 is low, borderline or normal.",
+    image: "/tests/vitamin-b12.webp",
+    imageAlt: "Vitamin B12 Test - Blood Test for B12 Level",
+    reportTime: "24 Hours",
+    homeCollection: "Available",
+    trustPoints: [
+      "Simple Blood Sample",
+      "Professional Sample Collection",
+      "Digital Reports",
+      "Quality-Controlled Testing",
+    ],
+    bookButton: "Book Vitamin B12 Test",
+    bookingUrl: "/prices/vitamin-b12-test-price-garhshankar",
+    phone: "tel:+918968038602",
+  },
+
+  quickFacts: {
+    sample: "Blood Sample",
+    reportTime: "24 Hours",
+    fasting: "Not Required",
+    homeCollection: "Available",
+    ageGroup: "Adults & Children",
+  },
+
+  whyChooseUs: {
+    title: "Why Choose Our Vitamin B12 Test Service?",
+    description:
+      "Get a vitamin B12 test near you with a clear report that your doctor can act on, without a trip to a crowded hospital.",
+    items: [
+      {
+        title: "Clear Range-Based Report",
+        description:
+          "Your result is shown in pg/mL against a reference range, with low or borderline values flagged.",
+      },
+      {
+        title: "Digital Reports",
+        description:
+          "Receive your report on WhatsApp and email so you can share it with your doctor straight away.",
+      },
+      {
+        title: "Home Collection Available",
+        description:
+          "A trained technician can collect the sample at your home in Garhshankar and nearby villages.",
+      },
+      {
+        title: "Combo With Vitamin D3",
+        description:
+          "Low B12 and low vitamin D often come together. Book both as a combo for ₹1500 from a single sample.",
+      },
+    ],
+  },
+
+  testDetails: {
+    title: "About Vitamin B12 Test",
+    description: [
+      "Vitamin B12 helps your body make healthy red blood cells and keeps your nerves working properly. The vitamin B12 test measures how much B12 is in your blood, which helps your doctor judge whether tiredness, tingling, numbness, memory trouble or anaemia could be caused by a shortage. Reports may print it as Vitamin B12 or Serum B12.",
+      "Results are usually reported in pg/mL. Many labs print a reference range of about 200 to 900 pg/mL: below 200 is generally low, 200 to 300 is borderline, and above 300 is usually adequate. A high result is most often due to recent supplements or injections. Cut-offs vary slightly between labs, so read your result against the range printed on your own report.",
+    ],
+    included: [
+      "Vitamin B12 Level",
+      "Result in pg/mL with Reference Range",
+    ],
+  },
+
+  preparation: {
+    title: "Preparation Before Vitamin B12 Test",
+    description:
+      "There is little to prepare, but a few details help your doctor read the result correctly.",
+    items: [
+      {
+        title: "Fasting Is Usually Not Needed",
+        description:
+          "A standalone vitamin B12 test does not need fasting. If it is booked with fasting tests such as blood sugar or lipid profile, fast as instructed for those.",
+      },
+      {
+        title: "Tell Us About Medicines and Supplements",
+        description:
+          "B12 tablets or injections can raise your result and hide a deficiency, while some medicines, such as metformin and acid-reducing tablets, can lower B12. Mention them so the result is read correctly.",
+      },
+      {
+        title: "Note Your Symptoms and Diet",
+        description:
+          "Tell your doctor about tiredness, tingling, numbness or memory changes, and whether your diet is vegetarian. It helps explain the number.",
+      },
+    ],
+  },
+
+  bookingProcess: {
+    title: "How to Book Your Vitamin B12 Test",
+    description:
+      "Book in a few minutes and choose between a lab visit and home collection.",
+    steps: [
+      {
+        title: "Book Test",
+        description:
+          "Request your vitamin B12 test online or call our team. Ask for the D3 + B12 combo if your doctor wants both.",
+      },
+      {
+        title: "Sample Collection",
+        description:
+          "A trained technician collects a small blood sample at our lab or at your home.",
+      },
+      {
+        title: "Laboratory Testing",
+        description:
+          "Your sample is tested for vitamin B12 using standard laboratory procedures.",
+      },
+      {
+        title: "Receive Report",
+        description:
+          "Get your digital vitamin B12 report on WhatsApp and email, then share it with your doctor.",
+      },
+    ],
+  },
+
+  pricePreview: {
+    title: "Vitamin B12 Test Price",
+    description:
+      "See the current vitamin B12 test price and the D3 + B12 combo before you book. No advance payment is required.",
+    price: 800,
+    priceUrl: "/prices/vitamin-b12-test-price-garhshankar",
+  },
+
+  relatedTests: [
+    "vitamin-d-test",
+    "cbc-test",
+    "peripheral-blood-film",
+    "blood-sugar-test",
+    "liver-function-test",
+  ],
+
+  faq: {
+    title: "Frequently Asked Questions",
+    description:
+      "Quick answers about the vitamin B12 test, its normal range and how to prepare.",
+    items: [
+      {
+        question: "What does a vitamin B12 test check for?",
+        answer:
+          "It measures the amount of vitamin B12 in your blood. Doctors use it to check for a deficiency when someone has tiredness, tingling or numbness, memory problems or anaemia.",
+      },
+      {
+        question: "What is the normal range for a vitamin B12 test?",
+        answer:
+          "Many labs print a reference range of about 200 to 900 pg/mL. Below 200 is generally low, 200 to 300 is borderline, and above 300 is usually adequate. Check the range on your own report, as it varies slightly by lab.",
+      },
+      {
+        question: "Is a vitamin B12 level of 300 normal?",
+        answer:
+          "300 pg/mL is at the lower end of normal. Many labs call 200 to 300 borderline, so if you have symptoms your doctor may suggest further tests such as methylmalonic acid (MMA) or homocysteine.",
+      },
+      {
+        question: "What does a high vitamin B12 level mean?",
+        answer:
+          "A high result is most often due to recent B12 tablets, injections or multivitamins. Less often it points to a liver, kidney or blood condition, so your doctor will review it with your history.",
+      },
+      {
+        question: "Is fasting required for a vitamin B12 test?",
+        answer:
+          "Not for a standalone B12 test. Fast only if other tests booked with it, such as blood sugar or lipid profile, need it.",
+      },
+      {
+        question: "Is the vitamin B12 test included in a CBC?",
+        answer:
+          "No. A CBC can hint at B12 deficiency, for example through large red blood cells or anaemia, but it cannot measure B12. A separate vitamin B12 test confirms it.",
+      },
+      {
+        question: "How long does it take to receive the vitamin B12 report?",
+        answer:
+          "Reports are usually ready within 24 hours of sample collection and are delivered digitally on WhatsApp and email.",
+      },
+      {
+        question: "Is home sample collection available for the vitamin B12 test?",
+        answer:
+          "Yes. Home collection is available across Garhshankar and nearby villages.",
+      },
+      {
+        question: "What is the vitamin B12 test price?",
+        answer:
+          "The vitamin B12 test is priced at ₹800 against an MRP of ₹1000. A Vitamin D3 + B12 combo is ₹1500. Booking needs no advance payment.",
+      },
+    ],
+  },
+
+  cta: {
+    title: "Book Your Vitamin B12 Test Today",
+    description:
+      "One blood sample, a clear pg/mL report, and the option to add vitamin D3 as a combo.",
+    highlights: [
+      "Home Sample Collection Available",
+      "Fast Digital Reports",
+      "D3 + B12 Combo at ₹1500",
+    ],
+    price: "800",
+    priceText: "Check detailed vitamin B12 test pricing and booking options.",
+    bookingUrl: "/prices/vitamin-b12-test-price-garhshankar",
+    phone: "tel:+918968038602",
+    buttonText: "Book Vitamin B12 Test",
   },
 },
 

@@ -1549,7 +1549,161 @@ priceList: {
     ],
   },
 },
-
+{
+  slug: "vitamin-b12-test-price-garhshankar",
+  seo: {
+    title: "Vitamin B12 Test Price in Garhshankar | ₹800",
+    // 44 chars
+    description:
+      "Vitamin B12 test price in Garhshankar: ₹800 (MRP ₹1000). Combo with Vitamin D3 at ₹1500. Home sample collection and digital reports.",
+    // 133 chars
+    keywords: [
+      "vitamin b12 test price garhshankar",
+      "vitamin b12 test price",
+      "vitamin b12 test cost",
+      "b12 test price",
+      "vitamin b12 blood test price",
+      "vitamin d and b12 test price",
+      "vitamin d and b12 test",
+      "vitamin b12 test price list",
+      "vitamin b12 test package",
+    ],
+  },
+  homeCollection: true,
+  hero: {
+    badge: "",
+    title: "Vitamin B12 Test Price in Garhshankar",
+    subtitle:
+      "Clear pricing for the vitamin B12 test in Garhshankar, with a Vitamin D3 + B12 combo and the blood tests doctors often order alongside it.",
+    image: "/prices/vitamin-b12-test.webp",
+  },
+  priceCard: {
+    actualPrice: 1000,
+    offerPrice: getTestPrice("vitamin-b12-test"),
+    offerText: "Vitamin B12 Test Offer Price",
+    reportTime: "Same Day (12-24 Hrs)",
+    fasting: "Not Required",
+    sampleType: "Blood Sample",
+    homeCollection: true,
+    labVisit: true,
+    includes: {
+      title: "Every Booking Includes",
+      items: [
+        "Vitamin B12 Blood Test",
+        "Digital Report on WhatsApp & Email",
+        "No Advance Payment Required",
+      ],
+    },
+  },
+  whyGetTest: {
+    title: "Why Get a Vitamin B12 Test in Garhshankar",
+    description:
+      "B12 tablets and injections are very widely taken. A blood level tells you whether you actually need them, and how much your doctor should treat.",
+    reasons: [
+      {
+        title: "Know Before You Supplement",
+        description: "A starting level shows whether you are low, borderline or already fine, so treatment is not guesswork.",
+      },
+      {
+        title: "Catch Nerve Symptoms Early",
+        description: "Tingling, numbness and balance trouble can become lasting if a deficiency continues, so finding the cause early matters.",
+      },
+      {
+        title: "Track Your Treatment",
+        description: "A repeat test after a course of tablets or injections shows whether your level has recovered.",
+      },
+    ],
+  },
+  faqs: [
+    {
+      question: "How much does a vitamin B12 test cost in Garhshankar?",
+      answer: `The vitamin B12 test at Bhangal Clinical Laboratories & ECG Center is priced at ₹${getTestPrice("vitamin-b12-test")} against an MRP of ₹1000, with home sample collection available.`,
+    },
+    {
+      question: "How much is the Vitamin D3 + B12 combo, and what do I save?",
+      answer: `The Vitamin D3 + B12 combo is ₹${getTestPrice("vitamin-d3-b12-combo")}. Booked separately the two tests are ₹${getTestPrice("vitamin-d-test") + getTestPrice("vitamin-b12-test")}, so the combo saves ₹${getTestPrice("vitamin-d-test") + getTestPrice("vitamin-b12-test") - getTestPrice("vitamin-d3-b12-combo")}. Both are run from one blood sample.`,
+    },
+    {
+      question: "Why is a vitamin B12 test costlier than a routine blood test?",
+      answer: "B12 is measured on a specialised immunoassay analyser with its own reagents, which makes it dearer than routine tests such as blood sugar or CBC.",
+    },
+    {
+      question: "Is the B12 test included in a routine blood test or CBC?",
+      answer: "No. A routine blood test or CBC does not measure B12. It is booked separately, or comes inside larger packages such as our Advance Full Body Checkup.",
+    },
+    {
+      question: "Is the vitamin B12 test cheaper in a government hospital?",
+      answer: "Availability and price at government facilities vary. A private lab like ours adds home collection and quick digital reports.",
+    },
+    {
+      question: "Is home sample collection available for the vitamin B12 test?",
+      answer: "Yes, our technicians collect samples at home across Garhshankar and nearby villages.",
+    },
+  ],
+  relatedTests: [
+    "vitamin-d-test",
+    "cbc-test",
+    "peripheral-blood-film",
+    "blood-sugar-test",
+    "liver-function-test",
+  ],
+  interlinks: {
+    badge: "Included Services & Local Availability",
+    heading: "What's Included & Nearby Availability",
+    description: "Checking vitamin B12 test prices? See what the test covers and confirm home collection near you in Garhshankar.",
+    items: [
+      {
+        title: "What Does the Vitamin B12 Test Cover?",
+        subtitle: "Vitamin B12 Test Details",
+        description: "Learn what the result means, how to prepare, and how the normal range is read.",
+        href: "/tests/vitamin-b12-test",
+        icon: "FiActivity",
+        badge: "Service Details",
+        badgeColor: "bg-teal-100 text-teal-800 border-teal-200",
+        btnText: "Explore Vitamin B12 Test",
+        tracking: "price-interlink-service",
+      },
+      {
+        title: "Available Near You in Garhshankar",
+        subtitle: "Location & Home Collection",
+        description: "See our Garhshankar lab, the areas where we collect samples at home, and our opening hours.",
+        href: "/locations/vitamin-b12-test-in-garhshankar",
+        icon: "FiMapPin",
+        badge: "Garhshankar Location",
+        badgeColor: "bg-sky-100 text-sky-800 border-sky-200",
+        btnText: "Visit Garhshankar Hub",
+        tracking: "price-interlink-location",
+      },
+    ],
+  },
+  cta: {
+    title: "Book Your Vitamin B12 Test in Garhshankar Today",
+    description: "Transparent pricing, digital reports and home sample collection across Garhshankar.",
+    offerPrice: getTestPrice("vitamin-b12-test"),
+    actualPrice: 1000,
+    buttonText: "Book a Test",
+    testName: "Vitamin B12 Test",
+    blogUrl: "/blogs/vitamin-b12-deficiency-symptoms-guide",
+    serviceUrl: "/tests/vitamin-b12-test",
+    locationUrl: "/locations/vitamin-b12-test-in-garhshankar",
+    packageUrl: "/packages",
+    highlights: ["Home Sample Collection", "Digital Report", "Clear Pricing", "Fast Turnaround"],
+  },
+  packageComparison: {
+    type: "table",
+    title: "Vitamin B12 Test and Related Test Price List",
+    subtitle: "The vitamin B12 test, the D3 + B12 combo, and the blood tests commonly ordered alongside it, with current prices at our Garhshankar lab.",
+    headers: ["Test", "Price", "Why It Is Done With Vitamin B12", "Fasting"],
+    rows: [
+      ["Vitamin B12", `₹${getTestPrice("vitamin-b12-test")}`, "Measures your B12 level", "Not Required"],
+      ["Vitamin D3 + B12 Combo", `₹${getTestPrice("vitamin-d3-b12-combo")}`, `Both vitamins from one sample; saves ₹${getTestPrice("vitamin-d-test") + getTestPrice("vitamin-b12-test") - getTestPrice("vitamin-d3-b12-combo")}`, "Not Required"],
+      ["Vitamin D3", `₹${getTestPrice("vitamin-d-test")}`, "Low D3 and low B12 often occur together", "Not Required"],
+      ["CBC", `₹${getTestPrice("cbc-test")}`, "Shows anaemia and red cell size", "Not Required"],
+      ["Peripheral Blood Film", `₹${getTestPrice("peripheral-blood-film")}`, "Examines red cell shape when anaemia is suspected", "Not Required"],
+      ["Bhangal Advance Full Body Checkup", "₹2499", "70 tests including Vitamin D and B12", "10-12 Hrs"],
+    ],
+  },
+},
 ];
 
 
